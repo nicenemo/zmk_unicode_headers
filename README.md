@@ -1,6 +1,6 @@
 # Unicode Header Generator
 
-> **generate.py** – A lightweight utility that downloads the latest Unicode Character Database (UCD) and produces one C/C++ header file per Unicode block.  
+> **unicode_headers.py** – A lightweight utility that downloads the latest Unicode Character Database (UCD) and produces one C/C++ header file per Unicode block.  
 > The headers expose a macro for every code point in the form `UC_<UNICODE_NAME>` that expands to its hexadecimal value, e.g. `#define UC_LATIN_SMALL_LETTER_A 0x0061`.
 
 ---
@@ -60,10 +60,10 @@ No other third‑party libraries are required – everything is in the Python st
 ## Getting Started
 
 ```bash
-# Clone the repository (or copy generate.py into your project)
+# Clone the repository (or copy unicode_headers.py into your project)
 git clone https://github.com/yourname/unicode-header-generator.git
 cd unicode-header-generator
 
 # Run the script
-python3 generate.py
+python3 unicode_headers.py
 

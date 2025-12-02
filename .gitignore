@@ -1,2 +1,7 @@
 UnicodeData.txt
 Blocks.txt
+bin/
+include/
+lib/
+lib64/
+pyenv.cfg
