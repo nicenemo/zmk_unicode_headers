@@ -128,7 +128,7 @@ def emit_header(block_name: str,
                 end_cp: int,
                 out_dir: pathlib.Path) -> None:
     """
-    Write one header for the block.
+    Write one header for the block. Skips the file if no defines are generated.
     """
     # Sanitize file name
     file_basename = re.sub(r"\s+", "_", block_name).lower()
@@ -136,6 +136,7 @@ def emit_header(block_name: str,
         file_basename = f"block_{start_cp:04X}"
     header_file = out_dir / f"{file_basename}.h"
 
+    # Define the boilerplate lines
     lines: List[str] = [
         f"/* {block_name}.h – Unicode constants for U+{start_cp:04X} … U+{end_cp:04X}",
         "*",
@@ -145,6 +146,9 @@ def emit_header(block_name: str,
         "*/\n",
         "#pragma once\n"
     ]
+    
+    # Store the count of boilerplate lines
+    BOILERPLATE_COUNT = len(lines)
 
     processed: Set[int] = set()
 
@@ -176,8 +180,6 @@ def emit_header(block_name: str,
             # If the lowercase partner comes later in the codepoint range, skip the capital
             # and let the lowercase letter define the pair later.
             if lower_partner_cp > cp:
-                # CRITICAL FIX: DO NOT add cp to processed here. 
-                # The lowercase partner must define the pair and mark BOTH as processed.
                 continue
             
         # 2. SUCCESSFUL PAIR CASE (Only runs if cp is a Lowercase anchor)
@@ -222,8 +224,12 @@ def emit_header(block_name: str,
             )
             processed.add(cp)
 
-    header_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"Written {header_file}")
+    # --- CRITICAL REFINEMENT: Only write the file if defines were added ---
+    if len(lines) > BOILERPLATE_COUNT:
+        header_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        print(f"Written {header_file}")
+    else:
+        print(f"Skipping {header_file} (no defines generated)")
 
 
 # --------------------------------------------------------------------
