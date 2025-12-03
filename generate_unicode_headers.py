@@ -39,414 +39,307 @@ BLOCK_ABBREVIATIONS: Dict[str, str] = {
     # Latin, Greek, Cyrillic Scripts
     "BASIC LATIN": "LA",
     "LATIN-1 SUPPLEMENT": "L1S",
-    "LATIN EXTENDED-A": "LXA",
-    "LATIN EXTENDED-B": "LXB",
-    "LATIN EXTENDED-C": "LXC",
-    "LATIN EXTENDED-D": "LXD",
-    "LATIN EXTENDED-E": "LXE",
-    "LATIN EXTENDED ADDITIONAL": "LXADD",
-    
+    "LATIN EXTENDED-A": "LTA",
+    "LATIN EXTENDED-B": "LTB",
+    "LATIN EXTENDED-C": "LTC",
+    "LATIN EXTENDED-D": "LTD",
+    "LATIN EXTENDED-E": "LTE",
     "GREEK AND COPTIC": "GRC",
+    "GREEK EXTENDED": "GREX",
     "CYRILLIC": "CY",
-    "CYRILLIC SUPPLEMENTARY": "CYS",
-    
-    # CJK & Symbols
-    "CJK UNIFIED IDEOGRAPHS": "CJK",
-    "CJK UNIFIED IDEOGRAPHS EXTENSION A": "CJKA",
-    "CJK UNIFIED IDEOGRAPHS EXTENSION B": "CJKB",
-    "CJK UNIFIED IDEOGRAPHS EXTENSION C": "CJKC",
-    "CJK UNIFIED IDEOGRAPHS EXTENSION D": "CJKD",
-    "CJK UNIFIED IDEOGRAPHS EXTENSION E": "CJKE",
-    "CJK UNIFIED IDEOGRAPHS EXTENSION F": "CJKF",
-    "CJK UNIFIED IDEOGRAPHS EXTENSION G": "CJKG",
-    "CJK UNIFIED IDEOGRAPHS EXTENSION H": "CJKH",
-    "CJK UNIFIED IDEOGRAPHS EXTENSION I": "CJKI",
-    
-    "IDEOGRAPHIC DESCRIPTION CHARACTERS": "IDC",
-    "CJK STROKES": "CJKST",
-    "CJK RADICALS SUPPLEMENT": "CJKR",
-    "CJK COMPATIBILITY IDEOGRAPHS": "CJKCI",
-    "CJK COMPATIBILITY IDEOGRAPHS SUPPLEMENT": "CJKCIS",
-    
-    "DINGBATS": "DB",
-    "MATHEMATICAL OPERATORS": "MOP",
-    "SUPPLEMENTAL MATHEMATICAL OPERATORS": "SMOP",
-    "MISCELLANEOUS MATHEMATICAL SYMBOLS-A": "MMSA",
-    "MISCELLANEOUS MATHEMATICAL SYMBOLS-B": "MMSB",
-    "MATHEMATICAL ALPHANUMERIC SYMBOLS": "MA",
-    "LETTERLIKE SYMBOLS": "LS",
-    "GEOMETRIC SHAPES": "GS",
-    "MISCELLANEOUS SYMBOLS": "MS",
-    
-    # Other Scripts
-    "ARABIC": "AR",
-    "ARABIC SUPPLEMENT": "ARS",
-    "ARABIC EXTENDED-A": "AREXA",
-    "ARABIC EXTENDED-B": "AREXB",
-    "ARABIC MATHEMATICAL ALPHABETIC SYMBOLS": "ARMAS",
-    "SHAVIAN": "SH",
-    "INSCRIPTIONAL PAHLAVI": "IP",
-    "MANDAIC": "MD",
-    "SYRIAC": "SYR",
-    "SAMARITAN": "SAM",
-    "IMPERIAL ARAMAIC": "IA",
+    "CYRILLIC SUPPLEMENT": "CYS",
     "ARMENIAN": "AM",
-    "GEORGIAN": "GRG",
-    "HEBREW": "HEB",
-    "ETHIOPIC": "ET",
-    "THAI": "TH",
-    "LAO": "LAO",
-    "KHMER": "KHM",
-    "TIBETAN": "TB",
+    "HEBREW": "HE",
+    "ARABIC": "AR",
+    "ARABIC EXTENDED-B": "AREB", 
+    "SHAVIAN": "SH",
+    
+    # Major Indic Scripts
     "DEVANAGARI": "DV",
     "BENGALI": "BN",
-    "GURMUKHI": "GK",
     "GUJARATI": "GJ",
+    "GURMUKHI": "GK",
     "ORIYA": "OR",
     "TAMIL": "TM",
-    "TELUGU": "TLG",
-    "KANNADA": "KND",
-    "MALAYALAM": "ML",
-    "SINHALA": "SI",
-    "BURMESE": "BU",
-    "HANUNOO": "HAN",
-    "BUHID": "BUH",
-    "TAGBANWA": "TAG",
-    "KHMER": "KH",
-    "BALINESE": "BL",
-    "SUNDANESE": "SU",
-    "BATAK": "BTK",
-    "LEPCHA": "LPC",
-    "OL CHIKI": "OC",
-    "CHAM": "CHM",
-    "VAI": "VAI",
-    "SAURASHTRA": "SAU",
-    "KAYAH LI": "KL",
-    "REJANG": "REJ",
-    "AVESTAN": "AV",
-    "ANATOLIAN HIEROGLYPHS": "AH",
+    "TELUGU": "TL",
+
+    # CJK and Hangul
+    "HANGUL JAMO": "HJ",
+    "HANGUL SYLLABLES": "HSY",
+    "KATAKANA": "KT",
+    "HIRAGANA": "HR",
+    "CJK UNIFIED IDEOGRAPHS": "CJK",
+    "CJK UNIFIED IDEOGRAPHS EXTENSION A": "CJKA",
+    "CJK STROKES": "CJS", 
+
+    # Symbols and Punctuation
+    "GENERAL PUNCTUATION": "PUN",
+    "CURRENCY SYMBOLS": "CUR",
+    "ARROWS": "ARW",
+    "MATHEMATICAL OPERATORS": "MOP",
+    "MATHEMATICAL ALPHANUMERIC SYMBOLS": "MA",
+    "BLOCK ELEMENTS": "BE",
+    "GEOMETRIC SHAPES": "GS",
+    "MISCELLANEOUS SYMBOLS": "MSY",
+    "TRANSPORT AND MAP SYMBOLS": "TMS",
+    "EMOTICONS": "EMJ",
+    "DINGBATS": "DB", 
+    "LETTERLIKE SYMBOLS": "LS", 
+    
+    # Ideographic and Historic
+    "IDEOGRAPHIC DESCRIPTION CHARACTERS": "IDC", 
+    "INSCRIPTIONAL PAHLAVI": "IP", 
+
+    # Specials
+    "HIGH SURROGATES": "HS",
+    "LOW SURROGATES": "LS",
+    "PRIVATE USE AREA": "PUA",
 }
 
-# --- Layer 2: Word Stripping (Redundant Words) ---
-# Words to remove from the Unicode name for brevity
-REDUNDANT_WORDS: Set[str] = {
-    # Redundant descriptor words
-    "LETTER", "DIGIT", "NUMBER", "MARK", "SIGN",
-    "CHARACTER", "SYMBOL", "POINT", "SEPARATOR", 
-    "VARIATION", "SELECTOR", "CONTROL",
-    
-    # Generic prepositions/conjunctions
-    "WITH", "AND", "OF", "IN", "THE", "FOR",
-    
-    # Common type/style descriptors
-    "SMALL", "CAPITAL", "SCRIPT", "FRAKTUR", "DOUBLE-STRUCK",
-    "SAN-SERIF", "MONOSPACE", "ITALIC", "BOLD",
-    
-    # Typographic/Layout words
-    "LEFT", "RIGHT", "UPPER", "LOWER", "TOP", "BOTTOM",
-    "MIDDLE", "START", "END", "HORIZONTAL", "VERTICAL",
-    
-    # Specific script-related common words
-    "MODIFIER", "COMBINING", "SUPERSCRIPT", "SUBSCRIPT",
-    "PUNCTUATION", "BOX", "DRAWINGS",
+# --- Layer 2: Redundant Word Stripping ---
+REDUNDANT_SCRIPT_WORDS: Set[str] = {
+    "LETTER", "DIGIT", "COMMA", "CHARACTER", "SYMBOL", "WITH", "FORMS", 
+    "ALPHABETIC", "TELEGRAM", "EMOJI", "NUMBER", 
+    "LATIN", "GREEK", "CYRILLIC", "ARABIC", "HEBREW", "SHAVIAN", "COPTIC",
+    "DEVANAGARI", "MATHEMATICAL", "MISCELLANEOUS", "SUPPLEMENTAL", "EXTENDED", 
+    "ADDITIONAL", "COMPATIBILITY", "IDEOGRAPHS", "VARIATION", "SELECTOR",
 }
 
-# --- Layer 3: Internal Abbreviations ---
-# Common long words/phrases to abbreviate internally
-INTERNAL_ABBREVIATIONS: Dict[str, str] = {
+# --- Layer 3: Internal String Replacements (Handles multi-word phrases) ---
+MACRO_STRING_REPLACEMENTS: Dict[str, str] = {
     "SANS-SERIF": "SS",
     "DOUBLE-STRUCK": "DS",
-    "MATHEMATICAL": "MA",
-    "OPERATOR": "OP",
-    "IDEOGRAPHIC": "ID",
-    "DESCRIPTION": "DESCION",
-    "ALPHANUMERIC": "AN",
-    "EXTENDED": "EX",
-    "SUPPLEMENT": "SUP",
-    "ADDITIONAL": "ADD",
-    "MISCELLANEOUS": "MISC",
-    "COMPATIBILITY": "COMP",
-    "SCROLLED": "SC",
-    "BLACK-LETTER": "BL",
-    "TURNED": "T",
-    "REVERSED": "REV",
-    "SANS": "SS",
-    "SERIF": "SF",
     "FRAKTUR": "FR",
     "MONOSPACE": "MS",
     "ITALIC": "IT",
-    "TILDE": "TILD",
-    "DIAERESIS": "DIAR",
-    "CIRCUMFLEX": "CIRC",
-    "ACUTE": "ACU",
-    "GRAVE": "GRV",
-    "STROKE": "STR",
-    "LUNATE": "LUN",
+    "SCRIPT": "SC",
+    "CALIGRAPHIC": "CA",
+    "CIRCLED": "C",
+    "PARENTHESIZED": "P",
+    "FULLWIDTH": "FW",
 }
 
 
 # --------------------------------------------------------------------
-# 2. Name Sanitization -----------------------------------------------
+# 2. Helper: Printable Glyphs and Case Mapping
 # --------------------------------------------------------------------
 
-def _sanitize_name(name: str) -> str:
-    """
-    Sanitizes a Unicode name (e.g., 'LATIN SMALL LETTER A') into a C
-    macro-style identifier (e.g., 'LATIN_SMALL_LETTER_A').
-    """
-    # Replace spaces with underscores
-    name = name.replace(' ', '_')
-    # Replace hyphens with underscores, e.g., 'MINUS-SIGN' -> 'MINUS_SIGN'
-    name = name.replace('-', '_')
-    return name
-
-def _abbreviate_name(name: str, block_name: str) -> str:
-    """
-    Applies the three layers of abbreviation/sanitization.
-    1. Apply Block Prefix (Layer 1)
-    2. Strip redundant words (Layer 2)
-    3. Apply internal abbreviations (Layer 3)
-    """
-    # 1. Apply Block Prefix
-    prefix = BLOCK_ABBREVIATIONS.get(block_name.upper(), BLOCK_ABBREVIATIONS["DEFAULT"])
-    if prefix:
-        final_name = [prefix]
-    else:
-        final_name = []
+def printable_glyph(cp: int) -> Optional[str]:
+    """Return a printable representation of *cp* or None if it is not printable."""
+    try:
+        ch = chr(cp)
+    except ValueError:
+        return None
         
-    # Standardize the name words
-    words = name.split('_')
-    
-    for word in words:
-        if not word:
-            continue
-            
-        # 2. Strip redundant words (Layer 2)
-        if word in REDUNDANT_WORDS:
-            continue
-            
-        # 3. Apply internal abbreviations (Layer 3)
-        abbreviated = INTERNAL_ABBREVIATIONS.get(word, word)
-        final_name.append(abbreviated)
+    cat = ucp.category(ch)
+    if cat[0] in ("C", "Z") or not ch.isprintable():
+        return None
         
-    # Fallback to the full name if all abbreviation layers resulted in an empty string
-    if not final_name and prefix:
-         final_name.append(prefix)
-    if not final_name:
-        final_name = name.split('_')
-        
-    # Re-join, removing multiple underscores
-    result = '_'.join(final_name)
-    result = re.sub(r'_{2,}', '_', result) # Remove double+ underscores
-    result = result.strip('_')
-    
-    return result
+    return ch
 
-
-def get_macro_name(cp: int, block_name: str) -> str:
+def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
     """
-    Fetches and processes the Unicode name for a code point.
+    Find the uppercase partner (cp, name) if *cp* is a single, mappable 
+    lowercase letter ('Ll'). Returns (None, None) otherwise.
     """
     try:
-        # Get the canonical name from unicodedataplus
-        canonical_name = ucp.name(chr(cp))
-        
-        # Handle <control> and other special names (e.g., U+E0000..U+E007F)
-        if canonical_name.startswith('<'):
-            # For named control codes, use the full name
-            if canonical_name.endswith('>'):
-                # Extract the name part without angle brackets
-                base_name = canonical_name[1:-1]
-            else:
-                # Fallback for un-named codes (shouldn't happen with ucp)
-                return f"RESERVED_U{cp:04X}" 
-        else:
-            base_name = canonical_name
-            
-        # Clean up the base name
-        sanitized_name = _sanitize_name(base_name)
-        
-        # Apply abbreviations
-        abbreviated_name = _abbreviate_name(sanitized_name, block_name)
-        
-        # Prepend the main prefix
-        return f"UC_{abbreviated_name}"
-        
+        ch = chr(cp)
+        current_cat = ucp.category(ch)
     except ValueError:
-        # Happens for unassigned code points
-        return f"RESERVED_U{cp:04X}"
-    except Exception:
-        # Catch-all for unexpected issues
-        return f"UNKNOWN_U{cp:04X}"
+        return None, None
 
-# --------------------------------------------------------------------
-# 3. Utility - Case Mapping ------------------------------------------
-# --------------------------------------------------------------------
-
-def get_case_pair(cp: int) -> Tuple[int, int]:
-    """
-    Finds the lowercase and uppercase code point for a given character.
-    If a character is not case-pairable, the non-existent case is 0.
+    if current_cat != 'Ll':
+        return None, None
     
-    Returns: (lower_cp, upper_cp)
-    """
-    try:
-        char = chr(cp)
-        lower_char = char.lower()
-        upper_char = char.upper()
+    partner_str = ch.upper()
+
+    if len(partner_str) == 1 and partner_str != ch:
+        partner_cp = ord(partner_str)
+        try:
+            partner_ch = chr(partner_cp)
+            partner_cat = ucp.category(partner_ch)
+            partner_name = ucp.name(partner_ch)
+        except ValueError:
+            return None, None
         
-        lower_cp = ord(lower_char) if lower_char != char else 0
-        upper_cp = ord(upper_char) if upper_char != char else 0
+        if partner_cat == 'Lu':
+            return partner_cp, partner_name
 
-        # Special logic to handle single-case characters that are part of a pair,
-        # e.g., GREEK SMALL LETTER ALPHA (U+03B1) should pair with GREEK CAPITAL LETTER ALPHA (U+0391)
-        # However, unicodedataplus's .lower()/.upper() handles this correctly.
-        # We also need to handle the case where .upper() returns the lowercase character, 
-        # which means it is a cased character, but has no distinct uppercase form 
-        # (e.g., 'ſ' which uppercases to 'S'). The current logic should handle this.
-        # But we need the *other* case.
-
-        # If lower_cp is 0 (i.e., char.lower() == char), try ucp.lookup_other_case()
-        if lower_cp == 0:
-            try:
-                # Tries to find the other case mapping, which is typically the opposite case
-                other_case_char = ucp.lookup_other_case(char)
-                if other_case_char:
-                    # If the current char is 'a' and other is 'A', then we want ord('A')
-                    if upper_char == char: # current char is already upper, looking for lower
-                         return (ord(other_case_char), cp) if other_case_char.islower() else (0, cp)
-                    else: # current char is lower, looking for upper
-                         return (cp, ord(other_case_char)) if other_case_char.isupper() else (cp, 0)
-                         
-            except AttributeError:
-                # Older unicodedataplus versions may lack lookup_other_case
-                pass
-            except Exception:
-                pass
-                
-        # Final check to ensure we only return a valid pair (one is 0, the other is cp)
-        # This is for characters that are their own case (e.g., '1', '§')
-        if lower_cp == cp and upper_cp == cp:
-            return (cp, 0) if char.islower() else (0, cp)
-        
-        # Prioritize the default lower/upper logic
-        if lower_cp != cp and upper_cp == cp: # Is a lowercase char
-            return (cp, upper_cp)
-        if upper_cp != cp and lower_cp == cp: # Is an uppercase char
-            return (lower_cp, cp)
-            
-        # If both are the same, treat as single case for now unless specific rule applies
-        if lower_cp == cp and upper_cp == cp:
-            return (cp, 0) if char.islower() else (0, cp)
-            
-        return (lower_cp, upper_cp)
-
-    except ValueError:
-        return (0, 0)
-    except Exception:
-        return (0, 0)
+    return None, None
 
 
 # --------------------------------------------------------------------
-# 4. Data Gathering --------------------------------------------------
+# 3. Helper: Convert a Unicode name into an identifier (Layered Logic)
+# --------------------------------------------------------------------
+
+def macro_name_from_unicode_name(block_abbr: str, unicode_name: str, strip_case: bool) -> str:
+    """
+    Build a short, clean C‑identifier from the Unicode name using the three-layer
+    abbreviation system: UC + Block Abbr + Name Body.
+    """
+    s = unicode_name
+    
+    # 1. Strip case words
+    if strip_case:
+        # Note: This is only for paired letters (e.g., 'ALPHA' from 'SMALL ALPHA')
+        s = re.sub(r"(SMALL|CAPITAL|LOWERCASE|UPPERCASE)\s", "", s)
+    
+    s_upper = s.upper()
+
+    # 2. Layer 3: Apply internal abbreviations *before* splitting (Fixed Logic)
+    for original, replacement in MACRO_STRING_REPLACEMENTS.items():
+        s_upper = s_upper.replace(original.upper(), replacement)
+
+    # 3. Initial cleanup: convert remaining spaces/hyphens/non-word chars to single underscores
+    s_final = re.sub(r"[^\w]+", "_", s_upper).strip("_")
+    
+    # 4. Layer 2: Filter out redundant words based on parts
+    s_parts = s_final.split('_')
+    # Use a list comprehension for a cleaner filter
+    s_final = '_'.join([part for part in s_parts if part not in REDUNDANT_SCRIPT_WORDS])
+        
+    # Final cleanup of internal underscores
+    s_final = re.sub(r"_+", "_", s_final).strip('_')
+    
+    # Fallback
+    if not s_final:
+        s_final = "CHAR"
+
+    # 5. Assemble the final macro name
+    parts = ["UC"]
+    if block_abbr:
+        parts.append(block_abbr)
+    parts.append(s_final)
+
+    return "_".join(parts)
+
+
+# --------------------------------------------------------------------
+# 4. Block Iteration (Generator)
 # --------------------------------------------------------------------
 
 def get_all_blocks() -> Iterator[UnicodeBlock]:
     """
-    Yields blocks with .name, .start, .end by probing unicodedataplus.
+    Yields UnicodeBlock named tuples (name, start, end) by probing unicodedataplus.
     """
-    Block = namedtuple('Block', ['name', 'start', 'end'])
-    
-    current_name = None
+    current_name: Optional[str] = None
     start_cp = 0
     
-    # Iterate over the entire Unicode range
     for cp in range(MAX_UNICODE_CP):
         try:
             char = chr(cp)
             name = ucp.block(char)
-        except Exception:
+        except ValueError:
             name = "No_Block"
         
         if name != current_name:
             if current_name and current_name != "No_Block":
-                # Handle the case where the block range ends one before the last code point
-                yield Block(current_name, start_cp, cp - 1)
+                yield UnicodeBlock(current_name, start_cp, cp - 1)
             current_name = name
             start_cp = cp
             
-    # Yield the last block if it exists
     if current_name and current_name != "No_Block":
-        yield Block(current_name, start_cp, 0x10FFFF)
-        
+        yield UnicodeBlock(current_name, start_cp, MAX_UNICODE_CP - 1)
+
+
 # --------------------------------------------------------------------
-# 5. Output Generation -----------------------------------------------
+# 5. Header Generation Logic
 # --------------------------------------------------------------------
+
+def generate_header_content(block: UnicodeBlock, block_abbr: str) -> Optional[List[str]]:
+    """
+    Generates the content lines (#define macros) for a single C header block.
+    """
+    
+    lines: List[str] = []
+    processed: Set[int] = set()
+
+    for cp in range(block.start, block.end + 1):
+        if cp in processed:
+            continue
+            
+        try:
+            char = chr(cp)
+            name = ucp.name(char)
+            cat = ucp.category(char)
+        except ValueError:
+            continue
+            
+        glyph = printable_glyph(cp)
+        partner_cp, partner_name = find_case_partner(cp)
+
+        # 1. Skip Capital Letters that are the UPPERCASE partner of a later LOWERCASE letter.
+        is_capital_cat = cat == 'Lu'
+        if is_capital_cat:
+            lower_str = char.lower()
+            if len(lower_str) == 1 and lower_str != char:
+                lower_partner_cp = ord(lower_str)
+                if lower_partner_cp > cp:
+                    continue
+            
+        # 2. SUCCESSFUL PAIR CASE
+        if partner_cp is not None: 
+            cp1, cp2 = cp, partner_cp
+            name1, name2 = name, partner_name 
+            glyph1, glyph2 = glyph, printable_glyph(cp2)
+
+            if glyph1 and glyph2:
+                comment = f"// {glyph1}/{glyph2}"
+            else:
+                comment_parts = [f"U+{cp1:04X} ({name1})", f"U+{cp2:04X} ({name2})"]
+                comment = f"/* {' '.join(comment_parts)} */"
+            
+            macro_name = macro_name_from_unicode_name(block_abbr, name1, strip_case=True)
+            lines.append(
+                f"#define {macro_name:<40} 0x{cp1:04X} 0x{cp2:04X}  {comment}" 
+            )
+            processed.update({cp1, cp2})
+            continue
+
+        # 3. SINGLE CODE POINT CASE
+        if cp not in processed:
+            if glyph:
+                comment = f"// {glyph}"
+            else:
+                comment_parts = [f"U+{cp:04X} ({name})"]
+                comment = f"/* {' '.join(comment_parts)} */"
+            
+            # For single code points, we only strip case if it's the partner of a later code point
+            # which is handled by step 1. For all others (like 'UC_DS_CAPITAL_C'), we keep the case.
+            macro_name = macro_name_from_unicode_name(block_abbr, name, strip_case=False)
+            lines.append(
+                f"#define {macro_name:<40} 0x{cp:04X} 0  {comment}" 
+            )
+            processed.add(cp)
+            
+    return lines if lines else None
 
 def emit_header(block: UnicodeBlock, out_dir: pathlib.Path) -> None:
     """
-    Generates a single C header file for a Unicode block.
+    Writes one header file for the block, providing console feedback.
     """
-    content_lines: List[str] = []
     
-    # Generate the header file name (e.g., 'basic_latin.h')
-    file_name = block.name.lower().replace(' ', '_').replace('-', '_') + ".h"
-    header_file = out_dir / file_name
-
-    # 1. Gather all code points and generate the content
-    for cp in range(block.start, block.end + 1):
-        macro_name = get_macro_name(cp, block.name)
+    s_clean = re.sub(r"[^\w]", "_", block.name)
+    file_basename = re.sub(r"_+", "_", s_clean).lower().strip("_")
+    header_file = out_dir / f"{file_basename}.h"
+    
+    block_abbr = BLOCK_ABBREVIATIONS.get(block.name.upper(), BLOCK_ABBREVIATIONS["DEFAULT"])
+    
+    content_lines = generate_header_content(block, block_abbr)
+    
+    if content_lines is None:
+        print(f"Processed block '{block.name}' (U+{block.start:04X}...U+{block.end:04X}): **Skipped** (no defines generated)")
+        return
         
-        # Get case pairing for C++ comment
-        lower_cp, upper_cp = get_case_pair(cp)
-        
-        # Determine the C++ comment based on case and printability
-        try:
-            char = chr(cp)
-            
-            # Check for printable/visible characters
-            is_visible = ucp.category(char) not in ('Cc', 'Cf', 'Cn', 'Co', 'Cs')
-            
-            if lower_cp != 0 and upper_cp != 0:
-                # Cased pair (e.g., 'a/A')
-                comment = f"// {chr(lower_cp)}/{chr(upper_cp)}"
-                # Use the current code point as the lowercase constant
-                # and the other one (upper_cp) as the other case constant
-                other_case_value = upper_cp
-            elif is_visible:
-                # Visible single character (e.g., '1', '§')
-                comment = f"// {char}"
-                other_case_value = 0
-            else:
-                # Non-visible, named control, or format character
-                comment = f"/* U+{cp:04X} ({ucp.name(char)}) */"
-                other_case_value = 0
-                
-        except ValueError:
-            # Unassigned code points
-            comment = f"/* U+{cp:04X} (Unassigned) */"
-            other_case_value = 0
-        except Exception:
-            comment = f"/* U+{cp:04X} (Error) */"
-            other_case_value = 0
-
-        # The macro definition line: #define MACRO_NAME 0xXXXXXX OTHER_CASE_CP // comment
-        # Format: 40 chars for macro name, 8 chars for hex, 1 char space, 8 chars for other case hex
-        line = f"#define {macro_name:<40} 0x{cp:04X} {other_case_value:04X}  {comment}"
-        content_lines.append(line)
-        
-    # 3. Create boilerplate header text
-    boilerplate_lines: List[str] = f"""\
-/* {header_file.name} – Unicode constants for U+{block.start:04X} … U+{block.end:04X}
-*
-* Generated by {pathlib.Path(__file__).name} (Unicode {UNICODE_VERSION})
-*
-* See https://www.unicode.org/versions/latest/ for source data.
-*/
-
-#pragma once
-
-""".splitlines()
+    boilerplate_lines: List[str] = [
+        f"/* {header_file.name} – Unicode constants for U+{block.start:04X} … U+{block.end:04X}",
+        "*",
+        f"* Generated by generate_unicode_headers.py (Unicode {UNICODE_VERSION})",
+        "*",
+        "* See https://www.unicode.org/versions/latest/ for source data.",
+        "*/\n",
+        "#pragma once\n"
+    ]
     
     all_lines = boilerplate_lines + content_lines
     header_file.write_text("\n".join(all_lines) + "\n", encoding="utf-8")
@@ -455,7 +348,7 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path) -> None:
 
 
 # --------------------------------------------------------------------
-# 6. Main Execution --------------------------------------------------
+# 6. Main Execution
 # --------------------------------------------------------------------
 
 def main() -> int:
@@ -486,8 +379,9 @@ def main() -> int:
     for block in get_all_blocks():
         emit_header(block, out_dir)
 
-    print("\nAll headers written to specified directory.")
+    print("\nAll headers written to", out_dir.resolve())
     return 0
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     sys.exit(main())
