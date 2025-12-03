@@ -236,6 +236,7 @@ def emit_header(block_name: str,
         header_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
         print(f"Written {header_file}")
     else:
+        # This line ensures console feedback for skipped blocks
         print(f"Skipping {header_file} (no defines generated)")
 
 
@@ -294,8 +295,11 @@ def get_all_blocks():
             current_name = name
             start_cp = cp
             
+    # Handle the final block
     if current_name and current_name != "No_Block":
-        yield Block(current_name, start_cp, 0x10FFFF)
+        # Note: The original implementation in the uploaded file ends at 0x10FFFF
+        # This preserves that end point.
+        yield Block(current_name, start_cp, 0x10FFFF) 
         
 # --------------------------------------------------------------------
 # 6. Main ---------------------------------------------------------------
@@ -307,6 +311,7 @@ def main() -> None:
 
     # Build a list of (block_name, start_cp, end_cp) from the data in unicodedataplus
     blocks: List[Tuple[str, int, int]] = []
+    # NOTE: Iterating over the generator in a loop before processing to match the original main() logic.
     for block in get_all_blocks():
         blocks.append((block.name, block.start, block.end))
 
