@@ -19,47 +19,34 @@ from typing import Dict, List, Set, Tuple, Optional, Iterator
 from collections import namedtuple
 
 # --------------------------------------------------------------------
-# 1. Configuration ---------------------------------------------------
+# 1. Configuration & Named Tuple -------------------------------------
 # --------------------------------------------------------------------
 
 # The version is derived directly from the unicodedataplus package data
 UNICODE_VERSION = ucp.unidata_version
 
-# Dictionary to map common script/language names to two-letter prefixes (ISO codes or common abbreviations)
+# Named tuple for blocks
+UnicodeBlock = namedtuple('UnicodeBlock', ['name', 'start', 'end'])
+
+# Dictionary to map common script/language names to two-letter prefixes
 SCRIPT_ABBREVIATIONS: Dict[str, str] = {
     # ISO 639-1 Language Codes
-    "GREEK": "EL",
-    "LATIN": "LA",
-    "ARABIC": "AR",
-    "HEBREW": "HE",
-    "THAI": "TH",
-    "KHMER": "KM",
-    "TIBETAN": "TB",
+    "GREEK": "EL", "LATIN": "LA", "ARABIC": "AR", "HEBREW": "HE", 
+    "THAI": "TH", "KHMER": "KM", "TIBETAN": "TB",
     
     # Common Script Abbreviations
-    "CYRILLIC": "CY",
-    "COPTIC": "CP",
-    "DEVANAGARI": "DV",
-    "BENGALI": "BN",
-    "GUJARATI": "GJ",
-    "GURMUKHI": "GK",
-    "ORIYA": "OR",
-    "TAMIL": "TM",
+    "CYRILLIC": "CY", "COPTIC": "CP", "DEVANAGARI": "DV", "BENGALI": "BN", 
+    "GUJARATI": "GJ", "GURMUKHI": "GK", "ORIYA": "OR", "TAMIL": "TM", 
     "TELUGU": "TL",
     
     # Generic/Block Prefixes
-    "GENERAL": "GN",
-    "COMBINING": "CM",
-    "SUPERSCRIPTS": "SS",
-    "SUBSCRIPTS": "SB",
-    "MATHEMATICAL": "MA",
-    "MISCELLANEOUS": "MS",
-    "ENCLOSED": "EN",
-    "CJK": "CJK",
+    "GENERAL": "GN", "COMBINING": "CM", "SUPERSCRIPTS": "SS", "SUBSCRIPTS": "SB",
+    "MATHEMATICAL": "MA", "MISCELLANEOUS": "MS", "ENCLOSED": "EN", "CJK": "CJK",
 }
 
+
 # --------------------------------------------------------------------
-# 2. Helper: printable glyph ----------------------------------------
+# 2. Helper: Printable Glyphs and Case Mapping -----------------------
 # --------------------------------------------------------------------
 
 def printable_glyph(cp: int) -> Optional[str]:
@@ -70,22 +57,16 @@ def printable_glyph(cp: int) -> Optional[str]:
         return None
         
     cat = ucp.category(ch)
-    if cat[0] in ("C", "Z"):        # Control or Separator
+    # Skip Control ('C') or Separator ('Z') characters
+    if cat[0] in ("C", "Z") or not ch.isprintable():
         return None
-    if not ch.isprintable():
-        return None
+        
     return ch
-
-
-# --------------------------------------------------------------------
-# 3. Helper: case partner --------------------------------------------
-# --------------------------------------------------------------------
 
 def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
     """
-    Return (partner_cp, partner_name). This function anchors only on the 
-    lowercase letter (category 'Ll') and confirms its partner is uppercase 
-    (category 'Lu'). Returns (None, None) otherwise.
+    Find the uppercase partner (cp, name) if *cp* is a single, mappable 
+    lowercase letter ('Ll'). Returns (None, None) otherwise.
     """
     try:
         ch = chr(cp)
@@ -93,24 +74,20 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
     except ValueError:
         return None, None
 
-    # 1. Anchor only on lowercase letters (Ll)
     if current_cat != 'Ll':
         return None, None
     
-    # 2. Find upper partner
     partner_str = ch.upper()
 
-    # Check if a single, different character was returned
     if len(partner_str) == 1 and partner_str != ch:
         partner_cp = ord(partner_str)
         try:
-            partner_ch = chr(partner_cp)
-            partner_cat = ucp.category(partner_ch)
-            partner_name = ucp.name(partner_ch)
+            partner_cat = ucp.category(chr(partner_cp))
+            partner_name = ucp.name(chr(partner_cp))
         except ValueError:
             return None, None
         
-        # 3. Confirm partner is an Uppercase Letter (Lu)
+        # Confirm partner is an Uppercase Letter (Lu)
         if partner_cat == 'Lu':
             return partner_cp, partner_name
 
@@ -118,7 +95,7 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
 
 
 # --------------------------------------------------------------------
-# 4. Helper: Convert a Unicode name into an identifier ----------------
+# 3. Helper: Convert a Unicode name into an identifier ----------------
 # --------------------------------------------------------------------
 
 def macro_name_from_unicode_name(unicode_name: str, strip_case: bool) -> str:
@@ -141,60 +118,55 @@ def macro_name_from_unicode_name(unicode_name: str, strip_case: bool) -> str:
     
     # 3. Normalize (replace spaces/non-word characters with underscores)
     s_final = re.sub(r"[^\w]", "_", s_upper)
-    s_final = re.sub(r"_+", "_", s_final).strip("_") # Squeeze and strip
+    s_final = re.sub(r"_+", "_", s_final).strip("_") 
     
     return f"UC_{s_final}"
 
 
 # --------------------------------------------------------------------
-# 5. Block Iteration (Restored to working original logic) ------------
+# 4. Block Iteration (Logic confirmed to work) -----------------------
 # --------------------------------------------------------------------
 
-def get_all_blocks():
+def get_all_blocks() -> Iterator[UnicodeBlock]:
     """
-    Yields blocks with .name, .start, .end by probing unicodedataplus.
+    Yields UnicodeBlock named tuples by probing unicodedataplus.
+    (Preserves the exact working logic for block boundary detection)
     """
-    # Use the namedtuple from the original context
-    Block = namedtuple('Block', ['name', 'start', 'end'])
-    
     current_name = None
     start_cp = 0
     MAX_CP = 0x110000
     
-    # Iterate over the entire Unicode range
     for cp in range(MAX_CP):
         try:
             char = chr(cp)
-            # Use ucp.block(char) to match the original function signature
-            name = ucp.block(char) 
+            name = ucp.block(char)
         except Exception:
             name = "No_Block"
         
         if name != current_name:
             if current_name and current_name != "No_Block":
-                yield Block(current_name, start_cp, cp - 1)
+                yield UnicodeBlock(current_name, start_cp, cp - 1)
             current_name = name
             start_cp = cp
             
-    # Handle the final block, explicitly ending at 0x10FFFF
+    # Handle the final block
     if current_name and current_name != "No_Block":
-        yield Block(current_name, start_cp, MAX_CP - 1)
+        yield UnicodeBlock(current_name, start_cp, MAX_CP - 1)
 
 
 # --------------------------------------------------------------------
-# 6. Header Generation Logic -----------------------------------------
+# 5. Header Generation Logic (Now accepts UnicodeBlock) --------------
 # --------------------------------------------------------------------
 
-def generate_header_content(block_name: str, start_cp: int, end_cp: int) -> Optional[List[str]]:
+def generate_header_content(block: UnicodeBlock) -> Optional[List[str]]:
     """
-    Generates the content lines for a single C header block, excluding the 
-    boilerplate. Returns None if no defines are generated.
+    Generates the content lines for a single C header block.
     """
     
     lines: List[str] = []
     processed: Set[int] = set()
 
-    for cp in range(start_cp, end_cp + 1):
+    for cp in range(block.start, block.end + 1):
         if cp in processed:
             continue
             
@@ -203,23 +175,21 @@ def generate_header_content(block_name: str, start_cp: int, end_cp: int) -> Opti
             name = ucp.name(char)
             cat = ucp.category(char)
         except ValueError:
-            # Skip unassigned or reserved code points.
             continue
             
         glyph = printable_glyph(cp)
         partner_cp, partner_name = find_case_partner(cp)
 
-        # --- Skip Capital Letters that defer to a later Lowercase partner ---
+        # Skip Capital Letters that defer to a later Lowercase partner
         is_capital_cat = cat == 'Lu'
         if is_capital_cat:
             lower_str = char.lower()
             if len(lower_str) == 1 and lower_str != char:
                 lower_partner_cp = ord(lower_str)
-                # If the lowercase partner comes later, skip the capital 
                 if lower_partner_cp > cp:
                     continue
             
-        # --- SUCCESSFUL PAIR CASE (Anchor: cp is Lowercase) ---
+        # SUCCESSFUL PAIR CASE (Anchor: cp is Lowercase)
         if partner_cp is not None: 
             cp1, cp2 = cp, partner_cp
             name1, name2 = name, partner_name 
@@ -238,7 +208,7 @@ def generate_header_content(block_name: str, start_cp: int, end_cp: int) -> Opti
             processed.update({cp1, cp2})
             continue
 
-        # --- SINGLE CODE POINT CASE ---
+        # SINGLE CODE POINT CASE
         if cp not in processed:
             if glyph:
                 comment = f"// {glyph}"
@@ -254,28 +224,27 @@ def generate_header_content(block_name: str, start_cp: int, end_cp: int) -> Opti
             
     return lines if lines else None
 
-def emit_header(block_name: str, start_cp: int, end_cp: int, out_dir: pathlib.Path) -> None:
+def emit_header(block: UnicodeBlock, out_dir: pathlib.Path) -> None:
     """
-    Writes one header file for the block, providing console feedback regardless 
-    of whether a file is written or skipped.
+    Writes one header file for the block, providing console feedback.
+    (Now accepts UnicodeBlock)
     """
     
     # 1. Implement robust sanitization for file name
-    s_clean = re.sub(r"[^\w]", "_", block_name)
+    s_clean = re.sub(r"[^\w]", "_", block.name)
     file_basename = re.sub(r"_+", "_", s_clean).lower().strip("_")
     header_file = out_dir / f"{file_basename}.h"
     
-    # Generate the main content first
-    content_lines = generate_header_content(block_name, start_cp, end_cp)
+    # Generate the main content
+    content_lines = generate_header_content(block)
     
     if content_lines is None:
-        # CONSOLE FEEDBACK for skipped blocks
-        print(f"Processed block '{block_name}' (U+{start_cp:04X}...U+{end_cp:04X}): **Skipped** (no defines generated)")
+        print(f"Processed block '{block.name}' (U+{block.start:04X}...U+{block.end:04X}): **Skipped** (no defines generated)")
         return
         
     # Define the boilerplate lines
     boilerplate_lines: List[str] = [
-        f"/* {header_file.name} – Unicode constants for U+{start_cp:04X} … U+{end_cp:04X}",
+        f"/* {header_file.name} – Unicode constants for U+{block.start:04X} … U+{block.end:04X}",
         "*",
         f"* Generated by generate_unicode_headers.py (Unicode {UNICODE_VERSION})",
         "*",
@@ -287,16 +256,16 @@ def emit_header(block_name: str, start_cp: int, end_cp: int, out_dir: pathlib.Pa
     all_lines = boilerplate_lines + content_lines
     header_file.write_text("\n".join(all_lines) + "\n", encoding="utf-8")
     
-    # CONSOLE FEEDBACK for written blocks
-    print(f"Processed block '{block_name}' (U+{start_cp:04X}...U+{end_cp:04X}): **Written** to {header_file.name}")
+    print(f"Processed block '{block.name}' (U+{block.start:04X}...U+{block.end:04X}): **Written** to {header_file.name}")
+
 
 # --------------------------------------------------------------------
-# 7. Main Execution --------------------------------------------------
+# 6. Main Execution (Simplified for efficiency) ----------------------
 # --------------------------------------------------------------------
 
 def main() -> int:
     """
-    Main execution function.
+    Main execution function. Iterates directly over the block generator.
     """
     out_dir = pathlib.Path("generated_headers")
     
@@ -308,14 +277,9 @@ def main() -> int:
 
     print(f"Generating C headers for Unicode {UNICODE_VERSION}...")
 
-    # Build a list of blocks first, preserving the original script's flow
-    blocks: List[Tuple[str, int, int]] = []
+    # Iterate directly over the generator, saving memory and complexity
     for block in get_all_blocks():
-        blocks.append((block.name, block.start, block.end))
-
-    # Iterate over the blocks list to emit headers
-    for block_name, start_cp, end_cp in blocks:
-        emit_header(block_name, start_cp, end_cp, out_dir)
+        emit_header(block, out_dir)
 
     print("\nAll headers written to", out_dir.resolve())
     return 0
