@@ -51,7 +51,7 @@ BLOCK_ABBREVIATIONS: Dict[str, str] = {
     "ARMENIAN": "AM",
     "HEBREW": "HE",
     "ARABIC": "AR",
-    "ARABIC EXTENDED-B": "AREB", # FIX: Added missing block
+    "ARABIC EXTENDED-B": "AREB", 
     "SHAVIAN": "SH",
     
     # Major Indic Scripts
@@ -70,7 +70,7 @@ BLOCK_ABBREVIATIONS: Dict[str, str] = {
     "HIRAGANA": "HR",
     "CJK UNIFIED IDEOGRAPHS": "CJK",
     "CJK UNIFIED IDEOGRAPHS EXTENSION A": "CJKA",
-    "CJK STROKES": "CJS", # FIX: Added missing block
+    "CJK STROKES": "CJS", 
 
     # Symbols and Punctuation
     "GENERAL PUNCTUATION": "PUN",
@@ -83,12 +83,12 @@ BLOCK_ABBREVIATIONS: Dict[str, str] = {
     "MISCELLANEOUS SYMBOLS": "MSY",
     "TRANSPORT AND MAP SYMBOLS": "TMS",
     "EMOTICONS": "EMJ",
-    "DINGBATS": "DB", # FIX: Added missing block
-    "LETTERLIKE SYMBOLS": "LS", # FIX: Added missing block
+    "DINGBATS": "DB", 
+    "LETTERLIKE SYMBOLS": "LS", 
     
     # Ideographic and Historic
-    "IDEOGRAPHIC DESCRIPTION CHARACTERS": "IDC", # FIX: Added missing block
-    "INSCRIPTIONAL PAHLAVI": "IP", # FIX: Added missing block
+    "IDEOGRAPHIC DESCRIPTION CHARACTERS": "IDC", 
+    "INSCRIPTIONAL PAHLAVI": "IP", 
 
     # Specials
     "HIGH SURROGATES": "HS",
@@ -99,7 +99,7 @@ BLOCK_ABBREVIATIONS: Dict[str, str] = {
 # --- Layer 2: Redundant Word Stripping ---
 REDUNDANT_SCRIPT_WORDS: Set[str] = {
     "LETTER", "DIGIT", "COMMA", "CHARACTER", "SYMBOL", "WITH", "FORMS", 
-    "ALPHABETIC", "TELEGRAM", "EMOJI", "NUMBER", # FIX: Added "NUMBER"
+    "ALPHABETIC", "TELEGRAM", "EMOJI", "NUMBER", 
     "LATIN", "GREEK", "CYRILLIC", "ARABIC", "HEBREW", "SHAVIAN", "COPTIC",
     "DEVANAGARI", "MATHEMATICAL", "MISCELLANEOUS", "SUPPLEMENTAL", "EXTENDED", 
     "ADDITIONAL", "COMPATIBILITY", "IDEOGRAPHS", "VARIATION", "SELECTOR",
