@@ -82,8 +82,9 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
     if len(partner_str) == 1 and partner_str != ch:
         partner_cp = ord(partner_str)
         try:
-            partner_cat = ucp.category(chr(partner_cp))
-            partner_name = ucp.name(chr(partner_cp))
+            partner_ch = chr(partner_cp)
+            partner_cat = ucp.category(partner_ch)
+            partner_name = ucp.name(partner_ch)
         except ValueError:
             return None, None
         
@@ -124,13 +125,13 @@ def macro_name_from_unicode_name(unicode_name: str, strip_case: bool) -> str:
 
 
 # --------------------------------------------------------------------
-# 4. Block Iteration (Logic confirmed to work) -----------------------
+# 4. Block Iteration (Fixed and Refined) -----------------------------
 # --------------------------------------------------------------------
 
 def get_all_blocks() -> Iterator[UnicodeBlock]:
     """
     Yields UnicodeBlock named tuples by probing unicodedataplus.
-    (Preserves the exact working logic for block boundary detection)
+    (Uses specific exception handling for robustness.)
     """
     current_name = None
     start_cp = 0
@@ -140,7 +141,8 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
         try:
             char = chr(cp)
             name = ucp.block(char)
-        except Exception:
+        # NARROWED EXCEPTION: Catching ValueError for invalid code points
+        except ValueError:
             name = "No_Block"
         
         if name != current_name:
@@ -155,7 +157,7 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
 
 
 # --------------------------------------------------------------------
-# 5. Header Generation Logic (Now accepts UnicodeBlock) --------------
+# 5. Header Generation Logic -----------------------------------------
 # --------------------------------------------------------------------
 
 def generate_header_content(block: UnicodeBlock) -> Optional[List[str]]:
@@ -227,7 +229,6 @@ def generate_header_content(block: UnicodeBlock) -> Optional[List[str]]:
 def emit_header(block: UnicodeBlock, out_dir: pathlib.Path) -> None:
     """
     Writes one header file for the block, providing console feedback.
-    (Now accepts UnicodeBlock)
     """
     
     # 1. Implement robust sanitization for file name
@@ -260,7 +261,7 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path) -> None:
 
 
 # --------------------------------------------------------------------
-# 6. Main Execution (Simplified for efficiency) ----------------------
+# 6. Main Execution --------------------------------------------------
 # --------------------------------------------------------------------
 
 def main() -> int:
