@@ -19,15 +19,15 @@ import pathlib
 import re
 import sys
 import argparse
-import unicodedataplus as ucp
 from typing import Dict, List, Set, Tuple, Optional, Iterator
 from collections import namedtuple
+from unicodedataplus import name, category, block, unidata_version 
 
 # --------------------------------------------------------------------
 # 1. Configuration & Named Tuple (Unified Definition) ----------------
 # --------------------------------------------------------------------
 
-UNICODE_VERSION = ucp.unidata_version
+UNICODE_VERSION = unidata_version 
 MAX_UNICODE_CP = 0x110000 
 UnicodeBlock = namedtuple('UnicodeBlock', ['name', 'start', 'end'])
 
@@ -131,7 +131,7 @@ def printable_glyph(cp: int) -> Optional[str]:
     except ValueError:
         return None
         
-    cat = ucp.category(ch)
+    cat = category(ch)
     if cat[0] in ("C", "Z") or not ch.isprintable():
         return None
         
@@ -144,7 +144,7 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
     """
     try:
         ch = chr(cp)
-        current_cat = ucp.category(ch)
+        current_cat = category(ch)
     except ValueError:
         return None, None
 
@@ -157,8 +157,8 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
         partner_cp = ord(partner_str)
         try:
             partner_ch = chr(partner_cp)
-            partner_cat = ucp.category(partner_ch)
-            partner_name = ucp.name(partner_ch)
+            partner_cat = category(partner_ch)
+            partner_name = name(partner_ch)
         except ValueError:
             return None, None
         
@@ -228,14 +228,14 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
     for cp in range(MAX_UNICODE_CP):
         try:
             char = chr(cp)
-            name = ucp.block(char)
+            block_name = block(char)
         except ValueError:
-            name = "No_Block"
+            block_name = "No_Block"
         
-        if name != current_name:
+        if block_name != current_name:
             if current_name and current_name != "No_Block":
                 yield UnicodeBlock(current_name, start_cp, cp - 1)
-            current_name = name
+            current_name = block_name
             start_cp = cp
             
     if current_name and current_name != "No_Block":
@@ -260,8 +260,8 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str) -> Optional[Li
             
         try:
             char = chr(cp)
-            name = ucp.name(char)
-            cat = ucp.category(char)
+            char_name = name(char)
+            cat = category(char)
         except ValueError:
             continue
             
@@ -280,7 +280,7 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str) -> Optional[Li
         # 2. SUCCESSFUL PAIR CASE
         if partner_cp is not None: 
             cp1, cp2 = cp, partner_cp
-            name1, name2 = name, partner_name 
+            name1, name2 = char_name, partner_name 
             glyph1, glyph2 = glyph, printable_glyph(cp2)
 
             if glyph1 and glyph2:
@@ -301,12 +301,12 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str) -> Optional[Li
             if glyph:
                 comment = f"// {glyph}"
             else:
-                comment_parts = [f"U+{cp:04X} ({name})"]
+                comment_parts = [f"U+{cp:04X} ({char_name})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
             # For single code points, we only strip case if it's the partner of a later code point
             # which is handled by step 1. For all others (like 'UC_DS_CAPITAL_C'), we keep the case.
-            macro_name = macro_name_from_unicode_name(block_abbr, name, strip_case=False)
+            macro_name = macro_name_from_unicode_name(block_abbr, char_name, strip_case=False)
             lines.append(
                 f"#define {macro_name:<40} 0x{cp:04X} 0  {comment}" 
             )
