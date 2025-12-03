@@ -14,7 +14,7 @@ Each block gets its own header under `generated_headers/`.
 import pathlib
 import re
 import sys
-import argparse # New import for CLI
+import argparse
 import unicodedataplus as ucp
 from typing import Dict, List, Set, Tuple, Optional, Iterator
 from collections import namedtuple
@@ -26,21 +26,19 @@ from collections import namedtuple
 # The version is derived directly from the unicodedataplus package data
 UNICODE_VERSION = ucp.unidata_version
 
+# The maximum code point in Unicode plus one (0x10FFFF + 1)
+MAX_UNICODE_CP = 0x110000 
+
 # Named tuple for blocks
 UnicodeBlock = namedtuple('UnicodeBlock', ['name', 'start', 'end'])
 
 # Dictionary to map common script/language names to two-letter prefixes
 SCRIPT_ABBREVIATIONS: Dict[str, str] = {
-    # ISO 639-1 Language Codes
     "GREEK": "EL", "LATIN": "LA", "ARABIC": "AR", "HEBREW": "HE", 
     "THAI": "TH", "KHMER": "KM", "TIBETAN": "TB",
-    
-    # Common Script Abbreviations
     "CYRILLIC": "CY", "COPTIC": "CP", "DEVANAGARI": "DV", "BENGALI": "BN", 
     "GUJARATI": "GJ", "GURMUKHI": "GK", "ORIYA": "OR", "TAMIL": "TM", 
     "TELUGU": "TL",
-    
-    # Generic/Block Prefixes
     "GENERAL": "GN", "COMBINING": "CM", "SUPERSCRIPTS": "SS", "SUBSCRIPTS": "SB",
     "MATHEMATICAL": "MA", "MISCELLANEOUS": "MS", "ENCLOSED": "EN", "CJK": "CJK",
 }
@@ -130,9 +128,8 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
     """
     current_name = None
     start_cp = 0
-    MAX_CP = 0x110000
     
-    for cp in range(MAX_CP):
+    for cp in range(MAX_UNICODE_CP): # Using defined constant
         try:
             char = chr(cp)
             name = ucp.block(char)
@@ -146,7 +143,7 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
             start_cp = cp
             
     if current_name and current_name != "No_Block":
-        yield UnicodeBlock(current_name, start_cp, MAX_CP - 1)
+        yield UnicodeBlock(current_name, start_cp, MAX_UNICODE_CP - 1)
 
 
 # --------------------------------------------------------------------
@@ -248,7 +245,7 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path) -> None:
 
 
 # --------------------------------------------------------------------
-# 6. Main Execution (With CLI) ---------------------------------------
+# 6. Main Execution --------------------------------------------------
 # --------------------------------------------------------------------
 
 def main() -> int:
@@ -269,7 +266,7 @@ def main() -> int:
     out_dir = pathlib.Path(args.output)
     
     try:
-        out_dir.mkdir(exist_ok=True, parents=True) # Use parents=True for robustness
+        out_dir.mkdir(exist_ok=True, parents=True)
     except OSError as e:
         print(f"Error creating output directory '{out_dir}': {e}", file=sys.stderr)
         return 1
