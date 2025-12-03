@@ -1,7 +1,12 @@
 # Unicode Header Generator
 
-> **unicode_headers.py** – A lightweight utility that poduces one C/C++ header file per Unicode block.  
-> The headers expose a macro for every code point in the form `UC_<UNICODE_NAME>` that expands to its hexadecimal value, e.g. `#define UC_LATIN_SMALL_LETTER_A 0x0061`.
+> **generate_unicode_headers.py** – A lightweight utility that produces one C/C++ header file per Unicode block.
+> The headers expose highly abbreviated, clean C macros for every code point in the form `UC_<BLOCK_PREFIX>_<CLEAN_NAME>` that expands to its hexadecimal value.
+>
+> **Example of Abbreviation (Before → After):**
+> `#define UC_MATHEMATICAL_ALPHANUMERIC_SYMBOLS_SANS_SERIF_BOLD_DIGIT_ZERO 0x1D7EC`
+> **↓**
+> `#define UC_MA_SS_BOLD_ZERO 0x1D7EC`
 
 ---
 
@@ -10,6 +15,7 @@
 - [Why this project?](#why-this-project)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
+- [Virtual Environment Setup (Recommended)](#virtual-environment-setup-recommended)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Output Structure](#output-structure)
@@ -21,17 +27,13 @@
 
 ## Why this project?
 
-Working with Unicode in C/C++ can be tedious – you have to remember the exact code‑point values, and maintaining a manual list is error‑prone.  
-This script automates the entire process:
+Working with Unicode in C/C++ often requires manually looking up and maintaining exact code-point values, which is tedious and error-prone. This script automates the entire process and now provides C macros that are both clean and short.
 
-1. **Download** After downloading the latest UCD files manually (`Blocks.txt`, `UnicodeData.txt`) from the official Unicode website. You are ready to go.
-   Automating this failed even with spoofing the user agent headers.
-2. **Parse** the data into a convenient mapping of block → start/end code points and CP → name.
-3. **Generate** a header per block that contains one macro per character, complete with comments showing the glyph (if printable) and its canonical name.
+1.  **Data Source:** The script uses the modern **`unicodedataplus`** Python package to pull all official Unicode Character Database (UCD) information, including character names, code points, and block definitions, ensuring it is always up-to-date with the latest standard.
+2.  **Abbreviation:** A multi-layered abbreviation process sanitizes the long, verbose Unicode character names into macros that are suitable for use in restricted identifier environments.
+3.  **Generate:** A single C/C++ header is generated for every Unicode block, ready to be dropped into any project.
 
-The result is a set of headers you can drop straight into any C/C++ project and use constants like `UC_EMOJI_RED_HEART` or `UC_GREEK_CAPITAL_LETTER_ALPHA`.
-
-The aimed use is urob's ZMK unicode extention.
+The result is a set of headers you can use constants like `UC_MA_DS_CAPITAL_C` (for `DOUBLE-STRUCK CAPITAL C` in the Mathematical Alphanumeric Symbols block) or `UC_LA_SMALL_A` (for `LATIN SMALL LETTER A`).
 
 ---
 
@@ -39,31 +41,31 @@ The aimed use is urob's ZMK unicode extention.
 
 | Feature | Description |
 |---------|-------------|
-| **Automatic download** | The script checks for the data files locally; if missing, it downloads them on demand. |
-| **Retry logic** | Up to 3 attempts per file with a configurable delay. |
-| **User‑Agent spoofing** | Uses a modern browser UA to avoid being blocked by `unicode.org`. |
-| **Clean macro names** | Unicode names are sanitized into valid C identifiers (`UC_…`). |
-| **Glyph comments** | Printable glyphs are shown in the comment for quick visual reference. |
-| **Cross‑platform** | Pure Python 3, no external dependencies beyond the standard library. |
+| **Multi-Layer Abbreviation** | A three-layer system shortens macro names significantly by applying: **1.** A 2-4 letter block prefix (e.g., `UC_MA_` for Mathematical Alphanumeric Symbols). **2.** Script/Language abbreviations (e.g., `CY` for CYRILLIC, `EL` for GREEK). **3.** Word-specific abbreviations (`DS` for DOUBLE_STRUCK, `SS` for SANS_SERIF) and removal of highly redundant words (`DIGIT`, `NUMBER`). |
+| **Clean Macro Names** | Unicode names are sanitized, converted to uppercase, and separated by underscores (`UC_…`), resulting in valid C identifiers. |
+| **Data Source** | Data is pulled directly from the **`unicodedataplus`** package, eliminating the need for manual file downloads or maintenance. |
+| **Glyph Comments** | Printable glyphs are shown in the comment for quick visual reference (e.g., `// ℀`). |
+| **Cross-platform** | Pure Python 3, relying only on the `unicodedataplus` external dependency. |
 
 ---
 
 ## Prerequisites
 
-- **Python 3.8+** (the script uses type hints and `list[tuple]` syntax).  
-- Internet connection for the first run to download the UCD files.
-
-No other third‑party libraries are required – everything is in the Python stdlib.
+- **Python 3.8+**
+- **`unicodedataplus`** library (used to access the Unicode Character Database).
 
 ---
 
-## Getting Started
+## Virtual Environment Setup (Recommended)
+
+It is highly recommended to use a **Python virtual environment** (`venv`) to isolate dependencies and prevent conflicts with your system's Python installation, especially on Linux distributions like Arch where the system `pip` may be restricted.
 
 ```bash
-# Clone the repository (or copy unicode_headers.py into your project)
-git clone https://github.com/yourname/unicode-header-generator.git
-cd unicode-header-generator
+# 1. Create a virtual environment named 'venv'
+python3 -m venv venv
 
-# Run the script
-python3 unicode_headers.py
+# 2. Activate the environment
+source venv/bin/activate
 
+# 3. Install the required library
+pip install unicodedataplus
