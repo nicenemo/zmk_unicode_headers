@@ -10,7 +10,7 @@
 #define UC_LA_SPACE                              0x0020 0  /* U+0020 (SPACE) */
 #define UC_LA_EXCLAMATION_MARK                   0x0021 0  // !
 #define UC_LA_QUOTATION_MARK                     0x0022 0  // "
-#define UC_LA_NUMBER_SIGN                        0x0023 0  // #
+#define UC_LA_SIGN                               0x0023 0  // #
 #define UC_LA_DOLLAR_SIGN                        0x0024 0  // $
 #define UC_LA_PERCENT_SIGN                       0x0025 0  // %
 #define UC_LA_AMPERSAND                          0x0026 0  // &

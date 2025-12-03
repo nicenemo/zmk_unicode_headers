@@ -29,7 +29,7 @@
 #define UC_LTC_SMALL_TURNED_R_TAIL               0x2C79 0  // ⱹ
 #define UC_LTC_SMALL_O_LOW_RING_INSIDE           0x2C7A 0  // ⱺ
 #define UC_LTC_SMALL_CAPITAL_TURNED_E            0x2C7B 0  // ⱻ
-#define UC_LTC_SUBSCRIPT_SMALL_J                 0x2C7C 0  // ⱼ
+#define UC_LTC_SUBSC_SMALL_J                     0x2C7C 0  // ⱼ
 #define UC_LTC_MODIFIER_CAPITAL_V                0x2C7D 0  // ⱽ
 #define UC_LTC_CAPITAL_S_SWASH_TAIL              0x2C7E 0  // Ȿ
 #define UC_LTC_CAPITAL_Z_SWASH_TAIL              0x2C7F 0  // Ɀ

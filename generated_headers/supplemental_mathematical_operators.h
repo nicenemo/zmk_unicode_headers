@@ -46,7 +46,7 @@
 #define UC_PLUS_SIGN_TILDE_ABOVE                 0x2A24 0  // ⨤
 #define UC_PLUS_SIGN_DOT_BELOW                   0x2A25 0  // ⨥
 #define UC_PLUS_SIGN_TILDE_BELOW                 0x2A26 0  // ⨦
-#define UC_PLUS_SIGN_SUBSCRIPT_TWO               0x2A27 0  // ⨧
+#define UC_PLUS_SIGN_SUBSC_TWO                   0x2A27 0  // ⨧
 #define UC_PLUS_SIGN_BLACK_TRIANGLE              0x2A28 0  // ⨨
 #define UC_MINUS_SIGN_ABOVE                      0x2A29 0  // ⨩
 #define UC_MINUS_SIGN_DOT_BELOW                  0x2A2A 0  // ⨪

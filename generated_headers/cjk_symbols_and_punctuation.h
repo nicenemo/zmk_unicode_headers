@@ -14,7 +14,7 @@
 #define UC_JAPANESE_INDUSTRIAL_STANDARD          0x3004 0  // 〄
 #define UC_IDEOGRAPHIC_ITERATION_MARK            0x3005 0  // 々
 #define UC_IDEOGRAPHIC_CLOSING_MARK              0x3006 0  // 〆
-#define UC_IDEOGRAPHIC_NUMBER_ZERO               0x3007 0  // 〇
+#define UC_IDEOGRAPHIC_ZERO                      0x3007 0  // 〇
 #define UC_LEFT_ANGLE_BRACKET                    0x3008 0  // 〈
 #define UC_RIGHT_ANGLE_BRACKET                   0x3009 0  // 〉
 #define UC_LEFT_DOUBLE_ANGLE_BRACKET             0x300A 0  // 《

@@ -17,9 +17,9 @@
 #define UC_MALAYALAM_SEVEN                       0x0D6D 0  // ൭
 #define UC_MALAYALAM_EIGHT                       0x0D6E 0  // ൮
 #define UC_MALAYALAM_NINE                        0x0D6F 0  // ൯
-#define UC_MALAYALAM_NUMBER_TEN                  0x0D70 0  // ൰
-#define UC_MALAYALAM_NUMBER_ONE_HUNDRED          0x0D71 0  // ൱
-#define UC_MALAYALAM_NUMBER_ONE_THOUSAND         0x0D72 0  // ൲
+#define UC_MALAYALAM_TEN                         0x0D70 0  // ൰
+#define UC_MALAYALAM_ONE_HUNDRED                 0x0D71 0  // ൱
+#define UC_MALAYALAM_ONE_THOUSAND                0x0D72 0  // ൲
 #define UC_MALAYALAM_FRACTION_ONE_QUARTER        0x0D73 0  // ൳
 #define UC_MALAYALAM_FRACTION_ONE_HALF           0x0D74 0  // ൴
 #define UC_MALAYALAM_FRACTION_THREE_QUARTERS     0x0D75 0  // ൵

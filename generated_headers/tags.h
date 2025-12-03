@@ -10,7 +10,7 @@
 #define UC_TAG_SPACE                             0xE0020 0  /* U+E0020 (TAG SPACE) */
 #define UC_TAG_EXCLAMATION_MARK                  0xE0021 0  /* U+E0021 (TAG EXCLAMATION MARK) */
 #define UC_TAG_QUOTATION_MARK                    0xE0022 0  /* U+E0022 (TAG QUOTATION MARK) */
-#define UC_TAG_NUMBER_SIGN                       0xE0023 0  /* U+E0023 (TAG NUMBER SIGN) */
+#define UC_TAG_SIGN                              0xE0023 0  /* U+E0023 (TAG NUMBER SIGN) */
 #define UC_TAG_DOLLAR_SIGN                       0xE0024 0  /* U+E0024 (TAG DOLLAR SIGN) */
 #define UC_TAG_PERCENT_SIGN                      0xE0025 0  /* U+E0025 (TAG PERCENT SIGN) */
 #define UC_TAG_AMPERSAND                         0xE0026 0  /* U+E0026 (TAG AMPERSAND) */

@@ -7,12 +7,12 @@
 
 #pragma once
 
-#define UC_AR_NUMBER_SIGN                        0x0600 0  /* U+0600 (ARABIC NUMBER SIGN) */
+#define UC_AR_SIGN                               0x0600 0  /* U+0600 (ARABIC NUMBER SIGN) */
 #define UC_AR_SIGN_SANAH                         0x0601 0  /* U+0601 (ARABIC SIGN SANAH) */
 #define UC_AR_FOOTNOTE_MARKER                    0x0602 0  /* U+0602 (ARABIC FOOTNOTE MARKER) */
 #define UC_AR_SIGN_SAFHA                         0x0603 0  /* U+0603 (ARABIC SIGN SAFHA) */
 #define UC_AR_SIGN_SAMVAT                        0x0604 0  /* U+0604 (ARABIC SIGN SAMVAT) */
-#define UC_AR_NUMBER_MARK_ABOVE                  0x0605 0  /* U+0605 (ARABIC NUMBER MARK ABOVE) */
+#define UC_AR_MARK_ABOVE                         0x0605 0  /* U+0605 (ARABIC NUMBER MARK ABOVE) */
 #define UC_AR_INDIC_CUBE_ROOT                    0x0606 0  // ؆
 #define UC_AR_INDIC_FOURTH_ROOT                  0x0607 0  // ؇
 #define UC_AR_RAY                                0x0608 0  // ؈
@@ -93,7 +93,7 @@
 #define UC_AR_MADDAH_ABOVE                       0x0653 0  // ٓ
 #define UC_AR_HAMZA_ABOVE                        0x0654 0  // ٔ
 #define UC_AR_HAMZA_BELOW                        0x0655 0  // ٕ
-#define UC_AR_SUBSCRIPT_ALEF                     0x0656 0  // ٖ
+#define UC_AR_SUBSC_ALEF                         0x0656 0  // ٖ
 #define UC_AR_INVERTED_DAMMA                     0x0657 0  // ٗ
 #define UC_AR_MARK_NOON_GHUNNA                   0x0658 0  // ٘
 #define UC_AR_ZWARAKAY                           0x0659 0  // ٙ
@@ -119,7 +119,7 @@
 #define UC_AR_FIVE_POINTED_STAR                  0x066D 0  // ٭
 #define UC_AR_DOTLESS_BEH                        0x066E 0  // ٮ
 #define UC_AR_DOTLESS_QAF                        0x066F 0  // ٯ
-#define UC_AR_SUPERSCRIPT_ALEF                   0x0670 0  // ٰ
+#define UC_AR_SUPERSC_ALEF                       0x0670 0  // ٰ
 #define UC_AR_ALEF_WASLA                         0x0671 0  // ٱ
 #define UC_AR_ALEF_WAVY_HAMZA_ABOVE              0x0672 0  // ٲ
 #define UC_AR_ALEF_WAVY_HAMZA_BELOW              0x0673 0  // ٳ

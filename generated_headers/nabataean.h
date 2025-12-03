@@ -7,12 +7,12 @@
 
 #pragma once
 
-#define UC_NABATAEAN_NUMBER_ONE                  0x108A7 0  // 𐢧
-#define UC_NABATAEAN_NUMBER_TWO                  0x108A8 0  // 𐢨
-#define UC_NABATAEAN_NUMBER_THREE                0x108A9 0  // 𐢩
-#define UC_NABATAEAN_NUMBER_FOUR                 0x108AA 0  // 𐢪
-#define UC_NABATAEAN_CRUCIFORM_NUMBER_FOUR       0x108AB 0  // 𐢫
-#define UC_NABATAEAN_NUMBER_FIVE                 0x108AC 0  // 𐢬
-#define UC_NABATAEAN_NUMBER_TEN                  0x108AD 0  // 𐢭
-#define UC_NABATAEAN_NUMBER_TWENTY               0x108AE 0  // 𐢮
-#define UC_NABATAEAN_NUMBER_ONE_HUNDRED          0x108AF 0  // 𐢯
+#define UC_NABATAEAN_ONE                         0x108A7 0  // 𐢧
+#define UC_NABATAEAN_TWO                         0x108A8 0  // 𐢨
+#define UC_NABATAEAN_THREE                       0x108A9 0  // 𐢩
+#define UC_NABATAEAN_FOUR                        0x108AA 0  // 𐢪
+#define UC_NABATAEAN_CRUCIFORM_FOUR              0x108AB 0  // 𐢫
+#define UC_NABATAEAN_FIVE                        0x108AC 0  // 𐢬
+#define UC_NABATAEAN_TEN                         0x108AD 0  // 𐢭
+#define UC_NABATAEAN_TWENTY                      0x108AE 0  // 𐢮
+#define UC_NABATAEAN_ONE_HUNDRED                 0x108AF 0  // 𐢯

@@ -28,10 +28,10 @@
 #define UC_CHORASMIAN_RESH                       0x10FC2 0  // 𐿂
 #define UC_CHORASMIAN_SHIN                       0x10FC3 0  // 𐿃
 #define UC_CHORASMIAN_TAW                        0x10FC4 0  // 𐿄
-#define UC_CHORASMIAN_NUMBER_ONE                 0x10FC5 0  // 𐿅
-#define UC_CHORASMIAN_NUMBER_TWO                 0x10FC6 0  // 𐿆
-#define UC_CHORASMIAN_NUMBER_THREE               0x10FC7 0  // 𐿇
-#define UC_CHORASMIAN_NUMBER_FOUR                0x10FC8 0  // 𐿈
-#define UC_CHORASMIAN_NUMBER_TEN                 0x10FC9 0  // 𐿉
-#define UC_CHORASMIAN_NUMBER_TWENTY              0x10FCA 0  // 𐿊
-#define UC_CHORASMIAN_NUMBER_ONE_HUNDRED         0x10FCB 0  // 𐿋
+#define UC_CHORASMIAN_ONE                        0x10FC5 0  // 𐿅
+#define UC_CHORASMIAN_TWO                        0x10FC6 0  // 𐿆
+#define UC_CHORASMIAN_THREE                      0x10FC7 0  // 𐿇
+#define UC_CHORASMIAN_FOUR                       0x10FC8 0  // 𐿈
+#define UC_CHORASMIAN_TEN                        0x10FC9 0  // 𐿉
+#define UC_CHORASMIAN_TWENTY                     0x10FCA 0  // 𐿊
+#define UC_CHORASMIAN_ONE_HUNDRED                0x10FCB 0  // 𐿋

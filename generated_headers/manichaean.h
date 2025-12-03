@@ -7,11 +7,11 @@
 
 #pragma once
 
-#define UC_MANICHAEAN_NUMBER_ONE                 0x10AEB 0  // 𐫫
-#define UC_MANICHAEAN_NUMBER_FIVE                0x10AEC 0  // 𐫬
-#define UC_MANICHAEAN_NUMBER_TEN                 0x10AED 0  // 𐫭
-#define UC_MANICHAEAN_NUMBER_TWENTY              0x10AEE 0  // 𐫮
-#define UC_MANICHAEAN_NUMBER_ONE_HUNDRED         0x10AEF 0  // 𐫯
+#define UC_MANICHAEAN_ONE                        0x10AEB 0  // 𐫫
+#define UC_MANICHAEAN_FIVE                       0x10AEC 0  // 𐫬
+#define UC_MANICHAEAN_TEN                        0x10AED 0  // 𐫭
+#define UC_MANICHAEAN_TWENTY                     0x10AEE 0  // 𐫮
+#define UC_MANICHAEAN_ONE_HUNDRED                0x10AEF 0  // 𐫯
 #define UC_MANICHAEAN_PUNCTUATION_STAR           0x10AF0 0  // 𐫰
 #define UC_MANICHAEAN_PUNCTUATION_FLEURON        0x10AF1 0  // 𐫱
 #define UC_MANICHAEAN_PUNCTUATION_DOUBLE_DOT_WITHIN_DOT 0x10AF2 0  // 𐫲

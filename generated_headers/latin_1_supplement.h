@@ -25,14 +25,14 @@
 #define UC_L1S_MACRON                            0x00AF 0  // ¯
 #define UC_L1S_DEGREE_SIGN                       0x00B0 0  // °
 #define UC_L1S_PLUS_MINUS_SIGN                   0x00B1 0  // ±
-#define UC_L1S_SUPERSCRIPT_TWO                   0x00B2 0  // ²
-#define UC_L1S_SUPERSCRIPT_THREE                 0x00B3 0  // ³
+#define UC_L1S_SUPERSC_TWO                       0x00B2 0  // ²
+#define UC_L1S_SUPERSC_THREE                     0x00B3 0  // ³
 #define UC_L1S_ACUTE_ACCENT                      0x00B4 0  // ´
 #define UC_L1S_MICRO_SIGN                        0x00B5 0x039C  // µ/Μ
 #define UC_L1S_PILCROW_SIGN                      0x00B6 0  // ¶
 #define UC_L1S_MIDDLE_DOT                        0x00B7 0  // ·
 #define UC_L1S_CEDILLA                           0x00B8 0  // ¸
-#define UC_L1S_SUPERSCRIPT_ONE                   0x00B9 0  // ¹
+#define UC_L1S_SUPERSC_ONE                       0x00B9 0  // ¹
 #define UC_L1S_MASCULINE_ORDINAL_INDICATOR       0x00BA 0  // º
 #define UC_L1S_RIGHT_POINTING_DOUBLE_ANGLE_QUOTATION_MARK 0x00BB 0  // »
 #define UC_L1S_VULGAR_FRACTION_ONE_QUARTER       0x00BC 0  // ¼

@@ -16,5 +16,5 @@
 #define UC_OCR_BRANCH_BANK_IDENTIFICATION        0x2446 0  // ⑆
 #define UC_OCR_AMOUNT_OF_CHECK                   0x2447 0  // ⑇
 #define UC_OCR_DASH                              0x2448 0  // ⑈
-#define UC_OCR_CUSTOMER_ACCOUNT_NUMBER           0x2449 0  // ⑉
+#define UC_OCR_CUSTOMER_ACCOUNT                  0x2449 0  // ⑉
 #define UC_OCR_DOUBLE_BACKSLASH                  0x244A 0  // ⑊

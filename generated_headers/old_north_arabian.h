@@ -36,6 +36,6 @@
 #define UC_OLD_NORTH_ARABIAN_YEH                 0x10A9A 0  // 𐪚
 #define UC_OLD_NORTH_ARABIAN_THEH                0x10A9B 0  // 𐪛
 #define UC_OLD_NORTH_ARABIAN_ZAH                 0x10A9C 0  // 𐪜
-#define UC_OLD_NORTH_ARABIAN_NUMBER_ONE          0x10A9D 0  // 𐪝
-#define UC_OLD_NORTH_ARABIAN_NUMBER_TEN          0x10A9E 0  // 𐪞
-#define UC_OLD_NORTH_ARABIAN_NUMBER_TWENTY       0x10A9F 0  // 𐪟
+#define UC_OLD_NORTH_ARABIAN_ONE                 0x10A9D 0  // 𐪝
+#define UC_OLD_NORTH_ARABIAN_TEN                 0x10A9E 0  // 𐪞
+#define UC_OLD_NORTH_ARABIAN_TWENTY              0x10A9F 0  // 𐪟

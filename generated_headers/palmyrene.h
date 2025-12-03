@@ -32,10 +32,10 @@
 #define UC_PALMYRENE_TAW                         0x10876 0  // 𐡶
 #define UC_PALMYRENE_LEFT_POINTING_FLEURON       0x10877 0  // 𐡷
 #define UC_PALMYRENE_RIGHT_POINTING_FLEURON      0x10878 0  // 𐡸
-#define UC_PALMYRENE_NUMBER_ONE                  0x10879 0  // 𐡹
-#define UC_PALMYRENE_NUMBER_TWO                  0x1087A 0  // 𐡺
-#define UC_PALMYRENE_NUMBER_THREE                0x1087B 0  // 𐡻
-#define UC_PALMYRENE_NUMBER_FOUR                 0x1087C 0  // 𐡼
-#define UC_PALMYRENE_NUMBER_FIVE                 0x1087D 0  // 𐡽
-#define UC_PALMYRENE_NUMBER_TEN                  0x1087E 0  // 𐡾
-#define UC_PALMYRENE_NUMBER_TWENTY               0x1087F 0  // 𐡿
+#define UC_PALMYRENE_ONE                         0x10879 0  // 𐡹
+#define UC_PALMYRENE_TWO                         0x1087A 0  // 𐡺
+#define UC_PALMYRENE_THREE                       0x1087B 0  // 𐡻
+#define UC_PALMYRENE_FOUR                        0x1087C 0  // 𐡼
+#define UC_PALMYRENE_FIVE                        0x1087D 0  // 𐡽
+#define UC_PALMYRENE_TEN                         0x1087E 0  // 𐡾
+#define UC_PALMYRENE_TWENTY                      0x1087F 0  // 𐡿

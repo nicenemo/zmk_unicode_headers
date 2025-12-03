@@ -40,10 +40,10 @@
 #define UC_SOGDIAN_COMBINING_LONG_HOOK_BELOW     0x10F4E 0  // 𐽎
 #define UC_SOGDIAN_COMBINING_RESH_BELOW          0x10F4F 0  // 𐽏
 #define UC_SOGDIAN_COMBINING_STROKE_BELOW        0x10F50 0  // 𐽐
-#define UC_SOGDIAN_NUMBER_ONE                    0x10F51 0  // 𐽑
-#define UC_SOGDIAN_NUMBER_TEN                    0x10F52 0  // 𐽒
-#define UC_SOGDIAN_NUMBER_TWENTY                 0x10F53 0  // 𐽓
-#define UC_SOGDIAN_NUMBER_ONE_HUNDRED            0x10F54 0  // 𐽔
+#define UC_SOGDIAN_ONE                           0x10F51 0  // 𐽑
+#define UC_SOGDIAN_TEN                           0x10F52 0  // 𐽒
+#define UC_SOGDIAN_TWENTY                        0x10F53 0  // 𐽓
+#define UC_SOGDIAN_ONE_HUNDRED                   0x10F54 0  // 𐽔
 #define UC_SOGDIAN_PUNCTUATION_TWO_VERTICAL_BARS 0x10F55 0  // 𐽕
 #define UC_SOGDIAN_PUNCTUATION_TWO_VERTICAL_BARS_DOTS 0x10F56 0  // 𐽖
 #define UC_SOGDIAN_PUNCTUATION_CIRCLE_DOT        0x10F57 0  // 𐽗

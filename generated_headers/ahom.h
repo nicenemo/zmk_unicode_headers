@@ -17,8 +17,8 @@
 #define UC_AHOM_SEVEN                            0x11737 0  // 𑜷
 #define UC_AHOM_EIGHT                            0x11738 0  // 𑜸
 #define UC_AHOM_NINE                             0x11739 0  // 𑜹
-#define UC_AHOM_NUMBER_TEN                       0x1173A 0  // 𑜺
-#define UC_AHOM_NUMBER_TWENTY                    0x1173B 0  // 𑜻
+#define UC_AHOM_TEN                              0x1173A 0  // 𑜺
+#define UC_AHOM_TWENTY                           0x1173B 0  // 𑜻
 #define UC_AHOM_SIGN_SMALL_SECTION               0x1173C 0  // 𑜼
 #define UC_AHOM_SIGN_SECTION                     0x1173D 0  // 𑜽
 #define UC_AHOM_SIGN_RULAI                       0x1173E 0  // 𑜾

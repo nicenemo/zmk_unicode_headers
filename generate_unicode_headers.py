@@ -11,7 +11,7 @@ The script expects no external data files – it pulls everything from the
 This version uses a three-layered abbreviation system for maximal brevity and
 collision avoidance:
 1. Block Prefix (e.g., 'LA' for Latin, 'SH' for Shavian)
-2. Redundant Word Stripping (e.g., removing 'LETTER', 'DIGIT', 'WITH')
+2. Redundant Word Stripping (e.g., removing 'LETTER', 'DIGIT', 'WITH', 'NUMBER')
 3. Internal Abbreviation (e.g., 'SANS_SERIF' -> 'SS')
 """
 
@@ -51,6 +51,7 @@ BLOCK_ABBREVIATIONS: Dict[str, str] = {
     "ARMENIAN": "AM",
     "HEBREW": "HE",
     "ARABIC": "AR",
+    "ARABIC EXTENDED-B": "AREB", # FIX: Added missing block
     "SHAVIAN": "SH",
     
     # Major Indic Scripts
@@ -69,6 +70,7 @@ BLOCK_ABBREVIATIONS: Dict[str, str] = {
     "HIRAGANA": "HR",
     "CJK UNIFIED IDEOGRAPHS": "CJK",
     "CJK UNIFIED IDEOGRAPHS EXTENSION A": "CJKA",
+    "CJK STROKES": "CJS", # FIX: Added missing block
 
     # Symbols and Punctuation
     "GENERAL PUNCTUATION": "PUN",
@@ -81,6 +83,12 @@ BLOCK_ABBREVIATIONS: Dict[str, str] = {
     "MISCELLANEOUS SYMBOLS": "MSY",
     "TRANSPORT AND MAP SYMBOLS": "TMS",
     "EMOTICONS": "EMJ",
+    "DINGBATS": "DB", # FIX: Added missing block
+    "LETTERLIKE SYMBOLS": "LS", # FIX: Added missing block
+    
+    # Ideographic and Historic
+    "IDEOGRAPHIC DESCRIPTION CHARACTERS": "IDC", # FIX: Added missing block
+    "INSCRIPTIONAL PAHLAVI": "IP", # FIX: Added missing block
 
     # Specials
     "HIGH SURROGATES": "HS",
@@ -91,16 +99,16 @@ BLOCK_ABBREVIATIONS: Dict[str, str] = {
 # --- Layer 2: Redundant Word Stripping ---
 REDUNDANT_SCRIPT_WORDS: Set[str] = {
     "LETTER", "DIGIT", "COMMA", "CHARACTER", "SYMBOL", "WITH", "FORMS", 
-    "ALPHABETIC", "TELEGRAM", "EMOJI",
+    "ALPHABETIC", "TELEGRAM", "EMOJI", "NUMBER", # FIX: Added "NUMBER"
     "LATIN", "GREEK", "CYRILLIC", "ARABIC", "HEBREW", "SHAVIAN", "COPTIC",
     "DEVANAGARI", "MATHEMATICAL", "MISCELLANEOUS", "SUPPLEMENTAL", "EXTENDED", 
     "ADDITIONAL", "COMPATIBILITY", "IDEOGRAPHS", "VARIATION", "SELECTOR",
 }
 
-# --- Layer 3: Internal Abbreviation (Stylistic) ---
-MACRO_BODY_ABBREVIATIONS: Dict[str, str] = {
-    "SANS_SERIF": "SS",
-    "DOUBLE_STRUCK": "DS",
+# --- Layer 3: Internal String Replacements (Handles multi-word phrases) ---
+MACRO_STRING_REPLACEMENTS: Dict[str, str] = {
+    "SANS-SERIF": "SS",
+    "DOUBLE-STRUCK": "DS",
     "FRAKTUR": "FR",
     "MONOSPACE": "MS",
     "ITALIC": "IT",
@@ -171,35 +179,36 @@ def macro_name_from_unicode_name(block_abbr: str, unicode_name: str, strip_case:
     """
     s = unicode_name
     
+    # 1. Strip case words
     if strip_case:
+        # Note: This is only for paired letters (e.g., 'ALPHA' from 'SMALL ALPHA')
         s = re.sub(r"(SMALL|CAPITAL|LOWERCASE|UPPERCASE)\s", "", s)
     
     s_upper = s.upper()
-    
+
+    # 2. Layer 3: Apply internal abbreviations *before* splitting (Fixed Logic)
+    for original, replacement in MACRO_STRING_REPLACEMENTS.items():
+        s_upper = s_upper.replace(original.upper(), replacement)
+
+    # 3. Initial cleanup: convert remaining spaces/hyphens/non-word chars to single underscores
     s_final = re.sub(r"[^\w]+", "_", s_upper).strip("_")
     
+    # 4. Layer 2: Filter out redundant words based on parts
     s_parts = s_final.split('_')
-    final_parts = []
-    
-    for part in s_parts:
-        if part in REDUNDANT_SCRIPT_WORDS:
-            continue
+    # Use a list comprehension for a cleaner filter
+    s_final = '_'.join([part for part in s_parts if part not in REDUNDANT_SCRIPT_WORDS])
         
-        abbreviated_part = MACRO_BODY_ABBREVIATIONS.get(part, part)
-        final_parts.append(abbreviated_part)
-
-    s_final = '_'.join(final_parts)
-        
+    # Final cleanup of internal underscores
     s_final = re.sub(r"_+", "_", s_final).strip('_')
     
+    # Fallback
     if not s_final:
         s_final = "CHAR"
 
+    # 5. Assemble the final macro name
     parts = ["UC"]
-    
     if block_abbr:
         parts.append(block_abbr)
-    
     parts.append(s_final)
 
     return "_".join(parts)
@@ -295,6 +304,8 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str) -> Optional[Li
                 comment_parts = [f"U+{cp:04X} ({name})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
+            # For single code points, we only strip case if it's the partner of a later code point
+            # which is handled by step 1. For all others (like 'UC_DS_CAPITAL_C'), we keep the case.
             macro_name = macro_name_from_unicode_name(block_abbr, name, strip_case=False)
             lines.append(
                 f"#define {macro_name:<40} 0x{cp:04X} 0  {comment}" 

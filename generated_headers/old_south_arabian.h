@@ -36,6 +36,6 @@
 #define UC_OLD_SOUTH_ARABIAN_YODH                0x10A7A 0  // 𐩺
 #define UC_OLD_SOUTH_ARABIAN_THAW                0x10A7B 0  // 𐩻
 #define UC_OLD_SOUTH_ARABIAN_THETH               0x10A7C 0  // 𐩼
-#define UC_OLD_SOUTH_ARABIAN_NUMBER_ONE          0x10A7D 0  // 𐩽
-#define UC_OLD_SOUTH_ARABIAN_NUMBER_FIFTY        0x10A7E 0  // 𐩾
+#define UC_OLD_SOUTH_ARABIAN_ONE                 0x10A7D 0  // 𐩽
+#define UC_OLD_SOUTH_ARABIAN_FIFTY               0x10A7E 0  // 𐩾
 #define UC_OLD_SOUTH_ARABIAN_NUMERIC_INDICATOR   0x10A7F 0  // 𐩿

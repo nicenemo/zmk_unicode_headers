@@ -17,9 +17,9 @@
 #define UC_TM_TAMIL_SEVEN                        0x0BED 0  // ௭
 #define UC_TM_TAMIL_EIGHT                        0x0BEE 0  // ௮
 #define UC_TM_TAMIL_NINE                         0x0BEF 0  // ௯
-#define UC_TM_TAMIL_NUMBER_TEN                   0x0BF0 0  // ௰
-#define UC_TM_TAMIL_NUMBER_ONE_HUNDRED           0x0BF1 0  // ௱
-#define UC_TM_TAMIL_NUMBER_ONE_THOUSAND          0x0BF2 0  // ௲
+#define UC_TM_TAMIL_TEN                          0x0BF0 0  // ௰
+#define UC_TM_TAMIL_ONE_HUNDRED                  0x0BF1 0  // ௱
+#define UC_TM_TAMIL_ONE_THOUSAND                 0x0BF2 0  // ௲
 #define UC_TM_TAMIL_DAY_SIGN                     0x0BF3 0  // ௳
 #define UC_TM_TAMIL_MONTH_SIGN                   0x0BF4 0  // ௴
 #define UC_TM_TAMIL_YEAR_SIGN                    0x0BF5 0  // ௵
@@ -27,4 +27,4 @@
 #define UC_TM_TAMIL_CREDIT_SIGN                  0x0BF7 0  // ௷
 #define UC_TM_TAMIL_AS_ABOVE_SIGN                0x0BF8 0  // ௸
 #define UC_TM_TAMIL_RUPEE_SIGN                   0x0BF9 0  // ௹
-#define UC_TM_TAMIL_NUMBER_SIGN                  0x0BFA 0  // ௺
+#define UC_TM_TAMIL_SIGN                         0x0BFA 0  // ௺
