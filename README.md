@@ -29,7 +29,7 @@
 
 Working with Unicode in C/C++ often requires manually looking up and maintaining exact code-point values, which is tedious and error-prone. This script automates the entire process and now provides C macros that are both clean and short.
 
-1.  **Data Source:** The script uses the modern **`unicodedataplus`** Python package to pull all official Unicode Character Database (UCD) information, including character names, code points, and block definitions, ensuring it is always up-to-date with the latest standard.
+1.  **Data Source:** The script is now fully self-contained, using the modern **`unicodedata2`** Python package to pull all official Unicode Character Database (UCD) information, including character names, code points, and block definitions, ensuring it is always up-to-date with the latest standard.
 2.  **Abbreviation:** A multi-layered abbreviation process sanitizes the long, verbose Unicode character names into macros that are suitable for use in restricted identifier environments.
 3.  **Generate:** A single C/C++ header is generated for every Unicode block, ready to be dropped into any project.
 
@@ -43,16 +43,16 @@ The result is a set of headers you can use constants like `UC_MA_DS_CAPITAL_C` (
 |---------|-------------|
 | **Multi-Layer Abbreviation** | A three-layer system shortens macro names significantly by applying: **1.** A 2-4 letter block prefix (e.g., `UC_MA_` for Mathematical Alphanumeric Symbols). **2.** Script/Language abbreviations (e.g., `CY` for CYRILLIC, `EL` for GREEK). **3.** Word-specific abbreviations (`DS` for DOUBLE_STRUCK, `SS` for SANS_SERIF) and removal of highly redundant words (`DIGIT`, `NUMBER`). |
 | **Clean Macro Names** | Unicode names are sanitized, converted to uppercase, and separated by underscores (`UC_…`), resulting in valid C identifiers. |
-| **Data Source** | Data is pulled directly from the **`unicodedataplus`** package, eliminating the need for manual file downloads or maintenance. |
+| **Data Source** | Data is pulled directly from the **`unicodedata2`** package, eliminating the need for manual downloads or **maintaining local UCD files (like `Blocks.txt`)**. |
 | **Glyph Comments** | Printable glyphs are shown in the comment for quick visual reference (e.g., `// ℀`). |
-| **Cross-platform** | Pure Python 3, relying only on the `unicodedataplus` external dependency. |
+| **Cross-platform** | Pure Python 3, relying only on the `unicodedata2` external dependency. |
 
 ---
 
 ## Prerequisites
 
 - **Python 3.8+**
-- **`unicodedataplus`** library (used to access the Unicode Character Database).
+- **`unicodedata2`** library (used to access the Unicode Character Database).
 
 ---
 
@@ -68,4 +68,4 @@ python3 -m venv venv
 source venv/bin/activate
 
 # 3. Install the required library
-pip install unicodedataplus
+pip install unicodedata2
