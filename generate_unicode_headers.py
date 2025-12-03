@@ -14,6 +14,7 @@ Each block gets its own header under `generated_headers/`.
 import pathlib
 import re
 import sys
+import argparse # New import for CLI
 import unicodedataplus as ucp
 from typing import Dict, List, Set, Tuple, Optional, Iterator
 from collections import namedtuple
@@ -57,7 +58,6 @@ def printable_glyph(cp: int) -> Optional[str]:
         return None
         
     cat = ucp.category(ch)
-    # Skip Control ('C') or Separator ('Z') characters
     if cat[0] in ("C", "Z") or not ch.isprintable():
         return None
         
@@ -88,7 +88,6 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
         except ValueError:
             return None, None
         
-        # Confirm partner is an Uppercase Letter (Lu)
         if partner_cat == 'Lu':
             return partner_cp, partner_name
 
@@ -106,18 +105,15 @@ def macro_name_from_unicode_name(unicode_name: str, strip_case: bool) -> str:
     """
     s = unicode_name
     
-    # 1. Remove case properties ONLY if requested (for successful pairs)
     if strip_case:
         s = re.sub(r"(SMALL|CAPITAL|LOWERCASE|UPPERCASE)\s", "", s)
     
-    # 2. Convert to uppercase and abbreviate prefix
     s_upper = s.upper()
     s_words = s_upper.split()
     if s_words and s_words[0] in SCRIPT_ABBREVIATIONS:
         abbr = SCRIPT_ABBREVIATIONS[s_words[0]]
         s_upper = abbr + ' ' + ' '.join(s_words[1:])
     
-    # 3. Normalize (replace spaces/non-word characters with underscores)
     s_final = re.sub(r"[^\w]", "_", s_upper)
     s_final = re.sub(r"_+", "_", s_final).strip("_") 
     
@@ -125,13 +121,12 @@ def macro_name_from_unicode_name(unicode_name: str, strip_case: bool) -> str:
 
 
 # --------------------------------------------------------------------
-# 4. Block Iteration (Fixed and Refined) -----------------------------
+# 4. Block Iteration -------------------------------------------------
 # --------------------------------------------------------------------
 
 def get_all_blocks() -> Iterator[UnicodeBlock]:
     """
     Yields UnicodeBlock named tuples by probing unicodedataplus.
-    (Uses specific exception handling for robustness.)
     """
     current_name = None
     start_cp = 0
@@ -141,7 +136,6 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
         try:
             char = chr(cp)
             name = ucp.block(char)
-        # NARROWED EXCEPTION: Catching ValueError for invalid code points
         except ValueError:
             name = "No_Block"
         
@@ -151,7 +145,6 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
             current_name = name
             start_cp = cp
             
-    # Handle the final block
     if current_name and current_name != "No_Block":
         yield UnicodeBlock(current_name, start_cp, MAX_CP - 1)
 
@@ -182,7 +175,6 @@ def generate_header_content(block: UnicodeBlock) -> Optional[List[str]]:
         glyph = printable_glyph(cp)
         partner_cp, partner_name = find_case_partner(cp)
 
-        # Skip Capital Letters that defer to a later Lowercase partner
         is_capital_cat = cat == 'Lu'
         if is_capital_cat:
             lower_str = char.lower()
@@ -191,7 +183,6 @@ def generate_header_content(block: UnicodeBlock) -> Optional[List[str]]:
                 if lower_partner_cp > cp:
                     continue
             
-        # SUCCESSFUL PAIR CASE (Anchor: cp is Lowercase)
         if partner_cp is not None: 
             cp1, cp2 = cp, partner_cp
             name1, name2 = name, partner_name 
@@ -210,7 +201,6 @@ def generate_header_content(block: UnicodeBlock) -> Optional[List[str]]:
             processed.update({cp1, cp2})
             continue
 
-        # SINGLE CODE POINT CASE
         if cp not in processed:
             if glyph:
                 comment = f"// {glyph}"
@@ -231,19 +221,16 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path) -> None:
     Writes one header file for the block, providing console feedback.
     """
     
-    # 1. Implement robust sanitization for file name
     s_clean = re.sub(r"[^\w]", "_", block.name)
     file_basename = re.sub(r"_+", "_", s_clean).lower().strip("_")
     header_file = out_dir / f"{file_basename}.h"
     
-    # Generate the main content
     content_lines = generate_header_content(block)
     
     if content_lines is None:
         print(f"Processed block '{block.name}' (U+{block.start:04X}...U+{block.end:04X}): **Skipped** (no defines generated)")
         return
         
-    # Define the boilerplate lines
     boilerplate_lines: List[str] = [
         f"/* {header_file.name} – Unicode constants for U+{block.start:04X} … U+{block.end:04X}",
         "*",
@@ -261,24 +248,34 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path) -> None:
 
 
 # --------------------------------------------------------------------
-# 6. Main Execution --------------------------------------------------
+# 6. Main Execution (With CLI) ---------------------------------------
 # --------------------------------------------------------------------
 
 def main() -> int:
     """
-    Main execution function. Iterates directly over the block generator.
+    Main execution function.
     """
-    out_dir = pathlib.Path("generated_headers")
+    parser = argparse.ArgumentParser(
+        description="Generate C header files containing Unicode code point definitions."
+    )
+    parser.add_argument(
+        '-o', '--output',
+        type=str,
+        default='generated_headers',
+        help='Specify the output directory for the generated headers (default: generated_headers)'
+    )
+    args = parser.parse_args()
+    
+    out_dir = pathlib.Path(args.output)
     
     try:
-        out_dir.mkdir(exist_ok=True)
+        out_dir.mkdir(exist_ok=True, parents=True) # Use parents=True for robustness
     except OSError as e:
         print(f"Error creating output directory '{out_dir}': {e}", file=sys.stderr)
         return 1
 
     print(f"Generating C headers for Unicode {UNICODE_VERSION}...")
 
-    # Iterate directly over the generator, saving memory and complexity
     for block in get_all_blocks():
         emit_header(block, out_dir)
 
