@@ -19,19 +19,18 @@ import argparse
 from typing import Dict, List, Set, Tuple, Optional, Iterator
 from collections import namedtuple
 
-# --- START OF MODIFIED IMPORTS ---
 # Import all standard functions from unicodedata2 for updated Unicode data.
 from unicodedata2 import name, category, unidata_version 
-# The function 'block' is non-standard and is now defined below using embedded data.
-# --- END OF MODIFIED IMPORTS ---
+# The function 'block' is non-standard and is defined below using embedded data.
+
 
 # --------------------------------------------------------------------
 # 0. Custom 'block' function and Block Data (Internalized from Blocks.txt)
 # --------------------------------------------------------------------
 
 # List of Unicode Blocks (Start Code, End Code, Name) internalized from Blocks.txt.
-# **FIXED SYNTAX: All hexadecimal numbers now correctly start with the 0x prefix.**
-_UNICODE_BLOCK_RANGES = [
+# All hexadecimal numbers correctly start with the 0x prefix.
+UNICODE_BLOCK_RANGES = [
     (0x0000, 0x007F, 'Basic Latin'),
     (0x0080, 0x00FF, 'Latin-1 Supplement'),
     (0x0100, 0x017F, 'Latin Extended-A'),
@@ -173,7 +172,7 @@ _UNICODE_BLOCK_RANGES = [
     (0xA9E0, 0xA9FF, 'Myanmar Extended-B'),
     (0xAA00, 0xAA5F, 'Cham'),
     (0xAA60, 0xAA7F, 'Myanmar Extended-A'),
-    (0xAA80, 0xAADF, 'Tai Viet'), # <--- CORRECTED LINE (was missing 0x)
+    (0xAA80, 0xAADF, 'Tai Viet'),
     (0xAAE0, 0xAAFF, 'Meetei Mayek Extensions'),
     (0xAB00, 0xAB2F, 'Ethiopic Extended-A'),
     (0xAB30, 0xAB6F, 'Latin Extended-E'),
@@ -383,15 +382,14 @@ _UNICODE_BLOCK_RANGES = [
 def block(char: str) -> str:
     """
     Custom implementation of the non-standard 'block' function, using the 
-    embedded block ranges from Blocks.txt. Returns 'No_Block' if no match is found.
+    embedded block ranges. Returns 'No_Block' if no match is found.
     """
     try:
         cp = ord(char)
     except TypeError:
-        # Should not happen if called correctly, but ensures safety
         return "No_Block"
     
-    for start, end, name in _UNICODE_BLOCK_RANGES:
+    for start, end, name in UNICODE_BLOCK_RANGES:
         if start <= cp <= end:
             return name
     
@@ -402,7 +400,10 @@ def block(char: str) -> str:
 # 1. Configuration & Named Tuple (Unified Definition) ----------------
 # --------------------------------------------------------------------
 
+# Version of Unicode data used by unicodedata2
 UNICODE_VERSION = unidata_version 
+# Version of Unicode Blocks data internalized from Blocks.txt
+UNICODE_BLOCK_VERSION = "17.0.0" 
 MAX_UNICODE_CP = 0x110000 
 UnicodeBlock = namedtuple('UnicodeBlock', ['name', 'start', 'end'])
 
@@ -618,7 +619,6 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
 # 5. Header Generation Logic (Updated to use MacroGenerator)
 # --------------------------------------------------------------------
 
-# Pass the generator instance to content generation
 def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generator: MacroGenerator) -> Optional[List[str]]:
     """
     Generates the content lines (#define macros) for a single C header block.
@@ -636,6 +636,7 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
             char_name = name(char)
             cat = category(char)
         except ValueError:
+            # Correctly skips unassigned and non-character code points
             continue
             
         glyph = printable_glyph(cp)
@@ -662,7 +663,6 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
                 comment_parts = [f"U+{cp1:04X} ({name1})", f"U+{cp2:04X} ({name2})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
-            # Use the generator object
             macro_name = macro_generator.generate_name(block_abbr, name1, strip_case=True)
             lines.append(
                 f"#define {macro_name:<40} 0x{cp1:04X} 0x{cp2:04X}  {comment}" 
@@ -678,7 +678,6 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
                 comment_parts = [f"U+{cp:04X} ({char_name})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
-            # Use the generator object
             macro_name = macro_generator.generate_name(block_abbr, char_name, strip_case=False)
             lines.append(
                 f"#define {macro_name:<40} 0x{cp:04X} 0  {comment}" 
@@ -690,17 +689,14 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
 def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: MacroGenerator) -> None:
     """
     Writes one header file for the block, providing console feedback.
-    (Updated to take macro_generator instance)
     """
     
     s_clean = re.sub(r"[^\w]", "_", block.name)
     file_basename = re.sub(r"_+", "_", s_clean).lower().strip("_")
     header_file = out_dir / f"{file_basename}.h"
     
-    # Use the generator object to get the abbreviation
     block_abbr = macro_generator.get_block_abbr(block.name)
     
-    # Pass the generator object to content generation
     content_lines = generate_header_content(block, block_abbr, macro_generator)
     
     if content_lines is None:
@@ -710,9 +706,10 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: Mac
     boilerplate = f"""\
 /* {header_file.name} – Unicode constants for U+{block.start:04X} … U+{block.end:04X}
 *
-* Generated by generate_unicode_headers.py (Unicode {UNICODE_VERSION})
+* Generated by generate_unicode_headers.py
+* Character Properties Data (Names/Categories): Unicode {UNICODE_VERSION} (via unicodedata2)
+* Block Range Data (Boundaries): Unicode {UNICODE_BLOCK_VERSION} (via internal list)
 *
-* Source data for blocks: Blocks.txt (Unicode 17.0.0)
 * See https://www.unicode.org/versions/latest/ for source data.
 */
 
@@ -756,7 +753,7 @@ def main() -> int:
     # Instantiate the MacroGenerator once in main()
     generator = MacroGenerator()
 
-    print(f"Generating C headers for Unicode {UNICODE_VERSION}...")
+    print(f"Generating C headers for Unicode (Properties: {UNICODE_VERSION} / Blocks: {UNICODE_BLOCK_VERSION})...")
 
     # Pass the generator instance to the emission function
     for u_block in get_all_blocks():
