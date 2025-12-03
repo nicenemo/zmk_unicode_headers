@@ -7,16 +7,16 @@
 
 #pragma once
 
-#define UC_SATELLITE                             0x1F6F0 0  // 🛰
-#define UC_ONCOMING_FIRE_ENGINE                  0x1F6F1 0  // 🛱
-#define UC_DIESEL_LOCOMOTIVE                     0x1F6F2 0  // 🛲
-#define UC_PASSENGER_SHIP                        0x1F6F3 0  // 🛳
-#define UC_SCOOTER                               0x1F6F4 0  // 🛴
-#define UC_MOTOR_SCOOTER                         0x1F6F5 0  // 🛵
-#define UC_CANOE                                 0x1F6F6 0  // 🛶
-#define UC_SLED                                  0x1F6F7 0  // 🛷
-#define UC_FLYING_SAUCER                         0x1F6F8 0  // 🛸
-#define UC_SKATEBOARD                            0x1F6F9 0  // 🛹
-#define UC_AUTO_RICKSHAW                         0x1F6FA 0  // 🛺
-#define UC_PICKUP_TRUCK                          0x1F6FB 0  // 🛻
-#define UC_ROLLER_SKATE                          0x1F6FC 0  // 🛼
+#define UC_TMS_SATELLITE                         0x1F6F0 0  // 🛰
+#define UC_TMS_ONCOMING_FIRE_ENGINE              0x1F6F1 0  // 🛱
+#define UC_TMS_DIESEL_LOCOMOTIVE                 0x1F6F2 0  // 🛲
+#define UC_TMS_PASSENGER_SHIP                    0x1F6F3 0  // 🛳
+#define UC_TMS_SCOOTER                           0x1F6F4 0  // 🛴
+#define UC_TMS_MOTOR_SCOOTER                     0x1F6F5 0  // 🛵
+#define UC_TMS_CANOE                             0x1F6F6 0  // 🛶
+#define UC_TMS_SLED                              0x1F6F7 0  // 🛷
+#define UC_TMS_FLYING_SAUCER                     0x1F6F8 0  // 🛸
+#define UC_TMS_SKATEBOARD                        0x1F6F9 0  // 🛹
+#define UC_TMS_AUTO_RICKSHAW                     0x1F6FA 0  // 🛺
+#define UC_TMS_PICKUP_TRUCK                      0x1F6FB 0  // 🛻
+#define UC_TMS_ROLLER_SKATE                      0x1F6FC 0  // 🛼

@@ -7,5 +7,5 @@
 
 #pragma once
 
-#define UC_GARAY_PLUS_SIGN                       0x10D8E 0  /* U+10D8E (GARAY PLUS SIGN) */
-#define UC_GARAY_MINUS_SIGN                      0x10D8F 0  /* U+10D8F (GARAY MINUS SIGN) */
+#define UC_UC_GARAY_PLUS_SIGN                    0x10D8E 0  /* U+10D8E (GARAY PLUS SIGN) */
+#define UC_UC_GARAY_MINUS_SIGN                   0x10D8F 0  /* U+10D8F (GARAY MINUS SIGN) */

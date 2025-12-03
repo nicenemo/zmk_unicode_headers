@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_WARANG_CITI_OM                        0x118FF 0  // 𑣿
+#define UC_UC_WARANG_CITI_OM                     0x118FF 0  // 𑣿

@@ -7,12 +7,12 @@
 
 #pragma once
 
-#define UC_AR_PEPET                              0x0897 0  /* U+0897 (ARABIC PEPET) */
-#define UC_AR_SMALL_HIGH_WORD_AL_JUZ             0x0898 0  // ࢘
-#define UC_AR_SMALL_LOW_WORD_ISHMAAM             0x0899 0  // ࢙
-#define UC_AR_SMALL_LOW_WORD_IMAALA              0x089A 0  // ࢚
-#define UC_AR_SMALL_LOW_WORD_TASHEEL             0x089B 0  // ࢛
-#define UC_AR_MADDA_WAAJIB                       0x089C 0  // ࢜
-#define UC_AR_SUPERSCRIPT_ALEF_MOKHASSAS         0x089D 0  // ࢝
-#define UC_AR_DOUBLED_MADDA                      0x089E 0  // ࢞
-#define UC_AR_HALF_MADDA_OVER_MADDA              0x089F 0  // ࢟
+#define UC_UC_PEPET                              0x0897 0  /* U+0897 (ARABIC PEPET) */
+#define UC_UC_SMALL_HIGH_WORD_AL_JUZ             0x0898 0  // ࢘
+#define UC_UC_SMALL_LOW_WORD_ISHMAAM             0x0899 0  // ࢙
+#define UC_UC_SMALL_LOW_WORD_IMAALA              0x089A 0  // ࢚
+#define UC_UC_SMALL_LOW_WORD_TASHEEL             0x089B 0  // ࢛
+#define UC_UC_MADDA_WAAJIB                       0x089C 0  // ࢜
+#define UC_UC_SUPERSCRIPT_ALEF_MOKHASSAS         0x089D 0  // ࢝
+#define UC_UC_DOUBLED_MADDA                      0x089E 0  // ࢞
+#define UC_UC_HALF_MADDA_OVER_MADDA              0x089F 0  // ࢟

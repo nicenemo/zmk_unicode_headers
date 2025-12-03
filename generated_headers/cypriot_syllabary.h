@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_CYPRIOT_SYLLABLE_ZO                   0x1083F 0  // 𐠿
+#define UC_UC_CYPRIOT_SYLLABLE_ZO                0x1083F 0  // 𐠿

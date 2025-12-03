@@ -7,5 +7,5 @@
 
 #pragma once
 
-#define UC_KATAKANA_LETTER_MINNAN_NASALIZED_TONE_7 0x1AFFD 0  // 𚿽
-#define UC_KATAKANA_LETTER_MINNAN_NASALIZED_TONE_8 0x1AFFE 0  // 𚿾
+#define UC_UC_MINNAN_NASALIZED_TONE_7            0x1AFFD 0  // 𚿽
+#define UC_UC_MINNAN_NASALIZED_TONE_8            0x1AFFE 0  // 𚿾

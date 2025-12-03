@@ -7,24 +7,24 @@
 
 #pragma once
 
-#define UC_TM_DIGIT_ZERO                         0x0BE6 0  // ௦
-#define UC_TM_DIGIT_ONE                          0x0BE7 0  // ௧
-#define UC_TM_DIGIT_TWO                          0x0BE8 0  // ௨
-#define UC_TM_DIGIT_THREE                        0x0BE9 0  // ௩
-#define UC_TM_DIGIT_FOUR                         0x0BEA 0  // ௪
-#define UC_TM_DIGIT_FIVE                         0x0BEB 0  // ௫
-#define UC_TM_DIGIT_SIX                          0x0BEC 0  // ௬
-#define UC_TM_DIGIT_SEVEN                        0x0BED 0  // ௭
-#define UC_TM_DIGIT_EIGHT                        0x0BEE 0  // ௮
-#define UC_TM_DIGIT_NINE                         0x0BEF 0  // ௯
-#define UC_TM_NUMBER_TEN                         0x0BF0 0  // ௰
-#define UC_TM_NUMBER_ONE_HUNDRED                 0x0BF1 0  // ௱
-#define UC_TM_NUMBER_ONE_THOUSAND                0x0BF2 0  // ௲
-#define UC_TM_DAY_SIGN                           0x0BF3 0  // ௳
-#define UC_TM_MONTH_SIGN                         0x0BF4 0  // ௴
-#define UC_TM_YEAR_SIGN                          0x0BF5 0  // ௵
-#define UC_TM_DEBIT_SIGN                         0x0BF6 0  // ௶
-#define UC_TM_CREDIT_SIGN                        0x0BF7 0  // ௷
-#define UC_TM_AS_ABOVE_SIGN                      0x0BF8 0  // ௸
-#define UC_TM_RUPEE_SIGN                         0x0BF9 0  // ௹
-#define UC_TM_NUMBER_SIGN                        0x0BFA 0  // ௺
+#define UC_UC_ZERO                               0x0BE6 0  // ௦
+#define UC_UC_ONE                                0x0BE7 0  // ௧
+#define UC_UC_TWO                                0x0BE8 0  // ௨
+#define UC_UC_THREE                              0x0BE9 0  // ௩
+#define UC_UC_FOUR                               0x0BEA 0  // ௪
+#define UC_UC_FIVE                               0x0BEB 0  // ௫
+#define UC_UC_SIX                                0x0BEC 0  // ௬
+#define UC_UC_SEVEN                              0x0BED 0  // ௭
+#define UC_UC_EIGHT                              0x0BEE 0  // ௮
+#define UC_UC_NINE                               0x0BEF 0  // ௯
+#define UC_UC_NUMBER_TEN                         0x0BF0 0  // ௰
+#define UC_UC_NUMBER_ONE_HUNDRED                 0x0BF1 0  // ௱
+#define UC_UC_NUMBER_ONE_THOUSAND                0x0BF2 0  // ௲
+#define UC_UC_DAY_SIGN                           0x0BF3 0  // ௳
+#define UC_UC_MONTH_SIGN                         0x0BF4 0  // ௴
+#define UC_UC_YEAR_SIGN                          0x0BF5 0  // ௵
+#define UC_UC_DEBIT_SIGN                         0x0BF6 0  // ௶
+#define UC_UC_CREDIT_SIGN                        0x0BF7 0  // ௷
+#define UC_UC_AS_ABOVE_SIGN                      0x0BF8 0  // ௸
+#define UC_UC_RUPEE_SIGN                         0x0BF9 0  // ௹
+#define UC_UC_NUMBER_SIGN                        0x0BFA 0  // ௺

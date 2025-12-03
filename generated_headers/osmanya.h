@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_OSMANYA_DIGIT_ZERO                    0x104A0 0  // 𐒠
-#define UC_OSMANYA_DIGIT_ONE                     0x104A1 0  // 𐒡
-#define UC_OSMANYA_DIGIT_TWO                     0x104A2 0  // 𐒢
-#define UC_OSMANYA_DIGIT_THREE                   0x104A3 0  // 𐒣
-#define UC_OSMANYA_DIGIT_FOUR                    0x104A4 0  // 𐒤
-#define UC_OSMANYA_DIGIT_FIVE                    0x104A5 0  // 𐒥
-#define UC_OSMANYA_DIGIT_SIX                     0x104A6 0  // 𐒦
-#define UC_OSMANYA_DIGIT_SEVEN                   0x104A7 0  // 𐒧
-#define UC_OSMANYA_DIGIT_EIGHT                   0x104A8 0  // 𐒨
-#define UC_OSMANYA_DIGIT_NINE                    0x104A9 0  // 𐒩
+#define UC_UC_OSMANYA_ZERO                       0x104A0 0  // 𐒠
+#define UC_UC_OSMANYA_ONE                        0x104A1 0  // 𐒡
+#define UC_UC_OSMANYA_TWO                        0x104A2 0  // 𐒢
+#define UC_UC_OSMANYA_THREE                      0x104A3 0  // 𐒣
+#define UC_UC_OSMANYA_FOUR                       0x104A4 0  // 𐒤
+#define UC_UC_OSMANYA_FIVE                       0x104A5 0  // 𐒥
+#define UC_UC_OSMANYA_SIX                        0x104A6 0  // 𐒦
+#define UC_UC_OSMANYA_SEVEN                      0x104A7 0  // 𐒧
+#define UC_UC_OSMANYA_EIGHT                      0x104A8 0  // 𐒨
+#define UC_UC_OSMANYA_NINE                       0x104A9 0  // 𐒩

@@ -7,10 +7,10 @@
 
 #pragma once
 
-#define UC_PSALTER_PAHLAVI_NUMBER_ONE            0x10BA9 0  // 𐮩
-#define UC_PSALTER_PAHLAVI_NUMBER_TWO            0x10BAA 0  // 𐮪
-#define UC_PSALTER_PAHLAVI_NUMBER_THREE          0x10BAB 0  // 𐮫
-#define UC_PSALTER_PAHLAVI_NUMBER_FOUR           0x10BAC 0  // 𐮬
-#define UC_PSALTER_PAHLAVI_NUMBER_TEN            0x10BAD 0  // 𐮭
-#define UC_PSALTER_PAHLAVI_NUMBER_TWENTY         0x10BAE 0  // 𐮮
-#define UC_PSALTER_PAHLAVI_NUMBER_ONE_HUNDRED    0x10BAF 0  // 𐮯
+#define UC_UC_PSALTER_PAHLAVI_NUMBER_ONE         0x10BA9 0  // 𐮩
+#define UC_UC_PSALTER_PAHLAVI_NUMBER_TWO         0x10BAA 0  // 𐮪
+#define UC_UC_PSALTER_PAHLAVI_NUMBER_THREE       0x10BAB 0  // 𐮫
+#define UC_UC_PSALTER_PAHLAVI_NUMBER_FOUR        0x10BAC 0  // 𐮬
+#define UC_UC_PSALTER_PAHLAVI_NUMBER_TEN         0x10BAD 0  // 𐮭
+#define UC_UC_PSALTER_PAHLAVI_NUMBER_TWENTY      0x10BAE 0  // 𐮮
+#define UC_UC_PSALTER_PAHLAVI_NUMBER_ONE_HUNDRED 0x10BAF 0  // 𐮯

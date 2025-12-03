@@ -7,15 +7,15 @@
 
 #pragma once
 
-#define UC_SAURASHTRA_DANDA                      0xA8CE 0  // ꣎
-#define UC_SAURASHTRA_DOUBLE_DANDA               0xA8CF 0  // ꣏
-#define UC_SAURASHTRA_DIGIT_ZERO                 0xA8D0 0  // ꣐
-#define UC_SAURASHTRA_DIGIT_ONE                  0xA8D1 0  // ꣑
-#define UC_SAURASHTRA_DIGIT_TWO                  0xA8D2 0  // ꣒
-#define UC_SAURASHTRA_DIGIT_THREE                0xA8D3 0  // ꣓
-#define UC_SAURASHTRA_DIGIT_FOUR                 0xA8D4 0  // ꣔
-#define UC_SAURASHTRA_DIGIT_FIVE                 0xA8D5 0  // ꣕
-#define UC_SAURASHTRA_DIGIT_SIX                  0xA8D6 0  // ꣖
-#define UC_SAURASHTRA_DIGIT_SEVEN                0xA8D7 0  // ꣗
-#define UC_SAURASHTRA_DIGIT_EIGHT                0xA8D8 0  // ꣘
-#define UC_SAURASHTRA_DIGIT_NINE                 0xA8D9 0  // ꣙
+#define UC_UC_SAURASHTRA_DANDA                   0xA8CE 0  // ꣎
+#define UC_UC_SAURASHTRA_DOUBLE_DANDA            0xA8CF 0  // ꣏
+#define UC_UC_SAURASHTRA_ZERO                    0xA8D0 0  // ꣐
+#define UC_UC_SAURASHTRA_ONE                     0xA8D1 0  // ꣑
+#define UC_UC_SAURASHTRA_TWO                     0xA8D2 0  // ꣒
+#define UC_UC_SAURASHTRA_THREE                   0xA8D3 0  // ꣓
+#define UC_UC_SAURASHTRA_FOUR                    0xA8D4 0  // ꣔
+#define UC_UC_SAURASHTRA_FIVE                    0xA8D5 0  // ꣕
+#define UC_UC_SAURASHTRA_SIX                     0xA8D6 0  // ꣖
+#define UC_UC_SAURASHTRA_SEVEN                   0xA8D7 0  // ꣗
+#define UC_UC_SAURASHTRA_EIGHT                   0xA8D8 0  // ꣘
+#define UC_UC_SAURASHTRA_NINE                    0xA8D9 0  // ꣙

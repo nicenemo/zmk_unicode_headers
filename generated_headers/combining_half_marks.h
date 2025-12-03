@@ -7,19 +7,19 @@
 
 #pragma once
 
-#define UC_CM_LIGATURE_LEFT_HALF                 0xFE20 0  // ︠
-#define UC_CM_LIGATURE_RIGHT_HALF                0xFE21 0  // ︡
-#define UC_CM_DOUBLE_TILDE_LEFT_HALF             0xFE22 0  // ︢
-#define UC_CM_DOUBLE_TILDE_RIGHT_HALF            0xFE23 0  // ︣
-#define UC_CM_MACRON_LEFT_HALF                   0xFE24 0  // ︤
-#define UC_CM_MACRON_RIGHT_HALF                  0xFE25 0  // ︥
-#define UC_CM_CONJOINING_MACRON                  0xFE26 0  // ︦
-#define UC_CM_LIGATURE_LEFT_HALF_BELOW           0xFE27 0  // ︧
-#define UC_CM_LIGATURE_RIGHT_HALF_BELOW          0xFE28 0  // ︨
-#define UC_CM_TILDE_LEFT_HALF_BELOW              0xFE29 0  // ︩
-#define UC_CM_TILDE_RIGHT_HALF_BELOW             0xFE2A 0  // ︪
-#define UC_CM_MACRON_LEFT_HALF_BELOW             0xFE2B 0  // ︫
-#define UC_CM_MACRON_RIGHT_HALF_BELOW            0xFE2C 0  // ︬
-#define UC_CM_CONJOINING_MACRON_BELOW            0xFE2D 0  // ︭
-#define UC_CM_CYRILLIC_TITLO_LEFT_HALF           0xFE2E 0  // ︮
-#define UC_CM_CYRILLIC_TITLO_RIGHT_HALF          0xFE2F 0  // ︯
+#define UC_UC_COMBINING_LIGATURE_LEFT_HALF       0xFE20 0  // ︠
+#define UC_UC_COMBINING_LIGATURE_RIGHT_HALF      0xFE21 0  // ︡
+#define UC_UC_COMBINING_DOUBLE_TILDE_LEFT_HALF   0xFE22 0  // ︢
+#define UC_UC_COMBINING_DOUBLE_TILDE_RIGHT_HALF  0xFE23 0  // ︣
+#define UC_UC_COMBINING_MACRON_LEFT_HALF         0xFE24 0  // ︤
+#define UC_UC_COMBINING_MACRON_RIGHT_HALF        0xFE25 0  // ︥
+#define UC_UC_COMBINING_CONJOINING_MACRON        0xFE26 0  // ︦
+#define UC_UC_COMBINING_LIGATURE_LEFT_HALF_BELOW 0xFE27 0  // ︧
+#define UC_UC_COMBINING_LIGATURE_RIGHT_HALF_BELOW 0xFE28 0  // ︨
+#define UC_UC_COMBINING_TILDE_LEFT_HALF_BELOW    0xFE29 0  // ︩
+#define UC_UC_COMBINING_TILDE_RIGHT_HALF_BELOW   0xFE2A 0  // ︪
+#define UC_UC_COMBINING_MACRON_LEFT_HALF_BELOW   0xFE2B 0  // ︫
+#define UC_UC_COMBINING_MACRON_RIGHT_HALF_BELOW  0xFE2C 0  // ︬
+#define UC_UC_COMBINING_CONJOINING_MACRON_BELOW  0xFE2D 0  // ︭
+#define UC_UC_COMBINING_TITLO_LEFT_HALF          0xFE2E 0  // ︮
+#define UC_UC_COMBINING_TITLO_RIGHT_HALF         0xFE2F 0  // ︯

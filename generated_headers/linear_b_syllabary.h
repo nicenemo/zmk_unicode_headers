@@ -7,17 +7,17 @@
 
 #pragma once
 
-#define UC_LINEAR_B_SYMBOL_B018                  0x10050 0  // 𐁐
-#define UC_LINEAR_B_SYMBOL_B019                  0x10051 0  // 𐁑
-#define UC_LINEAR_B_SYMBOL_B022                  0x10052 0  // 𐁒
-#define UC_LINEAR_B_SYMBOL_B034                  0x10053 0  // 𐁓
-#define UC_LINEAR_B_SYMBOL_B047                  0x10054 0  // 𐁔
-#define UC_LINEAR_B_SYMBOL_B049                  0x10055 0  // 𐁕
-#define UC_LINEAR_B_SYMBOL_B056                  0x10056 0  // 𐁖
-#define UC_LINEAR_B_SYMBOL_B063                  0x10057 0  // 𐁗
-#define UC_LINEAR_B_SYMBOL_B064                  0x10058 0  // 𐁘
-#define UC_LINEAR_B_SYMBOL_B079                  0x10059 0  // 𐁙
-#define UC_LINEAR_B_SYMBOL_B082                  0x1005A 0  // 𐁚
-#define UC_LINEAR_B_SYMBOL_B083                  0x1005B 0  // 𐁛
-#define UC_LINEAR_B_SYMBOL_B086                  0x1005C 0  // 𐁜
-#define UC_LINEAR_B_SYMBOL_B089                  0x1005D 0  // 𐁝
+#define UC_UC_LINEAR_B_B018                      0x10050 0  // 𐁐
+#define UC_UC_LINEAR_B_B019                      0x10051 0  // 𐁑
+#define UC_UC_LINEAR_B_B022                      0x10052 0  // 𐁒
+#define UC_UC_LINEAR_B_B034                      0x10053 0  // 𐁓
+#define UC_UC_LINEAR_B_B047                      0x10054 0  // 𐁔
+#define UC_UC_LINEAR_B_B049                      0x10055 0  // 𐁕
+#define UC_UC_LINEAR_B_B056                      0x10056 0  // 𐁖
+#define UC_UC_LINEAR_B_B063                      0x10057 0  // 𐁗
+#define UC_UC_LINEAR_B_B064                      0x10058 0  // 𐁘
+#define UC_UC_LINEAR_B_B079                      0x10059 0  // 𐁙
+#define UC_UC_LINEAR_B_B082                      0x1005A 0  // 𐁚
+#define UC_UC_LINEAR_B_B083                      0x1005B 0  // 𐁛
+#define UC_UC_LINEAR_B_B086                      0x1005C 0  // 𐁜
+#define UC_UC_LINEAR_B_B089                      0x1005D 0  // 𐁝

@@ -7,5 +7,5 @@
 
 #pragma once
 
-#define UC_MRO_DANDA                             0x16A6E 0  // 𖩮
-#define UC_MRO_DOUBLE_DANDA                      0x16A6F 0  // 𖩯
+#define UC_UC_MRO_DANDA                          0x16A6E 0  // 𖩮
+#define UC_UC_MRO_DOUBLE_DANDA                   0x16A6F 0  // 𖩯

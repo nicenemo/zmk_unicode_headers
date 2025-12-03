@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_KM_SYMBOL_LEK_ATTAK_SON               0x17F0 0  // ៰
-#define UC_KM_SYMBOL_LEK_ATTAK_MUOY              0x17F1 0  // ៱
-#define UC_KM_SYMBOL_LEK_ATTAK_PII               0x17F2 0  // ៲
-#define UC_KM_SYMBOL_LEK_ATTAK_BEI               0x17F3 0  // ៳
-#define UC_KM_SYMBOL_LEK_ATTAK_BUON              0x17F4 0  // ៴
-#define UC_KM_SYMBOL_LEK_ATTAK_PRAM              0x17F5 0  // ៵
-#define UC_KM_SYMBOL_LEK_ATTAK_PRAM_MUOY         0x17F6 0  // ៶
-#define UC_KM_SYMBOL_LEK_ATTAK_PRAM_PII          0x17F7 0  // ៷
-#define UC_KM_SYMBOL_LEK_ATTAK_PRAM_BEI          0x17F8 0  // ៸
-#define UC_KM_SYMBOL_LEK_ATTAK_PRAM_BUON         0x17F9 0  // ៹
+#define UC_UC_KHMER_LEK_ATTAK_SON                0x17F0 0  // ៰
+#define UC_UC_KHMER_LEK_ATTAK_MUOY               0x17F1 0  // ៱
+#define UC_UC_KHMER_LEK_ATTAK_PII                0x17F2 0  // ៲
+#define UC_UC_KHMER_LEK_ATTAK_BEI                0x17F3 0  // ៳
+#define UC_UC_KHMER_LEK_ATTAK_BUON               0x17F4 0  // ៴
+#define UC_UC_KHMER_LEK_ATTAK_PRAM               0x17F5 0  // ៵
+#define UC_UC_KHMER_LEK_ATTAK_PRAM_MUOY          0x17F6 0  // ៶
+#define UC_UC_KHMER_LEK_ATTAK_PRAM_PII           0x17F7 0  // ៷
+#define UC_UC_KHMER_LEK_ATTAK_PRAM_BEI           0x17F8 0  // ៸
+#define UC_UC_KHMER_LEK_ATTAK_PRAM_BUON          0x17F9 0  // ៹

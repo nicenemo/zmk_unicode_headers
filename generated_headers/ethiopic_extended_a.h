@@ -7,10 +7,10 @@
 
 #pragma once
 
-#define UC_ETHIOPIC_SYLLABLE_BBA                 0xAB28 0  // ꬨ
-#define UC_ETHIOPIC_SYLLABLE_BBU                 0xAB29 0  // ꬩ
-#define UC_ETHIOPIC_SYLLABLE_BBI                 0xAB2A 0  // ꬪ
-#define UC_ETHIOPIC_SYLLABLE_BBAA                0xAB2B 0  // ꬫ
-#define UC_ETHIOPIC_SYLLABLE_BBEE                0xAB2C 0  // ꬬ
-#define UC_ETHIOPIC_SYLLABLE_BBE                 0xAB2D 0  // ꬭ
-#define UC_ETHIOPIC_SYLLABLE_BBO                 0xAB2E 0  // ꬮ
+#define UC_UC_ETHIOPIC_SYLLABLE_BBA              0xAB28 0  // ꬨ
+#define UC_UC_ETHIOPIC_SYLLABLE_BBU              0xAB29 0  // ꬩ
+#define UC_UC_ETHIOPIC_SYLLABLE_BBI              0xAB2A 0  // ꬪ
+#define UC_UC_ETHIOPIC_SYLLABLE_BBAA             0xAB2B 0  // ꬫ
+#define UC_UC_ETHIOPIC_SYLLABLE_BBEE             0xAB2C 0  // ꬬ
+#define UC_UC_ETHIOPIC_SYLLABLE_BBE              0xAB2D 0  // ꬭ
+#define UC_UC_ETHIOPIC_SYLLABLE_BBO              0xAB2E 0  // ꬮ

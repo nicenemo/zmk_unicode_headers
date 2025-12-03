@@ -7,5 +7,5 @@
 
 #pragma once
 
-#define UC_JAVANESE_PADA_TIRTA_TUMETES           0xA9DE 0  // ꧞
-#define UC_JAVANESE_PADA_ISEN_ISEN               0xA9DF 0  // ꧟
+#define UC_UC_JAVANESE_PADA_TIRTA_TUMETES        0xA9DE 0  // ꧞
+#define UC_UC_JAVANESE_PADA_ISEN_ISEN            0xA9DF 0  // ꧟

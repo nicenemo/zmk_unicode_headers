@@ -7,5 +7,5 @@
 
 #pragma once
 
-#define UC_BUGINESE_PALLAWA                      0x1A1E 0  // ᨞
-#define UC_BUGINESE_END_OF_SECTION               0x1A1F 0  // ᨟
+#define UC_UC_BUGINESE_PALLAWA                   0x1A1E 0  // ᨞
+#define UC_UC_BUGINESE_END_OF_SECTION            0x1A1F 0  // ᨟

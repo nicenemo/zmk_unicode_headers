@@ -7,22 +7,22 @@
 
 #pragma once
 
-#define UC_PAHAWH_HMONG_CLAN_SIGN_TSHEEJ         0x16B7D 0  // 𖭽
-#define UC_PAHAWH_HMONG_CLAN_SIGN_YEEG           0x16B7E 0  // 𖭾
-#define UC_PAHAWH_HMONG_CLAN_SIGN_LIS            0x16B7F 0  // 𖭿
-#define UC_PAHAWH_HMONG_CLAN_SIGN_LAUJ           0x16B80 0  // 𖮀
-#define UC_PAHAWH_HMONG_CLAN_SIGN_XYOOJ          0x16B81 0  // 𖮁
-#define UC_PAHAWH_HMONG_CLAN_SIGN_KOO            0x16B82 0  // 𖮂
-#define UC_PAHAWH_HMONG_CLAN_SIGN_HAWJ           0x16B83 0  // 𖮃
-#define UC_PAHAWH_HMONG_CLAN_SIGN_MUAS           0x16B84 0  // 𖮄
-#define UC_PAHAWH_HMONG_CLAN_SIGN_THOJ           0x16B85 0  // 𖮅
-#define UC_PAHAWH_HMONG_CLAN_SIGN_TSAB           0x16B86 0  // 𖮆
-#define UC_PAHAWH_HMONG_CLAN_SIGN_PHAB           0x16B87 0  // 𖮇
-#define UC_PAHAWH_HMONG_CLAN_SIGN_KHAB           0x16B88 0  // 𖮈
-#define UC_PAHAWH_HMONG_CLAN_SIGN_HAM            0x16B89 0  // 𖮉
-#define UC_PAHAWH_HMONG_CLAN_SIGN_VAJ            0x16B8A 0  // 𖮊
-#define UC_PAHAWH_HMONG_CLAN_SIGN_FAJ            0x16B8B 0  // 𖮋
-#define UC_PAHAWH_HMONG_CLAN_SIGN_YAJ            0x16B8C 0  // 𖮌
-#define UC_PAHAWH_HMONG_CLAN_SIGN_TSWB           0x16B8D 0  // 𖮍
-#define UC_PAHAWH_HMONG_CLAN_SIGN_KWM            0x16B8E 0  // 𖮎
-#define UC_PAHAWH_HMONG_CLAN_SIGN_VWJ            0x16B8F 0  // 𖮏
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_TSHEEJ      0x16B7D 0  // 𖭽
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_YEEG        0x16B7E 0  // 𖭾
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_LIS         0x16B7F 0  // 𖭿
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_LAUJ        0x16B80 0  // 𖮀
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_XYOOJ       0x16B81 0  // 𖮁
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_KOO         0x16B82 0  // 𖮂
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_HAWJ        0x16B83 0  // 𖮃
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_MUAS        0x16B84 0  // 𖮄
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_THOJ        0x16B85 0  // 𖮅
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_TSAB        0x16B86 0  // 𖮆
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_PHAB        0x16B87 0  // 𖮇
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_KHAB        0x16B88 0  // 𖮈
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_HAM         0x16B89 0  // 𖮉
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_VAJ         0x16B8A 0  // 𖮊
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_FAJ         0x16B8B 0  // 𖮋
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_YAJ         0x16B8C 0  // 𖮌
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_TSWB        0x16B8D 0  // 𖮍
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_KWM         0x16B8E 0  // 𖮎
+#define UC_UC_PAHAWH_HMONG_CLAN_SIGN_VWJ         0x16B8F 0  // 𖮏

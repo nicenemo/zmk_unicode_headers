@@ -7,15 +7,15 @@
 
 #pragma once
 
-#define UC_LIMBU_EXCLAMATION_MARK                0x1944 0  // ᥄
-#define UC_LIMBU_QUESTION_MARK                   0x1945 0  // ᥅
-#define UC_LIMBU_DIGIT_ZERO                      0x1946 0  // ᥆
-#define UC_LIMBU_DIGIT_ONE                       0x1947 0  // ᥇
-#define UC_LIMBU_DIGIT_TWO                       0x1948 0  // ᥈
-#define UC_LIMBU_DIGIT_THREE                     0x1949 0  // ᥉
-#define UC_LIMBU_DIGIT_FOUR                      0x194A 0  // ᥊
-#define UC_LIMBU_DIGIT_FIVE                      0x194B 0  // ᥋
-#define UC_LIMBU_DIGIT_SIX                       0x194C 0  // ᥌
-#define UC_LIMBU_DIGIT_SEVEN                     0x194D 0  // ᥍
-#define UC_LIMBU_DIGIT_EIGHT                     0x194E 0  // ᥎
-#define UC_LIMBU_DIGIT_NINE                      0x194F 0  // ᥏
+#define UC_UC_LIMBU_EXCLAMATION_MARK             0x1944 0  // ᥄
+#define UC_UC_LIMBU_QUESTION_MARK                0x1945 0  // ᥅
+#define UC_UC_LIMBU_ZERO                         0x1946 0  // ᥆
+#define UC_UC_LIMBU_ONE                          0x1947 0  // ᥇
+#define UC_UC_LIMBU_TWO                          0x1948 0  // ᥈
+#define UC_UC_LIMBU_THREE                        0x1949 0  // ᥉
+#define UC_UC_LIMBU_FOUR                         0x194A 0  // ᥊
+#define UC_UC_LIMBU_FIVE                         0x194B 0  // ᥋
+#define UC_UC_LIMBU_SIX                          0x194C 0  // ᥌
+#define UC_UC_LIMBU_SEVEN                        0x194D 0  // ᥍
+#define UC_UC_LIMBU_EIGHT                        0x194E 0  // ᥎
+#define UC_UC_LIMBU_NINE                         0x194F 0  // ᥏

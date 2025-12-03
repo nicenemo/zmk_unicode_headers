@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_SORA_SOMPENG_DIGIT_ZERO               0x110F0 0  // 𑃰
-#define UC_SORA_SOMPENG_DIGIT_ONE                0x110F1 0  // 𑃱
-#define UC_SORA_SOMPENG_DIGIT_TWO                0x110F2 0  // 𑃲
-#define UC_SORA_SOMPENG_DIGIT_THREE              0x110F3 0  // 𑃳
-#define UC_SORA_SOMPENG_DIGIT_FOUR               0x110F4 0  // 𑃴
-#define UC_SORA_SOMPENG_DIGIT_FIVE               0x110F5 0  // 𑃵
-#define UC_SORA_SOMPENG_DIGIT_SIX                0x110F6 0  // 𑃶
-#define UC_SORA_SOMPENG_DIGIT_SEVEN              0x110F7 0  // 𑃷
-#define UC_SORA_SOMPENG_DIGIT_EIGHT              0x110F8 0  // 𑃸
-#define UC_SORA_SOMPENG_DIGIT_NINE               0x110F9 0  // 𑃹
+#define UC_UC_SORA_SOMPENG_ZERO                  0x110F0 0  // 𑃰
+#define UC_UC_SORA_SOMPENG_ONE                   0x110F1 0  // 𑃱
+#define UC_UC_SORA_SOMPENG_TWO                   0x110F2 0  // 𑃲
+#define UC_UC_SORA_SOMPENG_THREE                 0x110F3 0  // 𑃳
+#define UC_UC_SORA_SOMPENG_FOUR                  0x110F4 0  // 𑃴
+#define UC_UC_SORA_SOMPENG_FIVE                  0x110F5 0  // 𑃵
+#define UC_UC_SORA_SOMPENG_SIX                   0x110F6 0  // 𑃶
+#define UC_UC_SORA_SOMPENG_SEVEN                 0x110F7 0  // 𑃷
+#define UC_UC_SORA_SOMPENG_EIGHT                 0x110F8 0  // 𑃸
+#define UC_UC_SORA_SOMPENG_NINE                  0x110F9 0  // 𑃹

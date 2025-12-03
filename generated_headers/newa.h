@@ -7,8 +7,8 @@
 
 #pragma once
 
-#define UC_NEWA_INSERTION_SIGN                   0x1145D 0  // 𑑝
-#define UC_NEWA_SANDHI_MARK                      0x1145E 0  // 𑑞
-#define UC_NEWA_LETTER_VEDIC_ANUSVARA            0x1145F 0  // 𑑟
-#define UC_NEWA_SIGN_JIHVAMULIYA                 0x11460 0  // 𑑠
-#define UC_NEWA_SIGN_UPADHMANIYA                 0x11461 0  // 𑑡
+#define UC_UC_NEWA_INSERTION_SIGN                0x1145D 0  // 𑑝
+#define UC_UC_NEWA_SANDHI_MARK                   0x1145E 0  // 𑑞
+#define UC_UC_NEWA_VEDIC_ANUSVARA                0x1145F 0  // 𑑟
+#define UC_UC_NEWA_SIGN_JIHVAMULIYA              0x11460 0  // 𑑠
+#define UC_UC_NEWA_SIGN_UPADHMANIYA              0x11461 0  // 𑑡

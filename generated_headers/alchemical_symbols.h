@@ -7,8 +7,8 @@
 
 #pragma once
 
-#define UC_HAUMEA                                0x1F77B 0  // 🝻
-#define UC_MAKEMAKE                              0x1F77C 0  // 🝼
-#define UC_GONGGONG                              0x1F77D 0  // 🝽
-#define UC_QUAOAR                                0x1F77E 0  // 🝾
-#define UC_ORCUS                                 0x1F77F 0  // 🝿
+#define UC_UC_HAUMEA                             0x1F77B 0  // 🝻
+#define UC_UC_MAKEMAKE                           0x1F77C 0  // 🝼
+#define UC_UC_GONGGONG                           0x1F77D 0  // 🝽
+#define UC_UC_QUAOAR                             0x1F77E 0  // 🝾
+#define UC_UC_ORCUS                              0x1F77F 0  // 🝿

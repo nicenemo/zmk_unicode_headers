@@ -7,9 +7,9 @@
 
 #pragma once
 
-#define UC_BASSA_VAH_COMBINING_HIGH_TONE         0x16AF0 0  // 𖫰
-#define UC_BASSA_VAH_COMBINING_LOW_TONE          0x16AF1 0  // 𖫱
-#define UC_BASSA_VAH_COMBINING_MID_TONE          0x16AF2 0  // 𖫲
-#define UC_BASSA_VAH_COMBINING_LOW_MID_TONE      0x16AF3 0  // 𖫳
-#define UC_BASSA_VAH_COMBINING_HIGH_LOW_TONE     0x16AF4 0  // 𖫴
-#define UC_BASSA_VAH_FULL_STOP                   0x16AF5 0  // 𖫵
+#define UC_UC_BASSA_VAH_COMBINING_HIGH_TONE      0x16AF0 0  // 𖫰
+#define UC_UC_BASSA_VAH_COMBINING_LOW_TONE       0x16AF1 0  // 𖫱
+#define UC_UC_BASSA_VAH_COMBINING_MID_TONE       0x16AF2 0  // 𖫲
+#define UC_UC_BASSA_VAH_COMBINING_LOW_MID_TONE   0x16AF3 0  // 𖫳
+#define UC_UC_BASSA_VAH_COMBINING_HIGH_LOW_TONE  0x16AF4 0  // 𖫴
+#define UC_UC_BASSA_VAH_FULL_STOP                0x16AF5 0  // 𖫵

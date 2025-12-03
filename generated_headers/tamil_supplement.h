@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_TM_PUNCTUATION_END_OF_TEXT            0x11FFF 0  // 𑿿
+#define UC_UC_PUNCTUATION_END_OF_TEXT            0x11FFF 0  // 𑿿

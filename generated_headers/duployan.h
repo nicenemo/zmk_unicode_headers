@@ -7,7 +7,7 @@
 
 #pragma once
 
-#define UC_DUPLOYAN_SIGN_O_WITH_CROSS            0x1BC9C 0  // 𛲜
-#define UC_DUPLOYAN_THICK_LETTER_SELECTOR        0x1BC9D 0  // 𛲝
-#define UC_DUPLOYAN_DOUBLE_MARK                  0x1BC9E 0  // 𛲞
-#define UC_DUPLOYAN_PUNCTUATION_CHINOOK_FULL_STOP 0x1BC9F 0  // 𛲟
+#define UC_UC_DUPLOYAN_SIGN_O_WITH_CROSS         0x1BC9C 0  // 𛲜
+#define UC_UC_DUPLOYAN_THICK                     0x1BC9D 0  // 𛲝
+#define UC_UC_DUPLOYAN_DOUBLE_MARK               0x1BC9E 0  // 𛲞
+#define UC_UC_DUPLOYAN_PUNCTUATION_CHINOOK_FULL_STOP 0x1BC9F 0  // 𛲟

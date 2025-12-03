@@ -7,7 +7,7 @@
 
 #pragma once
 
-#define UC_AR_COMBINING_ALEF_OVERLAY             0x10EFC 0  /* U+10EFC (ARABIC COMBINING ALEF OVERLAY) */
-#define UC_AR_SMALL_LOW_WORD_SAKTA               0x10EFD 0  // 𐻽
-#define UC_AR_SMALL_LOW_WORD_QASR                0x10EFE 0  // 𐻾
-#define UC_AR_SMALL_LOW_WORD_MADDA               0x10EFF 0  // 𐻿
+#define UC_UC_COMBINING_ALEF_OVERLAY             0x10EFC 0  /* U+10EFC (ARABIC COMBINING ALEF OVERLAY) */
+#define UC_UC_SMALL_LOW_WORD_SAKTA               0x10EFD 0  // 𐻽
+#define UC_UC_SMALL_LOW_WORD_QASR                0x10EFE 0  // 𐻾
+#define UC_UC_SMALL_LOW_WORD_MADDA               0x10EFF 0  // 𐻿

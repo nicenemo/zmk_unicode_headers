@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_MEETEI_MAYEK_DIGIT_ZERO               0xABF0 0  // ꯰
-#define UC_MEETEI_MAYEK_DIGIT_ONE                0xABF1 0  // ꯱
-#define UC_MEETEI_MAYEK_DIGIT_TWO                0xABF2 0  // ꯲
-#define UC_MEETEI_MAYEK_DIGIT_THREE              0xABF3 0  // ꯳
-#define UC_MEETEI_MAYEK_DIGIT_FOUR               0xABF4 0  // ꯴
-#define UC_MEETEI_MAYEK_DIGIT_FIVE               0xABF5 0  // ꯵
-#define UC_MEETEI_MAYEK_DIGIT_SIX                0xABF6 0  // ꯶
-#define UC_MEETEI_MAYEK_DIGIT_SEVEN              0xABF7 0  // ꯷
-#define UC_MEETEI_MAYEK_DIGIT_EIGHT              0xABF8 0  // ꯸
-#define UC_MEETEI_MAYEK_DIGIT_NINE               0xABF9 0  // ꯹
+#define UC_UC_MEETEI_MAYEK_ZERO                  0xABF0 0  // ꯰
+#define UC_UC_MEETEI_MAYEK_ONE                   0xABF1 0  // ꯱
+#define UC_UC_MEETEI_MAYEK_TWO                   0xABF2 0  // ꯲
+#define UC_UC_MEETEI_MAYEK_THREE                 0xABF3 0  // ꯳
+#define UC_UC_MEETEI_MAYEK_FOUR                  0xABF4 0  // ꯴
+#define UC_UC_MEETEI_MAYEK_FIVE                  0xABF5 0  // ꯵
+#define UC_UC_MEETEI_MAYEK_SIX                   0xABF6 0  // ꯶
+#define UC_UC_MEETEI_MAYEK_SEVEN                 0xABF7 0  // ꯷
+#define UC_UC_MEETEI_MAYEK_EIGHT                 0xABF8 0  // ꯸
+#define UC_UC_MEETEI_MAYEK_NINE                  0xABF9 0  // ꯹

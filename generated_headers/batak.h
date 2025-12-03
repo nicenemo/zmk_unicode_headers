@@ -7,7 +7,7 @@
 
 #pragma once
 
-#define UC_BATAK_SYMBOL_BINDU_NA_METEK           0x1BFC 0  // ᯼
-#define UC_BATAK_SYMBOL_BINDU_PINARBORAS         0x1BFD 0  // ᯽
-#define UC_BATAK_SYMBOL_BINDU_JUDUL              0x1BFE 0  // ᯾
-#define UC_BATAK_SYMBOL_BINDU_PANGOLAT           0x1BFF 0  // ᯿
+#define UC_UC_BATAK_BINDU_NA_METEK               0x1BFC 0  // ᯼
+#define UC_UC_BATAK_BINDU_PINARBORAS             0x1BFD 0  // ᯽
+#define UC_UC_BATAK_BINDU_JUDUL                  0x1BFE 0  // ᯾
+#define UC_UC_BATAK_BINDU_PANGOLAT               0x1BFF 0  // ᯿

@@ -7,8 +7,8 @@
 
 #pragma once
 
-#define UC_HATRAN_NUMBER_ONE                     0x108FB 0  // 𐣻
-#define UC_HATRAN_NUMBER_FIVE                    0x108FC 0  // 𐣼
-#define UC_HATRAN_NUMBER_TEN                     0x108FD 0  // 𐣽
-#define UC_HATRAN_NUMBER_TWENTY                  0x108FE 0  // 𐣾
-#define UC_HATRAN_NUMBER_ONE_HUNDRED             0x108FF 0  // 𐣿
+#define UC_UC_HATRAN_NUMBER_ONE                  0x108FB 0  // 𐣻
+#define UC_UC_HATRAN_NUMBER_FIVE                 0x108FC 0  // 𐣼
+#define UC_UC_HATRAN_NUMBER_TEN                  0x108FD 0  // 𐣽
+#define UC_UC_HATRAN_NUMBER_TWENTY               0x108FE 0  // 𐣾
+#define UC_UC_HATRAN_NUMBER_ONE_HUNDRED          0x108FF 0  // 𐣿

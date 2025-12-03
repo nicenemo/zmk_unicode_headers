@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_ZERO_WIDTH_NO_BREAK_SPACE             0xFEFF 0  /* U+FEFF (ZERO WIDTH NO-BREAK SPACE) */
+#define UC_UC_ZERO_WIDTH_NO_BREAK_SPACE          0xFEFF 0  /* U+FEFF (ZERO WIDTH NO-BREAK SPACE) */

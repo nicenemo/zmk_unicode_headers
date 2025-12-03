@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_CAUCASIAN_ALBANIAN_CITATION_MARK      0x1056F 0  // 𐕯
+#define UC_UC_CAUCASIAN_ALBANIAN_CITATION_MARK   0x1056F 0  // 𐕯

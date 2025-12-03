@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_TIRHUTA_DIGIT_ZERO                    0x114D0 0  // 𑓐
-#define UC_TIRHUTA_DIGIT_ONE                     0x114D1 0  // 𑓑
-#define UC_TIRHUTA_DIGIT_TWO                     0x114D2 0  // 𑓒
-#define UC_TIRHUTA_DIGIT_THREE                   0x114D3 0  // 𑓓
-#define UC_TIRHUTA_DIGIT_FOUR                    0x114D4 0  // 𑓔
-#define UC_TIRHUTA_DIGIT_FIVE                    0x114D5 0  // 𑓕
-#define UC_TIRHUTA_DIGIT_SIX                     0x114D6 0  // 𑓖
-#define UC_TIRHUTA_DIGIT_SEVEN                   0x114D7 0  // 𑓗
-#define UC_TIRHUTA_DIGIT_EIGHT                   0x114D8 0  // 𑓘
-#define UC_TIRHUTA_DIGIT_NINE                    0x114D9 0  // 𑓙
+#define UC_UC_TIRHUTA_ZERO                       0x114D0 0  // 𑓐
+#define UC_UC_TIRHUTA_ONE                        0x114D1 0  // 𑓑
+#define UC_UC_TIRHUTA_TWO                        0x114D2 0  // 𑓒
+#define UC_UC_TIRHUTA_THREE                      0x114D3 0  // 𑓓
+#define UC_UC_TIRHUTA_FOUR                       0x114D4 0  // 𑓔
+#define UC_UC_TIRHUTA_FIVE                       0x114D5 0  // 𑓕
+#define UC_UC_TIRHUTA_SIX                        0x114D6 0  // 𑓖
+#define UC_UC_TIRHUTA_SEVEN                      0x114D7 0  // 𑓗
+#define UC_UC_TIRHUTA_EIGHT                      0x114D8 0  // 𑓘
+#define UC_UC_TIRHUTA_NINE                       0x114D9 0  // 𑓙

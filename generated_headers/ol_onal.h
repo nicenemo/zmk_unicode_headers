@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_OL_ONAL_ABBREVIATION_SIGN             0x1E5FF 0  /* U+1E5FF (OL ONAL ABBREVIATION SIGN) */
+#define UC_UC_OL_ONAL_SIGN                       0x1E5FF 0  /* U+1E5FF (OL ONAL ABBREVIATION SIGN) */

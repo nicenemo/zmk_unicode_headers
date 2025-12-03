@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_HEAVY_EQUALS_SIGN                     0x1F7F0 0  // 🟰
+#define UC_UC_HEAVY_EQUALS_SIGN                  0x1F7F0 0  // 🟰

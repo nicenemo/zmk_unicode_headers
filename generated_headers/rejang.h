@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_REJANG_SECTION_MARK                   0xA95F 0  // ꥟
+#define UC_UC_REJANG_SECTION_MARK                0xA95F 0  // ꥟

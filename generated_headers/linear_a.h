@@ -7,11 +7,11 @@
 
 #pragma once
 
-#define UC_LINEAR_A_SIGN_A800                    0x10760 0  // 𐝠
-#define UC_LINEAR_A_SIGN_A801                    0x10761 0  // 𐝡
-#define UC_LINEAR_A_SIGN_A802                    0x10762 0  // 𐝢
-#define UC_LINEAR_A_SIGN_A803                    0x10763 0  // 𐝣
-#define UC_LINEAR_A_SIGN_A804                    0x10764 0  // 𐝤
-#define UC_LINEAR_A_SIGN_A805                    0x10765 0  // 𐝥
-#define UC_LINEAR_A_SIGN_A806                    0x10766 0  // 𐝦
-#define UC_LINEAR_A_SIGN_A807                    0x10767 0  // 𐝧
+#define UC_UC_LINEAR_A_SIGN_A800                 0x10760 0  // 𐝠
+#define UC_UC_LINEAR_A_SIGN_A801                 0x10761 0  // 𐝡
+#define UC_UC_LINEAR_A_SIGN_A802                 0x10762 0  // 𐝢
+#define UC_UC_LINEAR_A_SIGN_A803                 0x10763 0  // 𐝣
+#define UC_UC_LINEAR_A_SIGN_A804                 0x10764 0  // 𐝤
+#define UC_UC_LINEAR_A_SIGN_A805                 0x10765 0  // 𐝥
+#define UC_UC_LINEAR_A_SIGN_A806                 0x10766 0  // 𐝦
+#define UC_UC_LINEAR_A_SIGN_A807                 0x10767 0  // 𐝧

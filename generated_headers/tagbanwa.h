@@ -7,5 +7,5 @@
 
 #pragma once
 
-#define UC_TAGBANWA_VOWEL_SIGN_I                 0x1772 0  // ᝲ
-#define UC_TAGBANWA_VOWEL_SIGN_U                 0x1773 0  // ᝳ
+#define UC_UC_TAGBANWA_VOWEL_SIGN_I              0x1772 0  // ᝲ
+#define UC_UC_TAGBANWA_VOWEL_SIGN_U              0x1773 0  // ᝳ

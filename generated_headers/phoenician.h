@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_PHOENICIAN_WORD_SEPARATOR             0x1091F 0  // 𐤟
+#define UC_UC_PHOENICIAN_WORD_SEPARATOR          0x1091F 0  // 𐤟

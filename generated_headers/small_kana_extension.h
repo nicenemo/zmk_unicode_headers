@@ -7,7 +7,7 @@
 
 #pragma once
 
-#define UC_KATAKANA_LETTER_SMALL_WI              0x1B164 0  // 𛅤
-#define UC_KATAKANA_LETTER_SMALL_WE              0x1B165 0  // 𛅥
-#define UC_KATAKANA_LETTER_SMALL_WO              0x1B166 0  // 𛅦
-#define UC_KATAKANA_LETTER_SMALL_N               0x1B167 0  // 𛅧
+#define UC_UC_SMALL_WI                           0x1B164 0  // 𛅤
+#define UC_UC_SMALL_WE                           0x1B165 0  // 𛅥
+#define UC_UC_SMALL_WO                           0x1B166 0  // 𛅦
+#define UC_UC_SMALL_N                            0x1B167 0  // 𛅧

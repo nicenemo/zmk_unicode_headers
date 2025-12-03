@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_EL_SYMBOL_TAU_RHO                     0x101A0 0  // 𐆠
+#define UC_UC_TAU_RHO                            0x101A0 0  // 𐆠

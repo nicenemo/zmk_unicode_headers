@@ -7,21 +7,21 @@
 
 #pragma once
 
-#define UC_CHAKMA_DIGIT_ZERO                     0x11136 0  // 𑄶
-#define UC_CHAKMA_DIGIT_ONE                      0x11137 0  // 𑄷
-#define UC_CHAKMA_DIGIT_TWO                      0x11138 0  // 𑄸
-#define UC_CHAKMA_DIGIT_THREE                    0x11139 0  // 𑄹
-#define UC_CHAKMA_DIGIT_FOUR                     0x1113A 0  // 𑄺
-#define UC_CHAKMA_DIGIT_FIVE                     0x1113B 0  // 𑄻
-#define UC_CHAKMA_DIGIT_SIX                      0x1113C 0  // 𑄼
-#define UC_CHAKMA_DIGIT_SEVEN                    0x1113D 0  // 𑄽
-#define UC_CHAKMA_DIGIT_EIGHT                    0x1113E 0  // 𑄾
-#define UC_CHAKMA_DIGIT_NINE                     0x1113F 0  // 𑄿
-#define UC_CHAKMA_SECTION_MARK                   0x11140 0  // 𑅀
-#define UC_CHAKMA_DANDA                          0x11141 0  // 𑅁
-#define UC_CHAKMA_DOUBLE_DANDA                   0x11142 0  // 𑅂
-#define UC_CHAKMA_QUESTION_MARK                  0x11143 0  // 𑅃
-#define UC_CHAKMA_LETTER_LHAA                    0x11144 0  // 𑅄
-#define UC_CHAKMA_VOWEL_SIGN_AA                  0x11145 0  // 𑅅
-#define UC_CHAKMA_VOWEL_SIGN_EI                  0x11146 0  // 𑅆
-#define UC_CHAKMA_LETTER_VAA                     0x11147 0  // 𑅇
+#define UC_UC_CHAKMA_ZERO                        0x11136 0  // 𑄶
+#define UC_UC_CHAKMA_ONE                         0x11137 0  // 𑄷
+#define UC_UC_CHAKMA_TWO                         0x11138 0  // 𑄸
+#define UC_UC_CHAKMA_THREE                       0x11139 0  // 𑄹
+#define UC_UC_CHAKMA_FOUR                        0x1113A 0  // 𑄺
+#define UC_UC_CHAKMA_FIVE                        0x1113B 0  // 𑄻
+#define UC_UC_CHAKMA_SIX                         0x1113C 0  // 𑄼
+#define UC_UC_CHAKMA_SEVEN                       0x1113D 0  // 𑄽
+#define UC_UC_CHAKMA_EIGHT                       0x1113E 0  // 𑄾
+#define UC_UC_CHAKMA_NINE                        0x1113F 0  // 𑄿
+#define UC_UC_CHAKMA_SECTION_MARK                0x11140 0  // 𑅀
+#define UC_UC_CHAKMA_DANDA                       0x11141 0  // 𑅁
+#define UC_UC_CHAKMA_DOUBLE_DANDA                0x11142 0  // 𑅂
+#define UC_UC_CHAKMA_QUESTION_MARK               0x11143 0  // 𑅃
+#define UC_UC_CHAKMA_LHAA                        0x11144 0  // 𑅄
+#define UC_UC_CHAKMA_VOWEL_SIGN_AA               0x11145 0  // 𑅅
+#define UC_UC_CHAKMA_VOWEL_SIGN_EI               0x11146 0  // 𑅆
+#define UC_UC_CHAKMA_VAA                         0x11147 0  // 𑅇

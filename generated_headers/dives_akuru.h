@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_DIVES_AKURU_DIGIT_ZERO                0x11950 0  // 𑥐
-#define UC_DIVES_AKURU_DIGIT_ONE                 0x11951 0  // 𑥑
-#define UC_DIVES_AKURU_DIGIT_TWO                 0x11952 0  // 𑥒
-#define UC_DIVES_AKURU_DIGIT_THREE               0x11953 0  // 𑥓
-#define UC_DIVES_AKURU_DIGIT_FOUR                0x11954 0  // 𑥔
-#define UC_DIVES_AKURU_DIGIT_FIVE                0x11955 0  // 𑥕
-#define UC_DIVES_AKURU_DIGIT_SIX                 0x11956 0  // 𑥖
-#define UC_DIVES_AKURU_DIGIT_SEVEN               0x11957 0  // 𑥗
-#define UC_DIVES_AKURU_DIGIT_EIGHT               0x11958 0  // 𑥘
-#define UC_DIVES_AKURU_DIGIT_NINE                0x11959 0  // 𑥙
+#define UC_UC_DIVES_AKURU_ZERO                   0x11950 0  // 𑥐
+#define UC_UC_DIVES_AKURU_ONE                    0x11951 0  // 𑥑
+#define UC_UC_DIVES_AKURU_TWO                    0x11952 0  // 𑥒
+#define UC_UC_DIVES_AKURU_THREE                  0x11953 0  // 𑥓
+#define UC_UC_DIVES_AKURU_FOUR                   0x11954 0  // 𑥔
+#define UC_UC_DIVES_AKURU_FIVE                   0x11955 0  // 𑥕
+#define UC_UC_DIVES_AKURU_SIX                    0x11956 0  // 𑥖
+#define UC_UC_DIVES_AKURU_SEVEN                  0x11957 0  // 𑥗
+#define UC_UC_DIVES_AKURU_EIGHT                  0x11958 0  // 𑥘
+#define UC_UC_DIVES_AKURU_NINE                   0x11959 0  // 𑥙

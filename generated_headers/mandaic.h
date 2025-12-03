@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_MANDAIC_PUNCTUATION                   0x085E 0  // ࡞
+#define UC_UC_MANDAIC_PUNCTUATION                0x085E 0  // ࡞

@@ -7,12 +7,12 @@
 
 #pragma once
 
-#define UC_HAND_WITH_INDEX_FINGER_AND_THUMB_CROSSED 0x1FAF0 0  // 🫰
-#define UC_RIGHTWARDS_HAND                       0x1FAF1 0  // 🫱
-#define UC_LEFTWARDS_HAND                        0x1FAF2 0  // 🫲
-#define UC_PALM_DOWN_HAND                        0x1FAF3 0  // 🫳
-#define UC_PALM_UP_HAND                          0x1FAF4 0  // 🫴
-#define UC_INDEX_POINTING_AT_THE_VIEWER          0x1FAF5 0  // 🫵
-#define UC_HEART_HANDS                           0x1FAF6 0  // 🫶
-#define UC_LEFTWARDS_PUSHING_HAND                0x1FAF7 0  // 🫷
-#define UC_RIGHTWARDS_PUSHING_HAND               0x1FAF8 0  // 🫸
+#define UC_UC_HAND_WITH_INDEX_FINGER_AND_THUMB_CROSSED 0x1FAF0 0  // 🫰
+#define UC_UC_RIGHTWARDS_HAND                    0x1FAF1 0  // 🫱
+#define UC_UC_LEFTWARDS_HAND                     0x1FAF2 0  // 🫲
+#define UC_UC_PALM_DOWN_HAND                     0x1FAF3 0  // 🫳
+#define UC_UC_PALM_UP_HAND                       0x1FAF4 0  // 🫴
+#define UC_UC_INDEX_POINTING_AT_THE_VIEWER       0x1FAF5 0  // 🫵
+#define UC_UC_HEART_HANDS                        0x1FAF6 0  // 🫶
+#define UC_UC_LEFTWARDS_PUSHING_HAND             0x1FAF7 0  // 🫷
+#define UC_UC_RIGHTWARDS_PUSHING_HAND            0x1FAF8 0  // 🫸
