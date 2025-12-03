@@ -7,6 +7,6 @@
 
 #pragma once
 
-#define UC_UC_NKO_DANTAYALAN                     0x07FD 0  // ߽
-#define UC_UC_NKO_DOROME_SIGN                    0x07FE 0  // ߾
-#define UC_UC_NKO_TAMAN_SIGN                     0x07FF 0  // ߿
+#define UC_NKO_DANTAYALAN                        0x07FD 0  // ߽
+#define UC_NKO_DOROME_SIGN                       0x07FE 0  // ߾
+#define UC_NKO_TAMAN_SIGN                        0x07FF 0  // ߿

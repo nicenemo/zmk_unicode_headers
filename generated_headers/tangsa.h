@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_UC_TANGSA_ZERO                        0x16AC0 0  // 𖫀
-#define UC_UC_TANGSA_ONE                         0x16AC1 0  // 𖫁
-#define UC_UC_TANGSA_TWO                         0x16AC2 0  // 𖫂
-#define UC_UC_TANGSA_THREE                       0x16AC3 0  // 𖫃
-#define UC_UC_TANGSA_FOUR                        0x16AC4 0  // 𖫄
-#define UC_UC_TANGSA_FIVE                        0x16AC5 0  // 𖫅
-#define UC_UC_TANGSA_SIX                         0x16AC6 0  // 𖫆
-#define UC_UC_TANGSA_SEVEN                       0x16AC7 0  // 𖫇
-#define UC_UC_TANGSA_EIGHT                       0x16AC8 0  // 𖫈
-#define UC_UC_TANGSA_NINE                        0x16AC9 0  // 𖫉
+#define UC_TANGSA_DIGIT_ZERO                     0x16AC0 0  // 𖫀
+#define UC_TANGSA_DIGIT_ONE                      0x16AC1 0  // 𖫁
+#define UC_TANGSA_DIGIT_TWO                      0x16AC2 0  // 𖫂
+#define UC_TANGSA_DIGIT_THREE                    0x16AC3 0  // 𖫃
+#define UC_TANGSA_DIGIT_FOUR                     0x16AC4 0  // 𖫄
+#define UC_TANGSA_DIGIT_FIVE                     0x16AC5 0  // 𖫅
+#define UC_TANGSA_DIGIT_SIX                      0x16AC6 0  // 𖫆
+#define UC_TANGSA_DIGIT_SEVEN                    0x16AC7 0  // 𖫇
+#define UC_TANGSA_DIGIT_EIGHT                    0x16AC8 0  // 𖫈
+#define UC_TANGSA_DIGIT_NINE                     0x16AC9 0  // 𖫉

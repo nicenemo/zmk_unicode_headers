@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_UC_TAKRI_ZERO                         0x116C0 0  // 𑛀
-#define UC_UC_TAKRI_ONE                          0x116C1 0  // 𑛁
-#define UC_UC_TAKRI_TWO                          0x116C2 0  // 𑛂
-#define UC_UC_TAKRI_THREE                        0x116C3 0  // 𑛃
-#define UC_UC_TAKRI_FOUR                         0x116C4 0  // 𑛄
-#define UC_UC_TAKRI_FIVE                         0x116C5 0  // 𑛅
-#define UC_UC_TAKRI_SIX                          0x116C6 0  // 𑛆
-#define UC_UC_TAKRI_SEVEN                        0x116C7 0  // 𑛇
-#define UC_UC_TAKRI_EIGHT                        0x116C8 0  // 𑛈
-#define UC_UC_TAKRI_NINE                         0x116C9 0  // 𑛉
+#define UC_TAKRI_DIGIT_ZERO                      0x116C0 0  // 𑛀
+#define UC_TAKRI_DIGIT_ONE                       0x116C1 0  // 𑛁
+#define UC_TAKRI_DIGIT_TWO                       0x116C2 0  // 𑛂
+#define UC_TAKRI_DIGIT_THREE                     0x116C3 0  // 𑛃
+#define UC_TAKRI_DIGIT_FOUR                      0x116C4 0  // 𑛄
+#define UC_TAKRI_DIGIT_FIVE                      0x116C5 0  // 𑛅
+#define UC_TAKRI_DIGIT_SIX                       0x116C6 0  // 𑛆
+#define UC_TAKRI_DIGIT_SEVEN                     0x116C7 0  // 𑛇
+#define UC_TAKRI_DIGIT_EIGHT                     0x116C8 0  // 𑛈
+#define UC_TAKRI_DIGIT_NINE                      0x116C9 0  // 𑛉

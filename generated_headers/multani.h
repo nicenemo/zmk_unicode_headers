@@ -7,14 +7,14 @@
 
 #pragma once
 
-#define UC_UC_MULTANI_BHA                        0x1129F 0  // 𑊟
-#define UC_UC_MULTANI_MA                         0x112A0 0  // 𑊠
-#define UC_UC_MULTANI_YA                         0x112A1 0  // 𑊡
-#define UC_UC_MULTANI_RA                         0x112A2 0  // 𑊢
-#define UC_UC_MULTANI_LA                         0x112A3 0  // 𑊣
-#define UC_UC_MULTANI_VA                         0x112A4 0  // 𑊤
-#define UC_UC_MULTANI_SA                         0x112A5 0  // 𑊥
-#define UC_UC_MULTANI_HA                         0x112A6 0  // 𑊦
-#define UC_UC_MULTANI_RRA                        0x112A7 0  // 𑊧
-#define UC_UC_MULTANI_RHA                        0x112A8 0  // 𑊨
-#define UC_UC_MULTANI_SECTION_MARK               0x112A9 0  // 𑊩
+#define UC_MULTANI_LETTER_BHA                    0x1129F 0  // 𑊟
+#define UC_MULTANI_LETTER_MA                     0x112A0 0  // 𑊠
+#define UC_MULTANI_LETTER_YA                     0x112A1 0  // 𑊡
+#define UC_MULTANI_LETTER_RA                     0x112A2 0  // 𑊢
+#define UC_MULTANI_LETTER_LA                     0x112A3 0  // 𑊣
+#define UC_MULTANI_LETTER_VA                     0x112A4 0  // 𑊤
+#define UC_MULTANI_LETTER_SA                     0x112A5 0  // 𑊥
+#define UC_MULTANI_LETTER_HA                     0x112A6 0  // 𑊦
+#define UC_MULTANI_LETTER_RRA                    0x112A7 0  // 𑊧
+#define UC_MULTANI_LETTER_RHA                    0x112A8 0  // 𑊨
+#define UC_MULTANI_SECTION_MARK                  0x112A9 0  // 𑊩

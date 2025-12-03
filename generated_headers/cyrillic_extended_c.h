@@ -7,14 +7,14 @@
 
 #pragma once
 
-#define UC_UC_ROUNDED_VE                         0x1C80 0x0412  // ᲀ/В
-#define UC_UC_LONG_LEGGED_DE                     0x1C81 0x0414  // ᲁ/Д
-#define UC_UC_NARROW_O                           0x1C82 0x041E  // ᲂ/О
-#define UC_UC_WIDE_ES                            0x1C83 0x0421  // ᲃ/С
-#define UC_UC_TALL_TE                            0x1C84 0x0422  // ᲄ/Т
-#define UC_UC_THREE_LEGGED_TE                    0x1C85 0x0422  // ᲅ/Т
-#define UC_UC_TALL_HARD_SIGN                     0x1C86 0x042A  // ᲆ/Ъ
-#define UC_UC_TALL_YAT                           0x1C87 0x0462  // ᲇ/Ѣ
-#define UC_UC_UNBLENDED_UK                       0x1C88 0xA64A  // ᲈ/Ꙋ
-#define UC_UC_CAPITAL_TJE                        0x1C89 0  /* U+1C89 (CYRILLIC CAPITAL LETTER TJE) */
-#define UC_UC_SMALL_TJE                          0x1C8A 0  /* U+1C8A (CYRILLIC SMALL LETTER TJE) */
+#define UC_CY_LETTER_ROUNDED_VE                  0x1C80 0x0412  // ᲀ/В
+#define UC_CY_LETTER_LONG_LEGGED_DE              0x1C81 0x0414  // ᲁ/Д
+#define UC_CY_LETTER_NARROW_O                    0x1C82 0x041E  // ᲂ/О
+#define UC_CY_LETTER_WIDE_ES                     0x1C83 0x0421  // ᲃ/С
+#define UC_CY_LETTER_TALL_TE                     0x1C84 0x0422  // ᲄ/Т
+#define UC_CY_LETTER_THREE_LEGGED_TE             0x1C85 0x0422  // ᲅ/Т
+#define UC_CY_LETTER_TALL_HARD_SIGN              0x1C86 0x042A  // ᲆ/Ъ
+#define UC_CY_LETTER_TALL_YAT                    0x1C87 0x0462  // ᲇ/Ѣ
+#define UC_CY_LETTER_UNBLENDED_UK                0x1C88 0xA64A  // ᲈ/Ꙋ
+#define UC_CY_CAPITAL_LETTER_TJE                 0x1C89 0  /* U+1C89 (CYRILLIC CAPITAL LETTER TJE) */
+#define UC_CY_SMALL_LETTER_TJE                   0x1C8A 0  /* U+1C8A (CYRILLIC SMALL LETTER TJE) */

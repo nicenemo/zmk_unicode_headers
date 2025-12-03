@@ -7,5 +7,5 @@
 
 #pragma once
 
-#define UC_ADL_ADLAM_INITIAL_EXCLAMATION_MARK    0x1E95E 0  // 𞥞
-#define UC_ADL_ADLAM_INITIAL_QUESTION_MARK       0x1E95F 0  // 𞥟
+#define UC_ADLAM_INITIAL_EXCLAMATION_MARK        0x1E95E 0  // 𞥞
+#define UC_ADLAM_INITIAL_QUESTION_MARK           0x1E95F 0  // 𞥟

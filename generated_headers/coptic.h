@@ -7,10 +7,10 @@
 
 #pragma once
 
-#define UC_UC_OLD_NUBIAN_FULL_STOP               0x2CF9 0  // ⳹
-#define UC_UC_OLD_NUBIAN_DIRECT_QUESTION_MARK    0x2CFA 0  // ⳺
-#define UC_UC_OLD_NUBIAN_INDIRECT_QUESTION_MARK  0x2CFB 0  // ⳻
-#define UC_UC_OLD_NUBIAN_VERSE_DIVIDER           0x2CFC 0  // ⳼
-#define UC_UC_FRACTION_ONE_HALF                  0x2CFD 0  // ⳽
-#define UC_UC_FULL_STOP                          0x2CFE 0  // ⳾
-#define UC_UC_MORPHOLOGICAL_DIVIDER              0x2CFF 0  // ⳿
+#define UC_CP_OLD_NUBIAN_FULL_STOP               0x2CF9 0  // ⳹
+#define UC_CP_OLD_NUBIAN_DIRECT_QUESTION_MARK    0x2CFA 0  // ⳺
+#define UC_CP_OLD_NUBIAN_INDIRECT_QUESTION_MARK  0x2CFB 0  // ⳻
+#define UC_CP_OLD_NUBIAN_VERSE_DIVIDER           0x2CFC 0  // ⳼
+#define UC_CP_FRACTION_ONE_HALF                  0x2CFD 0  // ⳽
+#define UC_CP_FULL_STOP                          0x2CFE 0  // ⳾
+#define UC_CP_MORPHOLOGICAL_DIVIDER              0x2CFF 0  // ⳿

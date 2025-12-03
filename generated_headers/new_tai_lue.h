@@ -7,5 +7,5 @@
 
 #pragma once
 
-#define UC_UC_NEW_TAI_LUE_SIGN_LAE               0x19DE 0  // ᧞
-#define UC_UC_NEW_TAI_LUE_SIGN_LAEV              0x19DF 0  // ᧟
+#define UC_NEW_TAI_LUE_SIGN_LAE                  0x19DE 0  // ᧞
+#define UC_NEW_TAI_LUE_SIGN_LAEV                 0x19DF 0  // ᧟

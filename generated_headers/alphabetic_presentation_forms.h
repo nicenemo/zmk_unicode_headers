@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_UC_TSADI_WITH_DAGESH                  0xFB46 0  // צּ
-#define UC_UC_QOF_WITH_DAGESH                    0xFB47 0  // קּ
-#define UC_UC_RESH_WITH_DAGESH                   0xFB48 0  // רּ
-#define UC_UC_SHIN_WITH_DAGESH                   0xFB49 0  // שּ
-#define UC_UC_TAV_WITH_DAGESH                    0xFB4A 0  // תּ
-#define UC_UC_VAV_WITH_HOLAM                     0xFB4B 0  // וֹ
-#define UC_UC_BET_WITH_RAFE                      0xFB4C 0  // בֿ
-#define UC_UC_KAF_WITH_RAFE                      0xFB4D 0  // כֿ
-#define UC_UC_PE_WITH_RAFE                       0xFB4E 0  // פֿ
-#define UC_UC_LIGATURE_ALEF_LAMED                0xFB4F 0  // ﭏ
+#define UC_HE_LETTER_TSADI_WITH_DAGESH           0xFB46 0  // צּ
+#define UC_HE_LETTER_QOF_WITH_DAGESH             0xFB47 0  // קּ
+#define UC_HE_LETTER_RESH_WITH_DAGESH            0xFB48 0  // רּ
+#define UC_HE_LETTER_SHIN_WITH_DAGESH            0xFB49 0  // שּ
+#define UC_HE_LETTER_TAV_WITH_DAGESH             0xFB4A 0  // תּ
+#define UC_HE_LETTER_VAV_WITH_HOLAM              0xFB4B 0  // וֹ
+#define UC_HE_LETTER_BET_WITH_RAFE               0xFB4C 0  // בֿ
+#define UC_HE_LETTER_KAF_WITH_RAFE               0xFB4D 0  // כֿ
+#define UC_HE_LETTER_PE_WITH_RAFE                0xFB4E 0  // פֿ
+#define UC_HE_LIGATURE_ALEF_LAMED                0xFB4F 0  // ﭏ

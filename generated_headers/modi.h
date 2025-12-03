@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_UC_MODI_ZERO                          0x11650 0  // 𑙐
-#define UC_UC_MODI_ONE                           0x11651 0  // 𑙑
-#define UC_UC_MODI_TWO                           0x11652 0  // 𑙒
-#define UC_UC_MODI_THREE                         0x11653 0  // 𑙓
-#define UC_UC_MODI_FOUR                          0x11654 0  // 𑙔
-#define UC_UC_MODI_FIVE                          0x11655 0  // 𑙕
-#define UC_UC_MODI_SIX                           0x11656 0  // 𑙖
-#define UC_UC_MODI_SEVEN                         0x11657 0  // 𑙗
-#define UC_UC_MODI_EIGHT                         0x11658 0  // 𑙘
-#define UC_UC_MODI_NINE                          0x11659 0  // 𑙙
+#define UC_MODI_DIGIT_ZERO                       0x11650 0  // 𑙐
+#define UC_MODI_DIGIT_ONE                        0x11651 0  // 𑙑
+#define UC_MODI_DIGIT_TWO                        0x11652 0  // 𑙒
+#define UC_MODI_DIGIT_THREE                      0x11653 0  // 𑙓
+#define UC_MODI_DIGIT_FOUR                       0x11654 0  // 𑙔
+#define UC_MODI_DIGIT_FIVE                       0x11655 0  // 𑙕
+#define UC_MODI_DIGIT_SIX                        0x11656 0  // 𑙖
+#define UC_MODI_DIGIT_SEVEN                      0x11657 0  // 𑙗
+#define UC_MODI_DIGIT_EIGHT                      0x11658 0  // 𑙘
+#define UC_MODI_DIGIT_NINE                       0x11659 0  // 𑙙

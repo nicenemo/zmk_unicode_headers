@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_UC_MASARAM_GONDI_ZERO                 0x11D50 0  // 𑵐
-#define UC_UC_MASARAM_GONDI_ONE                  0x11D51 0  // 𑵑
-#define UC_UC_MASARAM_GONDI_TWO                  0x11D52 0  // 𑵒
-#define UC_UC_MASARAM_GONDI_THREE                0x11D53 0  // 𑵓
-#define UC_UC_MASARAM_GONDI_FOUR                 0x11D54 0  // 𑵔
-#define UC_UC_MASARAM_GONDI_FIVE                 0x11D55 0  // 𑵕
-#define UC_UC_MASARAM_GONDI_SIX                  0x11D56 0  // 𑵖
-#define UC_UC_MASARAM_GONDI_SEVEN                0x11D57 0  // 𑵗
-#define UC_UC_MASARAM_GONDI_EIGHT                0x11D58 0  // 𑵘
-#define UC_UC_MASARAM_GONDI_NINE                 0x11D59 0  // 𑵙
+#define UC_MASARAM_GONDI_DIGIT_ZERO              0x11D50 0  // 𑵐
+#define UC_MASARAM_GONDI_DIGIT_ONE               0x11D51 0  // 𑵑
+#define UC_MASARAM_GONDI_DIGIT_TWO               0x11D52 0  // 𑵒
+#define UC_MASARAM_GONDI_DIGIT_THREE             0x11D53 0  // 𑵓
+#define UC_MASARAM_GONDI_DIGIT_FOUR              0x11D54 0  // 𑵔
+#define UC_MASARAM_GONDI_DIGIT_FIVE              0x11D55 0  // 𑵕
+#define UC_MASARAM_GONDI_DIGIT_SIX               0x11D56 0  // 𑵖
+#define UC_MASARAM_GONDI_DIGIT_SEVEN             0x11D57 0  // 𑵗
+#define UC_MASARAM_GONDI_DIGIT_EIGHT             0x11D58 0  // 𑵘
+#define UC_MASARAM_GONDI_DIGIT_NINE              0x11D59 0  // 𑵙

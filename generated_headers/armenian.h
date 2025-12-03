@@ -7,6 +7,6 @@
 
 #pragma once
 
-#define UC_AM_RIGHT_FACING_ARMENIAN_ETERNITY_SIGN 0x058D 0  // ֍
-#define UC_AM_LEFT_FACING_ARMENIAN_ETERNITY_SIGN 0x058E 0  // ֎
-#define UC_AM_ARMENIAN_DRAM_SIGN                 0x058F 0  // ֏
+#define UC_RIGHT_FACING_ARMENIAN_ETERNITY_SIGN   0x058D 0  // ֍
+#define UC_LEFT_FACING_ARMENIAN_ETERNITY_SIGN    0x058E 0  // ֎
+#define UC_ARMENIAN_DRAM_SIGN                    0x058F 0  // ֏

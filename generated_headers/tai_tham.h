@@ -7,17 +7,17 @@
 
 #pragma once
 
-#define UC_UC_TAI_THAM_SIGN_WIANG                0x1AA0 0  // ᪠
-#define UC_UC_TAI_THAM_SIGN_WIANGWAAK            0x1AA1 0  // ᪡
-#define UC_UC_TAI_THAM_SIGN_SAWAN                0x1AA2 0  // ᪢
-#define UC_UC_TAI_THAM_SIGN_KEOW                 0x1AA3 0  // ᪣
-#define UC_UC_TAI_THAM_SIGN_HOY                  0x1AA4 0  // ᪤
-#define UC_UC_TAI_THAM_SIGN_DOKMAI               0x1AA5 0  // ᪥
-#define UC_UC_TAI_THAM_SIGN_REVERSED_ROTATED_RANA 0x1AA6 0  // ᪦
-#define UC_UC_TAI_THAM_SIGN_MAI_YAMOK            0x1AA7 0  // ᪧ
-#define UC_UC_TAI_THAM_SIGN_KAAN                 0x1AA8 0  // ᪨
-#define UC_UC_TAI_THAM_SIGN_KAANKUU              0x1AA9 0  // ᪩
-#define UC_UC_TAI_THAM_SIGN_SATKAAN              0x1AAA 0  // ᪪
-#define UC_UC_TAI_THAM_SIGN_SATKAANKUU           0x1AAB 0  // ᪫
-#define UC_UC_TAI_THAM_SIGN_HANG                 0x1AAC 0  // ᪬
-#define UC_UC_TAI_THAM_SIGN_CAANG                0x1AAD 0  // ᪭
+#define UC_TAI_THAM_SIGN_WIANG                   0x1AA0 0  // ᪠
+#define UC_TAI_THAM_SIGN_WIANGWAAK               0x1AA1 0  // ᪡
+#define UC_TAI_THAM_SIGN_SAWAN                   0x1AA2 0  // ᪢
+#define UC_TAI_THAM_SIGN_KEOW                    0x1AA3 0  // ᪣
+#define UC_TAI_THAM_SIGN_HOY                     0x1AA4 0  // ᪤
+#define UC_TAI_THAM_SIGN_DOKMAI                  0x1AA5 0  // ᪥
+#define UC_TAI_THAM_SIGN_REVERSED_ROTATED_RANA   0x1AA6 0  // ᪦
+#define UC_TAI_THAM_SIGN_MAI_YAMOK               0x1AA7 0  // ᪧ
+#define UC_TAI_THAM_SIGN_KAAN                    0x1AA8 0  // ᪨
+#define UC_TAI_THAM_SIGN_KAANKUU                 0x1AA9 0  // ᪩
+#define UC_TAI_THAM_SIGN_SATKAAN                 0x1AAA 0  // ᪪
+#define UC_TAI_THAM_SIGN_SATKAANKUU              0x1AAB 0  // ᪫
+#define UC_TAI_THAM_SIGN_HANG                    0x1AAC 0  // ᪬
+#define UC_TAI_THAM_SIGN_CAANG                   0x1AAD 0  // ᪭

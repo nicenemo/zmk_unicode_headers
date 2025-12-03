@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_UC_WANCHO_NGUN_SIGN                   0x1E2FF 0  // 𞋿
+#define UC_WANCHO_NGUN_SIGN                      0x1E2FF 0  // 𞋿

@@ -7,14 +7,14 @@
 
 #pragma once
 
-#define UC_UC_NANDINAGARI_VOWEL_SIGN_E           0x119DA 0  // 𑧚
-#define UC_UC_NANDINAGARI_VOWEL_SIGN_AI          0x119DB 0  // 𑧛
-#define UC_UC_NANDINAGARI_VOWEL_SIGN_O           0x119DC 0  // 𑧜
-#define UC_UC_NANDINAGARI_VOWEL_SIGN_AU          0x119DD 0  // 𑧝
-#define UC_UC_NANDINAGARI_SIGN_ANUSVARA          0x119DE 0  // 𑧞
-#define UC_UC_NANDINAGARI_SIGN_VISARGA           0x119DF 0  // 𑧟
-#define UC_UC_NANDINAGARI_SIGN_VIRAMA            0x119E0 0  // 𑧠
-#define UC_UC_NANDINAGARI_SIGN_AVAGRAHA          0x119E1 0  // 𑧡
-#define UC_UC_NANDINAGARI_SIGN_SIDDHAM           0x119E2 0  // 𑧢
-#define UC_UC_NANDINAGARI_HEADSTROKE             0x119E3 0  // 𑧣
-#define UC_UC_NANDINAGARI_VOWEL_SIGN_PRISHTHAMATRA_E 0x119E4 0  // 𑧤
+#define UC_NANDINAGARI_VOWEL_SIGN_E              0x119DA 0  // 𑧚
+#define UC_NANDINAGARI_VOWEL_SIGN_AI             0x119DB 0  // 𑧛
+#define UC_NANDINAGARI_VOWEL_SIGN_O              0x119DC 0  // 𑧜
+#define UC_NANDINAGARI_VOWEL_SIGN_AU             0x119DD 0  // 𑧝
+#define UC_NANDINAGARI_SIGN_ANUSVARA             0x119DE 0  // 𑧞
+#define UC_NANDINAGARI_SIGN_VISARGA              0x119DF 0  // 𑧟
+#define UC_NANDINAGARI_SIGN_VIRAMA               0x119E0 0  // 𑧠
+#define UC_NANDINAGARI_SIGN_AVAGRAHA             0x119E1 0  // 𑧡
+#define UC_NANDINAGARI_SIGN_SIDDHAM              0x119E2 0  // 𑧢
+#define UC_NANDINAGARI_HEADSTROKE                0x119E3 0  // 𑧣
+#define UC_NANDINAGARI_VOWEL_SIGN_PRISHTHAMATRA_E 0x119E4 0  // 𑧤

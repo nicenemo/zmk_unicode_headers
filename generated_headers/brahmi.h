@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_BR_BRAHMI_NUMBER_JOINER               0x1107F 0  // 𑁿
+#define UC_BRAHMI_NUMBER_JOINER                  0x1107F 0  // 𑁿

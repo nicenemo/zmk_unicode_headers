@@ -7,16 +7,16 @@
 
 #pragma once
 
-#define UC_LETD_MODIFIER_CAPITAL_C               0xA7F2 0  // ꟲ
-#define UC_LETD_MODIFIER_CAPITAL_F               0xA7F3 0  // ꟳ
-#define UC_LETD_MODIFIER_CAPITAL_Q               0xA7F4 0  // ꟴ
-#define UC_LETD_REVERSED_HALF_H                  0xA7F6 0xA7F5  // ꟶ/Ꟶ
-#define UC_LETD_EPIGRAPHIC_SIDEWAYS_I            0xA7F7 0  // ꟷ
-#define UC_LETD_MODIFIER_CAPITAL_H_WITH_STROKE   0xA7F8 0  // ꟸ
-#define UC_LETD_MODIFIER_SMALL_LIGATURE_OE       0xA7F9 0  // ꟹ
-#define UC_LETD_SMALL_CAPITAL_TURNED_M           0xA7FA 0  // ꟺ
-#define UC_LETD_EPIGRAPHIC_REVERSED_F            0xA7FB 0  // ꟻ
-#define UC_LETD_EPIGRAPHIC_REVERSED_P            0xA7FC 0  // ꟼ
-#define UC_LETD_EPIGRAPHIC_INVERTED_M            0xA7FD 0  // ꟽ
-#define UC_LETD_EPIGRAPHIC_I_LONGA               0xA7FE 0  // ꟾ
-#define UC_LETD_EPIGRAPHIC_ARCHAIC_M             0xA7FF 0  // ꟿ
+#define UC_MODIFIER_LETTER_CAPITAL_C             0xA7F2 0  // ꟲ
+#define UC_MODIFIER_LETTER_CAPITAL_F             0xA7F3 0  // ꟳ
+#define UC_MODIFIER_LETTER_CAPITAL_Q             0xA7F4 0  // ꟴ
+#define UC_LA_LETTER_REVERSED_HALF_H             0xA7F6 0xA7F5  // ꟶ/Ꟶ
+#define UC_LA_EPIGRAPHIC_LETTER_SIDEWAYS_I       0xA7F7 0  // ꟷ
+#define UC_MODIFIER_LETTER_CAPITAL_H_WITH_STROKE 0xA7F8 0  // ꟸ
+#define UC_MODIFIER_LETTER_SMALL_LIGATURE_OE     0xA7F9 0  // ꟹ
+#define UC_LA_LETTER_SMALL_CAPITAL_TURNED_M      0xA7FA 0  // ꟺ
+#define UC_LA_EPIGRAPHIC_LETTER_REVERSED_F       0xA7FB 0  // ꟻ
+#define UC_LA_EPIGRAPHIC_LETTER_REVERSED_P       0xA7FC 0  // ꟼ
+#define UC_LA_EPIGRAPHIC_LETTER_INVERTED_M       0xA7FD 0  // ꟽ
+#define UC_LA_EPIGRAPHIC_LETTER_I_LONGA          0xA7FE 0  // ꟾ
+#define UC_LA_EPIGRAPHIC_LETTER_ARCHAIC_M        0xA7FF 0  // ꟿ

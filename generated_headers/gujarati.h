@@ -7,10 +7,10 @@
 
 #pragma once
 
-#define UC_UC_ZHA                                0x0AF9 0  // ૹ
-#define UC_UC_SIGN_SUKUN                         0x0AFA 0  // ૺ
-#define UC_UC_SIGN_SHADDA                        0x0AFB 0  // ૻ
-#define UC_UC_SIGN_MADDAH                        0x0AFC 0  // ૼ
-#define UC_UC_SIGN_THREE_DOT_NUKTA_ABOVE         0x0AFD 0  // ૽
-#define UC_UC_SIGN_CIRCLE_NUKTA_ABOVE            0x0AFE 0  // ૾
-#define UC_UC_SIGN_TWO_CIRCLE_NUKTA_ABOVE        0x0AFF 0  // ૿
+#define UC_GJ_LETTER_ZHA                         0x0AF9 0  // ૹ
+#define UC_GJ_SIGN_SUKUN                         0x0AFA 0  // ૺ
+#define UC_GJ_SIGN_SHADDA                        0x0AFB 0  // ૻ
+#define UC_GJ_SIGN_MADDAH                        0x0AFC 0  // ૼ
+#define UC_GJ_SIGN_THREE_DOT_NUKTA_ABOVE         0x0AFD 0  // ૽
+#define UC_GJ_SIGN_CIRCLE_NUKTA_ABOVE            0x0AFE 0  // ૾
+#define UC_GJ_SIGN_TWO_CIRCLE_NUKTA_ABOVE        0x0AFF 0  // ૿

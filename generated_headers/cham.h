@@ -7,7 +7,7 @@
 
 #pragma once
 
-#define UC_UC_CHAM_PUNCTUATION_SPIRAL            0xAA5C 0  // ꩜
-#define UC_UC_CHAM_PUNCTUATION_DANDA             0xAA5D 0  // ꩝
-#define UC_UC_CHAM_PUNCTUATION_DOUBLE_DANDA      0xAA5E 0  // ꩞
-#define UC_UC_CHAM_PUNCTUATION_TRIPLE_DANDA      0xAA5F 0  // ꩟
+#define UC_CHAM_PUNCTUATION_SPIRAL               0xAA5C 0  // ꩜
+#define UC_CHAM_PUNCTUATION_DANDA                0xAA5D 0  // ꩝
+#define UC_CHAM_PUNCTUATION_DOUBLE_DANDA         0xAA5E 0  // ꩞
+#define UC_CHAM_PUNCTUATION_TRIPLE_DANDA         0xAA5F 0  // ꩟

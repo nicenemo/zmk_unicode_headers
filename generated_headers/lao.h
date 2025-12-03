@@ -7,7 +7,7 @@
 
 #pragma once
 
-#define UC_UC_LAO_HO_NO                          0x0EDC 0  // ໜ
-#define UC_UC_LAO_HO_MO                          0x0EDD 0  // ໝ
-#define UC_UC_LAO_KHMU_GO                        0x0EDE 0  // ໞ
-#define UC_UC_LAO_KHMU_NYO                       0x0EDF 0  // ໟ
+#define UC_LAO_HO_NO                             0x0EDC 0  // ໜ
+#define UC_LAO_HO_MO                             0x0EDD 0  // ໝ
+#define UC_LAO_LETTER_KHMU_GO                    0x0EDE 0  // ໞ
+#define UC_LAO_LETTER_KHMU_NYO                   0x0EDF 0  // ໟ

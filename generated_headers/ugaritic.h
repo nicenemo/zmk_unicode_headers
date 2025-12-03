@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_UC_UGARITIC_WORD_DIVIDER              0x1039F 0  // 𐎟
+#define UC_UGARITIC_WORD_DIVIDER                 0x1039F 0  // 𐎟

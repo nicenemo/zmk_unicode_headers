@@ -7,17 +7,17 @@
 
 #pragma once
 
-#define UC_UC_OLD_PERSIAN_SIGN_AURAMAZDAA        0x103C8 0  // 𐏈
-#define UC_UC_OLD_PERSIAN_SIGN_AURAMAZDAA_2      0x103C9 0  // 𐏉
-#define UC_UC_OLD_PERSIAN_SIGN_AURAMAZDAAHA      0x103CA 0  // 𐏊
-#define UC_UC_OLD_PERSIAN_SIGN_XSHAAYATHIYA      0x103CB 0  // 𐏋
-#define UC_UC_OLD_PERSIAN_SIGN_DAHYAAUSH         0x103CC 0  // 𐏌
-#define UC_UC_OLD_PERSIAN_SIGN_DAHYAAUSH_2       0x103CD 0  // 𐏍
-#define UC_UC_OLD_PERSIAN_SIGN_BAGA              0x103CE 0  // 𐏎
-#define UC_UC_OLD_PERSIAN_SIGN_BUUMISH           0x103CF 0  // 𐏏
-#define UC_UC_OLD_PERSIAN_WORD_DIVIDER           0x103D0 0  // 𐏐
-#define UC_UC_OLD_PERSIAN_NUMBER_ONE             0x103D1 0  // 𐏑
-#define UC_UC_OLD_PERSIAN_NUMBER_TWO             0x103D2 0  // 𐏒
-#define UC_UC_OLD_PERSIAN_NUMBER_TEN             0x103D3 0  // 𐏓
-#define UC_UC_OLD_PERSIAN_NUMBER_TWENTY          0x103D4 0  // 𐏔
-#define UC_UC_OLD_PERSIAN_NUMBER_HUNDRED         0x103D5 0  // 𐏕
+#define UC_OLD_PERSIAN_SIGN_AURAMAZDAA           0x103C8 0  // 𐏈
+#define UC_OLD_PERSIAN_SIGN_AURAMAZDAA_2         0x103C9 0  // 𐏉
+#define UC_OLD_PERSIAN_SIGN_AURAMAZDAAHA         0x103CA 0  // 𐏊
+#define UC_OLD_PERSIAN_SIGN_XSHAAYATHIYA         0x103CB 0  // 𐏋
+#define UC_OLD_PERSIAN_SIGN_DAHYAAUSH            0x103CC 0  // 𐏌
+#define UC_OLD_PERSIAN_SIGN_DAHYAAUSH_2          0x103CD 0  // 𐏍
+#define UC_OLD_PERSIAN_SIGN_BAGA                 0x103CE 0  // 𐏎
+#define UC_OLD_PERSIAN_SIGN_BUUMISH              0x103CF 0  // 𐏏
+#define UC_OLD_PERSIAN_WORD_DIVIDER              0x103D0 0  // 𐏐
+#define UC_OLD_PERSIAN_NUMBER_ONE                0x103D1 0  // 𐏑
+#define UC_OLD_PERSIAN_NUMBER_TWO                0x103D2 0  // 𐏒
+#define UC_OLD_PERSIAN_NUMBER_TEN                0x103D3 0  // 𐏓
+#define UC_OLD_PERSIAN_NUMBER_TWENTY             0x103D4 0  // 𐏔
+#define UC_OLD_PERSIAN_NUMBER_HUNDRED            0x103D5 0  // 𐏕

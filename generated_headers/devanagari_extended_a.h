@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_UC_HEAD_MARK                          0x11B00 0  // 𑬀
-#define UC_UC_HEAD_MARK_WITH_HEADSTROKE          0x11B01 0  // 𑬁
-#define UC_UC_SIGN_BHALE                         0x11B02 0  // 𑬂
-#define UC_UC_SIGN_BHALE_WITH_HOOK               0x11B03 0  // 𑬃
-#define UC_UC_SIGN_BHALE                         0x11B04 0  // 𑬄
-#define UC_UC_SIGN_BHALE_WITH_HOOK               0x11B05 0  // 𑬅
-#define UC_UC_SIGN_WESTERN_FIVE_LIKE_BHALE       0x11B06 0  // 𑬆
-#define UC_UC_SIGN_WESTERN_NINE_LIKE_BHALE       0x11B07 0  // 𑬇
-#define UC_UC_SIGN_REVERSED_NINE_LIKE_BHALE      0x11B08 0  // 𑬈
-#define UC_UC_SIGN_MINDU                         0x11B09 0  // 𑬉
+#define UC_DV_HEAD_MARK                          0x11B00 0  // 𑬀
+#define UC_DV_HEAD_MARK_WITH_HEADSTROKE          0x11B01 0  // 𑬁
+#define UC_DV_SIGN_BHALE                         0x11B02 0  // 𑬂
+#define UC_DV_SIGN_BHALE_WITH_HOOK               0x11B03 0  // 𑬃
+#define UC_DV_SIGN_EXTENDED_BHALE                0x11B04 0  // 𑬄
+#define UC_DV_SIGN_EXTENDED_BHALE_WITH_HOOK      0x11B05 0  // 𑬅
+#define UC_DV_SIGN_WESTERN_FIVE_LIKE_BHALE       0x11B06 0  // 𑬆
+#define UC_DV_SIGN_WESTERN_NINE_LIKE_BHALE       0x11B07 0  // 𑬇
+#define UC_DV_SIGN_REVERSED_NINE_LIKE_BHALE      0x11B08 0  // 𑬈
+#define UC_DV_SIGN_MINDU                         0x11B09 0  // 𑬉

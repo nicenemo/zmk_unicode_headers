@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_UC_TIFINAGH_CONSONANT_JOINER          0x2D7F 0  // ⵿
+#define UC_TIFINAGH_CONSONANT_JOINER             0x2D7F 0  // ⵿

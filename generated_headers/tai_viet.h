@@ -7,8 +7,8 @@
 
 #pragma once
 
-#define UC_UC_TAI_VIET_KON                       0xAADB 0  // ꫛ
-#define UC_UC_TAI_VIET_NUENG                     0xAADC 0  // ꫜ
-#define UC_UC_TAI_VIET_SAM                       0xAADD 0  // ꫝ
-#define UC_UC_TAI_VIET_HO_HOI                    0xAADE 0  // ꫞
-#define UC_UC_TAI_VIET_KOI_KOI                   0xAADF 0  // ꫟
+#define UC_TAI_VIET_SYMBOL_KON                   0xAADB 0  // ꫛ
+#define UC_TAI_VIET_SYMBOL_NUENG                 0xAADC 0  // ꫜ
+#define UC_TAI_VIET_SYMBOL_SAM                   0xAADD 0  // ꫝ
+#define UC_TAI_VIET_SYMBOL_HO_HOI                0xAADE 0  // ꫞
+#define UC_TAI_VIET_SYMBOL_KOI_KOI               0xAADF 0  // ꫟

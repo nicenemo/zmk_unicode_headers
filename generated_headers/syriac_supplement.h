@@ -7,14 +7,14 @@
 
 #pragma once
 
-#define UC_UC_SYRIAC_MALAYALAM_NGA               0x0860 0  // ࡠ
-#define UC_UC_SYRIAC_MALAYALAM_JA                0x0861 0  // ࡡ
-#define UC_UC_SYRIAC_MALAYALAM_NYA               0x0862 0  // ࡢ
-#define UC_UC_SYRIAC_MALAYALAM_TTA               0x0863 0  // ࡣ
-#define UC_UC_SYRIAC_MALAYALAM_NNA               0x0864 0  // ࡤ
-#define UC_UC_SYRIAC_MALAYALAM_NNNA              0x0865 0  // ࡥ
-#define UC_UC_SYRIAC_MALAYALAM_BHA               0x0866 0  // ࡦ
-#define UC_UC_SYRIAC_MALAYALAM_RA                0x0867 0  // ࡧ
-#define UC_UC_SYRIAC_MALAYALAM_LLA               0x0868 0  // ࡨ
-#define UC_UC_SYRIAC_MALAYALAM_LLLA              0x0869 0  // ࡩ
-#define UC_UC_SYRIAC_MALAYALAM_SSA               0x086A 0  // ࡪ
+#define UC_SYRIAC_LETTER_MALAYALAM_NGA           0x0860 0  // ࡠ
+#define UC_SYRIAC_LETTER_MALAYALAM_JA            0x0861 0  // ࡡ
+#define UC_SYRIAC_LETTER_MALAYALAM_NYA           0x0862 0  // ࡢ
+#define UC_SYRIAC_LETTER_MALAYALAM_TTA           0x0863 0  // ࡣ
+#define UC_SYRIAC_LETTER_MALAYALAM_NNA           0x0864 0  // ࡤ
+#define UC_SYRIAC_LETTER_MALAYALAM_NNNA          0x0865 0  // ࡥ
+#define UC_SYRIAC_LETTER_MALAYALAM_BHA           0x0866 0  // ࡦ
+#define UC_SYRIAC_LETTER_MALAYALAM_RA            0x0867 0  // ࡧ
+#define UC_SYRIAC_LETTER_MALAYALAM_LLA           0x0868 0  // ࡨ
+#define UC_SYRIAC_LETTER_MALAYALAM_LLLA          0x0869 0  // ࡩ
+#define UC_SYRIAC_LETTER_MALAYALAM_SSA           0x086A 0  // ࡪ

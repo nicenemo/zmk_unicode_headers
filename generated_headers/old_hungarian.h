@@ -7,9 +7,9 @@
 
 #pragma once
 
-#define UC_UC_OLD_HUNGARIAN_NUMBER_ONE           0x10CFA 0  // 𐳺
-#define UC_UC_OLD_HUNGARIAN_NUMBER_FIVE          0x10CFB 0  // 𐳻
-#define UC_UC_OLD_HUNGARIAN_NUMBER_TEN           0x10CFC 0  // 𐳼
-#define UC_UC_OLD_HUNGARIAN_NUMBER_FIFTY         0x10CFD 0  // 𐳽
-#define UC_UC_OLD_HUNGARIAN_NUMBER_ONE_HUNDRED   0x10CFE 0  // 𐳾
-#define UC_UC_OLD_HUNGARIAN_NUMBER_ONE_THOUSAND  0x10CFF 0  // 𐳿
+#define UC_OLD_HUNGARIAN_NUMBER_ONE              0x10CFA 0  // 𐳺
+#define UC_OLD_HUNGARIAN_NUMBER_FIVE             0x10CFB 0  // 𐳻
+#define UC_OLD_HUNGARIAN_NUMBER_TEN              0x10CFC 0  // 𐳼
+#define UC_OLD_HUNGARIAN_NUMBER_FIFTY            0x10CFD 0  // 𐳽
+#define UC_OLD_HUNGARIAN_NUMBER_ONE_HUNDRED      0x10CFE 0  // 𐳾
+#define UC_OLD_HUNGARIAN_NUMBER_ONE_THOUSAND     0x10CFF 0  // 𐳿

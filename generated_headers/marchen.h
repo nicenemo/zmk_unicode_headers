@@ -7,17 +7,17 @@
 
 #pragma once
 
-#define UC_UC_MARCHEN_SUBJOINED_YA               0x11CA9 0  // 𑲩
-#define UC_UC_MARCHEN_SUBJOINED_RA               0x11CAA 0  // 𑲪
-#define UC_UC_MARCHEN_SUBJOINED_LA               0x11CAB 0  // 𑲫
-#define UC_UC_MARCHEN_SUBJOINED_SHA              0x11CAC 0  // 𑲬
-#define UC_UC_MARCHEN_SUBJOINED_SA               0x11CAD 0  // 𑲭
-#define UC_UC_MARCHEN_SUBJOINED_HA               0x11CAE 0  // 𑲮
-#define UC_UC_MARCHEN_SUBJOINED_A                0x11CAF 0  // 𑲯
-#define UC_UC_MARCHEN_VOWEL_SIGN_AA              0x11CB0 0  // 𑲰
-#define UC_UC_MARCHEN_VOWEL_SIGN_I               0x11CB1 0  // 𑲱
-#define UC_UC_MARCHEN_VOWEL_SIGN_U               0x11CB2 0  // 𑲲
-#define UC_UC_MARCHEN_VOWEL_SIGN_E               0x11CB3 0  // 𑲳
-#define UC_UC_MARCHEN_VOWEL_SIGN_O               0x11CB4 0  // 𑲴
-#define UC_UC_MARCHEN_SIGN_ANUSVARA              0x11CB5 0  // 𑲵
-#define UC_UC_MARCHEN_SIGN_CANDRABINDU           0x11CB6 0  // 𑲶
+#define UC_MARCHEN_SUBJOINED_LETTER_YA           0x11CA9 0  // 𑲩
+#define UC_MARCHEN_SUBJOINED_LETTER_RA           0x11CAA 0  // 𑲪
+#define UC_MARCHEN_SUBJOINED_LETTER_LA           0x11CAB 0  // 𑲫
+#define UC_MARCHEN_SUBJOINED_LETTER_SHA          0x11CAC 0  // 𑲬
+#define UC_MARCHEN_SUBJOINED_LETTER_SA           0x11CAD 0  // 𑲭
+#define UC_MARCHEN_SUBJOINED_LETTER_HA           0x11CAE 0  // 𑲮
+#define UC_MARCHEN_SUBJOINED_LETTER_A            0x11CAF 0  // 𑲯
+#define UC_MARCHEN_VOWEL_SIGN_AA                 0x11CB0 0  // 𑲰
+#define UC_MARCHEN_VOWEL_SIGN_I                  0x11CB1 0  // 𑲱
+#define UC_MARCHEN_VOWEL_SIGN_U                  0x11CB2 0  // 𑲲
+#define UC_MARCHEN_VOWEL_SIGN_E                  0x11CB3 0  // 𑲳
+#define UC_MARCHEN_VOWEL_SIGN_O                  0x11CB4 0  // 𑲴
+#define UC_MARCHEN_SIGN_ANUSVARA                 0x11CB5 0  // 𑲵
+#define UC_MARCHEN_SIGN_CANDRABINDU              0x11CB6 0  // 𑲶

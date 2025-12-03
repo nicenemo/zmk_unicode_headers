@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_UC_LYDIAN_TRIANGULAR_MARK             0x1093F 0  // 𐤿
+#define UC_LYDIAN_TRIANGULAR_MARK                0x1093F 0  // 𐤿

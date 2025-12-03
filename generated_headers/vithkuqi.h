@@ -7,5 +7,5 @@
 
 #pragma once
 
-#define UC_UC_VITHKUQI_Y                         0x105BB 0x10594  // 𐖻/𐖔
-#define UC_UC_VITHKUQI_ZE                        0x105BC 0x10595  // 𐖼/𐖕
+#define UC_VITHKUQI_LETTER_Y                     0x105BB 0x10594  // 𐖻/𐖔
+#define UC_VITHKUQI_LETTER_ZE                    0x105BC 0x10595  // 𐖼/𐖕

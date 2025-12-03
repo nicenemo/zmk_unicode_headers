@@ -7,8 +7,8 @@
 
 #pragma once
 
-#define UC_UC_COMBINING_GRANTHA_A                0x11370 0  // 𑍰
-#define UC_UC_COMBINING_GRANTHA_KA               0x11371 0  // 𑍱
-#define UC_UC_COMBINING_GRANTHA_NA               0x11372 0  // 𑍲
-#define UC_UC_COMBINING_GRANTHA_VI               0x11373 0  // 𑍳
-#define UC_UC_COMBINING_GRANTHA_PA               0x11374 0  // 𑍴
+#define UC_CM_GRANTHA_LETTER_A                   0x11370 0  // 𑍰
+#define UC_CM_GRANTHA_LETTER_KA                  0x11371 0  // 𑍱
+#define UC_CM_GRANTHA_LETTER_NA                  0x11372 0  // 𑍲
+#define UC_CM_GRANTHA_LETTER_VI                  0x11373 0  // 𑍳
+#define UC_CM_GRANTHA_LETTER_PA                  0x11374 0  // 𑍴

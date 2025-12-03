@@ -7,16 +7,16 @@
 
 #pragma once
 
-#define UC_UC_SUBSCRIPT_SMALL_A                  0x2090 0  // ₐ
-#define UC_UC_SUBSCRIPT_SMALL_E                  0x2091 0  // ₑ
-#define UC_UC_SUBSCRIPT_SMALL_O                  0x2092 0  // ₒ
-#define UC_UC_SUBSCRIPT_SMALL_X                  0x2093 0  // ₓ
-#define UC_UC_SUBSCRIPT_SMALL_SCHWA              0x2094 0  // ₔ
-#define UC_UC_SUBSCRIPT_SMALL_H                  0x2095 0  // ₕ
-#define UC_UC_SUBSCRIPT_SMALL_K                  0x2096 0  // ₖ
-#define UC_UC_SUBSCRIPT_SMALL_L                  0x2097 0  // ₗ
-#define UC_UC_SUBSCRIPT_SMALL_M                  0x2098 0  // ₘ
-#define UC_UC_SUBSCRIPT_SMALL_N                  0x2099 0  // ₙ
-#define UC_UC_SUBSCRIPT_SMALL_P                  0x209A 0  // ₚ
-#define UC_UC_SUBSCRIPT_SMALL_S                  0x209B 0  // ₛ
-#define UC_UC_SUBSCRIPT_SMALL_T                  0x209C 0  // ₜ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_A           0x2090 0  // ₐ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_E           0x2091 0  // ₑ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_O           0x2092 0  // ₒ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_X           0x2093 0  // ₓ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_SCHWA       0x2094 0  // ₔ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_H           0x2095 0  // ₕ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_K           0x2096 0  // ₖ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_L           0x2097 0  // ₗ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_M           0x2098 0  // ₘ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_N           0x2099 0  // ₙ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_P           0x209A 0  // ₚ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_S           0x209B 0  // ₛ
+#define UC_LA_SUBSCRIPT_SMALL_LETTER_T           0x209C 0  // ₜ

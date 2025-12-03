@@ -7,7 +7,7 @@
 
 #pragma once
 
-#define UC_UC_SMALL_REVERSE_SOLIDUS              0xFE68 0  // ﹨
-#define UC_UC_SMALL_DOLLAR_SIGN                  0xFE69 0  // ﹩
-#define UC_UC_SMALL_PERCENT_SIGN                 0xFE6A 0  // ﹪
-#define UC_UC_SMALL_COMMERCIAL_AT                0xFE6B 0  // ﹫
+#define UC_SMALL_REVERSE_SOLIDUS                 0xFE68 0  // ﹨
+#define UC_SMALL_DOLLAR_SIGN                     0xFE69 0  // ﹩
+#define UC_SMALL_PERCENT_SIGN                    0xFE6A 0  // ﹪
+#define UC_SMALL_COMMERCIAL_AT                   0xFE6B 0  // ﹫

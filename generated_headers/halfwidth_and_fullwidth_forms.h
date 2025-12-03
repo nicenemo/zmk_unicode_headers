@@ -7,10 +7,10 @@
 
 #pragma once
 
-#define UC_UC_HALFWIDTH_LIGHT_VERTICAL           0xFFE8 0  // ￨
-#define UC_UC_HALFWIDTH_LEFTWARDS_ARROW          0xFFE9 0  // ￩
-#define UC_UC_HALFWIDTH_UPWARDS_ARROW            0xFFEA 0  // ￪
-#define UC_UC_HALFWIDTH_RIGHTWARDS_ARROW         0xFFEB 0  // ￫
-#define UC_UC_HALFWIDTH_DOWNWARDS_ARROW          0xFFEC 0  // ￬
-#define UC_UC_HALFWIDTH_BLACK_SQUARE             0xFFED 0  // ￭
-#define UC_UC_HALFWIDTH_WHITE_CIRCLE             0xFFEE 0  // ￮
+#define UC_HALFWIDTH_FORMS_LIGHT_VERTICAL        0xFFE8 0  // ￨
+#define UC_HALFWIDTH_LEFTWARDS_ARROW             0xFFE9 0  // ￩
+#define UC_HALFWIDTH_UPWARDS_ARROW               0xFFEA 0  // ￪
+#define UC_HALFWIDTH_RIGHTWARDS_ARROW            0xFFEB 0  // ￫
+#define UC_HALFWIDTH_DOWNWARDS_ARROW             0xFFEC 0  // ￬
+#define UC_HALFWIDTH_BLACK_SQUARE                0xFFED 0  // ￭
+#define UC_HALFWIDTH_WHITE_CIRCLE                0xFFEE 0  // ￮

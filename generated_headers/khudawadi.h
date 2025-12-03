@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_UC_KHUDAWADI_ZERO                     0x112F0 0  // 𑋰
-#define UC_UC_KHUDAWADI_ONE                      0x112F1 0  // 𑋱
-#define UC_UC_KHUDAWADI_TWO                      0x112F2 0  // 𑋲
-#define UC_UC_KHUDAWADI_THREE                    0x112F3 0  // 𑋳
-#define UC_UC_KHUDAWADI_FOUR                     0x112F4 0  // 𑋴
-#define UC_UC_KHUDAWADI_FIVE                     0x112F5 0  // 𑋵
-#define UC_UC_KHUDAWADI_SIX                      0x112F6 0  // 𑋶
-#define UC_UC_KHUDAWADI_SEVEN                    0x112F7 0  // 𑋷
-#define UC_UC_KHUDAWADI_EIGHT                    0x112F8 0  // 𑋸
-#define UC_UC_KHUDAWADI_NINE                     0x112F9 0  // 𑋹
+#define UC_KHUDAWADI_DIGIT_ZERO                  0x112F0 0  // 𑋰
+#define UC_KHUDAWADI_DIGIT_ONE                   0x112F1 0  // 𑋱
+#define UC_KHUDAWADI_DIGIT_TWO                   0x112F2 0  // 𑋲
+#define UC_KHUDAWADI_DIGIT_THREE                 0x112F3 0  // 𑋳
+#define UC_KHUDAWADI_DIGIT_FOUR                  0x112F4 0  // 𑋴
+#define UC_KHUDAWADI_DIGIT_FIVE                  0x112F5 0  // 𑋵
+#define UC_KHUDAWADI_DIGIT_SIX                   0x112F6 0  // 𑋶
+#define UC_KHUDAWADI_DIGIT_SEVEN                 0x112F7 0  // 𑋷
+#define UC_KHUDAWADI_DIGIT_EIGHT                 0x112F8 0  // 𑋸
+#define UC_KHUDAWADI_DIGIT_NINE                  0x112F9 0  // 𑋹

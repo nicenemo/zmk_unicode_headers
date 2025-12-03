@@ -7,6 +7,6 @@
 
 #pragma once
 
-#define UC_UC_SYRIAC_SOGDIAN_ZHAIN               0x074D 0  // ݍ
-#define UC_UC_SYRIAC_SOGDIAN_KHAPH               0x074E 0  // ݎ
-#define UC_UC_SYRIAC_SOGDIAN_FE                  0x074F 0  // ݏ
+#define UC_SYRIAC_LETTER_SOGDIAN_ZHAIN           0x074D 0  // ݍ
+#define UC_SYRIAC_LETTER_SOGDIAN_KHAPH           0x074E 0  // ݎ
+#define UC_SYRIAC_LETTER_SOGDIAN_FE              0x074F 0  // ݏ

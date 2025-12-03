@@ -7,6 +7,6 @@
 
 #pragma once
 
-#define UC_UC_OLD_IT_YE                          0x1032D 0  // 𐌭
-#define UC_UC_OLD_IT_NORTHERN_TSE                0x1032E 0  // 𐌮
-#define UC_UC_OLD_IT_SOUTHERN_TSE                0x1032F 0  // 𐌯
+#define UC_OLD_ITALIC_LETTER_YE                  0x1032D 0  // 𐌭
+#define UC_OLD_ITALIC_LETTER_NORTHERN_TSE        0x1032E 0  // 𐌮
+#define UC_OLD_ITALIC_LETTER_SOUTHERN_TSE        0x1032F 0  // 𐌯
