@@ -538,7 +538,7 @@ class MacroGenerator:
 
 
 # --------------------------------------------------------------------
-# 3. Helper Functions (Unchanged)
+# 3. Helper Functions 
 # --------------------------------------------------------------------
 
 def printable_glyph(cp: int) -> Optional[str]:
@@ -586,7 +586,7 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
 
 
 # --------------------------------------------------------------------
-# 4. Block Iteration (Generator)
+# 4. Block Iteration
 # --------------------------------------------------------------------
 
 def get_all_blocks() -> Iterator[UnicodeBlock]:
@@ -616,7 +616,7 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
 
 
 # --------------------------------------------------------------------
-# 5. Header Generation Logic (Updated to use MacroGenerator)
+# 5. Header Generation Logic
 # --------------------------------------------------------------------
 
 def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generator: MacroGenerator) -> Optional[List[str]]:
