@@ -159,7 +159,7 @@ class MacroGenerator:
 
 
 # --------------------------------------------------------------------
-# 3. Helper Functions (Unchanged)
+# 3. Helper Functions 
 # --------------------------------------------------------------------
 
 def printable_glyph(cp: int) -> Optional[str]:
@@ -238,7 +238,6 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
 # 5. Header Generation Logic (Updated to use MacroGenerator)
 # --------------------------------------------------------------------
 
-# Pass the generator instance to content generation
 def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generator: MacroGenerator) -> Optional[List[str]]:
     """
     Generates the content lines (#define macros) for a single C header block.
@@ -327,6 +326,8 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: Mac
         print(f"Processed block '{block.name}' (U+{block.start:04X}...U+{block.end:04X}): **Skipped** (no defines generated)")
         return
         
+    # Use triple-quoted f-string for the boilerplate content, ensuring it includes 
+    # all necessary newlines up to the content block.
     boilerplate = f"""\
 /* {header_file.name} – Unicode constants for U+{block.start:04X} … U+{block.end:04X}
 *
@@ -339,6 +340,8 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: Mac
 
 """
     
+    # Join the content lines with a newline separator, prepend the boilerplate, 
+    # and ensure the file ends with a single trailing newline.
     all_content = boilerplate + "\n".join(content_lines) + "\n"
     header_file.write_text(all_content, encoding="utf-8")
     
