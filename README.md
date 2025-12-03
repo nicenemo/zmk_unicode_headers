@@ -1,6 +1,6 @@
 # Unicode Header Generator
 
-> **unicode_headers.py** – A lightweight utility that downloads the latest Unicode Character Database (UCD) and produces one C/C++ header file per Unicode block.  
+> **unicode_headers.py** – A lightweight utility that poduces one C/C++ header file per Unicode block.  
 > The headers expose a macro for every code point in the form `UC_<UNICODE_NAME>` that expands to its hexadecimal value, e.g. `#define UC_LATIN_SMALL_LETTER_A 0x0061`.
 
 ---
