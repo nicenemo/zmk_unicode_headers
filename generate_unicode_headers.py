@@ -24,7 +24,7 @@ from typing import Dict, List, Set, Tuple, Optional, Iterator
 from collections import namedtuple
 
 # --------------------------------------------------------------------
-# 1. Configuration & Named Tuple
+# 1. Configuration & Named Tuple (Unified Definition) ----------------
 # --------------------------------------------------------------------
 
 UNICODE_VERSION = ucp.unidata_version
@@ -33,7 +33,8 @@ UnicodeBlock = namedtuple('UnicodeBlock', ['name', 'start', 'end'])
 
 # --- Layer 1: Block Prefixes (Custom/ISO 639-1) ---
 BLOCK_ABBREVIATIONS: Dict[str, str] = {
-    "DEFAULT": "", # Setting the default to "" prevents the redundant "UC_UC_"
+    # Default/Fallback: "" prevents the redundant "UC_UC_"
+    "DEFAULT": "",
     
     # Latin, Greek, Cyrillic Scripts
     "BASIC LATIN": "LA",
@@ -122,14 +123,12 @@ def printable_glyph(cp: int) -> Optional[str]:
     except ValueError:
         return None
         
-    # Check if the category is Control (C) or Separator (Z) or generally not printable
     cat = ucp.category(ch)
     if cat[0] in ("C", "Z") or not ch.isprintable():
         return None
         
     return ch
 
-# Refined implementation for cleaner structure and consistent Optional return type
 def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
     """
     Find the uppercase partner (cp, name) if *cp* is a single, mappable 
@@ -141,13 +140,11 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
     except ValueError:
         return None, None
 
-    # Only look for partners for lowercase letters
     if current_cat != 'Ll':
         return None, None
     
     partner_str = ch.upper()
 
-    # Check for 1:1 mapping that results in a different character
     if len(partner_str) == 1 and partner_str != ch:
         partner_cp = ord(partner_str)
         try:
@@ -157,7 +154,6 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
         except ValueError:
             return None, None
         
-        # Ensure the partner is indeed an uppercase letter
         if partner_cat == 'Lu':
             return partner_cp, partner_name
 
@@ -175,16 +171,13 @@ def macro_name_from_unicode_name(block_abbr: str, unicode_name: str, strip_case:
     """
     s = unicode_name
     
-    # 1. Strip case words if generating a pair (LOWERCASE/UPPERCASE)
     if strip_case:
         s = re.sub(r"(SMALL|CAPITAL|LOWERCASE|UPPERCASE)\s", "", s)
     
     s_upper = s.upper()
     
-    # 2. Initial cleanup: spaces/hyphens/non-word chars to single underscores
     s_final = re.sub(r"[^\w]+", "_", s_upper).strip("_")
     
-    # 3. Filter out redundant words and apply internal abbreviations
     s_parts = s_final.split('_')
     final_parts = []
     
@@ -197,17 +190,13 @@ def macro_name_from_unicode_name(block_abbr: str, unicode_name: str, strip_case:
 
     s_final = '_'.join(final_parts)
         
-    # Final cleanup of internal underscores
     s_final = re.sub(r"_+", "_", s_final).strip('_')
     
-    # Fallback if filtering removed everything
     if not s_final:
         s_final = "CHAR"
 
-    # 4. Assemble the final macro name robustly: UC + Block Abbr (if not empty) + Name Body
     parts = ["UC"]
     
-    # Append block abbreviation if it is non-empty (prevents UC_UC_NAME)
     if block_abbr:
         parts.append(block_abbr)
     
@@ -236,12 +225,10 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
         
         if name != current_name:
             if current_name and current_name != "No_Block":
-                # Yield the completed block range
                 yield UnicodeBlock(current_name, start_cp, cp - 1)
             current_name = name
             start_cp = cp
             
-    # Yield the final block if it was not No_Block
     if current_name and current_name != "No_Block":
         yield UnicodeBlock(current_name, start_cp, MAX_UNICODE_CP - 1)
 
@@ -272,20 +259,16 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str) -> Optional[Li
         glyph = printable_glyph(cp)
         partner_cp, partner_name = find_case_partner(cp)
 
-        # --- Case Pairing Logic Check ---
-        
         # 1. Skip Capital Letters that are the UPPERCASE partner of a later LOWERCASE letter.
         is_capital_cat = cat == 'Lu'
         if is_capital_cat:
             lower_str = char.lower()
-            # If the lowercase form is a single character different from the capital
             if len(lower_str) == 1 and lower_str != char:
                 lower_partner_cp = ord(lower_str)
-                # If the lowercase partner comes LATER in the code point range, skip this capital.
                 if lower_partner_cp > cp:
                     continue
             
-        # 2. SUCCESSFUL PAIR CASE (Lowercase and its Uppercase Partner found)
+        # 2. SUCCESSFUL PAIR CASE
         if partner_cp is not None: 
             cp1, cp2 = cp, partner_cp
             name1, name2 = name, partner_name 
@@ -325,12 +308,10 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path) -> None:
     Writes one header file for the block, providing console feedback.
     """
     
-    # File name sanitization
     s_clean = re.sub(r"[^\w]", "_", block.name)
     file_basename = re.sub(r"_+", "_", s_clean).lower().strip("_")
     header_file = out_dir / f"{file_basename}.h"
     
-    # Determine the block abbreviation
     block_abbr = BLOCK_ABBREVIATIONS.get(block.name.upper(), BLOCK_ABBREVIATIONS["DEFAULT"])
     
     content_lines = generate_header_content(block, block_abbr)
@@ -377,7 +358,6 @@ def main() -> int:
     out_dir = pathlib.Path(args.output)
     
     try:
-        # Create directory with parent folders if necessary
         out_dir.mkdir(exist_ok=True, parents=True)
     except OSError as e:
         print(f"Error creating output directory '{out_dir}': {e}", file=sys.stderr)
@@ -385,11 +365,9 @@ def main() -> int:
 
     print(f"Generating C headers for Unicode {UNICODE_VERSION}...")
 
-    # Process and emit headers for each block using the generator
     for block in get_all_blocks():
         emit_header(block, out_dir)
 
-    # Use resolve() for the absolute path in the final output message
     print("\nAll headers written to", out_dir.resolve())
     return 0
 
