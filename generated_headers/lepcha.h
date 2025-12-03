@@ -7,6 +7,6 @@
 
 #pragma once
 
-#define UC_LEPCHA_LETTER_TTA                     0x1C4D 0  // ᱍ
-#define UC_LEPCHA_LETTER_TTHA                    0x1C4E 0  // ᱎ
-#define UC_LEPCHA_LETTER_DDA                     0x1C4F 0  // ᱏ
+#define UC_LEPCHA_TTA                            0x1C4D 0  // ᱍ
+#define UC_LEPCHA_TTHA                           0x1C4E 0  // ᱎ
+#define UC_LEPCHA_DDA                            0x1C4F 0  // ᱏ

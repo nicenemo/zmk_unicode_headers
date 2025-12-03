@@ -7,9 +7,9 @@
 
 #pragma once
 
-#define UC_ROUNDED_SYMBOL_FOR_FU                 0x1F260 0  // 🉠
-#define UC_ROUNDED_SYMBOL_FOR_LU                 0x1F261 0  // 🉡
-#define UC_ROUNDED_SYMBOL_FOR_SHOU               0x1F262 0  // 🉢
-#define UC_ROUNDED_SYMBOL_FOR_XI                 0x1F263 0  // 🉣
-#define UC_ROUNDED_SYMBOL_FOR_SHUANGXI           0x1F264 0  // 🉤
-#define UC_ROUNDED_SYMBOL_FOR_CAI                0x1F265 0  // 🉥
+#define UC_ROUNDED_FOR_FU                        0x1F260 0  // 🉠
+#define UC_ROUNDED_FOR_LU                        0x1F261 0  // 🉡
+#define UC_ROUNDED_FOR_SHOU                      0x1F262 0  // 🉢
+#define UC_ROUNDED_FOR_XI                        0x1F263 0  // 🉣
+#define UC_ROUNDED_FOR_SHUANGXI                  0x1F264 0  // 🉤
+#define UC_ROUNDED_FOR_CAI                       0x1F265 0  // 🉥

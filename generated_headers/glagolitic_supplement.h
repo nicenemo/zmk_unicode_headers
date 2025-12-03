@@ -7,8 +7,8 @@
 
 #pragma once
 
-#define UC_CM_GLAGOLITIC_LETTER_YO               0x1E026 0  // 𞀦
-#define UC_CM_GLAGOLITIC_LETTER_IOTATED_SMALL_YUS 0x1E027 0  // 𞀧
-#define UC_CM_GLAGOLITIC_LETTER_BIG_YUS          0x1E028 0  // 𞀨
-#define UC_CM_GLAGOLITIC_LETTER_IOTATED_BIG_YUS  0x1E029 0  // 𞀩
-#define UC_CM_GLAGOLITIC_LETTER_FITA             0x1E02A 0  // 𞀪
+#define UC_COMBINING_GLAGOLITIC_YO               0x1E026 0  // 𞀦
+#define UC_COMBINING_GLAGOLITIC_IOTATED_SMALL_YUS 0x1E027 0  // 𞀧
+#define UC_COMBINING_GLAGOLITIC_BIG_YUS          0x1E028 0  // 𞀨
+#define UC_COMBINING_GLAGOLITIC_IOTATED_BIG_YUS  0x1E029 0  // 𞀩
+#define UC_COMBINING_GLAGOLITIC_FITA             0x1E02A 0  // 𞀪

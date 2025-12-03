@@ -7,15 +7,15 @@
 
 #pragma once
 
-#define UC_MENDE_KIKAKUI_DIGIT_ONE               0x1E8C7 0  // 𞣇
-#define UC_MENDE_KIKAKUI_DIGIT_TWO               0x1E8C8 0  // 𞣈
-#define UC_MENDE_KIKAKUI_DIGIT_THREE             0x1E8C9 0  // 𞣉
-#define UC_MENDE_KIKAKUI_DIGIT_FOUR              0x1E8CA 0  // 𞣊
-#define UC_MENDE_KIKAKUI_DIGIT_FIVE              0x1E8CB 0  // 𞣋
-#define UC_MENDE_KIKAKUI_DIGIT_SIX               0x1E8CC 0  // 𞣌
-#define UC_MENDE_KIKAKUI_DIGIT_SEVEN             0x1E8CD 0  // 𞣍
-#define UC_MENDE_KIKAKUI_DIGIT_EIGHT             0x1E8CE 0  // 𞣎
-#define UC_MENDE_KIKAKUI_DIGIT_NINE              0x1E8CF 0  // 𞣏
+#define UC_MENDE_KIKAKUI_ONE                     0x1E8C7 0  // 𞣇
+#define UC_MENDE_KIKAKUI_TWO                     0x1E8C8 0  // 𞣈
+#define UC_MENDE_KIKAKUI_THREE                   0x1E8C9 0  // 𞣉
+#define UC_MENDE_KIKAKUI_FOUR                    0x1E8CA 0  // 𞣊
+#define UC_MENDE_KIKAKUI_FIVE                    0x1E8CB 0  // 𞣋
+#define UC_MENDE_KIKAKUI_SIX                     0x1E8CC 0  // 𞣌
+#define UC_MENDE_KIKAKUI_SEVEN                   0x1E8CD 0  // 𞣍
+#define UC_MENDE_KIKAKUI_EIGHT                   0x1E8CE 0  // 𞣎
+#define UC_MENDE_KIKAKUI_NINE                    0x1E8CF 0  // 𞣏
 #define UC_MENDE_KIKAKUI_COMBINING_NUMBER_TEENS  0x1E8D0 0  // 𞣐
 #define UC_MENDE_KIKAKUI_COMBINING_NUMBER_TENS   0x1E8D1 0  // 𞣑
 #define UC_MENDE_KIKAKUI_COMBINING_NUMBER_HUNDREDS 0x1E8D2 0  // 𞣒

@@ -7,5 +7,5 @@
 
 #pragma once
 
-#define UC_YEZIDI_LETTER_LAM_WITH_DOT_ABOVE      0x10EB0 0  // 𐺰
-#define UC_YEZIDI_LETTER_YOT_WITH_CIRCUMFLEX_ABOVE 0x10EB1 0  // 𐺱
+#define UC_YEZIDI_LAM_DOT_ABOVE                  0x10EB0 0  // 𐺰
+#define UC_YEZIDI_YOT_CIRCUMFLEX_ABOVE           0x10EB1 0  // 𐺱

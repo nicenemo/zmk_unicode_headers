@@ -7,17 +7,17 @@
 
 #pragma once
 
-#define UC_MEETEI_MAYEK_LETTER_E                 0xAAE0 0  // ꫠ
-#define UC_MEETEI_MAYEK_LETTER_O                 0xAAE1 0  // ꫡ
-#define UC_MEETEI_MAYEK_LETTER_CHA               0xAAE2 0  // ꫢ
-#define UC_MEETEI_MAYEK_LETTER_NYA               0xAAE3 0  // ꫣ
-#define UC_MEETEI_MAYEK_LETTER_TTA               0xAAE4 0  // ꫤ
-#define UC_MEETEI_MAYEK_LETTER_TTHA              0xAAE5 0  // ꫥ
-#define UC_MEETEI_MAYEK_LETTER_DDA               0xAAE6 0  // ꫦ
-#define UC_MEETEI_MAYEK_LETTER_DDHA              0xAAE7 0  // ꫧ
-#define UC_MEETEI_MAYEK_LETTER_NNA               0xAAE8 0  // ꫨ
-#define UC_MEETEI_MAYEK_LETTER_SHA               0xAAE9 0  // ꫩ
-#define UC_MEETEI_MAYEK_LETTER_SSA               0xAAEA 0  // ꫪ
+#define UC_MEETEI_MAYEK_E                        0xAAE0 0  // ꫠ
+#define UC_MEETEI_MAYEK_O                        0xAAE1 0  // ꫡ
+#define UC_MEETEI_MAYEK_CHA                      0xAAE2 0  // ꫢ
+#define UC_MEETEI_MAYEK_NYA                      0xAAE3 0  // ꫣ
+#define UC_MEETEI_MAYEK_TTA                      0xAAE4 0  // ꫤ
+#define UC_MEETEI_MAYEK_TTHA                     0xAAE5 0  // ꫥ
+#define UC_MEETEI_MAYEK_DDA                      0xAAE6 0  // ꫦ
+#define UC_MEETEI_MAYEK_DDHA                     0xAAE7 0  // ꫧ
+#define UC_MEETEI_MAYEK_NNA                      0xAAE8 0  // ꫨ
+#define UC_MEETEI_MAYEK_SHA                      0xAAE9 0  // ꫩ
+#define UC_MEETEI_MAYEK_SSA                      0xAAEA 0  // ꫪ
 #define UC_MEETEI_MAYEK_VOWEL_SIGN_II            0xAAEB 0  // ꫫ
 #define UC_MEETEI_MAYEK_VOWEL_SIGN_UU            0xAAEC 0  // ꫬ
 #define UC_MEETEI_MAYEK_VOWEL_SIGN_AAI           0xAAED 0  // ꫭ

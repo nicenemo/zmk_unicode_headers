@@ -25,14 +25,14 @@
 #define UC_KAWI_PUNCTUATION_FILLED_CIRCLE        0x11F4D 0  // 𑽍
 #define UC_KAWI_PUNCTUATION_SPIRAL               0x11F4E 0  // 𑽎
 #define UC_KAWI_PUNCTUATION_CLOSING_SPIRAL       0x11F4F 0  // 𑽏
-#define UC_KAWI_DIGIT_ZERO                       0x11F50 0  // 𑽐
-#define UC_KAWI_DIGIT_ONE                        0x11F51 0  // 𑽑
-#define UC_KAWI_DIGIT_TWO                        0x11F52 0  // 𑽒
-#define UC_KAWI_DIGIT_THREE                      0x11F53 0  // 𑽓
-#define UC_KAWI_DIGIT_FOUR                       0x11F54 0  // 𑽔
-#define UC_KAWI_DIGIT_FIVE                       0x11F55 0  // 𑽕
-#define UC_KAWI_DIGIT_SIX                        0x11F56 0  // 𑽖
-#define UC_KAWI_DIGIT_SEVEN                      0x11F57 0  // 𑽗
-#define UC_KAWI_DIGIT_EIGHT                      0x11F58 0  // 𑽘
-#define UC_KAWI_DIGIT_NINE                       0x11F59 0  // 𑽙
+#define UC_KAWI_ZERO                             0x11F50 0  // 𑽐
+#define UC_KAWI_ONE                              0x11F51 0  // 𑽑
+#define UC_KAWI_TWO                              0x11F52 0  // 𑽒
+#define UC_KAWI_THREE                            0x11F53 0  // 𑽓
+#define UC_KAWI_FOUR                             0x11F54 0  // 𑽔
+#define UC_KAWI_FIVE                             0x11F55 0  // 𑽕
+#define UC_KAWI_SIX                              0x11F56 0  // 𑽖
+#define UC_KAWI_SEVEN                            0x11F57 0  // 𑽗
+#define UC_KAWI_EIGHT                            0x11F58 0  // 𑽘
+#define UC_KAWI_NINE                             0x11F59 0  // 𑽙
 #define UC_KAWI_SIGN_NUKTA                       0x11F5A 0  /* U+11F5A (KAWI SIGN NUKTA) */

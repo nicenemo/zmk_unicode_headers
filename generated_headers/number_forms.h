@@ -58,11 +58,11 @@
 #define UC_ROMAN_NUMERAL_ONE_THOUSAND_C_D        0x2180 0  // ↀ
 #define UC_ROMAN_NUMERAL_FIVE_THOUSAND           0x2181 0  // ↁ
 #define UC_ROMAN_NUMERAL_TEN_THOUSAND            0x2182 0  // ↂ
-#define UC_LA_LETTER_REVERSED_C                  0x2184 0x2183  // ↄ/Ↄ
+#define UC_REVERSED_C                            0x2184 0x2183  // ↄ/Ↄ
 #define UC_ROMAN_NUMERAL_SIX_LATE_FORM           0x2185 0  // ↅ
 #define UC_ROMAN_NUMERAL_FIFTY_EARLY_FORM        0x2186 0  // ↆ
 #define UC_ROMAN_NUMERAL_FIFTY_THOUSAND          0x2187 0  // ↇ
 #define UC_ROMAN_NUMERAL_ONE_HUNDRED_THOUSAND    0x2188 0  // ↈ
 #define UC_VULGAR_FRACTION_ZERO_THIRDS           0x2189 0  // ↉
-#define UC_TURNED_DIGIT_TWO                      0x218A 0  // ↊
-#define UC_TURNED_DIGIT_THREE                    0x218B 0  // ↋
+#define UC_TURNED_TWO                            0x218A 0  // ↊
+#define UC_TURNED_THREE                          0x218B 0  // ↋

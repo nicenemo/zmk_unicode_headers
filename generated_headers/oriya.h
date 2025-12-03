@@ -7,21 +7,21 @@
 
 #pragma once
 
-#define UC_OR_DIGIT_ZERO                         0x0B66 0  // ୦
-#define UC_OR_DIGIT_ONE                          0x0B67 0  // ୧
-#define UC_OR_DIGIT_TWO                          0x0B68 0  // ୨
-#define UC_OR_DIGIT_THREE                        0x0B69 0  // ୩
-#define UC_OR_DIGIT_FOUR                         0x0B6A 0  // ୪
-#define UC_OR_DIGIT_FIVE                         0x0B6B 0  // ୫
-#define UC_OR_DIGIT_SIX                          0x0B6C 0  // ୬
-#define UC_OR_DIGIT_SEVEN                        0x0B6D 0  // ୭
-#define UC_OR_DIGIT_EIGHT                        0x0B6E 0  // ୮
-#define UC_OR_DIGIT_NINE                         0x0B6F 0  // ୯
-#define UC_OR_ISSHAR                             0x0B70 0  // ୰
-#define UC_OR_LETTER_WA                          0x0B71 0  // ୱ
-#define UC_OR_FRACTION_ONE_QUARTER               0x0B72 0  // ୲
-#define UC_OR_FRACTION_ONE_HALF                  0x0B73 0  // ୳
-#define UC_OR_FRACTION_THREE_QUARTERS            0x0B74 0  // ୴
-#define UC_OR_FRACTION_ONE_SIXTEENTH             0x0B75 0  // ୵
-#define UC_OR_FRACTION_ONE_EIGHTH                0x0B76 0  // ୶
-#define UC_OR_FRACTION_THREE_SIXTEENTHS          0x0B77 0  // ୷
+#define UC_OR_ORIYA_ZERO                         0x0B66 0  // ୦
+#define UC_OR_ORIYA_ONE                          0x0B67 0  // ୧
+#define UC_OR_ORIYA_TWO                          0x0B68 0  // ୨
+#define UC_OR_ORIYA_THREE                        0x0B69 0  // ୩
+#define UC_OR_ORIYA_FOUR                         0x0B6A 0  // ୪
+#define UC_OR_ORIYA_FIVE                         0x0B6B 0  // ୫
+#define UC_OR_ORIYA_SIX                          0x0B6C 0  // ୬
+#define UC_OR_ORIYA_SEVEN                        0x0B6D 0  // ୭
+#define UC_OR_ORIYA_EIGHT                        0x0B6E 0  // ୮
+#define UC_OR_ORIYA_NINE                         0x0B6F 0  // ୯
+#define UC_OR_ORIYA_ISSHAR                       0x0B70 0  // ୰
+#define UC_OR_ORIYA_WA                           0x0B71 0  // ୱ
+#define UC_OR_ORIYA_FRACTION_ONE_QUARTER         0x0B72 0  // ୲
+#define UC_OR_ORIYA_FRACTION_ONE_HALF            0x0B73 0  // ୳
+#define UC_OR_ORIYA_FRACTION_THREE_QUARTERS      0x0B74 0  // ୴
+#define UC_OR_ORIYA_FRACTION_ONE_SIXTEENTH       0x0B75 0  // ୵
+#define UC_OR_ORIYA_FRACTION_ONE_EIGHTH          0x0B76 0  // ୶
+#define UC_OR_ORIYA_FRACTION_THREE_SIXTEENTHS    0x0B77 0  // ୷

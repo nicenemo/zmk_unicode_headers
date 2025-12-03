@@ -7,15 +7,15 @@
 
 #pragma once
 
-#define UC_RUMI_DIGIT_ONE                        0x10E60 0  // 𐹠
-#define UC_RUMI_DIGIT_TWO                        0x10E61 0  // 𐹡
-#define UC_RUMI_DIGIT_THREE                      0x10E62 0  // 𐹢
-#define UC_RUMI_DIGIT_FOUR                       0x10E63 0  // 𐹣
-#define UC_RUMI_DIGIT_FIVE                       0x10E64 0  // 𐹤
-#define UC_RUMI_DIGIT_SIX                        0x10E65 0  // 𐹥
-#define UC_RUMI_DIGIT_SEVEN                      0x10E66 0  // 𐹦
-#define UC_RUMI_DIGIT_EIGHT                      0x10E67 0  // 𐹧
-#define UC_RUMI_DIGIT_NINE                       0x10E68 0  // 𐹨
+#define UC_RUMI_ONE                              0x10E60 0  // 𐹠
+#define UC_RUMI_TWO                              0x10E61 0  // 𐹡
+#define UC_RUMI_THREE                            0x10E62 0  // 𐹢
+#define UC_RUMI_FOUR                             0x10E63 0  // 𐹣
+#define UC_RUMI_FIVE                             0x10E64 0  // 𐹤
+#define UC_RUMI_SIX                              0x10E65 0  // 𐹥
+#define UC_RUMI_SEVEN                            0x10E66 0  // 𐹦
+#define UC_RUMI_EIGHT                            0x10E67 0  // 𐹧
+#define UC_RUMI_NINE                             0x10E68 0  // 𐹨
 #define UC_RUMI_NUMBER_TEN                       0x10E69 0  // 𐹩
 #define UC_RUMI_NUMBER_TWENTY                    0x10E6A 0  // 𐹪
 #define UC_RUMI_NUMBER_THIRTY                    0x10E6B 0  // 𐹫

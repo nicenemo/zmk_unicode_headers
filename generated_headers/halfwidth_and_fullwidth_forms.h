@@ -7,7 +7,7 @@
 
 #pragma once
 
-#define UC_HALFWIDTH_FORMS_LIGHT_VERTICAL        0xFFE8 0  // ￨
+#define UC_HALFWIDTH_LIGHT_VERTICAL              0xFFE8 0  // ￨
 #define UC_HALFWIDTH_LEFTWARDS_ARROW             0xFFE9 0  // ￩
 #define UC_HALFWIDTH_UPWARDS_ARROW               0xFFEA 0  // ￪
 #define UC_HALFWIDTH_RIGHTWARDS_ARROW            0xFFEB 0  // ￫

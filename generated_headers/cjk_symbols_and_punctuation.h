@@ -8,10 +8,10 @@
 #pragma once
 
 #define UC_IDEOGRAPHIC_SPACE                     0x3000 0  /* U+3000 (IDEOGRAPHIC SPACE) */
-#define UC_IDEOGRAPHIC_COMMA                     0x3001 0  // 、
+#define UC_IDEOGRAPHIC                           0x3001 0  // 、
 #define UC_IDEOGRAPHIC_FULL_STOP                 0x3002 0  // 。
 #define UC_DITTO_MARK                            0x3003 0  // 〃
-#define UC_JAPANESE_INDUSTRIAL_STANDARD_SYMBOL   0x3004 0  // 〄
+#define UC_JAPANESE_INDUSTRIAL_STANDARD          0x3004 0  // 〄
 #define UC_IDEOGRAPHIC_ITERATION_MARK            0x3005 0  // 々
 #define UC_IDEOGRAPHIC_CLOSING_MARK              0x3006 0  // 〆
 #define UC_IDEOGRAPHIC_NUMBER_ZERO               0x3007 0  // 〇
@@ -57,17 +57,17 @@
 #define UC_HANGUL_DOUBLE_DOT_TONE_MARK           0x302F 0  // 〯
 #define UC_WAVY_DASH                             0x3030 0  // 〰
 #define UC_VERTICAL_KANA_REPEAT_MARK             0x3031 0  // 〱
-#define UC_VERTICAL_KANA_REPEAT_WITH_VOICED_SOUND_MARK 0x3032 0  // 〲
+#define UC_VERTICAL_KANA_REPEAT_VOICED_SOUND_MARK 0x3032 0  // 〲
 #define UC_VERTICAL_KANA_REPEAT_MARK_UPPER_HALF  0x3033 0  // 〳
-#define UC_VERTICAL_KANA_REPEAT_WITH_VOICED_SOUND_MARK_UPPER_HALF 0x3034 0  // 〴
+#define UC_VERTICAL_KANA_REPEAT_VOICED_SOUND_MARK_UPPER_HALF 0x3034 0  // 〴
 #define UC_VERTICAL_KANA_REPEAT_MARK_LOWER_HALF  0x3035 0  // 〵
-#define UC_CIRCLED_POSTAL_MARK                   0x3036 0  // 〶
-#define UC_IDEOGRAPHIC_TELEGRAPH_LINE_FEED_SEPARATOR_SYMBOL 0x3037 0  // 〷
+#define UC_C_POSTAL_MARK                         0x3036 0  // 〶
+#define UC_IDEOGRAPHIC_TELEGRAPH_LINE_FEED_SEPARATOR 0x3037 0  // 〷
 #define UC_HANGZHOU_NUMERAL_TEN                  0x3038 0  // 〸
 #define UC_HANGZHOU_NUMERAL_TWENTY               0x3039 0  // 〹
 #define UC_HANGZHOU_NUMERAL_THIRTY               0x303A 0  // 〺
 #define UC_VERTICAL_IDEOGRAPHIC_ITERATION_MARK   0x303B 0  // 〻
 #define UC_MASU_MARK                             0x303C 0  // 〼
 #define UC_PART_ALTERNATION_MARK                 0x303D 0  // 〽
-#define UC_IDEOGRAPHIC_VARIATION_INDICATOR       0x303E 0  // 〾
+#define UC_IDEOGRAPHIC_INDICATOR                 0x303E 0  // 〾
 #define UC_IDEOGRAPHIC_HALF_FILL_SPACE           0x303F 0  // 〿

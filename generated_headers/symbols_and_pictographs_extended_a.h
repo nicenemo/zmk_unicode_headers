@@ -7,7 +7,7 @@
 
 #pragma once
 
-#define UC_HAND_WITH_INDEX_FINGER_AND_THUMB_CROSSED 0x1FAF0 0  // 🫰
+#define UC_HAND_INDEX_FINGER_AND_THUMB_CROSSED   0x1FAF0 0  // 🫰
 #define UC_RIGHTWARDS_HAND                       0x1FAF1 0  // 🫱
 #define UC_LEFTWARDS_HAND                        0x1FAF2 0  // 🫲
 #define UC_PALM_DOWN_HAND                        0x1FAF3 0  // 🫳

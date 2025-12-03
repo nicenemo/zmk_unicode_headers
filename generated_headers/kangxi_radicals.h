@@ -73,7 +73,7 @@
 #define UC_KANGXI_RADICAL_HAND                   0x2F3F 0  // ⼿
 #define UC_KANGXI_RADICAL_BRANCH                 0x2F40 0  // ⽀
 #define UC_KANGXI_RADICAL_RAP                    0x2F41 0  // ⽁
-#define UC_KANGXI_RADICAL_SCRIPT                 0x2F42 0  // ⽂
+#define UC_KANGXI_RADICAL_SC                     0x2F42 0  // ⽂
 #define UC_KANGXI_RADICAL_DIPPER                 0x2F43 0  // ⽃
 #define UC_KANGXI_RADICAL_AXE                    0x2F44 0  // ⽄
 #define UC_KANGXI_RADICAL_SQUARE                 0x2F45 0  // ⽅

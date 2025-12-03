@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_HE_LETTER_TSADI_WITH_DAGESH           0xFB46 0  // צּ
-#define UC_HE_LETTER_QOF_WITH_DAGESH             0xFB47 0  // קּ
-#define UC_HE_LETTER_RESH_WITH_DAGESH            0xFB48 0  // רּ
-#define UC_HE_LETTER_SHIN_WITH_DAGESH            0xFB49 0  // שּ
-#define UC_HE_LETTER_TAV_WITH_DAGESH             0xFB4A 0  // תּ
-#define UC_HE_LETTER_VAV_WITH_HOLAM              0xFB4B 0  // וֹ
-#define UC_HE_LETTER_BET_WITH_RAFE               0xFB4C 0  // בֿ
-#define UC_HE_LETTER_KAF_WITH_RAFE               0xFB4D 0  // כֿ
-#define UC_HE_LETTER_PE_WITH_RAFE                0xFB4E 0  // פֿ
-#define UC_HE_LIGATURE_ALEF_LAMED                0xFB4F 0  // ﭏ
+#define UC_TSADI_DAGESH                          0xFB46 0  // צּ
+#define UC_QOF_DAGESH                            0xFB47 0  // קּ
+#define UC_RESH_DAGESH                           0xFB48 0  // רּ
+#define UC_SHIN_DAGESH                           0xFB49 0  // שּ
+#define UC_TAV_DAGESH                            0xFB4A 0  // תּ
+#define UC_VAV_HOLAM                             0xFB4B 0  // וֹ
+#define UC_BET_RAFE                              0xFB4C 0  // בֿ
+#define UC_KAF_RAFE                              0xFB4D 0  // כֿ
+#define UC_PE_RAFE                               0xFB4E 0  // פֿ
+#define UC_LIGATURE_ALEF_LAMED                   0xFB4F 0  // ﭏ

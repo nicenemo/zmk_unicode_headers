@@ -8,4 +8,4 @@
 #pragma once
 
 #define UC_NYIAKENG_PUACHUE_HMONG_LOGOGRAM_NYAJ  0x1E14E 0  // 𞅎
-#define UC_NYIAKENG_PUACHUE_HMONG_CIRCLED_CA     0x1E14F 0  // 𞅏
+#define UC_NYIAKENG_PUACHUE_HMONG_C_CA           0x1E14F 0  // 𞅏

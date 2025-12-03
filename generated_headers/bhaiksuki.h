@@ -7,16 +7,16 @@
 
 #pragma once
 
-#define UC_BHAIKSUKI_DIGIT_ZERO                  0x11C50 0  // 𑱐
-#define UC_BHAIKSUKI_DIGIT_ONE                   0x11C51 0  // 𑱑
-#define UC_BHAIKSUKI_DIGIT_TWO                   0x11C52 0  // 𑱒
-#define UC_BHAIKSUKI_DIGIT_THREE                 0x11C53 0  // 𑱓
-#define UC_BHAIKSUKI_DIGIT_FOUR                  0x11C54 0  // 𑱔
-#define UC_BHAIKSUKI_DIGIT_FIVE                  0x11C55 0  // 𑱕
-#define UC_BHAIKSUKI_DIGIT_SIX                   0x11C56 0  // 𑱖
-#define UC_BHAIKSUKI_DIGIT_SEVEN                 0x11C57 0  // 𑱗
-#define UC_BHAIKSUKI_DIGIT_EIGHT                 0x11C58 0  // 𑱘
-#define UC_BHAIKSUKI_DIGIT_NINE                  0x11C59 0  // 𑱙
+#define UC_BHAIKSUKI_ZERO                        0x11C50 0  // 𑱐
+#define UC_BHAIKSUKI_ONE                         0x11C51 0  // 𑱑
+#define UC_BHAIKSUKI_TWO                         0x11C52 0  // 𑱒
+#define UC_BHAIKSUKI_THREE                       0x11C53 0  // 𑱓
+#define UC_BHAIKSUKI_FOUR                        0x11C54 0  // 𑱔
+#define UC_BHAIKSUKI_FIVE                        0x11C55 0  // 𑱕
+#define UC_BHAIKSUKI_SIX                         0x11C56 0  // 𑱖
+#define UC_BHAIKSUKI_SEVEN                       0x11C57 0  // 𑱗
+#define UC_BHAIKSUKI_EIGHT                       0x11C58 0  // 𑱘
+#define UC_BHAIKSUKI_NINE                        0x11C59 0  // 𑱙
 #define UC_BHAIKSUKI_NUMBER_ONE                  0x11C5A 0  // 𑱚
 #define UC_BHAIKSUKI_NUMBER_TWO                  0x11C5B 0  // 𑱛
 #define UC_BHAIKSUKI_NUMBER_THREE                0x11C5C 0  // 𑱜

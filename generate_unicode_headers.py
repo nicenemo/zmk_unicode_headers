@@ -8,7 +8,11 @@ Generate C header files with Unicode constants for every code point.
 The script expects no external data files – it pulls everything from the
 `unicodedataplus` package (Unicode data).
 
-Each block gets its own header under `generated_headers/`.
+This version uses a three-layered abbreviation system for maximal brevity and
+collision avoidance:
+1. Block Prefix (e.g., 'LA' for Latin, 'SH' for Shavian)
+2. Redundant Word Stripping (e.g., removing 'LETTER', 'DIGIT', 'WITH')
+3. Internal Abbreviation (e.g., 'SANS_SERIF' -> 'SS')
 """
 
 import pathlib
@@ -20,7 +24,7 @@ from typing import Dict, List, Set, Tuple, Optional, Iterator
 from collections import namedtuple
 
 # --------------------------------------------------------------------
-# 1. Configuration & Named Tuple -------------------------------------
+# 1. Configuration & Named Tuple (Refactored for 3-Layer Abbreviation)
 # --------------------------------------------------------------------
 
 # The version is derived directly from the unicodedataplus package data
@@ -32,15 +36,95 @@ MAX_UNICODE_CP = 0x110000
 # Named tuple for blocks
 UnicodeBlock = namedtuple('UnicodeBlock', ['name', 'start', 'end'])
 
-# Dictionary to map common script/language names to two-letter prefixes
-SCRIPT_ABBREVIATIONS: Dict[str, str] = {
-    "GREEK": "EL", "LATIN": "LA", "ARABIC": "AR", "HEBREW": "HE", 
-    "THAI": "TH", "KHMER": "KM", "TIBETAN": "TB",
-    "CYRILLIC": "CY", "COPTIC": "CP", "DEVANAGARI": "DV", "BENGALI": "BN", 
-    "GUJARATI": "GJ", "GURMUKHI": "GK", "ORIYA": "OR", "TAMIL": "TM", 
+# --- Layer 1: Block Prefixes (Custom/ISO 639-1) ---
+BLOCK_ABBREVIATIONS: Dict[str, str] = {
+    "DEFAULT": "", # Setting the default to "" prevents the redundant "UC_UC_"
+}
+
+# 1.1 Latin, Greek, Cyrillic Scripts
+BLOCK_ABBREVIATIONS.update({
+    "BASIC LATIN": "LA",
+    "LATIN-1 SUPPLEMENT": "L1S",
+    "LATIN EXTENDED-A": "LTA",
+    "LATIN EXTENDED-B": "LTB",
+    "LATIN EXTENDED-C": "LTC",
+    "LATIN EXTENDED-D": "LTD",
+    "LATIN EXTENDED-E": "LTE",
+    "GREEK AND COPTIC": "GRC",
+    "GREEK EXTENDED": "GREX",
+    "CYRILLIC": "CY",
+    "CYRILLIC SUPPLEMENT": "CYS",
+    "ARMENIAN": "AM",
+    "HEBREW": "HE",
+    "ARABIC": "AR",
+    "SHAVIAN": "SH", # Requested specific code
+})
+
+# 1.2 Major Indic Scripts
+BLOCK_ABBREVIATIONS.update({
+    "DEVANAGARI": "DV",
+    "BENGALI": "BN",
+    "GUJARATI": "GJ",
+    "GURMUKHI": "GK",
+    "ORIYA": "OR",
+    "TAMIL": "TM",
     "TELUGU": "TL",
-    "GENERAL": "GN", "COMBINING": "CM", "SUPERSCRIPTS": "SS", "SUBSCRIPTS": "SB",
-    "MATHEMATICAL": "MA", "MISCELLANEOUS": "MS", "ENCLOSED": "EN", "CJK": "CJK",
+})
+
+# 1.3 CJK and Hangul
+BLOCK_ABBREVIATIONS.update({
+    "HANGUL JAMO": "HJ",
+    "HANGUL SYLLABLES": "HSY",
+    "KATAKANA": "KT",
+    "HIRAGANA": "HR",
+    "CJK UNIFIED IDEOGRAPHS": "CJK",
+    "CJK UNIFIED IDEOGRAPHS EXTENSION A": "CJKA",
+})
+
+# 1.4 Symbols and Punctuation
+BLOCK_ABBREVIATIONS.update({
+    "GENERAL PUNCTUATION": "PUN",
+    "CURRENCY SYMBOLS": "CUR",
+    "ARROWS": "ARW",
+    "MATHEMATICAL OPERATORS": "MOP",
+    "MATHEMATICAL ALPHANUMERIC SYMBOLS": "MA", # Requested specific code
+    "BLOCK ELEMENTS": "BE",
+    "GEOMETRIC SHAPES": "GS",
+    "MISCELLANEOUS SYMBOLS": "MSY",
+    "TRANSPORT AND MAP SYMBOLS": "TMS",
+    "EMOTICONS": "EMJ",
+})
+
+# 1.5 Specials
+BLOCK_ABBREVIATIONS.update({
+    "HIGH SURROGATES": "HS",
+    "LOW SURROGATES": "LS",
+    "PRIVATE USE AREA": "PUA",
+})
+
+# --- Layer 2: Redundant Word Stripping ---
+REDUNDANT_SCRIPT_WORDS: Set[str] = {
+    # Common words to remove (includes the requested 'LETTER' and 'WITH')
+    "LETTER", "DIGIT", "COMMA", "CHARACTER", "SYMBOL", "WITH", "FORMS", 
+    "ALPHABETIC", "TELEGRAM", "EMOJI",
+    # Script/Category words (mostly covered by block prefix, but useful here too)
+    "LATIN", "GREEK", "CYRILLIC", "ARABIC", "HEBREW", "SHAVIAN", "COPTIC",
+    "DEVANAGARI", "MATHEMATICAL", "MISCELLANEOUS", "SUPPLEMENTAL", "EXTENDED", 
+    "ADDITIONAL", "COMPATIBILITY", "IDEOGRAPHS", "VARIATION", "SELECTOR",
+}
+
+# --- Layer 3: Internal Abbreviation (Stylistic) ---
+MACRO_BODY_ABBREVIATIONS: Dict[str, str] = {
+    "SANS_SERIF": "SS",
+    "DOUBLE_STRUCK": "DS",
+    "FRAKTUR": "FR",
+    "MONOSPACE": "MS",
+    "ITALIC": "IT",
+    "SCRIPT": "SC",
+    "CALIGRAPHIC": "CA",
+    "CIRCLED": "C",
+    "PARENTHESIZED": "P",
+    "FULLWIDTH": "FW",
 }
 
 
@@ -93,29 +177,62 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
 
 
 # --------------------------------------------------------------------
-# 3. Helper: Convert a Unicode name into an identifier ----------------
+# 3. Helper: Convert a Unicode name into an identifier (Refactored) ---
 # --------------------------------------------------------------------
 
-def macro_name_from_unicode_name(unicode_name: str, strip_case: bool) -> str:
+def macro_name_from_unicode_name(block_abbr: str, unicode_name: str, strip_case: bool) -> str:
     """
-    Build a C‑identifier from the Unicode name, conditionally removing the case
-    identifier, and abbreviating the script/language name.
+    Build a short, clean C‑identifier from the Unicode name using the three-layer
+    abbreviation system.
+    
+    The macro format is: UC_{BLOCK_ABBR}_{NAME_BODY}
     """
     s = unicode_name
     
+    # 1. Strip case words if generating a pair (LOWERCASE/UPPERCASE)
     if strip_case:
         s = re.sub(r"(SMALL|CAPITAL|LOWERCASE|UPPERCASE)\s", "", s)
     
     s_upper = s.upper()
-    s_words = s_upper.split()
-    if s_words and s_words[0] in SCRIPT_ABBREVIATIONS:
-        abbr = SCRIPT_ABBREVIATIONS[s_words[0]]
-        s_upper = abbr + ' ' + ' '.join(s_words[1:])
     
-    s_final = re.sub(r"[^\w]", "_", s_upper)
-    s_final = re.sub(r"_+", "_", s_final).strip("_") 
+    # 2. Initial cleanup: spaces/hyphens/non-word chars to single underscores
+    s_final = re.sub(r"[^\w]+", "_", s_upper).strip("_")
     
-    return f"UC_{s_final}"
+    # 3. Filter out redundant words and apply internal abbreviations
+    s_parts = s_final.split('_')
+    final_parts = []
+    
+    for part in s_parts:
+        # Check against redundant list (e.g., removes 'LETTER', 'WITH')
+        if part in REDUNDANT_SCRIPT_WORDS:
+            continue
+        
+        # Apply internal abbreviation (e.g., SANS_SERIF -> SS)
+        abbreviated_part = MACRO_BODY_ABBREVIATIONS.get(part, part)
+        final_parts.append(abbreviated_part)
+
+    s_final = '_'.join(final_parts)
+        
+    # Final cleanup of internal underscores
+    s_final = re.sub(r"_+", "_", s_final).strip('_')
+    
+    # Fallback if filtering removed everything
+    if not s_final:
+        # If the name body is empty (e.g., after removing "LATIN LETTER A"), use a fallback
+        s_final = "CHAR"
+
+    # 4. Assemble the final macro name robustly: UC + Block Abbr (if not empty) + Name Body
+    parts = ["UC"]
+    
+    # Add block abbreviation if present (it is "" for the default case, correctly skipped)
+    if block_abbr:
+        parts.append(block_abbr)
+    
+    # Add the cleaned name body
+    parts.append(s_final)
+
+    # Join with a single underscore
+    return "_".join(parts)
 
 
 # --------------------------------------------------------------------
@@ -147,12 +264,13 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
 
 
 # --------------------------------------------------------------------
-# 5. Header Generation Logic -----------------------------------------
+# 5. Header Generation Logic (Refactored to pass block_abbr) ---------
 # --------------------------------------------------------------------
 
-def generate_header_content(block: UnicodeBlock) -> Optional[List[str]]:
+def generate_header_content(block: UnicodeBlock, block_abbr: str) -> Optional[List[str]]:
     """
     Generates the content lines for a single C header block.
+    Now requires block_abbr to be passed for macro generation.
     """
     
     lines: List[str] = []
@@ -191,7 +309,8 @@ def generate_header_content(block: UnicodeBlock) -> Optional[List[str]]:
                 comment_parts = [f"U+{cp1:04X} ({name1})", f"U+{cp2:04X} ({name2})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
-            macro_name = macro_name_from_unicode_name(name1, strip_case=True)
+            # Use new macro_name function with block_abbr
+            macro_name = macro_name_from_unicode_name(block_abbr, name1, strip_case=True)
             lines.append(
                 f"#define {macro_name:<40} 0x{cp1:04X} 0x{cp2:04X}  {comment}" 
             )
@@ -205,7 +324,8 @@ def generate_header_content(block: UnicodeBlock) -> Optional[List[str]]:
                 comment_parts = [f"U+{cp:04X} ({name})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
-            macro_name = macro_name_from_unicode_name(name, strip_case=False)
+            # Use new macro_name function with block_abbr
+            macro_name = macro_name_from_unicode_name(block_abbr, name, strip_case=False)
             lines.append(
                 f"#define {macro_name:<40} 0x{cp:04X} 0  {comment}" 
             )
@@ -216,13 +336,17 @@ def generate_header_content(block: UnicodeBlock) -> Optional[List[str]]:
 def emit_header(block: UnicodeBlock, out_dir: pathlib.Path) -> None:
     """
     Writes one header file for the block, providing console feedback.
+    Determines the block abbreviation before generating content.
     """
     
     s_clean = re.sub(r"[^\w]", "_", block.name)
     file_basename = re.sub(r"_+", "_", s_clean).lower().strip("_")
     header_file = out_dir / f"{file_basename}.h"
     
-    content_lines = generate_header_content(block)
+    # Determine the block abbreviation
+    block_abbr = BLOCK_ABBREVIATIONS.get(block.name.upper(), BLOCK_ABBREVIATIONS["DEFAULT"])
+    
+    content_lines = generate_header_content(block, block_abbr)
     
     if content_lines is None:
         print(f"Processed block '{block.name}' (U+{block.start:04X}...U+{block.end:04X}): **Skipped** (no defines generated)")
@@ -273,6 +397,7 @@ def main() -> int:
 
     print(f"Generating C headers for Unicode {UNICODE_VERSION}...")
 
+    # Efficient iteration over the block generator (retained from your clean version)
     for block in get_all_blocks():
         emit_header(block, out_dir)
 

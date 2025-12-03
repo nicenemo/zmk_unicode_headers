@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_GEORGIAN_LETTER_AEN                   0x2D2D 0x10CD  // ⴭ/Ⴭ
+#define UC_GEORGIAN_AEN                          0x2D2D 0x10CD  // ⴭ/Ⴭ

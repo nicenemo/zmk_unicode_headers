@@ -11,7 +11,7 @@
 #define UC_DOWNWARDS_QUADRUPLE_ARROW             0x27F1 0  // ⟱
 #define UC_ANTICLOCKWISE_GAPPED_CIRCLE_ARROW     0x27F2 0  // ⟲
 #define UC_CLOCKWISE_GAPPED_CIRCLE_ARROW         0x27F3 0  // ⟳
-#define UC_RIGHT_ARROW_WITH_CIRCLED_PLUS         0x27F4 0  // ⟴
+#define UC_RIGHT_ARROW_C_PLUS                    0x27F4 0  // ⟴
 #define UC_LONG_LEFTWARDS_ARROW                  0x27F5 0  // ⟵
 #define UC_LONG_RIGHTWARDS_ARROW                 0x27F6 0  // ⟶
 #define UC_LONG_LEFT_RIGHT_ARROW                 0x27F7 0  // ⟷

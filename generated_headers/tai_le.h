@@ -7,8 +7,8 @@
 
 #pragma once
 
-#define UC_TAI_LE_LETTER_TONE_2                  0x1970 0  // ᥰ
-#define UC_TAI_LE_LETTER_TONE_3                  0x1971 0  // ᥱ
-#define UC_TAI_LE_LETTER_TONE_4                  0x1972 0  // ᥲ
-#define UC_TAI_LE_LETTER_TONE_5                  0x1973 0  // ᥳ
-#define UC_TAI_LE_LETTER_TONE_6                  0x1974 0  // ᥴ
+#define UC_TAI_LE_TONE_2                         0x1970 0  // ᥰ
+#define UC_TAI_LE_TONE_3                         0x1971 0  // ᥱ
+#define UC_TAI_LE_TONE_4                         0x1972 0  // ᥲ
+#define UC_TAI_LE_TONE_5                         0x1973 0  // ᥳ
+#define UC_TAI_LE_TONE_6                         0x1974 0  // ᥴ

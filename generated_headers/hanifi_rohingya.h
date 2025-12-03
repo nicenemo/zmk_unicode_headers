@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_HANIFI_ROHINGYA_DIGIT_ZERO            0x10D30 0  // 𐴰
-#define UC_HANIFI_ROHINGYA_DIGIT_ONE             0x10D31 0  // 𐴱
-#define UC_HANIFI_ROHINGYA_DIGIT_TWO             0x10D32 0  // 𐴲
-#define UC_HANIFI_ROHINGYA_DIGIT_THREE           0x10D33 0  // 𐴳
-#define UC_HANIFI_ROHINGYA_DIGIT_FOUR            0x10D34 0  // 𐴴
-#define UC_HANIFI_ROHINGYA_DIGIT_FIVE            0x10D35 0  // 𐴵
-#define UC_HANIFI_ROHINGYA_DIGIT_SIX             0x10D36 0  // 𐴶
-#define UC_HANIFI_ROHINGYA_DIGIT_SEVEN           0x10D37 0  // 𐴷
-#define UC_HANIFI_ROHINGYA_DIGIT_EIGHT           0x10D38 0  // 𐴸
-#define UC_HANIFI_ROHINGYA_DIGIT_NINE            0x10D39 0  // 𐴹
+#define UC_HANIFI_ROHINGYA_ZERO                  0x10D30 0  // 𐴰
+#define UC_HANIFI_ROHINGYA_ONE                   0x10D31 0  // 𐴱
+#define UC_HANIFI_ROHINGYA_TWO                   0x10D32 0  // 𐴲
+#define UC_HANIFI_ROHINGYA_THREE                 0x10D33 0  // 𐴳
+#define UC_HANIFI_ROHINGYA_FOUR                  0x10D34 0  // 𐴴
+#define UC_HANIFI_ROHINGYA_FIVE                  0x10D35 0  // 𐴵
+#define UC_HANIFI_ROHINGYA_SIX                   0x10D36 0  // 𐴶
+#define UC_HANIFI_ROHINGYA_SEVEN                 0x10D37 0  // 𐴷
+#define UC_HANIFI_ROHINGYA_EIGHT                 0x10D38 0  // 𐴸
+#define UC_HANIFI_ROHINGYA_NINE                  0x10D39 0  // 𐴹

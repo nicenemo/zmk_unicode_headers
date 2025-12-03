@@ -7,13 +7,13 @@
 
 #pragma once
 
-#define UC_GUNJALA_GONDI_DIGIT_ZERO              0x11DA0 0  // 𑶠
-#define UC_GUNJALA_GONDI_DIGIT_ONE               0x11DA1 0  // 𑶡
-#define UC_GUNJALA_GONDI_DIGIT_TWO               0x11DA2 0  // 𑶢
-#define UC_GUNJALA_GONDI_DIGIT_THREE             0x11DA3 0  // 𑶣
-#define UC_GUNJALA_GONDI_DIGIT_FOUR              0x11DA4 0  // 𑶤
-#define UC_GUNJALA_GONDI_DIGIT_FIVE              0x11DA5 0  // 𑶥
-#define UC_GUNJALA_GONDI_DIGIT_SIX               0x11DA6 0  // 𑶦
-#define UC_GUNJALA_GONDI_DIGIT_SEVEN             0x11DA7 0  // 𑶧
-#define UC_GUNJALA_GONDI_DIGIT_EIGHT             0x11DA8 0  // 𑶨
-#define UC_GUNJALA_GONDI_DIGIT_NINE              0x11DA9 0  // 𑶩
+#define UC_GUNJALA_GONDI_ZERO                    0x11DA0 0  // 𑶠
+#define UC_GUNJALA_GONDI_ONE                     0x11DA1 0  // 𑶡
+#define UC_GUNJALA_GONDI_TWO                     0x11DA2 0  // 𑶢
+#define UC_GUNJALA_GONDI_THREE                   0x11DA3 0  // 𑶣
+#define UC_GUNJALA_GONDI_FOUR                    0x11DA4 0  // 𑶤
+#define UC_GUNJALA_GONDI_FIVE                    0x11DA5 0  // 𑶥
+#define UC_GUNJALA_GONDI_SIX                     0x11DA6 0  // 𑶦
+#define UC_GUNJALA_GONDI_SEVEN                   0x11DA7 0  // 𑶧
+#define UC_GUNJALA_GONDI_EIGHT                   0x11DA8 0  // 𑶨
+#define UC_GUNJALA_GONDI_NINE                    0x11DA9 0  // 𑶩

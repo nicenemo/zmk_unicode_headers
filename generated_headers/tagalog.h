@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_TAGALOG_LETTER_ARCHAIC_RA             0x171F 0  // ᜟ
+#define UC_TAGALOG_ARCHAIC_RA                    0x171F 0  // ᜟ

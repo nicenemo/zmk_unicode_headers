@@ -7,19 +7,19 @@
 
 #pragma once
 
-#define UC_VARIATION_SELECTOR_1                  0xFE00 0  // ︀
-#define UC_VARIATION_SELECTOR_2                  0xFE01 0  // ︁
-#define UC_VARIATION_SELECTOR_3                  0xFE02 0  // ︂
-#define UC_VARIATION_SELECTOR_4                  0xFE03 0  // ︃
-#define UC_VARIATION_SELECTOR_5                  0xFE04 0  // ︄
-#define UC_VARIATION_SELECTOR_6                  0xFE05 0  // ︅
-#define UC_VARIATION_SELECTOR_7                  0xFE06 0  // ︆
-#define UC_VARIATION_SELECTOR_8                  0xFE07 0  // ︇
-#define UC_VARIATION_SELECTOR_9                  0xFE08 0  // ︈
-#define UC_VARIATION_SELECTOR_10                 0xFE09 0  // ︉
-#define UC_VARIATION_SELECTOR_11                 0xFE0A 0  // ︊
-#define UC_VARIATION_SELECTOR_12                 0xFE0B 0  // ︋
-#define UC_VARIATION_SELECTOR_13                 0xFE0C 0  // ︌
-#define UC_VARIATION_SELECTOR_14                 0xFE0D 0  // ︍
-#define UC_VARIATION_SELECTOR_15                 0xFE0E 0  // ︎
-#define UC_VARIATION_SELECTOR_16                 0xFE0F 0  // ️
+#define UC_1                                     0xFE00 0  // ︀
+#define UC_2                                     0xFE01 0  // ︁
+#define UC_3                                     0xFE02 0  // ︂
+#define UC_4                                     0xFE03 0  // ︃
+#define UC_5                                     0xFE04 0  // ︄
+#define UC_6                                     0xFE05 0  // ︅
+#define UC_7                                     0xFE06 0  // ︆
+#define UC_8                                     0xFE07 0  // ︇
+#define UC_9                                     0xFE08 0  // ︈
+#define UC_10                                    0xFE09 0  // ︉
+#define UC_11                                    0xFE0A 0  // ︊
+#define UC_12                                    0xFE0B 0  // ︋
+#define UC_13                                    0xFE0C 0  // ︌
+#define UC_14                                    0xFE0D 0  // ︍
+#define UC_15                                    0xFE0E 0  // ︎
+#define UC_16                                    0xFE0F 0  // ️

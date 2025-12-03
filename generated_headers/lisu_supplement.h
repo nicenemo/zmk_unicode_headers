@@ -7,4 +7,4 @@
 
 #pragma once
 
-#define UC_LISU_LETTER_YHA                       0x11FB0 0  // 𑾰
+#define UC_LISU_YHA                              0x11FB0 0  // 𑾰
