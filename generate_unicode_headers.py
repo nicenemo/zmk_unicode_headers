@@ -257,11 +257,7 @@ def printable_glyph(cp: int) -> Optional[str]:
     except ValueError:
         return None
         
-    cat = category(ch)
-    # Check for control, separator, or explicitly non-printable characters
-    if cat[0] in ("C", "Z") or not ch.isprintable():
-        return None
-        
+    # No longer needed, as the main loop handles filtering based on category
     return ch
 
 def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
@@ -312,6 +308,9 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
     defined_code_points = 0
     significant_hex_values = 0
 
+    # Categories to EXCLUDE (Unassigned, Private Use, Surrogate, Specific Separators)
+    EXCLUDE_CATEGORIES = {'Cn', 'Co', 'Cs', 'Zl', 'Zp'}
+
     for cp in range(block.start, block.end + 1):
         if cp in processed:
             continue
@@ -321,13 +320,15 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
             char_name = name(char)
             cat = category(char)
         except ValueError:
-            # Correctly skips unassigned and non-character code points
+            # Skips unassigned (if not explicitly covered by Cn) and non-character code points
             continue
             
-        # Skip characters whose Unicode category is 'C' (Other/Control/Unassigned/Private Use) 
-        # or 'Z' (Separator/Space).
-        if cat[0] in ("C", "Z"):
-            continue 
+        # --- NEW FILTERING LOGIC ---
+        # Only exclude Unassigned (Cn), Private Use (Co), Surrogate (Cs), 
+        # Line Separator (Zl), and Paragraph Separator (Zp).
+        if cat in EXCLUDE_CATEGORIES:
+            continue
+        # ---------------------------
             
         glyph = printable_glyph(cp)
         partner_cp, partner_name = find_case_partner(cp)
@@ -393,14 +394,14 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: Mac
     including a consistency check and description within the header's comments.
     """
     
-    # --- RESTORED ORIGINAL FILE NAMING LOGIC ---
+    # --- FILE NAMING LOGIC ---
     s_clean = re.sub(r"[^\w]", "_", block.name)
     file_basename = re.sub(r"_+", "_", s_clean).lower().strip("_")
     header_file = out_dir / f"{file_basename}.h"
     
     # Derive a consistent guard macro (e.g., BASIC_LATIN_H)
     guard_macro = f"{file_basename.upper()}_H"
-    # ------------------------------------------
+    # -------------------------
     
     block_abbr = macro_generator.get_block_abbr(block.name)
     
@@ -429,7 +430,7 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: Mac
         print(f"Processed block '{block.name}' (U+{block.start:04X}...U+{block.end:04X}): **Skipped** (no defines generated)")
         return
         
-    # --- Description Comment (NEW LOGIC) ---
+    # --- Description Comment ---
     description_comment = ""
     if block.description.strip():
         # Format the description to fit within the C comment block
@@ -454,7 +455,7 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: Mac
         # Prefix each line with ' * ' and add leading/trailing newline for formatting
         description_comment = "\n * ".join([""] + wrapped_lines)
         description_comment += "\n *"
-    # ---------------------------------------
+    # ---------------------------
 
     boilerplate = f"""\
 /* {header_file.name} – Unicode constants for U+{block.start:04X} … U+{block.end:04X}
