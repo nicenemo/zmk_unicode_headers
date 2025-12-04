@@ -22,19 +22,17 @@ from collections import namedtuple
 
 # Import all standard functions from unicodedata2 for updated Unicode data.
 from unicodedata2 import name, category, unidata_version 
-# The function 'block' is non-standard and is defined below using the loaded data.
 
 
 # Global constant for unicodedata version (from package)
 UNICODE_VERSION = unidata_version
 
 # Global variable for block version (set from JSON file)
-UNICODE_BLOCK_VERSION: str = "N/A (not loaded)" # New Global variable
+UNICODE_BLOCK_VERSION: str = "N/A (not loaded)" 
 
 # Define the structure for a Unicode Block
-# ADDED 'description' field to hold the scraped summary
+# Includes 'description' for content read from the JSON file
 UnicodeBlock = namedtuple('UnicodeBlock', ['name', 'start', 'end', 'description'])
-
 
 # --------------------------------------------------------------------
 # 0. Block Data Loading, Caching, and 'block' function
@@ -47,9 +45,8 @@ def load_block_data() -> None:
     """
     Loads and caches the block data from the JSON file. Converts hexadecimal 
     start/end strings to integers for fast lookup and sets the global Unicode block version.
-    Exits with an error if the file is not found or is invalid JSON.
     
-    UPDATED: Now reads the top-level object to get 'unicode_version' and 'blocks'.
+    Handles the new JSON format: {"unicode_version": "...", "blocks": [...]}.
     """
     global _CACHED_BLOCK_DATA
     global UNICODE_BLOCK_VERSION
@@ -59,7 +56,7 @@ def load_block_data() -> None:
             with open(BLOCKS_DATA_FILE, 'r', encoding='utf-8') as f:
                 json_data = json.load(f)
                 
-                # 1. Pull the Unicode version
+                # 1. Pull the Unicode version from the JSON object
                 UNICODE_BLOCK_VERSION = json_data.get('unicode_version', 'Unknown (JSON key missing)')
 
                 # 2. Extract the blocks array
@@ -77,6 +74,7 @@ def load_block_data() -> None:
 
         except FileNotFoundError:
             print(f"Error: Block data file '{BLOCKS_DATA_FILE}' not found.", file=sys.stderr)
+            print("Please run generate_blocks_data.py first to create the block data.", file=sys.stderr)
             sys.exit(1)
         except json.JSONDecodeError:
             print(f"Error: Invalid JSON in '{BLOCKS_DATA_FILE}'.", file=sys.stderr)
@@ -109,20 +107,14 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
             name=entry['name'], 
             start=entry['start_cp'], 
             end=entry['end_cp'],
-            description=entry.get('description', '') # Include the new description field
+            description=entry.get('description', '')
         )
 
 # --------------------------------------------------------------------
-# 1. Helper Function: Check for printable glyph
+# 1. Configuration & Named Tuple (Unified Definition) ----------------
 # --------------------------------------------------------------------
 
-def printable_glyph(cp: int) -> str:
-    """Returns the character if it's considered 'printable', otherwise returns an empty string."""
-    char = chr(cp)
-    # Filter out most non-printable, control, or private use characters
-    if char.isprintable() and category(char)[0] not in ("C", "Z"):
-        return char
-    return ""
+MAX_UNICODE_CP = 0x110000 
 
 
 # --------------------------------------------------------------------
@@ -130,133 +122,366 @@ def printable_glyph(cp: int) -> str:
 # --------------------------------------------------------------------
 
 class MacroGenerator:
-    """ 
-    Manages the configuration and logic for converting Unicode names into short, 
-    clean C macro definitions using a three-layered abbreviation system.
+    """
+    Manages the configuration and logic for converting Unicode names into 
+    short, clean C-style macro identifiers (UC_ABBR_NAME).
     """
 
-    # ... (The rest of the MacroGenerator class methods: __init__, get_macro_name,
-    # find_case_partner, and abbreviation dictionaries are assumed to be here,
-    # as they were not explicitly provided for modification.) ...
+    # Layer 1: Block Prefixes (Custom/ISO 639-1)
+    BLOCK_ABBREVIATIONS: Dict[str, str] = {
+        "DEFAULT": "",
+        "BASIC LATIN": "LA",
+        "LATIN-1 SUPPLEMENT": "L1S",
+        "LATIN EXTENDED-A": "LTA",
+        "LATIN EXTENDED-B": "LTB",
+        "LATIN EXTENDED-C": "LTC",
+        "LATIN EXTENDED-D": "LTD",
+        "LATIN EXTENDED-E": "LTE",
+        "GREEK AND COPTIC": "GRC",
+        "GREEK EXTENDED": "GREX",
+        "CYRILLIC": "CY",
+        "CYRILLIC SUPPLEMENT": "CYS",
+        "ARMENIAN": "AM",
+        "HEBREW": "HE",
+        "ARABIC": "AR",
+        "ARABIC EXTENDED-B": "AREB", 
+        "SHAVIAN": "SH",
+        "DEVANAGARI": "DV",
+        "BENGALI": "BN",
+        "GUJARATI": "GJ",
+        "GURMUKHI": "GK",
+        "ORIYA": "OR",
+        "TAMIL": "TM",
+        "TELUGU": "TL",
+        "HANGUL JAMO": "HJ",
+        "HANGUL SYLLABLES": "HSY",
+        "KATAKANA": "KT",
+        "HIRAGANA": "HR",
+        "CJK UNIFIED IDEOGRAPHS": "CJK",
+        "CJK UNIFIED IDEOGRAPHS EXTENSION A": "CJKA",
+        "CJK STROKES": "CJS", 
+        "GENERAL PUNCTUATION": "PUN",
+        "CURRENCY SYMBOLS": "CUR",
+        "ARROWS": "ARW",
+        "MATHEMATICAL OPERATORS": "MOP",
+        "MATHEMATICAL ALPHANUMERIC SYMBOLS": "MA",
+        "BLOCK ELEMENTS": "BE",
+        "GEOMETRIC SHAPES": "GS",
+        "MISCELLANEOUS SYMBOLS": "MSY",
+        "TRANSPORT AND MAP SYMBOLS": "TMS",
+        "EMOTICONS": "EMJ",
+        "DINGBATS": "DB", 
+        "LETTERLIKE SYMBOLS": "LS", 
+        "IDEOGRAPHIC DESCRIPTION CHARACTERS": "IDC", 
+        "INSCRIPTIONAL PAHLAVI": "IP", 
+        "HIGH SURROGATES": "HS",
+        "LOW SURROGATES": "LS",
+        "PRIVATE USE AREA": "PUA",
+    }
+
+    # Layer 2: Redundant Word Stripping
+    REDUNDANT_SCRIPT_WORDS: Set[str] = {
+        "LETTER", "DIGIT", "COMMA", "CHARACTER", "SYMBOL", "WITH", "FORMS", 
+        "ALPHABETIC", "TELEGRAM", "EMOJI", "NUMBER", 
+        "LATIN", "GREEK", "CYRILLIC", "ARABIC", "HEBREW", "SHAVIAN", "COPTIC",
+        "DEVANAGARI", "MATHEMATICAL", "MISCELLANEOUS", "SUPPLEMENTAL", "EXTENDED", 
+        "ADDITIONAL", "COMPATIBILITY", "IDEOGRAPHS", "VARIATION", "SELECTOR",
+    }
+
+    # Layer 3: Internal String Replacements
+    MACRO_STRING_REPLACEMENTS: Dict[str, str] = {
+        "SANS-SERIF": "SS",
+        "DOUBLE-STRUCK": "DS",
+        "FRAKTUR": "FR",
+        "MONOSPACE": "MS",
+        "ITALIC": "IT",
+        "SCRIPT": "SC",
+        "CALIGRAPHIC": "CA",
+        "CIRCLED": "C",
+        "PARENTHESIZED": "P",
+        "FULLWIDTH": "FW",
+    }
     
-    # NOTE: The full MacroGenerator class is omitted for brevity but its methods are 
-    # required for the script to run. Assuming it correctly uses the imported 
-    # 'name', 'category', and 'block' functions.
-    
-    def __init__(self):
-        # Placeholder for the actual implementation details
-        pass 
+    def get_block_abbr(self, block_name: str) -> str:
+        """Looks up the abbreviation for a Unicode block name."""
+        return self.BLOCK_ABBREVIATIONS.get(block_name.upper(), self.BLOCK_ABBREVIATIONS["DEFAULT"])
+
+    def generate_name(self, block_abbr: str, unicode_name: str, strip_case: bool) -> str:
+        """
+        Build a short, clean C‑identifier from the Unicode name using the three-layer
+        abbreviation system: UC + Block Abbr + Name Body.
+        """
+        s = unicode_name
         
-    def get_macro_name(self, cp: int) -> str:
-        # Placeholder for the actual implementation details
-        # This function should perform the 3-layer abbreviation
-        return f"UC_MACRO_NAME_{cp:X}"
+        # 1. Strip case words
+        if strip_case:
+            s = re.sub(r"(SMALL|CAPITAL|LOWERCASE|UPPERCASE)\s", "", s)
+        
+        s_upper = s.upper()
+
+        # 2. Layer 3: Apply internal abbreviations
+        for original, replacement in self.MACRO_STRING_REPLACEMENTS.items():
+            s_upper = s_upper.replace(original.upper(), replacement)
+
+        # 3. Initial cleanup: convert remaining spaces/hyphens/non-word chars to single underscores
+        s_final = re.sub(r"[^\w]+", "_", s_upper).strip("_")
+        
+        # 4. Layer 2: Filter out redundant words based on parts
+        s_parts = s_final.split('_')
+        s_final = '_'.join([part for part in s_parts if part not in self.REDUNDANT_SCRIPT_WORDS])
+            
+        # Final cleanup of internal underscores
+        s_final = re.sub(r"_+", "_", s_final).strip('_')
+        
+        # Fallback
+        if not s_final:
+            s_final = "CHAR"
+
+        # 5. Assemble the final macro name
+        parts = ["UC"]
+        if block_abbr:
+            parts.append(block_abbr)
+        parts.append(s_final)
+
+        return "_".join(parts)
+
 
 # --------------------------------------------------------------------
-# 3. Code Point Processing and Filtering
+# 3. Helper Functions 
 # --------------------------------------------------------------------
 
-# ... (Functions like process_code_points are assumed to be here) ...
+def printable_glyph(cp: int) -> Optional[str]:
+    """Return a printable representation of *cp* or None if it is not printable."""
+    try:
+        ch = chr(cp)
+    except ValueError:
+        return None
+        
+    cat = category(ch)
+    # Check for control, separator, or explicitly non-printable characters
+    if cat[0] in ("C", "Z") or not ch.isprintable():
+        return None
+        
+    return ch
 
-
-# --------------------------------------------------------------------
-# 4. Main Generation Loop
-# --------------------------------------------------------------------
-
-# ... (The main loop logic that calls process_code_points is assumed to be here) ...
-
-
-# --------------------------------------------------------------------
-# 5. Header Emission
-# --------------------------------------------------------------------
-
-def emit_header(block: UnicodeBlock, output_dir: pathlib.Path, generator: 'MacroGenerator'):
+def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
     """
-    Generates the C header file content for a given Unicode block and writes it to disk.
+    Find the uppercase partner (cp, name) if *cp* is a single, mappable 
+    lowercase letter ('Ll'). Returns (None, None) otherwise.
+    """
+    try:
+        ch = chr(cp)
+        current_cat = category(ch)
+    except ValueError:
+        return None, None
+
+    if current_cat != 'Ll':
+        return None, None
     
-    UPDATED: Now includes the block's description and the UNICODE_BLOCK_VERSION.
-    """
-    # 1. Determine file name and macro guard
-    macro_name = block.name.upper().replace(' ', '_').replace('-', '_')
-    file_name = f"uc_{macro_name.lower()}.h"
-    guard_macro = f"UC_H_{macro_name}"
-    header_file = output_dir / file_name
+    partner_str = ch.upper()
 
-    # 2. --- Prepare Description Comment (NEW LOGIC) ---
+    if len(partner_str) == 1 and partner_str != ch:
+        partner_cp = ord(partner_str)
+        try:
+            partner_ch = chr(partner_cp)
+            partner_cat = category(partner_ch)
+            partner_name = name(partner_ch)
+        except ValueError:
+            return None, None
+        
+        if partner_cat == 'Lu':
+            return partner_cp, partner_name
+
+    return None, None
+
+
+# --------------------------------------------------------------------
+# 4. Header Generation Logic
+# --------------------------------------------------------------------
+
+def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generator: MacroGenerator) -> Tuple[Optional[List[str]], int, int]:
+    """
+    Generates the content lines (#define macros) for a single C header block.
+    
+    Returns a tuple of (lines, defined_code_points, significant_hex_values).
+    """
+    
+    lines: List[str] = []
+    processed: Set[int] = set()
+    
+    defined_code_points = 0
+    significant_hex_values = 0
+
+    for cp in range(block.start, block.end + 1):
+        if cp in processed:
+            continue
+            
+        try:
+            char = chr(cp)
+            char_name = name(char)
+            cat = category(char)
+        except ValueError:
+            # Correctly skips unassigned and non-character code points
+            continue
+            
+        # Skip characters whose Unicode category is 'C' (Other/Control/Unassigned/Private Use) 
+        # or 'Z' (Separator/Space).
+        if cat[0] in ("C", "Z"):
+            continue 
+            
+        glyph = printable_glyph(cp)
+        partner_cp, partner_name = find_case_partner(cp)
+
+        # 1. Skip Capital Letters that are the UPPERCASE partner of a later LOWERCASE letter.
+        is_capital_cat = cat == 'Lu'
+        if is_capital_cat:
+            lower_str = char.lower()
+            if len(lower_str) == 1 and lower_str != char:
+                lower_partner_cp = ord(lower_str)
+                if lower_partner_cp > cp:
+                    continue
+            
+        # 2. SUCCESSFUL PAIR CASE
+        if partner_cp is not None: 
+            cp1, cp2 = cp, partner_cp
+            name1, name2 = char_name, partner_name 
+            glyph1, glyph2 = printable_glyph(cp1), printable_glyph(cp2)
+
+            if glyph1 and glyph2:
+                comment = f"// {glyph1}/{glyph2}"
+            else:
+                comment_parts = [f"U+{cp1:04X} ({name1})", f"U+{cp2:04X} ({name2})"]
+                comment = f"/* {' '.join(comment_parts)} */"
+            
+            macro_name = macro_generator.generate_name(block_abbr, name1, strip_case=True)
+            lines.append(
+                f"#define {macro_name:<40} 0x{cp1:04X} 0x{cp2:04X}  {comment}" 
+            )
+            
+            defined_code_points += 2
+            significant_hex_values += 2
+            
+            processed.update({cp1, cp2})
+            continue
+
+        # 3. SINGLE CODE POINT CASE
+        if cp not in processed:
+            if glyph:
+                comment = f"// {glyph}"
+            else:
+                comment_parts = [f"U+{cp:04X} ({char_name})"]
+                comment = f"/* {' '.join(comment_parts)} */"
+            
+            macro_name = macro_generator.generate_name(block_abbr, char_name, strip_case=False)
+            lines.append(
+                f"#define {macro_name:<40} 0x{cp:04X} 0  {comment}" 
+            )
+            
+            defined_code_points += 1
+            significant_hex_values += 1 
+            
+            processed.add(cp)
+            
+    if not lines:
+        return None, 0, 0
+    
+    return lines, defined_code_points, significant_hex_values
+
+def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: MacroGenerator) -> None:
+    """
+    Writes one header file for the block, providing console feedback and
+    including a consistency check and description within the header's comments.
+    """
+    
+    # --- RESTORED ORIGINAL FILE NAMING LOGIC ---
+    s_clean = re.sub(r"[^\w]", "_", block.name)
+    file_basename = re.sub(r"_+", "_", s_clean).lower().strip("_")
+    header_file = out_dir / f"{file_basename}.h"
+    
+    # Derive a consistent guard macro (e.g., BASIC_LATIN_H)
+    guard_macro = f"{file_basename.upper()}_H"
+    # ------------------------------------------
+    
+    block_abbr = macro_generator.get_block_abbr(block.name)
+    
+    content_lines, defined_code_points, significant_hex_values = generate_header_content(block, block_abbr, macro_generator)
+    
+    # --- Consistency Check ---
+    consistency_message = ""
+    if defined_code_points != significant_hex_values:
+        consistency_message = (
+            f"\n* !! CONSISTENCY ERROR !!\n"
+            f"* Code Points Defined: {defined_code_points}\n"
+            f"* Significant Hex Values: {significant_hex_values}\n"
+            f"* Description: Counts should be equal for a clean header.\n"
+        )
+        print(f"ERROR: Block '{block.name}' consistency check failed! Code Points ({defined_code_points}) != Hex Values ({significant_hex_values})", file=sys.stderr)
+    else:
+        consistency_message = (
+            f"\n* Consistency Check:\n"
+            f"* Total Defined Code Points: {defined_code_points}\n"
+            f"* Total Significant Hex Values: {significant_hex_values}\n"
+            f"* Status: OK (Counts Match)\n"
+        )
+    # -------------------------
+    
+    if content_lines is None:
+        print(f"Processed block '{block.name}' (U+{block.start:04X}...U+{block.end:04X}): **Skipped** (no defines generated)")
+        return
+        
+    # --- Description Comment (NEW LOGIC) ---
     description_comment = ""
     if block.description.strip():
         # Format the description to fit within the C comment block
-        lines = block.description.strip().split('\n')
-        
-        # Simple word wrap for better readability in the C header file
+        lines = block.description.strip().split('\n\n') # Split by double newline (paragraph)
         wrapped_lines = []
+        
         for line in lines:
-            if line:
-                current_line = []
-                max_width = 70 # Max line length for content after '* ' prefix
-                
-                words = line.split()
-                if not words: continue
-
-                current_line.append(words[0])
-                for word in words[1:]:
-                    if len(' '.join(current_line) + ' ' + word) > max_width:
+            current_line = []
+            max_width = 75 
+            
+            words = line.split()
+            for word in words:
+                if not current_line or len(' '.join(current_line) + ' ' + word) > max_width:
+                    if current_line:
                         wrapped_lines.append(" ".join(current_line))
-                        current_line = [word]
-                    else:
-                        current_line.append(word)
-                if current_line:
-                    wrapped_lines.append(" ".join(current_line))
+                    current_line = [word]
+                else:
+                    current_line.append(word)
+            if current_line:
+                wrapped_lines.append(" ".join(current_line))
 
         # Prefix each line with ' * ' and add leading/trailing newline for formatting
         description_comment = "\n * ".join([""] + wrapped_lines)
         description_comment += "\n *"
-    # -------------------------------------------------
+    # ---------------------------------------
 
-    # 3. Generate all macro definitions (Placeholder - actual loop is complex)
-    # The actual implementation involves iterating over code points and calling 
-    # generator.get_macro_name(), but here we use a placeholder:
-    
-    macro_definitions = ""
-    for cp in range(block.start, block.end + 1):
-        try:
-            char_name = name(chr(cp))
-            macro_name_str = generator.get_macro_name(cp)
-            glyph = printable_glyph(cp)
-            macro_definitions += f"#define {macro_name_str} 0x{cp:04X} // {glyph} {char_name}\n"
-        except ValueError:
-            # Skip unassigned or non-character code points
-            continue
+    boilerplate = f"""\
+/* {header_file.name} – Unicode constants for U+{block.start:04X} … U+{block.end:04X}
+*
+* Generated by generate_unicode_headers.py
+* Character Properties Data (Names/Categories): Unicode {UNICODE_VERSION} (via unicodedata2)
+* Block Range Data (Boundaries): Unicode {UNICODE_BLOCK_VERSION} (via {BLOCKS_DATA_FILE})
+*
+* See https://www.unicode.org/versions/latest/ for source data.
+{description_comment}
+{consistency_message}
+*/
 
-
-    # 4. Final Content Construction (UPDATED BOILERPLATE)
-    all_content = f"""/*
- * Unicode Block: {block.name}
- * Range: U+{block.start:04X}..U+{block.end:04X}
- * Properties: Unicode {UNICODE_VERSION}
- * Block Data: Unicode {UNICODE_BLOCK_VERSION}
- * -------------------------------------------------------------{description_comment}
- */
 #ifndef {guard_macro}
 #define {guard_macro}
 
-{macro_definitions}
-
-#endif // {guard_macro}
 """
-
-    # 5. Write to file
+    
+    all_content = boilerplate + "\n".join(content_lines) + "\n\n#endif // " + guard_macro + "\n"
     header_file.write_text(all_content, encoding="utf-8")
     
     print(f"Processed block '{block.name}' (U+{block.start:04X}...U+{block.end:04X}): **Written** to {header_file.name}")
 
 
 # --------------------------------------------------------------------
-# 6. Main Execution
+# 5. Main Execution
 # --------------------------------------------------------------------
-
-# Note: UNICODE_VERSION is available from unicodedata2 import.
-# UNICODE_BLOCK_VERSION is set inside load_block_data().
 
 def main() -> int:
     """
@@ -287,7 +512,7 @@ def main() -> int:
     # Instantiate the MacroGenerator once in main()
     generator = MacroGenerator()
 
-    # UPDATED print statement now correctly shows the block version from JSON
+    # Print version loaded from JSON
     print(f"Generating C headers for Unicode (Properties: {UNICODE_VERSION} / Blocks: {UNICODE_BLOCK_VERSION})...")
 
     # Pass the generator instance to the emission function
@@ -299,6 +524,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    # We must ensure all necessary functions and classes are fully defined 
-    # before calling main() for the script to run without errors.
     sys.exit(main())
