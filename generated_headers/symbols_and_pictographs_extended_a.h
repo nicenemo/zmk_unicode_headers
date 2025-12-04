@@ -39,10 +39,10 @@
 #define UC_NESTING_DOLLS                         0x1FA86 0  // 🪆
 #define UC_MARACAS                               0x1FA87 0  // 🪇
 #define UC_FLUTE                                 0x1FA88 0  // 🪈
-#define UC_HARP                                  0x1FA89 0  /* U+1FA89 (HARP) */
-#define UC_TROMBONE                              0x1FA8A 0  /* U+1FA8A (TROMBONE) */
-#define UC_TREASURE_CHEST                        0x1FA8E 0  /* U+1FA8E (TREASURE CHEST) */
-#define UC_SHOVEL                                0x1FA8F 0  /* U+1FA8F (SHOVEL) */
+#define UC_HARP                                  0x1FA89 0  // 🪉
+#define UC_TROMBONE                              0x1FA8A 0  // 🪊
+#define UC_TREASURE_CHEST                        0x1FA8E 0  // 🪎
+#define UC_SHOVEL                                0x1FA8F 0  // 🪏
 #define UC_RINGED_PLANET                         0x1FA90 0  // 🪐
 #define UC_CHAIR                                 0x1FA91 0  // 🪑
 #define UC_RAZOR                                 0x1FA92 0  // 🪒
@@ -89,7 +89,7 @@
 #define UC_HYACINTH                              0x1FABB 0  // 🪻
 #define UC_JELLYFISH                             0x1FABC 0  // 🪼
 #define UC_WING                                  0x1FABD 0  // 🪽
-#define UC_LEAFLESS_TREE                         0x1FABE 0  /* U+1FABE (LEAFLESS TREE) */
+#define UC_LEAFLESS_TREE                         0x1FABE 0  // 🪾
 #define UC_GOOSE                                 0x1FABF 0  // 🪿
 #define UC_ANATOMICAL_HEART                      0x1FAC0 0  // 🫀
 #define UC_LUNGS                                 0x1FAC1 0  // 🫁
@@ -97,9 +97,9 @@
 #define UC_PREGNANT_MAN                          0x1FAC3 0  // 🫃
 #define UC_PREGNANT_PERSON                       0x1FAC4 0  // 🫄
 #define UC_PERSON_CROWN                          0x1FAC5 0  // 🫅
-#define UC_FINGERPRINT                           0x1FAC6 0  /* U+1FAC6 (FINGERPRINT) */
-#define UC_HAIRY_CREATURE                        0x1FAC8 0  /* U+1FAC8 (HAIRY CREATURE) */
-#define UC_ORCA                                  0x1FACD 0  /* U+1FACD (ORCA) */
+#define UC_FINGERPRINT                           0x1FAC6 0  // 🫆
+#define UC_HAIRY_CREATURE                        0x1FAC8 0  // 🫈
+#define UC_ORCA                                  0x1FACD 0  // 🫍
 #define UC_MOOSE                                 0x1FACE 0  // 🫎
 #define UC_DONKEY                                0x1FACF 0  // 🫏
 #define UC_BLUEBERRIES                           0x1FAD0 0  // 🫐
@@ -114,8 +114,8 @@
 #define UC_JAR                                   0x1FAD9 0  // 🫙
 #define UC_GINGER_ROOT                           0x1FADA 0  // 🫚
 #define UC_PEA_POD                               0x1FADB 0  // 🫛
-#define UC_ROOT_VEGETABLE                        0x1FADC 0  /* U+1FADC (ROOT VEGETABLE) */
-#define UC_SPLATTER                              0x1FADF 0  /* U+1FADF (SPLATTER) */
+#define UC_ROOT_VEGETABLE                        0x1FADC 0  // 🫜
+#define UC_SPLATTER                              0x1FADF 0  // 🫟
 #define UC_MELTING_FACE                          0x1FAE0 0  // 🫠
 #define UC_SALUTING_FACE                         0x1FAE1 0  // 🫡
 #define UC_FACE_OPEN_EYES_AND_HAND_OVER_MOUTH    0x1FAE2 0  // 🫢
@@ -125,9 +125,9 @@
 #define UC_BITING_LIP                            0x1FAE6 0  // 🫦
 #define UC_BUBBLES                               0x1FAE7 0  // 🫧
 #define UC_SHAKING_FACE                          0x1FAE8 0  // 🫨
-#define UC_FACE_BAGS_UNDER_EYES                  0x1FAE9 0  /* U+1FAE9 (FACE WITH BAGS UNDER EYES) */
-#define UC_DISTORTED_FACE                        0x1FAEA 0  /* U+1FAEA (DISTORTED FACE) */
-#define UC_FIGHT_CLOUD                           0x1FAEF 0  /* U+1FAEF (FIGHT CLOUD) */
+#define UC_FACE_BAGS_UNDER_EYES                  0x1FAE9 0  // 🫩
+#define UC_DISTORTED_FACE                        0x1FAEA 0  // 🫪
+#define UC_FIGHT_CLOUD                           0x1FAEF 0  // 🫯
 #define UC_HAND_INDEX_FINGER_AND_THUMB_CROSSED   0x1FAF0 0  // 🫰
 #define UC_RIGHTWARDS_HAND                       0x1FAF1 0  // 🫱
 #define UC_LEFTWARDS_HAND                        0x1FAF2 0  // 🫲

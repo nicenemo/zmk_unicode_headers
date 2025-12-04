@@ -8,8 +8,8 @@
 
 
 * Consistency Check:
-* Total Defined Code Points: 95
-* Total Significant Hex Values: 95
+* Total Defined Code Points: 96
+* Total Significant Hex Values: 96
 * Status: OK (Counts Match)
 
 */
@@ -83,6 +83,7 @@
 #define UC_SMALL_HIGH_WORD_WAQFA                 0x08DF 0  // ࣟ
 #define UC_SMALL_HIGH_FOOTNOTE_MARKER            0x08E0 0  // ࣠
 #define UC_SMALL_HIGH_SIGN_SAFHA                 0x08E1 0  // ࣡
+#define UC_DISPUTED_END_OF_AYAH                  0x08E2 0  // ࣢
 #define UC_TURNED_DAMMA_BELOW                    0x08E3 0  // ࣣ
 #define UC_CURLY_FATHA                           0x08E4 0  // ࣤ
 #define UC_CURLY_DAMMA                           0x08E5 0  // ࣥ

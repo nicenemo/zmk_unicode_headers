@@ -8,8 +8,8 @@
 
 
 * Consistency Check:
-* Total Defined Code Points: 63
-* Total Significant Hex Values: 63
+* Total Defined Code Points: 64
+* Total Significant Hex Values: 64
 * Status: OK (Counts Match)
 
 */
@@ -17,6 +17,7 @@
 #ifndef CJK_SYMBOLS_AND_PUNCTUATION_H
 #define CJK_SYMBOLS_AND_PUNCTUATION_H
 
+#define UC_IDEOGRAPHIC_SPACE                     0x3000 0  // 　
 #define UC_IDEOGRAPHIC                           0x3001 0  // 、
 #define UC_IDEOGRAPHIC_FULL_STOP                 0x3002 0  // 。
 #define UC_DITTO_MARK                            0x3003 0  // 〃

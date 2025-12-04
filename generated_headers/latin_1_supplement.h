@@ -8,8 +8,8 @@
 
 
 * Consistency Check:
-* Total Defined Code Points: 96
-* Total Significant Hex Values: 96
+* Total Defined Code Points: 98
+* Total Significant Hex Values: 98
 * Status: OK (Counts Match)
 
 */
@@ -17,6 +17,7 @@
 #ifndef LATIN_1_SUPPLEMENT_H
 #define LATIN_1_SUPPLEMENT_H
 
+#define UC_L1S_NO_BREAK_SPACE                    0x00A0 0  //  
 #define UC_L1S_INVERTED_EXCLAMATION_MARK         0x00A1 0  // ¡
 #define UC_L1S_CENT_SIGN                         0x00A2 0  // ¢
 #define UC_L1S_POUND_SIGN                        0x00A3 0  // £
@@ -29,6 +30,7 @@
 #define UC_L1S_FEMININE_ORDINAL_INDICATOR        0x00AA 0  // ª
 #define UC_L1S_LEFT_POINTING_DOUBLE_ANGLE_QUOTATION_MARK 0x00AB 0  // «
 #define UC_L1S_NOT_SIGN                          0x00AC 0  // ¬
+#define UC_L1S_SOFT_HYPHEN                       0x00AD 0  // ­
 #define UC_L1S_REGISTERED_SIGN                   0x00AE 0  // ®
 #define UC_L1S_MACRON                            0x00AF 0  // ¯
 #define UC_L1S_DEGREE_SIGN                       0x00B0 0  // °

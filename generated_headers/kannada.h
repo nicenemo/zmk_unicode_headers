@@ -89,7 +89,7 @@
 #define UC_KANNADA_SIGN_VIRAMA                   0x0CCD 0  // ್
 #define UC_KANNADA_LENGTH_MARK                   0x0CD5 0  // ೕ
 #define UC_KANNADA_AI_LENGTH_MARK                0x0CD6 0  // ೖ
-#define UC_KANNADA_ARCHAIC_SHRII                 0x0CDC 0  /* U+0CDC (KANNADA ARCHAIC SHRII) */
+#define UC_KANNADA_ARCHAIC_SHRII                 0x0CDC 0  // ೜
 #define UC_KANNADA_NAKAARA_POLLU                 0x0CDD 0  // ೝ
 #define UC_KANNADA_FA                            0x0CDE 0  // ೞ
 #define UC_KANNADA_VOCALIC_RR                    0x0CE0 0  // ೠ

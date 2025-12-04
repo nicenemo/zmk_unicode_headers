@@ -498,6 +498,6 @@
 #define UC_KHITAN_SMALL_SC_18CD3                 0x18CD3 0  // 𘳓
 #define UC_KHITAN_SMALL_SC_18CD4                 0x18CD4 0  // 𘳔
 #define UC_KHITAN_SMALL_SC_18CD5                 0x18CD5 0  // 𘳕
-#define UC_KHITAN_SMALL_SC_18CFF                 0x18CFF 0  /* U+18CFF (KHITAN SMALL SCRIPT CHARACTER-18CFF) */
+#define UC_KHITAN_SMALL_SC_18CFF                 0x18CFF 0  // 𘳿
 
 #endif // KHITAN_SMALL_SCRIPT_H

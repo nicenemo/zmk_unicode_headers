@@ -26,7 +26,7 @@
 #define UC_TALL_HARD_SIGN                        0x1C86 0x042A  // ᲆ/Ъ
 #define UC_TALL_YAT                              0x1C87 0x0462  // ᲇ/Ѣ
 #define UC_UNBLENDED_UK                          0x1C88 0xA64A  // ᲈ/Ꙋ
-#define UC_CAPITAL_TJE                           0x1C89 0  /* U+1C89 (CYRILLIC CAPITAL LETTER TJE) */
-#define UC_SMALL_TJE                             0x1C8A 0  /* U+1C8A (CYRILLIC SMALL LETTER TJE) */
+#define UC_CAPITAL_TJE                           0x1C89 0  // Ᲊ
+#define UC_SMALL_TJE                             0x1C8A 0  // ᲊ
 
 #endif // CYRILLIC_EXTENDED_C_H

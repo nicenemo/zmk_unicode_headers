@@ -144,10 +144,10 @@
 #define UC_LOT_OF_FORTUNE                        0x1F774 0  // 🝴
 #define UC_OCCULTATION                           0x1F775 0  // 🝵
 #define UC_LUNAR_ECLIPSE                         0x1F776 0  // 🝶
-#define UC_VESTA_FORM_TWO                        0x1F777 0  /* U+1F777 (VESTA FORM TWO) */
-#define UC_ASTRAEA_FORM_TWO                      0x1F778 0  /* U+1F778 (ASTRAEA FORM TWO) */
-#define UC_HYGIEA_FORM_TWO                       0x1F779 0  /* U+1F779 (HYGIEA FORM TWO) */
-#define UC_PARTHENOPE_FORM_TWO                   0x1F77A 0  /* U+1F77A (PARTHENOPE FORM TWO) */
+#define UC_VESTA_FORM_TWO                        0x1F777 0  // 🝷
+#define UC_ASTRAEA_FORM_TWO                      0x1F778 0  // 🝸
+#define UC_HYGIEA_FORM_TWO                       0x1F779 0  // 🝹
+#define UC_PARTHENOPE_FORM_TWO                   0x1F77A 0  // 🝺
 #define UC_HAUMEA                                0x1F77B 0  // 🝻
 #define UC_MAKEMAKE                              0x1F77C 0  // 🝼
 #define UC_GONGGONG                              0x1F77D 0  // 🝽

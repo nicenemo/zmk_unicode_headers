@@ -20,8 +20,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 28
-* Total Significant Hex Values: 28
+* Total Defined Code Points: 29
+* Total Significant Hex Values: 29
 * Status: OK (Counts Match)
 
 */
@@ -29,6 +29,7 @@
 #ifndef OGHAM_H
 #define OGHAM_H
 
+#define UC_OGHAM_SPACE_MARK                      0x1680 0  //  
 #define UC_OGHAM_BEITH                           0x1681 0  // ᚁ
 #define UC_OGHAM_LUIS                            0x1682 0  // ᚂ
 #define UC_OGHAM_FEARN                           0x1683 0  // ᚃ

@@ -28,60 +28,60 @@
 #ifndef TAI_YO_H
 #define TAI_YO_H
 
-#define UC_TAI_YO_LOW_KO                         0x1E6C0 0  /* U+1E6C0 (TAI YO LETTER LOW KO) */
-#define UC_TAI_YO_HIGH_KO                        0x1E6C1 0  /* U+1E6C1 (TAI YO LETTER HIGH KO) */
-#define UC_TAI_YO_LOW_KHO                        0x1E6C2 0  /* U+1E6C2 (TAI YO LETTER LOW KHO) */
-#define UC_TAI_YO_HIGH_KHO                       0x1E6C3 0  /* U+1E6C3 (TAI YO LETTER HIGH KHO) */
-#define UC_TAI_YO_GO                             0x1E6C4 0  /* U+1E6C4 (TAI YO LETTER GO) */
-#define UC_TAI_YO_NGO                            0x1E6C5 0  /* U+1E6C5 (TAI YO LETTER NGO) */
-#define UC_TAI_YO_CO                             0x1E6C6 0  /* U+1E6C6 (TAI YO LETTER CO) */
-#define UC_TAI_YO_LOW_XO                         0x1E6C7 0  /* U+1E6C7 (TAI YO LETTER LOW XO) */
-#define UC_TAI_YO_HIGH_XO                        0x1E6C8 0  /* U+1E6C8 (TAI YO LETTER HIGH XO) */
-#define UC_TAI_YO_LOW_NYO                        0x1E6C9 0  /* U+1E6C9 (TAI YO LETTER LOW NYO) */
-#define UC_TAI_YO_HIGH_NYO                       0x1E6CA 0  /* U+1E6CA (TAI YO LETTER HIGH NYO) */
-#define UC_TAI_YO_DO                             0x1E6CB 0  /* U+1E6CB (TAI YO LETTER DO) */
-#define UC_TAI_YO_LOW_TO                         0x1E6CC 0  /* U+1E6CC (TAI YO LETTER LOW TO) */
-#define UC_TAI_YO_HIGH_TO                        0x1E6CD 0  /* U+1E6CD (TAI YO LETTER HIGH TO) */
-#define UC_TAI_YO_THO                            0x1E6CE 0  /* U+1E6CE (TAI YO LETTER THO) */
-#define UC_TAI_YO_NO                             0x1E6CF 0  /* U+1E6CF (TAI YO LETTER NO) */
-#define UC_TAI_YO_BO                             0x1E6D0 0  /* U+1E6D0 (TAI YO LETTER BO) */
-#define UC_TAI_YO_LOW_PO                         0x1E6D1 0  /* U+1E6D1 (TAI YO LETTER LOW PO) */
-#define UC_TAI_YO_HIGH_PO                        0x1E6D2 0  /* U+1E6D2 (TAI YO LETTER HIGH PO) */
-#define UC_TAI_YO_PHO                            0x1E6D3 0  /* U+1E6D3 (TAI YO LETTER PHO) */
-#define UC_TAI_YO_LOW_FO                         0x1E6D4 0  /* U+1E6D4 (TAI YO LETTER LOW FO) */
-#define UC_TAI_YO_HIGH_FO                        0x1E6D5 0  /* U+1E6D5 (TAI YO LETTER HIGH FO) */
-#define UC_TAI_YO_MO                             0x1E6D6 0  /* U+1E6D6 (TAI YO LETTER MO) */
-#define UC_TAI_YO_YO                             0x1E6D7 0  /* U+1E6D7 (TAI YO LETTER YO) */
-#define UC_TAI_YO_LO                             0x1E6D8 0  /* U+1E6D8 (TAI YO LETTER LO) */
-#define UC_TAI_YO_VO                             0x1E6D9 0  /* U+1E6D9 (TAI YO LETTER VO) */
-#define UC_TAI_YO_LOW_HO                         0x1E6DA 0  /* U+1E6DA (TAI YO LETTER LOW HO) */
-#define UC_TAI_YO_HIGH_HO                        0x1E6DB 0  /* U+1E6DB (TAI YO LETTER HIGH HO) */
-#define UC_TAI_YO_QO                             0x1E6DC 0  /* U+1E6DC (TAI YO LETTER QO) */
-#define UC_TAI_YO_LOW_KVO                        0x1E6DD 0  /* U+1E6DD (TAI YO LETTER LOW KVO) */
-#define UC_TAI_YO_HIGH_KVO                       0x1E6DE 0  /* U+1E6DE (TAI YO LETTER HIGH KVO) */
-#define UC_TAI_YO_AA                             0x1E6E0 0  /* U+1E6E0 (TAI YO LETTER AA) */
-#define UC_TAI_YO_I                              0x1E6E1 0  /* U+1E6E1 (TAI YO LETTER I) */
-#define UC_TAI_YO_UE                             0x1E6E2 0  /* U+1E6E2 (TAI YO LETTER UE) */
-#define UC_TAI_YO_SIGN_UE                        0x1E6E3 0  /* U+1E6E3 (TAI YO SIGN UE) */
-#define UC_TAI_YO_U                              0x1E6E4 0  /* U+1E6E4 (TAI YO LETTER U) */
-#define UC_TAI_YO_AE                             0x1E6E5 0  /* U+1E6E5 (TAI YO LETTER AE) */
-#define UC_TAI_YO_SIGN_AU                        0x1E6E6 0  /* U+1E6E6 (TAI YO SIGN AU) */
-#define UC_TAI_YO_O                              0x1E6E7 0  /* U+1E6E7 (TAI YO LETTER O) */
-#define UC_TAI_YO_E                              0x1E6E8 0  /* U+1E6E8 (TAI YO LETTER E) */
-#define UC_TAI_YO_IA                             0x1E6E9 0  /* U+1E6E9 (TAI YO LETTER IA) */
-#define UC_TAI_YO_UEA                            0x1E6EA 0  /* U+1E6EA (TAI YO LETTER UEA) */
-#define UC_TAI_YO_UA                             0x1E6EB 0  /* U+1E6EB (TAI YO LETTER UA) */
-#define UC_TAI_YO_OO                             0x1E6EC 0  /* U+1E6EC (TAI YO LETTER OO) */
-#define UC_TAI_YO_AUE                            0x1E6ED 0  /* U+1E6ED (TAI YO LETTER AUE) */
-#define UC_TAI_YO_SIGN_AY                        0x1E6EE 0  /* U+1E6EE (TAI YO SIGN AY) */
-#define UC_TAI_YO_SIGN_ANG                       0x1E6EF 0  /* U+1E6EF (TAI YO SIGN ANG) */
-#define UC_TAI_YO_AN                             0x1E6F0 0  /* U+1E6F0 (TAI YO LETTER AN) */
-#define UC_TAI_YO_AM                             0x1E6F1 0  /* U+1E6F1 (TAI YO LETTER AM) */
-#define UC_TAI_YO_AK                             0x1E6F2 0  /* U+1E6F2 (TAI YO LETTER AK) */
-#define UC_TAI_YO_AT                             0x1E6F3 0  /* U+1E6F3 (TAI YO LETTER AT) */
-#define UC_TAI_YO_AP                             0x1E6F4 0  /* U+1E6F4 (TAI YO LETTER AP) */
-#define UC_TAI_YO_SIGN_OM                        0x1E6F5 0  /* U+1E6F5 (TAI YO SIGN OM) */
-#define UC_TAI_YO_MUEANG                         0x1E6FE 0  /* U+1E6FE (TAI YO SYMBOL MUEANG) */
-#define UC_TAI_YO_XAM_LAI                        0x1E6FF 0  /* U+1E6FF (TAI YO XAM LAI) */
+#define UC_TAI_YO_LOW_KO                         0x1E6C0 0  // 𞛀
+#define UC_TAI_YO_HIGH_KO                        0x1E6C1 0  // 𞛁
+#define UC_TAI_YO_LOW_KHO                        0x1E6C2 0  // 𞛂
+#define UC_TAI_YO_HIGH_KHO                       0x1E6C3 0  // 𞛃
+#define UC_TAI_YO_GO                             0x1E6C4 0  // 𞛄
+#define UC_TAI_YO_NGO                            0x1E6C5 0  // 𞛅
+#define UC_TAI_YO_CO                             0x1E6C6 0  // 𞛆
+#define UC_TAI_YO_LOW_XO                         0x1E6C7 0  // 𞛇
+#define UC_TAI_YO_HIGH_XO                        0x1E6C8 0  // 𞛈
+#define UC_TAI_YO_LOW_NYO                        0x1E6C9 0  // 𞛉
+#define UC_TAI_YO_HIGH_NYO                       0x1E6CA 0  // 𞛊
+#define UC_TAI_YO_DO                             0x1E6CB 0  // 𞛋
+#define UC_TAI_YO_LOW_TO                         0x1E6CC 0  // 𞛌
+#define UC_TAI_YO_HIGH_TO                        0x1E6CD 0  // 𞛍
+#define UC_TAI_YO_THO                            0x1E6CE 0  // 𞛎
+#define UC_TAI_YO_NO                             0x1E6CF 0  // 𞛏
+#define UC_TAI_YO_BO                             0x1E6D0 0  // 𞛐
+#define UC_TAI_YO_LOW_PO                         0x1E6D1 0  // 𞛑
+#define UC_TAI_YO_HIGH_PO                        0x1E6D2 0  // 𞛒
+#define UC_TAI_YO_PHO                            0x1E6D3 0  // 𞛓
+#define UC_TAI_YO_LOW_FO                         0x1E6D4 0  // 𞛔
+#define UC_TAI_YO_HIGH_FO                        0x1E6D5 0  // 𞛕
+#define UC_TAI_YO_MO                             0x1E6D6 0  // 𞛖
+#define UC_TAI_YO_YO                             0x1E6D7 0  // 𞛗
+#define UC_TAI_YO_LO                             0x1E6D8 0  // 𞛘
+#define UC_TAI_YO_VO                             0x1E6D9 0  // 𞛙
+#define UC_TAI_YO_LOW_HO                         0x1E6DA 0  // 𞛚
+#define UC_TAI_YO_HIGH_HO                        0x1E6DB 0  // 𞛛
+#define UC_TAI_YO_QO                             0x1E6DC 0  // 𞛜
+#define UC_TAI_YO_LOW_KVO                        0x1E6DD 0  // 𞛝
+#define UC_TAI_YO_HIGH_KVO                       0x1E6DE 0  // 𞛞
+#define UC_TAI_YO_AA                             0x1E6E0 0  // 𞛠
+#define UC_TAI_YO_I                              0x1E6E1 0  // 𞛡
+#define UC_TAI_YO_UE                             0x1E6E2 0  // 𞛢
+#define UC_TAI_YO_SIGN_UE                        0x1E6E3 0  // 𞛣
+#define UC_TAI_YO_U                              0x1E6E4 0  // 𞛤
+#define UC_TAI_YO_AE                             0x1E6E5 0  // 𞛥
+#define UC_TAI_YO_SIGN_AU                        0x1E6E6 0  // 𞛦
+#define UC_TAI_YO_O                              0x1E6E7 0  // 𞛧
+#define UC_TAI_YO_E                              0x1E6E8 0  // 𞛨
+#define UC_TAI_YO_IA                             0x1E6E9 0  // 𞛩
+#define UC_TAI_YO_UEA                            0x1E6EA 0  // 𞛪
+#define UC_TAI_YO_UA                             0x1E6EB 0  // 𞛫
+#define UC_TAI_YO_OO                             0x1E6EC 0  // 𞛬
+#define UC_TAI_YO_AUE                            0x1E6ED 0  // 𞛭
+#define UC_TAI_YO_SIGN_AY                        0x1E6EE 0  // 𞛮
+#define UC_TAI_YO_SIGN_ANG                       0x1E6EF 0  // 𞛯
+#define UC_TAI_YO_AN                             0x1E6F0 0  // 𞛰
+#define UC_TAI_YO_AM                             0x1E6F1 0  // 𞛱
+#define UC_TAI_YO_AK                             0x1E6F2 0  // 𞛲
+#define UC_TAI_YO_AT                             0x1E6F3 0  // 𞛳
+#define UC_TAI_YO_AP                             0x1E6F4 0  // 𞛴
+#define UC_TAI_YO_SIGN_OM                        0x1E6F5 0  // 𞛵
+#define UC_TAI_YO_MUEANG                         0x1E6FE 0  // 𞛾
+#define UC_TAI_YO_XAM_LAI                        0x1E6FF 0  // 𞛿
 
 #endif // TAI_YO_H

@@ -21,120 +21,120 @@
 #ifndef TANGUT_COMPONENTS_SUPPLEMENT_H
 #define TANGUT_COMPONENTS_SUPPLEMENT_H
 
-#define UC_TANGUT_COMPONENT_769                  0x18D80 0  /* U+18D80 (TANGUT COMPONENT-769) */
-#define UC_TANGUT_COMPONENT_770                  0x18D81 0  /* U+18D81 (TANGUT COMPONENT-770) */
-#define UC_TANGUT_COMPONENT_771                  0x18D82 0  /* U+18D82 (TANGUT COMPONENT-771) */
-#define UC_TANGUT_COMPONENT_772                  0x18D83 0  /* U+18D83 (TANGUT COMPONENT-772) */
-#define UC_TANGUT_COMPONENT_773                  0x18D84 0  /* U+18D84 (TANGUT COMPONENT-773) */
-#define UC_TANGUT_COMPONENT_774                  0x18D85 0  /* U+18D85 (TANGUT COMPONENT-774) */
-#define UC_TANGUT_COMPONENT_775                  0x18D86 0  /* U+18D86 (TANGUT COMPONENT-775) */
-#define UC_TANGUT_COMPONENT_776                  0x18D87 0  /* U+18D87 (TANGUT COMPONENT-776) */
-#define UC_TANGUT_COMPONENT_777                  0x18D88 0  /* U+18D88 (TANGUT COMPONENT-777) */
-#define UC_TANGUT_COMPONENT_778                  0x18D89 0  /* U+18D89 (TANGUT COMPONENT-778) */
-#define UC_TANGUT_COMPONENT_779                  0x18D8A 0  /* U+18D8A (TANGUT COMPONENT-779) */
-#define UC_TANGUT_COMPONENT_780                  0x18D8B 0  /* U+18D8B (TANGUT COMPONENT-780) */
-#define UC_TANGUT_COMPONENT_781                  0x18D8C 0  /* U+18D8C (TANGUT COMPONENT-781) */
-#define UC_TANGUT_COMPONENT_782                  0x18D8D 0  /* U+18D8D (TANGUT COMPONENT-782) */
-#define UC_TANGUT_COMPONENT_783                  0x18D8E 0  /* U+18D8E (TANGUT COMPONENT-783) */
-#define UC_TANGUT_COMPONENT_784                  0x18D8F 0  /* U+18D8F (TANGUT COMPONENT-784) */
-#define UC_TANGUT_COMPONENT_785                  0x18D90 0  /* U+18D90 (TANGUT COMPONENT-785) */
-#define UC_TANGUT_COMPONENT_786                  0x18D91 0  /* U+18D91 (TANGUT COMPONENT-786) */
-#define UC_TANGUT_COMPONENT_787                  0x18D92 0  /* U+18D92 (TANGUT COMPONENT-787) */
-#define UC_TANGUT_COMPONENT_788                  0x18D93 0  /* U+18D93 (TANGUT COMPONENT-788) */
-#define UC_TANGUT_COMPONENT_789                  0x18D94 0  /* U+18D94 (TANGUT COMPONENT-789) */
-#define UC_TANGUT_COMPONENT_790                  0x18D95 0  /* U+18D95 (TANGUT COMPONENT-790) */
-#define UC_TANGUT_COMPONENT_791                  0x18D96 0  /* U+18D96 (TANGUT COMPONENT-791) */
-#define UC_TANGUT_COMPONENT_792                  0x18D97 0  /* U+18D97 (TANGUT COMPONENT-792) */
-#define UC_TANGUT_COMPONENT_793                  0x18D98 0  /* U+18D98 (TANGUT COMPONENT-793) */
-#define UC_TANGUT_COMPONENT_794                  0x18D99 0  /* U+18D99 (TANGUT COMPONENT-794) */
-#define UC_TANGUT_COMPONENT_795                  0x18D9A 0  /* U+18D9A (TANGUT COMPONENT-795) */
-#define UC_TANGUT_COMPONENT_796                  0x18D9B 0  /* U+18D9B (TANGUT COMPONENT-796) */
-#define UC_TANGUT_COMPONENT_797                  0x18D9C 0  /* U+18D9C (TANGUT COMPONENT-797) */
-#define UC_TANGUT_COMPONENT_798                  0x18D9D 0  /* U+18D9D (TANGUT COMPONENT-798) */
-#define UC_TANGUT_COMPONENT_799                  0x18D9E 0  /* U+18D9E (TANGUT COMPONENT-799) */
-#define UC_TANGUT_COMPONENT_800                  0x18D9F 0  /* U+18D9F (TANGUT COMPONENT-800) */
-#define UC_TANGUT_COMPONENT_801                  0x18DA0 0  /* U+18DA0 (TANGUT COMPONENT-801) */
-#define UC_TANGUT_COMPONENT_802                  0x18DA1 0  /* U+18DA1 (TANGUT COMPONENT-802) */
-#define UC_TANGUT_COMPONENT_803                  0x18DA2 0  /* U+18DA2 (TANGUT COMPONENT-803) */
-#define UC_TANGUT_COMPONENT_804                  0x18DA3 0  /* U+18DA3 (TANGUT COMPONENT-804) */
-#define UC_TANGUT_COMPONENT_805                  0x18DA4 0  /* U+18DA4 (TANGUT COMPONENT-805) */
-#define UC_TANGUT_COMPONENT_806                  0x18DA5 0  /* U+18DA5 (TANGUT COMPONENT-806) */
-#define UC_TANGUT_COMPONENT_807                  0x18DA6 0  /* U+18DA6 (TANGUT COMPONENT-807) */
-#define UC_TANGUT_COMPONENT_808                  0x18DA7 0  /* U+18DA7 (TANGUT COMPONENT-808) */
-#define UC_TANGUT_COMPONENT_809                  0x18DA8 0  /* U+18DA8 (TANGUT COMPONENT-809) */
-#define UC_TANGUT_COMPONENT_810                  0x18DA9 0  /* U+18DA9 (TANGUT COMPONENT-810) */
-#define UC_TANGUT_COMPONENT_811                  0x18DAA 0  /* U+18DAA (TANGUT COMPONENT-811) */
-#define UC_TANGUT_COMPONENT_812                  0x18DAB 0  /* U+18DAB (TANGUT COMPONENT-812) */
-#define UC_TANGUT_COMPONENT_813                  0x18DAC 0  /* U+18DAC (TANGUT COMPONENT-813) */
-#define UC_TANGUT_COMPONENT_814                  0x18DAD 0  /* U+18DAD (TANGUT COMPONENT-814) */
-#define UC_TANGUT_COMPONENT_815                  0x18DAE 0  /* U+18DAE (TANGUT COMPONENT-815) */
-#define UC_TANGUT_COMPONENT_816                  0x18DAF 0  /* U+18DAF (TANGUT COMPONENT-816) */
-#define UC_TANGUT_COMPONENT_817                  0x18DB0 0  /* U+18DB0 (TANGUT COMPONENT-817) */
-#define UC_TANGUT_COMPONENT_818                  0x18DB1 0  /* U+18DB1 (TANGUT COMPONENT-818) */
-#define UC_TANGUT_COMPONENT_819                  0x18DB2 0  /* U+18DB2 (TANGUT COMPONENT-819) */
-#define UC_TANGUT_COMPONENT_820                  0x18DB3 0  /* U+18DB3 (TANGUT COMPONENT-820) */
-#define UC_TANGUT_COMPONENT_821                  0x18DB4 0  /* U+18DB4 (TANGUT COMPONENT-821) */
-#define UC_TANGUT_COMPONENT_822                  0x18DB5 0  /* U+18DB5 (TANGUT COMPONENT-822) */
-#define UC_TANGUT_COMPONENT_823                  0x18DB6 0  /* U+18DB6 (TANGUT COMPONENT-823) */
-#define UC_TANGUT_COMPONENT_824                  0x18DB7 0  /* U+18DB7 (TANGUT COMPONENT-824) */
-#define UC_TANGUT_COMPONENT_825                  0x18DB8 0  /* U+18DB8 (TANGUT COMPONENT-825) */
-#define UC_TANGUT_COMPONENT_826                  0x18DB9 0  /* U+18DB9 (TANGUT COMPONENT-826) */
-#define UC_TANGUT_COMPONENT_827                  0x18DBA 0  /* U+18DBA (TANGUT COMPONENT-827) */
-#define UC_TANGUT_COMPONENT_828                  0x18DBB 0  /* U+18DBB (TANGUT COMPONENT-828) */
-#define UC_TANGUT_COMPONENT_829                  0x18DBC 0  /* U+18DBC (TANGUT COMPONENT-829) */
-#define UC_TANGUT_COMPONENT_830                  0x18DBD 0  /* U+18DBD (TANGUT COMPONENT-830) */
-#define UC_TANGUT_COMPONENT_831                  0x18DBE 0  /* U+18DBE (TANGUT COMPONENT-831) */
-#define UC_TANGUT_COMPONENT_832                  0x18DBF 0  /* U+18DBF (TANGUT COMPONENT-832) */
-#define UC_TANGUT_COMPONENT_833                  0x18DC0 0  /* U+18DC0 (TANGUT COMPONENT-833) */
-#define UC_TANGUT_COMPONENT_834                  0x18DC1 0  /* U+18DC1 (TANGUT COMPONENT-834) */
-#define UC_TANGUT_COMPONENT_835                  0x18DC2 0  /* U+18DC2 (TANGUT COMPONENT-835) */
-#define UC_TANGUT_COMPONENT_836                  0x18DC3 0  /* U+18DC3 (TANGUT COMPONENT-836) */
-#define UC_TANGUT_COMPONENT_837                  0x18DC4 0  /* U+18DC4 (TANGUT COMPONENT-837) */
-#define UC_TANGUT_COMPONENT_838                  0x18DC5 0  /* U+18DC5 (TANGUT COMPONENT-838) */
-#define UC_TANGUT_COMPONENT_839                  0x18DC6 0  /* U+18DC6 (TANGUT COMPONENT-839) */
-#define UC_TANGUT_COMPONENT_840                  0x18DC7 0  /* U+18DC7 (TANGUT COMPONENT-840) */
-#define UC_TANGUT_COMPONENT_841                  0x18DC8 0  /* U+18DC8 (TANGUT COMPONENT-841) */
-#define UC_TANGUT_COMPONENT_842                  0x18DC9 0  /* U+18DC9 (TANGUT COMPONENT-842) */
-#define UC_TANGUT_COMPONENT_843                  0x18DCA 0  /* U+18DCA (TANGUT COMPONENT-843) */
-#define UC_TANGUT_COMPONENT_844                  0x18DCB 0  /* U+18DCB (TANGUT COMPONENT-844) */
-#define UC_TANGUT_COMPONENT_845                  0x18DCC 0  /* U+18DCC (TANGUT COMPONENT-845) */
-#define UC_TANGUT_COMPONENT_846                  0x18DCD 0  /* U+18DCD (TANGUT COMPONENT-846) */
-#define UC_TANGUT_COMPONENT_847                  0x18DCE 0  /* U+18DCE (TANGUT COMPONENT-847) */
-#define UC_TANGUT_COMPONENT_848                  0x18DCF 0  /* U+18DCF (TANGUT COMPONENT-848) */
-#define UC_TANGUT_COMPONENT_849                  0x18DD0 0  /* U+18DD0 (TANGUT COMPONENT-849) */
-#define UC_TANGUT_COMPONENT_850                  0x18DD1 0  /* U+18DD1 (TANGUT COMPONENT-850) */
-#define UC_TANGUT_COMPONENT_851                  0x18DD2 0  /* U+18DD2 (TANGUT COMPONENT-851) */
-#define UC_TANGUT_COMPONENT_852                  0x18DD3 0  /* U+18DD3 (TANGUT COMPONENT-852) */
-#define UC_TANGUT_COMPONENT_853                  0x18DD4 0  /* U+18DD4 (TANGUT COMPONENT-853) */
-#define UC_TANGUT_COMPONENT_854                  0x18DD5 0  /* U+18DD5 (TANGUT COMPONENT-854) */
-#define UC_TANGUT_COMPONENT_855                  0x18DD6 0  /* U+18DD6 (TANGUT COMPONENT-855) */
-#define UC_TANGUT_COMPONENT_856                  0x18DD7 0  /* U+18DD7 (TANGUT COMPONENT-856) */
-#define UC_TANGUT_COMPONENT_857                  0x18DD8 0  /* U+18DD8 (TANGUT COMPONENT-857) */
-#define UC_TANGUT_COMPONENT_858                  0x18DD9 0  /* U+18DD9 (TANGUT COMPONENT-858) */
-#define UC_TANGUT_COMPONENT_859                  0x18DDA 0  /* U+18DDA (TANGUT COMPONENT-859) */
-#define UC_TANGUT_COMPONENT_860                  0x18DDB 0  /* U+18DDB (TANGUT COMPONENT-860) */
-#define UC_TANGUT_COMPONENT_861                  0x18DDC 0  /* U+18DDC (TANGUT COMPONENT-861) */
-#define UC_TANGUT_COMPONENT_862                  0x18DDD 0  /* U+18DDD (TANGUT COMPONENT-862) */
-#define UC_TANGUT_COMPONENT_863                  0x18DDE 0  /* U+18DDE (TANGUT COMPONENT-863) */
-#define UC_TANGUT_COMPONENT_864                  0x18DDF 0  /* U+18DDF (TANGUT COMPONENT-864) */
-#define UC_TANGUT_COMPONENT_865                  0x18DE0 0  /* U+18DE0 (TANGUT COMPONENT-865) */
-#define UC_TANGUT_COMPONENT_866                  0x18DE1 0  /* U+18DE1 (TANGUT COMPONENT-866) */
-#define UC_TANGUT_COMPONENT_867                  0x18DE2 0  /* U+18DE2 (TANGUT COMPONENT-867) */
-#define UC_TANGUT_COMPONENT_868                  0x18DE3 0  /* U+18DE3 (TANGUT COMPONENT-868) */
-#define UC_TANGUT_COMPONENT_869                  0x18DE4 0  /* U+18DE4 (TANGUT COMPONENT-869) */
-#define UC_TANGUT_COMPONENT_870                  0x18DE5 0  /* U+18DE5 (TANGUT COMPONENT-870) */
-#define UC_TANGUT_COMPONENT_871                  0x18DE6 0  /* U+18DE6 (TANGUT COMPONENT-871) */
-#define UC_TANGUT_COMPONENT_872                  0x18DE7 0  /* U+18DE7 (TANGUT COMPONENT-872) */
-#define UC_TANGUT_COMPONENT_873                  0x18DE8 0  /* U+18DE8 (TANGUT COMPONENT-873) */
-#define UC_TANGUT_COMPONENT_874                  0x18DE9 0  /* U+18DE9 (TANGUT COMPONENT-874) */
-#define UC_TANGUT_COMPONENT_875                  0x18DEA 0  /* U+18DEA (TANGUT COMPONENT-875) */
-#define UC_TANGUT_COMPONENT_876                  0x18DEB 0  /* U+18DEB (TANGUT COMPONENT-876) */
-#define UC_TANGUT_COMPONENT_877                  0x18DEC 0  /* U+18DEC (TANGUT COMPONENT-877) */
-#define UC_TANGUT_COMPONENT_878                  0x18DED 0  /* U+18DED (TANGUT COMPONENT-878) */
-#define UC_TANGUT_COMPONENT_879                  0x18DEE 0  /* U+18DEE (TANGUT COMPONENT-879) */
-#define UC_TANGUT_COMPONENT_880                  0x18DEF 0  /* U+18DEF (TANGUT COMPONENT-880) */
-#define UC_TANGUT_COMPONENT_881                  0x18DF0 0  /* U+18DF0 (TANGUT COMPONENT-881) */
-#define UC_TANGUT_COMPONENT_882                  0x18DF1 0  /* U+18DF1 (TANGUT COMPONENT-882) */
-#define UC_TANGUT_COMPONENT_883                  0x18DF2 0  /* U+18DF2 (TANGUT COMPONENT-883) */
+#define UC_TANGUT_COMPONENT_769                  0x18D80 0  // 𘶀
+#define UC_TANGUT_COMPONENT_770                  0x18D81 0  // 𘶁
+#define UC_TANGUT_COMPONENT_771                  0x18D82 0  // 𘶂
+#define UC_TANGUT_COMPONENT_772                  0x18D83 0  // 𘶃
+#define UC_TANGUT_COMPONENT_773                  0x18D84 0  // 𘶄
+#define UC_TANGUT_COMPONENT_774                  0x18D85 0  // 𘶅
+#define UC_TANGUT_COMPONENT_775                  0x18D86 0  // 𘶆
+#define UC_TANGUT_COMPONENT_776                  0x18D87 0  // 𘶇
+#define UC_TANGUT_COMPONENT_777                  0x18D88 0  // 𘶈
+#define UC_TANGUT_COMPONENT_778                  0x18D89 0  // 𘶉
+#define UC_TANGUT_COMPONENT_779                  0x18D8A 0  // 𘶊
+#define UC_TANGUT_COMPONENT_780                  0x18D8B 0  // 𘶋
+#define UC_TANGUT_COMPONENT_781                  0x18D8C 0  // 𘶌
+#define UC_TANGUT_COMPONENT_782                  0x18D8D 0  // 𘶍
+#define UC_TANGUT_COMPONENT_783                  0x18D8E 0  // 𘶎
+#define UC_TANGUT_COMPONENT_784                  0x18D8F 0  // 𘶏
+#define UC_TANGUT_COMPONENT_785                  0x18D90 0  // 𘶐
+#define UC_TANGUT_COMPONENT_786                  0x18D91 0  // 𘶑
+#define UC_TANGUT_COMPONENT_787                  0x18D92 0  // 𘶒
+#define UC_TANGUT_COMPONENT_788                  0x18D93 0  // 𘶓
+#define UC_TANGUT_COMPONENT_789                  0x18D94 0  // 𘶔
+#define UC_TANGUT_COMPONENT_790                  0x18D95 0  // 𘶕
+#define UC_TANGUT_COMPONENT_791                  0x18D96 0  // 𘶖
+#define UC_TANGUT_COMPONENT_792                  0x18D97 0  // 𘶗
+#define UC_TANGUT_COMPONENT_793                  0x18D98 0  // 𘶘
+#define UC_TANGUT_COMPONENT_794                  0x18D99 0  // 𘶙
+#define UC_TANGUT_COMPONENT_795                  0x18D9A 0  // 𘶚
+#define UC_TANGUT_COMPONENT_796                  0x18D9B 0  // 𘶛
+#define UC_TANGUT_COMPONENT_797                  0x18D9C 0  // 𘶜
+#define UC_TANGUT_COMPONENT_798                  0x18D9D 0  // 𘶝
+#define UC_TANGUT_COMPONENT_799                  0x18D9E 0  // 𘶞
+#define UC_TANGUT_COMPONENT_800                  0x18D9F 0  // 𘶟
+#define UC_TANGUT_COMPONENT_801                  0x18DA0 0  // 𘶠
+#define UC_TANGUT_COMPONENT_802                  0x18DA1 0  // 𘶡
+#define UC_TANGUT_COMPONENT_803                  0x18DA2 0  // 𘶢
+#define UC_TANGUT_COMPONENT_804                  0x18DA3 0  // 𘶣
+#define UC_TANGUT_COMPONENT_805                  0x18DA4 0  // 𘶤
+#define UC_TANGUT_COMPONENT_806                  0x18DA5 0  // 𘶥
+#define UC_TANGUT_COMPONENT_807                  0x18DA6 0  // 𘶦
+#define UC_TANGUT_COMPONENT_808                  0x18DA7 0  // 𘶧
+#define UC_TANGUT_COMPONENT_809                  0x18DA8 0  // 𘶨
+#define UC_TANGUT_COMPONENT_810                  0x18DA9 0  // 𘶩
+#define UC_TANGUT_COMPONENT_811                  0x18DAA 0  // 𘶪
+#define UC_TANGUT_COMPONENT_812                  0x18DAB 0  // 𘶫
+#define UC_TANGUT_COMPONENT_813                  0x18DAC 0  // 𘶬
+#define UC_TANGUT_COMPONENT_814                  0x18DAD 0  // 𘶭
+#define UC_TANGUT_COMPONENT_815                  0x18DAE 0  // 𘶮
+#define UC_TANGUT_COMPONENT_816                  0x18DAF 0  // 𘶯
+#define UC_TANGUT_COMPONENT_817                  0x18DB0 0  // 𘶰
+#define UC_TANGUT_COMPONENT_818                  0x18DB1 0  // 𘶱
+#define UC_TANGUT_COMPONENT_819                  0x18DB2 0  // 𘶲
+#define UC_TANGUT_COMPONENT_820                  0x18DB3 0  // 𘶳
+#define UC_TANGUT_COMPONENT_821                  0x18DB4 0  // 𘶴
+#define UC_TANGUT_COMPONENT_822                  0x18DB5 0  // 𘶵
+#define UC_TANGUT_COMPONENT_823                  0x18DB6 0  // 𘶶
+#define UC_TANGUT_COMPONENT_824                  0x18DB7 0  // 𘶷
+#define UC_TANGUT_COMPONENT_825                  0x18DB8 0  // 𘶸
+#define UC_TANGUT_COMPONENT_826                  0x18DB9 0  // 𘶹
+#define UC_TANGUT_COMPONENT_827                  0x18DBA 0  // 𘶺
+#define UC_TANGUT_COMPONENT_828                  0x18DBB 0  // 𘶻
+#define UC_TANGUT_COMPONENT_829                  0x18DBC 0  // 𘶼
+#define UC_TANGUT_COMPONENT_830                  0x18DBD 0  // 𘶽
+#define UC_TANGUT_COMPONENT_831                  0x18DBE 0  // 𘶾
+#define UC_TANGUT_COMPONENT_832                  0x18DBF 0  // 𘶿
+#define UC_TANGUT_COMPONENT_833                  0x18DC0 0  // 𘷀
+#define UC_TANGUT_COMPONENT_834                  0x18DC1 0  // 𘷁
+#define UC_TANGUT_COMPONENT_835                  0x18DC2 0  // 𘷂
+#define UC_TANGUT_COMPONENT_836                  0x18DC3 0  // 𘷃
+#define UC_TANGUT_COMPONENT_837                  0x18DC4 0  // 𘷄
+#define UC_TANGUT_COMPONENT_838                  0x18DC5 0  // 𘷅
+#define UC_TANGUT_COMPONENT_839                  0x18DC6 0  // 𘷆
+#define UC_TANGUT_COMPONENT_840                  0x18DC7 0  // 𘷇
+#define UC_TANGUT_COMPONENT_841                  0x18DC8 0  // 𘷈
+#define UC_TANGUT_COMPONENT_842                  0x18DC9 0  // 𘷉
+#define UC_TANGUT_COMPONENT_843                  0x18DCA 0  // 𘷊
+#define UC_TANGUT_COMPONENT_844                  0x18DCB 0  // 𘷋
+#define UC_TANGUT_COMPONENT_845                  0x18DCC 0  // 𘷌
+#define UC_TANGUT_COMPONENT_846                  0x18DCD 0  // 𘷍
+#define UC_TANGUT_COMPONENT_847                  0x18DCE 0  // 𘷎
+#define UC_TANGUT_COMPONENT_848                  0x18DCF 0  // 𘷏
+#define UC_TANGUT_COMPONENT_849                  0x18DD0 0  // 𘷐
+#define UC_TANGUT_COMPONENT_850                  0x18DD1 0  // 𘷑
+#define UC_TANGUT_COMPONENT_851                  0x18DD2 0  // 𘷒
+#define UC_TANGUT_COMPONENT_852                  0x18DD3 0  // 𘷓
+#define UC_TANGUT_COMPONENT_853                  0x18DD4 0  // 𘷔
+#define UC_TANGUT_COMPONENT_854                  0x18DD5 0  // 𘷕
+#define UC_TANGUT_COMPONENT_855                  0x18DD6 0  // 𘷖
+#define UC_TANGUT_COMPONENT_856                  0x18DD7 0  // 𘷗
+#define UC_TANGUT_COMPONENT_857                  0x18DD8 0  // 𘷘
+#define UC_TANGUT_COMPONENT_858                  0x18DD9 0  // 𘷙
+#define UC_TANGUT_COMPONENT_859                  0x18DDA 0  // 𘷚
+#define UC_TANGUT_COMPONENT_860                  0x18DDB 0  // 𘷛
+#define UC_TANGUT_COMPONENT_861                  0x18DDC 0  // 𘷜
+#define UC_TANGUT_COMPONENT_862                  0x18DDD 0  // 𘷝
+#define UC_TANGUT_COMPONENT_863                  0x18DDE 0  // 𘷞
+#define UC_TANGUT_COMPONENT_864                  0x18DDF 0  // 𘷟
+#define UC_TANGUT_COMPONENT_865                  0x18DE0 0  // 𘷠
+#define UC_TANGUT_COMPONENT_866                  0x18DE1 0  // 𘷡
+#define UC_TANGUT_COMPONENT_867                  0x18DE2 0  // 𘷢
+#define UC_TANGUT_COMPONENT_868                  0x18DE3 0  // 𘷣
+#define UC_TANGUT_COMPONENT_869                  0x18DE4 0  // 𘷤
+#define UC_TANGUT_COMPONENT_870                  0x18DE5 0  // 𘷥
+#define UC_TANGUT_COMPONENT_871                  0x18DE6 0  // 𘷦
+#define UC_TANGUT_COMPONENT_872                  0x18DE7 0  // 𘷧
+#define UC_TANGUT_COMPONENT_873                  0x18DE8 0  // 𘷨
+#define UC_TANGUT_COMPONENT_874                  0x18DE9 0  // 𘷩
+#define UC_TANGUT_COMPONENT_875                  0x18DEA 0  // 𘷪
+#define UC_TANGUT_COMPONENT_876                  0x18DEB 0  // 𘷫
+#define UC_TANGUT_COMPONENT_877                  0x18DEC 0  // 𘷬
+#define UC_TANGUT_COMPONENT_878                  0x18DED 0  // 𘷭
+#define UC_TANGUT_COMPONENT_879                  0x18DEE 0  // 𘷮
+#define UC_TANGUT_COMPONENT_880                  0x18DEF 0  // 𘷯
+#define UC_TANGUT_COMPONENT_881                  0x18DF0 0  // 𘷰
+#define UC_TANGUT_COMPONENT_882                  0x18DF1 0  // 𘷱
+#define UC_TANGUT_COMPONENT_883                  0x18DF2 0  // 𘷲
 
 #endif // TANGUT_COMPONENTS_SUPPLEMENT_H

@@ -16,8 +16,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 71
-* Total Significant Hex Values: 71
+* Total Defined Code Points: 109
+* Total Significant Hex Values: 109
 * Status: OK (Counts Match)
 
 */
@@ -25,6 +25,22 @@
 #ifndef GENERAL_PUNCTUATION_H
 #define GENERAL_PUNCTUATION_H
 
+#define UC_PUN_EN_QUAD                           0x2000 0  //  
+#define UC_PUN_EM_QUAD                           0x2001 0  //  
+#define UC_PUN_EN_SPACE                          0x2002 0  //  
+#define UC_PUN_EM_SPACE                          0x2003 0  //  
+#define UC_PUN_THREE_PER_EM_SPACE                0x2004 0  //  
+#define UC_PUN_FOUR_PER_EM_SPACE                 0x2005 0  //  
+#define UC_PUN_SIX_PER_EM_SPACE                  0x2006 0  //  
+#define UC_PUN_FIGURE_SPACE                      0x2007 0  //  
+#define UC_PUN_PUNCTUATION_SPACE                 0x2008 0  //  
+#define UC_PUN_THIN_SPACE                        0x2009 0  //  
+#define UC_PUN_HAIR_SPACE                        0x200A 0  //  
+#define UC_PUN_ZERO_WIDTH_SPACE                  0x200B 0  // ​
+#define UC_PUN_ZERO_WIDTH_NON_JOINER             0x200C 0  // ‌
+#define UC_PUN_ZERO_WIDTH_JOINER                 0x200D 0  // ‍
+#define UC_PUN_LEFT_TO_RIGHT_MARK                0x200E 0  // ‎
+#define UC_PUN_RIGHT_TO_LEFT_MARK                0x200F 0  // ‏
 #define UC_PUN_HYPHEN                            0x2010 0  // ‐
 #define UC_PUN_NON_BREAKING_HYPHEN               0x2011 0  // ‑
 #define UC_PUN_FIGURE_DASH                       0x2012 0  // ‒
@@ -49,6 +65,12 @@
 #define UC_PUN_TWO_DOT_LEADER                    0x2025 0  // ‥
 #define UC_PUN_HORIZONTAL_ELLIPSIS               0x2026 0  // …
 #define UC_PUN_HYPHENATION_POINT                 0x2027 0  // ‧
+#define UC_PUN_LEFT_TO_RIGHT_EMBEDDING           0x202A 0  // ‪
+#define UC_PUN_RIGHT_TO_LEFT_EMBEDDING           0x202B 0  // ‫
+#define UC_PUN_POP_DIRECTIONAL_FORMATTING        0x202C 0  // ‬
+#define UC_PUN_LEFT_TO_RIGHT_OVERRIDE            0x202D 0  // ‭
+#define UC_PUN_RIGHT_TO_LEFT_OVERRIDE            0x202E 0  // ‮
+#define UC_PUN_NARROW_NO_BREAK_SPACE             0x202F 0  //  
 #define UC_PUN_PER_MILLE_SIGN                    0x2030 0  // ‰
 #define UC_PUN_PER_TEN_THOUSAND_SIGN             0x2031 0  // ‱
 #define UC_PUN_PRIME                             0x2032 0  // ′
@@ -96,5 +118,21 @@
 #define UC_PUN_DOTTED_CROSS                      0x205C 0  // ⁜
 #define UC_PUN_TRICOLON                          0x205D 0  // ⁝
 #define UC_PUN_VERTICAL_FOUR_DOTS                0x205E 0  // ⁞
+#define UC_PUN_MEDIUM_SPACE                      0x205F 0  //  
+#define UC_PUN_WORD_JOINER                       0x2060 0  // ⁠
+#define UC_PUN_FUNCTION_APPLICATION              0x2061 0  // ⁡
+#define UC_PUN_INVISIBLE_TIMES                   0x2062 0  // ⁢
+#define UC_PUN_INVISIBLE_SEPARATOR               0x2063 0  // ⁣
+#define UC_PUN_INVISIBLE_PLUS                    0x2064 0  // ⁤
+#define UC_PUN_LEFT_TO_RIGHT_ISOLATE             0x2066 0  // ⁦
+#define UC_PUN_RIGHT_TO_LEFT_ISOLATE             0x2067 0  // ⁧
+#define UC_PUN_FIRST_STRONG_ISOLATE              0x2068 0  // ⁨
+#define UC_PUN_POP_DIRECTIONAL_ISOLATE           0x2069 0  // ⁩
+#define UC_PUN_INHIBIT_SYMMETRIC_SWAPPING        0x206A 0  // ⁪
+#define UC_PUN_ACTIVATE_SYMMETRIC_SWAPPING       0x206B 0  // ⁫
+#define UC_PUN_INHIBIT_FORM_SHAPING              0x206C 0  // ⁬
+#define UC_PUN_ACTIVATE_FORM_SHAPING             0x206D 0  // ⁭
+#define UC_PUN_NATIONAL_SHAPES                   0x206E 0  // ⁮
+#define UC_PUN_NOMINAL_SHAPES                    0x206F 0  // ⁯
 
 #endif // GENERAL_PUNCTUATION_H

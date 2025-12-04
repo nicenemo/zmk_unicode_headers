@@ -10,8 +10,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 94
-* Total Significant Hex Values: 94
+* Total Defined Code Points: 95
+* Total Significant Hex Values: 95
 * Status: OK (Counts Match)
 
 */
@@ -19,6 +19,7 @@
 #ifndef BASIC_LATIN_H
 #define BASIC_LATIN_H
 
+#define UC_LA_SPACE                              0x0020 0  //  
 #define UC_LA_EXCLAMATION_MARK                   0x0021 0  // !
 #define UC_LA_QUOTATION_MARK                     0x0022 0  // "
 #define UC_LA_SIGN                               0x0023 0  // #

@@ -8,8 +8,8 @@
 
 
 * Consistency Check:
-* Total Defined Code Points: 140
-* Total Significant Hex Values: 140
+* Total Defined Code Points: 141
+* Total Significant Hex Values: 141
 * Status: OK (Counts Match)
 
 */
@@ -157,5 +157,6 @@
 #define UC_LIGATURE_LAM_ALEF_HAMZA_BELOW_FINAL_FORM 0xFEFA 0  // ﻺ
 #define UC_LIGATURE_LAM_ALEF_ISOLATED_FORM       0xFEFB 0  // ﻻ
 #define UC_LIGATURE_LAM_ALEF_FINAL_FORM          0xFEFC 0  // ﻼ
+#define UC_ZERO_WIDTH_NO_BREAK_SPACE             0xFEFF 0  // ﻿
 
 #endif // ARABIC_PRESENTATION_FORMS_B_H

@@ -17,8 +17,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 66
-* Total Significant Hex Values: 66
+* Total Defined Code Points: 68
+* Total Significant Hex Values: 68
 * Status: OK (Counts Match)
 
 */
@@ -87,10 +87,12 @@
 #define UC_KAITHI_SIGN_NUKTA                     0x110BA 0  // 𑂺
 #define UC_KAITHI_ABBREVIATION_SIGN              0x110BB 0  // 𑂻
 #define UC_KAITHI_ENUMERATION_SIGN               0x110BC 0  // 𑂼
+#define UC_KAITHI_SIGN                           0x110BD 0  // 𑂽
 #define UC_KAITHI_SECTION_MARK                   0x110BE 0  // 𑂾
 #define UC_KAITHI_DOUBLE_SECTION_MARK            0x110BF 0  // 𑂿
 #define UC_KAITHI_DANDA                          0x110C0 0  // 𑃀
 #define UC_KAITHI_DOUBLE_DANDA                   0x110C1 0  // 𑃁
 #define UC_KAITHI_VOWEL_SIGN_VOCALIC_R           0x110C2 0  // 𑃂
+#define UC_KAITHI_SIGN_ABOVE                     0x110CD 0  // 𑃍
 
 #endif // KAITHI_H

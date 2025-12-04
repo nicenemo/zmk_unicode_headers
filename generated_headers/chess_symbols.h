@@ -106,10 +106,10 @@
 #define UC_BLACK_CHESS_KNIGHT_QUEEN              0x1FA51 0  // 🩑
 #define UC_BLACK_CHESS_KNIGHT_ROOK               0x1FA52 0  // 🩒
 #define UC_BLACK_CHESS_KNIGHT_BISHOP             0x1FA53 0  // 🩓
-#define UC_WHITE_CHESS_FERZ                      0x1FA54 0  /* U+1FA54 (WHITE CHESS FERZ) */
-#define UC_WHITE_CHESS_ALFIL                     0x1FA55 0  /* U+1FA55 (WHITE CHESS ALFIL) */
-#define UC_BLACK_CHESS_FERZ                      0x1FA56 0  /* U+1FA56 (BLACK CHESS FERZ) */
-#define UC_BLACK_CHESS_ALFIL                     0x1FA57 0  /* U+1FA57 (BLACK CHESS ALFIL) */
+#define UC_WHITE_CHESS_FERZ                      0x1FA54 0  // 🩔
+#define UC_WHITE_CHESS_ALFIL                     0x1FA55 0  // 🩕
+#define UC_BLACK_CHESS_FERZ                      0x1FA56 0  // 🩖
+#define UC_BLACK_CHESS_ALFIL                     0x1FA57 0  // 🩗
 #define UC_XIANGQI_RED_GENERAL                   0x1FA60 0  // 🩠
 #define UC_XIANGQI_RED_MANDARIN                  0x1FA61 0  // 🩡
 #define UC_XIANGQI_RED_ELEPHANT                  0x1FA62 0  // 🩢

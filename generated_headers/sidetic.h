@@ -31,31 +31,31 @@
 #ifndef SIDETIC_H
 #define SIDETIC_H
 
-#define UC_SIDETIC_N01                           0x10940 0  /* U+10940 (SIDETIC LETTER N01) */
-#define UC_SIDETIC_N02                           0x10941 0  /* U+10941 (SIDETIC LETTER N02) */
-#define UC_SIDETIC_N03                           0x10942 0  /* U+10942 (SIDETIC LETTER N03) */
-#define UC_SIDETIC_N04                           0x10943 0  /* U+10943 (SIDETIC LETTER N04) */
-#define UC_SIDETIC_N05                           0x10944 0  /* U+10944 (SIDETIC LETTER N05) */
-#define UC_SIDETIC_N06                           0x10945 0  /* U+10945 (SIDETIC LETTER N06) */
-#define UC_SIDETIC_N07                           0x10946 0  /* U+10946 (SIDETIC LETTER N07) */
-#define UC_SIDETIC_N08                           0x10947 0  /* U+10947 (SIDETIC LETTER N08) */
-#define UC_SIDETIC_N09                           0x10948 0  /* U+10948 (SIDETIC LETTER N09) */
-#define UC_SIDETIC_N10                           0x10949 0  /* U+10949 (SIDETIC LETTER N10) */
-#define UC_SIDETIC_N11                           0x1094A 0  /* U+1094A (SIDETIC LETTER N11) */
-#define UC_SIDETIC_N12                           0x1094B 0  /* U+1094B (SIDETIC LETTER N12) */
-#define UC_SIDETIC_N13                           0x1094C 0  /* U+1094C (SIDETIC LETTER N13) */
-#define UC_SIDETIC_N14                           0x1094D 0  /* U+1094D (SIDETIC LETTER N14) */
-#define UC_SIDETIC_N15                           0x1094E 0  /* U+1094E (SIDETIC LETTER N15) */
-#define UC_SIDETIC_N16                           0x1094F 0  /* U+1094F (SIDETIC LETTER N16) */
-#define UC_SIDETIC_N17                           0x10950 0  /* U+10950 (SIDETIC LETTER N17) */
-#define UC_SIDETIC_N18                           0x10951 0  /* U+10951 (SIDETIC LETTER N18) */
-#define UC_SIDETIC_N19                           0x10952 0  /* U+10952 (SIDETIC LETTER N19) */
-#define UC_SIDETIC_N20                           0x10953 0  /* U+10953 (SIDETIC LETTER N20) */
-#define UC_SIDETIC_N21                           0x10954 0  /* U+10954 (SIDETIC LETTER N21) */
-#define UC_SIDETIC_N22                           0x10955 0  /* U+10955 (SIDETIC LETTER N22) */
-#define UC_SIDETIC_N23                           0x10956 0  /* U+10956 (SIDETIC LETTER N23) */
-#define UC_SIDETIC_N24                           0x10957 0  /* U+10957 (SIDETIC LETTER N24) */
-#define UC_SIDETIC_N25                           0x10958 0  /* U+10958 (SIDETIC LETTER N25) */
-#define UC_SIDETIC_N26                           0x10959 0  /* U+10959 (SIDETIC LETTER N26) */
+#define UC_SIDETIC_N01                           0x10940 0  // 𐥀
+#define UC_SIDETIC_N02                           0x10941 0  // 𐥁
+#define UC_SIDETIC_N03                           0x10942 0  // 𐥂
+#define UC_SIDETIC_N04                           0x10943 0  // 𐥃
+#define UC_SIDETIC_N05                           0x10944 0  // 𐥄
+#define UC_SIDETIC_N06                           0x10945 0  // 𐥅
+#define UC_SIDETIC_N07                           0x10946 0  // 𐥆
+#define UC_SIDETIC_N08                           0x10947 0  // 𐥇
+#define UC_SIDETIC_N09                           0x10948 0  // 𐥈
+#define UC_SIDETIC_N10                           0x10949 0  // 𐥉
+#define UC_SIDETIC_N11                           0x1094A 0  // 𐥊
+#define UC_SIDETIC_N12                           0x1094B 0  // 𐥋
+#define UC_SIDETIC_N13                           0x1094C 0  // 𐥌
+#define UC_SIDETIC_N14                           0x1094D 0  // 𐥍
+#define UC_SIDETIC_N15                           0x1094E 0  // 𐥎
+#define UC_SIDETIC_N16                           0x1094F 0  // 𐥏
+#define UC_SIDETIC_N17                           0x10950 0  // 𐥐
+#define UC_SIDETIC_N18                           0x10951 0  // 𐥑
+#define UC_SIDETIC_N19                           0x10952 0  // 𐥒
+#define UC_SIDETIC_N20                           0x10953 0  // 𐥓
+#define UC_SIDETIC_N21                           0x10954 0  // 𐥔
+#define UC_SIDETIC_N22                           0x10955 0  // 𐥕
+#define UC_SIDETIC_N23                           0x10956 0  // 𐥖
+#define UC_SIDETIC_N24                           0x10957 0  // 𐥗
+#define UC_SIDETIC_N25                           0x10958 0  // 𐥘
+#define UC_SIDETIC_N26                           0x10959 0  // 𐥙
 
 #endif // SIDETIC_H

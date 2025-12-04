@@ -25,59 +25,59 @@
 #ifndef TOLONG_SIKI_H
 #define TOLONG_SIKI_H
 
-#define UC_TOLONG_SIKI_I                         0x11DB0 0  /* U+11DB0 (TOLONG SIKI LETTER I) */
-#define UC_TOLONG_SIKI_E                         0x11DB1 0  /* U+11DB1 (TOLONG SIKI LETTER E) */
-#define UC_TOLONG_SIKI_U                         0x11DB2 0  /* U+11DB2 (TOLONG SIKI LETTER U) */
-#define UC_TOLONG_SIKI_O                         0x11DB3 0  /* U+11DB3 (TOLONG SIKI LETTER O) */
-#define UC_TOLONG_SIKI_A                         0x11DB4 0  /* U+11DB4 (TOLONG SIKI LETTER A) */
-#define UC_TOLONG_SIKI_AA                        0x11DB5 0  /* U+11DB5 (TOLONG SIKI LETTER AA) */
-#define UC_TOLONG_SIKI_P                         0x11DB6 0  /* U+11DB6 (TOLONG SIKI LETTER P) */
-#define UC_TOLONG_SIKI_PH                        0x11DB7 0  /* U+11DB7 (TOLONG SIKI LETTER PH) */
-#define UC_TOLONG_SIKI_B                         0x11DB8 0  /* U+11DB8 (TOLONG SIKI LETTER B) */
-#define UC_TOLONG_SIKI_BH                        0x11DB9 0  /* U+11DB9 (TOLONG SIKI LETTER BH) */
-#define UC_TOLONG_SIKI_M                         0x11DBA 0  /* U+11DBA (TOLONG SIKI LETTER M) */
-#define UC_TOLONG_SIKI_T                         0x11DBB 0  /* U+11DBB (TOLONG SIKI LETTER T) */
-#define UC_TOLONG_SIKI_TH                        0x11DBC 0  /* U+11DBC (TOLONG SIKI LETTER TH) */
-#define UC_TOLONG_SIKI_D                         0x11DBD 0  /* U+11DBD (TOLONG SIKI LETTER D) */
-#define UC_TOLONG_SIKI_DH                        0x11DBE 0  /* U+11DBE (TOLONG SIKI LETTER DH) */
-#define UC_TOLONG_SIKI_N                         0x11DBF 0  /* U+11DBF (TOLONG SIKI LETTER N) */
-#define UC_TOLONG_SIKI_TT                        0x11DC0 0  /* U+11DC0 (TOLONG SIKI LETTER TT) */
-#define UC_TOLONG_SIKI_TTH                       0x11DC1 0  /* U+11DC1 (TOLONG SIKI LETTER TTH) */
-#define UC_TOLONG_SIKI_DD                        0x11DC2 0  /* U+11DC2 (TOLONG SIKI LETTER DD) */
-#define UC_TOLONG_SIKI_DDH                       0x11DC3 0  /* U+11DC3 (TOLONG SIKI LETTER DDH) */
-#define UC_TOLONG_SIKI_NN                        0x11DC4 0  /* U+11DC4 (TOLONG SIKI LETTER NN) */
-#define UC_TOLONG_SIKI_C                         0x11DC5 0  /* U+11DC5 (TOLONG SIKI LETTER C) */
-#define UC_TOLONG_SIKI_CH                        0x11DC6 0  /* U+11DC6 (TOLONG SIKI LETTER CH) */
-#define UC_TOLONG_SIKI_J                         0x11DC7 0  /* U+11DC7 (TOLONG SIKI LETTER J) */
-#define UC_TOLONG_SIKI_JH                        0x11DC8 0  /* U+11DC8 (TOLONG SIKI LETTER JH) */
-#define UC_TOLONG_SIKI_NY                        0x11DC9 0  /* U+11DC9 (TOLONG SIKI LETTER NY) */
-#define UC_TOLONG_SIKI_K                         0x11DCA 0  /* U+11DCA (TOLONG SIKI LETTER K) */
-#define UC_TOLONG_SIKI_KH                        0x11DCB 0  /* U+11DCB (TOLONG SIKI LETTER KH) */
-#define UC_TOLONG_SIKI_G                         0x11DCC 0  /* U+11DCC (TOLONG SIKI LETTER G) */
-#define UC_TOLONG_SIKI_GH                        0x11DCD 0  /* U+11DCD (TOLONG SIKI LETTER GH) */
-#define UC_TOLONG_SIKI_NG                        0x11DCE 0  /* U+11DCE (TOLONG SIKI LETTER NG) */
-#define UC_TOLONG_SIKI_Y                         0x11DCF 0  /* U+11DCF (TOLONG SIKI LETTER Y) */
-#define UC_TOLONG_SIKI_R                         0x11DD0 0  /* U+11DD0 (TOLONG SIKI LETTER R) */
-#define UC_TOLONG_SIKI_L                         0x11DD1 0  /* U+11DD1 (TOLONG SIKI LETTER L) */
-#define UC_TOLONG_SIKI_V                         0x11DD2 0  /* U+11DD2 (TOLONG SIKI LETTER V) */
-#define UC_TOLONG_SIKI_NNY                       0x11DD3 0  /* U+11DD3 (TOLONG SIKI LETTER NNY) */
-#define UC_TOLONG_SIKI_S                         0x11DD4 0  /* U+11DD4 (TOLONG SIKI LETTER S) */
-#define UC_TOLONG_SIKI_H                         0x11DD5 0  /* U+11DD5 (TOLONG SIKI LETTER H) */
-#define UC_TOLONG_SIKI_X                         0x11DD6 0  /* U+11DD6 (TOLONG SIKI LETTER X) */
-#define UC_TOLONG_SIKI_RR                        0x11DD7 0  /* U+11DD7 (TOLONG SIKI LETTER RR) */
-#define UC_TOLONG_SIKI_RRH                       0x11DD8 0  /* U+11DD8 (TOLONG SIKI LETTER RRH) */
-#define UC_TOLONG_SIKI_SIGN_SELA                 0x11DD9 0  /* U+11DD9 (TOLONG SIKI SIGN SELA) */
-#define UC_TOLONG_SIKI_SIGN_HECAKA               0x11DDA 0  /* U+11DDA (TOLONG SIKI SIGN HECAKA) */
-#define UC_TOLONG_SIKI_UNGGA                     0x11DDB 0  /* U+11DDB (TOLONG SIKI UNGGA) */
-#define UC_TOLONG_SIKI_ZERO                      0x11DE0 0  /* U+11DE0 (TOLONG SIKI DIGIT ZERO) */
-#define UC_TOLONG_SIKI_ONE                       0x11DE1 0  /* U+11DE1 (TOLONG SIKI DIGIT ONE) */
-#define UC_TOLONG_SIKI_TWO                       0x11DE2 0  /* U+11DE2 (TOLONG SIKI DIGIT TWO) */
-#define UC_TOLONG_SIKI_THREE                     0x11DE3 0  /* U+11DE3 (TOLONG SIKI DIGIT THREE) */
-#define UC_TOLONG_SIKI_FOUR                      0x11DE4 0  /* U+11DE4 (TOLONG SIKI DIGIT FOUR) */
-#define UC_TOLONG_SIKI_FIVE                      0x11DE5 0  /* U+11DE5 (TOLONG SIKI DIGIT FIVE) */
-#define UC_TOLONG_SIKI_SIX                       0x11DE6 0  /* U+11DE6 (TOLONG SIKI DIGIT SIX) */
-#define UC_TOLONG_SIKI_SEVEN                     0x11DE7 0  /* U+11DE7 (TOLONG SIKI DIGIT SEVEN) */
-#define UC_TOLONG_SIKI_EIGHT                     0x11DE8 0  /* U+11DE8 (TOLONG SIKI DIGIT EIGHT) */
-#define UC_TOLONG_SIKI_NINE                      0x11DE9 0  /* U+11DE9 (TOLONG SIKI DIGIT NINE) */
+#define UC_TOLONG_SIKI_I                         0x11DB0 0  // 𑶰
+#define UC_TOLONG_SIKI_E                         0x11DB1 0  // 𑶱
+#define UC_TOLONG_SIKI_U                         0x11DB2 0  // 𑶲
+#define UC_TOLONG_SIKI_O                         0x11DB3 0  // 𑶳
+#define UC_TOLONG_SIKI_A                         0x11DB4 0  // 𑶴
+#define UC_TOLONG_SIKI_AA                        0x11DB5 0  // 𑶵
+#define UC_TOLONG_SIKI_P                         0x11DB6 0  // 𑶶
+#define UC_TOLONG_SIKI_PH                        0x11DB7 0  // 𑶷
+#define UC_TOLONG_SIKI_B                         0x11DB8 0  // 𑶸
+#define UC_TOLONG_SIKI_BH                        0x11DB9 0  // 𑶹
+#define UC_TOLONG_SIKI_M                         0x11DBA 0  // 𑶺
+#define UC_TOLONG_SIKI_T                         0x11DBB 0  // 𑶻
+#define UC_TOLONG_SIKI_TH                        0x11DBC 0  // 𑶼
+#define UC_TOLONG_SIKI_D                         0x11DBD 0  // 𑶽
+#define UC_TOLONG_SIKI_DH                        0x11DBE 0  // 𑶾
+#define UC_TOLONG_SIKI_N                         0x11DBF 0  // 𑶿
+#define UC_TOLONG_SIKI_TT                        0x11DC0 0  // 𑷀
+#define UC_TOLONG_SIKI_TTH                       0x11DC1 0  // 𑷁
+#define UC_TOLONG_SIKI_DD                        0x11DC2 0  // 𑷂
+#define UC_TOLONG_SIKI_DDH                       0x11DC3 0  // 𑷃
+#define UC_TOLONG_SIKI_NN                        0x11DC4 0  // 𑷄
+#define UC_TOLONG_SIKI_C                         0x11DC5 0  // 𑷅
+#define UC_TOLONG_SIKI_CH                        0x11DC6 0  // 𑷆
+#define UC_TOLONG_SIKI_J                         0x11DC7 0  // 𑷇
+#define UC_TOLONG_SIKI_JH                        0x11DC8 0  // 𑷈
+#define UC_TOLONG_SIKI_NY                        0x11DC9 0  // 𑷉
+#define UC_TOLONG_SIKI_K                         0x11DCA 0  // 𑷊
+#define UC_TOLONG_SIKI_KH                        0x11DCB 0  // 𑷋
+#define UC_TOLONG_SIKI_G                         0x11DCC 0  // 𑷌
+#define UC_TOLONG_SIKI_GH                        0x11DCD 0  // 𑷍
+#define UC_TOLONG_SIKI_NG                        0x11DCE 0  // 𑷎
+#define UC_TOLONG_SIKI_Y                         0x11DCF 0  // 𑷏
+#define UC_TOLONG_SIKI_R                         0x11DD0 0  // 𑷐
+#define UC_TOLONG_SIKI_L                         0x11DD1 0  // 𑷑
+#define UC_TOLONG_SIKI_V                         0x11DD2 0  // 𑷒
+#define UC_TOLONG_SIKI_NNY                       0x11DD3 0  // 𑷓
+#define UC_TOLONG_SIKI_S                         0x11DD4 0  // 𑷔
+#define UC_TOLONG_SIKI_H                         0x11DD5 0  // 𑷕
+#define UC_TOLONG_SIKI_X                         0x11DD6 0  // 𑷖
+#define UC_TOLONG_SIKI_RR                        0x11DD7 0  // 𑷗
+#define UC_TOLONG_SIKI_RRH                       0x11DD8 0  // 𑷘
+#define UC_TOLONG_SIKI_SIGN_SELA                 0x11DD9 0  // 𑷙
+#define UC_TOLONG_SIKI_SIGN_HECAKA               0x11DDA 0  // 𑷚
+#define UC_TOLONG_SIKI_UNGGA                     0x11DDB 0  // 𑷛
+#define UC_TOLONG_SIKI_ZERO                      0x11DE0 0  // 𑷠
+#define UC_TOLONG_SIKI_ONE                       0x11DE1 0  // 𑷡
+#define UC_TOLONG_SIKI_TWO                       0x11DE2 0  // 𑷢
+#define UC_TOLONG_SIKI_THREE                     0x11DE3 0  // 𑷣
+#define UC_TOLONG_SIKI_FOUR                      0x11DE4 0  // 𑷤
+#define UC_TOLONG_SIKI_FIVE                      0x11DE5 0  // 𑷥
+#define UC_TOLONG_SIKI_SIX                       0x11DE6 0  // 𑷦
+#define UC_TOLONG_SIKI_SEVEN                     0x11DE7 0  // 𑷧
+#define UC_TOLONG_SIKI_EIGHT                     0x11DE8 0  // 𑷨
+#define UC_TOLONG_SIKI_NINE                      0x11DE9 0  // 𑷩
 
 #endif // TOLONG_SIKI_H

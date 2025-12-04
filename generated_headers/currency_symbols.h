@@ -57,6 +57,6 @@
 #define UC_CUR_LARI_SIGN                         0x20BE 0  // ₾
 #define UC_CUR_BITCOIN_SIGN                      0x20BF 0  // ₿
 #define UC_CUR_SOM_SIGN                          0x20C0 0  // ⃀
-#define UC_CUR_SAUDI_RIYAL_SIGN                  0x20C1 0  /* U+20C1 (SAUDI RIYAL SIGN) */
+#define UC_CUR_SAUDI_RIYAL_SIGN                  0x20C1 0  // ⃁
 
 #endif // CURRENCY_SYMBOLS_H

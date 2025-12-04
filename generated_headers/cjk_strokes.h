@@ -69,8 +69,8 @@
 #define UC_CJS_CJK_STROKE_HZZZG                  0x31E1 0  // ㇡
 #define UC_CJS_CJK_STROKE_PG                     0x31E2 0  // ㇢
 #define UC_CJS_CJK_STROKE_Q                      0x31E3 0  // ㇣
-#define UC_CJS_CJK_STROKE_HXG                    0x31E4 0  /* U+31E4 (CJK STROKE HXG) */
-#define UC_CJS_CJK_STROKE_SZP                    0x31E5 0  /* U+31E5 (CJK STROKE SZP) */
+#define UC_CJS_CJK_STROKE_HXG                    0x31E4 0  // ㇤
+#define UC_CJS_CJK_STROKE_SZP                    0x31E5 0  // ㇥
 #define UC_CJS_IDEOGRAPHIC_DESCION_SUBTRACTION   0x31EF 0  // ㇯
 
 #endif // CJK_STROKES_H

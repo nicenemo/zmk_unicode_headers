@@ -10,8 +10,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 157
-* Total Significant Hex Values: 157
+* Total Defined Code Points: 158
+* Total Significant Hex Values: 158
 * Status: OK (Counts Match)
 
 */
@@ -33,6 +33,7 @@
 #define UC_MONGOLIAN_FREE_ONE                    0x180B 0  // ᠋
 #define UC_MONGOLIAN_FREE_TWO                    0x180C 0  // ᠌
 #define UC_MONGOLIAN_FREE_THREE                  0x180D 0  // ᠍
+#define UC_MONGOLIAN_VOWEL_SEPARATOR             0x180E 0  // ᠎
 #define UC_MONGOLIAN_FREE_FOUR                   0x180F 0  // ᠏
 #define UC_MONGOLIAN_ZERO                        0x1810 0  // ᠐
 #define UC_MONGOLIAN_ONE                         0x1811 0  // ᠑

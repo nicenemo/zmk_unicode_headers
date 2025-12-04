@@ -27,49 +27,49 @@
 #ifndef SUNUWAR_H
 #define SUNUWAR_H
 
-#define UC_SUNUWAR_DEVI                          0x11BC0 0  /* U+11BC0 (SUNUWAR LETTER DEVI) */
-#define UC_SUNUWAR_TASLA                         0x11BC1 0  /* U+11BC1 (SUNUWAR LETTER TASLA) */
-#define UC_SUNUWAR_EKO                           0x11BC2 0  /* U+11BC2 (SUNUWAR LETTER EKO) */
-#define UC_SUNUWAR_IMAR                          0x11BC3 0  /* U+11BC3 (SUNUWAR LETTER IMAR) */
-#define UC_SUNUWAR_REU                           0x11BC4 0  /* U+11BC4 (SUNUWAR LETTER REU) */
-#define UC_SUNUWAR_UTTHI                         0x11BC5 0  /* U+11BC5 (SUNUWAR LETTER UTTHI) */
-#define UC_SUNUWAR_KIK                           0x11BC6 0  /* U+11BC6 (SUNUWAR LETTER KIK) */
-#define UC_SUNUWAR_MA                            0x11BC7 0  /* U+11BC7 (SUNUWAR LETTER MA) */
-#define UC_SUNUWAR_APPHO                         0x11BC8 0  /* U+11BC8 (SUNUWAR LETTER APPHO) */
-#define UC_SUNUWAR_PIP                           0x11BC9 0  /* U+11BC9 (SUNUWAR LETTER PIP) */
-#define UC_SUNUWAR_GIL                           0x11BCA 0  /* U+11BCA (SUNUWAR LETTER GIL) */
-#define UC_SUNUWAR_HAMSO                         0x11BCB 0  /* U+11BCB (SUNUWAR LETTER HAMSO) */
-#define UC_SUNUWAR_CARMI                         0x11BCC 0  /* U+11BCC (SUNUWAR LETTER CARMI) */
-#define UC_SUNUWAR_NAH                           0x11BCD 0  /* U+11BCD (SUNUWAR LETTER NAH) */
-#define UC_SUNUWAR_BUR                           0x11BCE 0  /* U+11BCE (SUNUWAR LETTER BUR) */
-#define UC_SUNUWAR_JYAH                          0x11BCF 0  /* U+11BCF (SUNUWAR LETTER JYAH) */
-#define UC_SUNUWAR_LOACHA                        0x11BD0 0  /* U+11BD0 (SUNUWAR LETTER LOACHA) */
-#define UC_SUNUWAR_OTTHI                         0x11BD1 0  /* U+11BD1 (SUNUWAR LETTER OTTHI) */
-#define UC_SUNUWAR_SHYELE                        0x11BD2 0  /* U+11BD2 (SUNUWAR LETTER SHYELE) */
-#define UC_SUNUWAR_VARCA                         0x11BD3 0  /* U+11BD3 (SUNUWAR LETTER VARCA) */
-#define UC_SUNUWAR_YAT                           0x11BD4 0  /* U+11BD4 (SUNUWAR LETTER YAT) */
-#define UC_SUNUWAR_AVA                           0x11BD5 0  /* U+11BD5 (SUNUWAR LETTER AVA) */
-#define UC_SUNUWAR_AAL                           0x11BD6 0  /* U+11BD6 (SUNUWAR LETTER AAL) */
-#define UC_SUNUWAR_DONGA                         0x11BD7 0  /* U+11BD7 (SUNUWAR LETTER DONGA) */
-#define UC_SUNUWAR_THARI                         0x11BD8 0  /* U+11BD8 (SUNUWAR LETTER THARI) */
-#define UC_SUNUWAR_PHAR                          0x11BD9 0  /* U+11BD9 (SUNUWAR LETTER PHAR) */
-#define UC_SUNUWAR_NGAR                          0x11BDA 0  /* U+11BDA (SUNUWAR LETTER NGAR) */
-#define UC_SUNUWAR_KHA                           0x11BDB 0  /* U+11BDB (SUNUWAR LETTER KHA) */
-#define UC_SUNUWAR_SHYER                         0x11BDC 0  /* U+11BDC (SUNUWAR LETTER SHYER) */
-#define UC_SUNUWAR_CHELAP                        0x11BDD 0  /* U+11BDD (SUNUWAR LETTER CHELAP) */
-#define UC_SUNUWAR_TENTU                         0x11BDE 0  /* U+11BDE (SUNUWAR LETTER TENTU) */
-#define UC_SUNUWAR_THELE                         0x11BDF 0  /* U+11BDF (SUNUWAR LETTER THELE) */
-#define UC_SUNUWAR_KLOKO                         0x11BE0 0  /* U+11BE0 (SUNUWAR LETTER KLOKO) */
-#define UC_SUNUWAR_SIGN_PVO                      0x11BE1 0  /* U+11BE1 (SUNUWAR SIGN PVO) */
-#define UC_SUNUWAR_ZERO                          0x11BF0 0  /* U+11BF0 (SUNUWAR DIGIT ZERO) */
-#define UC_SUNUWAR_ONE                           0x11BF1 0  /* U+11BF1 (SUNUWAR DIGIT ONE) */
-#define UC_SUNUWAR_TWO                           0x11BF2 0  /* U+11BF2 (SUNUWAR DIGIT TWO) */
-#define UC_SUNUWAR_THREE                         0x11BF3 0  /* U+11BF3 (SUNUWAR DIGIT THREE) */
-#define UC_SUNUWAR_FOUR                          0x11BF4 0  /* U+11BF4 (SUNUWAR DIGIT FOUR) */
-#define UC_SUNUWAR_FIVE                          0x11BF5 0  /* U+11BF5 (SUNUWAR DIGIT FIVE) */
-#define UC_SUNUWAR_SIX                           0x11BF6 0  /* U+11BF6 (SUNUWAR DIGIT SIX) */
-#define UC_SUNUWAR_SEVEN                         0x11BF7 0  /* U+11BF7 (SUNUWAR DIGIT SEVEN) */
-#define UC_SUNUWAR_EIGHT                         0x11BF8 0  /* U+11BF8 (SUNUWAR DIGIT EIGHT) */
-#define UC_SUNUWAR_NINE                          0x11BF9 0  /* U+11BF9 (SUNUWAR DIGIT NINE) */
+#define UC_SUNUWAR_DEVI                          0x11BC0 0  // 𑯀
+#define UC_SUNUWAR_TASLA                         0x11BC1 0  // 𑯁
+#define UC_SUNUWAR_EKO                           0x11BC2 0  // 𑯂
+#define UC_SUNUWAR_IMAR                          0x11BC3 0  // 𑯃
+#define UC_SUNUWAR_REU                           0x11BC4 0  // 𑯄
+#define UC_SUNUWAR_UTTHI                         0x11BC5 0  // 𑯅
+#define UC_SUNUWAR_KIK                           0x11BC6 0  // 𑯆
+#define UC_SUNUWAR_MA                            0x11BC7 0  // 𑯇
+#define UC_SUNUWAR_APPHO                         0x11BC8 0  // 𑯈
+#define UC_SUNUWAR_PIP                           0x11BC9 0  // 𑯉
+#define UC_SUNUWAR_GIL                           0x11BCA 0  // 𑯊
+#define UC_SUNUWAR_HAMSO                         0x11BCB 0  // 𑯋
+#define UC_SUNUWAR_CARMI                         0x11BCC 0  // 𑯌
+#define UC_SUNUWAR_NAH                           0x11BCD 0  // 𑯍
+#define UC_SUNUWAR_BUR                           0x11BCE 0  // 𑯎
+#define UC_SUNUWAR_JYAH                          0x11BCF 0  // 𑯏
+#define UC_SUNUWAR_LOACHA                        0x11BD0 0  // 𑯐
+#define UC_SUNUWAR_OTTHI                         0x11BD1 0  // 𑯑
+#define UC_SUNUWAR_SHYELE                        0x11BD2 0  // 𑯒
+#define UC_SUNUWAR_VARCA                         0x11BD3 0  // 𑯓
+#define UC_SUNUWAR_YAT                           0x11BD4 0  // 𑯔
+#define UC_SUNUWAR_AVA                           0x11BD5 0  // 𑯕
+#define UC_SUNUWAR_AAL                           0x11BD6 0  // 𑯖
+#define UC_SUNUWAR_DONGA                         0x11BD7 0  // 𑯗
+#define UC_SUNUWAR_THARI                         0x11BD8 0  // 𑯘
+#define UC_SUNUWAR_PHAR                          0x11BD9 0  // 𑯙
+#define UC_SUNUWAR_NGAR                          0x11BDA 0  // 𑯚
+#define UC_SUNUWAR_KHA                           0x11BDB 0  // 𑯛
+#define UC_SUNUWAR_SHYER                         0x11BDC 0  // 𑯜
+#define UC_SUNUWAR_CHELAP                        0x11BDD 0  // 𑯝
+#define UC_SUNUWAR_TENTU                         0x11BDE 0  // 𑯞
+#define UC_SUNUWAR_THELE                         0x11BDF 0  // 𑯟
+#define UC_SUNUWAR_KLOKO                         0x11BE0 0  // 𑯠
+#define UC_SUNUWAR_SIGN_PVO                      0x11BE1 0  // 𑯡
+#define UC_SUNUWAR_ZERO                          0x11BF0 0  // 𑯰
+#define UC_SUNUWAR_ONE                           0x11BF1 0  // 𑯱
+#define UC_SUNUWAR_TWO                           0x11BF2 0  // 𑯲
+#define UC_SUNUWAR_THREE                         0x11BF3 0  // 𑯳
+#define UC_SUNUWAR_FOUR                          0x11BF4 0  // 𑯴
+#define UC_SUNUWAR_FIVE                          0x11BF5 0  // 𑯵
+#define UC_SUNUWAR_SIX                           0x11BF6 0  // 𑯶
+#define UC_SUNUWAR_SEVEN                         0x11BF7 0  // 𑯷
+#define UC_SUNUWAR_EIGHT                         0x11BF8 0  // 𑯸
+#define UC_SUNUWAR_NINE                          0x11BF9 0  // 𑯹
 
 #endif // SUNUWAR_H

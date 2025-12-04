@@ -95,7 +95,7 @@
 #define UC_TL_TELUGU_TSA                         0x0C58 0  // ౘ
 #define UC_TL_TELUGU_DZA                         0x0C59 0  // ౙ
 #define UC_TL_TELUGU_RRRA                        0x0C5A 0  // ౚ
-#define UC_TL_TELUGU_ARCHAIC_SHRII               0x0C5C 0  /* U+0C5C (TELUGU ARCHAIC SHRII) */
+#define UC_TL_TELUGU_ARCHAIC_SHRII               0x0C5C 0  // ౜
 #define UC_TL_TELUGU_NAKAARA_POLLU               0x0C5D 0  // ౝ
 #define UC_TL_TELUGU_VOCALIC_RR                  0x0C60 0  // ౠ
 #define UC_TL_TELUGU_VOCALIC_LL                  0x0C61 0  // ౡ

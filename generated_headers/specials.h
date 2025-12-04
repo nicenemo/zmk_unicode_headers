@@ -10,8 +10,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 2
-* Total Significant Hex Values: 2
+* Total Defined Code Points: 5
+* Total Significant Hex Values: 5
 * Status: OK (Counts Match)
 
 */
@@ -19,6 +19,9 @@
 #ifndef SPECIALS_H
 #define SPECIALS_H
 
+#define UC_INTERLINEAR_ANNOTATION_ANCHOR         0xFFF9 0  // ￹
+#define UC_INTERLINEAR_ANNOTATION_SEPARATOR      0xFFFA 0  // ￺
+#define UC_INTERLINEAR_ANNOTATION_TERMINATOR     0xFFFB 0  // ￻
 #define UC_OBJECT_REPLACEMENT                    0xFFFC 0  // ￼
 #define UC_REPLACEMENT                           0xFFFD 0  // �
 

@@ -10,8 +10,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 225
-* Total Significant Hex Values: 225
+* Total Defined Code Points: 233
+* Total Significant Hex Values: 233
 * Status: OK (Counts Match)
 
 */
@@ -132,6 +132,14 @@
 #define UC_MUSICAL_COMBINING_FLAG_3              0x1D170 0  // 𝅰
 #define UC_MUSICAL_COMBINING_FLAG_4              0x1D171 0  // 𝅱
 #define UC_MUSICAL_COMBINING_FLAG_5              0x1D172 0  // 𝅲
+#define UC_MUSICAL_BEGIN_BEAM                    0x1D173 0  // 𝅳
+#define UC_MUSICAL_END_BEAM                      0x1D174 0  // 𝅴
+#define UC_MUSICAL_BEGIN_TIE                     0x1D175 0  // 𝅵
+#define UC_MUSICAL_END_TIE                       0x1D176 0  // 𝅶
+#define UC_MUSICAL_BEGIN_SLUR                    0x1D177 0  // 𝅷
+#define UC_MUSICAL_END_SLUR                      0x1D178 0  // 𝅸
+#define UC_MUSICAL_BEGIN_PHRASE                  0x1D179 0  // 𝅹
+#define UC_MUSICAL_END_PHRASE                    0x1D17A 0  // 𝅺
 #define UC_MUSICAL_COMBINING_ACCENT              0x1D17B 0  // 𝅻
 #define UC_MUSICAL_COMBINING_STACCATO            0x1D17C 0  // 𝅼
 #define UC_MUSICAL_COMBINING_TENUTO              0x1D17D 0  // 𝅽

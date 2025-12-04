@@ -17,85 +17,85 @@
 #ifndef TULU_TIGALARI_H
 #define TULU_TIGALARI_H
 
-#define UC_TULU_TIGALARI_A                       0x11380 0  /* U+11380 (TULU-TIGALARI LETTER A) */
-#define UC_TULU_TIGALARI_AA                      0x11381 0  /* U+11381 (TULU-TIGALARI LETTER AA) */
-#define UC_TULU_TIGALARI_I                       0x11382 0  /* U+11382 (TULU-TIGALARI LETTER I) */
-#define UC_TULU_TIGALARI_II                      0x11383 0  /* U+11383 (TULU-TIGALARI LETTER II) */
-#define UC_TULU_TIGALARI_U                       0x11384 0  /* U+11384 (TULU-TIGALARI LETTER U) */
-#define UC_TULU_TIGALARI_UU                      0x11385 0  /* U+11385 (TULU-TIGALARI LETTER UU) */
-#define UC_TULU_TIGALARI_VOCALIC_R               0x11386 0  /* U+11386 (TULU-TIGALARI LETTER VOCALIC R) */
-#define UC_TULU_TIGALARI_VOCALIC_RR              0x11387 0  /* U+11387 (TULU-TIGALARI LETTER VOCALIC RR) */
-#define UC_TULU_TIGALARI_VOCALIC_L               0x11388 0  /* U+11388 (TULU-TIGALARI LETTER VOCALIC L) */
-#define UC_TULU_TIGALARI_VOCALIC_LL              0x11389 0  /* U+11389 (TULU-TIGALARI LETTER VOCALIC LL) */
-#define UC_TULU_TIGALARI_EE                      0x1138B 0  /* U+1138B (TULU-TIGALARI LETTER EE) */
-#define UC_TULU_TIGALARI_AI                      0x1138E 0  /* U+1138E (TULU-TIGALARI LETTER AI) */
-#define UC_TULU_TIGALARI_OO                      0x11390 0  /* U+11390 (TULU-TIGALARI LETTER OO) */
-#define UC_TULU_TIGALARI_AU                      0x11391 0  /* U+11391 (TULU-TIGALARI LETTER AU) */
-#define UC_TULU_TIGALARI_KA                      0x11392 0  /* U+11392 (TULU-TIGALARI LETTER KA) */
-#define UC_TULU_TIGALARI_KHA                     0x11393 0  /* U+11393 (TULU-TIGALARI LETTER KHA) */
-#define UC_TULU_TIGALARI_GA                      0x11394 0  /* U+11394 (TULU-TIGALARI LETTER GA) */
-#define UC_TULU_TIGALARI_GHA                     0x11395 0  /* U+11395 (TULU-TIGALARI LETTER GHA) */
-#define UC_TULU_TIGALARI_NGA                     0x11396 0  /* U+11396 (TULU-TIGALARI LETTER NGA) */
-#define UC_TULU_TIGALARI_CA                      0x11397 0  /* U+11397 (TULU-TIGALARI LETTER CA) */
-#define UC_TULU_TIGALARI_CHA                     0x11398 0  /* U+11398 (TULU-TIGALARI LETTER CHA) */
-#define UC_TULU_TIGALARI_JA                      0x11399 0  /* U+11399 (TULU-TIGALARI LETTER JA) */
-#define UC_TULU_TIGALARI_JHA                     0x1139A 0  /* U+1139A (TULU-TIGALARI LETTER JHA) */
-#define UC_TULU_TIGALARI_NYA                     0x1139B 0  /* U+1139B (TULU-TIGALARI LETTER NYA) */
-#define UC_TULU_TIGALARI_TTA                     0x1139C 0  /* U+1139C (TULU-TIGALARI LETTER TTA) */
-#define UC_TULU_TIGALARI_TTHA                    0x1139D 0  /* U+1139D (TULU-TIGALARI LETTER TTHA) */
-#define UC_TULU_TIGALARI_DDA                     0x1139E 0  /* U+1139E (TULU-TIGALARI LETTER DDA) */
-#define UC_TULU_TIGALARI_DDHA                    0x1139F 0  /* U+1139F (TULU-TIGALARI LETTER DDHA) */
-#define UC_TULU_TIGALARI_NNA                     0x113A0 0  /* U+113A0 (TULU-TIGALARI LETTER NNA) */
-#define UC_TULU_TIGALARI_TA                      0x113A1 0  /* U+113A1 (TULU-TIGALARI LETTER TA) */
-#define UC_TULU_TIGALARI_THA                     0x113A2 0  /* U+113A2 (TULU-TIGALARI LETTER THA) */
-#define UC_TULU_TIGALARI_DA                      0x113A3 0  /* U+113A3 (TULU-TIGALARI LETTER DA) */
-#define UC_TULU_TIGALARI_DHA                     0x113A4 0  /* U+113A4 (TULU-TIGALARI LETTER DHA) */
-#define UC_TULU_TIGALARI_NA                      0x113A5 0  /* U+113A5 (TULU-TIGALARI LETTER NA) */
-#define UC_TULU_TIGALARI_PA                      0x113A6 0  /* U+113A6 (TULU-TIGALARI LETTER PA) */
-#define UC_TULU_TIGALARI_PHA                     0x113A7 0  /* U+113A7 (TULU-TIGALARI LETTER PHA) */
-#define UC_TULU_TIGALARI_BA                      0x113A8 0  /* U+113A8 (TULU-TIGALARI LETTER BA) */
-#define UC_TULU_TIGALARI_BHA                     0x113A9 0  /* U+113A9 (TULU-TIGALARI LETTER BHA) */
-#define UC_TULU_TIGALARI_MA                      0x113AA 0  /* U+113AA (TULU-TIGALARI LETTER MA) */
-#define UC_TULU_TIGALARI_YA                      0x113AB 0  /* U+113AB (TULU-TIGALARI LETTER YA) */
-#define UC_TULU_TIGALARI_RA                      0x113AC 0  /* U+113AC (TULU-TIGALARI LETTER RA) */
-#define UC_TULU_TIGALARI_LA                      0x113AD 0  /* U+113AD (TULU-TIGALARI LETTER LA) */
-#define UC_TULU_TIGALARI_VA                      0x113AE 0  /* U+113AE (TULU-TIGALARI LETTER VA) */
-#define UC_TULU_TIGALARI_SHA                     0x113AF 0  /* U+113AF (TULU-TIGALARI LETTER SHA) */
-#define UC_TULU_TIGALARI_SSA                     0x113B0 0  /* U+113B0 (TULU-TIGALARI LETTER SSA) */
-#define UC_TULU_TIGALARI_SA                      0x113B1 0  /* U+113B1 (TULU-TIGALARI LETTER SA) */
-#define UC_TULU_TIGALARI_HA                      0x113B2 0  /* U+113B2 (TULU-TIGALARI LETTER HA) */
-#define UC_TULU_TIGALARI_LLA                     0x113B3 0  /* U+113B3 (TULU-TIGALARI LETTER LLA) */
-#define UC_TULU_TIGALARI_RRA                     0x113B4 0  /* U+113B4 (TULU-TIGALARI LETTER RRA) */
-#define UC_TULU_TIGALARI_LLLA                    0x113B5 0  /* U+113B5 (TULU-TIGALARI LETTER LLLA) */
-#define UC_TULU_TIGALARI_SIGN_AVAGRAHA           0x113B7 0  /* U+113B7 (TULU-TIGALARI SIGN AVAGRAHA) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_AA           0x113B8 0  /* U+113B8 (TULU-TIGALARI VOWEL SIGN AA) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_I            0x113B9 0  /* U+113B9 (TULU-TIGALARI VOWEL SIGN I) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_II           0x113BA 0  /* U+113BA (TULU-TIGALARI VOWEL SIGN II) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_U            0x113BB 0  /* U+113BB (TULU-TIGALARI VOWEL SIGN U) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_UU           0x113BC 0  /* U+113BC (TULU-TIGALARI VOWEL SIGN UU) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_VOCALIC_R    0x113BD 0  /* U+113BD (TULU-TIGALARI VOWEL SIGN VOCALIC R) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_VOCALIC_RR   0x113BE 0  /* U+113BE (TULU-TIGALARI VOWEL SIGN VOCALIC RR) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_VOCALIC_L    0x113BF 0  /* U+113BF (TULU-TIGALARI VOWEL SIGN VOCALIC L) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_VOCALIC_LL   0x113C0 0  /* U+113C0 (TULU-TIGALARI VOWEL SIGN VOCALIC LL) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_EE           0x113C2 0  /* U+113C2 (TULU-TIGALARI VOWEL SIGN EE) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_AI           0x113C5 0  /* U+113C5 (TULU-TIGALARI VOWEL SIGN AI) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_OO           0x113C7 0  /* U+113C7 (TULU-TIGALARI VOWEL SIGN OO) */
-#define UC_TULU_TIGALARI_VOWEL_SIGN_AU           0x113C8 0  /* U+113C8 (TULU-TIGALARI VOWEL SIGN AU) */
-#define UC_TULU_TIGALARI_AU_LENGTH_MARK          0x113C9 0  /* U+113C9 (TULU-TIGALARI AU LENGTH MARK) */
-#define UC_TULU_TIGALARI_SIGN_CANDRA_ANUNASIKA   0x113CA 0  /* U+113CA (TULU-TIGALARI SIGN CANDRA ANUNASIKA) */
-#define UC_TULU_TIGALARI_SIGN_ANUSVARA           0x113CC 0  /* U+113CC (TULU-TIGALARI SIGN ANUSVARA) */
-#define UC_TULU_TIGALARI_SIGN_VISARGA            0x113CD 0  /* U+113CD (TULU-TIGALARI SIGN VISARGA) */
-#define UC_TULU_TIGALARI_SIGN_VIRAMA             0x113CE 0  /* U+113CE (TULU-TIGALARI SIGN VIRAMA) */
-#define UC_TULU_TIGALARI_SIGN_LOOPED_VIRAMA      0x113CF 0  /* U+113CF (TULU-TIGALARI SIGN LOOPED VIRAMA) */
-#define UC_TULU_TIGALARI_CONJOINER               0x113D0 0  /* U+113D0 (TULU-TIGALARI CONJOINER) */
-#define UC_TULU_TIGALARI_REPHA                   0x113D1 0  /* U+113D1 (TULU-TIGALARI REPHA) */
-#define UC_TULU_TIGALARI_GEMINATION_MARK         0x113D2 0  /* U+113D2 (TULU-TIGALARI GEMINATION MARK) */
-#define UC_TULU_TIGALARI_SIGN_PLUTA              0x113D3 0  /* U+113D3 (TULU-TIGALARI SIGN PLUTA) */
-#define UC_TULU_TIGALARI_DANDA                   0x113D4 0  /* U+113D4 (TULU-TIGALARI DANDA) */
-#define UC_TULU_TIGALARI_DOUBLE_DANDA            0x113D5 0  /* U+113D5 (TULU-TIGALARI DOUBLE DANDA) */
-#define UC_TULU_TIGALARI_SIGN_OM_PUSHPIKA        0x113D7 0  /* U+113D7 (TULU-TIGALARI SIGN OM PUSHPIKA) */
-#define UC_TULU_TIGALARI_SIGN_SHRII_PUSHPIKA     0x113D8 0  /* U+113D8 (TULU-TIGALARI SIGN SHRII PUSHPIKA) */
-#define UC_TULU_TIGALARI_VEDIC_TONE_SVARITA      0x113E1 0  /* U+113E1 (TULU-TIGALARI VEDIC TONE SVARITA) */
-#define UC_TULU_TIGALARI_VEDIC_TONE_ANUDATTA     0x113E2 0  /* U+113E2 (TULU-TIGALARI VEDIC TONE ANUDATTA) */
+#define UC_TULU_TIGALARI_A                       0x11380 0  // 𑎀
+#define UC_TULU_TIGALARI_AA                      0x11381 0  // 𑎁
+#define UC_TULU_TIGALARI_I                       0x11382 0  // 𑎂
+#define UC_TULU_TIGALARI_II                      0x11383 0  // 𑎃
+#define UC_TULU_TIGALARI_U                       0x11384 0  // 𑎄
+#define UC_TULU_TIGALARI_UU                      0x11385 0  // 𑎅
+#define UC_TULU_TIGALARI_VOCALIC_R               0x11386 0  // 𑎆
+#define UC_TULU_TIGALARI_VOCALIC_RR              0x11387 0  // 𑎇
+#define UC_TULU_TIGALARI_VOCALIC_L               0x11388 0  // 𑎈
+#define UC_TULU_TIGALARI_VOCALIC_LL              0x11389 0  // 𑎉
+#define UC_TULU_TIGALARI_EE                      0x1138B 0  // 𑎋
+#define UC_TULU_TIGALARI_AI                      0x1138E 0  // 𑎎
+#define UC_TULU_TIGALARI_OO                      0x11390 0  // 𑎐
+#define UC_TULU_TIGALARI_AU                      0x11391 0  // 𑎑
+#define UC_TULU_TIGALARI_KA                      0x11392 0  // 𑎒
+#define UC_TULU_TIGALARI_KHA                     0x11393 0  // 𑎓
+#define UC_TULU_TIGALARI_GA                      0x11394 0  // 𑎔
+#define UC_TULU_TIGALARI_GHA                     0x11395 0  // 𑎕
+#define UC_TULU_TIGALARI_NGA                     0x11396 0  // 𑎖
+#define UC_TULU_TIGALARI_CA                      0x11397 0  // 𑎗
+#define UC_TULU_TIGALARI_CHA                     0x11398 0  // 𑎘
+#define UC_TULU_TIGALARI_JA                      0x11399 0  // 𑎙
+#define UC_TULU_TIGALARI_JHA                     0x1139A 0  // 𑎚
+#define UC_TULU_TIGALARI_NYA                     0x1139B 0  // 𑎛
+#define UC_TULU_TIGALARI_TTA                     0x1139C 0  // 𑎜
+#define UC_TULU_TIGALARI_TTHA                    0x1139D 0  // 𑎝
+#define UC_TULU_TIGALARI_DDA                     0x1139E 0  // 𑎞
+#define UC_TULU_TIGALARI_DDHA                    0x1139F 0  // 𑎟
+#define UC_TULU_TIGALARI_NNA                     0x113A0 0  // 𑎠
+#define UC_TULU_TIGALARI_TA                      0x113A1 0  // 𑎡
+#define UC_TULU_TIGALARI_THA                     0x113A2 0  // 𑎢
+#define UC_TULU_TIGALARI_DA                      0x113A3 0  // 𑎣
+#define UC_TULU_TIGALARI_DHA                     0x113A4 0  // 𑎤
+#define UC_TULU_TIGALARI_NA                      0x113A5 0  // 𑎥
+#define UC_TULU_TIGALARI_PA                      0x113A6 0  // 𑎦
+#define UC_TULU_TIGALARI_PHA                     0x113A7 0  // 𑎧
+#define UC_TULU_TIGALARI_BA                      0x113A8 0  // 𑎨
+#define UC_TULU_TIGALARI_BHA                     0x113A9 0  // 𑎩
+#define UC_TULU_TIGALARI_MA                      0x113AA 0  // 𑎪
+#define UC_TULU_TIGALARI_YA                      0x113AB 0  // 𑎫
+#define UC_TULU_TIGALARI_RA                      0x113AC 0  // 𑎬
+#define UC_TULU_TIGALARI_LA                      0x113AD 0  // 𑎭
+#define UC_TULU_TIGALARI_VA                      0x113AE 0  // 𑎮
+#define UC_TULU_TIGALARI_SHA                     0x113AF 0  // 𑎯
+#define UC_TULU_TIGALARI_SSA                     0x113B0 0  // 𑎰
+#define UC_TULU_TIGALARI_SA                      0x113B1 0  // 𑎱
+#define UC_TULU_TIGALARI_HA                      0x113B2 0  // 𑎲
+#define UC_TULU_TIGALARI_LLA                     0x113B3 0  // 𑎳
+#define UC_TULU_TIGALARI_RRA                     0x113B4 0  // 𑎴
+#define UC_TULU_TIGALARI_LLLA                    0x113B5 0  // 𑎵
+#define UC_TULU_TIGALARI_SIGN_AVAGRAHA           0x113B7 0  // 𑎷
+#define UC_TULU_TIGALARI_VOWEL_SIGN_AA           0x113B8 0  // 𑎸
+#define UC_TULU_TIGALARI_VOWEL_SIGN_I            0x113B9 0  // 𑎹
+#define UC_TULU_TIGALARI_VOWEL_SIGN_II           0x113BA 0  // 𑎺
+#define UC_TULU_TIGALARI_VOWEL_SIGN_U            0x113BB 0  // 𑎻
+#define UC_TULU_TIGALARI_VOWEL_SIGN_UU           0x113BC 0  // 𑎼
+#define UC_TULU_TIGALARI_VOWEL_SIGN_VOCALIC_R    0x113BD 0  // 𑎽
+#define UC_TULU_TIGALARI_VOWEL_SIGN_VOCALIC_RR   0x113BE 0  // 𑎾
+#define UC_TULU_TIGALARI_VOWEL_SIGN_VOCALIC_L    0x113BF 0  // 𑎿
+#define UC_TULU_TIGALARI_VOWEL_SIGN_VOCALIC_LL   0x113C0 0  // 𑏀
+#define UC_TULU_TIGALARI_VOWEL_SIGN_EE           0x113C2 0  // 𑏂
+#define UC_TULU_TIGALARI_VOWEL_SIGN_AI           0x113C5 0  // 𑏅
+#define UC_TULU_TIGALARI_VOWEL_SIGN_OO           0x113C7 0  // 𑏇
+#define UC_TULU_TIGALARI_VOWEL_SIGN_AU           0x113C8 0  // 𑏈
+#define UC_TULU_TIGALARI_AU_LENGTH_MARK          0x113C9 0  // 𑏉
+#define UC_TULU_TIGALARI_SIGN_CANDRA_ANUNASIKA   0x113CA 0  // 𑏊
+#define UC_TULU_TIGALARI_SIGN_ANUSVARA           0x113CC 0  // 𑏌
+#define UC_TULU_TIGALARI_SIGN_VISARGA            0x113CD 0  // 𑏍
+#define UC_TULU_TIGALARI_SIGN_VIRAMA             0x113CE 0  // 𑏎
+#define UC_TULU_TIGALARI_SIGN_LOOPED_VIRAMA      0x113CF 0  // 𑏏
+#define UC_TULU_TIGALARI_CONJOINER               0x113D0 0  // 𑏐
+#define UC_TULU_TIGALARI_REPHA                   0x113D1 0  // 𑏑
+#define UC_TULU_TIGALARI_GEMINATION_MARK         0x113D2 0  // 𑏒
+#define UC_TULU_TIGALARI_SIGN_PLUTA              0x113D3 0  // 𑏓
+#define UC_TULU_TIGALARI_DANDA                   0x113D4 0  // 𑏔
+#define UC_TULU_TIGALARI_DOUBLE_DANDA            0x113D5 0  // 𑏕
+#define UC_TULU_TIGALARI_SIGN_OM_PUSHPIKA        0x113D7 0  // 𑏗
+#define UC_TULU_TIGALARI_SIGN_SHRII_PUSHPIKA     0x113D8 0  // 𑏘
+#define UC_TULU_TIGALARI_VEDIC_TONE_SVARITA      0x113E1 0  // 𑏡
+#define UC_TULU_TIGALARI_VEDIC_TONE_ANUDATTA     0x113E2 0  // 𑏢
 
 #endif // TULU_TIGALARI_H

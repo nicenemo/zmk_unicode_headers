@@ -110,7 +110,7 @@
 #define UC_TMS_HINDU_TEMPLE                      0x1F6D5 0  // 🛕
 #define UC_TMS_HUT                               0x1F6D6 0  // 🛖
 #define UC_TMS_ELEVATOR                          0x1F6D7 0  // 🛗
-#define UC_TMS_LANDSLIDE                         0x1F6D8 0  /* U+1F6D8 (LANDSLIDE) */
+#define UC_TMS_LANDSLIDE                         0x1F6D8 0  // 🛘
 #define UC_TMS_WIRELESS                          0x1F6DC 0  // 🛜
 #define UC_TMS_PLAYGROUND_SLIDE                  0x1F6DD 0  // 🛝
 #define UC_TMS_WHEEL                             0x1F6DE 0  // 🛞

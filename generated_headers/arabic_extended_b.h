@@ -8,8 +8,8 @@
 
 
 * Consistency Check:
-* Total Defined Code Points: 41
-* Total Significant Hex Values: 41
+* Total Defined Code Points: 43
+* Total Significant Hex Values: 43
 * Status: OK (Counts Match)
 
 */
@@ -48,8 +48,10 @@
 #define UC_AREB_TAH_THREE_DOTS_BELOW             0x088C 0  // ࢌ
 #define UC_AREB_KEHEH_TWO_DOTS_VERTICALLY_BELOW  0x088D 0  // ࢍ
 #define UC_AREB_VERTICAL_TAIL                    0x088E 0  // ࢎ
-#define UC_AREB_NOON_RING_ABOVE                  0x088F 0  /* U+088F (ARABIC LETTER NOON WITH RING ABOVE) */
-#define UC_AREB_PEPET                            0x0897 0  /* U+0897 (ARABIC PEPET) */
+#define UC_AREB_NOON_RING_ABOVE                  0x088F 0  // ࢏
+#define UC_AREB_POUND_MARK_ABOVE                 0x0890 0  // ࢐
+#define UC_AREB_PIASTRE_MARK_ABOVE               0x0891 0  // ࢑
+#define UC_AREB_PEPET                            0x0897 0  // ࢗ
 #define UC_AREB_SMALL_HIGH_WORD_AL_JUZ           0x0898 0  // ࢘
 #define UC_AREB_SMALL_LOW_WORD_ISHMAAM           0x0899 0  // ࢙
 #define UC_AREB_SMALL_LOW_WORD_IMAALA            0x089A 0  // ࢚

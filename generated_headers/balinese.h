@@ -96,8 +96,8 @@
 #define UC_BALINESE_ZAL_SASAK                    0x1B4A 0  // ᭊ
 #define UC_BALINESE_ASYURA_SASAK                 0x1B4B 0  // ᭋ
 #define UC_BALINESE_ARCHAIC_JNYA                 0x1B4C 0  // ᭌ
-#define UC_BALINESE_INVERTED_CARIK_SIKI          0x1B4E 0  /* U+1B4E (BALINESE INVERTED CARIK SIKI) */
-#define UC_BALINESE_INVERTED_CARIK_PAREREN       0x1B4F 0  /* U+1B4F (BALINESE INVERTED CARIK PAREREN) */
+#define UC_BALINESE_INVERTED_CARIK_SIKI          0x1B4E 0  // ᭎
+#define UC_BALINESE_INVERTED_CARIK_PAREREN       0x1B4F 0  // ᭏
 #define UC_BALINESE_ZERO                         0x1B50 0  // ᭐
 #define UC_BALINESE_ONE                          0x1B51 0  // ᭑
 #define UC_BALINESE_TWO                          0x1B52 0  // ᭒
@@ -145,6 +145,6 @@
 #define UC_BALINESE_MUSICAL_LEFT_HAND_OPEN_PING  0x1B7C 0  // ᭼
 #define UC_BALINESE_PANTI_LANTANG                0x1B7D 0  // ᭽
 #define UC_BALINESE_PAMADA_LANTANG               0x1B7E 0  // ᭾
-#define UC_BALINESE_PANTI_BAWAK                  0x1B7F 0  /* U+1B7F (BALINESE PANTI BAWAK) */
+#define UC_BALINESE_PANTI_BAWAK                  0x1B7F 0  // ᭿
 
 #endif // BALINESE_H

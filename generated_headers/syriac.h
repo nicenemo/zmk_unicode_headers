@@ -10,8 +10,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 76
-* Total Significant Hex Values: 76
+* Total Defined Code Points: 77
+* Total Significant Hex Values: 77
 * Status: OK (Counts Match)
 
 */
@@ -33,6 +33,7 @@
 #define UC_SYRIAC_HARKLEAN_OBELUS                0x070B 0  // ܋
 #define UC_SYRIAC_HARKLEAN_METOBELUS             0x070C 0  // ܌
 #define UC_SYRIAC_HARKLEAN_ASTERISCUS            0x070D 0  // ܍
+#define UC_SYRIAC_ABBREVIATION_MARK              0x070F 0  // ܏
 #define UC_SYRIAC_ALAPH                          0x0710 0  // ܐ
 #define UC_SYRIAC_SUPERSC_ALAPH                  0x0711 0  // ܑ
 #define UC_SYRIAC_BETH                           0x0712 0  // ܒ

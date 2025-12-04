@@ -8,8 +8,8 @@
 
 
 * Consistency Check:
-* Total Defined Code Points: 248
-* Total Significant Hex Values: 248
+* Total Defined Code Points: 256
+* Total Significant Hex Values: 256
 * Status: OK (Counts Match)
 
 */
@@ -17,6 +17,12 @@
 #ifndef ARABIC_H
 #define ARABIC_H
 
+#define UC_AR_SIGN                               0x0600 0  // ؀
+#define UC_AR_SIGN_SANAH                         0x0601 0  // ؁
+#define UC_AR_FOOTNOTE_MARKER                    0x0602 0  // ؂
+#define UC_AR_SIGN_SAFHA                         0x0603 0  // ؃
+#define UC_AR_SIGN_SAMVAT                        0x0604 0  // ؄
+#define UC_AR_MARK_ABOVE                         0x0605 0  // ؅
 #define UC_AR_INDIC_CUBE_ROOT                    0x0606 0  // ؆
 #define UC_AR_INDIC_FOURTH_ROOT                  0x0607 0  // ؇
 #define UC_AR_RAY                                0x0608 0  // ؈
@@ -39,6 +45,7 @@
 #define UC_AR_SMALL_DAMMA                        0x0619 0  // ؙ
 #define UC_AR_SMALL_KASRA                        0x061A 0  // ؚ
 #define UC_AR_SEMICOLON                          0x061B 0  // ؛
+#define UC_AR_MARK                               0x061C 0  // ؜
 #define UC_AR_END_OF_TEXT_MARK                   0x061D 0  // ؝
 #define UC_AR_TRIPLE_DOT_PUNCTUATION_MARK        0x061E 0  // ؞
 #define UC_AR_QUESTION_MARK                      0x061F 0  // ؟
@@ -231,6 +238,7 @@
 #define UC_AR_SMALL_HIGH_JEEM                    0x06DA 0  // ۚ
 #define UC_AR_SMALL_HIGH_THREE_DOTS              0x06DB 0  // ۛ
 #define UC_AR_SMALL_HIGH_SEEN                    0x06DC 0  // ۜ
+#define UC_AR_END_OF_AYAH                        0x06DD 0  // ۝
 #define UC_AR_START_OF_RUB_EL_HIZB               0x06DE 0  // ۞
 #define UC_AR_SMALL_HIGH_ROUNDED_ZERO            0x06DF 0  // ۟
 #define UC_AR_SMALL_HIGH_UPRIGHT_RECTANGULAR_ZERO 0x06E0 0  // ۠
