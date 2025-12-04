@@ -127,10 +127,11 @@ class MacroGenerator:
     short, clean C-style macro identifiers (UC_ABBR_NAME).
     """
 
-    # --- Manual Override for ASCII Control Character Names ---
+    # --- Manual Override for ASCII/C1 Control Character Names ---
     # These names are known to cause ValueError in unicodedata.name(), 
     # but they must be generated with their common three-letter abbreviations.
-    ASCII_CONTROL_NAMES: Dict[int, str] = {
+    CONTROL_CHARACTER_NAMES: Dict[int, str] = {
+        # ASCII C0 Controls (U+0000 - U+001F, U+007F)
         0x0000: "NULL", 0x0001: "SOH", 0x0002: "STX", 0x0003: "ETX",
         0x0004: "EOT", 0x0005: "ENQ", 0x0006: "ACK", 0x0007: "BEL",
         0x0008: "BS", 0x0009: "HT", 0x000A: "LF", 0x000B: "VT",
@@ -139,7 +140,16 @@ class MacroGenerator:
         0x0014: "DC4", 0x0015: "NAK", 0x0016: "SYN", 0x0017: "ETB",
         0x0018: "CAN", 0x0019: "EM", 0x001A: "SUB", 0x001B: "ESC",
         0x001C: "FS", 0x001D: "GS", 0x001E: "RS", 0x001F: "US",
-        0x007F: "DEL"
+        0x007F: "DEL",
+        # C1 Control Codes (U+0080 - U+009F)
+        0x0080: "PAD", 0x0081: "HOP", 0x0082: "BPH", 0x0083: "NBH",
+        0x0084: "IND", 0x0085: "NEL", 0x0086: "SSA", 0x0087: "ESA",
+        0x0088: "HTS", 0x0089: "HTJ", 0x008A: "VTS", 0x008B: "PLD",
+        0x008C: "PLU", 0x008D: "RI", 0x008E: "SS2", 0x008F: "SS3",
+        0x0090: "DCS", 0x0091: "PU1", 0x0092: "PU2", 0x0093: "STS",
+        0x0094: "CCH", 0x0095: "MW", 0x0096: "EFB", 0x0097: "ESI",
+        0x0098: "SOS", 0x0099: "SGCI", 0x009A: "SCI", 0x009B: "CSI",
+        0x009C: "ST", 0x009D: "OSC", 0x009E: "PM", 0x009F: "APC",
     }
     # -------------------------------------------------------
 
@@ -293,6 +303,8 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
     """
     Find the uppercase partner (cp, name) if *cp* is a single, mappable 
     lowercase letter ('Ll'). Returns (None, None) otherwise.
+    
+    Note: For paired CPs, the name lookup is handled in the main generation loop.
     """
     try:
         ch = chr(cp)
@@ -310,12 +322,12 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
         try:
             partner_ch = chr(partner_cp)
             partner_cat = category(partner_ch)
-            partner_name = name(partner_ch)
+            # Do not attempt to get partner name here, it's done in the loop to handle exceptions
         except ValueError:
             return None, None
         
         if partner_cat == 'Lu':
-            return partner_cp, partner_name
+            return partner_cp, None # Return None for name, it will be looked up later
 
     return None, None
 
@@ -356,20 +368,20 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
         if cat in EXCLUDE_CATEGORIES:
             continue
             
-        # --- FIX: Check for manual ASCII control name override ---
-        if cp in macro_generator.ASCII_CONTROL_NAMES:
-            char_name = macro_generator.ASCII_CONTROL_NAMES[cp]
+        # --- Name Resolution ---
+        if cp in macro_generator.CONTROL_CHARACTER_NAMES:
+            char_name = macro_generator.CONTROL_CHARACTER_NAMES[cp]
         else:
             try:
-                # 2. Try to get the official name for assigned characters
+                # Try to get the official name for assigned characters
                 char_name = name(char)
             except ValueError:
-                # Fallback for other assigned characters (like non-ASCII Cc or Cf) if name fails
+                # Fallback for assigned characters (like non-ASCII Cc or Cf) if name fails
                 char_name = f"{cat}_U{cp:04X}"
-        # ---------------------------------------------------------
+        # -----------------------
             
         glyph = printable_glyph(cp)
-        partner_cp, partner_name = find_case_partner(cp)
+        partner_cp, _ = find_case_partner(cp) # Ignore partner_name from helper, look it up now
 
         # 1. Skip Capital Letters that are the UPPERCASE partner of a later LOWERCASE letter.
         is_capital_cat = cat == 'Lu'
@@ -383,18 +395,22 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
         # 2. SUCCESSFUL PAIR CASE
         if partner_cp is not None: 
             cp1, cp2 = cp, partner_cp
-            name1, name2 = char_name, partner_name 
+            name1 = char_name 
+            
+            # Resolve name2 (the partner name)
+            if cp2 in macro_generator.CONTROL_CHARACTER_NAMES:
+                name2 = macro_generator.CONTROL_CHARACTER_NAMES[cp2]
+            else:
+                try:
+                    name2 = name(chr(cp2))
+                except ValueError:
+                    name2 = f"{category(chr(cp2))}_U{cp2:04X}"
+
             glyph1, glyph2 = printable_glyph(cp1), printable_glyph(cp2)
 
             if glyph1 and glyph2:
                 comment = f"// {glyph1}/{glyph2}"
             else:
-                # Need to resolve partner_name manually for the paired char if it's also a control char
-                if cp2 in macro_generator.ASCII_CONTROL_NAMES:
-                    name2 = macro_generator.ASCII_CONTROL_NAMES[cp2]
-                elif name2 is None:
-                     name2 = f"{category(chr(cp2))}_U{cp2:04X}" # Fallback if unicodedata.name failed on partner
-
                 comment_parts = [f"U+{cp1:04X} ({name1})", f"U+{cp2:04X} ({name2})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
