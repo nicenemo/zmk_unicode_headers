@@ -14,8 +14,7 @@
 
 */
 
-#ifndef OL_CHIKI_H
-#define OL_CHIKI_H
+#pragma once
 
 #define UC_OL_CHIKI_ZERO                         0x1C50 0  // ᱐
 #define UC_OL_CHIKI_ONE                          0x1C51 0  // ᱑
@@ -65,5 +64,3 @@
 #define UC_OL_CHIKI_AHAD                         0x1C7D 0  // ᱽ
 #define UC_OL_CHIKI_PUNCTUATION_MUCAAD           0x1C7E 0  // ᱾
 #define UC_OL_CHIKI_PUNCTUATION_DOUBLE_MUCAAD    0x1C7F 0  // ᱿
-
-#endif // OL_CHIKI_H

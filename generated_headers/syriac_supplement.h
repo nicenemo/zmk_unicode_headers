@@ -19,8 +19,7 @@
 
 */
 
-#ifndef SYRIAC_SUPPLEMENT_H
-#define SYRIAC_SUPPLEMENT_H
+#pragma once
 
 #define UC_SYRIAC_MALAYALAM_NGA                  0x0860 0  // ࡠ
 #define UC_SYRIAC_MALAYALAM_JA                   0x0861 0  // ࡡ
@@ -33,5 +32,3 @@
 #define UC_SYRIAC_MALAYALAM_LLA                  0x0868 0  // ࡨ
 #define UC_SYRIAC_MALAYALAM_LLLA                 0x0869 0  // ࡩ
 #define UC_SYRIAC_MALAYALAM_SSA                  0x086A 0  // ࡪ
-
-#endif // SYRIAC_SUPPLEMENT_H

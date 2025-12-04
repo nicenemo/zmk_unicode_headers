@@ -16,8 +16,7 @@
 
 */
 
-#ifndef LAO_H
-#define LAO_H
+#pragma once
 
 #define UC_LAO_KO                                0x0E81 0  // ກ
 #define UC_LAO_KHO_SUNG                          0x0E82 0  // ຂ
@@ -102,5 +101,3 @@
 #define UC_LAO_HO_MO                             0x0EDD 0  // ໝ
 #define UC_LAO_KHMU_GO                           0x0EDE 0  // ໞ
 #define UC_LAO_KHMU_NYO                          0x0EDF 0  // ໟ
-
-#endif // LAO_H

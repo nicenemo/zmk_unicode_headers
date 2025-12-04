@@ -19,8 +19,7 @@
 
 */
 
-#ifndef COMMON_INDIC_NUMBER_FORMS_H
-#define COMMON_INDIC_NUMBER_FORMS_H
+#pragma once
 
 #define UC_NORTH_INDIC_FRACTION_ONE_QUARTER      0xA830 0  // ꠰
 #define UC_NORTH_INDIC_FRACTION_ONE_HALF         0xA831 0  // ꠱
@@ -32,5 +31,3 @@
 #define UC_NORTH_INDIC_PLACEHOLDER_MARK          0xA837 0  // ꠷
 #define UC_NORTH_INDIC_RUPEE_MARK                0xA838 0  // ꠸
 #define UC_NORTH_INDIC_QUANTITY_MARK             0xA839 0  // ꠹
-
-#endif // COMMON_INDIC_NUMBER_FORMS_H

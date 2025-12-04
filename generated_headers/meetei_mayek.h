@@ -34,8 +34,7 @@
 
 */
 
-#ifndef MEETEI_MAYEK_H
-#define MEETEI_MAYEK_H
+#pragma once
 
 #define UC_MEETEI_MAYEK_KOK                      0xABC0 0  // ꯀ
 #define UC_MEETEI_MAYEK_SAM                      0xABC1 0  // ꯁ
@@ -93,5 +92,3 @@
 #define UC_MEETEI_MAYEK_SEVEN                    0xABF7 0  // ꯷
 #define UC_MEETEI_MAYEK_EIGHT                    0xABF8 0  // ꯸
 #define UC_MEETEI_MAYEK_NINE                     0xABF9 0  // ꯹
-
-#endif // MEETEI_MAYEK_H

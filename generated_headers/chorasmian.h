@@ -17,8 +17,7 @@
 
 */
 
-#ifndef CHORASMIAN_H
-#define CHORASMIAN_H
+#pragma once
 
 #define UC_CHORASMIAN_ALEPH                      0x10FB0 0  // 𐾰
 #define UC_CHORASMIAN_SMALL_ALEPH                0x10FB1 0  // 𐾱
@@ -48,5 +47,3 @@
 #define UC_CHORASMIAN_TEN                        0x10FC9 0  // 𐿉
 #define UC_CHORASMIAN_TWENTY                     0x10FCA 0  // 𐿊
 #define UC_CHORASMIAN_ONE_HUNDRED                0x10FCB 0  // 𐿋
-
-#endif // CHORASMIAN_H

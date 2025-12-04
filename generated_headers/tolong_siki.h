@@ -22,8 +22,7 @@
 
 */
 
-#ifndef TOLONG_SIKI_H
-#define TOLONG_SIKI_H
+#pragma once
 
 #define UC_TOLONG_SIKI_I                         0x11DB0 0  // 𑶰
 #define UC_TOLONG_SIKI_E                         0x11DB1 0  // 𑶱
@@ -79,5 +78,3 @@
 #define UC_TOLONG_SIKI_SEVEN                     0x11DE7 0  // 𑷧
 #define UC_TOLONG_SIKI_EIGHT                     0x11DE8 0  // 𑷨
 #define UC_TOLONG_SIKI_NINE                      0x11DE9 0  // 𑷩
-
-#endif // TOLONG_SIKI_H

@@ -29,8 +29,7 @@
 
 */
 
-#ifndef TIFINAGH_H
-#define TIFINAGH_H
+#pragma once
 
 #define UC_TIFINAGH_YA                           0x2D30 0  // ⴰ
 #define UC_TIFINAGH_YAB                          0x2D31 0  // ⴱ
@@ -91,5 +90,3 @@
 #define UC_TIFINAGH_MODIFIER_LABIALIZATION_MARK  0x2D6F 0  // ⵯ
 #define UC_TIFINAGH_SEPARATOR_MARK               0x2D70 0  // ⵰
 #define UC_TIFINAGH_CONSONANT_JOINER             0x2D7F 0  // ⵿
-
-#endif // TIFINAGH_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef BATAK_H
-#define BATAK_H
+#pragma once
 
 #define UC_BATAK_A                               0x1BC0 0  // ᯀ
 #define UC_BATAK_SIMALUNGUN_A                    0x1BC1 0  // ᯁ
@@ -73,5 +72,3 @@
 #define UC_BATAK_BINDU_PINARBORAS                0x1BFD 0  // ᯽
 #define UC_BATAK_BINDU_JUDUL                     0x1BFE 0  // ᯾
 #define UC_BATAK_BINDU_PANGOLAT                  0x1BFF 0  // ᯿
-
-#endif // BATAK_H

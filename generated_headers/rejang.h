@@ -16,8 +16,7 @@
 
 */
 
-#ifndef REJANG_H
-#define REJANG_H
+#pragma once
 
 #define UC_REJANG_KA                             0xA930 0  // ꤰ
 #define UC_REJANG_GA                             0xA931 0  // ꤱ
@@ -56,5 +55,3 @@
 #define UC_REJANG_CONSONANT_SIGN_H               0xA952 0  // ꥒ
 #define UC_REJANG_VIRAMA                         0xA953 0  // ꥓
 #define UC_REJANG_SECTION_MARK                   0xA95F 0  // ꥟
-
-#endif // REJANG_H

@@ -23,8 +23,7 @@
 
 */
 
-#ifndef ANATOLIAN_HIEROGLYPHS_H
-#define ANATOLIAN_HIEROGLYPHS_H
+#pragma once
 
 #define UC_ANATOLIAN_HIEROGLYPH_A001             0x14400 0  // 𔐀
 #define UC_ANATOLIAN_HIEROGLYPH_A002             0x14401 0  // 𔐁
@@ -609,5 +608,3 @@
 #define UC_ANATOLIAN_HIEROGLYPH_A528             0x14644 0  // 𔙄
 #define UC_ANATOLIAN_HIEROGLYPH_A529             0x14645 0  // 𔙅
 #define UC_ANATOLIAN_HIEROGLYPH_A530             0x14646 0  // 𔙆
-
-#endif // ANATOLIAN_HIEROGLYPHS_H

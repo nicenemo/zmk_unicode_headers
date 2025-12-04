@@ -20,8 +20,7 @@
 
 */
 
-#ifndef SPACING_MODIFIER_LETTERS_H
-#define SPACING_MODIFIER_LETTERS_H
+#pragma once
 
 #define UC_MODIFIER_SMALL_H                      0x02B0 0  // ʰ
 #define UC_MODIFIER_SMALL_H_HOOK                 0x02B1 0  // ʱ
@@ -103,5 +102,3 @@
 #define UC_MODIFIER_SHELF                        0x02FD 0  // ˽
 #define UC_MODIFIER_OPEN_SHELF                   0x02FE 0  // ˾
 #define UC_MODIFIER_LOW_LEFT_ARROW               0x02FF 0  // ˿
-
-#endif // SPACING_MODIFIER_LETTERS_H

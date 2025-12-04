@@ -16,8 +16,7 @@
 
 */
 
-#ifndef CHAKMA_H
-#define CHAKMA_H
+#pragma once
 
 #define UC_CHAKMA_SIGN_CANDRABINDU               0x11100 0  // 𑄀
 #define UC_CHAKMA_SIGN_ANUSVARA                  0x11101 0  // 𑄁
@@ -90,5 +89,3 @@
 #define UC_CHAKMA_VOWEL_SIGN_AA                  0x11145 0  // 𑅅
 #define UC_CHAKMA_VOWEL_SIGN_EI                  0x11146 0  // 𑅆
 #define UC_CHAKMA_VAA                            0x11147 0  // 𑅇
-
-#endif // CHAKMA_H

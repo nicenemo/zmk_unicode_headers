@@ -14,8 +14,7 @@
 
 */
 
-#ifndef AVESTAN_H
-#define AVESTAN_H
+#pragma once
 
 #define UC_AVESTAN_A                             0x10B00 0  // 𐬀
 #define UC_AVESTAN_AA                            0x10B01 0  // 𐬁
@@ -78,5 +77,3 @@
 #define UC_LARGE_ONE_DOT_OVER_TWO_DOTS_PUNCTUATION 0x10B3D 0  // 𐬽
 #define UC_LARGE_TWO_RINGS_OVER_ONE_RING_PUNCTUATION 0x10B3E 0  // 𐬾
 #define UC_LARGE_ONE_RING_OVER_TWO_RINGS_PUNCTUATION 0x10B3F 0  // 𐬿
-
-#endif // AVESTAN_H

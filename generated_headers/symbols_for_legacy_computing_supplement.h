@@ -24,8 +24,7 @@
 
 */
 
-#ifndef SYMBOLS_FOR_LEGACY_COMPUTING_SUPPLEMENT_H
-#define SYMBOLS_FOR_LEGACY_COMPUTING_SUPPLEMENT_H
+#pragma once
 
 #define UC_UP_POINTING_GO_KART                   0x1CC00 0  // 𜰀
 #define UC_RIGHT_POINTING_GO_KART                0x1CC01 0  // 𜰁
@@ -722,5 +721,3 @@
 #define UC_APPLE                                 0x1CEBD 0  // 𜺽
 #define UC_CHERRY                                0x1CEBE 0  // 𜺾
 #define UC_STRAWBERRY                            0x1CEBF 0  // 𜺿
-
-#endif // SYMBOLS_FOR_LEGACY_COMPUTING_SUPPLEMENT_H

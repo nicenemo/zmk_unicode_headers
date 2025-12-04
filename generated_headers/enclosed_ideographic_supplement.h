@@ -22,8 +22,7 @@
 
 */
 
-#ifndef ENCLOSED_IDEOGRAPHIC_SUPPLEMENT_H
-#define ENCLOSED_IDEOGRAPHIC_SUPPLEMENT_H
+#pragma once
 
 #define UC_SQUARE_HIRAGANA_HOKA                  0x1F200 0  // 🈀
 #define UC_SQUARED_KATAKANA_KOKO                 0x1F201 0  // 🈁
@@ -89,5 +88,3 @@
 #define UC_ROUNDED_FOR_XI                        0x1F263 0  // 🉣
 #define UC_ROUNDED_FOR_SHUANGXI                  0x1F264 0  // 🉤
 #define UC_ROUNDED_FOR_CAI                       0x1F265 0  // 🉥
-
-#endif // ENCLOSED_IDEOGRAPHIC_SUPPLEMENT_H

@@ -16,8 +16,7 @@
 
 */
 
-#ifndef OLD_ITALIC_H
-#define OLD_ITALIC_H
+#pragma once
 
 #define UC_OLD_IT_A                              0x10300 0  // 𐌀
 #define UC_OLD_IT_BE                             0x10301 0  // 𐌁
@@ -58,5 +57,3 @@
 #define UC_OLD_IT_YE                             0x1032D 0  // 𐌭
 #define UC_OLD_IT_NORTHERN_TSE                   0x1032E 0  // 𐌮
 #define UC_OLD_IT_SOUTHERN_TSE                   0x1032F 0  // 𐌯
-
-#endif // OLD_ITALIC_H

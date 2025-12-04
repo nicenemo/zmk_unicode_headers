@@ -26,8 +26,7 @@
 
 */
 
-#ifndef CYRILLIC_H
-#define CYRILLIC_H
+#pragma once
 
 #define UC_CY_A                                  0x0430 0x0410  // а/А
 #define UC_CY_BE                                 0x0431 0x0411  // б/Б
@@ -161,5 +160,3 @@
 #define UC_CY_GHE_STROKE_AND_HOOK                0x04FB 0x04FA  // ӻ/Ӻ
 #define UC_CY_HA_HOOK                            0x04FD 0x04FC  // ӽ/Ӽ
 #define UC_CY_HA_STROKE                          0x04FF 0x04FE  // ӿ/Ӿ
-
-#endif // CYRILLIC_H

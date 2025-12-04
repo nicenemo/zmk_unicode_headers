@@ -21,8 +21,7 @@
 
 */
 
-#ifndef CURRENCY_SYMBOLS_H
-#define CURRENCY_SYMBOLS_H
+#pragma once
 
 #define UC_CUR_EURO_CURRENCY_SIGN                0x20A0 0  // ₠
 #define UC_CUR_COLON_SIGN                        0x20A1 0  // ₡
@@ -58,5 +57,3 @@
 #define UC_CUR_BITCOIN_SIGN                      0x20BF 0  // ₿
 #define UC_CUR_SOM_SIGN                          0x20C0 0  // ⃀
 #define UC_CUR_SAUDI_RIYAL_SIGN                  0x20C1 0  // ⃁
-
-#endif // CURRENCY_SYMBOLS_H

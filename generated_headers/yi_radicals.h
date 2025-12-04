@@ -17,8 +17,7 @@
 
 */
 
-#ifndef YI_RADICALS_H
-#define YI_RADICALS_H
+#pragma once
 
 #define UC_YI_RADICAL_QOT                        0xA490 0  // ꒐
 #define UC_YI_RADICAL_LI                         0xA491 0  // ꒑
@@ -75,5 +74,3 @@
 #define UC_YI_RADICAL_ZZIET                      0xA4C4 0  // ꓄
 #define UC_YI_RADICAL_NBIE                       0xA4C5 0  // ꓅
 #define UC_YI_RADICAL_KE                         0xA4C6 0  // ꓆
-
-#endif // YI_RADICALS_H

@@ -24,8 +24,7 @@
 
 */
 
-#ifndef ZANABAZAR_SQUARE_H
-#define ZANABAZAR_SQUARE_H
+#pragma once
 
 #define UC_ZANABAZAR_SQUARE_A                    0x11A00 0  // 𑨀
 #define UC_ZANABAZAR_SQUARE_VOWEL_SIGN_I         0x11A01 0  // 𑨁
@@ -99,5 +98,3 @@
 #define UC_ZANABAZAR_SQUARE_INITIAL_DOUBLE_LINED_HEAD_MARK 0x11A45 0  // 𑩅
 #define UC_ZANABAZAR_SQUARE_CLOSING_DOUBLE_LINED_HEAD_MARK 0x11A46 0  // 𑩆
 #define UC_ZANABAZAR_SQUARE_SUBJOINER            0x11A47 0  // 𑩇
-
-#endif // ZANABAZAR_SQUARE_H

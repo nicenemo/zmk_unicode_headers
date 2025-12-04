@@ -21,8 +21,7 @@
 
 */
 
-#ifndef HANGUL_JAMO_H
-#define HANGUL_JAMO_H
+#pragma once
 
 #define UC_HJ_HANGUL_CHOSEONG_KIYEOK             0x1100 0  // ᄀ
 #define UC_HJ_HANGUL_CHOSEONG_SSANGKIYEOK        0x1101 0  // ᄁ
@@ -280,5 +279,3 @@
 #define UC_HJ_HANGUL_JONGSEONG_KIYEOK_KHIEUKH    0x11FD 0  // ᇽ
 #define UC_HJ_HANGUL_JONGSEONG_KIYEOK_HIEUH      0x11FE 0  // ᇾ
 #define UC_HJ_HANGUL_JONGSEONG_SSANGNIEUN        0x11FF 0  // ᇿ
-
-#endif // HANGUL_JAMO_H

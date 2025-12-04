@@ -25,8 +25,7 @@
 
 */
 
-#ifndef BERIA_ERFE_H
-#define BERIA_ERFE_H
+#pragma once
 
 #define UC_BERIA_ERFE_CAPITAL_ARKAB              0x16EA0 0  // 𖺠
 #define UC_BERIA_ERFE_CAPITAL_BASIGNA            0x16EA1 0  // 𖺡
@@ -78,5 +77,3 @@
 #define UC_BERIA_ERFE_SMALL_UI                   0x16ED1 0  // 𖻑
 #define UC_BERIA_ERFE_SMALL_WASSE                0x16ED2 0  // 𖻒
 #define UC_BERIA_ERFE_SMALL_AY                   0x16ED3 0  // 𖻓
-
-#endif // BERIA_ERFE_H

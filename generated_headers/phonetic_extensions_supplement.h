@@ -17,8 +17,7 @@
 
 */
 
-#ifndef PHONETIC_EXTENSIONS_SUPPLEMENT_H
-#define PHONETIC_EXTENSIONS_SUPPLEMENT_H
+#pragma once
 
 #define UC_SMALL_B_PALATAL_HOOK                  0x1D80 0  // ᶀ
 #define UC_SMALL_D_PALATAL_HOOK                  0x1D81 0  // ᶁ
@@ -84,5 +83,3 @@
 #define UC_MODIFIER_SMALL_Z_CURL                 0x1DBD 0  // ᶽ
 #define UC_MODIFIER_SMALL_EZH                    0x1DBE 0  // ᶾ
 #define UC_MODIFIER_SMALL_THETA                  0x1DBF 0  // ᶿ
-
-#endif // PHONETIC_EXTENSIONS_SUPPLEMENT_H

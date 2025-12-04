@@ -14,8 +14,7 @@
 
 */
 
-#ifndef SINHALA_ARCHAIC_NUMBERS_H
-#define SINHALA_ARCHAIC_NUMBERS_H
+#pragma once
 
 #define UC_SINHALA_ARCHAIC_ONE                   0x111E1 0  // 𑇡
 #define UC_SINHALA_ARCHAIC_TWO                   0x111E2 0  // 𑇢
@@ -37,5 +36,3 @@
 #define UC_SINHALA_ARCHAIC_NINETY                0x111F2 0  // 𑇲
 #define UC_SINHALA_ARCHAIC_ONE_HUNDRED           0x111F3 0  // 𑇳
 #define UC_SINHALA_ARCHAIC_ONE_THOUSAND          0x111F4 0  // 𑇴
-
-#endif // SINHALA_ARCHAIC_NUMBERS_H

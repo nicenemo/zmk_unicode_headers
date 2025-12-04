@@ -14,8 +14,7 @@
 
 */
 
-#ifndef HANGUL_JAMO_EXTENDED_B_H
-#define HANGUL_JAMO_EXTENDED_B_H
+#pragma once
 
 #define UC_HANGUL_JUNGSEONG_O_YEO                0xD7B0 0  // ힰ
 #define UC_HANGUL_JUNGSEONG_O_O_I                0xD7B1 0  // ힱ
@@ -89,5 +88,3 @@
 #define UC_HANGUL_JONGSEONG_SSANGCIEUC           0xD7F9 0  // ퟹ
 #define UC_HANGUL_JONGSEONG_PHIEUPH_SIOS         0xD7FA 0  // ퟺ
 #define UC_HANGUL_JONGSEONG_PHIEUPH_THIEUTH      0xD7FB 0  // ퟻ
-
-#endif // HANGUL_JAMO_EXTENDED_B_H

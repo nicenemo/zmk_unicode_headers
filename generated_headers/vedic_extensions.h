@@ -20,8 +20,7 @@
 
 */
 
-#ifndef VEDIC_EXTENSIONS_H
-#define VEDIC_EXTENSIONS_H
+#pragma once
 
 #define UC_VEDIC_TONE_KARSHANA                   0x1CD0 0  // ᳐
 #define UC_VEDIC_TONE_SHARA                      0x1CD1 0  // ᳑
@@ -66,5 +65,3 @@
 #define UC_VEDIC_TONE_RING_ABOVE                 0x1CF8 0  // ᳸
 #define UC_VEDIC_TONE_DOUBLE_RING_ABOVE          0x1CF9 0  // ᳹
 #define UC_VEDIC_SIGN_DOUBLE_ANUSVARA_ANTARGOMUKHA 0x1CFA 0  // ᳺ
-
-#endif // VEDIC_EXTENSIONS_H

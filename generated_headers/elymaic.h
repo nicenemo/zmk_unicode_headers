@@ -22,8 +22,7 @@
 
 */
 
-#ifndef ELYMAIC_H
-#define ELYMAIC_H
+#pragma once
 
 #define UC_ELYMAIC_ALEPH                         0x10FE0 0  // 𐿠
 #define UC_ELYMAIC_BETH                          0x10FE1 0  // 𐿡
@@ -48,5 +47,3 @@
 #define UC_ELYMAIC_SHIN                          0x10FF4 0  // 𐿴
 #define UC_ELYMAIC_TAW                           0x10FF5 0  // 𐿵
 #define UC_ELYMAIC_LIGATURE_ZAYIN_YODH           0x10FF6 0  // 𐿶
-
-#endif // ELYMAIC_H

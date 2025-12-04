@@ -16,8 +16,7 @@
 
 */
 
-#ifndef ADLAM_H
-#define ADLAM_H
+#pragma once
 
 #define UC_ADLAM_ALIF                            0x1E922 0x1E900  // 𞤢/𞤀
 #define UC_ADLAM_DAALI                           0x1E923 0x1E901  // 𞤣/𞤁
@@ -73,5 +72,3 @@
 #define UC_ADLAM_NINE                            0x1E959 0  // 𞥙
 #define UC_ADLAM_INITIAL_EXCLAMATION_MARK        0x1E95E 0  // 𞥞
 #define UC_ADLAM_INITIAL_QUESTION_MARK           0x1E95F 0  // 𞥟
-
-#endif // ADLAM_H

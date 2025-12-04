@@ -16,8 +16,7 @@
 
 */
 
-#ifndef MONGOLIAN_H
-#define MONGOLIAN_H
+#pragma once
 
 #define UC_MONGOLIAN_BIRGA                       0x1800 0  // ᠀
 #define UC_MONGOLIAN_ELLIPSIS                    0x1801 0  // ᠁
@@ -33,7 +32,7 @@
 #define UC_MONGOLIAN_FREE_ONE                    0x180B 0  // ᠋
 #define UC_MONGOLIAN_FREE_TWO                    0x180C 0  // ᠌
 #define UC_MONGOLIAN_FREE_THREE                  0x180D 0  // ᠍
-#define UC_MONGOLIAN_VOWEL_SEPARATOR             0x180E 0  // ᠎
+#define UC_MONGOLIAN_VOWEL_SEPARATOR             0x180E 0  /* U+180E (MONGOLIAN VOWEL SEPARATOR) */
 #define UC_MONGOLIAN_FREE_FOUR                   0x180F 0  // ᠏
 #define UC_MONGOLIAN_ZERO                        0x1810 0  // ᠐
 #define UC_MONGOLIAN_ONE                         0x1811 0  // ᠑
@@ -177,5 +176,3 @@
 #define UC_MONGOLIAN_MANCHU_ALI_GALI_BHA         0x18A8 0  // ᢨ
 #define UC_MONGOLIAN_ALI_GALI_DAGALGA            0x18A9 0  // ᢩ
 #define UC_MONGOLIAN_MANCHU_ALI_GALI_LHA         0x18AA 0  // ᢪ
-
-#endif // MONGOLIAN_H

@@ -29,8 +29,7 @@
 
 */
 
-#ifndef NEWA_H
-#define NEWA_H
+#pragma once
 
 #define UC_NEWA_A                                0x11400 0  // 𑐀
 #define UC_NEWA_AA                               0x11401 0  // 𑐁
@@ -129,5 +128,3 @@
 #define UC_NEWA_VEDIC_ANUSVARA                   0x1145F 0  // 𑑟
 #define UC_NEWA_SIGN_JIHVAMULIYA                 0x11460 0  // 𑑠
 #define UC_NEWA_SIGN_UPADHMANIYA                 0x11461 0  // 𑑡
-
-#endif // NEWA_H

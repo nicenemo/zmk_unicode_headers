@@ -14,8 +14,7 @@
 
 */
 
-#ifndef LATIN_EXTENDED_F_H
-#define LATIN_EXTENDED_F_H
+#pragma once
 
 #define UC_MODIFIER_SMALL_CAPITAL_AA             0x10780 0  // 𐞀
 #define UC_MODIFIER_SUPERSC_TRIANGULAR_COLON     0x10781 0  // 𐞁
@@ -74,5 +73,3 @@
 #define UC_MODIFIER_ALVEOLAR_CLICK               0x107B8 0  // 𐞸
 #define UC_MODIFIER_RETROFLEX_CLICK_RETROFLEX_HOOK 0x107B9 0  // 𐞹
 #define UC_MODIFIER_SMALL_S_CURL                 0x107BA 0  // 𐞺
-
-#endif // LATIN_EXTENDED_F_H

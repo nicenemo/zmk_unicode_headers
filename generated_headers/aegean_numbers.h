@@ -14,8 +14,7 @@
 
 */
 
-#ifndef AEGEAN_NUMBERS_H
-#define AEGEAN_NUMBERS_H
+#pragma once
 
 #define UC_AEGEAN_WORD_SEPARATOR_LINE            0x10100 0  // 𐄀
 #define UC_AEGEAN_WORD_SEPARATOR_DOT             0x10101 0  // 𐄁
@@ -74,5 +73,3 @@
 #define UC_AEGEAN_LIQUID_MEASURE_FIRST_SUBUNIT   0x1013D 0  // 𐄽
 #define UC_AEGEAN_MEASURE_SECOND_SUBUNIT         0x1013E 0  // 𐄾
 #define UC_AEGEAN_MEASURE_THIRD_SUBUNIT          0x1013F 0  // 𐄿
-
-#endif // AEGEAN_NUMBERS_H

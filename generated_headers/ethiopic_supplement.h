@@ -19,8 +19,7 @@
 
 */
 
-#ifndef ETHIOPIC_SUPPLEMENT_H
-#define ETHIOPIC_SUPPLEMENT_H
+#pragma once
 
 #define UC_ETHIOPIC_SYLLABLE_SEBATBEIT_MWA       0x1380 0  // ᎀ
 #define UC_ETHIOPIC_SYLLABLE_MWI                 0x1381 0  // ᎁ
@@ -48,5 +47,3 @@
 #define UC_ETHIOPIC_TONAL_MARK_HIDET             0x1397 0  // ᎗
 #define UC_ETHIOPIC_TONAL_MARK_DERET_HIDET       0x1398 0  // ᎘
 #define UC_ETHIOPIC_TONAL_MARK_KURT              0x1399 0  // ᎙
-
-#endif // ETHIOPIC_SUPPLEMENT_H

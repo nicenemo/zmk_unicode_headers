@@ -19,8 +19,7 @@
 
 */
 
-#ifndef TRANSPORT_AND_MAP_SYMBOLS_H
-#define TRANSPORT_AND_MAP_SYMBOLS_H
+#pragma once
 
 #define UC_TMS_ROCKET                            0x1F680 0  // 🚀
 #define UC_TMS_HELICOPTER                        0x1F681 0  // 🚁
@@ -141,5 +140,3 @@
 #define UC_TMS_AUTO_RICKSHAW                     0x1F6FA 0  // 🛺
 #define UC_TMS_PICKUP_TRUCK                      0x1F6FB 0  // 🛻
 #define UC_TMS_ROLLER_SKATE                      0x1F6FC 0  // 🛼
-
-#endif // TRANSPORT_AND_MAP_SYMBOLS_H

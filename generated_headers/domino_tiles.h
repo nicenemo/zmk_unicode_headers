@@ -20,8 +20,7 @@
 
 */
 
-#ifndef DOMINO_TILES_H
-#define DOMINO_TILES_H
+#pragma once
 
 #define UC_DOMINO_TILE_HORIZONTAL_BACK           0x1F030 0  // 🀰
 #define UC_DOMINO_TILE_HORIZONTAL_00_00          0x1F031 0  // 🀱
@@ -123,5 +122,3 @@
 #define UC_DOMINO_TILE_VERTICAL_06_04            0x1F091 0  // 🂑
 #define UC_DOMINO_TILE_VERTICAL_06_05            0x1F092 0  // 🂒
 #define UC_DOMINO_TILE_VERTICAL_06_06            0x1F093 0  // 🂓
-
-#endif // DOMINO_TILES_H

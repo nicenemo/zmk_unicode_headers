@@ -16,8 +16,7 @@
 
 */
 
-#ifndef NKO_H
-#define NKO_H
+#pragma once
 
 #define UC_NKO_ZERO                              0x07C0 0  // ߀
 #define UC_NKO_ONE                               0x07C1 0  // ߁
@@ -81,5 +80,3 @@
 #define UC_NKO_DANTAYALAN                        0x07FD 0  // ߽
 #define UC_NKO_DOROME_SIGN                       0x07FE 0  // ߾
 #define UC_NKO_TAMAN_SIGN                        0x07FF 0  // ߿
-
-#endif // NKO_H

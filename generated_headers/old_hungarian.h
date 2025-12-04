@@ -16,8 +16,7 @@
 
 */
 
-#ifndef OLD_HUNGARIAN_H
-#define OLD_HUNGARIAN_H
+#pragma once
 
 #define UC_OLD_HUNGARIAN_A                       0x10CC0 0x10C80  // 𐳀/𐲀
 #define UC_OLD_HUNGARIAN_AA                      0x10CC1 0x10C81  // 𐳁/𐲁
@@ -76,5 +75,3 @@
 #define UC_OLD_HUNGARIAN_FIFTY                   0x10CFD 0  // 𐳽
 #define UC_OLD_HUNGARIAN_ONE_HUNDRED             0x10CFE 0  // 𐳾
 #define UC_OLD_HUNGARIAN_ONE_THOUSAND            0x10CFF 0  // 𐳿
-
-#endif // OLD_HUNGARIAN_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef OLD_TURKIC_H
-#define OLD_TURKIC_H
+#pragma once
 
 #define UC_OLD_TURKIC_ORKHON_A                   0x10C00 0  // 𐰀
 #define UC_OLD_TURKIC_YENISEI_A                  0x10C01 0  // 𐰁
@@ -90,5 +89,3 @@
 #define UC_OLD_TURKIC_YENISEI_AET                0x10C46 0  // 𐱆
 #define UC_OLD_TURKIC_ORKHON_OT                  0x10C47 0  // 𐱇
 #define UC_OLD_TURKIC_ORKHON_BASH                0x10C48 0  // 𐱈
-
-#endif // OLD_TURKIC_H

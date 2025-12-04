@@ -10,15 +10,46 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 95
-* Total Significant Hex Values: 95
+* Total Defined Code Points: 128
+* Total Significant Hex Values: 128
 * Status: OK (Counts Match)
 
 */
 
-#ifndef BASIC_LATIN_H
-#define BASIC_LATIN_H
+#pragma once
 
+#define UC_LA_NULL                               0x0000 0  /* U+0000 (NULL) */
+#define UC_LA_SOH                                0x0001 0  /* U+0001 (SOH) */
+#define UC_LA_STX                                0x0002 0  /* U+0002 (STX) */
+#define UC_LA_ETX                                0x0003 0  /* U+0003 (ETX) */
+#define UC_LA_EOT                                0x0004 0  /* U+0004 (EOT) */
+#define UC_LA_ENQ                                0x0005 0  /* U+0005 (ENQ) */
+#define UC_LA_ACK                                0x0006 0  /* U+0006 (ACK) */
+#define UC_LA_BEL                                0x0007 0  /* U+0007 (BEL) */
+#define UC_LA_BS                                 0x0008 0  /* U+0008 (BS) */
+#define UC_LA_HT                                 0x0009 0  /* U+0009 (HT) */
+#define UC_LA_LF                                 0x000A 0  /* U+000A (LF) */
+#define UC_LA_VT                                 0x000B 0  /* U+000B (VT) */
+#define UC_LA_FF                                 0x000C 0  /* U+000C (FF) */
+#define UC_LA_CR                                 0x000D 0  /* U+000D (CR) */
+#define UC_LA_SO                                 0x000E 0  /* U+000E (SO) */
+#define UC_LA_SI                                 0x000F 0  /* U+000F (SI) */
+#define UC_LA_DLE                                0x0010 0  /* U+0010 (DLE) */
+#define UC_LA_DC1                                0x0011 0  /* U+0011 (DC1) */
+#define UC_LA_DC2                                0x0012 0  /* U+0012 (DC2) */
+#define UC_LA_DC3                                0x0013 0  /* U+0013 (DC3) */
+#define UC_LA_DC4                                0x0014 0  /* U+0014 (DC4) */
+#define UC_LA_NAK                                0x0015 0  /* U+0015 (NAK) */
+#define UC_LA_SYN                                0x0016 0  /* U+0016 (SYN) */
+#define UC_LA_ETB                                0x0017 0  /* U+0017 (ETB) */
+#define UC_LA_CAN                                0x0018 0  /* U+0018 (CAN) */
+#define UC_LA_EM                                 0x0019 0  /* U+0019 (EM) */
+#define UC_LA_SUB                                0x001A 0  /* U+001A (SUB) */
+#define UC_LA_ESC                                0x001B 0  /* U+001B (ESC) */
+#define UC_LA_FS                                 0x001C 0  /* U+001C (FS) */
+#define UC_LA_GS                                 0x001D 0  /* U+001D (GS) */
+#define UC_LA_RS                                 0x001E 0  /* U+001E (RS) */
+#define UC_LA_US                                 0x001F 0  /* U+001F (US) */
 #define UC_LA_SPACE                              0x0020 0  //  
 #define UC_LA_EXCLAMATION_MARK                   0x0021 0  // !
 #define UC_LA_QUOTATION_MARK                     0x0022 0  // "
@@ -88,5 +119,4 @@
 #define UC_LA_VERTICAL_LINE                      0x007C 0  // |
 #define UC_LA_RIGHT_CURLY_BRACKET                0x007D 0  // }
 #define UC_LA_TILDE                              0x007E 0  // ~
-
-#endif // BASIC_LATIN_H
+#define UC_LA_DEL                                0x007F 0  /* U+007F (DEL) */

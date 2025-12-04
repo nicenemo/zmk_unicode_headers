@@ -14,8 +14,7 @@
 
 */
 
-#ifndef BRAHMI_H
-#define BRAHMI_H
+#pragma once
 
 #define UC_BRAHMI_SIGN_CANDRABINDU               0x11000 0  // 𑀀
 #define UC_BRAHMI_SIGN_ANUSVARA                  0x11001 0  // 𑀁
@@ -132,5 +131,3 @@
 #define UC_BRAHMI_VOWEL_SIGN_OLD_TAMIL_SHORT_O   0x11074 0  // 𑁴
 #define UC_BRAHMI_OLD_TAMIL_LLA                  0x11075 0  // 𑁵
 #define UC_BRAHMI_JOINER                         0x1107F 0  // 𑁿
-
-#endif // BRAHMI_H

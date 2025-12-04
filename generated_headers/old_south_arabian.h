@@ -29,8 +29,7 @@
 
 */
 
-#ifndef OLD_SOUTH_ARABIAN_H
-#define OLD_SOUTH_ARABIAN_H
+#pragma once
 
 #define UC_OLD_SOUTH_ARABIAN_HE                  0x10A60 0  // 𐩠
 #define UC_OLD_SOUTH_ARABIAN_LAMEDH              0x10A61 0  // 𐩡
@@ -64,5 +63,3 @@
 #define UC_OLD_SOUTH_ARABIAN_ONE                 0x10A7D 0  // 𐩽
 #define UC_OLD_SOUTH_ARABIAN_FIFTY               0x10A7E 0  // 𐩾
 #define UC_OLD_SOUTH_ARABIAN_NUMERIC_INDICATOR   0x10A7F 0  // 𐩿
-
-#endif // OLD_SOUTH_ARABIAN_H

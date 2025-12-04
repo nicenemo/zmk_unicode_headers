@@ -19,8 +19,7 @@
 
 */
 
-#ifndef BOPOMOFO_EXTENDED_H
-#define BOPOMOFO_EXTENDED_H
+#pragma once
 
 #define UC_BOPOMOFO_BU                           0x31A0 0  // ㆠ
 #define UC_BOPOMOFO_ZI                           0x31A1 0  // ㆡ
@@ -54,5 +53,3 @@
 #define UC_BOPOMOFO_KW                           0x31BD 0  // ㆽ
 #define UC_BOPOMOFO_OE                           0x31BE 0  // ㆾ
 #define UC_BOPOMOFO_AH                           0x31BF 0  // ㆿ
-
-#endif // BOPOMOFO_EXTENDED_H

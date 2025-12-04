@@ -23,8 +23,7 @@
 
 */
 
-#ifndef GURMUKHI_H
-#define GURMUKHI_H
+#pragma once
 
 #define UC_GK_GURMUKHI_SIGN_ADAK_BINDI           0x0A01 0  // ਁ
 #define UC_GK_GURMUKHI_SIGN_BINDI                0x0A02 0  // ਂ
@@ -106,5 +105,3 @@
 #define UC_GK_GURMUKHI_EK_ONKAR                  0x0A74 0  // ੴ
 #define UC_GK_GURMUKHI_SIGN_YAKASH               0x0A75 0  // ੵ
 #define UC_GK_GURMUKHI_ABBREVIATION_SIGN         0x0A76 0  // ੶
-
-#endif // GURMUKHI_H

@@ -20,8 +20,7 @@
 
 */
 
-#ifndef INSCRIPTIONAL_PAHLAVI_H
-#define INSCRIPTIONAL_PAHLAVI_H
+#pragma once
 
 #define UC_IP_INSCIONAL_PAHLAVI_ALEPH            0x10B60 0  // 𐭠
 #define UC_IP_INSCIONAL_PAHLAVI_BETH             0x10B61 0  // 𐭡
@@ -50,5 +49,3 @@
 #define UC_IP_INSCIONAL_PAHLAVI_TWENTY           0x10B7D 0  // 𐭽
 #define UC_IP_INSCIONAL_PAHLAVI_ONE_HUNDRED      0x10B7E 0  // 𐭾
 #define UC_IP_INSCIONAL_PAHLAVI_ONE_THOUSAND     0x10B7F 0  // 𐭿
-
-#endif // INSCRIPTIONAL_PAHLAVI_H

@@ -18,8 +18,7 @@
 
 */
 
-#ifndef MISCELLANEOUS_SYMBOLS_SUPPLEMENT_H
-#define MISCELLANEOUS_SYMBOLS_SUPPLEMENT_H
+#pragma once
 
 #define UC_HEBE                                  0x1CEC0 0  // 𜻀
 #define UC_IRIS                                  0x1CEC1 0  // 𜻁
@@ -55,5 +54,3 @@
 #define UC_GEOMANTIC_FIGURE_CAUDA_DRACONIS       0x1CEEE 0  // 𜻮
 #define UC_GEOMANTIC_FIGURE_VIA                  0x1CEEF 0  // 𜻯
 #define UC_MEDIUM_SMALL_WHITE_CIRCLE_HORIZONTAL_BAR 0x1CEF0 0  // 𜻰
-
-#endif // MISCELLANEOUS_SYMBOLS_SUPPLEMENT_H

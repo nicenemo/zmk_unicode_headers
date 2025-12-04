@@ -39,8 +39,7 @@
 
 */
 
-#ifndef TAI_THAM_H
-#define TAI_THAM_H
+#pragma once
 
 #define UC_TAI_THAM_HIGH_KA                      0x1A20 0  // ᨠ
 #define UC_TAI_THAM_HIGH_KHA                     0x1A21 0  // ᨡ
@@ -169,5 +168,3 @@
 #define UC_TAI_THAM_SIGN_SATKAANKUU              0x1AAB 0  // ᪫
 #define UC_TAI_THAM_SIGN_HANG                    0x1AAC 0  // ᪬
 #define UC_TAI_THAM_SIGN_CAANG                   0x1AAD 0  // ᪭
-
-#endif // TAI_THAM_H

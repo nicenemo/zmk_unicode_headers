@@ -25,8 +25,7 @@
 
 */
 
-#ifndef DUPLOYAN_H
-#define DUPLOYAN_H
+#pragma once
 
 #define UC_DUPLOYAN_H                            0x1BC00 0  // 𛰀
 #define UC_DUPLOYAN_X                            0x1BC01 0  // 𛰁
@@ -171,5 +170,3 @@
 #define UC_DUPLOYAN_THICK                        0x1BC9D 0  // 𛲝
 #define UC_DUPLOYAN_DOUBLE_MARK                  0x1BC9E 0  // 𛲞
 #define UC_DUPLOYAN_PUNCTUATION_CHINOOK_FULL_STOP 0x1BC9F 0  // 𛲟
-
-#endif // DUPLOYAN_H

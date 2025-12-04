@@ -16,8 +16,7 @@
 
 */
 
-#ifndef PALMYRENE_H
-#define PALMYRENE_H
+#pragma once
 
 #define UC_PALMYRENE_ALEPH                       0x10860 0  // 𐡠
 #define UC_PALMYRENE_BETH                        0x10861 0  // 𐡡
@@ -51,5 +50,3 @@
 #define UC_PALMYRENE_FIVE                        0x1087D 0  // 𐡽
 #define UC_PALMYRENE_TEN                         0x1087E 0  // 𐡾
 #define UC_PALMYRENE_TWENTY                      0x1087F 0  // 𐡿
-
-#endif // PALMYRENE_H

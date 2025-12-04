@@ -25,8 +25,7 @@
 
 */
 
-#ifndef MATHEMATICAL_OPERATORS_H
-#define MATHEMATICAL_OPERATORS_H
+#pragma once
 
 #define UC_MOP_FOR_ALL                           0x2200 0  // ∀
 #define UC_MOP_COMPLEMENT                        0x2201 0  // ∁
@@ -284,5 +283,3 @@
 #define UC_MOP_CONTAINS_OVERBAR                  0x22FD 0  // ⋽
 #define UC_MOP_SMALL_CONTAINS_OVERBAR            0x22FE 0  // ⋾
 #define UC_MOP_Z_NOTATION_BAG_MEMBERSHIP         0x22FF 0  // ⋿
-
-#endif // MATHEMATICAL_OPERATORS_H

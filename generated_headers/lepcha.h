@@ -16,8 +16,7 @@
 
 */
 
-#ifndef LEPCHA_H
-#define LEPCHA_H
+#pragma once
 
 #define UC_LEPCHA_KA                             0x1C00 0  // ᰀ
 #define UC_LEPCHA_KLA                            0x1C01 0  // ᰁ
@@ -93,5 +92,3 @@
 #define UC_LEPCHA_TTA                            0x1C4D 0  // ᱍ
 #define UC_LEPCHA_TTHA                           0x1C4E 0  // ᱎ
 #define UC_LEPCHA_DDA                            0x1C4F 0  // ᱏ
-
-#endif // LEPCHA_H

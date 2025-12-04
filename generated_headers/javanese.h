@@ -16,8 +16,7 @@
 
 */
 
-#ifndef JAVANESE_H
-#define JAVANESE_H
+#pragma once
 
 #define UC_JAVANESE_SIGN_PANYANGGA               0xA980 0  // ꦀ
 #define UC_JAVANESE_SIGN_CECAK                   0xA981 0  // ꦁ
@@ -110,5 +109,3 @@
 #define UC_JAVANESE_NINE                         0xA9D9 0  // ꧙
 #define UC_JAVANESE_PADA_TIRTA_TUMETES           0xA9DE 0  // ꧞
 #define UC_JAVANESE_PADA_ISEN_ISEN               0xA9DF 0  // ꧟
-
-#endif // JAVANESE_H

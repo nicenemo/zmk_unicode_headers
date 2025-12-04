@@ -19,8 +19,7 @@
 
 */
 
-#ifndef SORA_SOMPENG_H
-#define SORA_SOMPENG_H
+#pragma once
 
 #define UC_SORA_SOMPENG_SAH                      0x110D0 0  // 𑃐
 #define UC_SORA_SOMPENG_TAH                      0x110D1 0  // 𑃑
@@ -57,5 +56,3 @@
 #define UC_SORA_SOMPENG_SEVEN                    0x110F7 0  // 𑃷
 #define UC_SORA_SOMPENG_EIGHT                    0x110F8 0  // 𑃸
 #define UC_SORA_SOMPENG_NINE                     0x110F9 0  // 𑃹
-
-#endif // SORA_SOMPENG_H

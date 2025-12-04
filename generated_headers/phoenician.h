@@ -16,8 +16,7 @@
 
 */
 
-#ifndef PHOENICIAN_H
-#define PHOENICIAN_H
+#pragma once
 
 #define UC_PHOENICIAN_ALF                        0x10900 0  // 𐤀
 #define UC_PHOENICIAN_BET                        0x10901 0  // 𐤁
@@ -48,5 +47,3 @@
 #define UC_PHOENICIAN_TWO                        0x1091A 0  // 𐤚
 #define UC_PHOENICIAN_THREE                      0x1091B 0  // 𐤛
 #define UC_PHOENICIAN_WORD_SEPARATOR             0x1091F 0  // 𐤟
-
-#endif // PHOENICIAN_H

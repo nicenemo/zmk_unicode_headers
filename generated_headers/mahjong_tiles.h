@@ -16,8 +16,7 @@
 
 */
 
-#ifndef MAHJONG_TILES_H
-#define MAHJONG_TILES_H
+#pragma once
 
 #define UC_MAHJONG_TILE_EAST_WIND                0x1F000 0  // 🀀
 #define UC_MAHJONG_TILE_SOUTH_WIND               0x1F001 0  // 🀁
@@ -63,5 +62,3 @@
 #define UC_MAHJONG_TILE_WINTER                   0x1F029 0  // 🀩
 #define UC_MAHJONG_TILE_JOKER                    0x1F02A 0  // 🀪
 #define UC_MAHJONG_TILE_BACK                     0x1F02B 0  // 🀫
-
-#endif // MAHJONG_TILES_H

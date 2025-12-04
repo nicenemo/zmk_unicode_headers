@@ -14,8 +14,7 @@
 
 */
 
-#ifndef CJK_COMPATIBILITY_IDEOGRAPHS_H
-#define CJK_COMPATIBILITY_IDEOGRAPHS_H
+#pragma once
 
 #define UC_CJK_IDEOGRAPH_F900                    0xF900 0  // 豈
 #define UC_CJK_IDEOGRAPH_F901                    0xF901 0  // 更
@@ -489,5 +488,3 @@
 #define UC_CJK_IDEOGRAPH_FAD7                    0xFAD7 0  // 𧻓
 #define UC_CJK_IDEOGRAPH_FAD8                    0xFAD8 0  // 齃
 #define UC_CJK_IDEOGRAPH_FAD9                    0xFAD9 0  // 龎
-
-#endif // CJK_COMPATIBILITY_IDEOGRAPHS_H

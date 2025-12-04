@@ -14,8 +14,7 @@
 
 */
 
-#ifndef VITHKUQI_H
-#define VITHKUQI_H
+#pragma once
 
 #define UC_VITHKUQI_A                            0x10597 0x10570  // 𐖗/𐕰
 #define UC_VITHKUQI_BBE                          0x10598 0x10571  // 𐖘/𐕱
@@ -52,5 +51,3 @@
 #define UC_VITHKUQI_XE                           0x105B9 0x10592  // 𐖹/𐖒
 #define UC_VITHKUQI_Y                            0x105BB 0x10594  // 𐖻/𐖔
 #define UC_VITHKUQI_ZE                           0x105BC 0x10595  // 𐖼/𐖕
-
-#endif // VITHKUQI_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef PLAYING_CARDS_H
-#define PLAYING_CARDS_H
+#pragma once
 
 #define UC_PLAYING_CARD_BACK                     0x1F0A0 0  // 🂠
 #define UC_PLAYING_CARD_ACE_OF_SPADES            0x1F0A1 0  // 🂡
@@ -99,5 +98,3 @@
 #define UC_PLAYING_CARD_TRUMP_19                 0x1F0F3 0  // 🃳
 #define UC_PLAYING_CARD_TRUMP_20                 0x1F0F4 0  // 🃴
 #define UC_PLAYING_CARD_TRUMP_21                 0x1F0F5 0  // 🃵
-
-#endif // PLAYING_CARDS_H

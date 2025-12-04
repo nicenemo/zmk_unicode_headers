@@ -16,8 +16,7 @@
 
 */
 
-#ifndef TELUGU_H
-#define TELUGU_H
+#pragma once
 
 #define UC_TL_TELUGU_SIGN_COMBINING_CANDRABINDU_ABOVE 0x0C00 0  // ఀ
 #define UC_TL_TELUGU_SIGN_CANDRABINDU            0x0C01 0  // ఁ
@@ -120,5 +119,3 @@
 #define UC_TL_TELUGU_FRACTION_TWO_FOR_EVEN_POWERS_OF_FOUR 0x0C7D 0  // ౽
 #define UC_TL_TELUGU_FRACTION_THREE_FOR_EVEN_POWERS_OF_FOUR 0x0C7E 0  // ౾
 #define UC_TL_TELUGU_SIGN_TUUMU                  0x0C7F 0  // ౿
-
-#endif // TELUGU_H

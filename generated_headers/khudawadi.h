@@ -23,8 +23,7 @@
 
 */
 
-#ifndef KHUDAWADI_H
-#define KHUDAWADI_H
+#pragma once
 
 #define UC_KHUDAWADI_A                           0x112B0 0  // 𑊰
 #define UC_KHUDAWADI_AA                          0x112B1 0  // 𑊱
@@ -95,5 +94,3 @@
 #define UC_KHUDAWADI_SEVEN                       0x112F7 0  // 𑋷
 #define UC_KHUDAWADI_EIGHT                       0x112F8 0  // 𑋸
 #define UC_KHUDAWADI_NINE                        0x112F9 0  // 𑋹
-
-#endif // KHUDAWADI_H

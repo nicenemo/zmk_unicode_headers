@@ -16,8 +16,7 @@
 
 */
 
-#ifndef MIAO_H
-#define MIAO_H
+#pragma once
 
 #define UC_MIAO_PA                               0x16F00 0  // 𖼀
 #define UC_MIAO_BA                               0x16F01 0  // 𖼁
@@ -168,5 +167,3 @@
 #define UC_MIAO_REFORMED_TONE_5                  0x16F9D 0  // 𖾝
 #define UC_MIAO_REFORMED_TONE_6                  0x16F9E 0  // 𖾞
 #define UC_MIAO_REFORMED_TONE_8                  0x16F9F 0  // 𖾟
-
-#endif // MIAO_H

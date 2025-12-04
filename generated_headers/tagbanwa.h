@@ -32,8 +32,7 @@
 
 */
 
-#ifndef TAGBANWA_H
-#define TAGBANWA_H
+#pragma once
 
 #define UC_TAGBANWA_A                            0x1760 0  // ᝠ
 #define UC_TAGBANWA_I                            0x1761 0  // ᝡ
@@ -53,5 +52,3 @@
 #define UC_TAGBANWA_SA                           0x1770 0  // ᝰ
 #define UC_TAGBANWA_VOWEL_SIGN_I                 0x1772 0  // ᝲ
 #define UC_TAGBANWA_VOWEL_SIGN_U                 0x1773 0  // ᝳ
-
-#endif // TAGBANWA_H

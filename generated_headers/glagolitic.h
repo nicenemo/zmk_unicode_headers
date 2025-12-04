@@ -14,8 +14,7 @@
 
 */
 
-#ifndef GLAGOLITIC_H
-#define GLAGOLITIC_H
+#pragma once
 
 #define UC_GLAGOLITIC_AZU                        0x2C30 0x2C00  // ⰰ/Ⰰ
 #define UC_GLAGOLITIC_BUKY                       0x2C31 0x2C01  // ⰱ/Ⰱ
@@ -65,5 +64,3 @@
 #define UC_GLAGOLITIC_TROKUTASTI_A               0x2C5D 0x2C2D  // ⱝ/Ⱝ
 #define UC_GLAGOLITIC_LATINATE_MYSLITE           0x2C5E 0x2C2E  // ⱞ/Ⱞ
 #define UC_GLAGOLITIC_CAUDATE_CHRIVI             0x2C5F 0x2C2F  // ⱟ/Ⱟ
-
-#endif // GLAGOLITIC_H

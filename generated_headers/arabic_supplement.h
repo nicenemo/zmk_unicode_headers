@@ -20,8 +20,7 @@
 
 */
 
-#ifndef ARABIC_SUPPLEMENT_H
-#define ARABIC_SUPPLEMENT_H
+#pragma once
 
 #define UC_BEH_THREE_DOTS_HORIZONTALLY_BELOW     0x0750 0  // ݐ
 #define UC_BEH_DOT_BELOW_AND_THREE_DOTS_ABOVE    0x0751 0  // ݑ
@@ -71,5 +70,3 @@
 #define UC_SEEN_INDIC_FOUR_ABOVE                 0x077D 0  // ݽ
 #define UC_SEEN_INVERTED_V                       0x077E 0  // ݾ
 #define UC_KAF_TWO_DOTS_ABOVE                    0x077F 0  // ݿ
-
-#endif // ARABIC_SUPPLEMENT_H

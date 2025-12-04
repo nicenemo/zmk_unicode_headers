@@ -28,8 +28,7 @@
 
 */
 
-#ifndef SIDETIC_H
-#define SIDETIC_H
+#pragma once
 
 #define UC_SIDETIC_N01                           0x10940 0  // 𐥀
 #define UC_SIDETIC_N02                           0x10941 0  // 𐥁
@@ -57,5 +56,3 @@
 #define UC_SIDETIC_N24                           0x10957 0  // 𐥗
 #define UC_SIDETIC_N25                           0x10958 0  // 𐥘
 #define UC_SIDETIC_N26                           0x10959 0  // 𐥙
-
-#endif // SIDETIC_H

@@ -30,8 +30,7 @@
 
 */
 
-#ifndef SAMARITAN_H
-#define SAMARITAN_H
+#pragma once
 
 #define UC_SAMARITAN_ALAF                        0x0800 0  // ࠀ
 #define UC_SAMARITAN_BIT                         0x0801 0  // ࠁ
@@ -94,5 +93,3 @@
 #define UC_SAMARITAN_PUNCTUATION_ARKAANU         0x083C 0  // ࠼
 #define UC_SAMARITAN_PUNCTUATION_SOF_MASHFAAT    0x083D 0  // ࠽
 #define UC_SAMARITAN_PUNCTUATION_ANNAAU          0x083E 0  // ࠾
-
-#endif // SAMARITAN_H

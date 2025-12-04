@@ -16,8 +16,7 @@
 
 */
 
-#ifndef BALINESE_H
-#define BALINESE_H
+#pragma once
 
 #define UC_BALINESE_SIGN_ULU_RICEM               0x1B00 0  // ᬀ
 #define UC_BALINESE_SIGN_ULU_CANDRA              0x1B01 0  // ᬁ
@@ -146,5 +145,3 @@
 #define UC_BALINESE_PANTI_LANTANG                0x1B7D 0  // ᭽
 #define UC_BALINESE_PAMADA_LANTANG               0x1B7E 0  // ᭾
 #define UC_BALINESE_PANTI_BAWAK                  0x1B7F 0  // ᭿
-
-#endif // BALINESE_H

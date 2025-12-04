@@ -21,8 +21,7 @@
 
 */
 
-#ifndef GEORGIAN_SUPPLEMENT_H
-#define GEORGIAN_SUPPLEMENT_H
+#pragma once
 
 #define UC_GEORGIAN_AN                           0x2D00 0x10A0  // ⴀ/Ⴀ
 #define UC_GEORGIAN_BAN                          0x2D01 0x10A1  // ⴁ/Ⴁ
@@ -64,5 +63,3 @@
 #define UC_GEORGIAN_HOE                          0x2D25 0x10C5  // ⴥ/Ⴥ
 #define UC_GEORGIAN_YN                           0x2D27 0x10C7  // ⴧ/Ⴧ
 #define UC_GEORGIAN_AEN                          0x2D2D 0x10CD  // ⴭ/Ⴭ
-
-#endif // GEORGIAN_SUPPLEMENT_H

@@ -16,8 +16,7 @@
 
 */
 
-#ifndef GARAY_H
-#define GARAY_H
+#pragma once
 
 #define UC_GARAY_ZERO                            0x10D40 0  // 𐵀
 #define UC_GARAY_ONE                             0x10D41 0  // 𐵁
@@ -88,5 +87,3 @@
 #define UC_GARAY_SMALL_OLD_NA                    0x10D85 0  // 𐶅
 #define UC_GARAY_PLUS_SIGN                       0x10D8E 0  // 𐶎
 #define UC_GARAY_MINUS_SIGN                      0x10D8F 0  // 𐶏
-
-#endif // GARAY_H

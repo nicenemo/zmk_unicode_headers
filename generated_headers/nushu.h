@@ -14,8 +14,7 @@
 
 */
 
-#ifndef NUSHU_H
-#define NUSHU_H
+#pragma once
 
 #define UC_NUSHU_1B170                           0x1B170 0  // 𛅰
 #define UC_NUSHU_1B171                           0x1B171 0  // 𛅱
@@ -413,5 +412,3 @@
 #define UC_NUSHU_1B2F9                           0x1B2F9 0  // 𛋹
 #define UC_NUSHU_1B2FA                           0x1B2FA 0  // 𛋺
 #define UC_NUSHU_1B2FB                           0x1B2FB 0  // 𛋻
-
-#endif // NUSHU_H

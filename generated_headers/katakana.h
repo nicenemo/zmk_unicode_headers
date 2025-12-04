@@ -27,8 +27,7 @@
 
 */
 
-#ifndef KATAKANA_H
-#define KATAKANA_H
+#pragma once
 
 #define UC_KT_KATAKANA_HIRAGANA_DOUBLE_HYPHEN    0x30A0 0  // ゠
 #define UC_KT_KATAKANA_SMALL_A                   0x30A1 0  // ァ
@@ -126,5 +125,3 @@
 #define UC_KT_KATAKANA_ITERATION_MARK            0x30FD 0  // ヽ
 #define UC_KT_KATAKANA_VOICED_ITERATION_MARK     0x30FE 0  // ヾ
 #define UC_KT_KATAKANA_DIGRAPH_KOTO              0x30FF 0  // ヿ
-
-#endif // KATAKANA_H

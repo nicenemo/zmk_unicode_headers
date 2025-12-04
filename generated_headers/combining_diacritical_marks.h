@@ -14,8 +14,7 @@
 
 */
 
-#ifndef COMBINING_DIACRITICAL_MARKS_H
-#define COMBINING_DIACRITICAL_MARKS_H
+#pragma once
 
 #define UC_COMBINING_GRAVE_ACCENT                0x0300 0  // ̀
 #define UC_COMBINING_ACUTE_ACCENT                0x0301 0  // ́
@@ -129,5 +128,3 @@
 #define UC_COMBINING_SMALL_T                     0x036D 0  // ͭ
 #define UC_COMBINING_SMALL_V                     0x036E 0  // ͮ
 #define UC_COMBINING_SMALL_X                     0x036F 0  // ͯ
-
-#endif // COMBINING_DIACRITICAL_MARKS_H

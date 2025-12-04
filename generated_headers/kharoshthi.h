@@ -14,8 +14,7 @@
 
 */
 
-#ifndef KHAROSHTHI_H
-#define KHAROSHTHI_H
+#pragma once
 
 #define UC_KHAROSHTHI_A                          0x10A00 0  // 𐨀
 #define UC_KHAROSHTHI_VOWEL_SIGN_I               0x10A01 0  // 𐨁
@@ -85,5 +84,3 @@
 #define UC_KHAROSHTHI_PUNCTUATION_DANDA          0x10A56 0  // 𐩖
 #define UC_KHAROSHTHI_PUNCTUATION_DOUBLE_DANDA   0x10A57 0  // 𐩗
 #define UC_KHAROSHTHI_PUNCTUATION_LINES          0x10A58 0  // 𐩘
-
-#endif // KHAROSHTHI_H

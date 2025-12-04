@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MODI_H
-#define MODI_H
+#pragma once
 
 #define UC_MODI_A                                0x11600 0  // 𑘀
 #define UC_MODI_AA                               0x11601 0  // 𑘁
@@ -96,5 +95,3 @@
 #define UC_MODI_SEVEN                            0x11657 0  // 𑙗
 #define UC_MODI_EIGHT                            0x11658 0  // 𑙘
 #define UC_MODI_NINE                             0x11659 0  // 𑙙
-
-#endif // MODI_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MYANMAR_H
-#define MYANMAR_H
+#pragma once
 
 #define UC_MYANMAR_KA                            0x1000 0  // က
 #define UC_MYANMAR_KHA                           0x1001 0  // ခ
@@ -177,5 +176,3 @@
 #define UC_MYANMAR_VOWEL_SIGN_AITON_AI           0x109D 0  // ႝ
 #define UC_MYANMAR_SHAN_ONE                      0x109E 0  // ႞
 #define UC_MYANMAR_SHAN_EXCLAMATION              0x109F 0  // ႟
-
-#endif // MYANMAR_H

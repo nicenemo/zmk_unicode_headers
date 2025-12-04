@@ -18,8 +18,7 @@
 
 */
 
-#ifndef TODHRI_H
-#define TODHRI_H
+#pragma once
 
 #define UC_TODHRI_A                              0x105C0 0  // 𐗀
 #define UC_TODHRI_AS                             0x105C1 0  // 𐗁
@@ -73,5 +72,3 @@
 #define UC_TODHRI_KHA                            0x105F1 0  // 𐗱
 #define UC_TODHRI_PSA                            0x105F2 0  // 𐗲
 #define UC_TODHRI_OO                             0x105F3 0  // 𐗳
-
-#endif // TODHRI_H

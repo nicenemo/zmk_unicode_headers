@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ENCLOSED_ALPHANUMERICS_H
-#define ENCLOSED_ALPHANUMERICS_H
+#pragma once
 
 #define UC_C_ONE                                 0x2460 0  // ①
 #define UC_C_TWO                                 0x2461 0  // ②
@@ -177,5 +176,3 @@
 #define UC_DOUBLE_C_NINE                         0x24FD 0  // ⓽
 #define UC_DOUBLE_C_TEN                          0x24FE 0  // ⓾
 #define UC_NEGATIVE_C_ZERO                       0x24FF 0  // ⓿
-
-#endif // ENCLOSED_ALPHANUMERICS_H

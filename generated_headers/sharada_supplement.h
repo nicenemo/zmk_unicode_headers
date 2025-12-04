@@ -17,8 +17,7 @@
 
 */
 
-#ifndef SHARADA_SUPPLEMENT_H
-#define SHARADA_SUPPLEMENT_H
+#pragma once
 
 #define UC_SHARADA_VOWEL_SIGN_OE                 0x11B60 0  // 𑭠
 #define UC_SHARADA_VOWEL_SIGN_OOE                0x11B61 0  // 𑭡
@@ -28,5 +27,3 @@
 #define UC_SHARADA_VOWEL_SIGN_SHORT_O            0x11B65 0  // 𑭥
 #define UC_SHARADA_VOWEL_SIGN_CANDRA_E           0x11B66 0  // 𑭦
 #define UC_SHARADA_VOWEL_SIGN_CANDRA_O           0x11B67 0  // 𑭧
-
-#endif // SHARADA_SUPPLEMENT_H

@@ -18,8 +18,7 @@
 
 */
 
-#ifndef SMALL_KANA_EXTENSION_H
-#define SMALL_KANA_EXTENSION_H
+#pragma once
 
 #define UC_HIRAGANA_SMALL_KO                     0x1B132 0  // 𛄲
 #define UC_HIRAGANA_SMALL_WI                     0x1B150 0  // 𛅐
@@ -30,5 +29,3 @@
 #define UC_KATAKANA_SMALL_WE                     0x1B165 0  // 𛅥
 #define UC_KATAKANA_SMALL_WO                     0x1B166 0  // 𛅦
 #define UC_KATAKANA_SMALL_N                      0x1B167 0  // 𛅧
-
-#endif // SMALL_KANA_EXTENSION_H

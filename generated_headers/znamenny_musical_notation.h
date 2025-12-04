@@ -21,8 +21,7 @@
 
 */
 
-#ifndef ZNAMENNY_MUSICAL_NOTATION_H
-#define ZNAMENNY_MUSICAL_NOTATION_H
+#pragma once
 
 #define UC_ZNAMENNY_COMBINING_MARK_GORAZDO_NIZKO_S_KRYZHEM_ON_LEFT 0x1CF00 0  // 𜼀
 #define UC_ZNAMENNY_COMBINING_MARK_NIZKO_S_KRYZHEM_ON_LEFT 0x1CF01 0  // 𜼁
@@ -209,5 +208,3 @@
 #define UC_ZNAMENNY_NEUME_DUDA                   0x1CFC1 0  // 𜿁
 #define UC_ZNAMENNY_NEUME_NEMKA                  0x1CFC2 0  // 𜿂
 #define UC_ZNAMENNY_NEUME_PAUK                   0x1CFC3 0  // 𜿃
-
-#endif // ZNAMENNY_MUSICAL_NOTATION_H

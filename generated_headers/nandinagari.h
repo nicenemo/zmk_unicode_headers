@@ -23,8 +23,7 @@
 
 */
 
-#ifndef NANDINAGARI_H
-#define NANDINAGARI_H
+#pragma once
 
 #define UC_NANDINAGARI_A                         0x119A0 0  // 𑦠
 #define UC_NANDINAGARI_AA                        0x119A1 0  // 𑦡
@@ -91,5 +90,3 @@
 #define UC_NANDINAGARI_SIGN_SIDDHAM              0x119E2 0  // 𑧢
 #define UC_NANDINAGARI_HEADSTROKE                0x119E3 0  // 𑧣
 #define UC_NANDINAGARI_VOWEL_SIGN_PRISHTHAMATRA_E 0x119E4 0  // 𑧤
-
-#endif // NANDINAGARI_H

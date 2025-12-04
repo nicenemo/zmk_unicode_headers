@@ -16,8 +16,7 @@
 
 */
 
-#ifndef WANCHO_H
-#define WANCHO_H
+#pragma once
 
 #define UC_WANCHO_AA                             0x1E2C0 0  // 𞋀
 #define UC_WANCHO_A                              0x1E2C1 0  // 𞋁
@@ -78,5 +77,3 @@
 #define UC_WANCHO_EIGHT                          0x1E2F8 0  // 𞋸
 #define UC_WANCHO_NINE                           0x1E2F9 0  // 𞋹
 #define UC_WANCHO_NGUN_SIGN                      0x1E2FF 0  // 𞋿
-
-#endif // WANCHO_H

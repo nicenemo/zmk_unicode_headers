@@ -27,8 +27,7 @@
 
 */
 
-#ifndef GREEK_EXTENDED_H
-#define GREEK_EXTENDED_H
+#pragma once
 
 #define UC_GREX_ALPHA_PSILI                      0x1F00 0x1F08  // ἀ/Ἀ
 #define UC_GREX_ALPHA_DASIA                      0x1F01 0x1F09  // ἁ/Ἁ
@@ -194,5 +193,3 @@
 #define UC_GREX_CAPITAL_OMEGA_PROSGEGRAMMENI     0x1FFC 0  // ῼ
 #define UC_GREX_OXIA                             0x1FFD 0  // ´
 #define UC_GREX_DASIA                            0x1FFE 0  // ῾
-
-#endif // GREEK_EXTENDED_H

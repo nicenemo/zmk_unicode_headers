@@ -22,8 +22,7 @@
 
 */
 
-#ifndef INSCRIPTIONAL_PARTHIAN_H
-#define INSCRIPTIONAL_PARTHIAN_H
+#pragma once
 
 #define UC_INSCIONAL_PARTHIAN_ALEPH              0x10B40 0  // 𐭀
 #define UC_INSCIONAL_PARTHIAN_BETH               0x10B41 0  // 𐭁
@@ -55,5 +54,3 @@
 #define UC_INSCIONAL_PARTHIAN_TWENTY             0x10B5D 0  // 𐭝
 #define UC_INSCIONAL_PARTHIAN_ONE_HUNDRED        0x10B5E 0  // 𐭞
 #define UC_INSCIONAL_PARTHIAN_ONE_THOUSAND       0x10B5F 0  // 𐭟
-
-#endif // INSCRIPTIONAL_PARTHIAN_H

@@ -28,8 +28,7 @@
 
 */
 
-#ifndef IPA_EXTENSIONS_H
-#define IPA_EXTENSIONS_H
+#pragma once
 
 #define UC_TURNED_A                              0x0250 0x2C6F  // ɐ/Ɐ
 #define UC_ALPHA                                 0x0251 0x2C6D  // ɑ/Ɑ
@@ -127,5 +126,3 @@
 #define UC_BIDENTAL_PERCUSSIVE                   0x02AD 0  // ʭ
 #define UC_SMALL_TURNED_H_FISHHOOK               0x02AE 0  // ʮ
 #define UC_SMALL_TURNED_H_FISHHOOK_AND_TAIL      0x02AF 0  // ʯ
-
-#endif // IPA_EXTENSIONS_H

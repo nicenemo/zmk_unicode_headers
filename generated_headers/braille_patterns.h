@@ -20,8 +20,7 @@
 
 */
 
-#ifndef BRAILLE_PATTERNS_H
-#define BRAILLE_PATTERNS_H
+#pragma once
 
 #define UC_BRAILLE_PATTERN_BLANK                 0x2800 0  // ⠀
 #define UC_BRAILLE_PATTERN_DOTS_1                0x2801 0  // ⠁
@@ -279,5 +278,3 @@
 #define UC_BRAILLE_PATTERN_DOTS_1345678          0x28FD 0  // ⣽
 #define UC_BRAILLE_PATTERN_DOTS_2345678          0x28FE 0  // ⣾
 #define UC_BRAILLE_PATTERN_DOTS_12345678         0x28FF 0  // ⣿
-
-#endif // BRAILLE_PATTERNS_H

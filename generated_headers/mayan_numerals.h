@@ -19,8 +19,7 @@
 
 */
 
-#ifndef MAYAN_NUMERALS_H
-#define MAYAN_NUMERALS_H
+#pragma once
 
 #define UC_MAYAN_NUMERAL_ZERO                    0x1D2E0 0  // 𝋠
 #define UC_MAYAN_NUMERAL_ONE                     0x1D2E1 0  // 𝋡
@@ -42,5 +41,3 @@
 #define UC_MAYAN_NUMERAL_SEVENTEEN               0x1D2F1 0  // 𝋱
 #define UC_MAYAN_NUMERAL_EIGHTEEN                0x1D2F2 0  // 𝋲
 #define UC_MAYAN_NUMERAL_NINETEEN                0x1D2F3 0  // 𝋳
-
-#endif // MAYAN_NUMERALS_H

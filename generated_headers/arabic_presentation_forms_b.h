@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ARABIC_PRESENTATION_FORMS_B_H
-#define ARABIC_PRESENTATION_FORMS_B_H
+#pragma once
 
 #define UC_FATHATAN_ISOLATED_FORM                0xFE70 0  // ﹰ
 #define UC_TATWEEL_FATHATAN_ABOVE                0xFE71 0  // ﹱ
@@ -157,6 +156,4 @@
 #define UC_LIGATURE_LAM_ALEF_HAMZA_BELOW_FINAL_FORM 0xFEFA 0  // ﻺ
 #define UC_LIGATURE_LAM_ALEF_ISOLATED_FORM       0xFEFB 0  // ﻻ
 #define UC_LIGATURE_LAM_ALEF_FINAL_FORM          0xFEFC 0  // ﻼ
-#define UC_ZERO_WIDTH_NO_BREAK_SPACE             0xFEFF 0  // ﻿
-
-#endif // ARABIC_PRESENTATION_FORMS_B_H
+#define UC_ZERO_WIDTH_NO_BREAK_SPACE             0xFEFF 0  /* U+FEFF (ZERO WIDTH NO-BREAK SPACE) */

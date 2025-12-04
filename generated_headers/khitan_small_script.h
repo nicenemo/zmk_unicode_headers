@@ -25,8 +25,7 @@
 
 */
 
-#ifndef KHITAN_SMALL_SCRIPT_H
-#define KHITAN_SMALL_SCRIPT_H
+#pragma once
 
 #define UC_KHITAN_SMALL_SC_18B00                 0x18B00 0  // 𘬀
 #define UC_KHITAN_SMALL_SC_18B01                 0x18B01 0  // 𘬁
@@ -499,5 +498,3 @@
 #define UC_KHITAN_SMALL_SC_18CD4                 0x18CD4 0  // 𘳔
 #define UC_KHITAN_SMALL_SC_18CD5                 0x18CD5 0  // 𘳕
 #define UC_KHITAN_SMALL_SC_18CFF                 0x18CFF 0  // 𘳿
-
-#endif // KHITAN_SMALL_SCRIPT_H

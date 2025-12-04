@@ -18,8 +18,7 @@
 
 */
 
-#ifndef TAI_VIET_H
-#define TAI_VIET_H
+#pragma once
 
 #define UC_TAI_VIET_LOW_KO                       0xAA80 0  // ꪀ
 #define UC_TAI_VIET_HIGH_KO                      0xAA81 0  // ꪁ
@@ -93,5 +92,3 @@
 #define UC_TAI_VIET_SAM                          0xAADD 0  // ꫝ
 #define UC_TAI_VIET_HO_HOI                       0xAADE 0  // ꫞
 #define UC_TAI_VIET_KOI_KOI                      0xAADF 0  // ꫟
-
-#endif // TAI_VIET_H

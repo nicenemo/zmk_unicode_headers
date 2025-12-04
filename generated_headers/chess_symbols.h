@@ -19,8 +19,7 @@
 
 */
 
-#ifndef CHESS_SYMBOLS_H
-#define CHESS_SYMBOLS_H
+#pragma once
 
 #define UC_NEUTRAL_CHESS_KING                    0x1FA00 0  // 🨀
 #define UC_NEUTRAL_CHESS_QUEEN                   0x1FA01 0  // 🨁
@@ -124,5 +123,3 @@
 #define UC_XIANGQI_BLACK_CHARIOT                 0x1FA6B 0  // 🩫
 #define UC_XIANGQI_BLACK_CANNON                  0x1FA6C 0  // 🩬
 #define UC_XIANGQI_BLACK_SOLDIER                 0x1FA6D 0  // 🩭
-
-#endif // CHESS_SYMBOLS_H

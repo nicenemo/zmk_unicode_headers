@@ -20,8 +20,7 @@
 
 */
 
-#ifndef TAI_XUAN_JING_SYMBOLS_H
-#define TAI_XUAN_JING_SYMBOLS_H
+#pragma once
 
 #define UC_MONOGRAM_FOR_EARTH                    0x1D300 0  // 𝌀
 #define UC_DIGRAM_FOR_HEAVENLY_EARTH             0x1D301 0  // 𝌁
@@ -110,5 +109,3 @@
 #define UC_TETRAGRAM_FOR_DIFFICULTIES            0x1D354 0  // 𝍔
 #define UC_TETRAGRAM_FOR_LABOURING               0x1D355 0  // 𝍕
 #define UC_TETRAGRAM_FOR_FOSTERING               0x1D356 0  // 𝍖
-
-#endif // TAI_XUAN_JING_SYMBOLS_H

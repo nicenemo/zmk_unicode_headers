@@ -23,8 +23,7 @@
 
 */
 
-#ifndef SHAVIAN_H
-#define SHAVIAN_H
+#pragma once
 
 #define UC_SH_PEEP                               0x10450 0  // 𐑐
 #define UC_SH_TOT                                0x10451 0  // 𐑑
@@ -74,5 +73,3 @@
 #define UC_SH_EAR                                0x1047D 0  // 𐑽
 #define UC_SH_IAN                                0x1047E 0  // 𐑾
 #define UC_SH_YEW                                0x1047F 0  // 𐑿
-
-#endif // SHAVIAN_H

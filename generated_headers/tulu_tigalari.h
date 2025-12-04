@@ -14,8 +14,7 @@
 
 */
 
-#ifndef TULU_TIGALARI_H
-#define TULU_TIGALARI_H
+#pragma once
 
 #define UC_TULU_TIGALARI_A                       0x11380 0  // 𑎀
 #define UC_TULU_TIGALARI_AA                      0x11381 0  // 𑎁
@@ -97,5 +96,3 @@
 #define UC_TULU_TIGALARI_SIGN_SHRII_PUSHPIKA     0x113D8 0  // 𑏘
 #define UC_TULU_TIGALARI_VEDIC_TONE_SVARITA      0x113E1 0  // 𑏡
 #define UC_TULU_TIGALARI_VEDIC_TONE_ANUDATTA     0x113E2 0  // 𑏢
-
-#endif // TULU_TIGALARI_H

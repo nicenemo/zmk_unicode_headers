@@ -20,8 +20,7 @@
 
 */
 
-#ifndef MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS_H
-#define MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS_H
+#pragma once
 
 #define UC_CYCLONE                               0x1F300 0  // 🌀
 #define UC_FOGGY                                 0x1F301 0  // 🌁
@@ -791,5 +790,3 @@
 #define UC_STATUE_OF_LIBERTY                     0x1F5FD 0  // 🗽
 #define UC_SILHOUETTE_OF_JAPAN                   0x1F5FE 0  // 🗾
 #define UC_MOYAI                                 0x1F5FF 0  // 🗿
-
-#endif // MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS_H

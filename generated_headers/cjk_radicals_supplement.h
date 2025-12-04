@@ -14,8 +14,7 @@
 
 */
 
-#ifndef CJK_RADICALS_SUPPLEMENT_H
-#define CJK_RADICALS_SUPPLEMENT_H
+#pragma once
 
 #define UC_CJK_RADICAL_REPEAT                    0x2E80 0  // ⺀
 #define UC_CJK_RADICAL_CLIFF                     0x2E81 0  // ⺁
@@ -132,5 +131,3 @@
 #define UC_CJK_RADICAL_TURTLE                    0x2EF1 0  // ⻱
 #define UC_CJK_RADICAL_J_SIMPLIFIED_TURTLE       0x2EF2 0  // ⻲
 #define UC_CJK_RADICAL_C_SIMPLIFIED_TURTLE       0x2EF3 0  // ⻳
-
-#endif // CJK_RADICALS_SUPPLEMENT_H

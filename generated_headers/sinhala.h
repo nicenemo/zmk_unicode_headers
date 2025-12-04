@@ -16,8 +16,7 @@
 
 */
 
-#ifndef SINHALA_H
-#define SINHALA_H
+#pragma once
 
 #define UC_SINHALA_SIGN_CANDRABINDU              0x0D81 0  // ඁ
 #define UC_SINHALA_SIGN_ANUSVARAYA               0x0D82 0  // ං
@@ -110,5 +109,3 @@
 #define UC_SINHALA_VOWEL_SIGN_DIGA_GAETTA_PILLA  0x0DF2 0  // ෲ
 #define UC_SINHALA_VOWEL_SIGN_DIGA_GAYANUKITTA   0x0DF3 0  // ෳ
 #define UC_SINHALA_PUNCTUATION_KUNDDALIYA        0x0DF4 0  // ෴
-
-#endif // SINHALA_H

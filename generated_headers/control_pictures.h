@@ -22,8 +22,7 @@
 
 */
 
-#ifndef CONTROL_PICTURES_H
-#define CONTROL_PICTURES_H
+#pragma once
 
 #define UC_FOR_NULL                              0x2400 0  // ␀
 #define UC_FOR_START_OF_HEADING                  0x2401 0  // ␁
@@ -67,5 +66,3 @@
 #define UC_FOR_DELETE_SQUARE_CHECKER_BOARD_FORM  0x2427 0  // ␧
 #define UC_FOR_DELETE_RECTANGULAR_CHECKER_BOARD_FORM 0x2428 0  // ␨
 #define UC_FOR_DELETE_MEDIUM_SHADE_FORM          0x2429 0  // ␩
-
-#endif // CONTROL_PICTURES_H

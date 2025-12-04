@@ -26,10 +26,9 @@
 
 */
 
-#ifndef OGHAM_H
-#define OGHAM_H
+#pragma once
 
-#define UC_OGHAM_SPACE_MARK                      0x1680 0  //  
+#define UC_OGHAM_SPACE_MARK                      0x1680 0  /* U+1680 (OGHAM SPACE MARK) */
 #define UC_OGHAM_BEITH                           0x1681 0  // ᚁ
 #define UC_OGHAM_LUIS                            0x1682 0  // ᚂ
 #define UC_OGHAM_FEARN                           0x1683 0  // ᚃ
@@ -58,5 +57,3 @@
 #define UC_OGHAM_PEITH                           0x169A 0  // ᚚ
 #define UC_OGHAM_FEATHER_MARK                    0x169B 0  // ᚛
 #define UC_OGHAM_REVERSED_FEATHER_MARK           0x169C 0  // ᚜
-
-#endif // OGHAM_H

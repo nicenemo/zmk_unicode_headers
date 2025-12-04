@@ -16,8 +16,7 @@
 
 */
 
-#ifndef LYDIAN_H
-#define LYDIAN_H
+#pragma once
 
 #define UC_LYDIAN_A                              0x10920 0  // 𐤠
 #define UC_LYDIAN_B                              0x10921 0  // 𐤡
@@ -46,5 +45,3 @@
 #define UC_LYDIAN_NN                             0x10938 0  // 𐤸
 #define UC_LYDIAN_C                              0x10939 0  // 𐤹
 #define UC_LYDIAN_TRIANGULAR_MARK                0x1093F 0  // 𐤿
-
-#endif // LYDIAN_H

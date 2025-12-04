@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS_H
-#define ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS_H
+#pragma once
 
 #define UC_ALEF                                  0x1EE00 0  // 𞸀
 #define UC_BEH                                   0x1EE01 0  // 𞸁
@@ -160,5 +159,3 @@
 #define UC_DS_GHAIN                              0x1EEBB 0  // 𞺻
 #define UC_OPERATOR_MEEM_HAH_TATWEEL             0x1EEF0 0  // 𞻰
 #define UC_OPERATOR_HAH_DAL                      0x1EEF1 0  // 𞻱
-
-#endif // ARABIC_MATHEMATICAL_ALPHABETIC_SYMBOLS_H

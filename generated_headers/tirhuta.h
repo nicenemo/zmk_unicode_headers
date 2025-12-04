@@ -20,8 +20,7 @@
 
 */
 
-#ifndef TIRHUTA_H
-#define TIRHUTA_H
+#pragma once
 
 #define UC_TIRHUTA_ANJI                          0x11480 0  // 𑒀
 #define UC_TIRHUTA_A                             0x11481 0  // 𑒁
@@ -105,5 +104,3 @@
 #define UC_TIRHUTA_SEVEN                         0x114D7 0  // 𑓗
 #define UC_TIRHUTA_EIGHT                         0x114D8 0  // 𑓘
 #define UC_TIRHUTA_NINE                          0x114D9 0  // 𑓙
-
-#endif // TIRHUTA_H

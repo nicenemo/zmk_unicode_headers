@@ -16,8 +16,7 @@
 
 */
 
-#ifndef COPTIC_H
-#define COPTIC_H
+#pragma once
 
 #define UC_ALFA                                  0x2C81 0x2C80  // ⲁ/Ⲁ
 #define UC_VIDA                                  0x2C83 0x2C82  // ⲃ/Ⲃ
@@ -89,5 +88,3 @@
 #define UC_FRACTION_ONE_HALF                     0x2CFD 0  // ⳽
 #define UC_FULL_STOP                             0x2CFE 0  // ⳾
 #define UC_MORPHOLOGICAL_DIVIDER                 0x2CFF 0  // ⳿
-
-#endif // COPTIC_H

@@ -127,6 +127,23 @@ class MacroGenerator:
     short, clean C-style macro identifiers (UC_ABBR_NAME).
     """
 
+    # --- Manual Override for ASCII Control Character Names ---
+    # These names are known to cause ValueError in unicodedata.name(), 
+    # but they must be generated with their common three-letter abbreviations.
+    ASCII_CONTROL_NAMES: Dict[int, str] = {
+        0x0000: "NULL", 0x0001: "SOH", 0x0002: "STX", 0x0003: "ETX",
+        0x0004: "EOT", 0x0005: "ENQ", 0x0006: "ACK", 0x0007: "BEL",
+        0x0008: "BS", 0x0009: "HT", 0x000A: "LF", 0x000B: "VT",
+        0x000C: "FF", 0x000D: "CR", 0x000E: "SO", 0x000F: "SI",
+        0x0010: "DLE", 0x0011: "DC1", 0x0012: "DC2", 0x0013: "DC3",
+        0x0014: "DC4", 0x0015: "NAK", 0x0016: "SYN", 0x0017: "ETB",
+        0x0018: "CAN", 0x0019: "EM", 0x001A: "SUB", 0x001B: "ESC",
+        0x001C: "FS", 0x001D: "GS", 0x001E: "RS", 0x001F: "US",
+        0x007F: "DEL"
+    }
+    # -------------------------------------------------------
+
+
     # Layer 1: Block Prefixes (Custom/ISO 639-1)
     BLOCK_ABBREVIATIONS: Dict[str, str] = {
         "DEFAULT": "",
@@ -251,13 +268,25 @@ class MacroGenerator:
 # --------------------------------------------------------------------
 
 def printable_glyph(cp: int) -> Optional[str]:
-    """Return a printable representation of *cp* or None if it is not printable."""
+    """
+    Returns the character if it's displayable (Letter, Number, Symbol, Punctuation), 
+    otherwise returns None. Used only for comment formatting.
+    """
     try:
         ch = chr(cp)
+        cat = category(ch)
     except ValueError:
         return None
         
-    # No longer needed, as the main loop handles filtering based on category
+    # Filter out all C (Control, Format, Unassigned, Private Use, Surrogate)
+    # and all Z (Separator), except for the standard space (U+0020).
+    if cat[0] in ("C", "Z"):
+        # Special case: allow the standard space U+0020 for the comment
+        if cat == 'Zs' and ch == ' ':
+            return ch
+        return None
+        
+    # All other categories (L, N, S, P) are displayable.
     return ch
 
 def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
@@ -317,18 +346,27 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
             
         try:
             char = chr(cp)
-            char_name = name(char)
-            cat = category(char)
         except ValueError:
-            # Skips unassigned (if not explicitly covered by Cn) and non-character code points
+            # Skip code points that are invalid character values (e.g., outside U+10FFFF)
             continue
             
-        # --- NEW FILTERING LOGIC ---
-        # Only exclude Unassigned (Cn), Private Use (Co), Surrogate (Cs), 
-        # Line Separator (Zl), and Paragraph Separator (Zp).
+        cat = category(char)
+        
+        # 1. Primary Filtering (Skip Unassigned/Private Use/Surrogate/Line Sep)
         if cat in EXCLUDE_CATEGORIES:
             continue
-        # ---------------------------
+            
+        # --- FIX: Check for manual ASCII control name override ---
+        if cp in macro_generator.ASCII_CONTROL_NAMES:
+            char_name = macro_generator.ASCII_CONTROL_NAMES[cp]
+        else:
+            try:
+                # 2. Try to get the official name for assigned characters
+                char_name = name(char)
+            except ValueError:
+                # Fallback for other assigned characters (like non-ASCII Cc or Cf) if name fails
+                char_name = f"{cat}_U{cp:04X}"
+        # ---------------------------------------------------------
             
         glyph = printable_glyph(cp)
         partner_cp, partner_name = find_case_partner(cp)
@@ -351,6 +389,12 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
             if glyph1 and glyph2:
                 comment = f"// {glyph1}/{glyph2}"
             else:
+                # Need to resolve partner_name manually for the paired char if it's also a control char
+                if cp2 in macro_generator.ASCII_CONTROL_NAMES:
+                    name2 = macro_generator.ASCII_CONTROL_NAMES[cp2]
+                elif name2 is None:
+                     name2 = f"{category(chr(cp2))}_U{cp2:04X}" # Fallback if unicodedata.name failed on partner
+
                 comment_parts = [f"U+{cp1:04X} ({name1})", f"U+{cp2:04X} ({name2})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
@@ -370,6 +414,7 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
             if glyph:
                 comment = f"// {glyph}"
             else:
+                # Since glyph is None, use the correct name (either manual or fallback)
                 comment_parts = [f"U+{cp:04X} ({char_name})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
@@ -398,9 +443,6 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: Mac
     s_clean = re.sub(r"[^\w]", "_", block.name)
     file_basename = re.sub(r"_+", "_", s_clean).lower().strip("_")
     header_file = out_dir / f"{file_basename}.h"
-    
-    # Derive a consistent guard macro (e.g., BASIC_LATIN_H)
-    guard_macro = f"{file_basename.upper()}_H"
     # -------------------------
     
     block_abbr = macro_generator.get_block_abbr(block.name)
@@ -469,12 +511,11 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: Mac
 {consistency_message}
 */
 
-#ifndef {guard_macro}
-#define {guard_macro}
+#pragma once
 
 """
     
-    all_content = boilerplate + "\n".join(content_lines) + "\n\n#endif // " + guard_macro + "\n"
+    all_content = boilerplate + "\n".join(content_lines) + "\n"
     header_file.write_text(all_content, encoding="utf-8")
     
     print(f"Processed block '{block.name}' (U+{block.start:04X}...U+{block.end:04X}): **Written** to {header_file.name}")

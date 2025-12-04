@@ -18,8 +18,7 @@
 
 */
 
-#ifndef CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT_H
-#define CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT_H
+#pragma once
 
 #define UC_CJK_IDEOGRAPH_2F800                   0x2F800 0  // 丽
 #define UC_CJK_IDEOGRAPH_2F801                   0x2F801 0  // 丸
@@ -563,5 +562,3 @@
 #define UC_CJK_IDEOGRAPH_2FA1B                   0x2FA1B 0  // 鼖
 #define UC_CJK_IDEOGRAPH_2FA1C                   0x2FA1C 0  // 鼻
 #define UC_CJK_IDEOGRAPH_2FA1D                   0x2FA1D 0  // 𪘀
-
-#endif // CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT_H

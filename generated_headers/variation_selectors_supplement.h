@@ -19,8 +19,7 @@
 
 */
 
-#ifndef VARIATION_SELECTORS_SUPPLEMENT_H
-#define VARIATION_SELECTORS_SUPPLEMENT_H
+#pragma once
 
 #define UC_17                                    0xE0100 0  // 󠄀
 #define UC_18                                    0xE0101 0  // 󠄁
@@ -262,5 +261,3 @@
 #define UC_254                                   0xE01ED 0  // 󠇭
 #define UC_255                                   0xE01EE 0  // 󠇮
 #define UC_256                                   0xE01EF 0  // 󠇯
-
-#endif // VARIATION_SELECTORS_SUPPLEMENT_H

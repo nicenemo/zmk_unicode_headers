@@ -16,8 +16,7 @@
 
 */
 
-#ifndef BUGINESE_H
-#define BUGINESE_H
+#pragma once
 
 #define UC_BUGINESE_KA                           0x1A00 0  // ᨀ
 #define UC_BUGINESE_GA                           0x1A01 0  // ᨁ
@@ -49,5 +48,3 @@
 #define UC_BUGINESE_VOWEL_SIGN_AE                0x1A1B 0  // ᨛ
 #define UC_BUGINESE_PALLAWA                      0x1A1E 0  // ᨞
 #define UC_BUGINESE_END_OF_SECTION               0x1A1F 0  // ᨟
-
-#endif // BUGINESE_H

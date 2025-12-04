@@ -16,8 +16,7 @@
 
 */
 
-#ifndef SOGDIAN_H
-#define SOGDIAN_H
+#pragma once
 
 #define UC_SOGDIAN_ALEPH                         0x10F30 0  // 𐼰
 #define UC_SOGDIAN_BETH                          0x10F31 0  // 𐼱
@@ -61,5 +60,3 @@
 #define UC_SOGDIAN_PUNCTUATION_CIRCLE_DOT        0x10F57 0  // 𐽗
 #define UC_SOGDIAN_PUNCTUATION_TWO_CIRCLES_DOTS  0x10F58 0  // 𐽘
 #define UC_SOGDIAN_PUNCTUATION_HALF_CIRCLE_DOT   0x10F59 0  // 𐽙
-
-#endif // SOGDIAN_H

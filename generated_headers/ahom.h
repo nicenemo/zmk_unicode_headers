@@ -16,8 +16,7 @@
 
 */
 
-#ifndef AHOM_H
-#define AHOM_H
+#pragma once
 
 #define UC_AHOM_KA                               0x11700 0  // 𑜀
 #define UC_AHOM_KHA                              0x11701 0  // 𑜁
@@ -84,5 +83,3 @@
 #define UC_AHOM_DDHA                             0x11744 0  // 𑝄
 #define UC_AHOM_NNA                              0x11745 0  // 𑝅
 #define UC_AHOM_LLA                              0x11746 0  // 𑝆
-
-#endif // AHOM_H

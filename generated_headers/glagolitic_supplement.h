@@ -20,8 +20,7 @@
 
 */
 
-#ifndef GLAGOLITIC_SUPPLEMENT_H
-#define GLAGOLITIC_SUPPLEMENT_H
+#pragma once
 
 #define UC_COMBINING_GLAGOLITIC_AZU              0x1E000 0  // 𞀀
 #define UC_COMBINING_GLAGOLITIC_BUKY             0x1E001 0  // 𞀁
@@ -61,5 +60,3 @@
 #define UC_COMBINING_GLAGOLITIC_BIG_YUS          0x1E028 0  // 𞀨
 #define UC_COMBINING_GLAGOLITIC_IOTATED_BIG_YUS  0x1E029 0  // 𞀩
 #define UC_COMBINING_GLAGOLITIC_FITA             0x1E02A 0  // 𞀪
-
-#endif // GLAGOLITIC_SUPPLEMENT_H

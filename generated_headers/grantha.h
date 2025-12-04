@@ -16,8 +16,7 @@
 
 */
 
-#ifndef GRANTHA_H
-#define GRANTHA_H
+#pragma once
 
 #define UC_GRANTHA_SIGN_COMBINING_ANUSVARA_ABOVE 0x11300 0  // 𑌀
 #define UC_GRANTHA_SIGN_CANDRABINDU              0x11301 0  // 𑌁
@@ -105,5 +104,3 @@
 #define UC_COMBINING_GRANTHA_NA                  0x11372 0  // 𑍲
 #define UC_COMBINING_GRANTHA_VI                  0x11373 0  // 𑍳
 #define UC_COMBINING_GRANTHA_PA                  0x11374 0  // 𑍴
-
-#endif // GRANTHA_H

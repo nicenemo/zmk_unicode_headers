@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MYANMAR_EXTENDED_B_H
-#define MYANMAR_EXTENDED_B_H
+#pragma once
 
 #define UC_MYANMAR_SHAN_GHA                      0xA9E0 0  // ꧠ
 #define UC_MYANMAR_SHAN_CHA                      0xA9E1 0  // ꧡ
@@ -48,5 +47,3 @@
 #define UC_MYANMAR_TAI_LAING_DHA                 0xA9FC 0  // ꧼ
 #define UC_MYANMAR_TAI_LAING_BA                  0xA9FD 0  // ꧽ
 #define UC_MYANMAR_TAI_LAING_BHA                 0xA9FE 0  // ꧾ
-
-#endif // MYANMAR_EXTENDED_B_H

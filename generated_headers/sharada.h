@@ -16,8 +16,7 @@
 
 */
 
-#ifndef SHARADA_H
-#define SHARADA_H
+#pragma once
 
 #define UC_SHARADA_SIGN_CANDRABINDU              0x11180 0  // 𑆀
 #define UC_SHARADA_SIGN_ANUSVARA                 0x11181 0  // 𑆁
@@ -115,5 +114,3 @@
 #define UC_SHARADA_CONTINUATION_SIGN             0x111DD 0  // 𑇝
 #define UC_SHARADA_SECTION_MARK_1                0x111DE 0  // 𑇞
 #define UC_SHARADA_SECTION_MARK_2                0x111DF 0  // 𑇟
-
-#endif // SHARADA_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef HEBREW_H
-#define HEBREW_H
+#pragma once
 
 #define UC_HE_ACCENT_ETNAHTA                     0x0591 0  // ֑
 #define UC_HE_ACCENT_SEGOL                       0x0592 0  // ֒
@@ -105,5 +104,3 @@
 #define UC_HE_LIGATURE_YIDDISH_DOUBLE_YOD        0x05F2 0  // ײ
 #define UC_HE_PUNCTUATION_GERESH                 0x05F3 0  // ׳
 #define UC_HE_PUNCTUATION_GERSHAYIM              0x05F4 0  // ״
-
-#endif // HEBREW_H

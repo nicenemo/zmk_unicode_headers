@@ -31,8 +31,7 @@
 
 */
 
-#ifndef CUNEIFORM_H
-#define CUNEIFORM_H
+#pragma once
 
 #define UC_CUNEIFORM_SIGN_A                      0x12000 0  // 𒀀
 #define UC_CUNEIFORM_SIGN_A_TIMES_A              0x12001 0  // 𒀁
@@ -956,5 +955,3 @@
 #define UC_CUNEIFORM_SIGN_TI2                    0x12397 0  // 𒎗
 #define UC_CUNEIFORM_SIGN_UM_TIMES_ME            0x12398 0  // 𒎘
 #define UC_CUNEIFORM_SIGN_U_U                    0x12399 0  // 𒎙
-
-#endif // CUNEIFORM_H

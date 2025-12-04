@@ -14,8 +14,7 @@
 
 */
 
-#ifndef SUPERSCRIPTS_AND_SUBSCRIPTS_H
-#define SUPERSCRIPTS_AND_SUBSCRIPTS_H
+#pragma once
 
 #define UC_SUPERSC_ZERO                          0x2070 0  // ⁰
 #define UC_SUPERSC_SMALL_I                       0x2071 0  // ⁱ
@@ -59,5 +58,3 @@
 #define UC_SUBSC_SMALL_P                         0x209A 0  // ₚ
 #define UC_SUBSC_SMALL_S                         0x209B 0  // ₛ
 #define UC_SUBSC_SMALL_T                         0x209C 0  // ₜ
-
-#endif // SUPERSCRIPTS_AND_SUBSCRIPTS_H

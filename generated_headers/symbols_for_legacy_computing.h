@@ -27,8 +27,7 @@
 
 */
 
-#ifndef SYMBOLS_FOR_LEGACY_COMPUTING_H
-#define SYMBOLS_FOR_LEGACY_COMPUTING_H
+#pragma once
 
 #define UC_BLOCK_SEXTANT_1                       0x1FB00 0  // 🬀
 #define UC_BLOCK_SEXTANT_2                       0x1FB01 0  // 🬁
@@ -280,5 +279,3 @@
 #define UC_SEGMENTED_EIGHT                       0x1FBF8 0  // 🯸
 #define UC_SEGMENTED_NINE                        0x1FBF9 0  // 🯹
 #define UC_ALARM_BELL                            0x1FBFA 0  // 🯺
-
-#endif // SYMBOLS_FOR_LEGACY_COMPUTING_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MAKASAR_H
-#define MAKASAR_H
+#pragma once
 
 #define UC_MAKASAR_KA                            0x11EE0 0  // 𑻠
 #define UC_MAKASAR_GA                            0x11EE1 0  // 𑻡
@@ -42,5 +41,3 @@
 #define UC_MAKASAR_VOWEL_SIGN_O                  0x11EF6 0  // 𑻶
 #define UC_MAKASAR_PASSIMBANG                    0x11EF7 0  // 𑻷
 #define UC_MAKASAR_END_OF_SECTION                0x11EF8 0  // 𑻸
-
-#endif // MAKASAR_H

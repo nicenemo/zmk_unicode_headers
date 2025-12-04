@@ -14,8 +14,7 @@
 
 */
 
-#ifndef CAUCASIAN_ALBANIAN_H
-#define CAUCASIAN_ALBANIAN_H
+#pragma once
 
 #define UC_CAUCASIAN_ALBANIAN_ALT                0x10530 0  // 𐔰
 #define UC_CAUCASIAN_ALBANIAN_BET                0x10531 0  // 𐔱
@@ -70,5 +69,3 @@
 #define UC_CAUCASIAN_ALBANIAN_PIWR               0x10562 0  // 𐕢
 #define UC_CAUCASIAN_ALBANIAN_KIW                0x10563 0  // 𐕣
 #define UC_CAUCASIAN_ALBANIAN_CITATION_MARK      0x1056F 0  // 𐕯
-
-#endif // CAUCASIAN_ALBANIAN_H

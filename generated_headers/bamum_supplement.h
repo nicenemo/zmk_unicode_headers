@@ -20,8 +20,7 @@
 
 */
 
-#ifndef BAMUM_SUPPLEMENT_H
-#define BAMUM_SUPPLEMENT_H
+#pragma once
 
 #define UC_BAMUM_PHASE_A_NGKUE_MFON              0x16800 0  // 𖠀
 #define UC_BAMUM_PHASE_A_GBIEE_FON               0x16801 0  // 𖠁
@@ -592,5 +591,3 @@
 #define UC_BAMUM_PHASE_F_KPA                     0x16A36 0  // 𖨶
 #define UC_BAMUM_PHASE_F_SAMBA                   0x16A37 0  // 𖨷
 #define UC_BAMUM_PHASE_F_VUEQ                    0x16A38 0  // 𖨸
-
-#endif // BAMUM_SUPPLEMENT_H

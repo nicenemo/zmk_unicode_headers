@@ -21,8 +21,7 @@
 
 */
 
-#ifndef MISCELLANEOUS_TECHNICAL_H
-#define MISCELLANEOUS_TECHNICAL_H
+#pragma once
 
 #define UC_DIAMETER_SIGN                         0x2300 0  // ⌀
 #define UC_ELECTRIC_ARROW                        0x2301 0  // ⌁
@@ -280,5 +279,3 @@
 #define UC_POWER_ON                              0x23FD 0  // ⏽
 #define UC_POWER_SLEEP                           0x23FE 0  // ⏾
 #define UC_OBSERVER_EYE                          0x23FF 0  // ⏿
-
-#endif // MISCELLANEOUS_TECHNICAL_H

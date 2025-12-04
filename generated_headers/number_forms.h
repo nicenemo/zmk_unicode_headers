@@ -14,8 +14,7 @@
 
 */
 
-#ifndef NUMBER_FORMS_H
-#define NUMBER_FORMS_H
+#pragma once
 
 #define UC_VULGAR_FRACTION_ONE_SEVENTH           0x2150 0  // ⅐
 #define UC_VULGAR_FRACTION_ONE_NINTH             0x2151 0  // ⅑
@@ -76,5 +75,3 @@
 #define UC_VULGAR_FRACTION_ZERO_THIRDS           0x2189 0  // ↉
 #define UC_TURNED_TWO                            0x218A 0  // ↊
 #define UC_TURNED_THREE                          0x218B 0  // ↋
-
-#endif // NUMBER_FORMS_H

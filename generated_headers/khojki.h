@@ -14,8 +14,7 @@
 
 */
 
-#ifndef KHOJKI_H
-#define KHOJKI_H
+#pragma once
 
 #define UC_KHOJKI_A                              0x11200 0  // 𑈀
 #define UC_KHOJKI_AA                             0x11201 0  // 𑈁
@@ -82,5 +81,3 @@
 #define UC_KHOJKI_QA                             0x1123F 0  // 𑈿
 #define UC_KHOJKI_SHORT_I                        0x11240 0  // 𑉀
 #define UC_KHOJKI_VOWEL_SIGN_VOCALIC_R           0x11241 0  // 𑉁
-
-#endif // KHOJKI_H

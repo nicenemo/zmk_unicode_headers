@@ -14,8 +14,7 @@
 
 */
 
-#ifndef LATIN_EXTENDED_E_H
-#define LATIN_EXTENDED_E_H
+#pragma once
 
 #define UC_LTE_SMALL_BARRED_ALPHA                0xAB30 0  // ꬰ
 #define UC_LTE_SMALL_A_REVERSED_SCHWA            0xAB31 0  // ꬱ
@@ -77,5 +76,3 @@
 #define UC_LTE_MODIFIER_SMALL_TURNED_W           0xAB69 0  // ꭩ
 #define UC_LTE_MODIFIER_LEFT_TACK                0xAB6A 0  // ꭪
 #define UC_LTE_MODIFIER_RIGHT_TACK               0xAB6B 0  // ꭫
-
-#endif // LATIN_EXTENDED_E_H

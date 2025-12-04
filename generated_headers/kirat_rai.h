@@ -23,8 +23,7 @@
 
 */
 
-#ifndef KIRAT_RAI_H
-#define KIRAT_RAI_H
+#pragma once
 
 #define UC_KIRAT_RAI_SIGN_ANUSVARA               0x16D40 0  // 𖵀
 #define UC_KIRAT_RAI_SIGN_TONPI                  0x16D41 0  // 𖵁
@@ -84,5 +83,3 @@
 #define UC_KIRAT_RAI_SEVEN                       0x16D77 0  // 𖵷
 #define UC_KIRAT_RAI_EIGHT                       0x16D78 0  // 𖵸
 #define UC_KIRAT_RAI_NINE                        0x16D79 0  // 𖵹
-
-#endif // KIRAT_RAI_H

@@ -16,8 +16,7 @@
 
 */
 
-#ifndef EGYPTIAN_HIEROGLYPHS_H
-#define EGYPTIAN_HIEROGLYPHS_H
+#pragma once
 
 #define UC_EGYPTIAN_HIEROGLYPH_A001              0x13000 0  // 𓀀
 #define UC_EGYPTIAN_HIEROGLYPH_A002              0x13001 0  // 𓀁
@@ -1091,5 +1090,3 @@
 #define UC_EGYPTIAN_HIEROGLYPH_AA031             0x1342D 0  // 𓐭
 #define UC_EGYPTIAN_HIEROGLYPH_AA032             0x1342E 0  // 𓐮
 #define UC_EGYPTIAN_HIEROGLYPH_V011D             0x1342F 0  // 𓐯
-
-#endif // EGYPTIAN_HIEROGLYPHS_H

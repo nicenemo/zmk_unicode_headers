@@ -25,8 +25,7 @@
 
 */
 
-#ifndef OLD_PERSIAN_H
-#define OLD_PERSIAN_H
+#pragma once
 
 #define UC_OLD_PERSIAN_SIGN_A                    0x103A0 0  // 𐎠
 #define UC_OLD_PERSIAN_SIGN_I                    0x103A1 0  // 𐎡
@@ -78,5 +77,3 @@
 #define UC_OLD_PERSIAN_TEN                       0x103D3 0  // 𐏓
 #define UC_OLD_PERSIAN_TWENTY                    0x103D4 0  // 𐏔
 #define UC_OLD_PERSIAN_HUNDRED                   0x103D5 0  // 𐏕
-
-#endif // OLD_PERSIAN_H

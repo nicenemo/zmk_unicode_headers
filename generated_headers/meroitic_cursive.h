@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MEROITIC_CURSIVE_H
-#define MEROITIC_CURSIVE_H
+#pragma once
 
 #define UC_MEROITIC_CURSIVE_A                    0x109A0 0  // 𐦠
 #define UC_MEROITIC_CURSIVE_E                    0x109A1 0  // 𐦡
@@ -107,5 +106,3 @@
 #define UC_MEROITIC_CURSIVE_FRACTION_EIGHT_TWELFTHS 0x109FD 0  // 𐧽
 #define UC_MEROITIC_CURSIVE_FRACTION_NINE_TWELFTHS 0x109FE 0  // 𐧾
 #define UC_MEROITIC_CURSIVE_FRACTION_TEN_TWELFTHS 0x109FF 0  // 𐧿
-
-#endif // MEROITIC_CURSIVE_H

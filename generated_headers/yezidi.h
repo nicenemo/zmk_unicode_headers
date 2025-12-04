@@ -14,8 +14,7 @@
 
 */
 
-#ifndef YEZIDI_H
-#define YEZIDI_H
+#pragma once
 
 #define UC_YEZIDI_ELIF                           0x10E80 0  // 𐺀
 #define UC_YEZIDI_BE                             0x10E81 0  // 𐺁
@@ -64,5 +63,3 @@
 #define UC_YEZIDI_HYPHENATION_MARK               0x10EAD 0  // 𐺭
 #define UC_YEZIDI_LAM_DOT_ABOVE                  0x10EB0 0  // 𐺰
 #define UC_YEZIDI_YOT_CIRCUMFLEX_ABOVE           0x10EB1 0  // 𐺱
-
-#endif // YEZIDI_H

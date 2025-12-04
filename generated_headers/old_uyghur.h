@@ -18,8 +18,7 @@
 
 */
 
-#ifndef OLD_UYGHUR_H
-#define OLD_UYGHUR_H
+#pragma once
 
 #define UC_OLD_UYGHUR_ALEPH                      0x10F70 0  // 𐽰
 #define UC_OLD_UYGHUR_BETH                       0x10F71 0  // 𐽱
@@ -47,5 +46,3 @@
 #define UC_OLD_UYGHUR_PUNCTUATION_TWO_BARS       0x10F87 0  // 𐾇
 #define UC_OLD_UYGHUR_PUNCTUATION_TWO_DOTS       0x10F88 0  // 𐾈
 #define UC_OLD_UYGHUR_PUNCTUATION_FOUR_DOTS      0x10F89 0  // 𐾉
-
-#endif // OLD_UYGHUR_H

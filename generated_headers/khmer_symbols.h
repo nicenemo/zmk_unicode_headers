@@ -20,8 +20,7 @@
 
 */
 
-#ifndef KHMER_SYMBOLS_H
-#define KHMER_SYMBOLS_H
+#pragma once
 
 #define UC_KHMER_PATHAMASAT                      0x19E0 0  // ᧠
 #define UC_KHMER_MUOY_KOET                       0x19E1 0  // ᧡
@@ -55,5 +54,3 @@
 #define UC_KHMER_DAP_BEI_ROC                     0x19FD 0  // ᧽
 #define UC_KHMER_DAP_BUON_ROC                    0x19FE 0  // ᧾
 #define UC_KHMER_DAP_PRAM_ROC                    0x19FF 0  // ᧿
-
-#endif // KHMER_SYMBOLS_H

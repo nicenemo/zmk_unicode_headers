@@ -16,8 +16,7 @@
 
 */
 
-#ifndef DOGRA_H
-#define DOGRA_H
+#pragma once
 
 #define UC_DOGRA_A                               0x11800 0  // 𑠀
 #define UC_DOGRA_AA                              0x11801 0  // 𑠁
@@ -79,5 +78,3 @@
 #define UC_DOGRA_SIGN_VIRAMA                     0x11839 0  // 𑠹
 #define UC_DOGRA_SIGN_NUKTA                      0x1183A 0  // 𑠺
 #define UC_DOGRA_ABBREVIATION_SIGN               0x1183B 0  // 𑠻
-
-#endif // DOGRA_H

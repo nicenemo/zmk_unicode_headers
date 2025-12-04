@@ -22,8 +22,7 @@
 
 */
 
-#ifndef LATIN_EXTENDED_G_H
-#define LATIN_EXTENDED_G_H
+#pragma once
 
 #define UC_SMALL_FENG_DIGRAPH_TRILL              0x1DF00 0  // 𝼀
 #define UC_SMALL_REVERSED_SC_G                   0x1DF01 0  // 𝼁
@@ -62,5 +61,3 @@
 #define UC_SMALL_R_MID_HEIGHT_LEFT_HOOK          0x1DF28 0  // 𝼨
 #define UC_SMALL_S_MID_HEIGHT_LEFT_HOOK          0x1DF29 0  // 𝼩
 #define UC_SMALL_T_MID_HEIGHT_LEFT_HOOK          0x1DF2A 0  // 𝼪
-
-#endif // LATIN_EXTENDED_G_H

@@ -19,8 +19,7 @@
 
 */
 
-#ifndef ETHIOPIC_EXTENDED_H
-#define ETHIOPIC_EXTENDED_H
+#pragma once
 
 #define UC_ETHIOPIC_SYLLABLE_LOA                 0x2D80 0  // ⶀ
 #define UC_ETHIOPIC_SYLLABLE_MOA                 0x2D81 0  // ⶁ
@@ -101,5 +100,3 @@
 #define UC_ETHIOPIC_SYLLABLE_GYEE                0x2DDC 0  // ⷜ
 #define UC_ETHIOPIC_SYLLABLE_GYE                 0x2DDD 0  // ⷝ
 #define UC_ETHIOPIC_SYLLABLE_GYO                 0x2DDE 0  // ⷞ
-
-#endif // ETHIOPIC_EXTENDED_H

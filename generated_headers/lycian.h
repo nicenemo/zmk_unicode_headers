@@ -16,8 +16,7 @@
 
 */
 
-#ifndef LYCIAN_H
-#define LYCIAN_H
+#pragma once
 
 #define UC_LYCIAN_A                              0x10280 0  // 𐊀
 #define UC_LYCIAN_E                              0x10281 0  // 𐊁
@@ -48,5 +47,3 @@
 #define UC_LYCIAN_EN                             0x1029A 0  // 𐊚
 #define UC_LYCIAN_H                              0x1029B 0  // 𐊛
 #define UC_LYCIAN_X                              0x1029C 0  // 𐊜
-
-#endif // LYCIAN_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef RUMI_NUMERAL_SYMBOLS_H
-#define RUMI_NUMERAL_SYMBOLS_H
+#pragma once
 
 #define UC_RUMI_ONE                              0x10E60 0  // 𐹠
 #define UC_RUMI_TWO                              0x10E61 0  // 𐹡
@@ -48,5 +47,3 @@
 #define UC_RUMI_FRACTION_ONE_QUARTER             0x10E7C 0  // 𐹼
 #define UC_RUMI_FRACTION_ONE_THIRD               0x10E7D 0  // 𐹽
 #define UC_RUMI_FRACTION_TWO_THIRDS              0x10E7E 0  // 𐹾
-
-#endif // RUMI_NUMERAL_SYMBOLS_H

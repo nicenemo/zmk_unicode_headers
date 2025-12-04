@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ETHIOPIC_H
-#define ETHIOPIC_H
+#pragma once
 
 #define UC_ETHIOPIC_SYLLABLE_HA                  0x1200 0  // ሀ
 #define UC_ETHIOPIC_SYLLABLE_HU                  0x1201 0  // ሁ
@@ -375,5 +374,3 @@
 #define UC_ETHIOPIC_NINETY                       0x137A 0  // ፺
 #define UC_ETHIOPIC_HUNDRED                      0x137B 0  // ፻
 #define UC_ETHIOPIC_TEN_THOUSAND                 0x137C 0  // ፼
-
-#endif // ETHIOPIC_H

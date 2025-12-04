@@ -20,8 +20,7 @@
 
 */
 
-#ifndef MISCELLANEOUS_SYMBOLS_H
-#define MISCELLANEOUS_SYMBOLS_H
+#pragma once
 
 #define UC_MSY_BLACK_SUN_RAYS                    0x2600 0  // ☀
 #define UC_MSY_CLOUD                             0x2601 0  // ☁
@@ -279,5 +278,3 @@
 #define UC_MSY_FUEL_PUMP                         0x26FD 0  // ⛽
 #define UC_MSY_CUP_ON_BLACK_SQUARE               0x26FE 0  // ⛾
 #define UC_MSY_WHITE_FLAG_HORIZONTAL_MIDDLE_BLACK_STRIPE 0x26FF 0  // ⛿
-
-#endif // MISCELLANEOUS_SYMBOLS_H

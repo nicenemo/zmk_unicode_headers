@@ -18,8 +18,7 @@
 
 */
 
-#ifndef LATIN_EXTENDED_C_H
-#define LATIN_EXTENDED_C_H
+#pragma once
 
 #define UC_LTC_L_DOUBLE_BAR                      0x2C61 0x2C60  // ⱡ/Ⱡ
 #define UC_LTC_CAPITAL_L_MIDDLE_TILDE            0x2C62 0  // Ɫ
@@ -47,5 +46,3 @@
 #define UC_LTC_MODIFIER_CAPITAL_V                0x2C7D 0  // ⱽ
 #define UC_LTC_CAPITAL_S_SWASH_TAIL              0x2C7E 0  // Ȿ
 #define UC_LTC_CAPITAL_Z_SWASH_TAIL              0x2C7F 0  // Ɀ
-
-#endif // LATIN_EXTENDED_C_H

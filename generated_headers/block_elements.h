@@ -20,8 +20,7 @@
 
 */
 
-#ifndef BLOCK_ELEMENTS_H
-#define BLOCK_ELEMENTS_H
+#pragma once
 
 #define UC_BE_UPPER_HALF_BLOCK                   0x2580 0  // ▀
 #define UC_BE_LOWER_ONE_EIGHTH_BLOCK             0x2581 0  // ▁
@@ -55,5 +54,3 @@
 #define UC_BE_QUADRANT_UPPER_RIGHT               0x259D 0  // ▝
 #define UC_BE_QUADRANT_UPPER_RIGHT_AND_LOWER_LEFT 0x259E 0  // ▞
 #define UC_BE_QUADRANT_UPPER_RIGHT_AND_LOWER_LEFT_AND_LOWER_RIGHT 0x259F 0  // ▟
-
-#endif // BLOCK_ELEMENTS_H

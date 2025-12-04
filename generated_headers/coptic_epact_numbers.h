@@ -14,8 +14,7 @@
 
 */
 
-#ifndef COPTIC_EPACT_NUMBERS_H
-#define COPTIC_EPACT_NUMBERS_H
+#pragma once
 
 #define UC_EPACT_THOUSANDS_MARK                  0x102E0 0  // 𐋠
 #define UC_EPACT_ONE                             0x102E1 0  // 𐋡
@@ -45,5 +44,3 @@
 #define UC_EPACT_SEVEN_HUNDRED                   0x102F9 0  // 𐋹
 #define UC_EPACT_EIGHT_HUNDRED                   0x102FA 0  // 𐋺
 #define UC_EPACT_NINE_HUNDRED                    0x102FB 0  // 𐋻
-
-#endif // COPTIC_EPACT_NUMBERS_H

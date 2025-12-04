@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ARABIC_EXTENDED_C_H
-#define ARABIC_EXTENDED_C_H
+#pragma once
 
 #define UC_DAL_TWO_DOTS_VERTICALLY_BELOW         0x10EC2 0  // 𐻂
 #define UC_TAH_TWO_DOTS_VERTICALLY_BELOW         0x10EC3 0  // 𐻃
@@ -38,5 +37,3 @@
 #define UC_SMALL_LOW_WORD_SAKTA                  0x10EFD 0  // 𐻽
 #define UC_SMALL_LOW_WORD_QASR                   0x10EFE 0  // 𐻾
 #define UC_SMALL_LOW_WORD_MADDA                  0x10EFF 0  // 𐻿
-
-#endif // ARABIC_EXTENDED_C_H

@@ -19,8 +19,7 @@
 
 */
 
-#ifndef KATAKANA_PHONETIC_EXTENSIONS_H
-#define KATAKANA_PHONETIC_EXTENSIONS_H
+#pragma once
 
 #define UC_KATAKANA_SMALL_KU                     0x31F0 0  // ㇰ
 #define UC_KATAKANA_SMALL_SI                     0x31F1 0  // ㇱ
@@ -38,5 +37,3 @@
 #define UC_KATAKANA_SMALL_RU                     0x31FD 0  // ㇽ
 #define UC_KATAKANA_SMALL_RE                     0x31FE 0  // ㇾ
 #define UC_KATAKANA_SMALL_RO                     0x31FF 0  // ㇿ
-
-#endif // KATAKANA_PHONETIC_EXTENSIONS_H

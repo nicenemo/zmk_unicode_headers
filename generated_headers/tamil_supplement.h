@@ -19,8 +19,7 @@
 
 */
 
-#ifndef TAMIL_SUPPLEMENT_H
-#define TAMIL_SUPPLEMENT_H
+#pragma once
 
 #define UC_TAMIL_FRACTION_ONE_THREE_HUNDRED_AND_TWENTIETH 0x11FC0 0  // 𑿀
 #define UC_TAMIL_FRACTION_ONE_ONE_HUNDRED_AND_SIXTIETH 0x11FC1 0  // 𑿁
@@ -73,5 +72,3 @@
 #define UC_TAMIL_SIGN_MUTHALIYA                  0x11FF0 0  // 𑿰
 #define UC_TAMIL_SIGN_VAKAIYARAA                 0x11FF1 0  // 𑿱
 #define UC_TAMIL_PUNCTUATION_END_OF_TEXT         0x11FFF 0  // 𑿿
-
-#endif // TAMIL_SUPPLEMENT_H

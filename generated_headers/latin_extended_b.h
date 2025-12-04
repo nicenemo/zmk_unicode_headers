@@ -22,8 +22,7 @@
 
 */
 
-#ifndef LATIN_EXTENDED_B_H
-#define LATIN_EXTENDED_B_H
+#pragma once
 
 #define UC_LTB_B_STROKE                          0x0180 0x0243  // ƀ/Ƀ
 #define UC_LTB_B_TOPBAR                          0x0183 0x0182  // ƃ/Ƃ
@@ -130,5 +129,3 @@
 #define UC_LTB_Q_HOOK_TAIL                       0x024B 0x024A  // ɋ/Ɋ
 #define UC_LTB_R_STROKE                          0x024D 0x024C  // ɍ/Ɍ
 #define UC_LTB_Y_STROKE                          0x024F 0x024E  // ɏ/Ɏ
-
-#endif // LATIN_EXTENDED_B_H

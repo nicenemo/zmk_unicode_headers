@@ -20,8 +20,7 @@
 
 */
 
-#ifndef HIRAGANA_H
-#define HIRAGANA_H
+#pragma once
 
 #define UC_HR_HIRAGANA_SMALL_A                   0x3041 0  // ぁ
 #define UC_HR_HIRAGANA_A                         0x3042 0  // あ
@@ -116,5 +115,3 @@
 #define UC_HR_HIRAGANA_ITERATION_MARK            0x309D 0  // ゝ
 #define UC_HR_HIRAGANA_VOICED_ITERATION_MARK     0x309E 0  // ゞ
 #define UC_HR_HIRAGANA_DIGRAPH_YORI              0x309F 0  // ゟ
-
-#endif // HIRAGANA_H

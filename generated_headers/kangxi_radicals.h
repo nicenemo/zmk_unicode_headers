@@ -34,8 +34,7 @@
 
 */
 
-#ifndef KANGXI_RADICALS_H
-#define KANGXI_RADICALS_H
+#pragma once
 
 #define UC_KANGXI_RADICAL_ONE                    0x2F00 0  // ⼀
 #define UC_KANGXI_RADICAL_LINE                   0x2F01 0  // ⼁
@@ -251,5 +250,3 @@
 #define UC_KANGXI_RADICAL_DRAGON                 0x2FD3 0  // ⿓
 #define UC_KANGXI_RADICAL_TURTLE                 0x2FD4 0  // ⿔
 #define UC_KANGXI_RADICAL_FLUTE                  0x2FD5 0  // ⿕
-
-#endif // KANGXI_RADICALS_H

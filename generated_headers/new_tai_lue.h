@@ -16,8 +16,7 @@
 
 */
 
-#ifndef NEW_TAI_LUE_H
-#define NEW_TAI_LUE_H
+#pragma once
 
 #define UC_NEW_TAI_LUE_HIGH_QA                   0x1980 0  // ᦀ
 #define UC_NEW_TAI_LUE_LOW_QA                    0x1981 0  // ᦁ
@@ -102,5 +101,3 @@
 #define UC_NEW_TAI_LUE_THAM_ONE                  0x19DA 0  // ᧚
 #define UC_NEW_TAI_LUE_SIGN_LAE                  0x19DE 0  // ᧞
 #define UC_NEW_TAI_LUE_SIGN_LAEV                 0x19DF 0  // ᧟
-
-#endif // NEW_TAI_LUE_H

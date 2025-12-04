@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MYANMAR_EXTENDED_A_H
-#define MYANMAR_EXTENDED_A_H
+#pragma once
 
 #define UC_MYANMAR_KHAMTI_GA                     0xAA60 0  // ꩠ
 #define UC_MYANMAR_KHAMTI_CA                     0xAA61 0  // ꩡ
@@ -49,5 +48,3 @@
 #define UC_MYANMAR_SIGN_TAI_LAING_TONE_5         0xAA7D 0  // ꩽ
 #define UC_MYANMAR_SHWE_PALAUNG_CHA              0xAA7E 0  // ꩾ
 #define UC_MYANMAR_SHWE_PALAUNG_SHA              0xAA7F 0  // ꩿ
-
-#endif // MYANMAR_EXTENDED_A_H

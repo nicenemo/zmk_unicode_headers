@@ -20,8 +20,7 @@
 
 */
 
-#ifndef MAHAJANI_H
-#define MAHAJANI_H
+#pragma once
 
 #define UC_MAHAJANI_A                            0x11150 0  // 𑅐
 #define UC_MAHAJANI_I                            0x11151 0  // 𑅑
@@ -62,5 +61,3 @@
 #define UC_MAHAJANI_ABBREVIATION_SIGN            0x11174 0  // 𑅴
 #define UC_MAHAJANI_SECTION_MARK                 0x11175 0  // 𑅵
 #define UC_MAHAJANI_LIGATURE_SHRI                0x11176 0  // 𑅶
-
-#endif // MAHAJANI_H

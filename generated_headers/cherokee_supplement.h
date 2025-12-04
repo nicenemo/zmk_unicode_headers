@@ -26,8 +26,7 @@
 
 */
 
-#ifndef CHEROKEE_SUPPLEMENT_H
-#define CHEROKEE_SUPPLEMENT_H
+#pragma once
 
 #define UC_CHEROKEE_A                            0xAB70 0x13A0  // ꭰ/Ꭰ
 #define UC_CHEROKEE_E                            0xAB71 0x13A1  // ꭱ/Ꭱ
@@ -109,5 +108,3 @@
 #define UC_CHEROKEE_WU                           0xABBD 0x13ED  // ꮽ/Ꮽ
 #define UC_CHEROKEE_WV                           0xABBE 0x13EE  // ꮾ/Ꮾ
 #define UC_CHEROKEE_YA                           0xABBF 0x13EF  // ꮿ/Ꮿ
-
-#endif // CHEROKEE_SUPPLEMENT_H

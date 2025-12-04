@@ -18,8 +18,7 @@
 
 */
 
-#ifndef ANCIENT_SYMBOLS_H
-#define ANCIENT_SYMBOLS_H
+#pragma once
 
 #define UC_ROMAN_SEXTANS_SIGN                    0x10190 0  // 𐆐
 #define UC_ROMAN_UNCIA_SIGN                      0x10191 0  // 𐆑
@@ -35,5 +34,3 @@
 #define UC_ROMAN_CENTURIAL_SIGN                  0x1019B 0  // 𐆛
 #define UC_ASCIA                                 0x1019C 0  // 𐆜
 #define UC_TAU_RHO                               0x101A0 0  // 𐆠
-
-#endif // ANCIENT_SYMBOLS_H

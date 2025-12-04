@@ -24,8 +24,7 @@
 
 */
 
-#ifndef MASARAM_GONDI_H
-#define MASARAM_GONDI_H
+#pragma once
 
 #define UC_MASARAM_GONDI_A                       0x11D00 0  // 𑴀
 #define UC_MASARAM_GONDI_AA                      0x11D01 0  // 𑴁
@@ -102,5 +101,3 @@
 #define UC_MASARAM_GONDI_SEVEN                   0x11D57 0  // 𑵗
 #define UC_MASARAM_GONDI_EIGHT                   0x11D58 0  // 𑵘
 #define UC_MASARAM_GONDI_NINE                    0x11D59 0  // 𑵙
-
-#endif // MASARAM_GONDI_H

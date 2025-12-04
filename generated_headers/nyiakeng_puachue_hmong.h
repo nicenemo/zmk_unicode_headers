@@ -14,8 +14,7 @@
 
 */
 
-#ifndef NYIAKENG_PUACHUE_HMONG_H
-#define NYIAKENG_PUACHUE_HMONG_H
+#pragma once
 
 #define UC_NYIAKENG_PUACHUE_HMONG_MA             0x1E100 0  // 𞄀
 #define UC_NYIAKENG_PUACHUE_HMONG_TSA            0x1E101 0  // 𞄁
@@ -88,5 +87,3 @@
 #define UC_NYIAKENG_PUACHUE_HMONG_NINE           0x1E149 0  // 𞅉
 #define UC_NYIAKENG_PUACHUE_HMONG_LOGOGRAM_NYAJ  0x1E14E 0  // 𞅎
 #define UC_NYIAKENG_PUACHUE_HMONG_C_CA           0x1E14F 0  // 𞅏
-
-#endif // NYIAKENG_PUACHUE_HMONG_H

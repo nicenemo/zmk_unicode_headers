@@ -17,14 +17,13 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 5762
-* Total Significant Hex Values: 5762
+* Total Defined Code Points: 5774
+* Total Significant Hex Values: 5774
 * Status: OK (Counts Match)
 
 */
 
-#ifndef CJK_UNIFIED_IDEOGRAPHS_EXTENSION_E_H
-#define CJK_UNIFIED_IDEOGRAPHS_EXTENSION_E_H
+#pragma once
 
 #define UC_CJK_UNIFIED_IDEOGRAPH_2B820           0x2B820 0  // 𫠠
 #define UC_CJK_UNIFIED_IDEOGRAPH_2B821           0x2B821 0  // 𫠡
@@ -5788,5 +5787,15 @@
 #define UC_CJK_UNIFIED_IDEOGRAPH_2CE9F           0x2CE9F 0  // 𬺟
 #define UC_CJK_UNIFIED_IDEOGRAPH_2CEA0           0x2CEA0 0  // 𬺠
 #define UC_CJK_UNIFIED_IDEOGRAPH_2CEA1           0x2CEA1 0  // 𬺡
-
-#endif // CJK_UNIFIED_IDEOGRAPHS_EXTENSION_E_H
+#define UC_LO_U2CEA2                             0x2CEA2 0  // 𬺢
+#define UC_LO_U2CEA3                             0x2CEA3 0  // 𬺣
+#define UC_LO_U2CEA4                             0x2CEA4 0  // 𬺤
+#define UC_LO_U2CEA5                             0x2CEA5 0  // 𬺥
+#define UC_LO_U2CEA6                             0x2CEA6 0  // 𬺦
+#define UC_LO_U2CEA7                             0x2CEA7 0  // 𬺧
+#define UC_LO_U2CEA8                             0x2CEA8 0  // 𬺨
+#define UC_LO_U2CEA9                             0x2CEA9 0  // 𬺩
+#define UC_LO_U2CEAA                             0x2CEAA 0  // 𬺪
+#define UC_LO_U2CEAB                             0x2CEAB 0  // 𬺫
+#define UC_LO_U2CEAC                             0x2CEAC 0  // 𬺬
+#define UC_LO_U2CEAD                             0x2CEAD 0  // 𬺭

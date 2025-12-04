@@ -16,8 +16,7 @@
 
 */
 
-#ifndef KAWI_H
-#define KAWI_H
+#pragma once
 
 #define UC_KAWI_SIGN_CANDRABINDU                 0x11F00 0  // 𑼀
 #define UC_KAWI_SIGN_ANUSVARA                    0x11F01 0  // 𑼁
@@ -106,5 +105,3 @@
 #define UC_KAWI_EIGHT                            0x11F58 0  // 𑽘
 #define UC_KAWI_NINE                             0x11F59 0  // 𑽙
 #define UC_KAWI_SIGN_NUKTA                       0x11F5A 0  // 𑽚
-
-#endif // KAWI_H

@@ -16,8 +16,7 @@
 
 */
 
-#ifndef MANDAIC_H
-#define MANDAIC_H
+#pragma once
 
 #define UC_MANDAIC_HALQA                         0x0840 0  // ࡀ
 #define UC_MANDAIC_AB                            0x0841 0  // ࡁ
@@ -48,5 +47,3 @@
 #define UC_MANDAIC_VOCALIZATION_MARK             0x085A 0  // ࡚
 #define UC_MANDAIC_GEMINATION_MARK               0x085B 0  // ࡛
 #define UC_MANDAIC_PUNCTUATION                   0x085E 0  // ࡞
-
-#endif // MANDAIC_H

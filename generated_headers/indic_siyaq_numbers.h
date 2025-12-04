@@ -14,8 +14,7 @@
 
 */
 
-#ifndef INDIC_SIYAQ_NUMBERS_H
-#define INDIC_SIYAQ_NUMBERS_H
+#pragma once
 
 #define UC_INDIC_SIYAQ_ONE                       0x1EC71 0  // 𞱱
 #define UC_INDIC_SIYAQ_TWO                       0x1EC72 0  // 𞱲
@@ -85,5 +84,3 @@
 #define UC_INDIC_SIYAQ_ALTERNATE_TWO             0x1ECB2 0  // 𞲲
 #define UC_INDIC_SIYAQ_ALTERNATE_TEN_THOUSAND    0x1ECB3 0  // 𞲳
 #define UC_INDIC_SIYAQ_ALTERNATE_LAKH_MARK       0x1ECB4 0  // 𞲴
-
-#endif // INDIC_SIYAQ_NUMBERS_H

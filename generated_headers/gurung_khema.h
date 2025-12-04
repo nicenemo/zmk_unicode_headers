@@ -18,8 +18,7 @@
 
 */
 
-#ifndef GURUNG_KHEMA_H
-#define GURUNG_KHEMA_H
+#pragma once
 
 #define UC_GURUNG_KHEMA_A                        0x16100 0  // 𖄀
 #define UC_GURUNG_KHEMA_KA                       0x16101 0  // 𖄁
@@ -79,5 +78,3 @@
 #define UC_GURUNG_KHEMA_SEVEN                    0x16137 0  // 𖄷
 #define UC_GURUNG_KHEMA_EIGHT                    0x16138 0  // 𖄸
 #define UC_GURUNG_KHEMA_NINE                     0x16139 0  // 𖄹
-
-#endif // GURUNG_KHEMA_H

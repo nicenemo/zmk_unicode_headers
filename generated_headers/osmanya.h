@@ -23,8 +23,7 @@
 
 */
 
-#ifndef OSMANYA_H
-#define OSMANYA_H
+#pragma once
 
 #define UC_OSMANYA_ALEF                          0x10480 0  // 𐒀
 #define UC_OSMANYA_BA                            0x10481 0  // 𐒁
@@ -66,5 +65,3 @@
 #define UC_OSMANYA_SEVEN                         0x104A7 0  // 𐒧
 #define UC_OSMANYA_EIGHT                         0x104A8 0  // 𐒨
 #define UC_OSMANYA_NINE                          0x104A9 0  // 𐒩
-
-#endif // OSMANYA_H

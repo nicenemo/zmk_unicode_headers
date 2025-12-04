@@ -28,8 +28,7 @@
 
 */
 
-#ifndef COUNTING_ROD_NUMERALS_H
-#define COUNTING_ROD_NUMERALS_H
+#pragma once
 
 #define UC_COUNTING_ROD_UNIT_ONE                 0x1D360 0  // 𝍠
 #define UC_COUNTING_ROD_UNIT_TWO                 0x1D361 0  // 𝍡
@@ -56,5 +55,3 @@
 #define UC_IDEOGRAPHIC_TALLY_MARK_FIVE           0x1D376 0  // 𝍶
 #define UC_TALLY_MARK_ONE                        0x1D377 0  // 𝍷
 #define UC_TALLY_MARK_FIVE                       0x1D378 0  // 𝍸
-
-#endif // COUNTING_ROD_NUMERALS_H

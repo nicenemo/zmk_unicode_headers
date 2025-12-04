@@ -16,8 +16,7 @@
 
 */
 
-#ifndef MULTANI_H
-#define MULTANI_H
+#pragma once
 
 #define UC_MULTANI_A                             0x11280 0  // 𑊀
 #define UC_MULTANI_I                             0x11281 0  // 𑊁
@@ -57,5 +56,3 @@
 #define UC_MULTANI_RRA                           0x112A7 0  // 𑊧
 #define UC_MULTANI_RHA                           0x112A8 0  // 𑊨
 #define UC_MULTANI_SECTION_MARK                  0x112A9 0  // 𑊩
-
-#endif // MULTANI_H

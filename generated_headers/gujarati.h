@@ -16,8 +16,7 @@
 
 */
 
-#ifndef GUJARATI_H
-#define GUJARATI_H
+#pragma once
 
 #define UC_GJ_GUJARATI_SIGN_CANDRABINDU          0x0A81 0  // ઁ
 #define UC_GJ_GUJARATI_SIGN_ANUSVARA             0x0A82 0  // ં
@@ -110,5 +109,3 @@
 #define UC_GJ_GUJARATI_SIGN_THREE_DOT_NUKTA_ABOVE 0x0AFD 0  // ૽
 #define UC_GJ_GUJARATI_SIGN_CIRCLE_NUKTA_ABOVE   0x0AFE 0  // ૾
 #define UC_GJ_GUJARATI_SIGN_TWO_CIRCLE_NUKTA_ABOVE 0x0AFF 0  // ૿
-
-#endif // GUJARATI_H

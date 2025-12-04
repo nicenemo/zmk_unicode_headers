@@ -17,8 +17,7 @@
 
 */
 
-#ifndef SOYOMBO_H
-#define SOYOMBO_H
+#pragma once
 
 #define UC_SOYOMBO_A                             0x11A50 0  // 𑩐
 #define UC_SOYOMBO_VOWEL_SIGN_I                  0x11A51 0  // 𑩑
@@ -103,5 +102,3 @@
 #define UC_SOYOMBO_HEAD_MARK_MOON_AND_SUN        0x11AA0 0  // 𑪠
 #define UC_SOYOMBO_TERMINAL_MARK_1               0x11AA1 0  // 𑪡
 #define UC_SOYOMBO_TERMINAL_MARK_2               0x11AA2 0  // 𑪢
-
-#endif // SOYOMBO_H

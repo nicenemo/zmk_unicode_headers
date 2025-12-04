@@ -22,8 +22,7 @@
 
 */
 
-#ifndef HALFWIDTH_AND_FULLWIDTH_FORMS_H
-#define HALFWIDTH_AND_FULLWIDTH_FORMS_H
+#pragma once
 
 #define UC_FW_EXCLAMATION_MARK                   0xFF01 0  // ！
 #define UC_FW_QUOTATION_MARK                     0xFF02 0  // ＂
@@ -224,5 +223,3 @@
 #define UC_HALFWIDTH_DOWNWARDS_ARROW             0xFFEC 0  // ￬
 #define UC_HALFWIDTH_BLACK_SQUARE                0xFFED 0  // ￭
 #define UC_HALFWIDTH_WHITE_CIRCLE                0xFFEE 0  // ￮
-
-#endif // HALFWIDTH_AND_FULLWIDTH_FORMS_H

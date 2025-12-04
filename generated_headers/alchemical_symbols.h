@@ -22,8 +22,7 @@
 
 */
 
-#ifndef ALCHEMICAL_SYMBOLS_H
-#define ALCHEMICAL_SYMBOLS_H
+#pragma once
 
 #define UC_ALCHEMICAL_FOR_QUINTESSENCE           0x1F700 0  // 🜀
 #define UC_ALCHEMICAL_FOR_AIR                    0x1F701 0  // 🜁
@@ -153,5 +152,3 @@
 #define UC_GONGGONG                              0x1F77D 0  // 🝽
 #define UC_QUAOAR                                0x1F77E 0  // 🝾
 #define UC_ORCUS                                 0x1F77F 0  // 🝿
-
-#endif // ALCHEMICAL_SYMBOLS_H

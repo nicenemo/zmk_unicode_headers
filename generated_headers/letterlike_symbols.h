@@ -20,8 +20,7 @@
 
 */
 
-#ifndef LETTERLIKE_SYMBOLS_H
-#define LETTERLIKE_SYMBOLS_H
+#pragma once
 
 #define UC_LS_ACCOUNT_OF                         0x2100 0  // ℀
 #define UC_LS_ADDRESSED_TO_THE_SUBJECT           0x2101 0  // ℁
@@ -102,5 +101,3 @@
 #define UC_LS_AKTIESELSKAB                       0x214D 0  // ⅍
 #define UC_LS_TURNED_F                           0x214E 0x2132  // ⅎ/Ⅎ
 #define UC_LS_FOR_SAMARITAN_SOURCE               0x214F 0  // ⅏
-
-#endif // LETTERLIKE_SYMBOLS_H

@@ -16,8 +16,7 @@
 
 */
 
-#ifndef SIDDHAM_H
-#define SIDDHAM_H
+#pragma once
 
 #define UC_SIDDHAM_A                             0x11580 0  // 𑖀
 #define UC_SIDDHAM_AA                            0x11581 0  // 𑖁
@@ -111,5 +110,3 @@
 #define UC_SIDDHAM_ALTERNATE_U                   0x115DB 0  // 𑗛
 #define UC_SIDDHAM_VOWEL_SIGN_ALTERNATE_U        0x115DC 0  // 𑗜
 #define UC_SIDDHAM_VOWEL_SIGN_ALTERNATE_UU       0x115DD 0  // 𑗝
-
-#endif // SIDDHAM_H

@@ -23,8 +23,7 @@
 
 */
 
-#ifndef BHAIKSUKI_H
-#define BHAIKSUKI_H
+#pragma once
 
 #define UC_BHAIKSUKI_A                           0x11C00 0  // 𑰀
 #define UC_BHAIKSUKI_AA                          0x11C01 0  // 𑰁
@@ -123,5 +122,3 @@
 #define UC_BHAIKSUKI_EIGHTY                      0x11C6A 0  // 𑱪
 #define UC_BHAIKSUKI_NINETY                      0x11C6B 0  // 𑱫
 #define UC_BHAIKSUKI_HUNDREDS_UNIT_MARK          0x11C6C 0  // 𑱬
-
-#endif // BHAIKSUKI_H

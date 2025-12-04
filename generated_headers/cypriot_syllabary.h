@@ -24,8 +24,7 @@
 
 */
 
-#ifndef CYPRIOT_SYLLABARY_H
-#define CYPRIOT_SYLLABARY_H
+#pragma once
 
 #define UC_CYPRIOT_SYLLABLE_A                    0x10800 0  // 𐠀
 #define UC_CYPRIOT_SYLLABLE_E                    0x10801 0  // 𐠁
@@ -82,5 +81,3 @@
 #define UC_CYPRIOT_SYLLABLE_XE                   0x10838 0  // 𐠸
 #define UC_CYPRIOT_SYLLABLE_ZA                   0x1083C 0  // 𐠼
 #define UC_CYPRIOT_SYLLABLE_ZO                   0x1083F 0  // 𐠿
-
-#endif // CYPRIOT_SYLLABARY_H

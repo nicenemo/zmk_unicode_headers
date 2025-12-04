@@ -16,8 +16,7 @@
 
 */
 
-#ifndef KHMER_H
-#define KHMER_H
+#pragma once
 
 #define UC_KHMER_KA                              0x1780 0  // ក
 #define UC_KHMER_KHA                             0x1781 0  // ខ
@@ -133,5 +132,3 @@
 #define UC_KHMER_LEK_ATTAK_PRAM_PII              0x17F7 0  // ៷
 #define UC_KHMER_LEK_ATTAK_PRAM_BEI              0x17F8 0  // ៸
 #define UC_KHMER_LEK_ATTAK_PRAM_BUON             0x17F9 0  // ៹
-
-#endif // KHMER_H

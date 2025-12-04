@@ -20,8 +20,7 @@
 
 */
 
-#ifndef CYRILLIC_SUPPLEMENT_H
-#define CYRILLIC_SUPPLEMENT_H
+#pragma once
 
 #define UC_CYS_KOMI_DE                           0x0501 0x0500  // ԁ/Ԁ
 #define UC_CYS_KOMI_DJE                          0x0503 0x0502  // ԃ/Ԃ
@@ -47,5 +46,3 @@
 #define UC_CYS_DZZHE                             0x052B 0x052A  // ԫ/Ԫ
 #define UC_CYS_DCHE                              0x052D 0x052C  // ԭ/Ԭ
 #define UC_CYS_EL_DESCENDER                      0x052F 0x052E  // ԯ/Ԯ
-
-#endif // CYRILLIC_SUPPLEMENT_H

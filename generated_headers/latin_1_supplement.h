@@ -8,16 +8,47 @@
 
 
 * Consistency Check:
-* Total Defined Code Points: 98
-* Total Significant Hex Values: 98
+* Total Defined Code Points: 130
+* Total Significant Hex Values: 130
 * Status: OK (Counts Match)
 
 */
 
-#ifndef LATIN_1_SUPPLEMENT_H
-#define LATIN_1_SUPPLEMENT_H
+#pragma once
 
-#define UC_L1S_NO_BREAK_SPACE                    0x00A0 0  //  
+#define UC_L1S_CC_U0080                          0x0080 0  /* U+0080 (Cc_U0080) */
+#define UC_L1S_CC_U0081                          0x0081 0  /* U+0081 (Cc_U0081) */
+#define UC_L1S_CC_U0082                          0x0082 0  /* U+0082 (Cc_U0082) */
+#define UC_L1S_CC_U0083                          0x0083 0  /* U+0083 (Cc_U0083) */
+#define UC_L1S_CC_U0084                          0x0084 0  /* U+0084 (Cc_U0084) */
+#define UC_L1S_CC_U0085                          0x0085 0  /* U+0085 (Cc_U0085) */
+#define UC_L1S_CC_U0086                          0x0086 0  /* U+0086 (Cc_U0086) */
+#define UC_L1S_CC_U0087                          0x0087 0  /* U+0087 (Cc_U0087) */
+#define UC_L1S_CC_U0088                          0x0088 0  /* U+0088 (Cc_U0088) */
+#define UC_L1S_CC_U0089                          0x0089 0  /* U+0089 (Cc_U0089) */
+#define UC_L1S_CC_U008A                          0x008A 0  /* U+008A (Cc_U008A) */
+#define UC_L1S_CC_U008B                          0x008B 0  /* U+008B (Cc_U008B) */
+#define UC_L1S_CC_U008C                          0x008C 0  /* U+008C (Cc_U008C) */
+#define UC_L1S_CC_U008D                          0x008D 0  /* U+008D (Cc_U008D) */
+#define UC_L1S_CC_U008E                          0x008E 0  /* U+008E (Cc_U008E) */
+#define UC_L1S_CC_U008F                          0x008F 0  /* U+008F (Cc_U008F) */
+#define UC_L1S_CC_U0090                          0x0090 0  /* U+0090 (Cc_U0090) */
+#define UC_L1S_CC_U0091                          0x0091 0  /* U+0091 (Cc_U0091) */
+#define UC_L1S_CC_U0092                          0x0092 0  /* U+0092 (Cc_U0092) */
+#define UC_L1S_CC_U0093                          0x0093 0  /* U+0093 (Cc_U0093) */
+#define UC_L1S_CC_U0094                          0x0094 0  /* U+0094 (Cc_U0094) */
+#define UC_L1S_CC_U0095                          0x0095 0  /* U+0095 (Cc_U0095) */
+#define UC_L1S_CC_U0096                          0x0096 0  /* U+0096 (Cc_U0096) */
+#define UC_L1S_CC_U0097                          0x0097 0  /* U+0097 (Cc_U0097) */
+#define UC_L1S_CC_U0098                          0x0098 0  /* U+0098 (Cc_U0098) */
+#define UC_L1S_CC_U0099                          0x0099 0  /* U+0099 (Cc_U0099) */
+#define UC_L1S_CC_U009A                          0x009A 0  /* U+009A (Cc_U009A) */
+#define UC_L1S_CC_U009B                          0x009B 0  /* U+009B (Cc_U009B) */
+#define UC_L1S_CC_U009C                          0x009C 0  /* U+009C (Cc_U009C) */
+#define UC_L1S_CC_U009D                          0x009D 0  /* U+009D (Cc_U009D) */
+#define UC_L1S_CC_U009E                          0x009E 0  /* U+009E (Cc_U009E) */
+#define UC_L1S_CC_U009F                          0x009F 0  /* U+009F (Cc_U009F) */
+#define UC_L1S_NO_BREAK_SPACE                    0x00A0 0  /* U+00A0 (NO-BREAK SPACE) */
 #define UC_L1S_INVERTED_EXCLAMATION_MARK         0x00A1 0  // ¡
 #define UC_L1S_CENT_SIGN                         0x00A2 0  // ¢
 #define UC_L1S_POUND_SIGN                        0x00A3 0  // £
@@ -30,7 +61,7 @@
 #define UC_L1S_FEMININE_ORDINAL_INDICATOR        0x00AA 0  // ª
 #define UC_L1S_LEFT_POINTING_DOUBLE_ANGLE_QUOTATION_MARK 0x00AB 0  // «
 #define UC_L1S_NOT_SIGN                          0x00AC 0  // ¬
-#define UC_L1S_SOFT_HYPHEN                       0x00AD 0  // ­
+#define UC_L1S_SOFT_HYPHEN                       0x00AD 0  /* U+00AD (SOFT HYPHEN) */
 #define UC_L1S_REGISTERED_SIGN                   0x00AE 0  // ®
 #define UC_L1S_MACRON                            0x00AF 0  // ¯
 #define UC_L1S_DEGREE_SIGN                       0x00B0 0  // °
@@ -83,5 +114,3 @@
 #define UC_L1S_Y_ACUTE                           0x00FD 0x00DD  // ý/Ý
 #define UC_L1S_THORN                             0x00FE 0x00DE  // þ/Þ
 #define UC_L1S_Y_DIAERESIS                       0x00FF 0x0178  // ÿ/Ÿ
-
-#endif // LATIN_1_SUPPLEMENT_H

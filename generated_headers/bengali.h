@@ -16,8 +16,7 @@
 
 */
 
-#ifndef BENGALI_H
-#define BENGALI_H
+#pragma once
 
 #define UC_BN_BENGALI_ANJI                       0x0980 0  // ঀ
 #define UC_BN_BENGALI_SIGN_CANDRABINDU           0x0981 0  // ঁ
@@ -115,5 +114,3 @@
 #define UC_BN_BENGALI_VEDIC_ANUSVARA             0x09FC 0  // ৼ
 #define UC_BN_BENGALI_ABBREVIATION_SIGN          0x09FD 0  // ৽
 #define UC_BN_BENGALI_SANDHI_MARK                0x09FE 0  // ৾
-
-#endif // BENGALI_H

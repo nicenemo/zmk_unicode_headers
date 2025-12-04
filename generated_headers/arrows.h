@@ -17,8 +17,7 @@
 
 */
 
-#ifndef ARROWS_H
-#define ARROWS_H
+#pragma once
 
 #define UC_ARW_LEFTWARDS_ARROW                   0x2190 0  // ←
 #define UC_ARW_UPWARDS_ARROW                     0x2191 0  // ↑
@@ -132,5 +131,3 @@
 #define UC_ARW_LEFTWARDS_OPEN_HEADED_ARROW       0x21FD 0  // ⇽
 #define UC_ARW_RIGHTWARDS_OPEN_HEADED_ARROW      0x21FE 0  // ⇾
 #define UC_ARW_LEFT_RIGHT_OPEN_HEADED_ARROW      0x21FF 0  // ⇿
-
-#endif // ARROWS_H

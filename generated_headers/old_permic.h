@@ -14,8 +14,7 @@
 
 */
 
-#ifndef OLD_PERMIC_H
-#define OLD_PERMIC_H
+#pragma once
 
 #define UC_OLD_PERMIC_AN                         0x10350 0  // 𐍐
 #define UC_OLD_PERMIC_BUR                        0x10351 0  // 𐍑
@@ -60,5 +59,3 @@
 #define UC_COMBINING_OLD_PERMIC_ZATA             0x10378 0  // 𐍸
 #define UC_COMBINING_OLD_PERMIC_NENOE            0x10379 0  // 𐍹
 #define UC_COMBINING_OLD_PERMIC_SII              0x1037A 0  // 𐍺
-
-#endif // OLD_PERMIC_H

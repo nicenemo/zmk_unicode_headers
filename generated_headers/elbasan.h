@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ELBASAN_H
-#define ELBASAN_H
+#pragma once
 
 #define UC_ELBASAN_A                             0x10500 0  // 𐔀
 #define UC_ELBASAN_BE                            0x10501 0  // 𐔁
@@ -57,5 +56,3 @@
 #define UC_ELBASAN_GHE                           0x10525 0  // 𐔥
 #define UC_ELBASAN_GHAMMA                        0x10526 0  // 𐔦
 #define UC_ELBASAN_KHE                           0x10527 0  // 𐔧
-
-#endif // ELBASAN_H

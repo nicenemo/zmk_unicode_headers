@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ENCLOSED_CJK_LETTERS_AND_MONTHS_H
-#define ENCLOSED_CJK_LETTERS_AND_MONTHS_H
+#pragma once
 
 #define UC_P_HANGUL_KIYEOK                       0x3200 0  // ㈀
 #define UC_P_HANGUL_NIEUN                        0x3201 0  // ㈁
@@ -272,5 +271,3 @@
 #define UC_C_KATAKANA_WE                         0x32FD 0  // ㋽
 #define UC_C_KATAKANA_WO                         0x32FE 0  // ㋾
 #define UC_SQUARE_ERA_NAME_REIWA                 0x32FF 0  // ㋿
-
-#endif // ENCLOSED_CJK_LETTERS_AND_MONTHS_H

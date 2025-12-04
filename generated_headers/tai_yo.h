@@ -25,8 +25,7 @@
 
 */
 
-#ifndef TAI_YO_H
-#define TAI_YO_H
+#pragma once
 
 #define UC_TAI_YO_LOW_KO                         0x1E6C0 0  // 𞛀
 #define UC_TAI_YO_HIGH_KO                        0x1E6C1 0  // 𞛁
@@ -83,5 +82,3 @@
 #define UC_TAI_YO_SIGN_OM                        0x1E6F5 0  // 𞛵
 #define UC_TAI_YO_MUEANG                         0x1E6FE 0  // 𞛾
 #define UC_TAI_YO_XAM_LAI                        0x1E6FF 0  // 𞛿
-
-#endif // TAI_YO_H

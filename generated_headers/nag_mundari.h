@@ -25,8 +25,7 @@
 
 */
 
-#ifndef NAG_MUNDARI_H
-#define NAG_MUNDARI_H
+#pragma once
 
 #define UC_NAG_MUNDARI_O                         0x1E4D0 0  // 𞓐
 #define UC_NAG_MUNDARI_OP                        0x1E4D1 0  // 𞓑
@@ -70,5 +69,3 @@
 #define UC_NAG_MUNDARI_SEVEN                     0x1E4F7 0  // 𞓷
 #define UC_NAG_MUNDARI_EIGHT                     0x1E4F8 0  // 𞓸
 #define UC_NAG_MUNDARI_NINE                      0x1E4F9 0  // 𞓹
-
-#endif // NAG_MUNDARI_H

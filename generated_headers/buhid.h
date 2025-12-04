@@ -16,8 +16,7 @@
 
 */
 
-#ifndef BUHID_H
-#define BUHID_H
+#pragma once
 
 #define UC_BUHID_A                               0x1740 0  // ᝀ
 #define UC_BUHID_I                               0x1741 0  // ᝁ
@@ -39,5 +38,3 @@
 #define UC_BUHID_HA                              0x1751 0  // ᝑ
 #define UC_BUHID_VOWEL_SIGN_I                    0x1752 0  // ᝒ
 #define UC_BUHID_VOWEL_SIGN_U                    0x1753 0  // ᝓ
-
-#endif // BUHID_H

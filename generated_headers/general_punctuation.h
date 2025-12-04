@@ -22,25 +22,24 @@
 
 */
 
-#ifndef GENERAL_PUNCTUATION_H
-#define GENERAL_PUNCTUATION_H
+#pragma once
 
-#define UC_PUN_EN_QUAD                           0x2000 0  //  
-#define UC_PUN_EM_QUAD                           0x2001 0  //  
-#define UC_PUN_EN_SPACE                          0x2002 0  //  
-#define UC_PUN_EM_SPACE                          0x2003 0  //  
-#define UC_PUN_THREE_PER_EM_SPACE                0x2004 0  //  
-#define UC_PUN_FOUR_PER_EM_SPACE                 0x2005 0  //  
-#define UC_PUN_SIX_PER_EM_SPACE                  0x2006 0  //  
-#define UC_PUN_FIGURE_SPACE                      0x2007 0  //  
-#define UC_PUN_PUNCTUATION_SPACE                 0x2008 0  //  
-#define UC_PUN_THIN_SPACE                        0x2009 0  //  
-#define UC_PUN_HAIR_SPACE                        0x200A 0  //  
-#define UC_PUN_ZERO_WIDTH_SPACE                  0x200B 0  // ​
-#define UC_PUN_ZERO_WIDTH_NON_JOINER             0x200C 0  // ‌
-#define UC_PUN_ZERO_WIDTH_JOINER                 0x200D 0  // ‍
-#define UC_PUN_LEFT_TO_RIGHT_MARK                0x200E 0  // ‎
-#define UC_PUN_RIGHT_TO_LEFT_MARK                0x200F 0  // ‏
+#define UC_PUN_EN_QUAD                           0x2000 0  /* U+2000 (EN QUAD) */
+#define UC_PUN_EM_QUAD                           0x2001 0  /* U+2001 (EM QUAD) */
+#define UC_PUN_EN_SPACE                          0x2002 0  /* U+2002 (EN SPACE) */
+#define UC_PUN_EM_SPACE                          0x2003 0  /* U+2003 (EM SPACE) */
+#define UC_PUN_THREE_PER_EM_SPACE                0x2004 0  /* U+2004 (THREE-PER-EM SPACE) */
+#define UC_PUN_FOUR_PER_EM_SPACE                 0x2005 0  /* U+2005 (FOUR-PER-EM SPACE) */
+#define UC_PUN_SIX_PER_EM_SPACE                  0x2006 0  /* U+2006 (SIX-PER-EM SPACE) */
+#define UC_PUN_FIGURE_SPACE                      0x2007 0  /* U+2007 (FIGURE SPACE) */
+#define UC_PUN_PUNCTUATION_SPACE                 0x2008 0  /* U+2008 (PUNCTUATION SPACE) */
+#define UC_PUN_THIN_SPACE                        0x2009 0  /* U+2009 (THIN SPACE) */
+#define UC_PUN_HAIR_SPACE                        0x200A 0  /* U+200A (HAIR SPACE) */
+#define UC_PUN_ZERO_WIDTH_SPACE                  0x200B 0  /* U+200B (ZERO WIDTH SPACE) */
+#define UC_PUN_ZERO_WIDTH_NON_JOINER             0x200C 0  /* U+200C (ZERO WIDTH NON-JOINER) */
+#define UC_PUN_ZERO_WIDTH_JOINER                 0x200D 0  /* U+200D (ZERO WIDTH JOINER) */
+#define UC_PUN_LEFT_TO_RIGHT_MARK                0x200E 0  /* U+200E (LEFT-TO-RIGHT MARK) */
+#define UC_PUN_RIGHT_TO_LEFT_MARK                0x200F 0  /* U+200F (RIGHT-TO-LEFT MARK) */
 #define UC_PUN_HYPHEN                            0x2010 0  // ‐
 #define UC_PUN_NON_BREAKING_HYPHEN               0x2011 0  // ‑
 #define UC_PUN_FIGURE_DASH                       0x2012 0  // ‒
@@ -65,12 +64,12 @@
 #define UC_PUN_TWO_DOT_LEADER                    0x2025 0  // ‥
 #define UC_PUN_HORIZONTAL_ELLIPSIS               0x2026 0  // …
 #define UC_PUN_HYPHENATION_POINT                 0x2027 0  // ‧
-#define UC_PUN_LEFT_TO_RIGHT_EMBEDDING           0x202A 0  // ‪
-#define UC_PUN_RIGHT_TO_LEFT_EMBEDDING           0x202B 0  // ‫
-#define UC_PUN_POP_DIRECTIONAL_FORMATTING        0x202C 0  // ‬
-#define UC_PUN_LEFT_TO_RIGHT_OVERRIDE            0x202D 0  // ‭
-#define UC_PUN_RIGHT_TO_LEFT_OVERRIDE            0x202E 0  // ‮
-#define UC_PUN_NARROW_NO_BREAK_SPACE             0x202F 0  //  
+#define UC_PUN_LEFT_TO_RIGHT_EMBEDDING           0x202A 0  /* U+202A (LEFT-TO-RIGHT EMBEDDING) */
+#define UC_PUN_RIGHT_TO_LEFT_EMBEDDING           0x202B 0  /* U+202B (RIGHT-TO-LEFT EMBEDDING) */
+#define UC_PUN_POP_DIRECTIONAL_FORMATTING        0x202C 0  /* U+202C (POP DIRECTIONAL FORMATTING) */
+#define UC_PUN_LEFT_TO_RIGHT_OVERRIDE            0x202D 0  /* U+202D (LEFT-TO-RIGHT OVERRIDE) */
+#define UC_PUN_RIGHT_TO_LEFT_OVERRIDE            0x202E 0  /* U+202E (RIGHT-TO-LEFT OVERRIDE) */
+#define UC_PUN_NARROW_NO_BREAK_SPACE             0x202F 0  /* U+202F (NARROW NO-BREAK SPACE) */
 #define UC_PUN_PER_MILLE_SIGN                    0x2030 0  // ‰
 #define UC_PUN_PER_TEN_THOUSAND_SIGN             0x2031 0  // ‱
 #define UC_PUN_PRIME                             0x2032 0  // ′
@@ -118,21 +117,19 @@
 #define UC_PUN_DOTTED_CROSS                      0x205C 0  // ⁜
 #define UC_PUN_TRICOLON                          0x205D 0  // ⁝
 #define UC_PUN_VERTICAL_FOUR_DOTS                0x205E 0  // ⁞
-#define UC_PUN_MEDIUM_SPACE                      0x205F 0  //  
-#define UC_PUN_WORD_JOINER                       0x2060 0  // ⁠
-#define UC_PUN_FUNCTION_APPLICATION              0x2061 0  // ⁡
-#define UC_PUN_INVISIBLE_TIMES                   0x2062 0  // ⁢
-#define UC_PUN_INVISIBLE_SEPARATOR               0x2063 0  // ⁣
-#define UC_PUN_INVISIBLE_PLUS                    0x2064 0  // ⁤
-#define UC_PUN_LEFT_TO_RIGHT_ISOLATE             0x2066 0  // ⁦
-#define UC_PUN_RIGHT_TO_LEFT_ISOLATE             0x2067 0  // ⁧
-#define UC_PUN_FIRST_STRONG_ISOLATE              0x2068 0  // ⁨
-#define UC_PUN_POP_DIRECTIONAL_ISOLATE           0x2069 0  // ⁩
-#define UC_PUN_INHIBIT_SYMMETRIC_SWAPPING        0x206A 0  // ⁪
-#define UC_PUN_ACTIVATE_SYMMETRIC_SWAPPING       0x206B 0  // ⁫
-#define UC_PUN_INHIBIT_FORM_SHAPING              0x206C 0  // ⁬
-#define UC_PUN_ACTIVATE_FORM_SHAPING             0x206D 0  // ⁭
-#define UC_PUN_NATIONAL_SHAPES                   0x206E 0  // ⁮
-#define UC_PUN_NOMINAL_SHAPES                    0x206F 0  // ⁯
-
-#endif // GENERAL_PUNCTUATION_H
+#define UC_PUN_MEDIUM_SPACE                      0x205F 0  /* U+205F (MEDIUM MATHEMATICAL SPACE) */
+#define UC_PUN_WORD_JOINER                       0x2060 0  /* U+2060 (WORD JOINER) */
+#define UC_PUN_FUNCTION_APPLICATION              0x2061 0  /* U+2061 (FUNCTION APPLICATION) */
+#define UC_PUN_INVISIBLE_TIMES                   0x2062 0  /* U+2062 (INVISIBLE TIMES) */
+#define UC_PUN_INVISIBLE_SEPARATOR               0x2063 0  /* U+2063 (INVISIBLE SEPARATOR) */
+#define UC_PUN_INVISIBLE_PLUS                    0x2064 0  /* U+2064 (INVISIBLE PLUS) */
+#define UC_PUN_LEFT_TO_RIGHT_ISOLATE             0x2066 0  /* U+2066 (LEFT-TO-RIGHT ISOLATE) */
+#define UC_PUN_RIGHT_TO_LEFT_ISOLATE             0x2067 0  /* U+2067 (RIGHT-TO-LEFT ISOLATE) */
+#define UC_PUN_FIRST_STRONG_ISOLATE              0x2068 0  /* U+2068 (FIRST STRONG ISOLATE) */
+#define UC_PUN_POP_DIRECTIONAL_ISOLATE           0x2069 0  /* U+2069 (POP DIRECTIONAL ISOLATE) */
+#define UC_PUN_INHIBIT_SYMMETRIC_SWAPPING        0x206A 0  /* U+206A (INHIBIT SYMMETRIC SWAPPING) */
+#define UC_PUN_ACTIVATE_SYMMETRIC_SWAPPING       0x206B 0  /* U+206B (ACTIVATE SYMMETRIC SWAPPING) */
+#define UC_PUN_INHIBIT_FORM_SHAPING              0x206C 0  /* U+206C (INHIBIT ARABIC FORM SHAPING) */
+#define UC_PUN_ACTIVATE_FORM_SHAPING             0x206D 0  /* U+206D (ACTIVATE ARABIC FORM SHAPING) */
+#define UC_PUN_NATIONAL_SHAPES                   0x206E 0  /* U+206E (NATIONAL DIGIT SHAPES) */
+#define UC_PUN_NOMINAL_SHAPES                    0x206F 0  /* U+206F (NOMINAL DIGIT SHAPES) */

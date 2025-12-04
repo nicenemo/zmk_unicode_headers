@@ -14,8 +14,7 @@
 
 */
 
-#ifndef RUNIC_H
-#define RUNIC_H
+#pragma once
 
 #define UC_RUNIC_FEHU_FEOH_FE_F                  0x16A0 0  // ᚠ
 #define UC_RUNIC_V                               0x16A1 0  // ᚡ
@@ -106,5 +105,3 @@
 #define UC_RUNIC_FRANKS_CASKET_EH                0x16F6 0  // ᛶ
 #define UC_RUNIC_FRANKS_CASKET_AC                0x16F7 0  // ᛷ
 #define UC_RUNIC_FRANKS_CASKET_AESC              0x16F8 0  // ᛸ
-
-#endif // RUNIC_H

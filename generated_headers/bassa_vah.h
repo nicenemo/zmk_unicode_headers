@@ -22,8 +22,7 @@
 
 */
 
-#ifndef BASSA_VAH_H
-#define BASSA_VAH_H
+#pragma once
 
 #define UC_BASSA_VAH_ENNI                        0x16AD0 0  // 𖫐
 #define UC_BASSA_VAH_KA                          0x16AD1 0  // 𖫑
@@ -61,5 +60,3 @@
 #define UC_BASSA_VAH_COMBINING_LOW_MID_TONE      0x16AF3 0  // 𖫳
 #define UC_BASSA_VAH_COMBINING_HIGH_LOW_TONE     0x16AF4 0  // 𖫴
 #define UC_BASSA_VAH_FULL_STOP                   0x16AF5 0  // 𖫵
-
-#endif // BASSA_VAH_H

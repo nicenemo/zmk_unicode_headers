@@ -25,8 +25,7 @@
 
 */
 
-#ifndef HANIFI_ROHINGYA_H
-#define HANIFI_ROHINGYA_H
+#pragma once
 
 #define UC_HANIFI_ROHINGYA_A                     0x10D00 0  // 𐴀
 #define UC_HANIFI_ROHINGYA_BA                    0x10D01 0  // 𐴁
@@ -78,5 +77,3 @@
 #define UC_HANIFI_ROHINGYA_SEVEN                 0x10D37 0  // 𐴷
 #define UC_HANIFI_ROHINGYA_EIGHT                 0x10D38 0  // 𐴸
 #define UC_HANIFI_ROHINGYA_NINE                  0x10D39 0  // 𐴹
-
-#endif // HANIFI_ROHINGYA_H

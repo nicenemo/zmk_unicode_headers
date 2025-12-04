@@ -14,8 +14,7 @@
 
 */
 
-#ifndef CYRILLIC_EXTENDED_D_H
-#define CYRILLIC_EXTENDED_D_H
+#pragma once
 
 #define UC_MODIFIER_SMALL_A                      0x1E030 0  // 𞀰
 #define UC_MODIFIER_SMALL_BE                     0x1E031 0  // 𞀱
@@ -80,5 +79,3 @@
 #define UC_MODIFIER_SMALL_YERU_BACK_YER          0x1E06C 0  // 𞁬
 #define UC_MODIFIER_SMALL_STRAIGHT_U_STROKE      0x1E06D 0  // 𞁭
 #define UC_COMBINING_SMALL_BYELORUSSIAN_UKRAINIAN_I 0x1E08F 0  // 𞂏
-
-#endif // CYRILLIC_EXTENDED_D_H

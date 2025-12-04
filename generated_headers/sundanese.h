@@ -16,8 +16,7 @@
 
 */
 
-#ifndef SUNDANESE_H
-#define SUNDANESE_H
+#pragma once
 
 #define UC_SUNDANESE_SIGN_PANYECEK               0x1B80 0  // ᮀ
 #define UC_SUNDANESE_SIGN_PANGLAYAR              0x1B81 0  // ᮁ
@@ -83,5 +82,3 @@
 #define UC_SUNDANESE_BHA                         0x1BBD 0  // ᮽ
 #define UC_SUNDANESE_FINAL_K                     0x1BBE 0  // ᮾ
 #define UC_SUNDANESE_FINAL_M                     0x1BBF 0  // ᮿ
-
-#endif // SUNDANESE_H

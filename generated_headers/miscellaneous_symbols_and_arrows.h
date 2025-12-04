@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MISCELLANEOUS_SYMBOLS_AND_ARROWS_H
-#define MISCELLANEOUS_SYMBOLS_AND_ARROWS_H
+#pragma once
 
 #define UC_NORTH_EAST_WHITE_ARROW                0x2B00 0  // ⬀
 #define UC_NORTH_WEST_WHITE_ARROW                0x2B01 0  // ⬁
@@ -271,5 +270,3 @@
 #define UC_PASSED                                0x2BFD 0  // ⯽
 #define UC_REVERSED_RIGHT_ANGLE                  0x2BFE 0  // ⯾
 #define UC_HELLSCHREIBER_PAUSE                   0x2BFF 0  // ⯿
-
-#endif // MISCELLANEOUS_SYMBOLS_AND_ARROWS_H

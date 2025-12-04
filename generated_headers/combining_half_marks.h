@@ -17,8 +17,7 @@
 
 */
 
-#ifndef COMBINING_HALF_MARKS_H
-#define COMBINING_HALF_MARKS_H
+#pragma once
 
 #define UC_COMBINING_LIGATURE_LEFT_HALF          0xFE20 0  // ︠
 #define UC_COMBINING_LIGATURE_RIGHT_HALF         0xFE21 0  // ︡
@@ -36,5 +35,3 @@
 #define UC_COMBINING_CONJOINING_MACRON_BELOW     0xFE2D 0  // ︭
 #define UC_COMBINING_TITLO_LEFT_HALF             0xFE2E 0  // ︮
 #define UC_COMBINING_TITLO_RIGHT_HALF            0xFE2F 0  // ︯
-
-#endif // COMBINING_HALF_MARKS_H

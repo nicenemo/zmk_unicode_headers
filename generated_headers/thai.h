@@ -16,8 +16,7 @@
 
 */
 
-#ifndef THAI_H
-#define THAI_H
+#pragma once
 
 #define UC_THAI_KO_KAI                           0x0E01 0  // ก
 #define UC_THAI_KHO_KHAI                         0x0E02 0  // ข
@@ -106,5 +105,3 @@
 #define UC_THAI_NINE                             0x0E59 0  // ๙
 #define UC_THAI_ANGKHANKHU                       0x0E5A 0  // ๚
 #define UC_THAI_KHOMUT                           0x0E5B 0  // ๛
-
-#endif // THAI_H

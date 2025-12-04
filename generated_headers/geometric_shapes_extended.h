@@ -21,8 +21,7 @@
 
 */
 
-#ifndef GEOMETRIC_SHAPES_EXTENDED_H
-#define GEOMETRIC_SHAPES_EXTENDED_H
+#pragma once
 
 #define UC_BLACK_LEFT_POINTING_ISOSCELES_RIGHT_TRIANGLE 0x1F780 0  // 🞀
 #define UC_BLACK_UP_POINTING_ISOSCELES_RIGHT_TRIANGLE 0x1F781 0  // 🞁
@@ -127,5 +126,3 @@
 #define UC_LARGE_PURPLE_SQUARE                   0x1F7EA 0  // 🟪
 #define UC_LARGE_BROWN_SQUARE                    0x1F7EB 0  // 🟫
 #define UC_HEAVY_EQUALS_SIGN                     0x1F7F0 0  // 🟰
-
-#endif // GEOMETRIC_SHAPES_EXTENDED_H

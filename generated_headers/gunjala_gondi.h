@@ -23,8 +23,7 @@
 
 */
 
-#ifndef GUNJALA_GONDI_H
-#define GUNJALA_GONDI_H
+#pragma once
 
 #define UC_GUNJALA_GONDI_A                       0x11D60 0  // 𑵠
 #define UC_GUNJALA_GONDI_AA                      0x11D61 0  // 𑵡
@@ -89,5 +88,3 @@
 #define UC_GUNJALA_GONDI_SEVEN                   0x11DA7 0  // 𑶧
 #define UC_GUNJALA_GONDI_EIGHT                   0x11DA8 0  // 𑶨
 #define UC_GUNJALA_GONDI_NINE                    0x11DA9 0  // 𑶩
-
-#endif // GUNJALA_GONDI_H

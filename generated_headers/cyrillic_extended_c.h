@@ -14,8 +14,7 @@
 
 */
 
-#ifndef CYRILLIC_EXTENDED_C_H
-#define CYRILLIC_EXTENDED_C_H
+#pragma once
 
 #define UC_ROUNDED_VE                            0x1C80 0x0412  // ᲀ/В
 #define UC_LONG_LEGGED_DE                        0x1C81 0x0414  // ᲁ/Д
@@ -28,5 +27,3 @@
 #define UC_UNBLENDED_UK                          0x1C88 0xA64A  // ᲈ/Ꙋ
 #define UC_CAPITAL_TJE                           0x1C89 0  // Ᲊ
 #define UC_SMALL_TJE                             0x1C8A 0  // ᲊ
-
-#endif // CYRILLIC_EXTENDED_C_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef KANA_EXTENDED_B_H
-#define KANA_EXTENDED_B_H
+#pragma once
 
 #define UC_KATAKANA_MINNAN_TONE_2                0x1AFF0 0  // 𚿰
 #define UC_KATAKANA_MINNAN_TONE_3                0x1AFF1 0  // 𚿱
@@ -30,5 +29,3 @@
 #define UC_KATAKANA_MINNAN_NASALIZED_TONE_5      0x1AFFB 0  // 𚿻
 #define UC_KATAKANA_MINNAN_NASALIZED_TONE_7      0x1AFFD 0  // 𚿽
 #define UC_KATAKANA_MINNAN_NASALIZED_TONE_8      0x1AFFE 0  // 𚿾
-
-#endif // KANA_EXTENDED_B_H

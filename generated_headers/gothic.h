@@ -16,8 +16,7 @@
 
 */
 
-#ifndef GOTHIC_H
-#define GOTHIC_H
+#pragma once
 
 #define UC_GOTHIC_AHSA                           0x10330 0  // 𐌰
 #define UC_GOTHIC_BAIRKAN                        0x10331 0  // 𐌱
@@ -46,5 +45,3 @@
 #define UC_GOTHIC_HWAIR                          0x10348 0  // 𐍈
 #define UC_GOTHIC_OTHAL                          0x10349 0  // 𐍉
 #define UC_GOTHIC_NINE_HUNDRED                   0x1034A 0  // 𐍊
-
-#endif // GOTHIC_H

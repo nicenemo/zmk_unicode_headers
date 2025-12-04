@@ -19,8 +19,7 @@
 
 */
 
-#ifndef SUPPLEMENTAL_MATHEMATICAL_OPERATORS_H
-#define SUPPLEMENTAL_MATHEMATICAL_OPERATORS_H
+#pragma once
 
 #define UC_N_ARY_C_DOT_OPERATOR                  0x2A00 0  // ⨀
 #define UC_N_ARY_C_PLUS_OPERATOR                 0x2A01 0  // ⨁
@@ -278,5 +277,3 @@
 #define UC_DOUBLE_SOLIDUS_OPERATOR               0x2AFD 0  // ⫽
 #define UC_WHITE_VERTICAL_BAR                    0x2AFE 0  // ⫾
 #define UC_N_ARY_WHITE_VERTICAL_BAR              0x2AFF 0  // ⫿
-
-#endif // SUPPLEMENTAL_MATHEMATICAL_OPERATORS_H

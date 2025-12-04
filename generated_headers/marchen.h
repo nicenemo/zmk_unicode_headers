@@ -18,8 +18,7 @@
 
 */
 
-#ifndef MARCHEN_H
-#define MARCHEN_H
+#pragma once
 
 #define UC_MARCHEN_HEAD_MARK                     0x11C70 0  // 𑱰
 #define UC_MARCHEN_MARK_SHAD                     0x11C71 0  // 𑱱
@@ -89,5 +88,3 @@
 #define UC_MARCHEN_VOWEL_SIGN_O                  0x11CB4 0  // 𑲴
 #define UC_MARCHEN_SIGN_ANUSVARA                 0x11CB5 0  // 𑲵
 #define UC_MARCHEN_SIGN_CANDRABINDU              0x11CB6 0  // 𑲶
-
-#endif // MARCHEN_H

@@ -18,8 +18,7 @@
 
 */
 
-#ifndef OLD_SOGDIAN_H
-#define OLD_SOGDIAN_H
+#pragma once
 
 #define UC_OLD_SOGDIAN_ALEPH                     0x10F00 0  // 𐼀
 #define UC_OLD_SOGDIAN_FINAL_ALEPH               0x10F01 0  // 𐼁
@@ -61,5 +60,3 @@
 #define UC_OLD_SOGDIAN_ONE_HUNDRED               0x10F25 0  // 𐼥
 #define UC_OLD_SOGDIAN_FRACTION_ONE_HALF         0x10F26 0  // 𐼦
 #define UC_OLD_SOGDIAN_LIGATURE_AYIN_DALETH      0x10F27 0  // 𐼧
-
-#endif // OLD_SOGDIAN_H

@@ -21,9 +21,6 @@
 
 */
 
-#ifndef LISU_SUPPLEMENT_H
-#define LISU_SUPPLEMENT_H
+#pragma once
 
 #define UC_LISU_YHA                              0x11FB0 0  // 𑾰
-
-#endif // LISU_SUPPLEMENT_H

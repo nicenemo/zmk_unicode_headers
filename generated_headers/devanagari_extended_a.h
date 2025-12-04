@@ -14,8 +14,7 @@
 
 */
 
-#ifndef DEVANAGARI_EXTENDED_A_H
-#define DEVANAGARI_EXTENDED_A_H
+#pragma once
 
 #define UC_HEAD_MARK                             0x11B00 0  // 𑬀
 #define UC_HEAD_MARK_HEADSTROKE                  0x11B01 0  // 𑬁
@@ -27,5 +26,3 @@
 #define UC_SIGN_WESTERN_NINE_LIKE_BHALE          0x11B07 0  // 𑬇
 #define UC_SIGN_REVERSED_NINE_LIKE_BHALE         0x11B08 0  // 𑬈
 #define UC_SIGN_MINDU                            0x11B09 0  // 𑬉
-
-#endif // DEVANAGARI_EXTENDED_A_H

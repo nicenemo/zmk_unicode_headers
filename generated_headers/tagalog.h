@@ -16,8 +16,7 @@
 
 */
 
-#ifndef TAGALOG_H
-#define TAGALOG_H
+#pragma once
 
 #define UC_TAGALOG_A                             0x1700 0  // ᜀ
 #define UC_TAGALOG_I                             0x1701 0  // ᜁ
@@ -42,5 +41,3 @@
 #define UC_TAGALOG_SIGN_VIRAMA                   0x1714 0  // ᜔
 #define UC_TAGALOG_SIGN_PAMUDPOD                 0x1715 0  // ᜕
 #define UC_TAGALOG_ARCHAIC_RA                    0x171F 0  // ᜟ
-
-#endif // TAGALOG_H

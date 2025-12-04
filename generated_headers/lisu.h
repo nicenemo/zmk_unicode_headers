@@ -16,8 +16,7 @@
 
 */
 
-#ifndef LISU_H
-#define LISU_H
+#pragma once
 
 #define UC_LISU_BA                               0xA4D0 0  // ꓐ
 #define UC_LISU_PA                               0xA4D1 0  // ꓑ
@@ -67,5 +66,3 @@
 #define UC_LISU_TONE_MYA_JEU                     0xA4FD 0  // ꓽ
 #define UC_LISU_PUNCTUATION                      0xA4FE 0  // ꓾
 #define UC_LISU_PUNCTUATION_FULL_STOP            0xA4FF 0  // ꓿
-
-#endif // LISU_H

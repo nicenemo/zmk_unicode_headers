@@ -14,8 +14,7 @@
 
 */
 
-#ifndef HANGUL_COMPATIBILITY_JAMO_H
-#define HANGUL_COMPATIBILITY_JAMO_H
+#pragma once
 
 #define UC_HANGUL_KIYEOK                         0x3131 0  // ㄱ
 #define UC_HANGUL_SSANGKIYEOK                    0x3132 0  // ㄲ
@@ -111,5 +110,3 @@
 #define UC_HANGUL_YU_I                           0x318C 0  // ㆌ
 #define UC_HANGUL_ARAEA                          0x318D 0  // ㆍ
 #define UC_HANGUL_ARAEAE                         0x318E 0  // ㆎ
-
-#endif // HANGUL_COMPATIBILITY_JAMO_H

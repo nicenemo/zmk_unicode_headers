@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ANCIENT_GREEK_MUSICAL_NOTATION_H
-#define ANCIENT_GREEK_MUSICAL_NOTATION_H
+#pragma once
 
 #define UC_VOCAL_NOTATION_1                      0x1D200 0  // 𝈀
 #define UC_VOCAL_NOTATION_2                      0x1D201 0  // 𝈁
@@ -87,5 +86,3 @@
 #define UC_COMBINING_MUSICAL_TETRASEME           0x1D243 0  // 𝉃
 #define UC_COMBINING_MUSICAL_PENTASEME           0x1D244 0  // 𝉄
 #define UC_MUSICAL_LEIMMA                        0x1D245 0  // 𝉅
-
-#endif // ANCIENT_GREEK_MUSICAL_NOTATION_H

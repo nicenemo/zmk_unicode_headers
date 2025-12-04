@@ -20,8 +20,7 @@
 
 */
 
-#ifndef ORNAMENTAL_DINGBATS_H
-#define ORNAMENTAL_DINGBATS_H
+#pragma once
 
 #define UC_NORTH_WEST_POINTING_LEAF              0x1F650 0  // 🙐
 #define UC_SOUTH_WEST_POINTING_LEAF              0x1F651 0  // 🙑
@@ -71,5 +70,3 @@
 #define UC_VERY_HEAVY_REVERSE_SOLIDUS            0x1F67D 0  // 🙽
 #define UC_CHECKER_BOARD                         0x1F67E 0  // 🙾
 #define UC_REVERSE_CHECKER_BOARD                 0x1F67F 0  // 🙿
-
-#endif // ORNAMENTAL_DINGBATS_H

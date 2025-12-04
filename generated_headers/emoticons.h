@@ -14,8 +14,7 @@
 
 */
 
-#ifndef EMOTICONS_H
-#define EMOTICONS_H
+#pragma once
 
 #define UC_EMJ_GRINNING_FACE                     0x1F600 0  // 😀
 #define UC_EMJ_GRINNING_FACE_SMILING_EYES        0x1F601 0  // 😁
@@ -97,5 +96,3 @@
 #define UC_EMJ_PERSON_FROWNING                   0x1F64D 0  // 🙍
 #define UC_EMJ_PERSON_POUTING_FACE               0x1F64E 0  // 🙎
 #define UC_EMJ_PERSON_FOLDED_HANDS               0x1F64F 0  // 🙏
-
-#endif // EMOTICONS_H

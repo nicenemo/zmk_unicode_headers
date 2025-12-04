@@ -23,8 +23,7 @@
 
 */
 
-#ifndef WARANG_CITI_H
-#define WARANG_CITI_H
+#pragma once
 
 #define UC_WARANG_CITI_NGAA                      0x118C0 0x118A0  // 𑣀/𑢠
 #define UC_WARANG_CITI_A                         0x118C1 0x118A1  // 𑣁/𑢡
@@ -78,5 +77,3 @@
 #define UC_WARANG_CITI_EIGHTY                    0x118F1 0  // 𑣱
 #define UC_WARANG_CITI_NINETY                    0x118F2 0  // 𑣲
 #define UC_WARANG_CITI_OM                        0x118FF 0  // 𑣿
-
-#endif // WARANG_CITI_H

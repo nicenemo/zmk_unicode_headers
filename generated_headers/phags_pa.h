@@ -14,8 +14,7 @@
 
 */
 
-#ifndef PHAGS_PA_H
-#define PHAGS_PA_H
+#pragma once
 
 #define UC_PHAGS_PA_KA                           0xA840 0  // ꡀ
 #define UC_PHAGS_PA_KHA                          0xA841 0  // ꡁ
@@ -73,5 +72,3 @@
 #define UC_PHAGS_PA_DOUBLE_HEAD_MARK             0xA875 0  // ꡵
 #define UC_PHAGS_PA_MARK_SHAD                    0xA876 0  // ꡶
 #define UC_PHAGS_PA_MARK_DOUBLE_SHAD             0xA877 0  // ꡷
-
-#endif // PHAGS_PA_H

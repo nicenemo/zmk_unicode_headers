@@ -31,8 +31,7 @@
 
 */
 
-#ifndef MATHEMATICAL_ALPHANUMERIC_SYMBOLS_H
-#define MATHEMATICAL_ALPHANUMERIC_SYMBOLS_H
+#pragma once
 
 #define UC_MA_BOLD_CAPITAL_A                     0x1D400 0  // 𝐀
 #define UC_MA_BOLD_CAPITAL_B                     0x1D401 0  // 𝐁
@@ -1030,5 +1029,3 @@
 #define UC_MA_MS_SEVEN                           0x1D7FD 0  // 𝟽
 #define UC_MA_MS_EIGHT                           0x1D7FE 0  // 𝟾
 #define UC_MA_MS_NINE                            0x1D7FF 0  // 𝟿
-
-#endif // MATHEMATICAL_ALPHANUMERIC_SYMBOLS_H

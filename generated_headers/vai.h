@@ -16,8 +16,7 @@
 
 */
 
-#ifndef VAI_H
-#define VAI_H
+#pragma once
 
 #define UC_VAI_SYLLABLE_EE                       0xA500 0  // ꔀ
 #define UC_VAI_SYLLABLE_EEN                      0xA501 0  // ꔁ
@@ -319,5 +318,3 @@
 #define UC_VAI_NINE                              0xA629 0  // ꘩
 #define UC_VAI_SYLLABLE_NDOLE_MA                 0xA62A 0  // ꘪ
 #define UC_VAI_SYLLABLE_NDOLE_DO                 0xA62B 0  // ꘫ
-
-#endif // VAI_H

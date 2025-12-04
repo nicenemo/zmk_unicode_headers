@@ -17,8 +17,7 @@
 
 */
 
-#ifndef TANGUT_COMPONENTS_H
-#define TANGUT_COMPONENTS_H
+#pragma once
 
 #define UC_TANGUT_COMPONENT_001                  0x18800 0  // 𘠀
 #define UC_TANGUT_COMPONENT_002                  0x18801 0  // 𘠁
@@ -788,5 +787,3 @@
 #define UC_TANGUT_COMPONENT_766                  0x18AFD 0  // 𘫽
 #define UC_TANGUT_COMPONENT_767                  0x18AFE 0  // 𘫾
 #define UC_TANGUT_COMPONENT_768                  0x18AFF 0  // 𘫿
-
-#endif // TANGUT_COMPONENTS_H

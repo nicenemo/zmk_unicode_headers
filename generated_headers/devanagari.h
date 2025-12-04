@@ -14,8 +14,7 @@
 
 */
 
-#ifndef DEVANAGARI_H
-#define DEVANAGARI_H
+#pragma once
 
 #define UC_DV_SIGN_INVERTED_CANDRABINDU          0x0900 0  // ऀ
 #define UC_DV_SIGN_CANDRABINDU                   0x0901 0  // ँ
@@ -145,5 +144,3 @@
 #define UC_DV_GLOTTAL_STOP                       0x097D 0  // ॽ
 #define UC_DV_DDDA                               0x097E 0  // ॾ
 #define UC_DV_BBA                                0x097F 0  // ॿ
-
-#endif // DEVANAGARI_H

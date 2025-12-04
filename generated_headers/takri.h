@@ -28,8 +28,7 @@
 
 */
 
-#ifndef TAKRI_H
-#define TAKRI_H
+#pragma once
 
 #define UC_TAKRI_A                               0x11680 0  // 𑚀
 #define UC_TAKRI_AA                              0x11681 0  // 𑚁
@@ -99,5 +98,3 @@
 #define UC_TAKRI_SEVEN                           0x116C7 0  // 𑛇
 #define UC_TAKRI_EIGHT                           0x116C8 0  // 𑛈
 #define UC_TAKRI_NINE                            0x116C9 0  // 𑛉
-
-#endif // TAKRI_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef GEOMETRIC_SHAPES_H
-#define GEOMETRIC_SHAPES_H
+#pragma once
 
 #define UC_GS_BLACK_SQUARE                       0x25A0 0  // ■
 #define UC_GS_WHITE_SQUARE                       0x25A1 0  // □
@@ -113,5 +112,3 @@
 #define UC_GS_WHITE_MEDIUM_SMALL_SQUARE          0x25FD 0  // ◽
 #define UC_GS_BLACK_MEDIUM_SMALL_SQUARE          0x25FE 0  // ◾
 #define UC_GS_LOWER_RIGHT_TRIANGLE               0x25FF 0  // ◿
-
-#endif // GEOMETRIC_SHAPES_H

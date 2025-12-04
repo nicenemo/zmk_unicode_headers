@@ -16,8 +16,7 @@
 
 */
 
-#ifndef CHAM_H
-#define CHAM_H
+#pragma once
 
 #define UC_CHAM_A                                0xAA00 0  // ꨀ
 #define UC_CHAM_I                                0xAA01 0  // ꨁ
@@ -102,5 +101,3 @@
 #define UC_CHAM_PUNCTUATION_DANDA                0xAA5D 0  // ꩝
 #define UC_CHAM_PUNCTUATION_DOUBLE_DANDA         0xAA5E 0  // ꩞
 #define UC_CHAM_PUNCTUATION_TRIPLE_DANDA         0xAA5F 0  // ꩟
-
-#endif // CHAM_H

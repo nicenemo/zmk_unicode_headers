@@ -16,8 +16,7 @@
 
 */
 
-#ifndef TAI_LE_H
-#define TAI_LE_H
+#pragma once
 
 #define UC_TAI_LE_KA                             0x1950 0  // ᥐ
 #define UC_TAI_LE_XA                             0x1951 0  // ᥑ
@@ -54,5 +53,3 @@
 #define UC_TAI_LE_TONE_4                         0x1972 0  // ᥲ
 #define UC_TAI_LE_TONE_5                         0x1973 0  // ᥳ
 #define UC_TAI_LE_TONE_6                         0x1974 0  // ᥴ
-
-#endif // TAI_LE_H

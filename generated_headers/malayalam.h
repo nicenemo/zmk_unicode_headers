@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MALAYALAM_H
-#define MALAYALAM_H
+#pragma once
 
 #define UC_MALAYALAM_SIGN_COMBINING_ANUSVARA_ABOVE 0x0D00 0  // ഀ
 #define UC_MALAYALAM_SIGN_CANDRABINDU            0x0D01 0  // ഁ
@@ -135,5 +134,3 @@
 #define UC_MALAYALAM_CHILLU_L                    0x0D7D 0  // ൽ
 #define UC_MALAYALAM_CHILLU_LL                   0x0D7E 0  // ൾ
 #define UC_MALAYALAM_CHILLU_K                    0x0D7F 0  // ൿ
-
-#endif // MALAYALAM_H

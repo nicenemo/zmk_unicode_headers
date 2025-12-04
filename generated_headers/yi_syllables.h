@@ -19,8 +19,7 @@
 
 */
 
-#ifndef YI_SYLLABLES_H
-#define YI_SYLLABLES_H
+#pragma once
 
 #define UC_YI_SYLLABLE_IT                        0xA000 0  // ꀀ
 #define UC_YI_SYLLABLE_IX                        0xA001 0  // ꀁ
@@ -1187,5 +1186,3 @@
 #define UC_YI_SYLLABLE_YYP                       0xA48A 0  // ꒊ
 #define UC_YI_SYLLABLE_YYRX                      0xA48B 0  // ꒋ
 #define UC_YI_SYLLABLE_YYR                       0xA48C 0  // ꒌ
-
-#endif // YI_SYLLABLES_H

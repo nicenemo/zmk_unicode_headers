@@ -22,8 +22,7 @@
 
 */
 
-#ifndef UGARITIC_H
-#define UGARITIC_H
+#pragma once
 
 #define UC_UGARITIC_ALPA                         0x10380 0  // 𐎀
 #define UC_UGARITIC_BETA                         0x10381 0  // 𐎁
@@ -56,5 +55,3 @@
 #define UC_UGARITIC_U                            0x1039C 0  // 𐎜
 #define UC_UGARITIC_SSU                          0x1039D 0  // 𐎝
 #define UC_UGARITIC_WORD_DIVIDER                 0x1039F 0  // 𐎟
-
-#endif // UGARITIC_H

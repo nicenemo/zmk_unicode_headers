@@ -14,8 +14,7 @@
 
 */
 
-#ifndef HATRAN_H
-#define HATRAN_H
+#pragma once
 
 #define UC_HATRAN_ALEPH                          0x108E0 0  // 𐣠
 #define UC_HATRAN_BETH                           0x108E1 0  // 𐣡
@@ -43,5 +42,3 @@
 #define UC_HATRAN_TEN                            0x108FD 0  // 𐣽
 #define UC_HATRAN_TWENTY                         0x108FE 0  // 𐣾
 #define UC_HATRAN_ONE_HUNDRED                    0x108FF 0  // 𐣿
-
-#endif // HATRAN_H

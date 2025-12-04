@@ -18,8 +18,7 @@
 
 */
 
-#ifndef KANA_SUPPLEMENT_H
-#define KANA_SUPPLEMENT_H
+#pragma once
 
 #define UC_KATAKANA_ARCHAIC_E                    0x1B000 0  // 𛀀
 #define UC_HIRAGANA_ARCHAIC_YE                   0x1B001 0  // 𛀁
@@ -277,5 +276,3 @@
 #define UC_HENTAIGANA_RU_6                       0x1B0FD 0  // 𛃽
 #define UC_HENTAIGANA_RE_1                       0x1B0FE 0  // 𛃾
 #define UC_HENTAIGANA_RE_2                       0x1B0FF 0  // 𛃿
-
-#endif // KANA_SUPPLEMENT_H

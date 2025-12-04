@@ -14,8 +14,7 @@
 
 */
 
-#ifndef SUPPLEMENTAL_ARROWS_B_H
-#define SUPPLEMENTAL_ARROWS_B_H
+#pragma once
 
 #define UC_RIGHTWARDS_TWO_HEADED_ARROW_VERTICAL_STROKE 0x2900 0  // ⤀
 #define UC_RIGHTWARDS_TWO_HEADED_ARROW_DOUBLE_VERTICAL_STROKE 0x2901 0  // ⤁
@@ -145,5 +144,3 @@
 #define UC_RIGHT_FISH_TAIL                       0x297D 0  // ⥽
 #define UC_UP_FISH_TAIL                          0x297E 0  // ⥾
 #define UC_DOWN_FISH_TAIL                        0x297F 0  // ⥿
-
-#endif // SUPPLEMENTAL_ARROWS_B_H

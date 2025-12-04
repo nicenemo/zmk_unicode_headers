@@ -14,8 +14,7 @@
 
 */
 
-#ifndef BOPOMOFO_H
-#define BOPOMOFO_H
+#pragma once
 
 #define UC_BOPOMOFO_B                            0x3105 0  // ㄅ
 #define UC_BOPOMOFO_P                            0x3106 0  // ㄆ
@@ -60,5 +59,3 @@
 #define UC_BOPOMOFO_IH                           0x312D 0  // ㄭ
 #define UC_BOPOMOFO_O_DOT_ABOVE                  0x312E 0  // ㄮ
 #define UC_BOPOMOFO_NN                           0x312F 0  // ㄯ
-
-#endif // BOPOMOFO_H

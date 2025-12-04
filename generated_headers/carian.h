@@ -16,8 +16,7 @@
 
 */
 
-#ifndef CARIAN_H
-#define CARIAN_H
+#pragma once
 
 #define UC_CARIAN_A                              0x102A0 0  // 𐊠
 #define UC_CARIAN_P2                             0x102A1 0  // 𐊡
@@ -68,5 +67,3 @@
 #define UC_CARIAN_LD2                            0x102CE 0  // 𐋎
 #define UC_CARIAN_E2                             0x102CF 0  // 𐋏
 #define UC_CARIAN_UUU3                           0x102D0 0  // 𐋐
-
-#endif // CARIAN_H

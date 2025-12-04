@@ -14,8 +14,7 @@
 
 */
 
-#ifndef CJK_COMPATIBILITY_H
-#define CJK_COMPATIBILITY_H
+#pragma once
 
 #define UC_SQUARE_APAATO                         0x3300 0  // ㌀
 #define UC_SQUARE_ARUHUA                         0x3301 0  // ㌁
@@ -273,5 +272,3 @@
 #define UC_IDEOGRAPHIC_TELEGRAPH_FOR_DAY_THIRTY  0x33FD 0  // ㏽
 #define UC_IDEOGRAPHIC_TELEGRAPH_FOR_DAY_THIRTY_ONE 0x33FE 0  // ㏾
 #define UC_SQUARE_GAL                            0x33FF 0  // ㏿
-
-#endif // CJK_COMPATIBILITY_H

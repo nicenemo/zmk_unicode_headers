@@ -16,8 +16,7 @@
 
 */
 
-#ifndef HANUNOO_H
-#define HANUNOO_H
+#pragma once
 
 #define UC_HANUNOO_A                             0x1720 0  // ᜠ
 #define UC_HANUNOO_I                             0x1721 0  // ᜡ
@@ -42,5 +41,3 @@
 #define UC_HANUNOO_SIGN_PAMUDPOD                 0x1734 0  // ᜴
 #define UC_PHILIPPINE_SINGLE_PUNCTUATION         0x1735 0  // ᜵
 #define UC_PHILIPPINE_DOUBLE_PUNCTUATION         0x1736 0  // ᜶
-
-#endif // HANUNOO_H

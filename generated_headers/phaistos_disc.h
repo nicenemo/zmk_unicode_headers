@@ -29,8 +29,7 @@
 
 */
 
-#ifndef PHAISTOS_DISC_H
-#define PHAISTOS_DISC_H
+#pragma once
 
 #define UC_PHAISTOS_DISC_SIGN_PEDESTRIAN         0x101D0 0  // 𐇐
 #define UC_PHAISTOS_DISC_SIGN_PLUMED_HEAD        0x101D1 0  // 𐇑
@@ -78,5 +77,3 @@
 #define UC_PHAISTOS_DISC_SIGN_SMALL_AXE          0x101FB 0  // 𐇻
 #define UC_PHAISTOS_DISC_SIGN_WAVY_BAND          0x101FC 0  // 𐇼
 #define UC_PHAISTOS_DISC_SIGN_COMBINING_OBLIQUE_STROKE 0x101FD 0  // 𐇽
-
-#endif // PHAISTOS_DISC_H

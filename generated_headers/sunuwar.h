@@ -24,8 +24,7 @@
 
 */
 
-#ifndef SUNUWAR_H
-#define SUNUWAR_H
+#pragma once
 
 #define UC_SUNUWAR_DEVI                          0x11BC0 0  // 𑯀
 #define UC_SUNUWAR_TASLA                         0x11BC1 0  // 𑯁
@@ -71,5 +70,3 @@
 #define UC_SUNUWAR_SEVEN                         0x11BF7 0  // 𑯷
 #define UC_SUNUWAR_EIGHT                         0x11BF8 0  // 𑯸
 #define UC_SUNUWAR_NINE                          0x11BF9 0  // 𑯹
-
-#endif // SUNUWAR_H

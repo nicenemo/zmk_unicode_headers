@@ -18,8 +18,7 @@
 
 */
 
-#ifndef MEDEFAIDRIN_H
-#define MEDEFAIDRIN_H
+#pragma once
 
 #define UC_MEDEFAIDRIN_M                         0x16E60 0x16E40  // 𖹠/𖹀
 #define UC_MEDEFAIDRIN_S                         0x16E61 0x16E41  // 𖹡/𖹁
@@ -80,5 +79,3 @@
 #define UC_MEDEFAIDRIN_FULL_STOP                 0x16E98 0  // 𖺘
 #define UC_MEDEFAIDRIN_AIVA                      0x16E99 0  // 𖺙
 #define UC_MEDEFAIDRIN_EXCLAMATION_OH            0x16E9A 0  // 𖺚
-
-#endif // MEDEFAIDRIN_H

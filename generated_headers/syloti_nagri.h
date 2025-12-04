@@ -35,8 +35,7 @@
 
 */
 
-#ifndef SYLOTI_NAGRI_H
-#define SYLOTI_NAGRI_H
+#pragma once
 
 #define UC_SYLOTI_NAGRI_A                        0xA800 0  // ꠀ
 #define UC_SYLOTI_NAGRI_I                        0xA801 0  // ꠁ
@@ -83,5 +82,3 @@
 #define UC_SYLOTI_NAGRI_POETRY_MARK_3            0xA82A 0  // ꠪
 #define UC_SYLOTI_NAGRI_POETRY_MARK_4            0xA82B 0  // ꠫
 #define UC_SYLOTI_NAGRI_SIGN_ALTERNATE_HASANTA   0xA82C 0  // ꠬
-
-#endif // SYLOTI_NAGRI_H

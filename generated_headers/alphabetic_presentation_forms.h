@@ -17,8 +17,7 @@
 
 */
 
-#ifndef ALPHABETIC_PRESENTATION_FORMS_H
-#define ALPHABETIC_PRESENTATION_FORMS_H
+#pragma once
 
 #define UC_SMALL_LIGATURE_FF                     0xFB00 0  // ﬀ
 #define UC_SMALL_LIGATURE_FI                     0xFB01 0  // ﬁ
@@ -78,5 +77,3 @@
 #define UC_KAF_RAFE                              0xFB4D 0  // כֿ
 #define UC_PE_RAFE                               0xFB4E 0  // פֿ
 #define UC_LIGATURE_ALEF_LAMED                   0xFB4F 0  // ﭏ
-
-#endif // ALPHABETIC_PRESENTATION_FORMS_H

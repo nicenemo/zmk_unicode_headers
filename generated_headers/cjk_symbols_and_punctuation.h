@@ -14,10 +14,9 @@
 
 */
 
-#ifndef CJK_SYMBOLS_AND_PUNCTUATION_H
-#define CJK_SYMBOLS_AND_PUNCTUATION_H
+#pragma once
 
-#define UC_IDEOGRAPHIC_SPACE                     0x3000 0  // 　
+#define UC_IDEOGRAPHIC_SPACE                     0x3000 0  /* U+3000 (IDEOGRAPHIC SPACE) */
 #define UC_IDEOGRAPHIC                           0x3001 0  // 、
 #define UC_IDEOGRAPHIC_FULL_STOP                 0x3002 0  // 。
 #define UC_DITTO_MARK                            0x3003 0  // 〃
@@ -81,5 +80,3 @@
 #define UC_PART_ALTERNATION_MARK                 0x303D 0  // 〽
 #define UC_IDEOGRAPHIC_INDICATOR                 0x303E 0  // 〾
 #define UC_IDEOGRAPHIC_HALF_FILL_SPACE           0x303F 0  // 〿
-
-#endif // CJK_SYMBOLS_AND_PUNCTUATION_H

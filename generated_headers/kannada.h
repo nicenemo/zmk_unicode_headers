@@ -14,8 +14,7 @@
 
 */
 
-#ifndef KANNADA_H
-#define KANNADA_H
+#pragma once
 
 #define UC_KANNADA_SIGN_SPACING_CANDRABINDU      0x0C80 0  // ಀ
 #define UC_KANNADA_SIGN_CANDRABINDU              0x0C81 0  // ಁ
@@ -109,5 +108,3 @@
 #define UC_KANNADA_SIGN_JIHVAMULIYA              0x0CF1 0  // ೱ
 #define UC_KANNADA_SIGN_UPADHMANIYA              0x0CF2 0  // ೲ
 #define UC_KANNADA_SIGN_COMBINING_ANUSVARA_ABOVE_RIGHT 0x0CF3 0  // ೳ
-
-#endif // KANNADA_H

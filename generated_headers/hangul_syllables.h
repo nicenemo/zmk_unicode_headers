@@ -21,8 +21,7 @@
 
 */
 
-#ifndef HANGUL_SYLLABLES_H
-#define HANGUL_SYLLABLES_H
+#pragma once
 
 #define UC_HSY_HANGUL_SYLLABLE_GA                0xAC00 0  // 가
 #define UC_HSY_HANGUL_SYLLABLE_GAG               0xAC01 0  // 각
@@ -11196,5 +11195,3 @@
 #define UC_HSY_HANGUL_SYLLABLE_HIT               0xD7A1 0  // 힡
 #define UC_HSY_HANGUL_SYLLABLE_HIP               0xD7A2 0  // 힢
 #define UC_HSY_HANGUL_SYLLABLE_HIH               0xD7A3 0  // 힣
-
-#endif // HANGUL_SYLLABLES_H

@@ -16,8 +16,7 @@
 
 */
 
-#ifndef LIMBU_H
-#define LIMBU_H
+#pragma once
 
 #define UC_LIMBU_VOWEL_CARRIER                   0x1900 0  // ᤀ
 #define UC_LIMBU_KA                              0x1901 0  // ᤁ
@@ -87,5 +86,3 @@
 #define UC_LIMBU_SEVEN                           0x194D 0  // ᥍
 #define UC_LIMBU_EIGHT                           0x194E 0  // ᥎
 #define UC_LIMBU_NINE                            0x194F 0  // ᥏
-
-#endif // LIMBU_H

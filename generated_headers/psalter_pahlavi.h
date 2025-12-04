@@ -20,8 +20,7 @@
 
 */
 
-#ifndef PSALTER_PAHLAVI_H
-#define PSALTER_PAHLAVI_H
+#pragma once
 
 #define UC_PSALTER_PAHLAVI_ALEPH                 0x10B80 0  // 𐮀
 #define UC_PSALTER_PAHLAVI_BETH                  0x10B81 0  // 𐮁
@@ -52,5 +51,3 @@
 #define UC_PSALTER_PAHLAVI_TEN                   0x10BAD 0  // 𐮭
 #define UC_PSALTER_PAHLAVI_TWENTY                0x10BAE 0  // 𐮮
 #define UC_PSALTER_PAHLAVI_ONE_HUNDRED           0x10BAF 0  // 𐮯
-
-#endif // PSALTER_PAHLAVI_H

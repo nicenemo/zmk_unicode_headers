@@ -23,8 +23,7 @@
 
 */
 
-#ifndef LATIN_EXTENDED_A_H
-#define LATIN_EXTENDED_A_H
+#pragma once
 
 #define UC_LTA_A_MACRON                          0x0101 0x0100  // ā/Ā
 #define UC_LTA_A_BREVE                           0x0103 0x0102  // ă/Ă
@@ -93,5 +92,3 @@
 #define UC_LTA_Z_DOT_ABOVE                       0x017C 0x017B  // ż/Ż
 #define UC_LTA_Z_CARON                           0x017E 0x017D  // ž/Ž
 #define UC_LTA_LONG_S                            0x017F 0x0053  // ſ/S
-
-#endif // LATIN_EXTENDED_A_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MYANMAR_EXTENDED_C_H
-#define MYANMAR_EXTENDED_C_H
+#pragma once
 
 #define UC_MYANMAR_PAO_ZERO                      0x116D0 0  // 𑛐
 #define UC_MYANMAR_PAO_ONE                       0x116D1 0  // 𑛑
@@ -37,5 +36,3 @@
 #define UC_MYANMAR_EASTERN_PWO_KAREN_SEVEN       0x116E1 0  // 𑛡
 #define UC_MYANMAR_EASTERN_PWO_KAREN_EIGHT       0x116E2 0  // 𑛢
 #define UC_MYANMAR_EASTERN_PWO_KAREN_NINE        0x116E3 0  // 𑛣
-
-#endif // MYANMAR_EXTENDED_C_H

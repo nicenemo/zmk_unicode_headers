@@ -21,8 +21,7 @@
 
 */
 
-#ifndef KAYAH_LI_H
-#define KAYAH_LI_H
+#pragma once
 
 #define UC_KAYAH_LI_ZERO                         0xA900 0  // ꤀
 #define UC_KAYAH_LI_ONE                          0xA901 0  // ꤁
@@ -72,5 +71,3 @@
 #define UC_KAYAH_LI_TONE_CALYA_PLOPHU            0xA92D 0  // ꤭
 #define UC_KAYAH_LI_SIGN_CWI                     0xA92E 0  // ꤮
 #define UC_KAYAH_LI_SIGN_SHYA                    0xA92F 0  // ꤯
-
-#endif // KAYAH_LI_H

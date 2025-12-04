@@ -21,8 +21,7 @@
 
 */
 
-#ifndef OLD_NORTH_ARABIAN_H
-#define OLD_NORTH_ARABIAN_H
+#pragma once
 
 #define UC_OLD_NORTH_ARABIAN_HEH                 0x10A80 0  // 𐪀
 #define UC_OLD_NORTH_ARABIAN_LAM                 0x10A81 0  // 𐪁
@@ -56,5 +55,3 @@
 #define UC_OLD_NORTH_ARABIAN_ONE                 0x10A9D 0  // 𐪝
 #define UC_OLD_NORTH_ARABIAN_TEN                 0x10A9E 0  // 𐪞
 #define UC_OLD_NORTH_ARABIAN_TWENTY              0x10A9F 0  // 𐪟
-
-#endif // OLD_NORTH_ARABIAN_H

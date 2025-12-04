@@ -30,8 +30,7 @@
 
 */
 
-#ifndef CJK_STROKES_H
-#define CJK_STROKES_H
+#pragma once
 
 #define UC_CJS_CJK_STROKE_T                      0x31C0 0  // ㇀
 #define UC_CJS_CJK_STROKE_WG                     0x31C1 0  // ㇁
@@ -72,5 +71,3 @@
 #define UC_CJS_CJK_STROKE_HXG                    0x31E4 0  // ㇤
 #define UC_CJS_CJK_STROKE_SZP                    0x31E5 0  // ㇥
 #define UC_CJS_IDEOGRAPHIC_DESCION_SUBTRACTION   0x31EF 0  // ㇯
-
-#endif // CJK_STROKES_H

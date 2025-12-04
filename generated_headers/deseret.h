@@ -18,8 +18,7 @@
 
 */
 
-#ifndef DESERET_H
-#define DESERET_H
+#pragma once
 
 #define UC_DESERET_LONG_I                        0x10428 0x10400  // 𐐨/𐐀
 #define UC_DESERET_LONG_E                        0x10429 0x10401  // 𐐩/𐐁
@@ -61,5 +60,3 @@
 #define UC_DESERET_ENG                           0x1044D 0x10425  // 𐑍/𐐥
 #define UC_DESERET_OI                            0x1044E 0x10426  // 𐑎/𐐦
 #define UC_DESERET_EW                            0x1044F 0x10427  // 𐑏/𐐧
-
-#endif // DESERET_H

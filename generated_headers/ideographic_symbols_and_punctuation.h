@@ -22,8 +22,7 @@
 
 */
 
-#ifndef IDEOGRAPHIC_SYMBOLS_AND_PUNCTUATION_H
-#define IDEOGRAPHIC_SYMBOLS_AND_PUNCTUATION_H
+#pragma once
 
 #define UC_TANGUT_ITERATION_MARK                 0x16FE0 0  // 𖿠
 #define UC_NUSHU_ITERATION_MARK                  0x16FE1 0  // 𖿡
@@ -37,5 +36,3 @@
 #define UC_YANGQIN_SIGN_SLOW_ONE_BEAT            0x16FF4 0  // 𖿴
 #define UC_YANGQIN_SIGN_SLOW_THREE_HALF_BEATS    0x16FF5 0  // 𖿵
 #define UC_YANGQIN_SIGN_SLOW_TWO_BEATS           0x16FF6 0  // 𖿶
-
-#endif // IDEOGRAPHIC_SYMBOLS_AND_PUNCTUATION_H

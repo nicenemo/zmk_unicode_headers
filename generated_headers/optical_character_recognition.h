@@ -30,8 +30,7 @@
 
 */
 
-#ifndef OPTICAL_CHARACTER_RECOGNITION_H
-#define OPTICAL_CHARACTER_RECOGNITION_H
+#pragma once
 
 #define UC_OCR_HOOK                              0x2440 0  // ⑀
 #define UC_OCR_CHAIR                             0x2441 0  // ⑁
@@ -44,5 +43,3 @@
 #define UC_OCR_DASH                              0x2448 0  // ⑈
 #define UC_OCR_CUSTOMER_ACCOUNT                  0x2449 0  // ⑉
 #define UC_OCR_DOUBLE_BACKSLASH                  0x244A 0  // ⑊
-
-#endif // OPTICAL_CHARACTER_RECOGNITION_H

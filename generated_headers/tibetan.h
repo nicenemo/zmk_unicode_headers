@@ -17,8 +17,7 @@
 
 */
 
-#ifndef TIBETAN_H
-#define TIBETAN_H
+#pragma once
 
 #define UC_TIBETAN_SYLLABLE_OM                   0x0F00 0  // ༀ
 #define UC_TIBETAN_MARK_GTER_YIG_MGO_TRUNCATED_A 0x0F01 0  // ༁
@@ -231,5 +230,3 @@
 #define UC_LEFT_FACING_SVASTI_SIGN_DOTS          0x0FD8 0  // ࿘
 #define UC_TIBETAN_MARK_LEADING_MCHAN_RTAGS      0x0FD9 0  // ࿙
 #define UC_TIBETAN_MARK_TRAILING_MCHAN_RTAGS     0x0FDA 0  // ࿚
-
-#endif // TIBETAN_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef KAKTOVIK_NUMERALS_H
-#define KAKTOVIK_NUMERALS_H
+#pragma once
 
 #define UC_KAKTOVIK_NUMERAL_ZERO                 0x1D2C0 0  // 𝋀
 #define UC_KAKTOVIK_NUMERAL_ONE                  0x1D2C1 0  // 𝋁
@@ -37,5 +36,3 @@
 #define UC_KAKTOVIK_NUMERAL_SEVENTEEN            0x1D2D1 0  // 𝋑
 #define UC_KAKTOVIK_NUMERAL_EIGHTEEN             0x1D2D2 0  // 𝋒
 #define UC_KAKTOVIK_NUMERAL_NINETEEN             0x1D2D3 0  // 𝋓
-
-#endif // KAKTOVIK_NUMERALS_H

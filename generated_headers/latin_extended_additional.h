@@ -20,8 +20,7 @@
 
 */
 
-#ifndef LATIN_EXTENDED_ADDITIONAL_H
-#define LATIN_EXTENDED_ADDITIONAL_H
+#pragma once
 
 #define UC_A_RING_BELOW                          0x1E01 0x1E00  // ḁ/Ḁ
 #define UC_B_DOT_ABOVE                           0x1E03 0x1E02  // ḃ/Ḃ
@@ -156,5 +155,3 @@
 #define UC_MIDDLE_WELSH_LL                       0x1EFB 0x1EFA  // ỻ/Ỻ
 #define UC_MIDDLE_WELSH_V                        0x1EFD 0x1EFC  // ỽ/Ỽ
 #define UC_Y_LOOP                                0x1EFF 0x1EFE  // ỿ/Ỿ
-
-#endif // LATIN_EXTENDED_ADDITIONAL_H

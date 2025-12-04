@@ -16,8 +16,7 @@
 
 */
 
-#ifndef MRO_H
-#define MRO_H
+#pragma once
 
 #define UC_MRO_TA                                0x16A40 0  // 𖩀
 #define UC_MRO_NGI                               0x16A41 0  // 𖩁
@@ -62,5 +61,3 @@
 #define UC_MRO_NINE                              0x16A69 0  // 𖩩
 #define UC_MRO_DANDA                             0x16A6E 0  // 𖩮
 #define UC_MRO_DOUBLE_DANDA                      0x16A6F 0  // 𖩯
-
-#endif // MRO_H

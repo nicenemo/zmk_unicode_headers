@@ -16,8 +16,7 @@
 
 */
 
-#ifndef SYRIAC_H
-#define SYRIAC_H
+#pragma once
 
 #define UC_SYRIAC_END_OF_PARAGRAPH               0x0700 0  // ܀
 #define UC_SYRIAC_SUPRALINEAR_FULL_STOP          0x0701 0  // ܁
@@ -33,7 +32,7 @@
 #define UC_SYRIAC_HARKLEAN_OBELUS                0x070B 0  // ܋
 #define UC_SYRIAC_HARKLEAN_METOBELUS             0x070C 0  // ܌
 #define UC_SYRIAC_HARKLEAN_ASTERISCUS            0x070D 0  // ܍
-#define UC_SYRIAC_ABBREVIATION_MARK              0x070F 0  // ܏
+#define UC_SYRIAC_ABBREVIATION_MARK              0x070F 0  /* U+070F (SYRIAC ABBREVIATION MARK) */
 #define UC_SYRIAC_ALAPH                          0x0710 0  // ܐ
 #define UC_SYRIAC_SUPERSC_ALAPH                  0x0711 0  // ܑ
 #define UC_SYRIAC_BETH                           0x0712 0  // ܒ
@@ -96,5 +95,3 @@
 #define UC_SYRIAC_SOGDIAN_ZHAIN                  0x074D 0  // ݍ
 #define UC_SYRIAC_SOGDIAN_KHAPH                  0x074E 0  // ݎ
 #define UC_SYRIAC_SOGDIAN_FE                     0x074F 0  // ݏ
-
-#endif // SYRIAC_H

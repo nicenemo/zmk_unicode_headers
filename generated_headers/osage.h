@@ -18,8 +18,7 @@
 
 */
 
-#ifndef OSAGE_H
-#define OSAGE_H
+#pragma once
 
 #define UC_OSAGE_A                               0x104D8 0x104B0  // 𐓘/𐒰
 #define UC_OSAGE_AI                              0x104D9 0x104B1  // 𐓙/𐒱
@@ -57,5 +56,3 @@
 #define UC_OSAGE_GHA                             0x104F9 0x104D1  // 𐓹/𐓑
 #define UC_OSAGE_ZA                              0x104FA 0x104D2  // 𐓺/𐓒
 #define UC_OSAGE_ZHA                             0x104FB 0x104D3  // 𐓻/𐓓
-
-#endif // OSAGE_H

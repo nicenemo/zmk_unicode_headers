@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B_H
-#define MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B_H
+#pragma once
 
 #define UC_TRIPLE_VERTICAL_BAR_DELIMITER         0x2980 0  // ⦀
 #define UC_Z_NOTATION_SPOT                       0x2981 0  // ⦁
@@ -145,5 +144,3 @@
 #define UC_RIGHT_POINTING_CURVED_ANGLE_BRACKET   0x29FD 0  // ⧽
 #define UC_TINY                                  0x29FE 0  // ⧾
 #define UC_MINY                                  0x29FF 0  // ⧿
-
-#endif // MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B_H

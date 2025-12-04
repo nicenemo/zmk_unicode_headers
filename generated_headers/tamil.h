@@ -16,8 +16,7 @@
 
 */
 
-#ifndef TAMIL_H
-#define TAMIL_H
+#pragma once
 
 #define UC_TM_TAMIL_SIGN_ANUSVARA                0x0B82 0  // ஂ
 #define UC_TM_TAMIL_SIGN_VISARGA                 0x0B83 0  // ஃ
@@ -91,5 +90,3 @@
 #define UC_TM_TAMIL_AS_ABOVE_SIGN                0x0BF8 0  // ௸
 #define UC_TM_TAMIL_RUPEE_SIGN                   0x0BF9 0  // ௹
 #define UC_TM_TAMIL_SIGN                         0x0BFA 0  // ௺
-
-#endif // TAMIL_H

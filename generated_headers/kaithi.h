@@ -23,8 +23,7 @@
 
 */
 
-#ifndef KAITHI_H
-#define KAITHI_H
+#pragma once
 
 #define UC_KAITHI_SIGN_CANDRABINDU               0x11080 0  // 𑂀
 #define UC_KAITHI_SIGN_ANUSVARA                  0x11081 0  // 𑂁
@@ -87,12 +86,10 @@
 #define UC_KAITHI_SIGN_NUKTA                     0x110BA 0  // 𑂺
 #define UC_KAITHI_ABBREVIATION_SIGN              0x110BB 0  // 𑂻
 #define UC_KAITHI_ENUMERATION_SIGN               0x110BC 0  // 𑂼
-#define UC_KAITHI_SIGN                           0x110BD 0  // 𑂽
+#define UC_KAITHI_SIGN                           0x110BD 0  /* U+110BD (KAITHI NUMBER SIGN) */
 #define UC_KAITHI_SECTION_MARK                   0x110BE 0  // 𑂾
 #define UC_KAITHI_DOUBLE_SECTION_MARK            0x110BF 0  // 𑂿
 #define UC_KAITHI_DANDA                          0x110C0 0  // 𑃀
 #define UC_KAITHI_DOUBLE_DANDA                   0x110C1 0  // 𑃁
 #define UC_KAITHI_VOWEL_SIGN_VOCALIC_R           0x110C2 0  // 𑃂
-#define UC_KAITHI_SIGN_ABOVE                     0x110CD 0  // 𑃍
-
-#endif // KAITHI_H
+#define UC_KAITHI_SIGN_ABOVE                     0x110CD 0  /* U+110CD (KAITHI NUMBER SIGN ABOVE) */

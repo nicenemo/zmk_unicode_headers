@@ -19,8 +19,7 @@
 
 */
 
-#ifndef SUPPLEMENTAL_SYMBOLS_AND_PICTOGRAPHS_H
-#define SUPPLEMENTAL_SYMBOLS_AND_PICTOGRAPHS_H
+#pragma once
 
 #define UC_C_CROSS_FORMEE_FOUR_DOTS              0x1F900 0  // 🤀
 #define UC_C_CROSS_FORMEE_TWO_DOTS               0x1F901 0  // 🤁
@@ -278,5 +277,3 @@
 #define UC_SPONGE                                0x1F9FD 0  // 🧽
 #define UC_RECEIPT                               0x1F9FE 0  // 🧾
 #define UC_NAZAR_AMULET                          0x1F9FF 0  // 🧿
-
-#endif // SUPPLEMENTAL_SYMBOLS_AND_PICTOGRAPHS_H

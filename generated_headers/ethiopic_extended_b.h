@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ETHIOPIC_EXTENDED_B_H
-#define ETHIOPIC_EXTENDED_B_H
+#pragma once
 
 #define UC_ETHIOPIC_SYLLABLE_HHYA                0x1E7E0 0  // 𞟠
 #define UC_ETHIOPIC_SYLLABLE_HHYU                0x1E7E1 0  // 𞟡
@@ -45,5 +44,3 @@
 #define UC_ETHIOPIC_SYLLABLE_GURAGE_FWEE         0x1E7FC 0  // 𞟼
 #define UC_ETHIOPIC_SYLLABLE_GURAGE_PWI          0x1E7FD 0  // 𞟽
 #define UC_ETHIOPIC_SYLLABLE_GURAGE_PWEE         0x1E7FE 0  // 𞟾
-
-#endif // ETHIOPIC_EXTENDED_B_H

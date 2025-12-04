@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ARABIC_PRESENTATION_FORMS_A_H
-#define ARABIC_PRESENTATION_FORMS_A_H
+#pragma once
 
 #define UC_ALEF_WASLA_ISOLATED_FORM              0xFB50 0  // ﭐ
 #define UC_ALEF_WASLA_FINAL_FORM                 0xFB51 0  // ﭑ
@@ -673,5 +672,3 @@
 #define UC_LIGATURE_BISMILLAH_AR_RAHMAN_AR_RAHEEM 0xFDFD 0  // ﷽
 #define UC_LIGATURE_SUBHAANAHU_WA_TAAALAA        0xFDFE 0  // ﷾
 #define UC_LIGATURE_AZZA_WA_JALL                 0xFDFF 0  // ﷿
-
-#endif // ARABIC_PRESENTATION_FORMS_A_H

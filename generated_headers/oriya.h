@@ -16,8 +16,7 @@
 
 */
 
-#ifndef ORIYA_H
-#define ORIYA_H
+#pragma once
 
 #define UC_OR_ORIYA_SIGN_CANDRABINDU             0x0B01 0  // ଁ
 #define UC_OR_ORIYA_SIGN_ANUSVARA                0x0B02 0  // ଂ
@@ -110,5 +109,3 @@
 #define UC_OR_ORIYA_FRACTION_ONE_SIXTEENTH       0x0B75 0  // ୵
 #define UC_OR_ORIYA_FRACTION_ONE_EIGHTH          0x0B76 0  // ୶
 #define UC_OR_ORIYA_FRACTION_THREE_SIXTEENTHS    0x0B77 0  // ୷
-
-#endif // ORIYA_H

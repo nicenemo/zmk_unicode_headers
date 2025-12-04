@@ -20,8 +20,7 @@
 
 */
 
-#ifndef PHONETIC_EXTENSIONS_H
-#define PHONETIC_EXTENSIONS_H
+#pragma once
 
 #define UC_SMALL_CAPITAL_A                       0x1D00 0  // ᴀ
 #define UC_SMALL_CAPITAL_AE                      0x1D01 0  // ᴁ
@@ -151,5 +150,3 @@
 #define UC_P_STROKE                              0x1D7D 0x2C63  // ᵽ/Ᵽ
 #define UC_SMALL_CAPITAL_U_STROKE                0x1D7E 0  // ᵾ
 #define UC_SMALL_UPSILON_STROKE                  0x1D7F 0  // ᵿ
-
-#endif // PHONETIC_EXTENSIONS_H

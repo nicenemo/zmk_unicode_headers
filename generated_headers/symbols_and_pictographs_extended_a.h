@@ -14,8 +14,7 @@
 
 */
 
-#ifndef SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A_H
-#define SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A_H
+#pragma once
 
 #define UC_BALLET_SHOES                          0x1FA70 0  // 🩰
 #define UC_ONE_PIECE_SWIMSUIT                    0x1FA71 0  // 🩱
@@ -137,5 +136,3 @@
 #define UC_HEART_HANDS                           0x1FAF6 0  // 🫶
 #define UC_LEFTWARDS_PUSHING_HAND                0x1FAF7 0  // 🫷
 #define UC_RIGHTWARDS_PUSHING_HAND               0x1FAF8 0  // 🫸
-
-#endif // SYMBOLS_AND_PICTOGRAPHS_EXTENDED_A_H

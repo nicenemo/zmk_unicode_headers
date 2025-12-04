@@ -18,8 +18,7 @@
 
 */
 
-#ifndef DINGBATS_H
-#define DINGBATS_H
+#pragma once
 
 #define UC_DB_BLACK_SAFETY_SCISSORS              0x2700 0  // ✀
 #define UC_DB_UPPER_BLADE_SCISSORS               0x2701 0  // ✁
@@ -213,5 +212,3 @@
 #define UC_DB_HEAVY_WEDGE_TAILED_RIGHTWARDS_ARROW 0x27BD 0  // ➽
 #define UC_DB_OPEN_OUTLINED_RIGHTWARDS_ARROW     0x27BE 0  // ➾
 #define UC_DB_DOUBLE_CURLY_LOOP                  0x27BF 0  // ➿
-
-#endif // DINGBATS_H

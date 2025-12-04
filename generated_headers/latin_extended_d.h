@@ -20,8 +20,7 @@
 
 */
 
-#ifndef LATIN_EXTENDED_D_H
-#define LATIN_EXTENDED_D_H
+#pragma once
 
 #define UC_LTD_MODIFIER_STRESS_AND_HIGH_TONE     0xA720 0  // ꜠
 #define UC_LTD_MODIFIER_STRESS_AND_LOW_TONE      0xA721 0  // ꜡
@@ -153,5 +152,3 @@
 #define UC_LTD_EPIGRAPHIC_INVERTED_M             0xA7FD 0  // ꟽ
 #define UC_LTD_EPIGRAPHIC_I_LONGA                0xA7FE 0  // ꟾ
 #define UC_LTD_EPIGRAPHIC_ARCHAIC_M              0xA7FF 0  // ꟿ
-
-#endif // LATIN_EXTENDED_D_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef NABATAEAN_H
-#define NABATAEAN_H
+#pragma once
 
 #define UC_NABATAEAN_FINAL_ALEPH                 0x10880 0  // 𐢀
 #define UC_NABATAEAN_ALEPH                       0x10881 0  // 𐢁
@@ -57,5 +56,3 @@
 #define UC_NABATAEAN_TEN                         0x108AD 0  // 𐢭
 #define UC_NABATAEAN_TWENTY                      0x108AE 0  // 𐢮
 #define UC_NABATAEAN_ONE_HUNDRED                 0x108AF 0  // 𐢯
-
-#endif // NABATAEAN_H

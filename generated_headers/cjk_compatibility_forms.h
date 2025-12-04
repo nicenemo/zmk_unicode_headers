@@ -14,8 +14,7 @@
 
 */
 
-#ifndef CJK_COMPATIBILITY_FORMS_H
-#define CJK_COMPATIBILITY_FORMS_H
+#pragma once
 
 #define UC_PRESENTATION_FORM_FOR_VERTICAL_TWO_DOT_LEADER 0xFE30 0  // ︰
 #define UC_PRESENTATION_FORM_FOR_VERTICAL_EM_DASH 0xFE31 0  // ︱
@@ -49,5 +48,3 @@
 #define UC_DASHED_LOW_LINE                       0xFE4D 0  // ﹍
 #define UC_CENTRELINE_LOW_LINE                   0xFE4E 0  // ﹎
 #define UC_WAVY_LOW_LINE                         0xFE4F 0  // ﹏
-
-#endif // CJK_COMPATIBILITY_FORMS_H

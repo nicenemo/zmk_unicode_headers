@@ -19,8 +19,7 @@
 
 */
 
-#ifndef PAU_CIN_HAU_H
-#define PAU_CIN_HAU_H
+#pragma once
 
 #define UC_PAU_CIN_HAU_PA                        0x11AC0 0  // 𑫀
 #define UC_PAU_CIN_HAU_KA                        0x11AC1 0  // 𑫁
@@ -79,5 +78,3 @@
 #define UC_PAU_CIN_HAU_LOW_FALLING_TONE_LONG_FINAL 0x11AF6 0  // 𑫶
 #define UC_PAU_CIN_HAU_LOW_FALLING_TONE_FINAL    0x11AF7 0  // 𑫷
 #define UC_PAU_CIN_HAU_GLOTTAL_STOP_FINAL        0x11AF8 0  // 𑫸
-
-#endif // PAU_CIN_HAU_H

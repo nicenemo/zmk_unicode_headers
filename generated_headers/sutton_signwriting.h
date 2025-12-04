@@ -22,8 +22,7 @@
 
 */
 
-#ifndef SUTTON_SIGNWRITING_H
-#define SUTTON_SIGNWRITING_H
+#pragma once
 
 #define UC_SIGNWRITING_HAND_FIST_INDEX           0x1D800 0  // 𝠀
 #define UC_SIGNWRITING_HAND_CIRCLE_INDEX         0x1D801 0  // 𝠁
@@ -697,5 +696,3 @@
 #define UC_SIGNWRITING_ROTATION_MODIFIER_14      0x1DAAD 0  // 𝪭
 #define UC_SIGNWRITING_ROTATION_MODIFIER_15      0x1DAAE 0  // 𝪮
 #define UC_SIGNWRITING_ROTATION_MODIFIER_16      0x1DAAF 0  // 𝪯
-
-#endif // SUTTON_SIGNWRITING_H

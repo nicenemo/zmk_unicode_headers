@@ -33,8 +33,7 @@
 
 */
 
-#ifndef IMPERIAL_ARAMAIC_H
-#define IMPERIAL_ARAMAIC_H
+#pragma once
 
 #define UC_IMPERIAL_ARAMAIC_ALEPH                0x10840 0  // 𐡀
 #define UC_IMPERIAL_ARAMAIC_BETH                 0x10841 0  // 𐡁
@@ -67,5 +66,3 @@
 #define UC_IMPERIAL_ARAMAIC_ONE_HUNDRED          0x1085D 0  // 𐡝
 #define UC_IMPERIAL_ARAMAIC_ONE_THOUSAND         0x1085E 0  // 𐡞
 #define UC_IMPERIAL_ARAMAIC_TEN_THOUSAND         0x1085F 0  // 𐡟
-
-#endif // IMPERIAL_ARAMAIC_H

@@ -16,8 +16,7 @@
 
 */
 
-#ifndef ARMENIAN_H
-#define ARMENIAN_H
+#pragma once
 
 #define UC_AM_ARMENIAN_MODIFIER_LEFT_HALF_RING   0x0559 0  // ՙ
 #define UC_AM_ARMENIAN_APOSTROPHE                0x055A 0  // ՚
@@ -72,5 +71,3 @@
 #define UC_AM_RIGHT_FACING_ARMENIAN_ETERNITY_SIGN 0x058D 0  // ֍
 #define UC_AM_LEFT_FACING_ARMENIAN_ETERNITY_SIGN 0x058E 0  // ֎
 #define UC_AM_ARMENIAN_DRAM_SIGN                 0x058F 0  // ֏
-
-#endif // ARMENIAN_H

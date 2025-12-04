@@ -16,8 +16,7 @@
 
 */
 
-#ifndef TOTO_H
-#define TOTO_H
+#pragma once
 
 #define UC_TOTO_PA                               0x1E290 0  // 𞊐
 #define UC_TOTO_BA                               0x1E291 0  // 𞊑
@@ -50,5 +49,3 @@
 #define UC_TOTO_BREATHY_AE                       0x1E2AC 0  // 𞊬
 #define UC_TOTO_A                                0x1E2AD 0  // 𞊭
 #define UC_TOTO_SIGN_RISING_TONE                 0x1E2AE 0  // 𞊮
-
-#endif // TOTO_H

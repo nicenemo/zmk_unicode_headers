@@ -14,8 +14,7 @@
 
 */
 
-#ifndef CYRILLIC_EXTENDED_B_H
-#define CYRILLIC_EXTENDED_B_H
+#pragma once
 
 #define UC_ZEMLYA                                0xA641 0xA640  // ꙁ/Ꙁ
 #define UC_DZELO                                 0xA643 0xA642  // ꙃ/Ꙃ
@@ -76,5 +75,3 @@
 #define UC_MODIFIER_SOFT_SIGN                    0xA69D 0  // ꚝ
 #define UC_COMBINING_EF                          0xA69E 0  // ꚞ
 #define UC_COMBINING_IOTIFIED_E                  0xA69F 0  // ꚟ
-
-#endif // CYRILLIC_EXTENDED_B_H

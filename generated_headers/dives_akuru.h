@@ -19,8 +19,7 @@
 
 */
 
-#ifndef DIVES_AKURU_H
-#define DIVES_AKURU_H
+#pragma once
 
 #define UC_DIVES_AKURU_A                         0x11900 0  // 𑤀
 #define UC_DIVES_AKURU_AA                        0x11901 0  // 𑤁
@@ -94,5 +93,3 @@
 #define UC_DIVES_AKURU_SEVEN                     0x11957 0  // 𑥗
 #define UC_DIVES_AKURU_EIGHT                     0x11958 0  // 𑥘
 #define UC_DIVES_AKURU_NINE                      0x11959 0  // 𑥙
-
-#endif // DIVES_AKURU_H

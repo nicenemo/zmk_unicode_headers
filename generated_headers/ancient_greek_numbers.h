@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ANCIENT_GREEK_NUMBERS_H
-#define ANCIENT_GREEK_NUMBERS_H
+#pragma once
 
 #define UC_ACROPHONIC_ATTIC_ONE_QUARTER          0x10140 0  // 𐅀
 #define UC_ACROPHONIC_ATTIC_ONE_HALF             0x10141 0  // 𐅁
@@ -96,5 +95,3 @@
 #define UC_SINUSOID_SIGN                         0x1018C 0  // 𐆌
 #define UC_INDICTION_SIGN                        0x1018D 0  // 𐆍
 #define UC_NOMISMA_SIGN                          0x1018E 0  // 𐆎
-
-#endif // ANCIENT_GREEK_NUMBERS_H

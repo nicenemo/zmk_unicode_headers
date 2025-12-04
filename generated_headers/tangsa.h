@@ -22,8 +22,7 @@
 
 */
 
-#ifndef TANGSA_H
-#define TANGSA_H
+#pragma once
 
 #define UC_TANGSA_OZ                             0x16A70 0  // 𖩰
 #define UC_TANGSA_OC                             0x16A71 0  // 𖩱
@@ -114,5 +113,3 @@
 #define UC_TANGSA_SEVEN                          0x16AC7 0  // 𖫇
 #define UC_TANGSA_EIGHT                          0x16AC8 0  // 𖫈
 #define UC_TANGSA_NINE                           0x16AC9 0  // 𖫉
-
-#endif // TANGSA_H

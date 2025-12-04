@@ -32,8 +32,7 @@
 
 */
 
-#ifndef LINEAR_A_H
-#define LINEAR_A_H
+#pragma once
 
 #define UC_LINEAR_A_SIGN_AB001                   0x10600 0  // 𐘀
 #define UC_LINEAR_A_SIGN_AB002                   0x10601 0  // 𐘁
@@ -376,5 +375,3 @@
 #define UC_LINEAR_A_SIGN_A805                    0x10765 0  // 𐝥
 #define UC_LINEAR_A_SIGN_A806                    0x10766 0  // 𐝦
 #define UC_LINEAR_A_SIGN_A807                    0x10767 0  // 𐝧
-
-#endif // LINEAR_A_H

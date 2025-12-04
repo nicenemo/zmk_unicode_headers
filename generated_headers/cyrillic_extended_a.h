@@ -14,8 +14,7 @@
 
 */
 
-#ifndef CYRILLIC_EXTENDED_A_H
-#define CYRILLIC_EXTENDED_A_H
+#pragma once
 
 #define UC_COMBINING_BE                          0x2DE0 0  // ⷠ
 #define UC_COMBINING_VE                          0x2DE1 0  // ⷡ
@@ -49,5 +48,3 @@
 #define UC_COMBINING_LITTLE_YUS                  0x2DFD 0  // ⷽ
 #define UC_COMBINING_BIG_YUS                     0x2DFE 0  // ⷾ
 #define UC_COMBINING_IOTIFIED_BIG_YUS            0x2DFF 0  // ⷿ
-
-#endif // CYRILLIC_EXTENDED_A_H

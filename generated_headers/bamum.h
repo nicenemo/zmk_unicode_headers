@@ -16,8 +16,7 @@
 
 */
 
-#ifndef BAMUM_H
-#define BAMUM_H
+#pragma once
 
 #define UC_BAMUM_A                               0xA6A0 0  // ꚠ
 #define UC_BAMUM_KA                              0xA6A1 0  // ꚡ
@@ -107,5 +106,3 @@
 #define UC_BAMUM                                 0xA6F5 0  // ꛵
 #define UC_BAMUM_SEMICOLON                       0xA6F6 0  // ꛶
 #define UC_BAMUM_QUESTION_MARK                   0xA6F7 0  // ꛷
-
-#endif // BAMUM_H

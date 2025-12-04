@@ -17,8 +17,7 @@
 
 */
 
-#ifndef BYZANTINE_MUSICAL_SYMBOLS_H
-#define BYZANTINE_MUSICAL_SYMBOLS_H
+#pragma once
 
 #define UC_BYZANTINE_MUSICAL_PSILI               0x1D000 0  // 𝀀
 #define UC_BYZANTINE_MUSICAL_DASEIA              0x1D001 0  // 𝀁
@@ -266,5 +265,3 @@
 #define UC_BYZANTINE_MUSICAL_KENTIMA_NEO_KATO    0x1D0F3 0  // 𝃳
 #define UC_BYZANTINE_MUSICAL_KLASMA_KATO         0x1D0F4 0  // 𝃴
 #define UC_BYZANTINE_MUSICAL_GORGON_NEO_KATO     0x1D0F5 0  // 𝃵
-
-#endif // BYZANTINE_MUSICAL_SYMBOLS_H

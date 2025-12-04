@@ -19,8 +19,7 @@
 
 */
 
-#ifndef MEETEI_MAYEK_EXTENSIONS_H
-#define MEETEI_MAYEK_EXTENSIONS_H
+#pragma once
 
 #define UC_MEETEI_MAYEK_E                        0xAAE0 0  // ꫠ
 #define UC_MEETEI_MAYEK_O                        0xAAE1 0  // ꫡ
@@ -45,5 +44,3 @@
 #define UC_MEETEI_MAYEK_WORD_REPETITION_MARK     0xAAF4 0  // ꫴ
 #define UC_MEETEI_MAYEK_VOWEL_SIGN_VISARGA       0xAAF5 0  // ꫵ
 #define UC_MEETEI_MAYEK_VIRAMA                   0xAAF6 0  // ꫶
-
-#endif // MEETEI_MAYEK_EXTENSIONS_H

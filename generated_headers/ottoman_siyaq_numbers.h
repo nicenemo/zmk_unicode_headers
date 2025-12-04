@@ -14,8 +14,7 @@
 
 */
 
-#ifndef OTTOMAN_SIYAQ_NUMBERS_H
-#define OTTOMAN_SIYAQ_NUMBERS_H
+#pragma once
 
 #define UC_OTTOMAN_SIYAQ_ONE                     0x1ED01 0  // 𞴁
 #define UC_OTTOMAN_SIYAQ_TWO                     0x1ED02 0  // 𞴂
@@ -78,5 +77,3 @@
 #define UC_OTTOMAN_SIYAQ_ALTERNATE_TEN_THOUSAND  0x1ED3B 0  // 𞴻
 #define UC_OTTOMAN_SIYAQ_FRACTION_ONE_HALF       0x1ED3C 0  // 𞴼
 #define UC_OTTOMAN_SIYAQ_FRACTION_ONE_SIXTH      0x1ED3D 0  // 𞴽
-
-#endif // OTTOMAN_SIYAQ_NUMBERS_H

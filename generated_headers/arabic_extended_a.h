@@ -14,8 +14,7 @@
 
 */
 
-#ifndef ARABIC_EXTENDED_A_H
-#define ARABIC_EXTENDED_A_H
+#pragma once
 
 #define UC_BEH_SMALL_V_BELOW                     0x08A0 0  // ࢠ
 #define UC_BEH_HAMZA_ABOVE                       0x08A1 0  // ࢡ
@@ -83,7 +82,7 @@
 #define UC_SMALL_HIGH_WORD_WAQFA                 0x08DF 0  // ࣟ
 #define UC_SMALL_HIGH_FOOTNOTE_MARKER            0x08E0 0  // ࣠
 #define UC_SMALL_HIGH_SIGN_SAFHA                 0x08E1 0  // ࣡
-#define UC_DISPUTED_END_OF_AYAH                  0x08E2 0  // ࣢
+#define UC_DISPUTED_END_OF_AYAH                  0x08E2 0  /* U+08E2 (ARABIC DISPUTED END OF AYAH) */
 #define UC_TURNED_DAMMA_BELOW                    0x08E3 0  // ࣣ
 #define UC_CURLY_FATHA                           0x08E4 0  // ࣤ
 #define UC_CURLY_DAMMA                           0x08E5 0  // ࣥ
@@ -113,5 +112,3 @@
 #define UC_RIGHT_ARROWHEAD_ABOVE_DOT             0x08FD 0  // ࣽ
 #define UC_DAMMA_DOT                             0x08FE 0  // ࣾ
 #define UC_MARK_SIDEWAYS_NOON_GHUNNA             0x08FF 0  // ࣿ
-
-#endif // ARABIC_EXTENDED_A_H

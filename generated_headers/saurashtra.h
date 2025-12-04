@@ -16,8 +16,7 @@
 
 */
 
-#ifndef SAURASHTRA_H
-#define SAURASHTRA_H
+#pragma once
 
 #define UC_SAURASHTRA_SIGN_ANUSVARA              0xA880 0  // ꢀ
 #define UC_SAURASHTRA_SIGN_VISARGA               0xA881 0  // ꢁ
@@ -101,5 +100,3 @@
 #define UC_SAURASHTRA_SEVEN                      0xA8D7 0  // ꣗
 #define UC_SAURASHTRA_EIGHT                      0xA8D8 0  // ꣘
 #define UC_SAURASHTRA_NINE                       0xA8D9 0  // ꣙
-
-#endif // SAURASHTRA_H

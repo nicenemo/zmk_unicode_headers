@@ -32,8 +32,7 @@
 
 */
 
-#ifndef CHEROKEE_H
-#define CHEROKEE_H
+#pragma once
 
 #define UC_CHEROKEE_YE                           0x13F8 0x13F0  // ᏸ/Ᏸ
 #define UC_CHEROKEE_YI                           0x13F9 0x13F1  // ᏹ/Ᏹ
@@ -41,5 +40,3 @@
 #define UC_CHEROKEE_YU                           0x13FB 0x13F3  // ᏻ/Ᏻ
 #define UC_CHEROKEE_YV                           0x13FC 0x13F4  // ᏼ/Ᏼ
 #define UC_CHEROKEE_MV                           0x13FD 0x13F5  // ᏽ/Ᏽ
-
-#endif // CHEROKEE_H

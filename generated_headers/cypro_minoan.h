@@ -14,8 +14,7 @@
 
 */
 
-#ifndef CYPRO_MINOAN_H
-#define CYPRO_MINOAN_H
+#pragma once
 
 #define UC_CYPRO_MINOAN_SIGN_CM001               0x12F90 0  // 𒾐
 #define UC_CYPRO_MINOAN_SIGN_CM002               0x12F91 0  // 𒾑
@@ -116,5 +115,3 @@
 #define UC_CYPRO_MINOAN_SIGN_CM114               0x12FF0 0  // 𒿰
 #define UC_CYPRO_MINOAN_SIGN_CM301               0x12FF1 0  // 𒿱
 #define UC_CYPRO_MINOAN_SIGN_CM302               0x12FF2 0  // 𒿲
-
-#endif // CYPRO_MINOAN_H

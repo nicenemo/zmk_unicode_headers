@@ -20,8 +20,7 @@
 
 */
 
-#ifndef OL_ONAL_H
-#define OL_ONAL_H
+#pragma once
 
 #define UC_OL_ONAL_O                             0x1E5D0 0  // 𞗐
 #define UC_OL_ONAL_OM                            0x1E5D1 0  // 𞗑
@@ -67,5 +66,3 @@
 #define UC_OL_ONAL_EIGHT                         0x1E5F9 0  // 𞗹
 #define UC_OL_ONAL_NINE                          0x1E5FA 0  // 𞗺
 #define UC_OL_ONAL_ABBREVIATION_SIGN             0x1E5FF 0  // 𞗿
-
-#endif // OL_ONAL_H

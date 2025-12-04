@@ -17,8 +17,7 @@
 
 */
 
-#ifndef DEVANAGARI_EXTENDED_H
-#define DEVANAGARI_EXTENDED_H
+#pragma once
 
 #define UC_COMBINING_ZERO                        0xA8E0 0  // ꣠
 #define UC_COMBINING_ONE                         0xA8E1 0  // ꣡
@@ -52,5 +51,3 @@
 #define UC_JAIN_OM                               0xA8FD 0  // ꣽ
 #define UC_AY                                    0xA8FE 0  // ꣾ
 #define UC_VOWEL_SIGN_AY                         0xA8FF 0  // ꣿ
-
-#endif // DEVANAGARI_EXTENDED_H

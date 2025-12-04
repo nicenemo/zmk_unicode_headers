@@ -19,8 +19,7 @@
 
 */
 
-#ifndef LINEAR_B_SYLLABARY_H
-#define LINEAR_B_SYLLABARY_H
+#pragma once
 
 #define UC_LINEAR_B_SYLLABLE_B008_A              0x10000 0  // 𐀀
 #define UC_LINEAR_B_SYLLABLE_B038_E              0x10001 0  // 𐀁
@@ -110,5 +109,3 @@
 #define UC_LINEAR_B_B083                         0x1005B 0  // 𐁛
 #define UC_LINEAR_B_B086                         0x1005C 0  // 𐁜
 #define UC_LINEAR_B_B089                         0x1005D 0  // 𐁝
-
-#endif // LINEAR_B_SYLLABARY_H

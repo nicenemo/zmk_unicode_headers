@@ -20,8 +20,7 @@
 
 */
 
-#ifndef PAHAWH_HMONG_H
-#define PAHAWH_HMONG_H
+#pragma once
 
 #define UC_PAHAWH_HMONG_VOWEL_KEEB               0x16B00 0  // 𖬀
 #define UC_PAHAWH_HMONG_VOWEL_KEEV               0x16B01 0  // 𖬁
@@ -150,5 +149,3 @@
 #define UC_PAHAWH_HMONG_CLAN_SIGN_TSWB           0x16B8D 0  // 𖮍
 #define UC_PAHAWH_HMONG_CLAN_SIGN_KWM            0x16B8E 0  // 𖮎
 #define UC_PAHAWH_HMONG_CLAN_SIGN_VWJ            0x16B8F 0  // 𖮏
-
-#endif // PAHAWH_HMONG_H

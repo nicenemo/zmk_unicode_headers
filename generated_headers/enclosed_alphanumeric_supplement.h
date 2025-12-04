@@ -29,8 +29,7 @@
 
 */
 
-#ifndef ENCLOSED_ALPHANUMERIC_SUPPLEMENT_H
-#define ENCLOSED_ALPHANUMERIC_SUPPLEMENT_H
+#pragma once
 
 #define UC_ZERO_FULL_STOP                        0x1F100 0  // 🄀
 #define UC_ZERO                                  0x1F101 0  // 🄁
@@ -232,5 +231,3 @@
 #define UC_REGIONAL_INDICATOR_X                  0x1F1FD 0  // 🇽
 #define UC_REGIONAL_INDICATOR_Y                  0x1F1FE 0  // 🇾
 #define UC_REGIONAL_INDICATOR_Z                  0x1F1FF 0  // 🇿
-
-#endif // ENCLOSED_ALPHANUMERIC_SUPPLEMENT_H

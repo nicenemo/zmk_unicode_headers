@@ -20,8 +20,7 @@
 
 */
 
-#ifndef LINEAR_B_IDEOGRAMS_H
-#define LINEAR_B_IDEOGRAMS_H
+#pragma once
 
 #define UC_LINEAR_B_IDEOGRAM_B100_MAN            0x10080 0  // 𐂀
 #define UC_LINEAR_B_IDEOGRAM_B102_WOMAN          0x10081 0  // 𐂁
@@ -146,5 +145,3 @@
 #define UC_LINEAR_B_IDEOGRAM_VESSEL_B229         0x100F8 0  // 𐃸
 #define UC_LINEAR_B_IDEOGRAM_VESSEL_B250         0x100F9 0  // 𐃹
 #define UC_LINEAR_B_IDEOGRAM_VESSEL_B305         0x100FA 0  // 𐃺
-
-#endif // LINEAR_B_IDEOGRAMS_H

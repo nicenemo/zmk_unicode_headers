@@ -14,8 +14,7 @@
 
 */
 
-#ifndef GREEK_AND_COPTIC_H
-#define GREEK_AND_COPTIC_H
+#pragma once
 
 #define UC_GRC_HETA                              0x0371 0x0370  // ͱ/Ͱ
 #define UC_GRC_ARCHAIC_SAMPI                     0x0373 0x0372  // ͳ/Ͳ
@@ -96,5 +95,3 @@
 #define UC_GRC_SHO                               0x03F8 0x03F7  // ϸ/Ϸ
 #define UC_GRC_SAN                               0x03FB 0x03FA  // ϻ/Ϻ
 #define UC_GRC_RHO_STROKE                        0x03FC 0  // ϼ
-
-#endif // GREEK_AND_COPTIC_H

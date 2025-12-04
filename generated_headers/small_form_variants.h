@@ -18,8 +18,7 @@
 
 */
 
-#ifndef SMALL_FORM_VARIANTS_H
-#define SMALL_FORM_VARIANTS_H
+#pragma once
 
 #define UC_SMALL                                 0xFE50 0  // ﹐
 #define UC_SMALL_IDEOGRAPHIC                     0xFE51 0  // ﹑
@@ -47,5 +46,3 @@
 #define UC_SMALL_DOLLAR_SIGN                     0xFE69 0  // ﹩
 #define UC_SMALL_PERCENT_SIGN                    0xFE6A 0  // ﹪
 #define UC_SMALL_COMMERCIAL_AT                   0xFE6B 0  // ﹫
-
-#endif // SMALL_FORM_VARIANTS_H

@@ -21,8 +21,7 @@
 
 */
 
-#ifndef THAANA_H
-#define THAANA_H
+#pragma once
 
 #define UC_THAANA_HAA                            0x0780 0  // ހ
 #define UC_THAANA_SHAVIYANI                      0x0781 0  // ށ
@@ -74,5 +73,3 @@
 #define UC_THAANA_OABOAFILI                      0x07AF 0  // ޯ
 #define UC_THAANA_SUKUN                          0x07B0 0  // ް
 #define UC_THAANA_NAA                            0x07B1 0  // ޱ
-
-#endif // THAANA_H

@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MANICHAEAN_H
-#define MANICHAEAN_H
+#pragma once
 
 #define UC_MANICHAEAN_ALEPH                      0x10AC0 0  // 𐫀
 #define UC_MANICHAEAN_BETH                       0x10AC1 0  // 𐫁
@@ -68,5 +67,3 @@
 #define UC_MANICHAEAN_PUNCTUATION_DOT            0x10AF4 0  // 𐫴
 #define UC_MANICHAEAN_PUNCTUATION_TWO_DOTS       0x10AF5 0  // 𐫵
 #define UC_MANICHAEAN_PUNCTUATION_LINE_FILLER    0x10AF6 0  // 𐫶
-
-#endif // MANICHAEAN_H

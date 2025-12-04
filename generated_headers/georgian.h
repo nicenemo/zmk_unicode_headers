@@ -16,8 +16,7 @@
 
 */
 
-#ifndef GEORGIAN_H
-#define GEORGIAN_H
+#pragma once
 
 #define UC_GEORGIAN_AN                           0x10D0 0x1C90  // ა/Ა
 #define UC_GEORGIAN_BAN                          0x10D1 0x1C91  // ბ/Ბ
@@ -67,5 +66,3 @@
 #define UC_GEORGIAN_AEN                          0x10FD 0x1CBD  // ჽ/Ჽ
 #define UC_GEORGIAN_HARD_SIGN                    0x10FE 0x1CBE  // ჾ/Ჾ
 #define UC_GEORGIAN_LABIAL_SIGN                  0x10FF 0x1CBF  // ჿ/Ჿ
-
-#endif // GEORGIAN_H

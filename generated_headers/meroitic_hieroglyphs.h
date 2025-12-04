@@ -14,8 +14,7 @@
 
 */
 
-#ifndef MEROITIC_HIEROGLYPHS_H
-#define MEROITIC_HIEROGLYPHS_H
+#pragma once
 
 #define UC_MEROITIC_HIEROGLYPHIC_A               0x10980 0  // 𐦀
 #define UC_MEROITIC_HIEROGLYPHIC_E               0x10981 0  // 𐦁
@@ -49,5 +48,3 @@
 #define UC_MEROITIC_HIEROGLYPHIC_DA              0x1099D 0  // 𐦝
 #define UC_MEROITIC_HIEROGLYPHIC_VIDJ            0x1099E 0  // 𐦞
 #define UC_MEROITIC_HIEROGLYPHIC_VIDJ_2          0x1099F 0  // 𐦟
-
-#endif // MEROITIC_HIEROGLYPHS_H
