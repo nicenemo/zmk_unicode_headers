@@ -1,12 +1,9 @@
-# Unicode Header Generator
+# Unicode Data and Header Generator
 
-> **generate_unicode_headers.py** – A lightweight utility that produces one C/C++ header file per Unicode block.
-> The headers expose highly abbreviated, clean C macros for every code point in the form `UC_<BLOCK_PREFIX>_<CLEAN_NAME>` that expands to its hexadecimal value.
+> This project contains two utility scripts for working with the Unicode Character Database (UCD) and generating useful C/C++ headers and structured JSON data.
 >
-> **Example of Abbreviation (Before → After):**
-> `#define UC_MATHEMATICAL_ALPHANUMERIC_SYMBOLS_SANS_SERIF_BOLD_DIGIT_ZERO 0x1D7EC`
-> **↓**
-> `#define UC_MA_SS_BOLD_ZERO 0x1D7EC`
+> 1.  **`generate_unicode_headers.py`** – A lightweight utility that produces one C/C++ header file per Unicode block. The headers expose highly abbreviated, clean C macros for every code point in the form `UC_<BLOCK_PREFIX>_<CLEAN_NAME>` that expands to its hexadecimal value.
+> 2.  **`generate_blocks_data.py`** – A utility that parses the official `Blocks.txt` and enhances the data by scraping two-paragraph summaries from Wikipedia. The output is a structured JSON file (`unicode_blocks.json`).
 
 ---
 
@@ -27,21 +24,42 @@
 
 ## Why this project?
 
-Working with Unicode in C/C++ often requires manually looking up and maintaining exact code-point values, which is tedious and error-prone. This script automates the entire process and now provides C macros that are both clean and short.
+Working with Unicode in C/C++ often requires manually looking up and maintaining exact code-point values, which is tedious and error-prone. This project addresses two major needs:
 
-1.  **Data Source:** The script is now fully self-contained, using the modern **`unicodedata2`** Python package to pull all official Unicode Character Database (UCD) information, including character names, code points, and block definitions, ensuring it is always up-to-date with the latest standard.
-2.  **Abbreviation:** A multi-layered abbreviation process sanitizes the long, verbose Unicode character names into macros that are suitable for use in restricted identifier environments.
-3.  **Generate:** A single C/C++ header is generated for every Unicode block, ready to be dropped into any project.
+* **Header Generation:** Automates the creation of clean, short, C-compatible macros for every Unicode code point. It uses **`unicodedata2`** to ensure it's up-to-date with the latest UCD.
+* **Data Enrichment:** Automates the gathering of block-level data from **`Blocks.txt`** and enriches it with descriptive, summarized content scraped from Wikipedia, providing a comprehensive JSON resource for block metadata.
 
-The result is a set of headers you can use constants like `UC_MA_DS_CAPITAL_C` (for `DOUBLE-STRUCK CAPITAL C` in the Mathematical Alphanumeric Symbols block) or `UC_LA_SMALL_A` (for `LATIN SMALL LETTER A`).
+The result is a powerful toolset for developers needing simplified access to Unicode constants and structured block information.
 
 ---
 
 ## Features
 
-| Feature | Description |
-|---------|-------------|
-| **Multi-Layer Abbreviation** | A three-layer system shortens macro names significantly by applying: **1.** A 2-4 letter block prefix (e.g., `UC_MA_` for Mathematical Alphanumeric Symbols). **2.** Script/Language abbreviations (e.g., `CY` for CYRILLIC, `EL` for GREEK). **3.** Word-specific abbreviations (`DS` for DOUBLE_STRUCK, `SS` for SANS_SERIF) and removal of highly redundant words (`DIGIT`, `NUMBER`).|
-| **Clean Macro Names** | Unicode names are sanitized, converted to uppercase, and separated by underscores (`UC_…`), resulting in valid C identifiers.|
-| **Data Source** | Data is pulled directly from the **`unicodedata2`** package, eliminating the need for manual downloads or **maintaining local UCD files (like `Blocks.txt`)**.|
-| **Glyph Comments** | Printable glyphs are shown in the comment for quick visual reference (e.
+| Feature | Script | Description |
+|---------|--------|-------------|
+| **C/C++ Header Output** | `generate_unicode_headers.py` | Generates a C/C++ header file for every Unicode block, containing constants for each code point. |
+| **Multi-Layer Abbreviation** | `generate_unicode_headers.py` | A system to shorten macro names significantly using block prefixes, script abbreviations, and word-specific abbreviations. |
+| **JSON Data Output** | `generate_blocks_data.py` | Produces a clean, structured JSON file (`unicode_blocks.json`) containing block ranges, URLs, and descriptions. |
+| **Web Scraping** | `generate_blocks_data.py` | Uses `requests` and `beautifulsoup4` to crawl Wikipedia and extract a two-paragraph summary for each Unicode block's description. |
+| **Polite Scraping** | `generate_blocks_data.py` | Includes a delay between requests to avoid overwhelming Wikipedia's servers. |
+| **Data Source** | `generate_unicode_headers.py` | Pulls data directly from the **`unicodedata2`** package, eliminating the need for manual downloads of UCD files. |
+| **Glyph Comments** | `generate_unicode_headers.py` | Printable glyphs are shown in the comment for quick visual reference (e.g., `// ℀`). |
+
+---
+
+## Prerequisites
+
+- **Python 3.8+**
+- The libraries listed in `requirements.txt`: **`requests`** (for web fetching), **`beautifulsoup4`** (for HTML parsing), and **`unicodedata2`** (for up-to-date Unicode character data).
+
+---
+
+## Virtual Environment Setup (Recommended)
+
+It is highly recommended to use a **Python virtual environment** (`venv`) to isolate dependencies and prevent conflicts with your system's Python installation.
+
+First, create a `requirements.txt` file in the root directory with the following contents:
+```text
+unicodedata2
+requests
+beautifulsoup4
