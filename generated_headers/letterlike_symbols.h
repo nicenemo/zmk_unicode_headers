@@ -86,5 +86,5 @@
 #define UC_LS_TURNED_AMPERSAND                   0x214B 0  // ⅋
 #define UC_LS_PER_SIGN                           0x214C 0  // ⅌
 #define UC_LS_AKTIESELSKAB                       0x214D 0  // ⅍
-#define UC_LS_TURNED_F                           0x2132 0x214E  // Ⅎ/ⅎ
+#define UC_LS_TURNED_F                           0x214E 0x2132  // ⅎ/Ⅎ
 #define UC_LS_FOR_SAMARITAN_SOURCE               0x214F 0  // ⅏

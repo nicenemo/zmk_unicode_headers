@@ -44,7 +44,7 @@
 #define UC_LTE_SMALL_UI                          0xAB50 0  // ꭐ
 #define UC_LTE_SMALL_TURNED_UI                   0xAB51 0  // ꭑ
 #define UC_LTE_SMALL_U_LEFT_HOOK                 0xAB52 0  // ꭒ
-#define UC_LTE_CHI                               0xA7B3 0xAB53  // Ꭓ/ꭓ
+#define UC_LTE_CHI                               0xAB53 0xA7B3  // ꭓ/Ꭓ
 #define UC_LTE_SMALL_CHI_LOW_RIGHT_RING          0xAB54 0  // ꭔ
 #define UC_LTE_SMALL_CHI_LOW_LEFT_SERIF          0xAB55 0  // ꭕ
 #define UC_LTE_SMALL_X_LOW_RIGHT_RING            0xAB56 0  // ꭖ

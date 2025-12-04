@@ -132,7 +132,7 @@
 #define UC_GREX_SMALL_ALPHA_PERISPOMENI_AND_YPOGEGRAMMENI 0x1FB7 0  // ᾷ
 #define UC_GREX_CAPITAL_ALPHA_PROSGEGRAMMENI     0x1FBC 0  // ᾼ
 #define UC_GREX_KORONIS                          0x1FBD 0  // ᾽
-#define UC_GREX_IOTA                             0x0399 0x1FBE  // Ι/ι
+#define UC_GREX_PROSGEGRAMMENI                   0x1FBE 0x0399  // ι/Ι
 #define UC_GREX_PSILI                            0x1FBF 0  // ᾿
 #define UC_GREX_PERISPOMENI                      0x1FC0 0  // ῀
 #define UC_GREX_DIALYTIKA_AND_PERISPOMENI        0x1FC1 0  // ῁

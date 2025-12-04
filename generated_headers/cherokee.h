@@ -9,9 +9,9 @@
 
 #pragma once
 
-#define UC_CHEROKEE_YE                           0x13F0 0x13F8  // Ᏸ/ᏸ
-#define UC_CHEROKEE_YI                           0x13F1 0x13F9  // Ᏹ/ᏹ
-#define UC_CHEROKEE_YO                           0x13F2 0x13FA  // Ᏺ/ᏺ
-#define UC_CHEROKEE_YU                           0x13F3 0x13FB  // Ᏻ/ᏻ
-#define UC_CHEROKEE_YV                           0x13F4 0x13FC  // Ᏼ/ᏼ
-#define UC_CHEROKEE_MV                           0x13F5 0x13FD  // Ᏽ/ᏽ
+#define UC_CHEROKEE_YE                           0x13F8 0x13F0  // ᏸ/Ᏸ
+#define UC_CHEROKEE_YI                           0x13F9 0x13F1  // ᏹ/Ᏹ
+#define UC_CHEROKEE_YO                           0x13FA 0x13F2  // ᏺ/Ᏺ
+#define UC_CHEROKEE_YU                           0x13FB 0x13F3  // ᏻ/Ᏻ
+#define UC_CHEROKEE_YV                           0x13FC 0x13F4  // ᏼ/Ᏼ
+#define UC_CHEROKEE_MV                           0x13FD 0x13F5  // ᏽ/Ᏽ

@@ -9,6 +9,40 @@
 
 #pragma once
 
+#define UC_LA_NULL                           0x0000 0  /* U+0000 (NULL) */
+#define UC_LA_SOH                            0x0001 0  /* U+0001 (START OF HEADING) */
+#define UC_LA_STX                            0x0002 0  /* U+0002 (START OF TEXT) */
+#define UC_LA_ETX                            0x0003 0  /* U+0003 (END OF TEXT) */
+#define UC_LA_EOT                            0x0004 0  /* U+0004 (END OF TRANSMISSION) */
+#define UC_LA_ENQ                            0x0005 0  /* U+0005 (ENQUIRY) */
+#define UC_LA_ACK                            0x0006 0  /* U+0006 (ACKNOWLEDGE) */
+#define UC_LA_BEL                            0x0007 0  /* U+0007 (BELL) */
+#define UC_LA_BS                             0x0008 0  /* U+0008 (BACKSPACE) */
+#define UC_LA_HT                             0x0009 0  /* U+0009 (CHARACTER TABULATION) */
+#define UC_LA_LF                             0x000A 0  /* U+000A (LINE FEED) */
+#define UC_LA_VT                             0x000B 0  /* U+000B (LINE TABULATION) */
+#define UC_LA_FF                             0x000C 0  /* U+000C (FORM FEED) */
+#define UC_LA_CR                             0x000D 0  /* U+000D (CARRIAGE RETURN) */
+#define UC_LA_SO                             0x000E 0  /* U+000E (SHIFT OUT) */
+#define UC_LA_SI                             0x000F 0  /* U+000F (SHIFT IN) */
+#define UC_LA_DLE                            0x0010 0  /* U+0010 (DATA LINK ESCAPE) */
+#define UC_LA_DC1                            0x0011 0  /* U+0011 (DEVICE CONTROL ONE) */
+#define UC_LA_DC2                            0x0012 0  /* U+0012 (DEVICE CONTROL TWO) */
+#define UC_LA_DC3                            0x0013 0  /* U+0013 (DEVICE CONTROL THREE) */
+#define UC_LA_DC4                            0x0014 0  /* U+0014 (DEVICE CONTROL FOUR) */
+#define UC_LA_NAK                            0x0015 0  /* U+0015 (NEGATIVE ACKNOWLEDGE) */
+#define UC_LA_SYN                            0x0016 0  /* U+0016 (SYNCHRONOUS IDLE) */
+#define UC_LA_ETB                            0x0017 0  /* U+0017 (END OF TRANSMISSION BLOCK) */
+#define UC_LA_CAN                            0x0018 0  /* U+0018 (CANCEL) */
+#define UC_LA_EM                             0x0019 0  /* U+0019 (END OF MEDIUM) */
+#define UC_LA_SUB                            0x001A 0  /* U+001A (SUBSTITUTE) */
+#define UC_LA_ESC                            0x001B 0  /* U+001B (ESCAPE) */
+#define UC_LA_FS                             0x001C 0  /* U+001C (FILE SEPARATOR) */
+#define UC_LA_GS                             0x001D 0  /* U+001D (GROUP SEPARATOR) */
+#define UC_LA_RS                             0x001E 0  /* U+001E (RECORD SEPARATOR) */
+#define UC_LA_US                             0x001F 0  /* U+001F (UNIT SEPARATOR) */
+#define UC_LA_DELETE                         0x007F 0  /* U+007F (DELETE) */
+
 #define UC_LA_SPACE                              0x0020 0  /* U+0020 (SPACE) */
 #define UC_LA_EXCLAMATION_MARK                   0x0021 0  // !
 #define UC_LA_QUOTATION_MARK                     0x0022 0  // "
@@ -48,32 +82,32 @@
 #define UC_LA_CIRCUMFLEX_ACCENT                  0x005E 0  // ^
 #define UC_LA_LOW_LINE                           0x005F 0  // _
 #define UC_LA_GRAVE_ACCENT                       0x0060 0  // `
-#define UC_LA_A                                  0x0041 0x0061  // A/a
-#define UC_LA_B                                  0x0042 0x0062  // B/b
-#define UC_LA_C                                  0x0043 0x0063  // C/c
-#define UC_LA_D                                  0x0044 0x0064  // D/d
-#define UC_LA_E                                  0x0045 0x0065  // E/e
-#define UC_LA_F                                  0x0046 0x0066  // F/f
-#define UC_LA_G                                  0x0047 0x0067  // G/g
-#define UC_LA_H                                  0x0048 0x0068  // H/h
-#define UC_LA_I                                  0x0049 0x0069  // I/i
-#define UC_LA_J                                  0x004A 0x006A  // J/j
-#define UC_LA_K                                  0x004B 0x006B  // K/k
-#define UC_LA_L                                  0x004C 0x006C  // L/l
-#define UC_LA_M                                  0x004D 0x006D  // M/m
-#define UC_LA_N                                  0x004E 0x006E  // N/n
-#define UC_LA_O                                  0x004F 0x006F  // O/o
-#define UC_LA_P                                  0x0050 0x0070  // P/p
-#define UC_LA_Q                                  0x0051 0x0071  // Q/q
-#define UC_LA_R                                  0x0052 0x0072  // R/r
-#define UC_LA_S                                  0x0053 0x0073  // S/s
-#define UC_LA_T                                  0x0054 0x0074  // T/t
-#define UC_LA_U                                  0x0055 0x0075  // U/u
-#define UC_LA_V                                  0x0056 0x0076  // V/v
-#define UC_LA_W                                  0x0057 0x0077  // W/w
-#define UC_LA_X                                  0x0058 0x0078  // X/x
-#define UC_LA_Y                                  0x0059 0x0079  // Y/y
-#define UC_LA_Z                                  0x005A 0x007A  // Z/z
+#define UC_LA_A                                  0x0061 0x0041  // a/A
+#define UC_LA_B                                  0x0062 0x0042  // b/B
+#define UC_LA_C                                  0x0063 0x0043  // c/C
+#define UC_LA_D                                  0x0064 0x0044  // d/D
+#define UC_LA_E                                  0x0065 0x0045  // e/E
+#define UC_LA_F                                  0x0066 0x0046  // f/F
+#define UC_LA_G                                  0x0067 0x0047  // g/G
+#define UC_LA_H                                  0x0068 0x0048  // h/H
+#define UC_LA_I                                  0x0069 0x0049  // i/I
+#define UC_LA_J                                  0x006A 0x004A  // j/J
+#define UC_LA_K                                  0x006B 0x004B  // k/K
+#define UC_LA_L                                  0x006C 0x004C  // l/L
+#define UC_LA_M                                  0x006D 0x004D  // m/M
+#define UC_LA_N                                  0x006E 0x004E  // n/N
+#define UC_LA_O                                  0x006F 0x004F  // o/O
+#define UC_LA_P                                  0x0070 0x0050  // p/P
+#define UC_LA_Q                                  0x0071 0x0051  // q/Q
+#define UC_LA_R                                  0x0072 0x0052  // r/R
+#define UC_LA_S                                  0x0073 0x0053  // s/S
+#define UC_LA_T                                  0x0074 0x0054  // t/T
+#define UC_LA_U                                  0x0075 0x0055  // u/U
+#define UC_LA_V                                  0x0076 0x0056  // v/V
+#define UC_LA_W                                  0x0077 0x0057  // w/W
+#define UC_LA_X                                  0x0078 0x0058  // x/X
+#define UC_LA_Y                                  0x0079 0x0059  // y/Y
+#define UC_LA_Z                                  0x007A 0x005A  // z/Z
 #define UC_LA_LEFT_CURLY_BRACKET                 0x007B 0  // {
 #define UC_LA_VERTICAL_LINE                      0x007C 0  // |
 #define UC_LA_RIGHT_CURLY_BRACKET                0x007D 0  // }

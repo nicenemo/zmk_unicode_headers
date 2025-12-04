@@ -60,7 +60,7 @@
 #define UC_ROMAN_NUMERAL_ONE_THOUSAND_C_D        0x2180 0  // ↀ
 #define UC_ROMAN_NUMERAL_FIVE_THOUSAND           0x2181 0  // ↁ
 #define UC_ROMAN_NUMERAL_TEN_THOUSAND            0x2182 0  // ↂ
-#define UC_REVERSED_C                            0x2183 0x2184  // Ↄ/ↄ
+#define UC_REVERSED_C                            0x2184 0x2183  // ↄ/Ↄ
 #define UC_ROMAN_NUMERAL_SIX_LATE_FORM           0x2185 0  // ↅ
 #define UC_ROMAN_NUMERAL_FIFTY_EARLY_FORM        0x2186 0  // ↆ
 #define UC_ROMAN_NUMERAL_FIFTY_THOUSAND          0x2187 0  // ↇ

@@ -9,23 +9,23 @@
 
 #pragma once
 
-#define UC_LTC_L_DOUBLE_BAR                      0x2C60 0x2C61  // Ⱡ/ⱡ
+#define UC_LTC_L_DOUBLE_BAR                      0x2C61 0x2C60  // ⱡ/Ⱡ
 #define UC_LTC_CAPITAL_L_MIDDLE_TILDE            0x2C62 0  // Ɫ
 #define UC_LTC_CAPITAL_P_STROKE                  0x2C63 0  // Ᵽ
 #define UC_LTC_CAPITAL_R_TAIL                    0x2C64 0  // Ɽ
-#define UC_LTC_A_STROKE                          0x023A 0x2C65  // Ⱥ/ⱥ
-#define UC_LTC_T_DIAGONAL_STROKE                 0x023E 0x2C66  // Ⱦ/ⱦ
-#define UC_LTC_H_DESCENDER                       0x2C67 0x2C68  // Ⱨ/ⱨ
-#define UC_LTC_K_DESCENDER                       0x2C69 0x2C6A  // Ⱪ/ⱪ
-#define UC_LTC_Z_DESCENDER                       0x2C6B 0x2C6C  // Ⱬ/ⱬ
+#define UC_LTC_A_STROKE                          0x2C65 0x023A  // ⱥ/Ⱥ
+#define UC_LTC_T_DIAGONAL_STROKE                 0x2C66 0x023E  // ⱦ/Ⱦ
+#define UC_LTC_H_DESCENDER                       0x2C68 0x2C67  // ⱨ/Ⱨ
+#define UC_LTC_K_DESCENDER                       0x2C6A 0x2C69  // ⱪ/Ⱪ
+#define UC_LTC_Z_DESCENDER                       0x2C6C 0x2C6B  // ⱬ/Ⱬ
 #define UC_LTC_CAPITAL_ALPHA                     0x2C6D 0  // Ɑ
 #define UC_LTC_CAPITAL_M_HOOK                    0x2C6E 0  // Ɱ
 #define UC_LTC_CAPITAL_TURNED_A                  0x2C6F 0  // Ɐ
 #define UC_LTC_CAPITAL_TURNED_ALPHA              0x2C70 0  // Ɒ
 #define UC_LTC_SMALL_V_RIGHT_HOOK                0x2C71 0  // ⱱ
-#define UC_LTC_W_HOOK                            0x2C72 0x2C73  // Ⱳ/ⱳ
+#define UC_LTC_W_HOOK                            0x2C73 0x2C72  // ⱳ/Ⱳ
 #define UC_LTC_SMALL_V_CURL                      0x2C74 0  // ⱴ
-#define UC_LTC_HALF_H                            0x2C75 0x2C76  // Ⱶ/ⱶ
+#define UC_LTC_HALF_H                            0x2C76 0x2C75  // ⱶ/Ⱶ
 #define UC_LTC_SMALL_TAILLESS_PHI                0x2C77 0  // ⱷ
 #define UC_LTC_SMALL_E_NOTCH                     0x2C78 0  // ⱸ
 #define UC_LTC_SMALL_TURNED_R_TAIL               0x2C79 0  // ⱹ
