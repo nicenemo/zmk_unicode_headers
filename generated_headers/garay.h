@@ -25,28 +25,28 @@
 #define UC_GARAY_VOWEL_SIGN_EE                   0x10D4D 0  /* U+10D4D (GARAY VOWEL SIGN EE) */
 #define UC_GARAY_VOWEL_LENGTH_MARK               0x10D4E 0  /* U+10D4E (GARAY VOWEL LENGTH MARK) */
 #define UC_GARAY_SUKUN                           0x10D4F 0  /* U+10D4F (GARAY SUKUN) */
-#define UC_GARAY_CAPITAL_A                       0x10D50 0  /* U+10D50 (GARAY CAPITAL LETTER A) */
-#define UC_GARAY_CAPITAL_CA                      0x10D51 0  /* U+10D51 (GARAY CAPITAL LETTER CA) */
-#define UC_GARAY_CAPITAL_MA                      0x10D52 0  /* U+10D52 (GARAY CAPITAL LETTER MA) */
-#define UC_GARAY_CAPITAL_KA                      0x10D53 0  /* U+10D53 (GARAY CAPITAL LETTER KA) */
-#define UC_GARAY_CAPITAL_BA                      0x10D54 0  /* U+10D54 (GARAY CAPITAL LETTER BA) */
-#define UC_GARAY_CAPITAL_JA                      0x10D55 0  /* U+10D55 (GARAY CAPITAL LETTER JA) */
-#define UC_GARAY_CAPITAL_SA                      0x10D56 0  /* U+10D56 (GARAY CAPITAL LETTER SA) */
-#define UC_GARAY_CAPITAL_WA                      0x10D57 0  /* U+10D57 (GARAY CAPITAL LETTER WA) */
-#define UC_GARAY_CAPITAL_LA                      0x10D58 0  /* U+10D58 (GARAY CAPITAL LETTER LA) */
-#define UC_GARAY_CAPITAL_GA                      0x10D59 0  /* U+10D59 (GARAY CAPITAL LETTER GA) */
-#define UC_GARAY_CAPITAL_DA                      0x10D5A 0  /* U+10D5A (GARAY CAPITAL LETTER DA) */
-#define UC_GARAY_CAPITAL_XA                      0x10D5B 0  /* U+10D5B (GARAY CAPITAL LETTER XA) */
-#define UC_GARAY_CAPITAL_YA                      0x10D5C 0  /* U+10D5C (GARAY CAPITAL LETTER YA) */
-#define UC_GARAY_CAPITAL_TA                      0x10D5D 0  /* U+10D5D (GARAY CAPITAL LETTER TA) */
-#define UC_GARAY_CAPITAL_RA                      0x10D5E 0  /* U+10D5E (GARAY CAPITAL LETTER RA) */
-#define UC_GARAY_CAPITAL_NYA                     0x10D5F 0  /* U+10D5F (GARAY CAPITAL LETTER NYA) */
-#define UC_GARAY_CAPITAL_FA                      0x10D60 0  /* U+10D60 (GARAY CAPITAL LETTER FA) */
-#define UC_GARAY_CAPITAL_NA                      0x10D61 0  /* U+10D61 (GARAY CAPITAL LETTER NA) */
-#define UC_GARAY_CAPITAL_PA                      0x10D62 0  /* U+10D62 (GARAY CAPITAL LETTER PA) */
-#define UC_GARAY_CAPITAL_HA                      0x10D63 0  /* U+10D63 (GARAY CAPITAL LETTER HA) */
-#define UC_GARAY_CAPITAL_OLD_KA                  0x10D64 0  /* U+10D64 (GARAY CAPITAL LETTER OLD KA) */
-#define UC_GARAY_CAPITAL_OLD_NA                  0x10D65 0  /* U+10D65 (GARAY CAPITAL LETTER OLD NA) */
+#define UC_GARAY_A                               0x10D50 0x10D70  /* U+10D50 (GARAY CAPITAL LETTER A) U+10D70 (GARAY SMALL LETTER A) */
+#define UC_GARAY_CA                              0x10D51 0x10D71  /* U+10D51 (GARAY CAPITAL LETTER CA) U+10D71 (GARAY SMALL LETTER CA) */
+#define UC_GARAY_MA                              0x10D52 0x10D72  /* U+10D52 (GARAY CAPITAL LETTER MA) U+10D72 (GARAY SMALL LETTER MA) */
+#define UC_GARAY_KA                              0x10D53 0x10D73  /* U+10D53 (GARAY CAPITAL LETTER KA) U+10D73 (GARAY SMALL LETTER KA) */
+#define UC_GARAY_BA                              0x10D54 0x10D74  /* U+10D54 (GARAY CAPITAL LETTER BA) U+10D74 (GARAY SMALL LETTER BA) */
+#define UC_GARAY_JA                              0x10D55 0x10D75  /* U+10D55 (GARAY CAPITAL LETTER JA) U+10D75 (GARAY SMALL LETTER JA) */
+#define UC_GARAY_SA                              0x10D56 0x10D76  /* U+10D56 (GARAY CAPITAL LETTER SA) U+10D76 (GARAY SMALL LETTER SA) */
+#define UC_GARAY_WA                              0x10D57 0x10D77  /* U+10D57 (GARAY CAPITAL LETTER WA) U+10D77 (GARAY SMALL LETTER WA) */
+#define UC_GARAY_LA                              0x10D58 0x10D78  /* U+10D58 (GARAY CAPITAL LETTER LA) U+10D78 (GARAY SMALL LETTER LA) */
+#define UC_GARAY_GA                              0x10D59 0x10D79  /* U+10D59 (GARAY CAPITAL LETTER GA) U+10D79 (GARAY SMALL LETTER GA) */
+#define UC_GARAY_DA                              0x10D5A 0x10D7A  /* U+10D5A (GARAY CAPITAL LETTER DA) U+10D7A (GARAY SMALL LETTER DA) */
+#define UC_GARAY_XA                              0x10D5B 0x10D7B  /* U+10D5B (GARAY CAPITAL LETTER XA) U+10D7B (GARAY SMALL LETTER XA) */
+#define UC_GARAY_YA                              0x10D5C 0x10D7C  /* U+10D5C (GARAY CAPITAL LETTER YA) U+10D7C (GARAY SMALL LETTER YA) */
+#define UC_GARAY_TA                              0x10D5D 0x10D7D  /* U+10D5D (GARAY CAPITAL LETTER TA) U+10D7D (GARAY SMALL LETTER TA) */
+#define UC_GARAY_RA                              0x10D5E 0x10D7E  /* U+10D5E (GARAY CAPITAL LETTER RA) U+10D7E (GARAY SMALL LETTER RA) */
+#define UC_GARAY_NYA                             0x10D5F 0x10D7F  /* U+10D5F (GARAY CAPITAL LETTER NYA) U+10D7F (GARAY SMALL LETTER NYA) */
+#define UC_GARAY_FA                              0x10D60 0x10D80  /* U+10D60 (GARAY CAPITAL LETTER FA) U+10D80 (GARAY SMALL LETTER FA) */
+#define UC_GARAY_NA                              0x10D61 0x10D81  /* U+10D61 (GARAY CAPITAL LETTER NA) U+10D81 (GARAY SMALL LETTER NA) */
+#define UC_GARAY_PA                              0x10D62 0x10D82  /* U+10D62 (GARAY CAPITAL LETTER PA) U+10D82 (GARAY SMALL LETTER PA) */
+#define UC_GARAY_HA                              0x10D63 0x10D83  /* U+10D63 (GARAY CAPITAL LETTER HA) U+10D83 (GARAY SMALL LETTER HA) */
+#define UC_GARAY_OLD_KA                          0x10D64 0x10D84  /* U+10D64 (GARAY CAPITAL LETTER OLD KA) U+10D84 (GARAY SMALL LETTER OLD KA) */
+#define UC_GARAY_OLD_NA                          0x10D65 0x10D85  /* U+10D65 (GARAY CAPITAL LETTER OLD NA) U+10D85 (GARAY SMALL LETTER OLD NA) */
 #define UC_GARAY_VOWEL_SIGN_E                    0x10D69 0  /* U+10D69 (GARAY VOWEL SIGN E) */
 #define UC_GARAY_CONSONANT_GEMINATION_MARK       0x10D6A 0  /* U+10D6A (GARAY CONSONANT GEMINATION MARK) */
 #define UC_GARAY_COMBINING_DOT_ABOVE             0x10D6B 0  /* U+10D6B (GARAY COMBINING DOT ABOVE) */
@@ -54,27 +54,5 @@
 #define UC_GARAY_CONSONANT_NASALIZATION_MARK     0x10D6D 0  /* U+10D6D (GARAY CONSONANT NASALIZATION MARK) */
 #define UC_GARAY_HYPHEN                          0x10D6E 0  /* U+10D6E (GARAY HYPHEN) */
 #define UC_GARAY_REDUPLICATION_MARK              0x10D6F 0  /* U+10D6F (GARAY REDUPLICATION MARK) */
-#define UC_GARAY_SMALL_A                         0x10D70 0  /* U+10D70 (GARAY SMALL LETTER A) */
-#define UC_GARAY_SMALL_CA                        0x10D71 0  /* U+10D71 (GARAY SMALL LETTER CA) */
-#define UC_GARAY_SMALL_MA                        0x10D72 0  /* U+10D72 (GARAY SMALL LETTER MA) */
-#define UC_GARAY_SMALL_KA                        0x10D73 0  /* U+10D73 (GARAY SMALL LETTER KA) */
-#define UC_GARAY_SMALL_BA                        0x10D74 0  /* U+10D74 (GARAY SMALL LETTER BA) */
-#define UC_GARAY_SMALL_JA                        0x10D75 0  /* U+10D75 (GARAY SMALL LETTER JA) */
-#define UC_GARAY_SMALL_SA                        0x10D76 0  /* U+10D76 (GARAY SMALL LETTER SA) */
-#define UC_GARAY_SMALL_WA                        0x10D77 0  /* U+10D77 (GARAY SMALL LETTER WA) */
-#define UC_GARAY_SMALL_LA                        0x10D78 0  /* U+10D78 (GARAY SMALL LETTER LA) */
-#define UC_GARAY_SMALL_GA                        0x10D79 0  /* U+10D79 (GARAY SMALL LETTER GA) */
-#define UC_GARAY_SMALL_DA                        0x10D7A 0  /* U+10D7A (GARAY SMALL LETTER DA) */
-#define UC_GARAY_SMALL_XA                        0x10D7B 0  /* U+10D7B (GARAY SMALL LETTER XA) */
-#define UC_GARAY_SMALL_YA                        0x10D7C 0  /* U+10D7C (GARAY SMALL LETTER YA) */
-#define UC_GARAY_SMALL_TA                        0x10D7D 0  /* U+10D7D (GARAY SMALL LETTER TA) */
-#define UC_GARAY_SMALL_RA                        0x10D7E 0  /* U+10D7E (GARAY SMALL LETTER RA) */
-#define UC_GARAY_SMALL_NYA                       0x10D7F 0  /* U+10D7F (GARAY SMALL LETTER NYA) */
-#define UC_GARAY_SMALL_FA                        0x10D80 0  /* U+10D80 (GARAY SMALL LETTER FA) */
-#define UC_GARAY_SMALL_NA                        0x10D81 0  /* U+10D81 (GARAY SMALL LETTER NA) */
-#define UC_GARAY_SMALL_PA                        0x10D82 0  /* U+10D82 (GARAY SMALL LETTER PA) */
-#define UC_GARAY_SMALL_HA                        0x10D83 0  /* U+10D83 (GARAY SMALL LETTER HA) */
-#define UC_GARAY_SMALL_OLD_KA                    0x10D84 0  /* U+10D84 (GARAY SMALL LETTER OLD KA) */
-#define UC_GARAY_SMALL_OLD_NA                    0x10D85 0  /* U+10D85 (GARAY SMALL LETTER OLD NA) */
 #define UC_GARAY_PLUS_SIGN                       0x10D8E 0  /* U+10D8E (GARAY PLUS SIGN) */
 #define UC_GARAY_MINUS_SIGN                      0x10D8F 0  /* U+10D8F (GARAY MINUS SIGN) */

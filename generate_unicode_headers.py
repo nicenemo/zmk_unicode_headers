@@ -26,10 +26,10 @@ from unicodedata2 import name, category, unidata_version
 
 # --------------------------------------------------------------------
 # 0. Custom 'block' function and Block Data (Internalized from Blocks.txt)
+#    (Content remains the same as the previous version)
 # --------------------------------------------------------------------
 
 # List of Unicode Blocks (Start Code, End Code, Name) internalized from Blocks.txt.
-# All hexadecimal numbers correctly start with the 0x prefix.
 UNICODE_BLOCK_RANGES = [
     (0x0000, 0x007F, 'Basic Latin'),
     (0x0080, 0x00FF, 'Latin-1 Supplement'),
@@ -410,6 +410,7 @@ UnicodeBlock = namedtuple('UnicodeBlock', ['name', 'start', 'end'])
 
 # --------------------------------------------------------------------
 # 2. Utility Class for Macro Generation (Encapsulation)
+#    (Content remains the same as the previous version)
 # --------------------------------------------------------------------
 
 class MacroGenerator:
@@ -512,7 +513,7 @@ class MacroGenerator:
 
         # 2. Layer 3: Apply internal abbreviations
         for original, replacement in self.MACRO_STRING_REPLACEMENTS.items():
-            s_upper = s_upper.replace(original.upper(), replacement)
+            s_upper = s_upper.upper().replace(original.upper(), replacement)
 
         # 3. Initial cleanup: convert remaining spaces/hyphens/non-word chars to single underscores
         s_final = re.sub(r"[^\w]+", "_", s_upper).strip("_")
@@ -539,6 +540,7 @@ class MacroGenerator:
 
 # --------------------------------------------------------------------
 # 3. Helper Functions 
+#    (Content remains the same as the previous version)
 # --------------------------------------------------------------------
 
 def printable_glyph(cp: int) -> Optional[str]:
@@ -558,6 +560,9 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
     """
     Find the uppercase partner (cp, name) if *cp* is a single, mappable 
     lowercase letter ('Ll'). Returns (None, None) otherwise.
+    
+    NOTE: This only works for standard Lu/Ll pairs where a standard Unicode 
+          case mapping is defined.
     """
     try:
         ch = chr(cp)
@@ -579,6 +584,7 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
         except ValueError:
             return None, None
         
+        # We must also ensure the partner is Lu
         if partner_cat == 'Lu':
             return partner_cp, partner_name
 
@@ -587,6 +593,7 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
 
 # --------------------------------------------------------------------
 # 4. Block Iteration
+#    (Content remains the same as the previous version)
 # --------------------------------------------------------------------
 
 def get_all_blocks() -> Iterator[UnicodeBlock]:
@@ -616,17 +623,42 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
 
 
 # --------------------------------------------------------------------
-# 5. Header Generation Logic
+# 5. Header Generation Logic (Revised)
 # --------------------------------------------------------------------
+
+# List of blocks that require the generalized semantic check because they are 
+# cased letters but are NOT Lu/Ll.
+NON_STANDARD_CASED_BLOCKS: Set[str] = {
+    'Beria Erfe', 
+    'Tags', 
+    'Garay', 
+    # Add other non-Lu/Ll cased scripts here as they emerge.
+}
 
 def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generator: MacroGenerator) -> Optional[List[str]]:
     """
     Generates the content lines (#define macros) for a single C header block.
+    
+    Revised to correctly handle non-standard cased scripts like Garay, 
+    regardless of code point order, and to exclude non-letter blocks.
     """
     
     lines: List[str] = []
     processed: Set[int] = set()
+    is_non_standard_cased = block.name in NON_STANDARD_CASED_BLOCKS
 
+    # 1. Pre-process the block characters for efficient name lookup
+    name_to_cp: Dict[str, int] = {}
+    if is_non_standard_cased:
+        for cp in range(block.start, block.end + 1):
+            try:
+                char_name = name(chr(cp)) 
+                if not char_name.startswith('<') or not char_name.endswith('>'):
+                    name_to_cp[char_name] = cp
+            except ValueError:
+                pass
+            
+    # 2. Main loop
     for cp in range(block.start, block.end + 1):
         if cp in processed:
             continue
@@ -636,26 +668,121 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
             char_name = name(char)
             cat = category(char)
         except ValueError:
-            # Correctly skips unassigned and non-character code points
             continue
             
         glyph = printable_glyph(cp)
-        partner_cp, partner_name = find_case_partner(cp)
+        
+        # --- Pairing Logic ---
+        
+        partner_cp, partner_name = None, None
+        
+        # A. Attempt standard Lu/Ll pairing first
+        # This handles cases where cp is Ll and finds the Lu partner
+        if cat == 'Ll':
+            partner_cp_lu, partner_name_lu = find_case_partner(cp)
+            if partner_cp_lu is not None:
+                # The partner (Lu) is the higher code point, so the order is correct.
+                partner_cp, partner_name = partner_cp_lu, partner_name_lu
+                
+        # B. Generalized semantic pairing (Only for designated non-standard blocks)
+        if partner_cp is None and is_non_standard_cased:
+            
+            cp_upper, name_upper = None, None
+            cp_lower, name_lower = None, None
+            
+            # Determine which type of letter we are currently on
+            if "CAPITAL LETTER" in char_name:
+                cp_upper, name_upper = cp, char_name
+                expected_lower_name = char_name.replace("CAPITAL LETTER", "SMALL LETTER")
+                
+                if expected_lower_name in name_to_cp:
+                    cp_lower = name_to_cp[expected_lower_name]
+                    name_lower = expected_lower_name
+                    
+            elif "SMALL LETTER" in char_name:
+                cp_lower, name_lower = cp, char_name
+                expected_upper_name = char_name.replace("SMALL LETTER", "CAPITAL LETTER")
+                
+                if expected_upper_name in name_to_cp:
+                    cp_upper = name_to_cp[expected_upper_name]
+                    name_upper = expected_upper_name
 
-        # 1. Skip Capital Letters that are the UPPERCASE partner of a later LOWERCASE letter.
-        is_capital_cat = cat == 'Lu'
-        if is_capital_cat:
+            # Check if a valid pair was found AND if this is the character with the lowest code point
+            if cp_upper is not None and cp_lower is not None and cp_upper != cp_lower:
+                
+                if cp == min(cp_upper, cp_lower):
+                    # Found the pair, and this is the first one in the code point range.
+                    # We must ensure the macro is defined with the CAPITAL letter's name.
+                    
+                    # Set the macro values based on the required output order (first=lower CP, second=higher CP)
+                    if cp_upper < cp_lower:
+                        cp1, name1, cp2, name2 = cp_upper, name_upper, cp_lower, name_lower
+                    else:
+                        cp1, name1, cp2, name2 = cp_lower, name_lower, cp_upper, name_upper
+                    
+                    # Define the macro name using the CAPITAL form's name for consistency
+                    macro_name_source = name_upper
+                    
+                    # Assign the calculated pair for macro generation
+                    partner_cp = cp2 
+                    partner_name = name2
+                else:
+                    # This is the higher-code-point character in the pair (e.g., U+10D80 Capital),
+                    # so we will skip it because the pair was already processed by the lower one.
+                    continue
+
+
+        # C. Handle generic Lu/Ll case where the current cp is Lu
+        # This is needed because find_case_partner only runs on 'Ll'
+        if partner_cp is None and cat == 'Lu':
+            # Check if this Lu character has an Ll partner (to skip it if the Ll comes later)
             lower_str = char.lower()
             if len(lower_str) == 1 and lower_str != char:
                 lower_partner_cp = ord(lower_str)
                 if lower_partner_cp > cp:
+                    # Skip the Lu character, it will be processed when the Ll character is hit.
                     continue
-            
-        # 2. SUCCESSFUL PAIR CASE
+
+        # 3. SUCCESSFUL PAIR CASE
+        # This combines logic from both A and B, using the calculated pair results.
         if partner_cp is not None: 
-            cp1, cp2 = cp, partner_cp
-            name1, name2 = char_name, partner_name 
-            glyph1, glyph2 = glyph, printable_glyph(cp2)
+            
+            # For standard Lu/Ll pairs (found in A), this ensures the Ll is cp1 (which is consistent)
+            if 'Ll' in category(chr(cp)) and 'Lu' in category(chr(partner_cp)):
+                 cp1, name1, cp2, name2 = cp, char_name, partner_cp, partner_name
+                 macro_name_source = partner_name.replace("UPPERCASE", "CAPITAL") # Use the Capital name for macro source
+            
+            # For non-standard pairs (found in B), use the values calculated in B
+            elif is_non_standard_cased and 'CAPITAL LETTER' in name_upper and 'SMALL LETTER' in name_lower:
+                 # The values were already ordered and named correctly in section B
+                 # cp1, name1, cp2, name2 = cp1, name1, cp2, name2  (from B)
+                 pass # Use values set in the B block.
+
+            else:
+                 # For the non-standard cases, we use the values determined inside the B block.
+                 # Re-calculate in case the A block logic was used:
+                 cp1, cp2 = min(cp, partner_cp), max(cp, partner_cp)
+                 
+                 # Re-determine names based on the order
+                 if 'CAPITAL' in name(chr(cp1)) or 'UPPER' in name(chr(cp1)):
+                     name1 = name(chr(cp1))
+                     name2 = name(chr(cp2))
+                     macro_name_source = name1
+                 else:
+                     name1 = name(chr(cp1))
+                     name2 = name(chr(cp2))
+                     macro_name_source = name2 # Should be the CAPITAL/UPPER name
+            
+            # Final check to ensure we use the correct names and code points based on order
+            cp1 = min(cp, partner_cp)
+            cp2 = max(cp, partner_cp)
+            name1 = name(chr(cp1))
+            name2 = name(chr(cp2))
+            
+            # Ensure macro name is derived from the CAPITAL/UPPER form
+            macro_name_source = name1 if 'CAPITAL' in name1 or 'UPPER' in name1 else name2
+            
+            glyph1, glyph2 = printable_glyph(cp1), printable_glyph(cp2)
 
             if glyph1 and glyph2:
                 comment = f"// {glyph1}/{glyph2}"
@@ -663,14 +790,14 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
                 comment_parts = [f"U+{cp1:04X} ({name1})", f"U+{cp2:04X} ({name2})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
-            macro_name = macro_generator.generate_name(block_abbr, name1, strip_case=True)
+            macro_name = macro_generator.generate_name(block_abbr, macro_name_source, strip_case=True)
             lines.append(
                 f"#define {macro_name:<40} 0x{cp1:04X} 0x{cp2:04X}  {comment}" 
             )
             processed.update({cp1, cp2})
             continue
 
-        # 3. SINGLE CODE POINT CASE
+        # 4. SINGLE CODE POINT CASE
         if cp not in processed:
             if glyph:
                 comment = f"// {glyph}"

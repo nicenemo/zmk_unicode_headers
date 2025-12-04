@@ -43,64 +43,38 @@
 #define UC_TAG_GREATER_THAN_SIGN                 0xE003E 0  /* U+E003E (TAG GREATER-THAN SIGN) */
 #define UC_TAG_QUESTION_MARK                     0xE003F 0  /* U+E003F (TAG QUESTION MARK) */
 #define UC_TAG_COMMERCIAL_AT                     0xE0040 0  /* U+E0040 (TAG COMMERCIAL AT) */
-#define UC_TAG_CAPITAL_A                         0xE0041 0  /* U+E0041 (TAG LATIN CAPITAL LETTER A) */
-#define UC_TAG_CAPITAL_B                         0xE0042 0  /* U+E0042 (TAG LATIN CAPITAL LETTER B) */
-#define UC_TAG_CAPITAL_C                         0xE0043 0  /* U+E0043 (TAG LATIN CAPITAL LETTER C) */
-#define UC_TAG_CAPITAL_D                         0xE0044 0  /* U+E0044 (TAG LATIN CAPITAL LETTER D) */
-#define UC_TAG_CAPITAL_E                         0xE0045 0  /* U+E0045 (TAG LATIN CAPITAL LETTER E) */
-#define UC_TAG_CAPITAL_F                         0xE0046 0  /* U+E0046 (TAG LATIN CAPITAL LETTER F) */
-#define UC_TAG_CAPITAL_G                         0xE0047 0  /* U+E0047 (TAG LATIN CAPITAL LETTER G) */
-#define UC_TAG_CAPITAL_H                         0xE0048 0  /* U+E0048 (TAG LATIN CAPITAL LETTER H) */
-#define UC_TAG_CAPITAL_I                         0xE0049 0  /* U+E0049 (TAG LATIN CAPITAL LETTER I) */
-#define UC_TAG_CAPITAL_J                         0xE004A 0  /* U+E004A (TAG LATIN CAPITAL LETTER J) */
-#define UC_TAG_CAPITAL_K                         0xE004B 0  /* U+E004B (TAG LATIN CAPITAL LETTER K) */
-#define UC_TAG_CAPITAL_L                         0xE004C 0  /* U+E004C (TAG LATIN CAPITAL LETTER L) */
-#define UC_TAG_CAPITAL_M                         0xE004D 0  /* U+E004D (TAG LATIN CAPITAL LETTER M) */
-#define UC_TAG_CAPITAL_N                         0xE004E 0  /* U+E004E (TAG LATIN CAPITAL LETTER N) */
-#define UC_TAG_CAPITAL_O                         0xE004F 0  /* U+E004F (TAG LATIN CAPITAL LETTER O) */
-#define UC_TAG_CAPITAL_P                         0xE0050 0  /* U+E0050 (TAG LATIN CAPITAL LETTER P) */
-#define UC_TAG_CAPITAL_Q                         0xE0051 0  /* U+E0051 (TAG LATIN CAPITAL LETTER Q) */
-#define UC_TAG_CAPITAL_R                         0xE0052 0  /* U+E0052 (TAG LATIN CAPITAL LETTER R) */
-#define UC_TAG_CAPITAL_S                         0xE0053 0  /* U+E0053 (TAG LATIN CAPITAL LETTER S) */
-#define UC_TAG_CAPITAL_T                         0xE0054 0  /* U+E0054 (TAG LATIN CAPITAL LETTER T) */
-#define UC_TAG_CAPITAL_U                         0xE0055 0  /* U+E0055 (TAG LATIN CAPITAL LETTER U) */
-#define UC_TAG_CAPITAL_V                         0xE0056 0  /* U+E0056 (TAG LATIN CAPITAL LETTER V) */
-#define UC_TAG_CAPITAL_W                         0xE0057 0  /* U+E0057 (TAG LATIN CAPITAL LETTER W) */
-#define UC_TAG_CAPITAL_X                         0xE0058 0  /* U+E0058 (TAG LATIN CAPITAL LETTER X) */
-#define UC_TAG_CAPITAL_Y                         0xE0059 0  /* U+E0059 (TAG LATIN CAPITAL LETTER Y) */
-#define UC_TAG_CAPITAL_Z                         0xE005A 0  /* U+E005A (TAG LATIN CAPITAL LETTER Z) */
+#define UC_TAG_A                                 0xE0041 0xE0061  /* U+E0041 (TAG LATIN CAPITAL LETTER A) U+E0061 (TAG LATIN SMALL LETTER A) */
+#define UC_TAG_B                                 0xE0042 0xE0062  /* U+E0042 (TAG LATIN CAPITAL LETTER B) U+E0062 (TAG LATIN SMALL LETTER B) */
+#define UC_TAG_C                                 0xE0043 0xE0063  /* U+E0043 (TAG LATIN CAPITAL LETTER C) U+E0063 (TAG LATIN SMALL LETTER C) */
+#define UC_TAG_D                                 0xE0044 0xE0064  /* U+E0044 (TAG LATIN CAPITAL LETTER D) U+E0064 (TAG LATIN SMALL LETTER D) */
+#define UC_TAG_E                                 0xE0045 0xE0065  /* U+E0045 (TAG LATIN CAPITAL LETTER E) U+E0065 (TAG LATIN SMALL LETTER E) */
+#define UC_TAG_F                                 0xE0046 0xE0066  /* U+E0046 (TAG LATIN CAPITAL LETTER F) U+E0066 (TAG LATIN SMALL LETTER F) */
+#define UC_TAG_G                                 0xE0047 0xE0067  /* U+E0047 (TAG LATIN CAPITAL LETTER G) U+E0067 (TAG LATIN SMALL LETTER G) */
+#define UC_TAG_H                                 0xE0048 0xE0068  /* U+E0048 (TAG LATIN CAPITAL LETTER H) U+E0068 (TAG LATIN SMALL LETTER H) */
+#define UC_TAG_I                                 0xE0049 0xE0069  /* U+E0049 (TAG LATIN CAPITAL LETTER I) U+E0069 (TAG LATIN SMALL LETTER I) */
+#define UC_TAG_J                                 0xE004A 0xE006A  /* U+E004A (TAG LATIN CAPITAL LETTER J) U+E006A (TAG LATIN SMALL LETTER J) */
+#define UC_TAG_K                                 0xE004B 0xE006B  /* U+E004B (TAG LATIN CAPITAL LETTER K) U+E006B (TAG LATIN SMALL LETTER K) */
+#define UC_TAG_L                                 0xE004C 0xE006C  /* U+E004C (TAG LATIN CAPITAL LETTER L) U+E006C (TAG LATIN SMALL LETTER L) */
+#define UC_TAG_M                                 0xE004D 0xE006D  /* U+E004D (TAG LATIN CAPITAL LETTER M) U+E006D (TAG LATIN SMALL LETTER M) */
+#define UC_TAG_N                                 0xE004E 0xE006E  /* U+E004E (TAG LATIN CAPITAL LETTER N) U+E006E (TAG LATIN SMALL LETTER N) */
+#define UC_TAG_O                                 0xE004F 0xE006F  /* U+E004F (TAG LATIN CAPITAL LETTER O) U+E006F (TAG LATIN SMALL LETTER O) */
+#define UC_TAG_P                                 0xE0050 0xE0070  /* U+E0050 (TAG LATIN CAPITAL LETTER P) U+E0070 (TAG LATIN SMALL LETTER P) */
+#define UC_TAG_Q                                 0xE0051 0xE0071  /* U+E0051 (TAG LATIN CAPITAL LETTER Q) U+E0071 (TAG LATIN SMALL LETTER Q) */
+#define UC_TAG_R                                 0xE0052 0xE0072  /* U+E0052 (TAG LATIN CAPITAL LETTER R) U+E0072 (TAG LATIN SMALL LETTER R) */
+#define UC_TAG_S                                 0xE0053 0xE0073  /* U+E0053 (TAG LATIN CAPITAL LETTER S) U+E0073 (TAG LATIN SMALL LETTER S) */
+#define UC_TAG_T                                 0xE0054 0xE0074  /* U+E0054 (TAG LATIN CAPITAL LETTER T) U+E0074 (TAG LATIN SMALL LETTER T) */
+#define UC_TAG_U                                 0xE0055 0xE0075  /* U+E0055 (TAG LATIN CAPITAL LETTER U) U+E0075 (TAG LATIN SMALL LETTER U) */
+#define UC_TAG_V                                 0xE0056 0xE0076  /* U+E0056 (TAG LATIN CAPITAL LETTER V) U+E0076 (TAG LATIN SMALL LETTER V) */
+#define UC_TAG_W                                 0xE0057 0xE0077  /* U+E0057 (TAG LATIN CAPITAL LETTER W) U+E0077 (TAG LATIN SMALL LETTER W) */
+#define UC_TAG_X                                 0xE0058 0xE0078  /* U+E0058 (TAG LATIN CAPITAL LETTER X) U+E0078 (TAG LATIN SMALL LETTER X) */
+#define UC_TAG_Y                                 0xE0059 0xE0079  /* U+E0059 (TAG LATIN CAPITAL LETTER Y) U+E0079 (TAG LATIN SMALL LETTER Y) */
+#define UC_TAG_Z                                 0xE005A 0xE007A  /* U+E005A (TAG LATIN CAPITAL LETTER Z) U+E007A (TAG LATIN SMALL LETTER Z) */
 #define UC_TAG_LEFT_SQUARE_BRACKET               0xE005B 0  /* U+E005B (TAG LEFT SQUARE BRACKET) */
 #define UC_TAG_REVERSE_SOLIDUS                   0xE005C 0  /* U+E005C (TAG REVERSE SOLIDUS) */
 #define UC_TAG_RIGHT_SQUARE_BRACKET              0xE005D 0  /* U+E005D (TAG RIGHT SQUARE BRACKET) */
 #define UC_TAG_CIRCUMFLEX_ACCENT                 0xE005E 0  /* U+E005E (TAG CIRCUMFLEX ACCENT) */
 #define UC_TAG_LOW_LINE                          0xE005F 0  /* U+E005F (TAG LOW LINE) */
 #define UC_TAG_GRAVE_ACCENT                      0xE0060 0  /* U+E0060 (TAG GRAVE ACCENT) */
-#define UC_TAG_SMALL_A                           0xE0061 0  /* U+E0061 (TAG LATIN SMALL LETTER A) */
-#define UC_TAG_SMALL_B                           0xE0062 0  /* U+E0062 (TAG LATIN SMALL LETTER B) */
-#define UC_TAG_SMALL_C                           0xE0063 0  /* U+E0063 (TAG LATIN SMALL LETTER C) */
-#define UC_TAG_SMALL_D                           0xE0064 0  /* U+E0064 (TAG LATIN SMALL LETTER D) */
-#define UC_TAG_SMALL_E                           0xE0065 0  /* U+E0065 (TAG LATIN SMALL LETTER E) */
-#define UC_TAG_SMALL_F                           0xE0066 0  /* U+E0066 (TAG LATIN SMALL LETTER F) */
-#define UC_TAG_SMALL_G                           0xE0067 0  /* U+E0067 (TAG LATIN SMALL LETTER G) */
-#define UC_TAG_SMALL_H                           0xE0068 0  /* U+E0068 (TAG LATIN SMALL LETTER H) */
-#define UC_TAG_SMALL_I                           0xE0069 0  /* U+E0069 (TAG LATIN SMALL LETTER I) */
-#define UC_TAG_SMALL_J                           0xE006A 0  /* U+E006A (TAG LATIN SMALL LETTER J) */
-#define UC_TAG_SMALL_K                           0xE006B 0  /* U+E006B (TAG LATIN SMALL LETTER K) */
-#define UC_TAG_SMALL_L                           0xE006C 0  /* U+E006C (TAG LATIN SMALL LETTER L) */
-#define UC_TAG_SMALL_M                           0xE006D 0  /* U+E006D (TAG LATIN SMALL LETTER M) */
-#define UC_TAG_SMALL_N                           0xE006E 0  /* U+E006E (TAG LATIN SMALL LETTER N) */
-#define UC_TAG_SMALL_O                           0xE006F 0  /* U+E006F (TAG LATIN SMALL LETTER O) */
-#define UC_TAG_SMALL_P                           0xE0070 0  /* U+E0070 (TAG LATIN SMALL LETTER P) */
-#define UC_TAG_SMALL_Q                           0xE0071 0  /* U+E0071 (TAG LATIN SMALL LETTER Q) */
-#define UC_TAG_SMALL_R                           0xE0072 0  /* U+E0072 (TAG LATIN SMALL LETTER R) */
-#define UC_TAG_SMALL_S                           0xE0073 0  /* U+E0073 (TAG LATIN SMALL LETTER S) */
-#define UC_TAG_SMALL_T                           0xE0074 0  /* U+E0074 (TAG LATIN SMALL LETTER T) */
-#define UC_TAG_SMALL_U                           0xE0075 0  /* U+E0075 (TAG LATIN SMALL LETTER U) */
-#define UC_TAG_SMALL_V                           0xE0076 0  /* U+E0076 (TAG LATIN SMALL LETTER V) */
-#define UC_TAG_SMALL_W                           0xE0077 0  /* U+E0077 (TAG LATIN SMALL LETTER W) */
-#define UC_TAG_SMALL_X                           0xE0078 0  /* U+E0078 (TAG LATIN SMALL LETTER X) */
-#define UC_TAG_SMALL_Y                           0xE0079 0  /* U+E0079 (TAG LATIN SMALL LETTER Y) */
-#define UC_TAG_SMALL_Z                           0xE007A 0  /* U+E007A (TAG LATIN SMALL LETTER Z) */
 #define UC_TAG_LEFT_CURLY_BRACKET                0xE007B 0  /* U+E007B (TAG LEFT CURLY BRACKET) */
 #define UC_TAG_VERTICAL_LINE                     0xE007C 0  /* U+E007C (TAG VERTICAL LINE) */
 #define UC_TAG_RIGHT_CURLY_BRACKET               0xE007D 0  /* U+E007D (TAG RIGHT CURLY BRACKET) */

@@ -9,14 +9,14 @@
 
 #pragma once
 
-#define UC_ROUNDED_VE                            0x1C80 0x0412  // ᲀ/В
-#define UC_LONG_LEGGED_DE                        0x1C81 0x0414  // ᲁ/Д
-#define UC_NARROW_O                              0x1C82 0x041E  // ᲂ/О
-#define UC_WIDE_ES                               0x1C83 0x0421  // ᲃ/С
-#define UC_TALL_TE                               0x1C84 0x0422  // ᲄ/Т
-#define UC_THREE_LEGGED_TE                       0x1C85 0x0422  // ᲅ/Т
-#define UC_TALL_HARD_SIGN                        0x1C86 0x042A  // ᲆ/Ъ
-#define UC_TALL_YAT                              0x1C87 0x0462  // ᲇ/Ѣ
-#define UC_UNBLENDED_UK                          0x1C88 0xA64A  // ᲈ/Ꙋ
+#define UC_VE                                    0x0412 0x1C80  // В/ᲀ
+#define UC_DE                                    0x0414 0x1C81  // Д/ᲁ
+#define UC_O                                     0x041E 0x1C82  // О/ᲂ
+#define UC_ES                                    0x0421 0x1C83  // С/ᲃ
+#define UC_TE                                    0x0422 0x1C84  // Т/ᲄ
+#define UC_TE                                    0x0422 0x1C85  // Т/ᲅ
+#define UC_HARD_SIGN                             0x042A 0x1C86  // Ъ/ᲆ
+#define UC_YAT                                   0x0462 0x1C87  // Ѣ/ᲇ
+#define UC_MONOGRAPH_UK                          0x1C88 0xA64A  // ᲈ/Ꙋ
 #define UC_CAPITAL_TJE                           0x1C89 0  /* U+1C89 (CYRILLIC CAPITAL LETTER TJE) */
 #define UC_SMALL_TJE                             0x1C8A 0  /* U+1C8A (CYRILLIC SMALL LETTER TJE) */

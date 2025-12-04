@@ -9,40 +9,40 @@
 
 #pragma once
 
-#define UC_ADLAM_ALIF                            0x1E922 0x1E900  // 𞤢/𞤀
-#define UC_ADLAM_DAALI                           0x1E923 0x1E901  // 𞤣/𞤁
-#define UC_ADLAM_LAAM                            0x1E924 0x1E902  // 𞤤/𞤂
-#define UC_ADLAM_MIIM                            0x1E925 0x1E903  // 𞤥/𞤃
-#define UC_ADLAM_BA                              0x1E926 0x1E904  // 𞤦/𞤄
-#define UC_ADLAM_SINNYIIYHE                      0x1E927 0x1E905  // 𞤧/𞤅
-#define UC_ADLAM_PE                              0x1E928 0x1E906  // 𞤨/𞤆
-#define UC_ADLAM_BHE                             0x1E929 0x1E907  // 𞤩/𞤇
-#define UC_ADLAM_RA                              0x1E92A 0x1E908  // 𞤪/𞤈
-#define UC_ADLAM_E                               0x1E92B 0x1E909  // 𞤫/𞤉
-#define UC_ADLAM_FA                              0x1E92C 0x1E90A  // 𞤬/𞤊
-#define UC_ADLAM_I                               0x1E92D 0x1E90B  // 𞤭/𞤋
-#define UC_ADLAM_O                               0x1E92E 0x1E90C  // 𞤮/𞤌
-#define UC_ADLAM_DHA                             0x1E92F 0x1E90D  // 𞤯/𞤍
-#define UC_ADLAM_YHE                             0x1E930 0x1E90E  // 𞤰/𞤎
-#define UC_ADLAM_WAW                             0x1E931 0x1E90F  // 𞤱/𞤏
-#define UC_ADLAM_NUN                             0x1E932 0x1E910  // 𞤲/𞤐
-#define UC_ADLAM_KAF                             0x1E933 0x1E911  // 𞤳/𞤑
-#define UC_ADLAM_YA                              0x1E934 0x1E912  // 𞤴/𞤒
-#define UC_ADLAM_U                               0x1E935 0x1E913  // 𞤵/𞤓
-#define UC_ADLAM_JIIM                            0x1E936 0x1E914  // 𞤶/𞤔
-#define UC_ADLAM_CHI                             0x1E937 0x1E915  // 𞤷/𞤕
-#define UC_ADLAM_HA                              0x1E938 0x1E916  // 𞤸/𞤖
-#define UC_ADLAM_QAAF                            0x1E939 0x1E917  // 𞤹/𞤗
-#define UC_ADLAM_GA                              0x1E93A 0x1E918  // 𞤺/𞤘
-#define UC_ADLAM_NYA                             0x1E93B 0x1E919  // 𞤻/𞤙
-#define UC_ADLAM_TU                              0x1E93C 0x1E91A  // 𞤼/𞤚
-#define UC_ADLAM_NHA                             0x1E93D 0x1E91B  // 𞤽/𞤛
-#define UC_ADLAM_VA                              0x1E93E 0x1E91C  // 𞤾/𞤜
-#define UC_ADLAM_KHA                             0x1E93F 0x1E91D  // 𞤿/𞤝
-#define UC_ADLAM_GBE                             0x1E940 0x1E91E  // 𞥀/𞤞
-#define UC_ADLAM_ZAL                             0x1E941 0x1E91F  // 𞥁/𞤟
-#define UC_ADLAM_KPO                             0x1E942 0x1E920  // 𞥂/𞤠
-#define UC_ADLAM_SHA                             0x1E943 0x1E921  // 𞥃/𞤡
+#define UC_ADLAM_ALIF                            0x1E900 0x1E922  // 𞤀/𞤢
+#define UC_ADLAM_DAALI                           0x1E901 0x1E923  // 𞤁/𞤣
+#define UC_ADLAM_LAAM                            0x1E902 0x1E924  // 𞤂/𞤤
+#define UC_ADLAM_MIIM                            0x1E903 0x1E925  // 𞤃/𞤥
+#define UC_ADLAM_BA                              0x1E904 0x1E926  // 𞤄/𞤦
+#define UC_ADLAM_SINNYIIYHE                      0x1E905 0x1E927  // 𞤅/𞤧
+#define UC_ADLAM_PE                              0x1E906 0x1E928  // 𞤆/𞤨
+#define UC_ADLAM_BHE                             0x1E907 0x1E929  // 𞤇/𞤩
+#define UC_ADLAM_RA                              0x1E908 0x1E92A  // 𞤈/𞤪
+#define UC_ADLAM_E                               0x1E909 0x1E92B  // 𞤉/𞤫
+#define UC_ADLAM_FA                              0x1E90A 0x1E92C  // 𞤊/𞤬
+#define UC_ADLAM_I                               0x1E90B 0x1E92D  // 𞤋/𞤭
+#define UC_ADLAM_O                               0x1E90C 0x1E92E  // 𞤌/𞤮
+#define UC_ADLAM_DHA                             0x1E90D 0x1E92F  // 𞤍/𞤯
+#define UC_ADLAM_YHE                             0x1E90E 0x1E930  // 𞤎/𞤰
+#define UC_ADLAM_WAW                             0x1E90F 0x1E931  // 𞤏/𞤱
+#define UC_ADLAM_NUN                             0x1E910 0x1E932  // 𞤐/𞤲
+#define UC_ADLAM_KAF                             0x1E911 0x1E933  // 𞤑/𞤳
+#define UC_ADLAM_YA                              0x1E912 0x1E934  // 𞤒/𞤴
+#define UC_ADLAM_U                               0x1E913 0x1E935  // 𞤓/𞤵
+#define UC_ADLAM_JIIM                            0x1E914 0x1E936  // 𞤔/𞤶
+#define UC_ADLAM_CHI                             0x1E915 0x1E937  // 𞤕/𞤷
+#define UC_ADLAM_HA                              0x1E916 0x1E938  // 𞤖/𞤸
+#define UC_ADLAM_QAAF                            0x1E917 0x1E939  // 𞤗/𞤹
+#define UC_ADLAM_GA                              0x1E918 0x1E93A  // 𞤘/𞤺
+#define UC_ADLAM_NYA                             0x1E919 0x1E93B  // 𞤙/𞤻
+#define UC_ADLAM_TU                              0x1E91A 0x1E93C  // 𞤚/𞤼
+#define UC_ADLAM_NHA                             0x1E91B 0x1E93D  // 𞤛/𞤽
+#define UC_ADLAM_VA                              0x1E91C 0x1E93E  // 𞤜/𞤾
+#define UC_ADLAM_KHA                             0x1E91D 0x1E93F  // 𞤝/𞤿
+#define UC_ADLAM_GBE                             0x1E91E 0x1E940  // 𞤞/𞥀
+#define UC_ADLAM_ZAL                             0x1E91F 0x1E941  // 𞤟/𞥁
+#define UC_ADLAM_KPO                             0x1E920 0x1E942  // 𞤠/𞥂
+#define UC_ADLAM_SHA                             0x1E921 0x1E943  // 𞤡/𞥃
 #define UC_ADLAM_ALIF_LENGTHENER                 0x1E944 0  // 𞥄
 #define UC_ADLAM_VOWEL_LENGTHENER                0x1E945 0  // 𞥅
 #define UC_ADLAM_GEMINATION_MARK                 0x1E946 0  // 𞥆

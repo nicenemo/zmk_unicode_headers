@@ -9,38 +9,38 @@
 
 #pragma once
 
-#define UC_MEDEFAIDRIN_M                         0x16E60 0x16E40  // 𖹠/𖹀
-#define UC_MEDEFAIDRIN_S                         0x16E61 0x16E41  // 𖹡/𖹁
-#define UC_MEDEFAIDRIN_V                         0x16E62 0x16E42  // 𖹢/𖹂
-#define UC_MEDEFAIDRIN_W                         0x16E63 0x16E43  // 𖹣/𖹃
-#define UC_MEDEFAIDRIN_ATIU                      0x16E64 0x16E44  // 𖹤/𖹄
-#define UC_MEDEFAIDRIN_Z                         0x16E65 0x16E45  // 𖹥/𖹅
-#define UC_MEDEFAIDRIN_KP                        0x16E66 0x16E46  // 𖹦/𖹆
-#define UC_MEDEFAIDRIN_P                         0x16E67 0x16E47  // 𖹧/𖹇
-#define UC_MEDEFAIDRIN_T                         0x16E68 0x16E48  // 𖹨/𖹈
-#define UC_MEDEFAIDRIN_G                         0x16E69 0x16E49  // 𖹩/𖹉
-#define UC_MEDEFAIDRIN_F                         0x16E6A 0x16E4A  // 𖹪/𖹊
-#define UC_MEDEFAIDRIN_I                         0x16E6B 0x16E4B  // 𖹫/𖹋
-#define UC_MEDEFAIDRIN_K                         0x16E6C 0x16E4C  // 𖹬/𖹌
-#define UC_MEDEFAIDRIN_A                         0x16E6D 0x16E4D  // 𖹭/𖹍
-#define UC_MEDEFAIDRIN_J                         0x16E6E 0x16E4E  // 𖹮/𖹎
-#define UC_MEDEFAIDRIN_E                         0x16E6F 0x16E4F  // 𖹯/𖹏
-#define UC_MEDEFAIDRIN_B                         0x16E70 0x16E50  // 𖹰/𖹐
-#define UC_MEDEFAIDRIN_C                         0x16E71 0x16E51  // 𖹱/𖹑
-#define UC_MEDEFAIDRIN_U                         0x16E72 0x16E52  // 𖹲/𖹒
-#define UC_MEDEFAIDRIN_YU                        0x16E73 0x16E53  // 𖹳/𖹓
-#define UC_MEDEFAIDRIN_L                         0x16E74 0x16E54  // 𖹴/𖹔
-#define UC_MEDEFAIDRIN_Q                         0x16E75 0x16E55  // 𖹵/𖹕
-#define UC_MEDEFAIDRIN_HP                        0x16E76 0x16E56  // 𖹶/𖹖
-#define UC_MEDEFAIDRIN_NY                        0x16E77 0x16E57  // 𖹷/𖹗
-#define UC_MEDEFAIDRIN_X                         0x16E78 0x16E58  // 𖹸/𖹘
-#define UC_MEDEFAIDRIN_D                         0x16E79 0x16E59  // 𖹹/𖹙
-#define UC_MEDEFAIDRIN_OE                        0x16E7A 0x16E5A  // 𖹺/𖹚
-#define UC_MEDEFAIDRIN_N                         0x16E7B 0x16E5B  // 𖹻/𖹛
-#define UC_MEDEFAIDRIN_R                         0x16E7C 0x16E5C  // 𖹼/𖹜
-#define UC_MEDEFAIDRIN_O                         0x16E7D 0x16E5D  // 𖹽/𖹝
-#define UC_MEDEFAIDRIN_AI                        0x16E7E 0x16E5E  // 𖹾/𖹞
-#define UC_MEDEFAIDRIN_Y                         0x16E7F 0x16E5F  // 𖹿/𖹟
+#define UC_MEDEFAIDRIN_M                         0x16E40 0x16E60  // 𖹀/𖹠
+#define UC_MEDEFAIDRIN_S                         0x16E41 0x16E61  // 𖹁/𖹡
+#define UC_MEDEFAIDRIN_V                         0x16E42 0x16E62  // 𖹂/𖹢
+#define UC_MEDEFAIDRIN_W                         0x16E43 0x16E63  // 𖹃/𖹣
+#define UC_MEDEFAIDRIN_ATIU                      0x16E44 0x16E64  // 𖹄/𖹤
+#define UC_MEDEFAIDRIN_Z                         0x16E45 0x16E65  // 𖹅/𖹥
+#define UC_MEDEFAIDRIN_KP                        0x16E46 0x16E66  // 𖹆/𖹦
+#define UC_MEDEFAIDRIN_P                         0x16E47 0x16E67  // 𖹇/𖹧
+#define UC_MEDEFAIDRIN_T                         0x16E48 0x16E68  // 𖹈/𖹨
+#define UC_MEDEFAIDRIN_G                         0x16E49 0x16E69  // 𖹉/𖹩
+#define UC_MEDEFAIDRIN_F                         0x16E4A 0x16E6A  // 𖹊/𖹪
+#define UC_MEDEFAIDRIN_I                         0x16E4B 0x16E6B  // 𖹋/𖹫
+#define UC_MEDEFAIDRIN_K                         0x16E4C 0x16E6C  // 𖹌/𖹬
+#define UC_MEDEFAIDRIN_A                         0x16E4D 0x16E6D  // 𖹍/𖹭
+#define UC_MEDEFAIDRIN_J                         0x16E4E 0x16E6E  // 𖹎/𖹮
+#define UC_MEDEFAIDRIN_E                         0x16E4F 0x16E6F  // 𖹏/𖹯
+#define UC_MEDEFAIDRIN_B                         0x16E50 0x16E70  // 𖹐/𖹰
+#define UC_MEDEFAIDRIN_C                         0x16E51 0x16E71  // 𖹑/𖹱
+#define UC_MEDEFAIDRIN_U                         0x16E52 0x16E72  // 𖹒/𖹲
+#define UC_MEDEFAIDRIN_YU                        0x16E53 0x16E73  // 𖹓/𖹳
+#define UC_MEDEFAIDRIN_L                         0x16E54 0x16E74  // 𖹔/𖹴
+#define UC_MEDEFAIDRIN_Q                         0x16E55 0x16E75  // 𖹕/𖹵
+#define UC_MEDEFAIDRIN_HP                        0x16E56 0x16E76  // 𖹖/𖹶
+#define UC_MEDEFAIDRIN_NY                        0x16E57 0x16E77  // 𖹗/𖹷
+#define UC_MEDEFAIDRIN_X                         0x16E58 0x16E78  // 𖹘/𖹸
+#define UC_MEDEFAIDRIN_D                         0x16E59 0x16E79  // 𖹙/𖹹
+#define UC_MEDEFAIDRIN_OE                        0x16E5A 0x16E7A  // 𖹚/𖹺
+#define UC_MEDEFAIDRIN_N                         0x16E5B 0x16E7B  // 𖹛/𖹻
+#define UC_MEDEFAIDRIN_R                         0x16E5C 0x16E7C  // 𖹜/𖹼
+#define UC_MEDEFAIDRIN_O                         0x16E5D 0x16E7D  // 𖹝/𖹽
+#define UC_MEDEFAIDRIN_AI                        0x16E5E 0x16E7E  // 𖹞/𖹾
+#define UC_MEDEFAIDRIN_Y                         0x16E5F 0x16E7F  // 𖹟/𖹿
 #define UC_MEDEFAIDRIN_ZERO                      0x16E80 0  // 𖺀
 #define UC_MEDEFAIDRIN_ONE                       0x16E81 0  // 𖺁
 #define UC_MEDEFAIDRIN_TWO                       0x16E82 0  // 𖺂
