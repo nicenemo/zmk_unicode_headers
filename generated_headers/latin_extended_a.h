@@ -17,8 +17,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 130
-* Total Significant Hex Values: 130
+* Total Defined Code Points: 129
+* Total Significant Hex Values: 129
 * Status: OK (Counts Match)
 
 */
@@ -87,7 +87,6 @@
 #define UC_LTA_U_OGONEK                          0x0173 0x0172  // ų/Ų
 #define UC_LTA_W_CIRCUMFLEX                      0x0175 0x0174  // ŵ/Ŵ
 #define UC_LTA_Y_CIRCUMFLEX                      0x0177 0x0176  // ŷ/Ŷ
-#define UC_LTA_CAPITAL_Y_DIAERESIS               0x0178 0  // Ÿ
 #define UC_LTA_Z_ACUTE                           0x017A 0x0179  // ź/Ź
 #define UC_LTA_Z_DOT_ABOVE                       0x017C 0x017B  // ż/Ż
 #define UC_LTA_Z_CARON                           0x017E 0x017D  // ž/Ž

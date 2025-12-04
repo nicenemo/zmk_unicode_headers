@@ -303,8 +303,6 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
     """
     Find the uppercase partner (cp, name) if *cp* is a single, mappable 
     lowercase letter ('Ll'). Returns (None, None) otherwise.
-    
-    Note: For paired CPs, the name lookup is handled in the main generation loop.
     """
     try:
         ch = chr(cp)
@@ -322,12 +320,12 @@ def find_case_partner(cp: int) -> Tuple[Optional[int], Optional[str]]:
         try:
             partner_ch = chr(partner_cp)
             partner_cat = category(partner_ch)
-            # Do not attempt to get partner name here, it's done in the loop to handle exceptions
+            partner_name = name(partner_ch)
         except ValueError:
             return None, None
         
         if partner_cat == 'Lu':
-            return partner_cp, None # Return None for name, it will be looked up later
+            return partner_cp, partner_name
 
     return None, None
 
@@ -368,6 +366,25 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
         if cat in EXCLUDE_CATEGORIES:
             continue
             
+        # --- FIX: New Skip Logic for Uppercase Partners ---
+        # Skip ALL uppercase letters that have a 1:1 lowercase partner. 
+        # This forces the lowercase letter to always be the pair-defining character (cp1), 
+        # satisfying the user's requirement.
+        if cat == 'Lu':
+            lower_str = char.lower()
+            
+            # Check 1: Is it a 1:1 case mapping and is the partner different?
+            if len(lower_str) == 1 and lower_str != char:
+                try:
+                    # Check 2: Is the partner actually a Lowercase Letter ('Ll')?
+                    if category(lower_str) == 'Ll':
+                        # If it has a valid, existing lowercase partner, SKIP IT.
+                        continue
+                except ValueError:
+                    # Ignore case where the lowercase partner is unassigned/invalid.
+                    pass
+        # -------------------------------------------------
+            
         # --- Name Resolution ---
         if cp in macro_generator.CONTROL_CHARACTER_NAMES:
             char_name = macro_generator.CONTROL_CHARACTER_NAMES[cp]
@@ -381,30 +398,30 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
         # -----------------------
             
         glyph = printable_glyph(cp)
-        partner_cp, _ = find_case_partner(cp) # Ignore partner_name from helper, look it up now
+        partner_cp, partner_name = find_case_partner(cp)
 
-        # 1. Skip Capital Letters that are the UPPERCASE partner of a later LOWERCASE letter.
-        is_capital_cat = cat == 'Lu'
-        if is_capital_cat:
-            lower_str = char.lower()
-            if len(lower_str) == 1 and lower_str != char:
-                lower_partner_cp = ord(lower_str)
-                if lower_partner_cp > cp:
-                    continue
+        # The previous logic to skip capital letters that are the partner of a later lowercase letter 
+        # is now removed and replaced by the unconditional Lu skip block above.
             
-        # 2. SUCCESSFUL PAIR CASE
+        # 2. SUCCESSFUL PAIR CASE (Only runs if cp is 'Ll')
         if partner_cp is not None: 
             cp1, cp2 = cp, partner_cp
             name1 = char_name 
             
-            # Resolve name2 (the partner name)
+            # Resolve name2 (the partner name). Since partner_name came from unicodedata.name, 
+            # this check covers control characters where name() might fail, or it uses the 
+            # resolved name from the helper.
             if cp2 in macro_generator.CONTROL_CHARACTER_NAMES:
                 name2 = macro_generator.CONTROL_CHARACTER_NAMES[cp2]
+            elif partner_name is not None:
+                name2 = partner_name
             else:
+                # Final fallback for name2 if it couldn't be resolved
                 try:
                     name2 = name(chr(cp2))
                 except ValueError:
                     name2 = f"{category(chr(cp2))}_U{cp2:04X}"
+
 
             glyph1, glyph2 = printable_glyph(cp1), printable_glyph(cp2)
 

@@ -14,8 +14,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 80
-* Total Significant Hex Values: 80
+* Total Defined Code Points: 77
+* Total Significant Hex Values: 77
 * Status: OK (Counts Match)
 
 */
@@ -60,12 +60,9 @@
 #define UC_LS_VERSICLE                           0x2123 0  // ℣
 #define UC_LS_DS_CAPITAL_Z                       0x2124 0  // ℤ
 #define UC_LS_OUNCE_SIGN                         0x2125 0  // ℥
-#define UC_LS_OHM_SIGN                           0x2126 0  // Ω
 #define UC_LS_INVERTED_OHM_SIGN                  0x2127 0  // ℧
 #define UC_LS_BLACK_CAPITAL_Z                    0x2128 0  // ℨ
 #define UC_LS_TURNED_SMALL_IOTA                  0x2129 0  // ℩
-#define UC_LS_KELVIN_SIGN                        0x212A 0  // K
-#define UC_LS_ANGSTROM_SIGN                      0x212B 0  // Å
 #define UC_LS_SC_CAPITAL_B                       0x212C 0  // ℬ
 #define UC_LS_BLACK_CAPITAL_C                    0x212D 0  // ℭ
 #define UC_LS_ESTIMATED                          0x212E 0  // ℮

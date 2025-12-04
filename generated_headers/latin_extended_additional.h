@@ -14,8 +14,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 257
-* Total Significant Hex Values: 257
+* Total Defined Code Points: 256
+* Total Significant Hex Values: 256
 * Status: OK (Counts Match)
 
 */
@@ -105,7 +105,6 @@
 #define UC_LONG_S_DOT_ABOVE                      0x1E9B 0x1E60  // ẛ/Ṡ
 #define UC_SMALL_LONG_S_DIAGONAL_STROKE          0x1E9C 0  // ẜ
 #define UC_SMALL_LONG_S_HIGH_STROKE              0x1E9D 0  // ẝ
-#define UC_CAPITAL_SHARP_S                       0x1E9E 0  // ẞ
 #define UC_SMALL_DELTA                           0x1E9F 0  // ẟ
 #define UC_A_DOT_BELOW                           0x1EA1 0x1EA0  // ạ/Ạ
 #define UC_A_HOOK_ABOVE                          0x1EA3 0x1EA2  // ả/Ả

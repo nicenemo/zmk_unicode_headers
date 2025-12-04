@@ -8,8 +8,8 @@
 
 
 * Consistency Check:
-* Total Defined Code Points: 143
-* Total Significant Hex Values: 143
+* Total Defined Code Points: 142
+* Total Significant Hex Values: 142
 * Status: OK (Counts Match)
 
 */
@@ -89,7 +89,6 @@
 #define UC_GRC_RHO                               0x03F1 0x03A1  // ϱ/Ρ
 #define UC_GRC_LUNATE_SIGMA                      0x03F2 0x03F9  // ϲ/Ϲ
 #define UC_GRC_YOT                               0x03F3 0x037F  // ϳ/Ϳ
-#define UC_GRC_CAPITAL_THETA                     0x03F4 0  // ϴ
 #define UC_GRC_LUNATE_EPSILON                    0x03F5 0x0395  // ϵ/Ε
 #define UC_GRC_REVERSED_LUNATE_EPSILON           0x03F6 0  // ϶
 #define UC_GRC_SHO                               0x03F8 0x03F7  // ϸ/Ϸ
