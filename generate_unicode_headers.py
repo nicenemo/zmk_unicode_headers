@@ -279,4 +279,26 @@ def main() -> int:
     load_block_data() 
     
     try:
-        out_dir.mkdir(exist_ok=True, parents=
+        out_dir.mkdir(exist_ok=True, parents=True)
+    except OSError as e:
+        print(f"Error creating output directory '{out_dir}': {e}", file=sys.stderr)
+        return 1
+        
+    # Instantiate the MacroGenerator once in main()
+    generator = MacroGenerator()
+
+    # UPDATED print statement now correctly shows the block version from JSON
+    print(f"Generating C headers for Unicode (Properties: {UNICODE_VERSION} / Blocks: {UNICODE_BLOCK_VERSION})...")
+
+    # Pass the generator instance to the emission function
+    for u_block in get_all_blocks():
+        emit_header(u_block, out_dir, generator)
+
+    print("\nAll headers written to", out_dir.resolve())
+    return 0
+
+
+if __name__ == "__main__":
+    # We must ensure all necessary functions and classes are fully defined 
+    # before calling main() for the script to run without errors.
+    sys.exit(main())
