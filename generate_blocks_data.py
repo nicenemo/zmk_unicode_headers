@@ -10,7 +10,6 @@ file named unicode_blocks.json.
 """
 import json
 import re
-import os
 import time
 from typing import Dict, List, Optional
 from urllib.parse import quote
@@ -30,16 +29,34 @@ CHART_BASE_URL = "https://www.unicode.org/charts/PDF/"
 # Regular expression to parse lines in the format: Start..End; Block Name
 BLOCK_RE = re.compile(r'([0-9A-Fa-f]+)\.\.([0-9A-Fa-f]+);\s*([^#]+)')
 
+# Regular expression to find the version in the header of Blocks.txt
+VERSION_RE = re.compile(r'# Blocks-(\d+\.\d+\.\d+)\.txt')
+
 # Define a delay between web requests to be a polite scraper (e.g., 0.5 seconds)
 SLEEP_DELAY = 0.5
 
 # Define a common User-Agent string to help Wikipedia identify the request
-# Note: Falsifying a User-Agent is discouraged, but a standard one is helpful.
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
 
-# --- URL Generation Helpers ---
+# --- Utility Functions ---
+
+def get_unicode_version(input_file: str) -> str:
+    """Reads Blocks.txt and extracts the Unicode version from the first line."""
+    try:
+        with open(input_file, 'r', encoding='utf-8') as f:
+            # Read and search the first few lines in case the version isn't exactly the first
+            for _ in range(3):
+                line = f.readline().strip()
+                match = VERSION_RE.match(line)
+                if match:
+                    return match.group(1)
+            return "Unknown (Could not parse Blocks.txt header)"
+    except FileNotFoundError:
+        return "Unknown (Blocks.txt not found)"
+    except Exception as e:
+        return f"Unknown (Error reading Blocks.txt: {e})"
 
 def generate_wikipedia_url(block_name: str) -> str:
     """Generates a Wikipedia URL-friendly string from the Unicode block name."""
@@ -58,22 +75,28 @@ def generate_charts_url(start_code_hex: str) -> str:
 def scrape_wikipedia_summary(url: str, num_paragraphs: int = 2) -> str:
     """
     Fetches a Wikipedia article and extracts the first N paragraphs of the summary.
+    Only returns content on a successful HTTP 200 status code.
 
     Args:
         url: The full URL of the Wikipedia article.
         num_paragraphs: The number of paragraphs to extract for the description.
 
     Returns:
-        A string containing the concatenated paragraphs, or a failure message.
+        A string containing the concatenated paragraphs, or an empty string ("") 
+        if the request fails or the status code is not 200.
     """
     try:
         # Send a GET request with a user agent
         response = requests.get(url, headers=HEADERS, timeout=10)
-        response.raise_for_status() # Raise an HTTPError for bad responses (4xx or 5xx)
 
-    except requests.exceptions.RequestException as e:
-        # Handle connection errors, timeouts, and bad status codes
-        return f"Error fetching Wikipedia page: {e}"
+    except requests.exceptions.RequestException:
+        # Handle connection errors, timeouts, etc.
+        return ""
+
+    # --- CRITICAL CHANGE: Only proceed if status code is 200 ---
+    if response.status_code != 200:
+        return ""
+    # -----------------------------------------------------------
 
     # Parse the HTML content
     soup = BeautifulSoup(response.content, 'html.parser')
@@ -81,7 +104,7 @@ def scrape_wikipedia_summary(url: str, num_paragraphs: int = 2) -> str:
     # Wikipedia article content is typically within a div with class 'mw-parser-output'
     parser_output: Optional[Tag] = soup.find('div', class_='mw-parser-output')
     if not parser_output:
-        return "Could not find main article content on the page."
+        return ""
 
     paragraphs: List[str] = []
     # Find all direct paragraph children
@@ -107,14 +130,15 @@ def scrape_wikipedia_summary(url: str, num_paragraphs: int = 2) -> str:
         # Join the paragraphs with a double newline for separation
         return "\n\n".join(paragraphs)
     else:
-        return "Summary content not found or page structure is unexpected."
+        return ""
 
 # --- Main Logic ---
 
 def generate_block_data(input_file: str, output_file: str):
     """
     Parses Blocks.txt, generates metadata, scrapes Wikipedia for descriptions,
-    and writes the structured data (list of dictionaries) to a JSON file.
+    and writes the structured data (an object with unicode_version and blocks array) 
+    to a JSON file.
 
     Args:
         input_file: The path to the source Blocks.txt file.
@@ -122,7 +146,10 @@ def generate_block_data(input_file: str, output_file: str):
     """
     blocks_data: List[Dict[str, str]] = []
     
-    print(f"Starting data generation and scraping...")
+    # Get the Unicode version from Blocks.txt
+    unicode_version = get_unicode_version(input_file)
+    
+    print(f"Starting data generation and scraping for Unicode v{unicode_version}...")
 
     try:
         with open(input_file, 'r', encoding='utf-8') as f:
@@ -140,15 +167,14 @@ def generate_block_data(input_file: str, output_file: str):
                     # Generate URLs
                     wiki_url = generate_wikipedia_url(block_name)
 
-                    # --- New: Web Scraping Step ---
+                    # --- Web Scraping Step ---
                     print(f"-> Scraping summary for: {block_name}...")
                     description = scrape_wikipedia_summary(wiki_url)
                     
                     # Be a polite scraper: wait for a moment between requests
                     time.sleep(SLEEP_DELAY) 
-                    # -----------------------------
+                    # -------------------------
                     
-                    # ... (rest of data extraction)
                     end_code_raw = match.group(2).upper()
                     start_code_hex = start_code_raw.zfill(4)
                     end_code_hex = end_code_raw.zfill(4)
@@ -159,7 +185,7 @@ def generate_block_data(input_file: str, output_file: str):
                         "end": end_code_hex,
                         "wikipedia_url": wiki_url,
                         "unicode_charts_url": generate_charts_url(start_code_hex),
-                        "description": description
+                        "description": description # This is "" if scraping failed
                     }
                     blocks_data.append(block_entry)
 
@@ -168,17 +194,19 @@ def generate_block_data(input_file: str, output_file: str):
         return
     except Exception as e:
         print(f"❌ An unexpected error occurred while processing '{input_file}': {e}")
-        # Note: If an error occurs during scraping, it is handled within the
-        # scrape_wikipedia_summary function, so it shouldn't stop the main loop
-        # unless it's a critical I/O error here.
         return
 
-    # Write the collected data to the JSON file
+    # --- Write the collected data as an object including version ---
+    final_data = {
+        "unicode_version": unicode_version,
+        "blocks": blocks_data
+    }
+    
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(blocks_data, f, indent=4)
-
-        print(f"\n✅ Successfully generated block data for {len(blocks_data)} blocks into '{output_file}'.")
+            json.dump(final_data, f, indent=4) # Dump the new object structure
+            
+        print(f"\n✅ Successfully generated block data for {len(blocks_data)} blocks (Unicode v{unicode_version}) into '{output_file}'.")
     except Exception as e:
         print(f"❌ Error writing to output file '{output_file}': {e}")
 
