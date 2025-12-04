@@ -1,0 +1,78 @@
+/*
+ * Unicode Block: Cypriot Syllabary
+ * Range: U+10800..U+1083F
+ * Properties: Unicode 17.0.0
+ * Block Data: Unicode 17.0.0
+ * -------------------------------------------------------------
+ * The Cypriot or Cypriote syllabary (also Classical Cypriot Syllabary)
+ * is a syllabic script used in Iron Age Cyprus , from about the 11th to
+ * the 4th centuries BCE, when it was replaced by the Greek alphabet . It
+ * has been suggested that the script remained in use as late as the 1st
+ * century BCE. A pioneer of that change was King Evagoras of Salamis .
+ * It is thought to be descended from the Cypro-Minoan syllabary , itself
+ * a variant or derivative of Linear A . Most texts using the script are
+ * in the Arcadocypriot dialect of Greek , but also one bilingual, the
+ * Amathus bilingual , a Greek and Eteocypriot , was found in Amathus .
+ *
+ */
+#ifndef UC_H_CYPRIOT_SYLLABARY
+#define UC_H_CYPRIOT_SYLLABARY
+
+#define UC_MACRO_NAME_10800 0x10800 // 𐠀 CYPRIOT SYLLABLE A
+#define UC_MACRO_NAME_10801 0x10801 // 𐠁 CYPRIOT SYLLABLE E
+#define UC_MACRO_NAME_10802 0x10802 // 𐠂 CYPRIOT SYLLABLE I
+#define UC_MACRO_NAME_10803 0x10803 // 𐠃 CYPRIOT SYLLABLE O
+#define UC_MACRO_NAME_10804 0x10804 // 𐠄 CYPRIOT SYLLABLE U
+#define UC_MACRO_NAME_10805 0x10805 // 𐠅 CYPRIOT SYLLABLE JA
+#define UC_MACRO_NAME_10808 0x10808 // 𐠈 CYPRIOT SYLLABLE JO
+#define UC_MACRO_NAME_1080A 0x1080A // 𐠊 CYPRIOT SYLLABLE KA
+#define UC_MACRO_NAME_1080B 0x1080B // 𐠋 CYPRIOT SYLLABLE KE
+#define UC_MACRO_NAME_1080C 0x1080C // 𐠌 CYPRIOT SYLLABLE KI
+#define UC_MACRO_NAME_1080D 0x1080D // 𐠍 CYPRIOT SYLLABLE KO
+#define UC_MACRO_NAME_1080E 0x1080E // 𐠎 CYPRIOT SYLLABLE KU
+#define UC_MACRO_NAME_1080F 0x1080F // 𐠏 CYPRIOT SYLLABLE LA
+#define UC_MACRO_NAME_10810 0x10810 // 𐠐 CYPRIOT SYLLABLE LE
+#define UC_MACRO_NAME_10811 0x10811 // 𐠑 CYPRIOT SYLLABLE LI
+#define UC_MACRO_NAME_10812 0x10812 // 𐠒 CYPRIOT SYLLABLE LO
+#define UC_MACRO_NAME_10813 0x10813 // 𐠓 CYPRIOT SYLLABLE LU
+#define UC_MACRO_NAME_10814 0x10814 // 𐠔 CYPRIOT SYLLABLE MA
+#define UC_MACRO_NAME_10815 0x10815 // 𐠕 CYPRIOT SYLLABLE ME
+#define UC_MACRO_NAME_10816 0x10816 // 𐠖 CYPRIOT SYLLABLE MI
+#define UC_MACRO_NAME_10817 0x10817 // 𐠗 CYPRIOT SYLLABLE MO
+#define UC_MACRO_NAME_10818 0x10818 // 𐠘 CYPRIOT SYLLABLE MU
+#define UC_MACRO_NAME_10819 0x10819 // 𐠙 CYPRIOT SYLLABLE NA
+#define UC_MACRO_NAME_1081A 0x1081A // 𐠚 CYPRIOT SYLLABLE NE
+#define UC_MACRO_NAME_1081B 0x1081B // 𐠛 CYPRIOT SYLLABLE NI
+#define UC_MACRO_NAME_1081C 0x1081C // 𐠜 CYPRIOT SYLLABLE NO
+#define UC_MACRO_NAME_1081D 0x1081D // 𐠝 CYPRIOT SYLLABLE NU
+#define UC_MACRO_NAME_1081E 0x1081E // 𐠞 CYPRIOT SYLLABLE PA
+#define UC_MACRO_NAME_1081F 0x1081F // 𐠟 CYPRIOT SYLLABLE PE
+#define UC_MACRO_NAME_10820 0x10820 // 𐠠 CYPRIOT SYLLABLE PI
+#define UC_MACRO_NAME_10821 0x10821 // 𐠡 CYPRIOT SYLLABLE PO
+#define UC_MACRO_NAME_10822 0x10822 // 𐠢 CYPRIOT SYLLABLE PU
+#define UC_MACRO_NAME_10823 0x10823 // 𐠣 CYPRIOT SYLLABLE RA
+#define UC_MACRO_NAME_10824 0x10824 // 𐠤 CYPRIOT SYLLABLE RE
+#define UC_MACRO_NAME_10825 0x10825 // 𐠥 CYPRIOT SYLLABLE RI
+#define UC_MACRO_NAME_10826 0x10826 // 𐠦 CYPRIOT SYLLABLE RO
+#define UC_MACRO_NAME_10827 0x10827 // 𐠧 CYPRIOT SYLLABLE RU
+#define UC_MACRO_NAME_10828 0x10828 // 𐠨 CYPRIOT SYLLABLE SA
+#define UC_MACRO_NAME_10829 0x10829 // 𐠩 CYPRIOT SYLLABLE SE
+#define UC_MACRO_NAME_1082A 0x1082A // 𐠪 CYPRIOT SYLLABLE SI
+#define UC_MACRO_NAME_1082B 0x1082B // 𐠫 CYPRIOT SYLLABLE SO
+#define UC_MACRO_NAME_1082C 0x1082C // 𐠬 CYPRIOT SYLLABLE SU
+#define UC_MACRO_NAME_1082D 0x1082D // 𐠭 CYPRIOT SYLLABLE TA
+#define UC_MACRO_NAME_1082E 0x1082E // 𐠮 CYPRIOT SYLLABLE TE
+#define UC_MACRO_NAME_1082F 0x1082F // 𐠯 CYPRIOT SYLLABLE TI
+#define UC_MACRO_NAME_10830 0x10830 // 𐠰 CYPRIOT SYLLABLE TO
+#define UC_MACRO_NAME_10831 0x10831 // 𐠱 CYPRIOT SYLLABLE TU
+#define UC_MACRO_NAME_10832 0x10832 // 𐠲 CYPRIOT SYLLABLE WA
+#define UC_MACRO_NAME_10833 0x10833 // 𐠳 CYPRIOT SYLLABLE WE
+#define UC_MACRO_NAME_10834 0x10834 // 𐠴 CYPRIOT SYLLABLE WI
+#define UC_MACRO_NAME_10835 0x10835 // 𐠵 CYPRIOT SYLLABLE WO
+#define UC_MACRO_NAME_10837 0x10837 // 𐠷 CYPRIOT SYLLABLE XA
+#define UC_MACRO_NAME_10838 0x10838 // 𐠸 CYPRIOT SYLLABLE XE
+#define UC_MACRO_NAME_1083C 0x1083C // 𐠼 CYPRIOT SYLLABLE ZA
+#define UC_MACRO_NAME_1083F 0x1083F // 𐠿 CYPRIOT SYLLABLE ZO
+
+
+#endif // UC_H_CYPRIOT_SYLLABARY
