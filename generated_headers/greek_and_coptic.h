@@ -8,8 +8,8 @@
 
 
 * Consistency Check:
-* Total Defined Code Points: 142
-* Total Significant Hex Values: 142
+* Total Defined Code Points: 135
+* Total Significant Hex Values: 135
 * Status: OK (Counts Match)
 
 */
@@ -53,7 +53,7 @@
 #define UC_GRC_PI                                0x03C0 0x03A0  // π/Π
 #define UC_GRC_RHO                               0x03C1 0x03A1  // ρ/Ρ
 #define UC_GRC_FINAL_SIGMA                       0x03C2 0x03A3  // ς/Σ
-#define UC_GRC_SIGMA                             0x03C3 0x03A3  // σ/Σ
+#define UC_GRC_SMALL_SIGMA                       0x03C3 0  // σ
 #define UC_GRC_TAU                               0x03C4 0x03A4  // τ/Τ
 #define UC_GRC_UPSILON                           0x03C5 0x03A5  // υ/Υ
 #define UC_GRC_PHI                               0x03C6 0x03A6  // φ/Φ
@@ -65,13 +65,13 @@
 #define UC_GRC_OMICRON_TONOS                     0x03CC 0x038C  // ό/Ό
 #define UC_GRC_UPSILON_TONOS                     0x03CD 0x038E  // ύ/Ύ
 #define UC_GRC_OMEGA_TONOS                       0x03CE 0x038F  // ώ/Ώ
-#define UC_GRC_BETA                              0x03D0 0x0392  // ϐ/Β
-#define UC_GRC_THETA                             0x03D1 0x0398  // ϑ/Θ
+#define UC_GRC_BETA                              0x03D0 0  // ϐ
+#define UC_GRC_THETA                             0x03D1 0  // ϑ
 #define UC_GRC_UPSILON_HOOK                      0x03D2 0  // ϒ
 #define UC_GRC_UPSILON_ACUTE_AND_HOOK            0x03D3 0  // ϓ
 #define UC_GRC_UPSILON_DIAERESIS_AND_HOOK        0x03D4 0  // ϔ
-#define UC_GRC_PHI                               0x03D5 0x03A6  // ϕ/Φ
-#define UC_GRC_PI                                0x03D6 0x03A0  // ϖ/Π
+#define UC_GRC_PHI                               0x03D5 0  // ϕ
+#define UC_GRC_PI                                0x03D6 0  // ϖ
 #define UC_GRC_KAI                               0x03D7 0x03CF  // ϗ/Ϗ
 #define UC_GRC_ARCHAIC_KOPPA                     0x03D9 0x03D8  // ϙ/Ϙ
 #define UC_GRC_STIGMA                            0x03DB 0x03DA  // ϛ/Ϛ
@@ -85,11 +85,12 @@
 #define UC_GRC_GANGIA                            0x03EB 0x03EA  // ϫ/Ϫ
 #define UC_GRC_SHIMA                             0x03ED 0x03EC  // ϭ/Ϭ
 #define UC_GRC_DEI                               0x03EF 0x03EE  // ϯ/Ϯ
-#define UC_GRC_KAPPA                             0x03F0 0x039A  // ϰ/Κ
-#define UC_GRC_RHO                               0x03F1 0x03A1  // ϱ/Ρ
+#define UC_GRC_KAPPA                             0x03F0 0  // ϰ
+#define UC_GRC_RHO                               0x03F1 0  // ϱ
 #define UC_GRC_LUNATE_SIGMA                      0x03F2 0x03F9  // ϲ/Ϲ
 #define UC_GRC_YOT                               0x03F3 0x037F  // ϳ/Ϳ
-#define UC_GRC_LUNATE_EPSILON                    0x03F5 0x0395  // ϵ/Ε
+#define UC_GRC_CAPITAL_THETA                     0x03F4 0  // ϴ
+#define UC_GRC_LUNATE_EPSILON                    0x03F5 0  // ϵ
 #define UC_GRC_REVERSED_LUNATE_EPSILON           0x03F6 0  // ϶
 #define UC_GRC_SHO                               0x03F8 0x03F7  // ϸ/Ϸ
 #define UC_GRC_SAN                               0x03FB 0x03FA  // ϻ/Ϻ

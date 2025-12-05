@@ -14,8 +14,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 77
-* Total Significant Hex Values: 77
+* Total Defined Code Points: 80
+* Total Significant Hex Values: 80
 * Status: OK (Counts Match)
 
 */
@@ -40,8 +40,7 @@
 #define UC_LS_PLANCK_CONSTANT_OVER_TWO_PI        0x210F 0  // ℏ
 #define UC_LS_SC_CAPITAL_I                       0x2110 0  // ℐ
 #define UC_LS_BLACK_CAPITAL_I                    0x2111 0  // ℑ
-#define UC_LS_SC_CAPITAL_L                       0x2112 0  // ℒ
-#define UC_LS_SC_SMALL_L                         0x2113 0  // ℓ
+#define UC_LS_SC_L                               0x2113 0x2112  // ℓ/ℒ
 #define UC_LS_L_B_BAR                            0x2114 0  // ℔
 #define UC_LS_DS_CAPITAL_N                       0x2115 0  // ℕ
 #define UC_LS_NUMERO_SIGN                        0x2116 0  // №
@@ -60,14 +59,16 @@
 #define UC_LS_VERSICLE                           0x2123 0  // ℣
 #define UC_LS_DS_CAPITAL_Z                       0x2124 0  // ℤ
 #define UC_LS_OUNCE_SIGN                         0x2125 0  // ℥
+#define UC_LS_OHM_SIGN                           0x2126 0  // Ω
 #define UC_LS_INVERTED_OHM_SIGN                  0x2127 0  // ℧
 #define UC_LS_BLACK_CAPITAL_Z                    0x2128 0  // ℨ
 #define UC_LS_TURNED_SMALL_IOTA                  0x2129 0  // ℩
+#define UC_LS_KELVIN_SIGN                        0x212A 0  // K
+#define UC_LS_ANGSTROM_SIGN                      0x212B 0  // Å
 #define UC_LS_SC_CAPITAL_B                       0x212C 0  // ℬ
 #define UC_LS_BLACK_CAPITAL_C                    0x212D 0  // ℭ
 #define UC_LS_ESTIMATED                          0x212E 0  // ℮
-#define UC_LS_SC_SMALL_E                         0x212F 0  // ℯ
-#define UC_LS_SC_CAPITAL_E                       0x2130 0  // ℰ
+#define UC_LS_SC_E                               0x212F 0x2130  // ℯ/ℰ
 #define UC_LS_SC_CAPITAL_F                       0x2131 0  // ℱ
 #define UC_LS_SC_CAPITAL_M                       0x2133 0  // ℳ
 #define UC_LS_SC_SMALL_O                         0x2134 0  // ℴ
@@ -78,17 +79,14 @@
 #define UC_LS_INFORMATION_SOURCE                 0x2139 0  // ℹ
 #define UC_LS_ROTATED_CAPITAL_Q                  0x213A 0  // ℺
 #define UC_LS_FACSIMILE_SIGN                     0x213B 0  // ℻
-#define UC_LS_DS_SMALL_PI                        0x213C 0  // ℼ
-#define UC_LS_DS_SMALL_GAMMA                     0x213D 0  // ℽ
-#define UC_LS_DS_CAPITAL_GAMMA                   0x213E 0  // ℾ
-#define UC_LS_DS_CAPITAL_PI                      0x213F 0  // ℿ
+#define UC_LS_DS_PI                              0x213C 0x213F  // ℼ/ℿ
+#define UC_LS_DS_GAMMA                           0x213D 0x213E  // ℽ/ℾ
 #define UC_LS_DS_N_ARY_SUMMATION                 0x2140 0  // ⅀
 #define UC_LS_TURNED_SS_CAPITAL_G                0x2141 0  // ⅁
 #define UC_LS_TURNED_SS_CAPITAL_L                0x2142 0  // ⅂
 #define UC_LS_REVERSED_SS_CAPITAL_L              0x2143 0  // ⅃
 #define UC_LS_TURNED_SS_CAPITAL_Y                0x2144 0  // ⅄
-#define UC_LS_DS_IT_CAPITAL_D                    0x2145 0  // ⅅ
-#define UC_LS_DS_IT_SMALL_D                      0x2146 0  // ⅆ
+#define UC_LS_DS_IT_D                            0x2146 0x2145  // ⅆ/ⅅ
 #define UC_LS_DS_IT_SMALL_E                      0x2147 0  // ⅇ
 #define UC_LS_DS_IT_SMALL_I                      0x2148 0  // ⅈ
 #define UC_LS_DS_IT_SMALL_J                      0x2149 0  // ⅉ

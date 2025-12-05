@@ -22,8 +22,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 133
-* Total Significant Hex Values: 133
+* Total Defined Code Points: 135
+* Total Significant Hex Values: 135
 * Status: OK (Counts Match)
 
 */
@@ -38,7 +38,7 @@
 #define UC_SMALL_C_CURL                          0x0255 0  // ɕ
 #define UC_D_TAIL                                0x0256 0x0189  // ɖ/Ɖ
 #define UC_D_HOOK                                0x0257 0x018A  // ɗ/Ɗ
-#define UC_SMALL_REVERSED_E                      0x0258 0  // ɘ
+#define UC_REVERSED_E                            0x0258 0x018E  // ɘ/Ǝ
 #define UC_SCHWA                                 0x0259 0x018F  // ə/Ə
 #define UC_SMALL_SCHWA_HOOK                      0x025A 0  // ɚ
 #define UC_OPEN_E                                0x025B 0x0190  // ɛ/Ɛ
@@ -50,7 +50,7 @@
 #define UC_SC_G                                  0x0261 0xA7AC  // ɡ/Ɡ
 #define UC_SMALL_CAPITAL_G                       0x0262 0  // ɢ
 #define UC_GAMMA                                 0x0263 0x0194  // ɣ/Ɣ
-#define UC_SMALL_RAMS_HORN                       0x0264 0  // ɤ
+#define UC_RAMS_HORN                             0x0264 0xA7CB  // ɤ/Ɤ
 #define UC_TURNED_H                              0x0265 0xA78D  // ɥ/Ɥ
 #define UC_H_HOOK                                0x0266 0xA7AA  // ɦ/Ɦ
 #define UC_SMALL_HENG_HOOK                       0x0267 0  // ɧ

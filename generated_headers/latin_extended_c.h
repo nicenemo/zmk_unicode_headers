@@ -12,8 +12,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 25
-* Total Significant Hex Values: 25
+* Total Defined Code Points: 34
+* Total Significant Hex Values: 34
 * Status: OK (Counts Match)
 
 */
@@ -21,11 +21,18 @@
 #pragma once
 
 #define UC_LTC_L_DOUBLE_BAR                      0x2C61 0x2C60  // ⱡ/Ⱡ
+#define UC_LTC_CAPITAL_L_MIDDLE_TILDE            0x2C62 0  // Ɫ
+#define UC_LTC_CAPITAL_P_STROKE                  0x2C63 0  // Ᵽ
+#define UC_LTC_CAPITAL_R_TAIL                    0x2C64 0  // Ɽ
 #define UC_LTC_A_STROKE                          0x2C65 0x023A  // ⱥ/Ⱥ
 #define UC_LTC_T_DIAGONAL_STROKE                 0x2C66 0x023E  // ⱦ/Ⱦ
 #define UC_LTC_H_DESCENDER                       0x2C68 0x2C67  // ⱨ/Ⱨ
 #define UC_LTC_K_DESCENDER                       0x2C6A 0x2C69  // ⱪ/Ⱪ
 #define UC_LTC_Z_DESCENDER                       0x2C6C 0x2C6B  // ⱬ/Ⱬ
+#define UC_LTC_CAPITAL_ALPHA                     0x2C6D 0  // Ɑ
+#define UC_LTC_CAPITAL_M_HOOK                    0x2C6E 0  // Ɱ
+#define UC_LTC_CAPITAL_TURNED_A                  0x2C6F 0  // Ɐ
+#define UC_LTC_CAPITAL_TURNED_ALPHA              0x2C70 0  // Ɒ
 #define UC_LTC_SMALL_V_RIGHT_HOOK                0x2C71 0  // ⱱ
 #define UC_LTC_W_HOOK                            0x2C73 0x2C72  // ⱳ/Ⱳ
 #define UC_LTC_SMALL_V_CURL                      0x2C74 0  // ⱴ
@@ -37,3 +44,5 @@
 #define UC_LTC_SMALL_CAPITAL_TURNED_E            0x2C7B 0  // ⱻ
 #define UC_LTC_SUBSC_SMALL_J                     0x2C7C 0  // ⱼ
 #define UC_LTC_MODIFIER_CAPITAL_V                0x2C7D 0  // ⱽ
+#define UC_LTC_CAPITAL_S_SWASH_TAIL              0x2C7E 0  // Ȿ
+#define UC_LTC_CAPITAL_Z_SWASH_TAIL              0x2C7F 0  // Ɀ

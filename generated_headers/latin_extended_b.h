@@ -16,8 +16,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 187
-* Total Significant Hex Values: 187
+* Total Defined Code Points: 211
+* Total Significant Hex Values: 211
 * Status: OK (Counts Match)
 
 */
@@ -25,27 +25,46 @@
 #pragma once
 
 #define UC_LTB_B_STROKE                          0x0180 0x0243  // ƀ/Ƀ
+#define UC_LTB_CAPITAL_B_HOOK                    0x0181 0  // Ɓ
 #define UC_LTB_B_TOPBAR                          0x0183 0x0182  // ƃ/Ƃ
 #define UC_LTB_TONE_SIX                          0x0185 0x0184  // ƅ/Ƅ
+#define UC_LTB_CAPITAL_OPEN_O                    0x0186 0  // Ɔ
 #define UC_LTB_C_HOOK                            0x0188 0x0187  // ƈ/Ƈ
+#define UC_LTB_CAPITAL_AFRICAN_D                 0x0189 0  // Ɖ
+#define UC_LTB_CAPITAL_D_HOOK                    0x018A 0  // Ɗ
 #define UC_LTB_D_TOPBAR                          0x018C 0x018B  // ƌ/Ƌ
 #define UC_LTB_SMALL_TURNED_DELTA                0x018D 0  // ƍ
+#define UC_LTB_CAPITAL_SCHWA                     0x018F 0  // Ə
+#define UC_LTB_CAPITAL_OPEN_E                    0x0190 0  // Ɛ
 #define UC_LTB_F_HOOK                            0x0192 0x0191  // ƒ/Ƒ
+#define UC_LTB_CAPITAL_G_HOOK                    0x0193 0  // Ɠ
+#define UC_LTB_CAPITAL_GAMMA                     0x0194 0  // Ɣ
 #define UC_LTB_HV                                0x0195 0x01F6  // ƕ/Ƕ
+#define UC_LTB_CAPITAL_IOTA                      0x0196 0  // Ɩ
+#define UC_LTB_CAPITAL_I_STROKE                  0x0197 0  // Ɨ
 #define UC_LTB_K_HOOK                            0x0199 0x0198  // ƙ/Ƙ
 #define UC_LTB_L_BAR                             0x019A 0x023D  // ƚ/Ƚ
-#define UC_LTB_SMALL_LAMBDA_STROKE               0x019B 0  // ƛ
+#define UC_LTB_LAMBDA_STROKE                     0x019B 0xA7DC  // ƛ/Ƛ
+#define UC_LTB_CAPITAL_TURNED_M                  0x019C 0  // Ɯ
+#define UC_LTB_CAPITAL_N_LEFT_HOOK               0x019D 0  // Ɲ
 #define UC_LTB_N_LONG_RIGHT_LEG                  0x019E 0x0220  // ƞ/Ƞ
+#define UC_LTB_CAPITAL_O_MIDDLE_TILDE            0x019F 0  // Ɵ
 #define UC_LTB_O_HORN                            0x01A1 0x01A0  // ơ/Ơ
 #define UC_LTB_OI                                0x01A3 0x01A2  // ƣ/Ƣ
 #define UC_LTB_P_HOOK                            0x01A5 0x01A4  // ƥ/Ƥ
+#define UC_LTB_YR                                0x01A6 0  // Ʀ
 #define UC_LTB_TONE_TWO                          0x01A8 0x01A7  // ƨ/Ƨ
+#define UC_LTB_CAPITAL_ESH                       0x01A9 0  // Ʃ
 #define UC_LTB_REVERSED_ESH_LOOP                 0x01AA 0  // ƪ
 #define UC_LTB_SMALL_T_PALATAL_HOOK              0x01AB 0  // ƫ
 #define UC_LTB_T_HOOK                            0x01AD 0x01AC  // ƭ/Ƭ
+#define UC_LTB_CAPITAL_T_RETROFLEX_HOOK          0x01AE 0  // Ʈ
 #define UC_LTB_U_HORN                            0x01B0 0x01AF  // ư/Ư
+#define UC_LTB_CAPITAL_UPSILON                   0x01B1 0  // Ʊ
+#define UC_LTB_CAPITAL_V_HOOK                    0x01B2 0  // Ʋ
 #define UC_LTB_Y_HOOK                            0x01B4 0x01B3  // ƴ/Ƴ
 #define UC_LTB_Z_STROKE                          0x01B6 0x01B5  // ƶ/Ƶ
+#define UC_LTB_CAPITAL_EZH                       0x01B7 0  // Ʒ
 #define UC_LTB_EZH_REVERSED                      0x01B9 0x01B8  // ƹ/Ƹ
 #define UC_LTB_SMALL_EZH_TAIL                    0x01BA 0  // ƺ
 #define UC_LTB_TWO_STROKE                        0x01BB 0  // ƻ
@@ -120,10 +139,14 @@
 #define UC_LTB_SMALL_DOTLESS_J                   0x0237 0  // ȷ
 #define UC_LTB_SMALL_DB_DIGRAPH                  0x0238 0  // ȸ
 #define UC_LTB_SMALL_QP_DIGRAPH                  0x0239 0  // ȹ
+#define UC_LTB_CAPITAL_A_STROKE                  0x023A 0  // Ⱥ
 #define UC_LTB_C_STROKE                          0x023C 0x023B  // ȼ/Ȼ
+#define UC_LTB_CAPITAL_T_DIAGONAL_STROKE         0x023E 0  // Ⱦ
 #define UC_LTB_S_SWASH_TAIL                      0x023F 0x2C7E  // ȿ/Ȿ
 #define UC_LTB_Z_SWASH_TAIL                      0x0240 0x2C7F  // ɀ/Ɀ
 #define UC_LTB_GLOTTAL_STOP                      0x0242 0x0241  // ɂ/Ɂ
+#define UC_LTB_CAPITAL_U_BAR                     0x0244 0  // Ʉ
+#define UC_LTB_CAPITAL_TURNED_V                  0x0245 0  // Ʌ
 #define UC_LTB_E_STROKE                          0x0247 0x0246  // ɇ/Ɇ
 #define UC_LTB_J_STROKE                          0x0249 0x0248  // ɉ/Ɉ
 #define UC_LTB_Q_HOOK_TAIL                       0x024B 0x024A  // ɋ/Ɋ

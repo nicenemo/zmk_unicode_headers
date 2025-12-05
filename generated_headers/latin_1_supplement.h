@@ -8,8 +8,8 @@
 
 
 * Consistency Check:
-* Total Defined Code Points: 130
-* Total Significant Hex Values: 130
+* Total Defined Code Points: 131
+* Total Significant Hex Values: 131
 * Status: OK (Counts Match)
 
 */
@@ -81,7 +81,7 @@
 #define UC_L1S_VULGAR_FRACTION_THREE_QUARTERS    0x00BE 0  // ¾
 #define UC_L1S_INVERTED_QUESTION_MARK            0x00BF 0  // ¿
 #define UC_L1S_MULTIPLICATION_SIGN               0x00D7 0  // ×
-#define UC_L1S_SMALL_SHARP_S                     0x00DF 0  // ß
+#define UC_L1S_SHARP_S                           0x00DF 0x1E9E  // ß/ẞ
 #define UC_L1S_A_GRAVE                           0x00E0 0x00C0  // à/À
 #define UC_L1S_A_ACUTE                           0x00E1 0x00C1  // á/Á
 #define UC_L1S_A_CIRCUMFLEX                      0x00E2 0x00C2  // â/Â

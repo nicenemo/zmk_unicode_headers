@@ -14,8 +14,8 @@
  *
 
 * Consistency Check:
-* Total Defined Code Points: 191
-* Total Significant Hex Values: 191
+* Total Defined Code Points: 204
+* Total Significant Hex Values: 204
 * Status: OK (Counts Match)
 
 */
@@ -75,6 +75,7 @@
 #define UC_LTD_SMALL_UM                          0xA778 0  // ꝸ
 #define UC_LTD_INSULAR_D                         0xA77A 0xA779  // ꝺ/Ꝺ
 #define UC_LTD_INSULAR_F                         0xA77C 0xA77B  // ꝼ/Ꝼ
+#define UC_LTD_CAPITAL_INSULAR_G                 0xA77D 0  // Ᵹ
 #define UC_LTD_TURNED_INSULAR_G                  0xA77F 0xA77E  // ꝿ/Ꝿ
 #define UC_LTD_TURNED_L                          0xA781 0xA780  // ꞁ/Ꞁ
 #define UC_LTD_INSULAR_R                         0xA783 0xA782  // ꞃ/Ꞃ
@@ -84,6 +85,7 @@
 #define UC_LTD_MODIFIER_COLON                    0xA789 0  // ꞉
 #define UC_LTD_MODIFIER_SHORT_EQUALS_SIGN        0xA78A 0  // ꞊
 #define UC_LTD_SALTILLO                          0xA78C 0xA78B  // ꞌ/Ꞌ
+#define UC_LTD_CAPITAL_TURNED_H                  0xA78D 0  // Ɥ
 #define UC_LTD_SMALL_L_RETROFLEX_HOOK_AND_BELT   0xA78E 0  // ꞎ
 #define UC_LTD_SINOLOGICAL_DOT                   0xA78F 0  // ꞏ
 #define UC_LTD_N_DESCENDER                       0xA791 0xA790  // ꞑ/Ꞑ
@@ -100,7 +102,16 @@
 #define UC_LTD_N_OBLIQUE_STROKE                  0xA7A5 0xA7A4  // ꞥ/Ꞥ
 #define UC_LTD_R_OBLIQUE_STROKE                  0xA7A7 0xA7A6  // ꞧ/Ꞧ
 #define UC_LTD_S_OBLIQUE_STROKE                  0xA7A9 0xA7A8  // ꞩ/Ꞩ
+#define UC_LTD_CAPITAL_H_HOOK                    0xA7AA 0  // Ɦ
+#define UC_LTD_CAPITAL_REVERSED_OPEN_E           0xA7AB 0  // Ɜ
+#define UC_LTD_CAPITAL_SC_G                      0xA7AC 0  // Ɡ
+#define UC_LTD_CAPITAL_L_BELT                    0xA7AD 0  // Ɬ
+#define UC_LTD_CAPITAL_SMALL_CAPITAL_I           0xA7AE 0  // Ɪ
 #define UC_LTD_SMALL_CAPITAL_Q                   0xA7AF 0  // ꞯ
+#define UC_LTD_CAPITAL_TURNED_K                  0xA7B0 0  // Ʞ
+#define UC_LTD_CAPITAL_TURNED_T                  0xA7B1 0  // Ʇ
+#define UC_LTD_CAPITAL_J_CROSSED_TAIL            0xA7B2 0  // Ʝ
+#define UC_LTD_CAPITAL_CHI                       0xA7B3 0  // Ꭓ
 #define UC_LTD_BETA                              0xA7B5 0xA7B4  // ꞵ/Ꞵ
 #define UC_LTD_OMEGA                             0xA7B7 0xA7B6  // ꞷ/Ꞷ
 #define UC_LTD_U_STROKE                          0xA7B9 0xA7B8  // ꞹ/Ꞹ
@@ -109,22 +120,19 @@
 #define UC_LTD_GLOTTAL_U                         0xA7BF 0xA7BE  // ꞿ/Ꞿ
 #define UC_LTD_OLD_POLISH_O                      0xA7C1 0xA7C0  // ꟁ/Ꟁ
 #define UC_LTD_ANGLICANA_W                       0xA7C3 0xA7C2  // ꟃ/Ꟃ
+#define UC_LTD_CAPITAL_S_HOOK                    0xA7C5 0  // Ʂ
+#define UC_LTD_CAPITAL_Z_PALATAL_HOOK            0xA7C6 0  // Ᶎ
 #define UC_LTD_D_SHORT_STROKE_OVERLAY            0xA7C8 0xA7C7  // ꟈ/Ꟈ
 #define UC_LTD_S_SHORT_STROKE_OVERLAY            0xA7CA 0xA7C9  // ꟊ/Ꟊ
 #define UC_LTD_CAPITAL_RAMS_HORN                 0xA7CB 0  // Ɤ
-#define UC_LTD_CAPITAL_S_DIAGONAL_STROKE         0xA7CC 0  // Ꟍ
-#define UC_LTD_SMALL_S_DIAGONAL_STROKE           0xA7CD 0  // ꟍ
-#define UC_LTD_CAPITAL_PHARYNGEAL_VOICED_FRICATIVE 0xA7CE 0  // ꟎
-#define UC_LTD_SMALL_PHARYNGEAL_VOICED_FRICATIVE 0xA7CF 0  // ꟏
+#define UC_LTD_S_DIAGONAL_STROKE                 0xA7CD 0xA7CC  // ꟍ/Ꟍ
+#define UC_LTD_PHARYNGEAL_VOICED_FRICATIVE       0xA7CF 0xA7CE  // ꟏/꟎
 #define UC_LTD_CLOSED_INSULAR_G                  0xA7D1 0xA7D0  // ꟑ/Ꟑ
-#define UC_LTD_CAPITAL_DOUBLE_THORN              0xA7D2 0  // ꟒
-#define UC_LTD_SMALL_DOUBLE_THORN                0xA7D3 0  // ꟓ
-#define UC_LTD_CAPITAL_DOUBLE_WYNN               0xA7D4 0  // ꟔
-#define UC_LTD_SMALL_DOUBLE_WYNN                 0xA7D5 0  // ꟕ
+#define UC_LTD_DOUBLE_THORN                      0xA7D3 0xA7D2  // ꟓ/꟒
+#define UC_LTD_DOUBLE_WYNN                       0xA7D5 0xA7D4  // ꟕ/꟔
 #define UC_LTD_MIDDLE_SCOTS_S                    0xA7D7 0xA7D6  // ꟗ/Ꟗ
 #define UC_LTD_SIGMOID_S                         0xA7D9 0xA7D8  // ꟙ/Ꟙ
-#define UC_LTD_CAPITAL_LAMBDA                    0xA7DA 0  // Ꟛ
-#define UC_LTD_SMALL_LAMBDA                      0xA7DB 0  // ꟛ
+#define UC_LTD_LAMBDA                            0xA7DB 0xA7DA  // ꟛ/Ꟛ
 #define UC_LTD_CAPITAL_LAMBDA_STROKE             0xA7DC 0  // Ƛ
 #define UC_LTD_MODIFIER_CAPITAL_S                0xA7F1 0  // ꟱
 #define UC_LTD_MODIFIER_CAPITAL_C                0xA7F2 0  // ꟲ

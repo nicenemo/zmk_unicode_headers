@@ -8,8 +8,8 @@
 
 
 * Consistency Check:
-* Total Defined Code Points: 20
-* Total Significant Hex Values: 20
+* Total Defined Code Points: 19
+* Total Significant Hex Values: 19
 * Status: OK (Counts Match)
 
 */
@@ -21,9 +21,8 @@
 #define UC_NARROW_O                              0x1C82 0x041E  // ᲂ/О
 #define UC_WIDE_ES                               0x1C83 0x0421  // ᲃ/С
 #define UC_TALL_TE                               0x1C84 0x0422  // ᲄ/Т
-#define UC_THREE_LEGGED_TE                       0x1C85 0x0422  // ᲅ/Т
+#define UC_SMALL_THREE_LEGGED_TE                 0x1C85 0  // ᲅ
 #define UC_TALL_HARD_SIGN                        0x1C86 0x042A  // ᲆ/Ъ
 #define UC_TALL_YAT                              0x1C87 0x0462  // ᲇ/Ѣ
 #define UC_UNBLENDED_UK                          0x1C88 0xA64A  // ᲈ/Ꙋ
-#define UC_CAPITAL_TJE                           0x1C89 0  // Ᲊ
-#define UC_SMALL_TJE                             0x1C8A 0  // ᲊ
+#define UC_TJE                                   0x1C8A 0x1C89  // ᲊ/Ᲊ

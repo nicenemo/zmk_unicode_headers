@@ -34,28 +34,6 @@
 #define UC_GARAY_VOWEL_SIGN_EE                   0x10D4D 0  // 𐵍
 #define UC_GARAY_VOWEL_LENGTH_MARK               0x10D4E 0  // 𐵎
 #define UC_GARAY_SUKUN                           0x10D4F 0  // 𐵏
-#define UC_GARAY_CAPITAL_A                       0x10D50 0  // 𐵐
-#define UC_GARAY_CAPITAL_CA                      0x10D51 0  // 𐵑
-#define UC_GARAY_CAPITAL_MA                      0x10D52 0  // 𐵒
-#define UC_GARAY_CAPITAL_KA                      0x10D53 0  // 𐵓
-#define UC_GARAY_CAPITAL_BA                      0x10D54 0  // 𐵔
-#define UC_GARAY_CAPITAL_JA                      0x10D55 0  // 𐵕
-#define UC_GARAY_CAPITAL_SA                      0x10D56 0  // 𐵖
-#define UC_GARAY_CAPITAL_WA                      0x10D57 0  // 𐵗
-#define UC_GARAY_CAPITAL_LA                      0x10D58 0  // 𐵘
-#define UC_GARAY_CAPITAL_GA                      0x10D59 0  // 𐵙
-#define UC_GARAY_CAPITAL_DA                      0x10D5A 0  // 𐵚
-#define UC_GARAY_CAPITAL_XA                      0x10D5B 0  // 𐵛
-#define UC_GARAY_CAPITAL_YA                      0x10D5C 0  // 𐵜
-#define UC_GARAY_CAPITAL_TA                      0x10D5D 0  // 𐵝
-#define UC_GARAY_CAPITAL_RA                      0x10D5E 0  // 𐵞
-#define UC_GARAY_CAPITAL_NYA                     0x10D5F 0  // 𐵟
-#define UC_GARAY_CAPITAL_FA                      0x10D60 0  // 𐵠
-#define UC_GARAY_CAPITAL_NA                      0x10D61 0  // 𐵡
-#define UC_GARAY_CAPITAL_PA                      0x10D62 0  // 𐵢
-#define UC_GARAY_CAPITAL_HA                      0x10D63 0  // 𐵣
-#define UC_GARAY_CAPITAL_OLD_KA                  0x10D64 0  // 𐵤
-#define UC_GARAY_CAPITAL_OLD_NA                  0x10D65 0  // 𐵥
 #define UC_GARAY_VOWEL_SIGN_E                    0x10D69 0  // 𐵩
 #define UC_GARAY_CONSONANT_GEMINATION_MARK       0x10D6A 0  // 𐵪
 #define UC_GARAY_COMBINING_DOT_ABOVE             0x10D6B 0  // 𐵫
@@ -63,27 +41,27 @@
 #define UC_GARAY_CONSONANT_NASALIZATION_MARK     0x10D6D 0  // 𐵭
 #define UC_GARAY_HYPHEN                          0x10D6E 0  // 𐵮
 #define UC_GARAY_REDUPLICATION_MARK              0x10D6F 0  // 𐵯
-#define UC_GARAY_SMALL_A                         0x10D70 0  // 𐵰
-#define UC_GARAY_SMALL_CA                        0x10D71 0  // 𐵱
-#define UC_GARAY_SMALL_MA                        0x10D72 0  // 𐵲
-#define UC_GARAY_SMALL_KA                        0x10D73 0  // 𐵳
-#define UC_GARAY_SMALL_BA                        0x10D74 0  // 𐵴
-#define UC_GARAY_SMALL_JA                        0x10D75 0  // 𐵵
-#define UC_GARAY_SMALL_SA                        0x10D76 0  // 𐵶
-#define UC_GARAY_SMALL_WA                        0x10D77 0  // 𐵷
-#define UC_GARAY_SMALL_LA                        0x10D78 0  // 𐵸
-#define UC_GARAY_SMALL_GA                        0x10D79 0  // 𐵹
-#define UC_GARAY_SMALL_DA                        0x10D7A 0  // 𐵺
-#define UC_GARAY_SMALL_XA                        0x10D7B 0  // 𐵻
-#define UC_GARAY_SMALL_YA                        0x10D7C 0  // 𐵼
-#define UC_GARAY_SMALL_TA                        0x10D7D 0  // 𐵽
-#define UC_GARAY_SMALL_RA                        0x10D7E 0  // 𐵾
-#define UC_GARAY_SMALL_NYA                       0x10D7F 0  // 𐵿
-#define UC_GARAY_SMALL_FA                        0x10D80 0  // 𐶀
-#define UC_GARAY_SMALL_NA                        0x10D81 0  // 𐶁
-#define UC_GARAY_SMALL_PA                        0x10D82 0  // 𐶂
-#define UC_GARAY_SMALL_HA                        0x10D83 0  // 𐶃
-#define UC_GARAY_SMALL_OLD_KA                    0x10D84 0  // 𐶄
-#define UC_GARAY_SMALL_OLD_NA                    0x10D85 0  // 𐶅
+#define UC_GARAY_A                               0x10D70 0x10D50  // 𐵰/𐵐
+#define UC_GARAY_CA                              0x10D71 0x10D51  // 𐵱/𐵑
+#define UC_GARAY_MA                              0x10D72 0x10D52  // 𐵲/𐵒
+#define UC_GARAY_KA                              0x10D73 0x10D53  // 𐵳/𐵓
+#define UC_GARAY_BA                              0x10D74 0x10D54  // 𐵴/𐵔
+#define UC_GARAY_JA                              0x10D75 0x10D55  // 𐵵/𐵕
+#define UC_GARAY_SA                              0x10D76 0x10D56  // 𐵶/𐵖
+#define UC_GARAY_WA                              0x10D77 0x10D57  // 𐵷/𐵗
+#define UC_GARAY_LA                              0x10D78 0x10D58  // 𐵸/𐵘
+#define UC_GARAY_GA                              0x10D79 0x10D59  // 𐵹/𐵙
+#define UC_GARAY_DA                              0x10D7A 0x10D5A  // 𐵺/𐵚
+#define UC_GARAY_XA                              0x10D7B 0x10D5B  // 𐵻/𐵛
+#define UC_GARAY_YA                              0x10D7C 0x10D5C  // 𐵼/𐵜
+#define UC_GARAY_TA                              0x10D7D 0x10D5D  // 𐵽/𐵝
+#define UC_GARAY_RA                              0x10D7E 0x10D5E  // 𐵾/𐵞
+#define UC_GARAY_NYA                             0x10D7F 0x10D5F  // 𐵿/𐵟
+#define UC_GARAY_FA                              0x10D80 0x10D60  // 𐶀/𐵠
+#define UC_GARAY_NA                              0x10D81 0x10D61  // 𐶁/𐵡
+#define UC_GARAY_PA                              0x10D82 0x10D62  // 𐶂/𐵢
+#define UC_GARAY_HA                              0x10D83 0x10D63  // 𐶃/𐵣
+#define UC_GARAY_OLD_KA                          0x10D84 0x10D64  // 𐶄/𐵤
+#define UC_GARAY_OLD_NA                          0x10D85 0x10D65  // 𐶅/𐵥
 #define UC_GARAY_PLUS_SIGN                       0x10D8E 0  // 𐶎
 #define UC_GARAY_MINUS_SIGN                      0x10D8F 0  // 𐶏
