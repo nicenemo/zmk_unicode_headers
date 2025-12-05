@@ -483,11 +483,14 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: Mac
     """
     Writes one header file for the block, providing console feedback and
     including a consistency check and description within the header's comments.
+    
+    NOTE: The out_dir passed here is the **final** directory: 'headers/keys/blocks/'.
     """
     
     # --- FILE NAMING LOGIC ---
     s_clean = re.sub(r"[^\w]", "_", block.name)
     file_basename = re.sub(r"_+", "_", s_clean).lower().strip("_")
+    # header_file is now written directly into the provided out_dir
     header_file = out_dir / f"{file_basename}.h"
     # -------------------------
     
@@ -578,11 +581,13 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description="Generate C header files containing Unicode code point definitions."
     )
+    # --- MODIFICATION 1: Change default output to 'headers/keys/blocks' ---
+    DEFAULT_OUTPUT_DIR = pathlib.Path('headers') / 'keys' / 'blocks'
     parser.add_argument(
         '-o', '--output',
         type=str,
-        default='generated_headers',
-        help='Specify the output directory for the generated headers (default: generated_headers)'
+        default=str(DEFAULT_OUTPUT_DIR), # Set new default path
+        help=f'Specify the output directory for the generated headers (default: {DEFAULT_OUTPUT_DIR})'
     )
     args = parser.parse_args()
     
@@ -591,8 +596,10 @@ def main() -> int:
     # Pre-check: attempt to load data early (this now populates UNICODE_BLOCK_VERSION)
     load_block_data() 
     
+    # --- MODIFICATION 2: Ensure the full path (headers/keys/blocks) is created ---
     try:
-        out_dir.mkdir(exist_ok=True, parents=True)
+        # mkdir(exist_ok=True, parents=True) will create the full path 'headers/keys/blocks'
+        out_dir.mkdir(exist_ok=True, parents=True) 
     except OSError as e:
         print(f"Error creating output directory '{out_dir}': {e}", file=sys.stderr)
         return 1
