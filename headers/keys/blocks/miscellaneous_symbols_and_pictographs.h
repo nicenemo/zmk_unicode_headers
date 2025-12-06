@@ -153,7 +153,7 @@
 #define UC_PEAR                                  0x1F350 0  // 🍐
 #define UC_PEACH                                 0x1F351 0  // 🍑
 #define UC_CHERRIES                              0x1F352 0  // 🍒
-#define UC_STRAWBERRY                            0x1F353 0  // 🍓
+#define UC_STRAWBERRY_U1F353                     0x1F353 0  // 🍓
 #define UC_HAMBURGER                             0x1F354 0  // 🍔
 #define UC_SLICE_OF_PIZZA                        0x1F355 0  // 🍕
 #define UC_MEAT_ON_BONE                          0x1F356 0  // 🍖
@@ -296,7 +296,7 @@
 #define UC_STADIUM                               0x1F3DF 0  // 🏟
 #define UC_HOUSE_BUILDING                        0x1F3E0 0  // 🏠
 #define UC_HOUSE_GARDEN                          0x1F3E1 0  // 🏡
-#define UC_OFFICE_BUILDING                       0x1F3E2 0  // 🏢
+#define UC_OFFICE_BUILDING_U1F3E2                0x1F3E2 0  // 🏢
 #define UC_JAPANESE_POST_OFFICE                  0x1F3E3 0  // 🏣
 #define UC_EUROPEAN_POST_OFFICE                  0x1F3E4 0  // 🏤
 #define UC_HOSPITAL                              0x1F3E5 0  // 🏥
@@ -339,7 +339,7 @@
 #define UC_CROCODILE                             0x1F40A 0  // 🐊
 #define UC_WHALE                                 0x1F40B 0  // 🐋
 #define UC_SNAIL                                 0x1F40C 0  // 🐌
-#define UC_SNAKE                                 0x1F40D 0  // 🐍
+#define UC_SNAKE_U1F40D                          0x1F40D 0  // 🐍
 #define UC_HORSE                                 0x1F40E 0  // 🐎
 #define UC_RAM                                   0x1F40F 0  // 🐏
 #define UC_GOAT                                  0x1F410 0  // 🐐
@@ -393,7 +393,7 @@
 #define UC_EYES                                  0x1F440 0  // 👀
 #define UC_EYE                                   0x1F441 0  // 👁
 #define UC_EAR                                   0x1F442 0  // 👂
-#define UC_NOSE                                  0x1F443 0  // 👃
+#define UC_NOSE_U1F443                           0x1F443 0  // 👃
 #define UC_MOUTH                                 0x1F444 0  // 👄
 #define UC_TONGUE                                0x1F445 0  // 👅
 #define UC_WHITE_UP_POINTING_BACKHAND_INDEX      0x1F446 0  // 👆
@@ -467,7 +467,7 @@
 #define UC_PILL                                  0x1F48A 0  // 💊
 #define UC_KISS_MARK                             0x1F48B 0  // 💋
 #define UC_LOVE                                  0x1F48C 0  // 💌
-#define UC_RING                                  0x1F48D 0  // 💍
+#define UC_RING_U1F48D                           0x1F48D 0  // 💍
 #define UC_GEM_STONE                             0x1F48E 0  // 💎
 #define UC_KISS                                  0x1F48F 0  // 💏
 #define UC_BOUQUET                               0x1F490 0  // 💐
@@ -602,7 +602,7 @@
 #define UC_KEY                                   0x1F511 0  // 🔑
 #define UC_LOCK                                  0x1F512 0  // 🔒
 #define UC_OPEN_LOCK                             0x1F513 0  // 🔓
-#define UC_BELL                                  0x1F514 0  // 🔔
+#define UC_BELL_U1F514                           0x1F514 0  // 🔔
 #define UC_BELL_CANCELLATION_STROKE              0x1F515 0  // 🔕
 #define UC_BOOKMARK                              0x1F516 0  // 🔖
 #define UC_LINK                                  0x1F517 0  // 🔗

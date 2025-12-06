@@ -66,7 +66,7 @@
 #define UC_ZEMLYA                                0xA641 0xA640  // ꙁ/Ꙁ
 #define UC_DZELO                                 0xA643 0xA642  // ꙃ/Ꙃ
 #define UC_REVERSED_DZE                          0xA645 0xA644  // ꙅ/Ꙅ
-#define UC_IOTA                                  0xA647 0xA646  // ꙇ/Ꙇ
+#define UC_IOTA_UA647                            0xA647 0xA646  // ꙇ/Ꙇ
 #define UC_DJERV                                 0xA649 0xA648  // ꙉ/Ꙉ
 #define UC_MONOGRAPH_UK                          0xA64B 0xA64A  // ꙋ/Ꙋ
 #define UC_BROAD_OMEGA                           0xA64D 0xA64C  // ꙍ/Ꙍ

@@ -131,6 +131,9 @@ class MacroGenerator:
     """
     Manages the configuration and logic for converting Unicode names into 
     short, clean C-style macro identifiers (UC_ABBR_NAME).
+    
+    Holds the globally tracked set of all used macro names to prevent 
+    inter-block collisions.
     """
 
     # --- Manual Override for ASCII/C1 Control Character Names ---
@@ -235,6 +238,11 @@ class MacroGenerator:
         "FULLWIDTH": "FW",
     }
     
+    # NEW: Global tracking set
+    def __init__(self):
+        """Initializes the global set to track all macro names used across all blocks."""
+        self.used_macro_names: Set[str] = set()
+
     def get_block_abbr(self, block_name: str) -> str:
         """Looks up the abbreviation for a Unicode block name."""
         return self.BLOCK_ABBREVIATIONS.get(block_name.upper(), self.BLOCK_ABBREVIATIONS["DEFAULT"])
@@ -313,7 +321,9 @@ def resolve_char_name(cp: int, char: str, cat: str, macro_generator: 'MacroGener
         return macro_generator.CONTROL_CHARACTER_NAMES[cp]
     else:
         try:
-            return name(char)
+            name_result = name(char)
+            # *** REMOVED ARABIC-INDIC SPECIFIC FIX, RELYING ON GLOBAL GENERAL FIX ***
+            return name_result
         except ValueError:
             # Fallback for assigned characters (like non-ASCII Cc or Cf) if name fails
             return f"{cat}_U{cp:04X}"
@@ -375,6 +385,9 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
     Generates the content lines (#define macros) for a single C header block using 
     a robust two-pass system to handle all case-pairing orders.
     
+    The function now relies on the macro_generator's internal `used_macro_names`
+    set for global de-duplication.
+    
     Returns a tuple of (lines, defined_code_points, significant_hex_values).
     """
     
@@ -390,10 +403,6 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
     # Categories to EXCLUDE (Unassigned, Private Use, Surrogate, Specific Separators)
     EXCLUDE_CATEGORIES = {'Cn', 'Co', 'Cs', 'Zl', 'Zp'}
     
-    # *** GENERAL FIX START: Set to track macro names for general de-duplication ***
-    used_macro_names: Set[str] = set()
-    # *** GENERAL FIX END ***
-
     # =======================================================
     # PASS 1: IDENTIFY AND STORE ALL CASE PAIRS (Ll -> Lu)
     # =======================================================
@@ -447,14 +456,14 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
             # Get base macro name (case stripped)
             base_macro_name = macro_generator.generate_name(block_abbr, name1, strip_case=True)
             
-            # *** GENERAL FIX START: De-duplicate macro name ***
+            # *** FIX: Use the global tracker on the macro_generator instance ***
             macro_name = base_macro_name
             # If the base name collides, append the unique code point of the first character (cp1)
-            if macro_name in used_macro_names:
+            if macro_name in macro_generator.used_macro_names:
                 macro_name = f"{base_macro_name}_U{cp1:04X}"
             
-            used_macro_names.add(macro_name)
-            # *** GENERAL FIX END ***
+            macro_generator.used_macro_names.add(macro_name)
+            # *** FIX END ***
 
             lines.append(
                 f"#define {macro_name:<40} 0x{cp1:04X} 0x{cp2:04X}  {comment}" 
@@ -486,14 +495,14 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
             # Get base macro name (not case stripped)
             base_macro_name = macro_generator.generate_name(block_abbr, char_name, strip_case=False)
             
-            # *** GENERAL FIX START: De-duplicate macro name ***
+            # *** FIX: Use the global tracker on the macro_generator instance ***
             macro_name = base_macro_name
             # If the base name collides, append the unique code point (cp)
-            if macro_name in used_macro_names:
+            if macro_name in macro_generator.used_macro_names:
                 macro_name = f"{base_macro_name}_U{cp:04X}"
 
-            used_macro_names.add(macro_name)
-            # *** GENERAL FIX END ***
+            macro_generator.used_macro_names.add(macro_name)
+            # *** FIX END ***
 
             lines.append(
                 f"#define {macro_name:<40} 0x{cp:04X} 0  {comment}" 

@@ -78,9 +78,9 @@
 #define UC_COMBINING_SEVEN                       0xA8E7 0  // ꣧
 #define UC_COMBINING_EIGHT                       0xA8E8 0  // ꣨
 #define UC_COMBINING_NINE                        0xA8E9 0  // ꣩
-#define UC_COMBINING_A                           0xA8EA 0  // ꣪
-#define UC_COMBINING_U                           0xA8EB 0  // ꣫
-#define UC_COMBINING_KA                          0xA8EC 0  // ꣬
+#define UC_COMBINING_A_UA8EA                     0xA8EA 0  // ꣪
+#define UC_COMBINING_U_UA8EB                     0xA8EB 0  // ꣫
+#define UC_COMBINING_KA_UA8EC                    0xA8EC 0  // ꣬
 #define UC_COMBINING_NA                          0xA8ED 0  // ꣭
 #define UC_COMBINING_PA                          0xA8EE 0  // ꣮
 #define UC_COMBINING_RA                          0xA8EF 0  // ꣯

@@ -63,7 +63,7 @@
 
 #pragma once
 
-#define UC_MODIFIER_SMALL_A                      0x1E030 0  // 𞀰
+#define UC_MODIFIER_SMALL_A_U1E030               0x1E030 0  // 𞀰
 #define UC_MODIFIER_SMALL_BE                     0x1E031 0  // 𞀱
 #define UC_MODIFIER_SMALL_VE                     0x1E032 0  // 𞀲
 #define UC_MODIFIER_SMALL_GHE                    0x1E033 0  // 𞀳
@@ -75,28 +75,28 @@
 #define UC_MODIFIER_SMALL_KA                     0x1E039 0  // 𞀹
 #define UC_MODIFIER_SMALL_EL                     0x1E03A 0  // 𞀺
 #define UC_MODIFIER_SMALL_EM                     0x1E03B 0  // 𞀻
-#define UC_MODIFIER_SMALL_O                      0x1E03C 0  // 𞀼
+#define UC_MODIFIER_SMALL_O_U1E03C               0x1E03C 0  // 𞀼
 #define UC_MODIFIER_SMALL_PE                     0x1E03D 0  // 𞀽
 #define UC_MODIFIER_SMALL_ER                     0x1E03E 0  // 𞀾
 #define UC_MODIFIER_SMALL_ES                     0x1E03F 0  // 𞀿
 #define UC_MODIFIER_SMALL_TE                     0x1E040 0  // 𞁀
-#define UC_MODIFIER_SMALL_U                      0x1E041 0  // 𞁁
+#define UC_MODIFIER_SMALL_U_U1E041               0x1E041 0  // 𞁁
 #define UC_MODIFIER_SMALL_EF                     0x1E042 0  // 𞁂
 #define UC_MODIFIER_SMALL_HA                     0x1E043 0  // 𞁃
 #define UC_MODIFIER_SMALL_TSE                    0x1E044 0  // 𞁄
 #define UC_MODIFIER_SMALL_CHE                    0x1E045 0  // 𞁅
 #define UC_MODIFIER_SMALL_SHA                    0x1E046 0  // 𞁆
 #define UC_MODIFIER_SMALL_YERU                   0x1E047 0  // 𞁇
-#define UC_MODIFIER_SMALL_E                      0x1E048 0  // 𞁈
+#define UC_MODIFIER_SMALL_E_U1E048               0x1E048 0  // 𞁈
 #define UC_MODIFIER_SMALL_YU                     0x1E049 0  // 𞁉
 #define UC_MODIFIER_SMALL_DZZE                   0x1E04A 0  // 𞁊
-#define UC_MODIFIER_SMALL_SCHWA                  0x1E04B 0  // 𞁋
+#define UC_MODIFIER_SMALL_SCHWA_U1E04B           0x1E04B 0  // 𞁋
 #define UC_MODIFIER_SMALL_BYELORUSSIAN_UKRAINIAN_I 0x1E04C 0  // 𞁌
 #define UC_MODIFIER_SMALL_JE                     0x1E04D 0  // 𞁍
-#define UC_MODIFIER_SMALL_BARRED_O               0x1E04E 0  // 𞁎
+#define UC_MODIFIER_SMALL_BARRED_O_U1E04E        0x1E04E 0  // 𞁎
 #define UC_MODIFIER_SMALL_STRAIGHT_U             0x1E04F 0  // 𞁏
 #define UC_MODIFIER_SMALL_PALOCHKA               0x1E050 0  // 𞁐
-#define UC_SUBSC_SMALL_A                         0x1E051 0  // 𞁑
+#define UC_SUBSC_SMALL_A_U1E051                  0x1E051 0  // 𞁑
 #define UC_SUBSC_SMALL_BE                        0x1E052 0  // 𞁒
 #define UC_SUBSC_SMALL_VE                        0x1E053 0  // 𞁓
 #define UC_SUBSC_SMALL_GHE                       0x1E054 0  // 𞁔
@@ -104,13 +104,13 @@
 #define UC_SUBSC_SMALL_IE                        0x1E056 0  // 𞁖
 #define UC_SUBSC_SMALL_ZHE                       0x1E057 0  // 𞁗
 #define UC_SUBSC_SMALL_ZE                        0x1E058 0  // 𞁘
-#define UC_SUBSC_SMALL_I                         0x1E059 0  // 𞁙
+#define UC_SUBSC_SMALL_I_U1E059                  0x1E059 0  // 𞁙
 #define UC_SUBSC_SMALL_KA                        0x1E05A 0  // 𞁚
 #define UC_SUBSC_SMALL_EL                        0x1E05B 0  // 𞁛
-#define UC_SUBSC_SMALL_O                         0x1E05C 0  // 𞁜
+#define UC_SUBSC_SMALL_O_U1E05C                  0x1E05C 0  // 𞁜
 #define UC_SUBSC_SMALL_PE                        0x1E05D 0  // 𞁝
 #define UC_SUBSC_SMALL_ES                        0x1E05E 0  // 𞁞
-#define UC_SUBSC_SMALL_U                         0x1E05F 0  // 𞁟
+#define UC_SUBSC_SMALL_U_U1E05F                  0x1E05F 0  // 𞁟
 #define UC_SUBSC_SMALL_EF                        0x1E060 0  // 𞁠
 #define UC_SUBSC_SMALL_HA                        0x1E061 0  // 𞁡
 #define UC_SUBSC_SMALL_TSE                       0x1E062 0  // 𞁢

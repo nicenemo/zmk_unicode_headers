@@ -68,7 +68,7 @@
 
 #define UC_ALFA                                  0x2C81 0x2C80  // ⲁ/Ⲁ
 #define UC_VIDA                                  0x2C83 0x2C82  // ⲃ/Ⲃ
-#define UC_GAMMA                                 0x2C85 0x2C84  // ⲅ/Ⲅ
+#define UC_GAMMA_U2C85                           0x2C85 0x2C84  // ⲅ/Ⲅ
 #define UC_DALDA                                 0x2C87 0x2C86  // ⲇ/Ⲇ
 #define UC_EIE                                   0x2C89 0x2C88  // ⲉ/Ⲉ
 #define UC_SOU                                   0x2C8B 0x2C8A  // ⲋ/Ⲋ
