@@ -161,7 +161,7 @@
 #define UC_YEH_BARREE_FINAL_FORM                 0xFBAF 0  // ﮯ
 #define UC_YEH_BARREE_HAMZA_ABOVE_ISOLATED_FORM  0xFBB0 0  // ﮰ
 #define UC_YEH_BARREE_HAMZA_ABOVE_FINAL_FORM     0xFBB1 0  // ﮱ
-#define UC_DOT_ABOVE_UFBB2                       0xFBB2 0  // ﮲
+#define UC_ARABIC_SYMBOL_DOT_ABOVE               0xFBB2 0  // ﮲
 #define UC_DOT_BELOW                             0xFBB3 0  // ﮳
 #define UC_TWO_DOTS_ABOVE                        0xFBB4 0  // ﮴
 #define UC_TWO_DOTS_BELOW                        0xFBB5 0  // ﮵

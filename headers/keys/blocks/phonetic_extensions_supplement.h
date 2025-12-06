@@ -118,7 +118,7 @@
 #define UC_MODIFIER_SMALL_N_RETROFLEX_HOOK       0x1DAF 0  // ᶯ
 #define UC_MODIFIER_SMALL_CAPITAL_N              0x1DB0 0  // ᶰ
 #define UC_MODIFIER_SMALL_BARRED_O               0x1DB1 0  // ᶱ
-#define UC_MODIFIER_SMALL_PHI_U1DB2              0x1DB2 0  // ᶲ
+#define UC_MODIFIER_LETTER_SMALL_PHI             0x1DB2 0  // ᶲ
 #define UC_MODIFIER_SMALL_S_HOOK                 0x1DB3 0  // ᶳ
 #define UC_MODIFIER_SMALL_ESH                    0x1DB4 0  // ᶴ
 #define UC_MODIFIER_SMALL_T_PALATAL_HOOK         0x1DB5 0  // ᶵ

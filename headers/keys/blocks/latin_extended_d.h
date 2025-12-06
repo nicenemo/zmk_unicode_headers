@@ -79,7 +79,7 @@
 #define UC_LTD_TZ                                0xA729 0xA728  // ꜩ/Ꜩ
 #define UC_LTD_TRESILLO                          0xA72B 0xA72A  // ꜫ/Ꜫ
 #define UC_LTD_CUATRILLO                         0xA72D 0xA72C  // ꜭ/Ꜭ
-#define UC_LTD_CUATRILLO_UA72F                   0xA72F 0xA72E  // ꜯ/Ꜯ
+#define UC_LATIN_SMALL_LETTER_CUATRILLO_WITH_COMMA 0xA72F 0xA72E  // ꜯ/Ꜯ
 #define UC_LTD_SMALL_CAPITAL_F                   0xA730 0  // ꜰ
 #define UC_LTD_SMALL_CAPITAL_S                   0xA731 0  // ꜱ
 #define UC_LTD_AA                                0xA733 0xA732  // ꜳ/Ꜳ

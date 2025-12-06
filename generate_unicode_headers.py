@@ -8,9 +8,9 @@ Generate C header files with Unicode constants for every code point.
 The script uses the `unicodedata2` package for core properties and loads
 Unicode block data from a JSON file to provide the missing 'block' function.
 
-This version uses a three-layered abbreviation system for maximal brevity and
-collision avoidance, and a robust two-pass system for case pairing that ensures
-correct ordering (small letter first) for all scripts, including Beria Erfe.
+This version implements a robust, three-layered abbreviation system and a 
+collision-resolution strategy that prioritizes the full, unshortened Unicode 
+name as a fallback before resorting to unique hex code point suffixes.
 """
 
 import pathlib
@@ -33,8 +33,6 @@ UNICODE_VERSION = unidata_version
 UNICODE_BLOCK_VERSION: str = "N/A (not loaded)" 
 
 # Define the structure for a Unicode Block
-# Includes 'description' for content read from the JSON file
-# FIX: Added wikipedia_url and unicode_charts_url to the namedtuple
 UnicodeBlock = namedtuple('UnicodeBlock', ['name', 'start', 'end', 'description', 'wikipedia_url', 'unicode_charts_url'])
 
 # --------------------------------------------------------------------
@@ -48,8 +46,6 @@ def load_block_data() -> None:
     """
     Loads and caches the block data from the JSON file. Converts hexadecimal 
     start/end strings to integers for fast lookup and sets the global Unicode block version.
-    
-    Handles the new JSON format: {"unicode_version": "...", "blocks": [...]}.
     """
     global _CACHED_BLOCK_DATA
     global UNICODE_BLOCK_VERSION
@@ -106,7 +102,6 @@ def get_all_blocks() -> Iterator[UnicodeBlock]:
         load_block_data()
         
     for entry in _CACHED_BLOCK_DATA:
-        # FIX: Added extraction of wikipedia_url and unicode_charts_url
         yield UnicodeBlock(
             name=entry['name'], 
             start=entry['start_cp'], 
@@ -130,15 +125,13 @@ MAX_UNICODE_CP = 0x110000
 class MacroGenerator:
     """
     Manages the configuration and logic for converting Unicode names into 
-    short, clean C-style macro identifiers (UC_ABBR_NAME).
+    C-style macro identifiers (UC_ABBR_NAME).
     
     Holds the globally tracked set of all used macro names to prevent 
-    inter-block collisions.
+    inter-block collisions and implements the preferred fallback logic.
     """
 
     # --- Manual Override for ASCII/C1 Control Character Names ---
-    # These names are known to cause ValueError in unicodedata.name(), 
-    # but they must be generated with their common three-letter abbreviations.
     CONTROL_CHARACTER_NAMES: Dict[int, str] = {
         # ASCII C0 Controls (U+0000 - U+001F, U+007F)
         0x0000: "NULL", 0x0001: "SOH", 0x0002: "STX", 0x0003: "ETX",
@@ -238,10 +231,9 @@ class MacroGenerator:
         "FULLWIDTH": "FW",
     }
     
-    # NEW: Global tracking set
     def __init__(self):
         """Initializes the global set to track all macro names used across all blocks."""
-        self.used_macro_names: Set[str] = set()
+        self._used_macro_names: Set[str] = set()
 
     def get_block_abbr(self, block_name: str) -> str:
         """Looks up the abbreviation for a Unicode block name."""
@@ -249,15 +241,13 @@ class MacroGenerator:
 
     def generate_name(self, block_abbr: str, unicode_name: str, strip_case: bool) -> str:
         """
-        Build a short, clean C‑identifier from the Unicode name using the three-layer
-        abbreviation system: UC + Block Abbr + Name Body.
+        Build the primary (shortened) C‑identifier from the Unicode name.
+        Applies all three layers of abbreviation.
         """
         s = unicode_name
         
         # 1. Strip case words
         if strip_case:
-            # Note: We must strip both 'SMALL'/'LOWERCASE' and 'CAPITAL'/'UPPERCASE' 
-            # if we are generating a pair macro name.
             s = re.sub(r"(SMALL|CAPITAL|LOWERCASE|UPPERCASE)\s", "", s)
         
         s_upper = s.upper()
@@ -287,6 +277,53 @@ class MacroGenerator:
         parts.append(s_final)
 
         return "_".join(parts)
+
+    def get_full_unshortened_name(self, cp: int, char: str, cat: str) -> str:
+        """
+        Generates the macro name with only necessary sanitization, but NO shortening.
+        Used as the preferred fallback in case of a collision on the shortened name.
+        """
+        # Use existing helper function to get the base name
+        full_unicode_name = resolve_char_name(cp, char, cat, self)
+        
+        # Apply only basic sanitization: convert spaces/hyphens/non-word chars to single underscores
+        s_upper = full_unicode_name.upper()
+        s_final = re.sub(r"[^\w]+", "_", s_upper).strip("_")
+        s_final = re.sub(r"_+", "_", s_final).strip('_')
+        
+        return "_".join(["UC", s_final])
+        
+    def get_safe_macro_name(self, block_abbr: str, unicode_name: str, strip_case: bool, char: str, cp: int, cat: str) -> str:
+        """
+        Generates a macro name, checking for collisions and falling back to the 
+        full unshortened name if the primary (shortened) name clashes.
+        """
+        
+        # 1. TENTATIVE SHORTENED NAME (Primary Goal)
+        tentative_name = self.generate_name(block_abbr, unicode_name, strip_case)
+        
+        if tentative_name not in self._used_macro_names:
+            # No collision: Use the shortened name.
+            self._used_macro_names.add(tentative_name)
+            return tentative_name
+        else:
+            # Collision found with the shortened name. Revert to full unshortened name.
+            full_name = self.get_full_unshortened_name(cp, char, cat)
+            print(f"Warning: Collision detected for U+{cp:04X}. Shortened name '{tentative_name}' already used. Reverting to full name: '{full_name}'", file=sys.stderr)
+            
+            # 2. FULL UN-SHORTENED NAME (Fallback 1: User Preference)
+            if full_name not in self._used_macro_names:
+                # Full name is safe.
+                self._used_macro_names.add(full_name)
+                return full_name
+            else:
+                # Fallback 2: Full name still clashes (e.g., Arabic-Indic Digits clash).
+                # We must break the constraint and use the code point suffix 
+                # to prevent a C compile error, but we log this as a fatal warning.
+                safe_name = f"{full_name}_U{cp:04X}"
+                print(f"FATAL COLLISION: Both shortened and full names ('{full_name}') clash for U+{cp:04X}. Appending code point suffix '{safe_name}' to ensure uniqueness.", file=sys.stderr)
+                self._used_macro_names.add(safe_name)
+                return safe_name
 
 
 # --------------------------------------------------------------------
@@ -321,9 +358,7 @@ def resolve_char_name(cp: int, char: str, cat: str, macro_generator: 'MacroGener
         return macro_generator.CONTROL_CHARACTER_NAMES[cp]
     else:
         try:
-            name_result = name(char)
-            # *** REMOVED ARABIC-INDIC SPECIFIC FIX, RELYING ON GLOBAL GENERAL FIX ***
-            return name_result
+            return name(char)
         except ValueError:
             # Fallback for assigned characters (like non-ASCII Cc or Cf) if name fails
             return f"{cat}_U{cp:04X}"
@@ -332,19 +367,16 @@ def resolve_char_name(cp: int, char: str, cat: str, macro_generator: 'MacroGener
 def find_case_partner(cp: int, name1: str) -> Optional[int]:
     """
     Find the uppercase partner code point if *cp* is a single, mappable 
-    lowercase letter ('Ll'), by substituting 'SMALL' with 'CAPITAL' in the name 
-    and using unicodedata2.lookup(). Returns None otherwise.
+    lowercase letter ('Ll').
     """
     try:
         ch = chr(cp)
-        # 1. Must be a lowercase letter.
         if category(ch) != 'Ll':
             return None
     except ValueError:
         return None
         
-    # 2. Try the robust name-to-code-point lookup strategy.
-    # This covers Beria Erfe (SMALL -> CAPITAL) and similar scripts.
+    # 1. Try the robust name-to-code-point lookup strategy (Beria Erfe, etc.)
     if ('SMALL' in name1) or ('LOWERCASE' in name1):
         partner_name = name1.replace('SMALL', 'CAPITAL').replace('LOWERCASE', 'UPPERCASE')
         try:
@@ -359,7 +391,7 @@ def find_case_partner(cp: int, name1: str) -> Optional[int]:
             # Name substitution failed, fall through to default casing check
             pass
 
-    # 3. Fallback to standard Python casing (for Latin, etc.)
+    # 2. Fallback to standard Python casing (for Latin, etc.)
     partner_str = ch.upper()
 
     if len(partner_str) == 1 and partner_str != ch:
@@ -385,8 +417,7 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
     Generates the content lines (#define macros) for a single C header block using 
     a robust two-pass system to handle all case-pairing orders.
     
-    The function now relies on the macro_generator's internal `used_macro_names`
-    set for global de-duplication.
+    The function uses the new `get_safe_macro_name` for global de-duplication.
     
     Returns a tuple of (lines, defined_code_points, significant_hex_values).
     """
@@ -415,7 +446,6 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
         if cat != 'Ll': continue # Only interested in Lowercase Letters here
         
         # 1. Resolve Name (must succeed for lookup in helper to work)
-        # This handles C0/C1 and ValueError fallbacks.
         name1 = resolve_char_name(cp, char, cat, macro_generator)
         
         # 2. Find partner using the name substitution strategy
@@ -443,28 +473,21 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
             cat2 = category(char2)
             
             name1 = resolve_char_name(cp1, char1, cat1, macro_generator)
-            name2 = resolve_char_name(cp2, char2, cat2, macro_generator)
             
             glyph1, glyph2 = printable_glyph(cp1), printable_glyph(cp2)
 
             if glyph1 and glyph2:
                 comment = f"// {glyph1}/{glyph2}"
             else:
+                name2 = resolve_char_name(cp2, char2, cat2, macro_generator)
                 comment_parts = [f"U+{cp1:04X} ({name1})", f"U+{cp2:04X} ({name2})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
-            # Get base macro name (case stripped)
-            base_macro_name = macro_generator.generate_name(block_abbr, name1, strip_case=True)
+            # Get the safe macro name (stripping case for pairs)
+            macro_name = macro_generator.get_safe_macro_name(
+                block_abbr, name1, strip_case=True, char=char1, cp=cp1, cat=cat1
+            )
             
-            # *** FIX: Use the global tracker on the macro_generator instance ***
-            macro_name = base_macro_name
-            # If the base name collides, append the unique code point of the first character (cp1)
-            if macro_name in macro_generator.used_macro_names:
-                macro_name = f"{base_macro_name}_U{cp1:04X}"
-            
-            macro_generator.used_macro_names.add(macro_name)
-            # *** FIX END ***
-
             lines.append(
                 f"#define {macro_name:<40} 0x{cp1:04X} 0x{cp2:04X}  {comment}" 
             )
@@ -488,21 +511,13 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
             if printable_glyph(cp):
                 comment = f"// {printable_glyph(cp)}"
             else:
-                # Since glyph is None, use the correct name (either manual or fallback)
                 comment_parts = [f"U+{cp:04X} ({char_name})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
-            # Get base macro name (not case stripped)
-            base_macro_name = macro_generator.generate_name(block_abbr, char_name, strip_case=False)
-            
-            # *** FIX: Use the global tracker on the macro_generator instance ***
-            macro_name = base_macro_name
-            # If the base name collides, append the unique code point (cp)
-            if macro_name in macro_generator.used_macro_names:
-                macro_name = f"{base_macro_name}_U{cp:04X}"
-
-            macro_generator.used_macro_names.add(macro_name)
-            # *** FIX END ***
+            # Get the safe macro name (not stripping case for singles)
+            macro_name = macro_generator.get_safe_macro_name(
+                block_abbr, char_name, strip_case=False, char=char, cp=cp, cat=cat
+            )
 
             lines.append(
                 f"#define {macro_name:<40} 0x{cp:04X} 0  {comment}" 
@@ -556,8 +571,7 @@ def emit_header(block: UnicodeBlock, out_dir: pathlib.Path, macro_generator: Mac
         print(f"Processed block '{block.name}' (U+{block.start:04X}...U+{block.end:04X}): **Skipped** (no defines generated)")
         return None
         
-    # --- Collect Block Description and Links (User Fix) ---
-    # FIX: This entire block replaces the old `description_comment` logic and adds the links.
+    # --- Collect Block Description and Links ---
     additional_info_lines: List[str] = []
     
     # 1. Block Description

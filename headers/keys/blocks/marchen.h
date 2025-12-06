@@ -99,7 +99,7 @@
 #define UC_MARCHEN_SHA                           0x11C8C 0  // 𑲌
 #define UC_MARCHEN_SA                            0x11C8D 0  // 𑲍
 #define UC_MARCHEN_HA                            0x11C8E 0  // 𑲎
-#define UC_MARCHEN_A_U11C8F                      0x11C8F 0  // 𑲏
+#define UC_MARCHEN_LETTER_A                      0x11C8F 0  // 𑲏
 #define UC_MARCHEN_SUBJOINED_KA                  0x11C92 0  // 𑲒
 #define UC_MARCHEN_SUBJOINED_KHA                 0x11C93 0  // 𑲓
 #define UC_MARCHEN_SUBJOINED_GA                  0x11C94 0  // 𑲔

@@ -109,7 +109,7 @@
 #define UC_SOYOMBO_DZA                           0x11A77 0  // 𑩷
 #define UC_SOYOMBO_ZHA                           0x11A78 0  // 𑩸
 #define UC_SOYOMBO_ZA                            0x11A79 0  // 𑩹
-#define UC_SOYOMBO_A_U11A7A                      0x11A7A 0  // 𑩺
+#define UC_SOYOMBO_LETTER_A                      0x11A7A 0  // 𑩺
 #define UC_SOYOMBO_YA                            0x11A7B 0  // 𑩻
 #define UC_SOYOMBO_RA                            0x11A7C 0  // 𑩼
 #define UC_SOYOMBO_LA                            0x11A7D 0  // 𑩽

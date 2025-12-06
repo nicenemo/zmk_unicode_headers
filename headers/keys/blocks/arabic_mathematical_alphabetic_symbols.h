@@ -77,7 +77,7 @@
 #define UC_MEEM                                  0x1EE0C 0  // 𞸌
 #define UC_NOON                                  0x1EE0D 0  // 𞸍
 #define UC_SEEN                                  0x1EE0E 0  // 𞸎
-#define UC_AIN_U1EE0F                            0x1EE0F 0  // 𞸏
+#define UC_ARABIC_MATHEMATICAL_AIN               0x1EE0F 0  // 𞸏
 #define UC_FEH                                   0x1EE10 0  // 𞸐
 #define UC_SAD                                   0x1EE11 0  // 𞸑
 #define UC_QAF                                   0x1EE12 0  // 𞸒

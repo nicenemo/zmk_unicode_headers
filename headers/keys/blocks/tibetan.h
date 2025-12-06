@@ -170,7 +170,7 @@
 #define UC_TIBETAN_SSA                           0x0F65 0  // ཥ
 #define UC_TIBETAN_SA                            0x0F66 0  // ས
 #define UC_TIBETAN_HA                            0x0F67 0  // ཧ
-#define UC_TIBETAN_A_U0F68                       0x0F68 0  // ཨ
+#define UC_TIBETAN_LETTER_A                      0x0F68 0  // ཨ
 #define UC_TIBETAN_KSSA                          0x0F69 0  // ཀྵ
 #define UC_TIBETAN_FIXED_FORM_RA                 0x0F6A 0  // ཪ
 #define UC_TIBETAN_KKA                           0x0F6B 0  // ཫ
@@ -245,7 +245,7 @@
 #define UC_TIBETAN_SUBJOINED_SSA                 0x0FB5 0  // ྵ
 #define UC_TIBETAN_SUBJOINED_SA                  0x0FB6 0  // ྶ
 #define UC_TIBETAN_SUBJOINED_HA                  0x0FB7 0  // ྷ
-#define UC_TIBETAN_SUBJOINED_A_U0FB8             0x0FB8 0  // ྸ
+#define UC_TIBETAN_SUBJOINED_LETTER_A            0x0FB8 0  // ྸ
 #define UC_TIBETAN_SUBJOINED_KSSA                0x0FB9 0  // ྐྵ
 #define UC_TIBETAN_SUBJOINED_FIXED_FORM_WA       0x0FBA 0  // ྺ
 #define UC_TIBETAN_SUBJOINED_FIXED_FORM_YA       0x0FBB 0  // ྻ

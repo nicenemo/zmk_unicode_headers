@@ -165,7 +165,7 @@
 #define UC_MODIFIER_SMALL_V                      0x1D5B 0  // ᵛ
 #define UC_MODIFIER_SMALL_AIN                    0x1D5C 0  // ᵜ
 #define UC_MODIFIER_SMALL_BETA                   0x1D5D 0  // ᵝ
-#define UC_MODIFIER_SMALL_GAMMA_U1D5E            0x1D5E 0  // ᵞ
+#define UC_MODIFIER_LETTER_SMALL_GREEK_GAMMA     0x1D5E 0  // ᵞ
 #define UC_MODIFIER_SMALL_DELTA                  0x1D5F 0  // ᵟ
 #define UC_MODIFIER_SMALL_PHI                    0x1D60 0  // ᵠ
 #define UC_MODIFIER_SMALL_CHI                    0x1D61 0  // ᵡ

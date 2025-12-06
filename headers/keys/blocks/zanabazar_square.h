@@ -115,7 +115,7 @@
 #define UC_ZANABAZAR_SQUARE_DZHA                 0x11A26 0  // 𑨦
 #define UC_ZANABAZAR_SQUARE_ZHA                  0x11A27 0  // 𑨧
 #define UC_ZANABAZAR_SQUARE_ZA                   0x11A28 0  // 𑨨
-#define UC_ZANABAZAR_SQUARE_A_U11A29             0x11A29 0  // 𑨩
+#define UC_ZANABAZAR_SQUARE_LETTER_A             0x11A29 0  // 𑨩
 #define UC_ZANABAZAR_SQUARE_YA                   0x11A2A 0  // 𑨪
 #define UC_ZANABAZAR_SQUARE_RA                   0x11A2B 0  // 𑨫
 #define UC_ZANABAZAR_SQUARE_LA                   0x11A2C 0  // 𑨬

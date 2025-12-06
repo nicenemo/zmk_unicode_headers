@@ -78,7 +78,7 @@
 #define UC_LIGATURE_QUDDISA_SIRRUHUMAA           0x10ED6 0  // 𐻖
 #define UC_LIGATURE_QUDDISAT_ASRAARUHUM          0x10ED7 0  // 𐻗
 #define UC_LIGATURE_NAWWARA_ALLAAHU_MARQADAH     0x10ED8 0  // 𐻘
-#define UC_DOUBLE_VERTICAL_BAR_BELOW_U10EFA      0x10EFA 0  // 𐻺
+#define UC_ARABIC_DOUBLE_VERTICAL_BAR_BELOW      0x10EFA 0  // 𐻺
 #define UC_SMALL_LOW_NOON                        0x10EFB 0  // 𐻻
 #define UC_COMBINING_ALEF_OVERLAY                0x10EFC 0  // 𐻼
 #define UC_SMALL_LOW_WORD_SAKTA                  0x10EFD 0  // 𐻽
