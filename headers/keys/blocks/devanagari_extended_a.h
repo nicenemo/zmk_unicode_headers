@@ -67,8 +67,8 @@
 #define UC_HEAD_MARK_HEADSTROKE                  0x11B01 0  // 𑬁
 #define UC_SIGN_BHALE                            0x11B02 0  // 𑬂
 #define UC_SIGN_BHALE_HOOK                       0x11B03 0  // 𑬃
-#define UC_SIGN_BHALE                            0x11B04 0  // 𑬄
-#define UC_SIGN_BHALE_HOOK                       0x11B05 0  // 𑬅
+#define UC_SIGN_BHALE_U11B04                     0x11B04 0  // 𑬄
+#define UC_SIGN_BHALE_HOOK_U11B05                0x11B05 0  // 𑬅
 #define UC_SIGN_WESTERN_FIVE_LIKE_BHALE          0x11B06 0  // 𑬆
 #define UC_SIGN_WESTERN_NINE_LIKE_BHALE          0x11B07 0  // 𑬇
 #define UC_SIGN_REVERSED_NINE_LIKE_BHALE         0x11B08 0  // 𑬈

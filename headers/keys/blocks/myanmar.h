@@ -221,5 +221,5 @@
 #define UC_MYANMAR_SIGN_KHAMTI_TONE_3            0x109B 0  // ႛ
 #define UC_MYANMAR_VOWEL_SIGN_AITON_A            0x109C 0  // ႜ
 #define UC_MYANMAR_VOWEL_SIGN_AITON_AI           0x109D 0  // ႝ
-#define UC_MYANMAR_SHAN_ONE                      0x109E 0  // ႞
+#define UC_MYANMAR_SHAN_ONE_U109E                0x109E 0  // ႞
 #define UC_MYANMAR_SHAN_EXCLAMATION              0x109F 0  // ႟

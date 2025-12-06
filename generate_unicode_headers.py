@@ -389,10 +389,13 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
 
     # Categories to EXCLUDE (Unassigned, Private Use, Surrogate, Specific Separators)
     EXCLUDE_CATEGORIES = {'Cn', 'Co', 'Cs', 'Zl', 'Zp'}
+    
+    # *** GENERAL FIX START: Set to track macro names for general de-duplication ***
+    used_macro_names: Set[str] = set()
+    # *** GENERAL FIX END ***
 
     # =======================================================
     # PASS 1: IDENTIFY AND STORE ALL CASE PAIRS (Ll -> Lu)
-    # This pass is order-independent and ensures Ll is the key.
     # =======================================================
     for cp in range(block.start, block.end + 1):
         try:
@@ -441,8 +444,18 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
                 comment_parts = [f"U+{cp1:04X} ({name1})", f"U+{cp2:04X} ({name2})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
-            # Strip case from macro name for the pair definition
-            macro_name = macro_generator.generate_name(block_abbr, name1, strip_case=True)
+            # Get base macro name (case stripped)
+            base_macro_name = macro_generator.generate_name(block_abbr, name1, strip_case=True)
+            
+            # *** GENERAL FIX START: De-duplicate macro name ***
+            macro_name = base_macro_name
+            # If the base name collides, append the unique code point of the first character (cp1)
+            if macro_name in used_macro_names:
+                macro_name = f"{base_macro_name}_U{cp1:04X}"
+            
+            used_macro_names.add(macro_name)
+            # *** GENERAL FIX END ***
+
             lines.append(
                 f"#define {macro_name:<40} 0x{cp1:04X} 0x{cp2:04X}  {comment}" 
             )
@@ -470,7 +483,18 @@ def generate_header_content(block: UnicodeBlock, block_abbr: str, macro_generato
                 comment_parts = [f"U+{cp:04X} ({char_name})"]
                 comment = f"/* {' '.join(comment_parts)} */"
             
-            macro_name = macro_generator.generate_name(block_abbr, char_name, strip_case=False)
+            # Get base macro name (not case stripped)
+            base_macro_name = macro_generator.generate_name(block_abbr, char_name, strip_case=False)
+            
+            # *** GENERAL FIX START: De-duplicate macro name ***
+            macro_name = base_macro_name
+            # If the base name collides, append the unique code point (cp)
+            if macro_name in used_macro_names:
+                macro_name = f"{base_macro_name}_U{cp:04X}"
+
+            used_macro_names.add(macro_name)
+            # *** GENERAL FIX END ***
+
             lines.append(
                 f"#define {macro_name:<40} 0x{cp:04X} 0  {comment}" 
             )

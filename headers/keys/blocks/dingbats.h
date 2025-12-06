@@ -99,7 +99,7 @@
 #define UC_DB_HEAVY_OPEN_CENTRE_CROSS            0x271C 0  // ✜
 #define UC_DB_CROSS                              0x271D 0  // ✝
 #define UC_DB_SHADOWED_WHITE_CROSS               0x271E 0  // ✞
-#define UC_DB_OUTLINED_CROSS                     0x271F 0  // ✟
+#define UC_DB_OUTLINED_CROSS_U271F               0x271F 0  // ✟
 #define UC_DB_MALTESE_CROSS                      0x2720 0  // ✠
 #define UC_DB_STAR_OF_DAVID                      0x2721 0  // ✡
 #define UC_DB_FOUR_TEARDROP_SPOKED_ASTERISK      0x2722 0  // ✢
